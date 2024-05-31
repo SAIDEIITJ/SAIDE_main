@@ -1,0 +1,117 @@
+<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
+
+
+<div class="row">
+
+
+
+
+
+
+							<!-- Image on the left -->
+							<div class="col-xs-12 col-md-4">
+								<img src="images/iitjc.png" alt="Another Image" width="220" height="160" >
+							</div>
+							<!-- Title, Description, and Logo -->
+							<div class="col-xs-12 col-md-4">
+								<h2>{{ site.title }}</h2>
+								<p>{{ site.description | markdownify }}</p>
+				
+
+								
+								
+							</div>
+							<div class="col-xs-12 col-md-4">
+								<img src="images/logo.png" alt="Logo" width="400" height="250">
+							</div>
+						</div>
+                        <ul class="actions">
+							<br>
+							<li>
+								<a href="#cta"><div class="box-3">
+									<div class="btn btn-three">
+									  <span>NEWS</span>
+									</div>
+								  </div>
+								</a>
+						</ul>
+						<br>
+
+
+navbar
+						  {% for my_page in site.pages %}
+              {% if my_page.title %}
+              <li class="dropdown">
+                <a href="{{ my_page.url | prepend: site.baseurl }}" class="dropbtn">{{ my_page.title }}</a>
+                <div class="dropdown-content">
+                  <a href="#">Sub Link hgv</a>
+                  <a href="#">Sub Link 2</a>
+                  <a href="#">Sub Link 3</a>
+                </div>
+              </li>
+              {% endif %}
+              {% endfor %}
+
+
+
+			  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search...">
+</div>
+<div class="filter-indicators">
+    <div class="filter-indicator" id="category1" data-filter="category1">
+        <span>Category 1</span>
+    </div>
+    <div class="filter-indicator" id="category2" data-filter="category2">
+        <span>Category 2</span>
+    </div>
+    <div class="filter-indicator" id="category3" data-filter="category3">
+        <span>Category 3</span>
+    </div>
+    <div class="filter-indicator" id="category4" data-filter="category4">
+        <span>Category 4</span>
+    </div>
+    <div class="filter-indicator" id="category5" data-filter="category5">
+        <span>Category 5</span>
+    </div>
+    <div class="filter-indicator" id="category6" data-filter="category6">
+        <span>Category 6</span>
+    </div>
+</div>
+
+about
+<section id="two" class="wrapper">
+    <section class="spotlight">
+        <div class="image"><img src="images/vision.jpg"/></div><div class="content">
+            <h2 class="section-2">Vision<br />
+            </h2>
+            <p>
+                <ul>
+                    <li>Advancing the field of AI and Data Sciences for the good of humanity</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+    <section class="spotlight">
+        <div class="image"><img src="images/mission.jpg"/></div><div class="content">
+            <h2 class="section-2">Mission<br />
+            </h2>
+            <p>
+                <ul>
+                    <li>To be at the forefront of Artificial Intelligence and Data Science research in all dimensions.</li>
+                    <li>To play a leading role in the delivery of Artificial Intelligence & Data Science in all sectors.</li>
+                </ul> 
+             </p>
+        </div>
+    </section>
+    
+</section>
+
+
+
+        <div class="inner"> 
+        <ul class="icons major" style="text-align: center;">
+            <li><span class="icon fa-house major style1" ><span class="label">Lorem</span></span></li>
+            <li><span class="icon fa-phone major style2"><span class="label">Ipsum</span></span></li>
+            <li><span class="icon fa-star major style3"><span class="label">Dolor</span></span></li>
+        </ul>
+    </div>

@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<div class="background-about"></div>
+<article id="main">
+  <div class="topcontent">
+    <header style="height: 100px;">
+      <p>{{page.link}}</p>
+      <h2>{{ page.title }}</h2>
+      <p>{{page.des}}</p>
+
+    </header>
+    <div class="button-bar">
+      <a href="reserach.html" class="tab-button" data-color="orange">Research</a>
+      <a href="theme.html" class="tab-button" data-color="green">Themes</a>
+      <a href="projects.html" class="tab-button" data-color="yellow">Projects</a>
+      <a href="faculity.html" class="tab-button" data-color="purple">Researchers</a>
+      <a href="section5.html" class="tab-button" data-color="red">Publications</a>
+      <a href="section6.html" class="tab-button" data-color="red">Resources</a>
+    </div>
+  </div>
+
+  <section class="wrapper style5">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </section>
+</article>
+
+<script>
+  // Retrieve saved color from localStorage before the page loads
+  var savedColor = localStorage.getItem("backgroundColor");
+  if (savedColor) {
+    document.documentElement.style.setProperty('--initial-background-color', savedColor);
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var targetDiv = document.getElementById("backgroundAbout");
+    if (savedColor && targetDiv) {
+      targetDiv.style.backgroundColor = savedColor;
+    }
+
+    var links = document.querySelectorAll(".tab-button");
+    links.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        var color = link.getAttribute("data-color");
+        if (targetDiv) {
+          targetDiv.style.backgroundColor = color;
+        }
+        // Save selected color to localStorage
+        localStorage.setItem("backgroundColor", color);
+      });
+    });
+  });
+</script>
+<style>
+  .background-about {
+        background-image: url("images/sk7.jpg");
+    background-color: var(--initial-background-color, orange);
+    background-size: cover;
+    background-position: center;
+  }
+</style>

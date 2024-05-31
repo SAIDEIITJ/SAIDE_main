@@ -1,0 +1,112 @@
+---
+layout: people
+title: Poeple
+link: HOME / FACULITY
+des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
+---
+	
+<div class="search-container">
+    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i>
+    <input type="text" id="search-bar" placeholder="Search by name ...">
+</div>
+<br>
+<div class="alphabet-links">
+    <a href="#" class="alphabet-link">A</a>
+    <a href="#" class="alphabet-link">B</a>
+    <a href="#" class="alphabet-link">C</a>
+    <a href="#" class="alphabet-link">D</a>
+    <a href="#" class="alphabet-link">E</a>
+    <a href="#" class="alphabet-link">F</a>
+    <a href="#" class="alphabet-link">G</a>
+    <a href="#" class="alphabet-link">H</a>
+    <a href="#" class="alphabet-link">I</a>
+    <a href="#" class="alphabet-link">J</a>
+    <a href="#" class="alphabet-link">K</a>
+    <a href="#" class="alphabet-link">L</a>
+    <a href="#" class="alphabet-link">M</a>
+    <a href="#" class="alphabet-link">N</a>
+    <a href="#" class="alphabet-link">O</a>
+    <a href="#" class="alphabet-link">P</a>
+    <a href="#" class="alphabet-link">Q</a>
+    <a href="#" class="alphabet-link">R</a>
+    <a href="#" class="alphabet-link">S</a>
+    <a href="#" class="alphabet-link">T</a>
+    <a href="#" class="alphabet-link">U</a>
+    <a href="#" class="alphabet-link">V</a>
+    <a href="#" class="alphabet-link">W</a>
+    <a href="#" class="alphabet-link">X</a>
+    <a href="#" class="alphabet-link">Y</a>
+    <a href="#" class="alphabet-link">Z</a>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<table id="entry-table" style="background-color: #ECEBE5;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Office</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script>
+    const data = [
+    { name: "Alice", phone: "123-456-7890", email: "alice@example.com", office: "Office 1" },
+    { name: "Bob", phone: "534-567-8901", email: "bob@example.com", office: "Office 2" },
+    { name: "Alex", phone: "723-456-7890", email: "alex@example.com", office: "Office 3" },
+    { name: "Champ", phone: "534-5-7501", email: "chmap@example.com", office: "Office 4" },
+    { name: "Keele", phone: "323-456-7890", email: "keele@example.com", office: "Office 5" },
+    { name: "Jay", phone: "634-567-8921", email: "jay@example.com", office: "Office 6" },
+    { name: "Ross", phone: "233-456-7890", email: "ross@example.com", office: "Office 7" },
+    { name: "Rachel", phone: "264-567-8901", email: "rachel@example.com", office: "Office 8" },
+    // Add more entries as needed
+];
+
+// Function to render entries in the table
+function renderEntries(entries) {
+    const table = document.getElementById("entry-table");
+    const tbody = table.querySelector("tbody");
+    tbody.innerHTML = ""; // Clear only the tbody
+
+    entries.forEach(entry => {
+        const row = tbody.insertRow();
+        row.innerHTML = `
+            <td>${entry.name}</td>
+            <td>${entry.phone}</td>
+            <td>${entry.email}</td>
+            <td>${entry.office}</td>
+        `;
+    });
+}
+
+// Filter entries based on selected alphabet
+function filterEntriesByAlphabet(alphabet) {
+    const filteredEntries = data.filter(entry => entry.name.charAt(0).toUpperCase() === alphabet);
+    renderEntries(filteredEntries);
+}
+
+// Add event listeners to alphabet links
+const alphabetLinks = document.querySelectorAll(".alphabet-link");
+alphabetLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const selectedAlphabet = this.textContent;
+        filterEntriesByAlphabet(selectedAlphabet);
+    });
+});
+
+// Initially render all entries
+renderEntries(data);
+</script>
+
+

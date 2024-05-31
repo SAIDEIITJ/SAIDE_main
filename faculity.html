@@ -1,0 +1,140 @@
+---
+layout: people
+title: Poeple
+link: HOME / FACULITY
+des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
+---
+	
+<div class="search-container">
+	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
+</div>
+<div class="filter-indicators">
+    <div class="filter-indicator" id="all" data-filter="all">
+        <div class="checkbox"></div>
+        <span>Category 1</span>
+    </div>
+    <div class="filter-indicator" id="phd" data-filter="phd">
+        <div class="checkbox"></div>
+        <span>Category 2</span>
+    </div>
+    <div class="filter-indicator" id="ms" data-filter="ms">
+        <div class="checkbox"></div>
+        <span>Category 3</span>
+    </div>
+    <div class="filter-indicator" id="category1" data-filter="category1">
+        <div class="checkbox"></div>
+        <span>Category 4</span>
+    </div>
+    <div class="filter-indicator" id="category2" data-filter="category2">
+        <div class="checkbox"></div>
+        <span>Category 5</span>
+    </div>
+    <div class="filter-indicator" id="category3" data-filter="category3">
+        <div class="checkbox"></div>
+        <span>Category 6</span>
+    </div>
+</div>
+
+
+<br>
+<br>
+{% assign ap_members = '' | split: '' %}
+{% assign us_members = '' | split: '' %}
+{% assign msr_members = '' | split: '' %}
+{% assign phd_members = '' | split: '' %}
+{% assign ra_members = '' | split: '' %}
+{% assign int_members = '' | split: '' %}
+{% assign oth_members = '' | split: '' %}
+
+{% assign sorted_members = site.data.team | sort: "year" %}
+
+{% for member in sorted_members %}
+{% if member.position == 'Assistant Professor' %}
+{% assign ap_members = ap_members | push: member %}
+{% elsif member.position == 'Undergraduate student' %}
+{% assign us_members = us_members | push: member %}
+{% elsif member.position == 'MS(R) student' %}
+{% assign msr_members = msr_members | push: member %}
+{% elsif member.position == 'PhD student' %}
+{% assign phd_members = phd_members | push: member %}
+{% elsif member.position == 'Research Assistant' %}
+{% assign ra_members = ra_members | push: member %}
+{% elsif member.position == 'Intern' %}
+{% assign int_members = int_members | push: member %}
+{% else %}
+{% assign oth_members = oth_members | push: member %}
+{% endif %}
+{% endfor %}
+
+{% assign sorted_members = '' | split: '' | concat: ap_members | concat: phd_members | concat: msr_members | concat: ra_members | concat: us_members | concat: int_members | concat: oth_members %}
+
+
+{% assign number_printed = 0 %}
+{% for member in sorted_members %}
+{% if member.display == 1 and member.alumni == 0 %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row" id="teamMember">
+{% endif %}
+
+<div class="col-sm-6 member" data-position="{{ member.position }}" data-name = "{{member.name}}" >
+  <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
+  <h4>{{ member.name }}</h4>
+  <i>{{ member.position }}, {{ member.affiliation }} <br>email: {{ member.email }}</i>
+  <ul style="overflow: hidden">
+
+  {% if member.bio1 != "" %}
+    <li> {{ member.bio1 }} </li>
+  {% endif %}
+  {% if member.bio2 != "" %}
+    <li> {{ member.bio2 }} </li>
+  {% endif %}
+  {% if member.bio3 != "" %}
+    <li> {{ member.bio3 }} </li>
+  {% endif %}
+  {% if member.bio4 != "" %}
+    <li> {{ member.bio4 }} </li>
+  {% endif %}
+
+  </ul>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+## Alumni
+<div style="margin-bottom: 800px;">
+{% for member in sorted_members %}
+{% if member.display == 1 and member.alumni == 1 %}
+
+<div class="col-sm-6 member" data-position="{{ member.position }}" data-name = "{{member.name}}" id="teamMember">
+  <img src="{{ member.image }}" class="img-thumbnail" width="100px" style="float: left" />
+  <h4>{{ member.name }}</h4>
+  <i>{{ member.position }}, {{ member.affiliation }} ({{ member.year }}) <br>email: {{ member.email }}</i>
+  <h5>{{ member.alumni_current }}</h5>
+</div>
+
+{% endif %}
+{% endfor %}
+</div>
+
+<script>
+	document.querySelectorAll('.filter-indicator').forEach(indicator => {
+    indicator.addEventListener('click', () => {
+        indicator.classList.toggle('checked');
+    });
+});
+</script>
+

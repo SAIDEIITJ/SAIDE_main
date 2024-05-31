@@ -1,0 +1,75 @@
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="footer-title">School of Artificial Intelligence & Data Science</h1>
+        </div>
+    </div>
+    <br>
+      <div class="row">
+          <!-- Social Icons Section -->
+    
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-user-plus fa-2x" style="color: rgb(175, 32, 32);"></i> Follow Us</h3>
+              <ul class="list-unstyled list-inline social-icons">
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-facebook fa-lg" style="color: #1a548b;" ></i>                
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-twitter fa-lg" style="color: #74C0FC;"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl"  style="border: 0;">
+                              <i class="fa-brands fa-linkedin fa-lg" style="color: #2d85d7;"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
+              <p>
+              Indian Institute of Technology Jodhpur
+
+              NH 62 Nagaur Road, Karwar 342030
+              
+              Jodhpur District</p>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
+              <p>Phone: 123-456-7890<br>
+              Email: info@example.com</p>
+          </div>
+        </ul>
+      </div>
+  </div>
+
+
+  <!-- Copyright Information Section -->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+  
+              <ul class="copyright">
+                  <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+                      {% if site.first_published %}
+                      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+                      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+                      {% endif %}
+                      {{ thisyear }}
+                      {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+                  <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+                  <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>

@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="background-about"></div>
+<article id="main">
+  <div class="topcontent">
+    <header style="height: 100px;">
+      <p>{{page.link}}</p>
+      <h2>{{ page.title }}</h2>
+      <p>{{page.des}}</p>
+
+    </header>
+    <div class="button-bar">
+      <a href="latest.html" class="tab-button" data-color="orange">News + Events</a>
+      <a href=".html" class="tab-button" data-color="green">News</a>
+      <a href=".html" class="tab-button" data-color="yellow">Upcomming Events</a>
+      <a href="#" class="tab-button" data-color="purple">Current Events</a>
+      <a href="#" class="tab-button" data-color="blue">Past Events</a>
+    </div>
+  </div>
+
+  <section class="wrapper style5" style="z-index: -1;">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </section>
+</article>
+
+<script>
+  // Retrieve saved color from localStorage before the page loads
+  var savedColor = localStorage.getItem("backgroundColor");
+  if (savedColor) {
+    document.documentElement.style.setProperty('--initial-background-color', savedColor);
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var targetDiv = document.getElementById("backgroundAbout");
+    if (savedColor && targetDiv) {
+      targetDiv.style.backgroundColor = savedColor;
+    }
+
+    var links = document.querySelectorAll(".tab-button");
+    links.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        var color = link.getAttribute("data-color");
+        if (targetDiv) {
+          targetDiv.style.backgroundColor = color;
+        }
+        // Save selected color to localStorage
+        localStorage.setItem("backgroundColor", color);
+      });
+    });
+  });
+</script>
+<style>
+  .background-about {
+        background-image: url("images/sk7.jpg");
+    background-color: var(--initial-background-color, orange);
+    background-size: cover;
+    background-position: center;
+  }
+</style>
