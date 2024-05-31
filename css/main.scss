@@ -24,6 +24,7 @@ $linkcolor:#ff6f61;
 .topcontent{
 	height: 390px;
 	padding: 90px;
+	margin-top: -51px;
 
 	  
 	  h2 {
@@ -1615,18 +1616,19 @@ figcaption {
 
 
 .container {
-	width: auto;
+	width: 100%;
 	margin-right: 9%;
   }
   
   #nav {
-	margin-top: 60px;
+margin-top: -20px;
+width: max-content;
   }
   
   .horizontal-menu {
 	display: flex;
 	list-style: none;
-	padding: 10px;
+	padding: 5px;
 	background-color: rgba(0, 0, 0, 0.698); /* Marble black with transparency */
 	border-radius: 5px; /* Rounded corners for a smoother look */
   }
@@ -1636,10 +1638,13 @@ figcaption {
 	position: relative; /* For dropdown positioning */
 	background-color: rgba(31, 30, 30, 0.698); 
   }
-  .horizontal-menu li:hover {
-	background-color:  #f1b42fcc; 
-  }
   
+  #site-main-title{
+	text-transform: none;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+  }
   .site-title {
 	text-decoration: none;
 	border: 0;
@@ -1650,8 +1655,6 @@ figcaption {
 	font-size: 1.3em;
 	display: block;
 	line-height: 1.6em;
-
-	
   }
   
   .site-logo {
@@ -1665,13 +1668,13 @@ figcaption {
 	color: #FFF;
 	text-transform: uppercase;
 	font-family: _font(family);
-	font-size: 0.8em;
+
 	transition: color 0.3s ease;
 	border: 0;
 	display: block;
-	font-size: 1.0em;
+	font-size: 0.8em;
 	letter-spacing: _size(letter-spacing-alt);
-	padding-left: 0.3em;
+	padding-left: 0.2em;
   }
   
 //   .horizontal-menu li a:hover {
@@ -3320,7 +3323,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 .rectangular-div {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -3341,6 +3344,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 }
 .marquee-container {
+	margin-top: -30px;
     width: 80%;
 	display: flex;
     overflow: hidden;
@@ -3361,7 +3365,7 @@ $baseurl: '{{ site.baseurl }}/images';
 .announcement-item {
     display: inline-block;
     padding: 0 2rem;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 	cursor: pointer;
 }
 

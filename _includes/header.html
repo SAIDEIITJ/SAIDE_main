@@ -1,8 +1,8 @@
 <header>
   <div class="container">
-    <div class="row">
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
       <div class="col-md-3">
-        <div class="row" style="margin-top: 40px; display: flex; justify-content: center; align-items: center;">
+        <div class="row"  style="display: flex; justify-content: center; align-items: center;">
           <div class="logo-title-container">
               <a href="{{ site.baseurl }}/index.html" class="site-logo">
                   <img src="images/iitjc.png" alt="Logo" width="105" height="100">
@@ -11,7 +11,19 @@
           </div>
         </div>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-7"  style="font-size: 1.5rem; text-transform: none; justify-content: center;text-align: center;">
+              <a href="{{ site.baseurl }}/index.html" class="site-title" ><h1 id="site-main-title">{{site.description}}</h1></a>
+      </div>
+      <div class="col-md-2"  style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <a href="{{ site.baseurl }}/index.html" class="site-logo">
+          <img src="images/logo.png" alt="Logo" width="210" height="180">
+      </a>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-7">
         <nav id="nav">
           <div class="nav-content">
             <ul class="horizontal-menu">
@@ -47,7 +59,7 @@
               </li>
              
               <li class="dropdown">
-                <a href="learn.html" class="dropbtn">Education</a>
+                <a href="learn.html" class="dropbtn">Adacamics</a>
                 <div class="dropdown-content">
                   <a href="programs.html">Programs</a>
                   <a href="projects.html">Projects</a>
@@ -65,7 +77,6 @@
                   <a href="contact.html">Contact</a>
                 </div>
               </li>
-              <li><input type="text" placeholder="Search..."></li>
             </ul>
           </div>
         </nav>

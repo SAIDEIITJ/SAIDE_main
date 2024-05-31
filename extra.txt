@@ -115,3 +115,75 @@ about
             <li><span class="icon fa-star major style3"><span class="label">Dolor</span></span></li>
         </ul>
     </div>
+
+//testimonails
+<div class="rect-button">
+				<div class="rectangular-div2">
+					<div id="testimonails" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+					
+							<div class="item active" style="background-color: #ECEBE6;">
+								<h1 class="testimonails-title">Dolor pulvinar etiam</h1>
+								<br>
+								<p class="testimonails-description">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<br>
+								<p class="testimonails-by">--This is a little description</p>
+							</div>
+							<div class="item" style="background-color: #ECEBE6;">
+								<h1 class="testimonails-title">Sagittis adipiscing</h1>
+								<br>
+								<p class="testimonails-description">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<br>
+								<p class="testimonails-by">--By xyz</p>
+							</div>
+							<div class="item" style="background-color: #ECEBE6;">
+								<h1 class="testimonails-title">Felis enim feugiat</h1>
+								<br>
+								<p class="testimonails-description">Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem acempus accumsan.</p>
+								<br>
+								<p class="testimonails-by">--By abc</p>
+							</div>
+							<div class="item" style="background-color: #ECEBE6;">
+								<h1 class="testimonails-title">Felis enim feugiat.</h1>
+								<br>
+								<p class="testimonails-description">Lius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis laciquet. ontes viverra nibh in adipiscing.</p>
+								<br>
+								<p class="testimonails-by">--Ante nunc ann.</p>
+							</div>
+							<div class="item" style="background-color: #ECEBE6;">
+								<h1 class="testimonails-title">Felis enim feugiat.</h1>
+								<br>
+								<p class="testimonails-description">Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non fauc eu sed ante lacinia sapien lorem acempus accumsan.</p>
+								<br>
+								<p class="testimonails-by">--Aenean tincidunt lectus .</p>
+							</div>
+							<div class="item" style="background-color: #ECEBE6;">
+								<h1 class="testimonails-title">Felis enim feugiat.</h1>
+								<br>
+								<p class="testimonails-description">Ling gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem acempus accumsan.</p>
+								<br>
+								<p class="testimonails-by">--Ut ex ut augue conse.</p>
+							</div>
+						</div>
+						<!-- <a class="left carousel-control" href="#testimonails" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#testimonails" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a> -->
+						<ol class="carousel-indicators">
+							<li data-target="#testimonails" data-slide-to="0" class="active"></li>
+							<li data-target="#testimonails" data-slide-to="1"></li>
+							<li data-target="#testimonails" data-slide-to="2"></li>
+							<li data-target="#testimonails" data-slide-to="3"></li>
+							<li data-target="#testimonails" data-slide-to="4"></li>
+							<li data-target="#testimonails" data-slide-to="5"></li>
+						</ol>
+						<div class="spbutton">
+							<a href="#"><button class="view-all">More About AIDE</button></a>
+						</div>
+					  </div>
+				</div>
+			</div>
