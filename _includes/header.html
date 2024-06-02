@@ -2,35 +2,38 @@
   <div class="container">
     <div class="row" style="display: flex; justify-content: center; align-items: center;">
       <div class="col-md-3">
-        <div class="row"  style="display: flex; justify-content: center; align-items: center;">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
           <div class="logo-title-container">
-              <a href="{{ site.baseurl }}/index.html" class="site-logo">
-                  <img src="images/iitjc.png" alt="Logo" width="105" height="100">
-              </a>
-              <a href="{{ site.baseurl }}/index.html" class="site-title"><h1>{{ site.title }} </h1></a>
+            <a href="{{ site.baseurl }}/index.html" class="site-logo">
+              <img src="images/iitjc.png" alt="Logo" width="105" height="100">
+            </a>
+            <a href="{{ site.baseurl }}/index.html" class="site-title"><h1>{{ site.title }}</h1></a>
           </div>
         </div>
       </div>
-      <div class="col-md-7"  style="font-size: 1.5rem; text-transform: none; justify-content: center;text-align: center;">
-              <a href="{{ site.baseurl }}/index.html" class="site-title" ><h1 id="site-main-title">{{site.description}}</h1></a>
+      <div class="col-md-7" style="font-size: 1.5rem; text-transform: none; justify-content: center; text-align: center;">
+        <a href="{{ site.baseurl }}/index.html" class="site-title">
+          <h1 id="site-main-title">{{ site.description }}</h1>
+        </a>
+    
       </div>
-      <div class="col-md-2"  style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-        <a href="{{ site.baseurl }}/index.html" class="site-logo">
+      <div class="col-md-2" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <a href="{{ site.baseurl }}/index.html" class="site-sym">
           <img src="images/logo.png" alt="Logo" width="210" height="180">
-      </a>
+        </a>
       </div>
-
     </div>
     <div class="row">
-      <div class="col-md-5"></div>
-      <div class="col-md-7">
+      <div class="col-md-5 col-sm-4"></div>
+      <div class="col-md-7 col-sm-8" >
         <nav id="nav">
-          <div class="nav-content">
+
+          <div class="nav-content" id="nav-content">
             <ul class="horizontal-menu">
               <li class="dropdown">
                 <a href="index.html" class="dropbtn">Home</a>
               </li>
-
               <li class="dropdown">
                 <a href="reserach.html" class="dropbtn">Research</a>
                 <div class="dropdown-content">
@@ -57,7 +60,6 @@
                   <a href="directory.html">Directory</a>
                 </div>
               </li>
-             
               <li class="dropdown">
                 <a href="learn.html" class="dropbtn">Adacamics</a>
                 <div class="dropdown-content">
@@ -84,3 +86,18 @@
     </div>
   </div>
 </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navContent = document.getElementById("nav-content");
+
+    menuToggle.addEventListener("click", function () {
+      if (navContent.style.display === "block") {
+        navContent.style.display = "none";
+      } else {
+        navContent.style.display = "block";
+      }
+    });
+  });
+</script>

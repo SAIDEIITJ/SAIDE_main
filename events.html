@@ -1,0 +1,96 @@
+---
+layout: news
+title: Events
+link: HOME / LATEST
+des: Ravida odio portt Nte nunc adip iscing git or sem non mi non minon mi.
+---
+
+
+<div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for an event...">
+</div>
+<section class="events-section" id="eventsSection">
+    <!-- Events will be dynamically added here by JavaScript -->
+</section>
+<div class="pagination" id="pagination">
+    <!-- Page numbers will be dynamically added here by JavaScript -->
+</div>
+
+<script>
+    const events = [
+    // Add at least 20 events for demonstration purposes
+    { title: "Event 1", date: "JUNE 01, 2024", content: "Details of event 1...", icon: "fas fa-calendar-alt" },
+    { title: "Event 2", date: "JUNE 02, 2024", content: "Details of event 2...", icon: "fas fa-calendar-check" },
+
+    // Add more events here...
+];
+
+const eventsPerPage = 10;
+let currentPage = 1;
+
+function displayEvents(page) {
+    const eventsSection = document.getElementById('eventsSection');
+    eventsSection.innerHTML = '';
+    const start = (page - 1) * eventsPerPage;
+    const end = start + eventsPerPage;
+    const paginatedEvents = events.slice(start, end);
+    
+    paginatedEvents.forEach(event => {
+        const eventItem = document.createElement('div');
+        eventItem.className = 'event-item';
+        eventItem.setAttribute('data-title', event.title);
+        
+        eventItem.innerHTML = `
+            <div class="icon"><i class="${event.icon}"></i></div>
+            <div class="event-content">
+                <p class="date">${event.date}</p>
+                <h2 id = "titleh2">${event.title}</h2>
+                <p>${event.content}</p>
+                <button id="read-more">Read More</button>
+            </div>
+        `;
+        eventsSection.appendChild(eventItem);
+    });
+}
+
+function setupPagination() {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+    const pageCount = Math.ceil(events.length / eventsPerPage);
+    
+    for (let i = 1; i <= pageCount; i++) {
+        const pageItem = document.createElement('a');
+        pageItem.className = 'page-item';
+        pageItem.innerText = i;
+        pageItem.href = '#';
+        if (i === currentPage) {
+            pageItem.classList.add('active');
+        }
+        pageItem.addEventListener('click', function(event) {
+            event.preventDefault();
+            currentPage = i;
+            displayEvents(currentPage);
+            setupPagination();
+        });
+        pagination.appendChild(pageItem);
+    }
+}
+
+document.getElementById('searchBar').addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const eventItems = document.querySelectorAll('.event-item');
+    
+    eventItems.forEach(item => {
+        const title = item.getAttribute('data-title').toLowerCase();
+        if (title.includes(filter)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+
+// Initial setup
+displayEvents(currentPage);
+setupPagination();
+</script>

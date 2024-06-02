@@ -1,0 +1,112 @@
+---
+layout: news
+title: News
+link: HOME / LATEST
+des:  Odio porttitor sNte n unc adipis cing gravida em non mi non minon mi.
+---
+
+
+
+<div class="search-box">
+    <input type="text" id="searchBar" placeholder="Search for an article...">
+</div>
+<section class="articles-section"  id="articlesSection">
+
+</section>
+<div class="pagination" id="pagination">
+
+</div>
+
+<script>
+    document.getElementById('searchBar').addEventListener('input', function() {
+    let filter = this.value.toLowerCase();
+    let articleItems = document.querySelectorAll('.article-item');
+    
+    articleItems.forEach(function(item) {
+        let title = item.getAttribute('data-title').toLowerCase();
+        if (title.includes(filter)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+
+
+const articles = [
+    // Add at least 20 articles for demonstration purposes
+    { title: "NEWS 1", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/user.jpg" },
+    { title: "NEWS 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
+    
+    // Add more articles here...
+];
+
+const articlesPerPage = 10;
+let currentPage = 1;
+
+function displayArticles(page) {
+    const articlesSection = document.getElementById('articlesSection');
+    articlesSection.innerHTML = '';
+    const start = (page - 1) * articlesPerPage;
+    const end = start + articlesPerPage;
+    const paginatedArticles = articles.slice(start, end);
+    
+    paginatedArticles.forEach(article => {
+        const articleItem = document.createElement('div');
+        articleItem.className = 'article-item';
+        articleItem.setAttribute('data-title', article.title);
+        
+        articleItem.innerHTML = `
+            <img src="${article.img}" alt="Article Image">
+            <div class="article-content">
+                <p class="date">${article.date}</p>
+                <h2 id = "titleh2">${article.title}</h2>
+                <p>${article.content}</p>
+                <button id="read-more">Read More</button>
+            </div>
+        `;
+        articlesSection.appendChild(articleItem);
+    });
+}
+
+function setupPagination() {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+    const pageCount = Math.ceil(articles.length / articlesPerPage);
+    
+    for (let i = 1; i <= pageCount; i++) {
+        const pageItem = document.createElement('a');
+        pageItem.className = 'page-item';
+        pageItem.innerText = i;
+        pageItem.href = '#';
+        if (i === currentPage) {
+            pageItem.classList.add('active');
+        }
+        pageItem.addEventListener('click', function(event) {
+            event.preventDefault();
+            currentPage = i;
+            displayArticles(currentPage);
+            setupPagination();
+        });
+        pagination.appendChild(pageItem);
+    }
+}
+
+document.getElementById('searchBar').addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const articleItems = document.querySelectorAll('.article-item');
+    
+    articleItems.forEach(item => {
+        const title = item.getAttribute('data-title').toLowerCase();
+        if (title.includes(filter)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+
+// Initial setup
+displayArticles(currentPage);
+setupPagination();
+</script>

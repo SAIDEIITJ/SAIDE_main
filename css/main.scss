@@ -15,6 +15,13 @@ $textcolor:#005b5b;
 $linkcolor:#ff6f61;
 
 
+
+
+#wholebody{
+	 overflow-x:hidden;
+	 width: 100%;
+
+}
 //reserach
 .research-intro{
 	width: 80%;
@@ -1383,6 +1390,135 @@ header p {
 }
 
 
+//news
+.search-box {
+    background-color: $bgcolor;
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.articles-section {
+    padding: 20px;
+}
+
+.article-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.article-item img {
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.date {
+    color: #999;
+    font-size: 14px;
+}
+
+#titleh2 {
+    margin: 10px 0;
+    color: #d9534f;
+	font-family: "Roboto Mono", monospace;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#read-more {
+    background-color: $textcolor;
+    border: none;
+    // padding: 10px 15px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#read-more:hover {
+    background-color: #004444;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.page-item {
+    margin: 0 5px;
+	border:0;
+	text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: $textcolor;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.page-item:hover {
+    background-color: #31b0d5;
+}
+
+.page-item.active {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+
+//events
+.events-section {
+    padding: 20px;
+}
+
+.event-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.event-item .icon {
+    font-size: 48px;
+    color: #d9534f;
+    padding: 20px;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+
+
+
+
+
+
 //Reserach
 .background-about{
 	background-color: orange;
@@ -1840,8 +1976,8 @@ figcaption {
   }
   
   #nav {
-margin-top: -20px;
-width: max-content;
+	margin-top: -20px;
+	width: max-content;
   }
   
   .horizontal-menu {
@@ -1855,21 +1991,22 @@ width: max-content;
   .horizontal-menu li {
 	margin-right: 20px;
 	position: relative; /* For dropdown positioning */
-	background-color: rgba(31, 30, 30, 0.698); 
+	background-color: rgba(31, 30, 30, 0.698);
   }
   
-  #site-main-title{
+  #site-main-title {
 	text-transform: none;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
   }
+  
   .site-title {
 	text-decoration: none;
 	border: 0;
 	cursor: pointer;
 	text-align: left;
-	color: _palette(fg-bold);
+	color: #ffffff;
 	font-family: "Roboto Mono", monospace;
 	font-size: 1.3em;
 	display: block;
@@ -1881,24 +2018,25 @@ width: max-content;
 	border: 0;
 	margin-left: 5px;
   }
+  .site-sym {
+	text-decoration: none;
+	border: 0;
+	margin-left: 5px;
+  }
+  
   
   .horizontal-menu li a {
 	text-decoration: none;
 	color: #FFF;
 	text-transform: uppercase;
-	font-family: _font(family);
-
+	font-family: "Roboto Mono", monospace;
 	transition: color 0.3s ease;
 	border: 0;
 	display: block;
 	font-size: 0.8em;
-	letter-spacing: _size(letter-spacing-alt);
+	letter-spacing: 0.1em;
 	padding-left: 0.2em;
   }
-  
-//   .horizontal-menu li a:hover {
-// 	color: #f0a500; /* A distinct hover color */
-//   }
   
   .logo-title-container {
 	display: flex;
@@ -1919,11 +2057,10 @@ width: max-content;
 	z-index: 1;
 	border-radius: 5px; /* Rounded corners for a smoother look */
 	margin-top: 10px; /* Slight offset from the parent menu */
-
   }
-
-  .dropdown{
-	padding: 10px ;
+  
+  .dropdown {
+	padding: 10px;
 	width: auto;
   }
   
@@ -1936,7 +2073,7 @@ width: max-content;
   }
   
   .dropdown-content a:hover {
-	background-color:  #1f8696;
+	background-color: #1f8696;
   }
   
   .dropdown:hover .dropdown-content {
@@ -1944,28 +2081,55 @@ width: max-content;
   }
   
   .horizontal-menu li:hover {
-	background-color:  #17877a;
-	
+	background-color: #17877a;
   }
-//   .dropdown:hover .dropbtn {
-// 	color: #17877a;
-//   }
   
-  /* Search Bar Styles */
-  .horizontal-menu li input[type="text"] {
+  /* Menu toggle button */
+  #menu-toggle {
+	display: none;
+	color: white;
 	border: none;
-	padding: 5px;
-	font-size: 1em;
-	border-radius: 5px;
+	// padding: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	position: fixed; /* Fixed position */
+	top: 10px; /* Adjust as needed */
+	right: 10px; /* Adjust as needed */
+	z-index: 1000; 
   }
-  
-  .horizontal-menu li input[type="text"]:focus {
-	outline: none;
-	box-shadow: 0 0 5px rgba(240, 165, 0, 0.8); /* Matching the hover color */
-  }
-  
+
   /* Responsive Navbar */
   @media (max-width: 768px) {
+	#menu-toggle {
+		display: block;
+	  }
+	.site-logo{
+		display: none;
+	}
+	.site-sym{
+		display: none;
+	}
+	#site-main-title {
+		margin-top: 20px;
+		text-transform: none;
+		justify-content: center;
+		text-align: left;
+		align-items: center;
+	  }
+	  
+	.nav-content{
+		display: none;
+		height: 100vh;
+		overflow-y: auto; /* Enable vertical scrolling */
+		position: fixed;
+		top: 0;
+		right: 2%;
+		width: 30%; /* Initially position off-screen */
+		background-color: rgba(0, 0, 0, 0.914); /* Same background color as your navbar */
+/* Adjust as needed */
+		transition: right 0.3s ease; /* Add smooth transition */
+	}
+
 	.horizontal-menu {
 	  flex-direction: column;
 	  padding: 0;
@@ -1973,6 +2137,49 @@ width: max-content;
   
 	.horizontal-menu li {
 	  margin: 10px 0;
+	}
+  
+	.container {
+	  margin-right: 0;
+	}
+  
+	.col-md-3, .col-md-7, .col-md-2 {
+	  flex: 0 0 100%;
+	  max-width: 90%;
+	  text-align: left;
+	}
+	.logo-title-container{
+		display: none;
+	}
+  
+	.site-title {
+	  font-size: 0.85em;
+	//   margin-left: -20px;
+	//   margin-top: 25px;
+	}
+  
+	.horizontal-menu li a {
+	  font-size: 1em;
+	  padding: 10px;
+	}
+  
+	.dropdown-content {
+	  position: static;
+	  box-shadow: none;
+	  margin-top: 0;
+	}
+  
+	.dropdown-content a {
+	  padding: 10px;
+	}
+  
+	.logo-title-container {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.logo-title-container img {
+	  margin: 0 0 10px 0;
 	}
   }
 
@@ -3273,7 +3480,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			
 
 			@include breakpoint(large) {
-				width: 90%;
+				width: 100%;
 			}
 
 			@include breakpoint(medium) {
@@ -3553,7 +3760,7 @@ $baseurl: '{{ site.baseurl }}/images';
     transition: background-image 1s ease-in-out;
     border: 5px solid white; /* Optional border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    z-index: 0;
+    z-index: -1;
 }
 
 .parent-marquee{
@@ -4027,7 +4234,7 @@ body.is-loading {
 	body.is-mobile {
 		#main {
 			> header {
-				background-attachment: scroll;
+				background-attachment: fixed;
 			}
 		}
 	}

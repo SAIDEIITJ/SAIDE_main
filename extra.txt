@@ -187,3 +187,220 @@ about
 					  </div>
 				</div>
 			</div>
+
+
+
+.container {
+	width: 100%;
+	margin-right: 9%;
+  }
+  
+  #nav {
+	margin-top: -20px;
+	width: max-content;
+  }
+  
+  .horizontal-menu {
+	display: flex;
+	list-style: none;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.698); /* Marble black with transparency */
+	border-radius: 5px; /* Rounded corners for a smoother look */
+  }
+  
+  .horizontal-menu li {
+	margin-right: 20px;
+	position: relative; /* For dropdown positioning */
+	background-color: rgba(31, 30, 30, 0.698);
+  }
+  
+  #site-main-title {
+	text-transform: none;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+  }
+  
+  .site-title {
+	text-decoration: none;
+	border: 0;
+	cursor: pointer;
+	text-align: left;
+	color: #ffffff;
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.3em;
+	display: block;
+	line-height: 1.6em;
+  }
+  
+  .site-logo {
+	text-decoration: none;
+	border: 0;
+	margin-left: 5px;
+  }
+  .site-sym {
+	text-decoration: none;
+	border: 0;
+	margin-left: 5px;
+  }
+  
+  
+  .horizontal-menu li a {
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: "Roboto Mono", monospace;
+	transition: color 0.3s ease;
+	border: 0;
+	display: block;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	padding-left: 0.2em;
+  }
+  
+  .logo-title-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .logo-title-container img {
+	margin-right: 10px; /* Adjust this to control the space between the image and the title */
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #1ea8989e; /* Matching the navbar color */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 5px; /* Rounded corners for a smoother look */
+	margin-top: 10px; /* Slight offset from the parent menu */
+  }
+  
+  .dropdown {
+	padding: 10px;
+	width: auto;
+  }
+  
+  .dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-transform: none;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #1f8696;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  .horizontal-menu li:hover {
+	background-color: #17877a;
+  }
+  
+  /* Menu toggle button */
+  #menu-toggle {
+	display: block;
+	color: white;
+	border: none;
+	// padding: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	position: fixed; /* Fixed position */
+	top: 10px; /* Adjust as needed */
+	right: 10px; /* Adjust as needed */
+	z-index: 1000; 
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+	#menu-toggle {
+		display: block;
+	  }
+	.site-logo{
+		display: none;
+	}
+	.site-sym{
+		display: none;
+	}
+	
+	  #site-main-title {
+		text-transform: none;
+		justify-content: center;
+		text-align: left;
+		align-items: center;
+	  }
+	  
+	.nav-content{
+		display: none;
+		height: 100vh;
+		overflow-y: auto; /* Enable vertical scrolling */
+		position: fixed;
+		top: 0;
+		right: 2%;
+		width: 30%; /* Initially position off-screen */
+		background-color: rgba(0, 0, 0, 0.914); /* Same background color as your navbar */
+/* Adjust as needed */
+		transition: right 0.3s ease; /* Add smooth transition */
+
+	}
+	.horizontal-menu {
+	  flex-direction: column;
+	  padding: 0;
+	}
+  
+	.horizontal-menu li {
+	  margin: 10px 0;
+	}
+  
+	.container {
+	  margin-right: 0;
+	}
+  
+	.col-md-3, .col-md-7, .col-md-2 {
+	  flex: 0 0 100%;
+	  max-width: 90%;
+	  text-align: center;
+	}
+	.logo-title-container{
+		display: none;
+	}
+  
+	.site-title {
+	  font-size: 0.85em;
+	//   margin-left: -20px;
+	//   margin-top: 25px;
+	}
+  
+	.horizontal-menu li a {
+	  font-size: 1em;
+	  padding: 10px;
+	}
+  
+	.dropdown-content {
+	  position: static;
+	  box-shadow: none;
+	  margin-top: 0;
+	}
+  
+	.dropdown-content a {
+	  padding: 10px;
+	}
+  
+	.logo-title-container {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.logo-title-container img {
+	  margin: 0 0 10px 0;
+	}
+  
+  }
+
