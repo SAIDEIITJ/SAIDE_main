@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Themes</title>
+  <meta name="description" content="School of Artificial Intelligence and Data Science
+">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="http://localhost:4000/aide_main/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/aide_main/theme.html">
+<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/aide_main/images/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/c0ac67ef4b.js" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" title="IIT Jodhpur SAIDE" href="http://localhost:4000/aide_main/feed.xml">
+
+</head>
+
+
+  <body>
+
+    <div id="page-wrapper" style="margin-top: -52px;	 overflow-x:hidden;
+    width: 100%;">
+      <header>
+  <div class="container">
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+      <div class="col-md-3">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
+          <div class="logo-title-container">
+            <a href="/aide_main/index.html" class="site-logo">
+              <img src="images/iitjc.png" alt="Logo" width="105" height="100">
+            </a>
+            <a href="/aide_main/index.html" class="site-title"><h1>IIT Jodhpur SAIDE</h1></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7" style="font-size: 1.5rem; text-transform: none; justify-content: center; text-align: center;">
+        <a href="/aide_main/index.html" class="site-title">
+          <h1 id="site-main-title">School of Artificial Intelligence and Data Science
+</h1>
+        </a>
+    
+      </div>
+      <div class="col-md-2" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <a href="/aide_main/index.html" class="site-sym">
+          <img src="images/logo.png" alt="Logo" width="210" height="180">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-sm-4"></div>
+      <div class="col-md-7 col-sm-8" >
+        <nav id="nav">
+
+          <div class="nav-content" id="nav-content">
+            <ul class="horizontal-menu">
+              <li class="dropdown">
+                <a href="index.html" class="dropbtn">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="reserach.html" class="dropbtn">Research</a>
+                <div class="dropdown-content">
+                  <a href="theme.html">Theme</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="faculity.html">Researchers</a>
+                  <a href="papers.html">Publications</a>
+                  <a href="labs.html">Facilities</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="latest.html" class="dropbtn">Latest</a>
+                <div class="dropdown-content">
+                  <a href="latest.html">News</a>
+                  <a href="#">Events</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="faculity.html" class="dropbtn">Faculity</a>
+                <div class="dropdown-content">
+                  <a href="faculity.html">Researchers</a>
+                  <a href="staff.html">Staff</a>
+                  <a href="boards.html">Governance</a>
+                  <a href="directory.html">Directory</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="learn.html" class="dropbtn">Adacamics</a>
+                <div class="dropdown-content">
+                  <a href="programs.html">Programs</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="#">Sub 1</a>
+                  <a href="#">Sub 2</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="about.html" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                  <a href="engage.html">Engage</a>
+                  <a href="faq.html">FAQs</a>
+                  <a href="campus.html">Campus</a>
+                  <a href="jobs.html">Jobs</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navContent = document.getElementById("nav-content");
+
+    menuToggle.addEventListener("click", function () {
+      if (navContent.style.display === "block") {
+        navContent.style.display = "none";
+      } else {
+        navContent.style.display = "block";
+      }
+    });
+  });
+</script>
+
+      <div class="background-about"></div>
+<article id="main">
+  <div class="topcontent" >
+    <header style="height: 100px;">
+      <p>HOME / RESEARCH</p>
+      <h2>Research Themes</h2>
+      <p style="z-index: -1;">Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget eui.</p>
+
+    </header>
+    <div class="button-bar">
+      <a href="reserach.html" class="tab-button" data-color="orange">Research</a>
+      <a href="theme.html" class="tab-button" data-color="green">Themes</a>
+      <a href="projects.html" class="tab-button" data-color="blue">Projects</a>
+      <a href="faculity.html" class="tab-button" data-color="orange">Researchers</a>
+      <a href="papers.html" class="tab-button" data-color="purple">Publications</a>
+      <a href="labs.html" class="tab-button" data-color="red">Facilities</a>
+    </div>
+  </div>
+
+  <section class="wrapper style5">
+    <div class="inner">
+      <br>
+<section class="theme-section">
+
+  <div class="theme-container">
+    <div class="theme">
+      <img src="images/eg1.jpg" alt="Education">
+      <div class="theme-content">
+        <a href=""><h3 id="h3title">
+          Signal Processing & Interpretation</h3></a>
+        <!-- <p>Our schools and online courses bring complees to professionals.</p> -->
+        <div class="hidden">
+          <div class="row">
+            <div class="col-md-8" style="text-align: left; font-size: 0.65em;">
+              <p>Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
+                Visual Computing (Computer Vision, Visual Forensics, Machine Learning) <br>
+                Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
+            </div>
+            <div class="col-md-4" id="circular-img">
+              <img src="images/eg1.jpg" alt="">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated Laboratories
+              </h3>
+              <ul id="bullets">
+                <li>Signal Processing Lab</li>
+                <li>Image Processing & Computer Vision Lab</li>
+                <li>Multimodal Interaction Lab</li>
+              </ul>
+            </div>
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated faculity members
+              </h3>
+              <ul id="bullets">
+                <li>Amit Bhardwaj  </li>
+                  <li>Anil Kumar Tiwari  </li>
+                  <li>Himanshu Kumar   </li>           
+                  <li>Manish Narwaria   </li>          
+                  <li>Rajendra Nagar   </li>           
+                  <li>Rajlaxmi Chouhan   </li>         
+                  <li>Sandeep Kumar Yadav</li>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme">
+      <img src="images/eg2.jpg" alt="Society Memberships">
+      <div class="theme-content">
+        <a href=""><h3 id="h3title">Critical-Physical Systems</h3></a>
+        <!-- <p>As a member ofcess, special programmir conversation about the next scientific advances.</p> -->
+        <div class="hidden">
+          <div class="row">
+            <div class="col-md-8" style="text-align: left; font-size: 0.65em;">
+              <p>Multi-agent system <br>
+                Mechatronics & cyber-physical systems <br>
+                Robust & optimal control <br>
+                Adaptive control & robotics <br>
+                Electric vehicles</p>
+            </div>
+            <div class="col-md-4" id="circular-img">
+              <img src="images/eg2.jpg" alt="" height="150" width="150">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated Laboratories
+              </h3>
+              <ul id="bullets">
+                <li>Cyber-Physical Systems (CPS) Modeling Lab</li>
+                <li>Microgrid & Real-time Simulator Lab</li>
+                <li>Control & Computing Lab</li>
+              </ul>
+            </div>
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated faculity members
+              </h3>
+              <ul id="bullets">
+                <li>Abdul Gafoor Shaik </li> 
+
+                <li> Anoop Jain </li> 
+                  
+                 <li>Deepak Fulwani</li> 
+                  
+                 <li>Niladri Sekhar Tripathy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme">
+      <img src ="images/eg3.jpg" alt="Society Memberships">
+      <div class="theme-content">
+        <a href=""><h3 id="h3title">Nanoelectronics & Integrated Circuits</h3></a>
+        <!-- <p>As a membming, and the ur about the next sci chance to be a part of o entific advances.</p> -->
+        <div class="hidden">
+          <div class="row">
+            <div class="col-md-8" style="text-align: left; font-size: 0.65em;">
+              <p>Multi-agent system
+                Oxide metal semiconductors by sputtering for sensor applications <br>
+                2D materials: MoS2, AlGaN/GaN HEMTs <br>
+                Bandgap engineering and surface studies of semiconductors <br>
+                Micro and Nano device fabrications <br>
+                Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors <br>
+                Electrical characterization, Parameter extraction, Interface characterization <br>
+                Analog and mixed-signal circuits </p>
+            </div>
+            <div class="col-md-4" id="circular-img">
+              <img src="images/eg3.jpg" alt="" height="150" width="150">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated Laboratories
+              </h3>
+              <ul id="bullets">
+                <li>Microelectronics Lab</li>
+                <li>Electronic Circuit Simulation & VLSI Systems Lab</li>
+                <li>Special Manpower Development Program Lab</li>
+                <li>Flexible Large Area Microelectronics Research Lab</li>
+              </ul>
+            </div>
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated faculity members
+              </h3>
+              <ul id="bullets">
+                <li>Ajay Agarwal</li> 
+
+                 <li>  Amandeep Kaur</li> 
+                  
+                  <li> Bhupendra Singh Reniwal</li> 
+                  
+                 <li> Harshit Agarwal</li> 
+                  
+                 <li> Jai Narayan Tripathi</li> 
+                  
+                  <li>Kamaljit Rangraa</li> 
+                  
+                 <li>Mahesh Kumar</li> 
+                  
+                  <li>Saakshi Dhanekar</li> 
+                  
+                 <li> Shree Prakash Tiwari</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme">
+      <img src="images/eg4.jpg" alt="Society Memberships">
+      <div class="theme-content">
+        <a href=""><h3 id="h3title">Smart Grid</h3></a>
+        <!-- <p>As a member ffered ence to be about the next sckljew wldk dsljd wejdd ientific advances.</p> -->
+        <div class="hidden">
+          <div class="row">
+            <div class="col-md-8" style="text-align: left; font-size: 0.65em;">
+              <p>Control of micro-grid & uncertain system <br>
+                Demand-side management <br>
+                Microgrid Control and dynamics of distributed generation <br>
+                Condition monitoring </p>
+            </div>
+            <div class="col-md-4" id="circular-img">
+              <img src="images/eg4.jpg" alt="" height="150" width="150">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated Laboratories
+              </h3>
+              <ul id="bullets">
+                <li>Smart Grid Lab</li>
+              </ul>
+            </div>
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated faculity members
+              </h3>
+              <ul id="bullets">
+                <li>Abdul Gafoor Shaik </li> 
+
+                 <li>Deepak Fulwani</li> 
+                  
+                 <li> Nishant Kumar</li> 
+                  
+                 <li> Ravi Yadav</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme">
+      <img src="images/time.jpg" alt="Society Memberships">
+      <div class="theme-content">
+        <a href=""><h3 id="h3title">
+          Embedded Computing & SoC</h3></a>
+        <!-- <p>Hsi aoisch asjbcn alsjc caslc coasc aslcnasc cljashc.</p> -->
+       
+        <div class="hidden">
+          <div class="row">
+            <div class="col-md-8" style="text-align: left; font-size: 0.65em;">
+              <p>High-speed VLSI Systems and EDA tools <br>
+                Signal Integrity <br>
+                Neuromorphic Computing</p>
+            </div>
+            <div class="col-md-4" id="circular-img">
+              <img src="images/time.jpg" alt="" height="150" width="150">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated Laboratories
+              </h3>
+              <ul id="bullets">
+                <li>Electronic Circuit Simulation % VLSI Systems Lab</li>
+                <li>Special Manpower Development Program Lab</li>
+              </ul>
+            </div>
+            <div class="col-md-6" >
+              <h3 id ="hidden-title">
+                Associated faculity members
+              </h3>
+              <ul id="bullets">
+                <li>Amandeep Kaur   </li> 
+
+                <li>Arpit Khandelwal </li> 
+                  
+                <li>  Deepak Fulwani</li> 
+                  
+                 <li>Jai Narayan Tripathi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <div class="theme">
+  <img src="images/eg1.jpg" alt="Education">
+  <div class="theme-content">
+    <a href=""><h3 id="h3title">
+        Artificial Intelligence of Things (AIoT)</h3></a>
+    <!-- <p>Our schools and online courses bring complees to professionals.</p> -->
+    <div class="hidden">
+      <div class="row">
+        <div class="col-md-8" style="text-align: left; font-size: 0.65em;" >
+          <p>Communication protocols for RF energy harvesting-based systems
+            Chipless RFID <br>
+            Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) <br>
+            Visual Computing (Computer Vision, Visual Forensics, Machine Learning)  </p>
+        </div>
+        <div class="col-md-4" id="circular-img">
+          <img src="images/eg1.jpg" alt="" height="150" width="150">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6" >
+          <h3 id ="hidden-title">
+            Associated Laboratories
+          </h3>
+          <ul id="bullets">
+            <li>Internet of Things Lab</li>
+            <li>Wireless & Microwave Lab</li>
+            <li>Microelectronics Lab</li>
+            <li>Electronic Circuit Simulation & VLSI Systems Lab</li>
+            <li>Special Manpower Development Program Lab</li>
+            <li>Flexible Large Area Mircoelectronics Research</li>
+          </ul>
+        </div>
+        <div class="col-md-6" >
+          <h3 id ="hidden-title">
+            Associated faculity members
+          </h3>
+          <ul id="bullets">
+            <li>Aashish Mathur</li>
+
+             <li>Ajay Agarwal</li>
+              
+            <li>  Amandeep Kaur</li>
+              
+             <li> Amit Bhardwaj</li>
+    
+              <li>Anil Kumar Tiwari</li>
+    
+              <li>Arpit Khandelwal</li>
+    
+              <li>Arun Kumar Singh</li>
+    
+              <li>Debasis Das (CSE)</li>
+    
+              <li>Himanshu Kumar</li>
+    
+              <li>Jai Narayan Tripathi</li>
+    
+             <li> Kamaljit Rangra</li>
+              
+             <li> Mahesh Kumar</li>
+    
+              <li>Nitin Bhatia</li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+ 
+  
+</section>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2 id="popup-title">Research Themes</h2>
+    <!-- <p id="popup-content"></p> -->
+    <div id ="popup-div"></div>
+  </div>
+</div>
+
+<script>
+  const themes = document.querySelectorAll('.theme');
+
+// Get popup elements
+const popup = document.getElementById('popup');
+const popupTitle = document.getElementById('popup-title');
+const popupContent = document.getElementById('popup-content');
+const popupDiv = document.getElementById('popup-div');
+
+// Function to open popup
+function openPopup(title, content, hiddenContent) {
+    // popupTitle.textContent = title;
+    // popupContent.textContent = content;
+    popupDiv.innerHTML = hiddenContent.innerHTML;
+    popup.style.display = 'block';
+}
+
+// Function to close popup
+function closePopup() {
+    popup.style.display = 'none';
+}
+
+// Attach click event listener to each theme
+themes.forEach(theme => {
+    theme.addEventListener('click', () => {
+        const title = theme.querySelector('#h3title').textContent;
+        const content = theme.querySelector('p').textContent;
+        const hiddenContent = theme.querySelector('.hidden');
+        openPopup(title, content, hiddenContent);
+    });
+});
+
+// Attach click event listener to close button
+document.querySelector('.close').addEventListener('click', closePopup);
+
+// Close popup when clicking outside of it
+window.addEventListener('click', (event) => {
+    if (event.target === popup) {
+        closePopup();
+    }
+});
+</script>
+    </div>
+  </section>
+</article>
+
+<script>
+  // Retrieve saved color from localStorage before the page loads
+  var savedColor = localStorage.getItem("backgroundColor");
+  if (savedColor) {
+    document.documentElement.style.setProperty('--initial-background-color', savedColor);
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var targetDiv = document.getElementById("backgroundAbout");
+    if (savedColor && targetDiv) {
+      targetDiv.style.backgroundColor = savedColor;
+    }
+
+    var links = document.querySelectorAll(".tab-button");
+    links.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        var color = link.getAttribute("data-color");
+        if (targetDiv) {
+          targetDiv.style.backgroundColor = color;
+        }
+        // Save selected color to localStorage
+        localStorage.setItem("backgroundColor", color);
+      });
+    });
+  });
+</script>
+<style>
+  .background-about {
+        background-image: url("images/sk7.jpg");
+    background-color: var(--initial-background-color, orange);
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
+      
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="footer-title">School of Artificial Intelligence & Data Science</h1>
+        </div>
+    </div>
+    <br>
+      <div class="row">
+          <!-- Social Icons Section -->
+    
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-user-plus fa-2x" style="color: rgb(175, 32, 32);"></i> Follow Us</h3>
+              <ul class="list-unstyled list-inline social-icons">
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-facebook fa-lg" style="color: #1a548b;" ></i>                
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-twitter fa-lg" style="color: #74C0FC;"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl"  style="border: 0;">
+                              <i class="fa-brands fa-linkedin fa-lg" style="color: #2d85d7;"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
+              <p>
+              Indian Institute of Technology Jodhpur
+
+              NH 62 Nagaur Road, Karwar 342030
+              
+              Jodhpur District</p>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
+              <p>Phone: 123-456-7890<br>
+              Email: info@example.com</p>
+          </div>
+        </ul>
+      </div>
+  </div>
+
+
+  <!-- Copyright Information Section -->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+  
+              <ul class="copyright">
+                  <li>&copy; 
+                      
+                      2024
+                      IIT Jodhpur SAIDE</li>
+                  <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+                  <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/aide_main/js/jquery.min.js"></script>
+<script src="/aide_main/js/jquery.scrollex.min.js"></script>
+<script src="/aide_main/js/jquery.scrolly.min.js"></script>
+<script src="/aide_main/js/skel.min.js"></script>
+<script src="/aide_main/js/util.js"></script>
+<!--[if lte IE 8]><script src="/aide_main/js/ie/respond.min.js"></script><![endif]-->
+<script src="/aide_main/js/main.js"></script>
+
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://localhost:4000/aide_main/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

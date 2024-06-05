@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jobs</title>
+  <meta name="description" content="School of Artificial Intelligence and Data Science
+">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="http://localhost:4000/aide_main/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/aide_main/jobs.html">
+<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/aide_main/images/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/c0ac67ef4b.js" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" title="IIT Jodhpur SAIDE" href="http://localhost:4000/aide_main/feed.xml">
+
+</head>
+
+
+  <body>
+
+    <div id="page-wrapper" style="margin-top: -52px;	 overflow-x:hidden;
+    width: 100%;">
+      <header>
+  <div class="container">
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+      <div class="col-md-3">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
+          <div class="logo-title-container">
+            <a href="/aide_main/index.html" class="site-logo">
+              <img src="images/iitjc.png" alt="Logo" width="105" height="100">
+            </a>
+            <a href="/aide_main/index.html" class="site-title"><h1>IIT Jodhpur SAIDE</h1></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7" style="font-size: 1.5rem; text-transform: none; justify-content: center; text-align: center;">
+        <a href="/aide_main/index.html" class="site-title">
+          <h1 id="site-main-title">School of Artificial Intelligence and Data Science
+</h1>
+        </a>
+    
+      </div>
+      <div class="col-md-2" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <a href="/aide_main/index.html" class="site-sym">
+          <img src="images/logo.png" alt="Logo" width="210" height="180">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-sm-4"></div>
+      <div class="col-md-7 col-sm-8" >
+        <nav id="nav">
+
+          <div class="nav-content" id="nav-content">
+            <ul class="horizontal-menu">
+              <li class="dropdown">
+                <a href="index.html" class="dropbtn">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="reserach.html" class="dropbtn">Research</a>
+                <div class="dropdown-content">
+                  <a href="theme.html">Theme</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="faculity.html">Researchers</a>
+                  <a href="papers.html">Publications</a>
+                  <a href="labs.html">Facilities</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="latest.html" class="dropbtn">Latest</a>
+                <div class="dropdown-content">
+                  <a href="latest.html">News</a>
+                  <a href="#">Events</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="faculity.html" class="dropbtn">Faculity</a>
+                <div class="dropdown-content">
+                  <a href="faculity.html">Researchers</a>
+                  <a href="staff.html">Staff</a>
+                  <a href="boards.html">Governance</a>
+                  <a href="directory.html">Directory</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="learn.html" class="dropbtn">Adacamics</a>
+                <div class="dropdown-content">
+                  <a href="programs.html">Programs</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="#">Sub 1</a>
+                  <a href="#">Sub 2</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="about.html" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                  <a href="engage.html">Engage</a>
+                  <a href="faq.html">FAQs</a>
+                  <a href="campus.html">Campus</a>
+                  <a href="jobs.html">Jobs</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navContent = document.getElementById("nav-content");
+
+    menuToggle.addEventListener("click", function () {
+      if (navContent.style.display === "block") {
+        navContent.style.display = "none";
+      } else {
+        navContent.style.display = "block";
+      }
+    });
+  });
+</script>
+
+      <div class="background-about"></div>
+<article id="main">
+  <div class="topcontent">
+    <header style="height: 100px;">
+      <p>HOME / ABOUT</p>
+      <h2>Jobs</h2>
+      <p style="z-index: -1;">Interdum adipiscing gravida lacinia ante nunc ac lobortravida odio porttitor sem non mi .</p>
+
+    </header>
+    <div class="button-bar">
+      <a href="about.html" class="tab-button" data-color="orange">About</a>
+      <a href="engage.html" class="tab-button" data-color="green">Engage</a>
+      <a href="faq.html" class="tab-button" data-color="yellow">FAQ</a>
+      <a href="campus.html" class="tab-button" data-color="purple">Campus</a>
+      <a href="jobs.html" class="tab-button" data-color="blue">Jobs</a>
+      <a href="contact.html" class="tab-button" data-color="violet">Contact</a>
+    </div>
+  </div>
+
+  <section class="wrapper style5" style="z-index: -1;">
+    <div class="inner">
+      <div class="jobbox">
+    <header>
+        <p>
+            Thank you for your interest in the SAIDE. We post announcements to this employment web page only when we have an opening. Please peruse our web site, especially the staff page, for an idea of our size and the range of positions employed. For other questions, please send e-mail to <a href="mailto:employ@xxy.edu" style="color: #ab4a41;;">employ@santafe.edu</a>.
+        </p>
+        <p>
+            Scing gravida lacinia ante nunc ac lobortravida odio po are required scing gravida lacinia ante nunc ac lobortravida odio poent. Any offer of employment will be contingent upon compliance wscing gravida lacinia ante nunc ac lobortravida odio p.
+        </p>
+    </header>
+
+    <main>
+        <div class="job-opening">
+            <h2 id="jobheading">Postition 1</h2>
+            <p>Po are required scing gravida lacinia ante nunc ac lobortravid po are required scing gravida lacinia ante nunc ac lobortravida odio pa odio p.</p>
+            <button onclick="applyHere()" id="apply">Apply Here <i class="fa-solid fa-person-walking-luggage"></i></button>
+        </div>
+
+        <div class="job-opening">
+            <h2 id="jobheading">Position 2</h2>
+            <p>Vida lacinia ante nunc ac lobortravid po are r assist with facilities maintenance, on-site and off-site events, record keeping, and more. If you ht team.</p>
+            <button onclick="applyHere()" id="apply">Apply Here <i class="fa-solid fa-person-walking-luggage"></i></button>
+        </div>
+
+        <div class="job-opening">
+            <h2 id="jobheading">Position 3</h2>
+            <p>Nia ante nunc ac lobortravid po are rlacinia ante nunc ac lobortravid po are rography and photography, wivida lacinia ante nunc ac lobortravid po are rnce, to join our Coeam.</p>
+            <button onclick="applyHere()" id="apply">Apply Here <i class="fa-solid fa-person-walking-luggage"></i></button>
+        </div>
+    </main>
+
+    <div class="contact">
+        <h3 id="contactheading">Contact Us</h3>
+        <p>Follow us for the latest news and information</p>
+        <address>
+           School Of Artificial Intelligence and Data Science<br>
+            <a href="mailto:employ@santafe.edu">employ@xyz.edu</a><br>
+            1-505-984-8800
+        </address>
+    </div>
+</div>
+
+<script>
+    function applyHere() {
+    alert("Redirecting to application form...");
+    // Here you can add the actual redirection code, e.g., window.location.href = 'application_form_url';
+}
+</script>
+
+
+
+    </div>
+  </section>
+</article>
+
+<script>
+  // Retrieve saved color from localStorage before the page loads
+  var savedColor = localStorage.getItem("backgroundColor");
+  if (savedColor) {
+    document.documentElement.style.setProperty('--initial-background-color', savedColor);
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var targetDiv = document.getElementById("backgroundAbout");
+    if (savedColor && targetDiv) {
+      targetDiv.style.backgroundColor = savedColor;
+    }
+
+    var links = document.querySelectorAll(".tab-button");
+    links.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        var color = link.getAttribute("data-color");
+        if (targetDiv) {
+          targetDiv.style.backgroundColor = color;
+        }
+        // Save selected color to localStorage
+        localStorage.setItem("backgroundColor", color);
+      });
+    });
+  });
+</script>
+<style>
+  .background-about {
+        background-image: url("images/sk7.jpg");
+    background-color: var(--initial-background-color, orange);
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
+      
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="footer-title">School of Artificial Intelligence & Data Science</h1>
+        </div>
+    </div>
+    <br>
+      <div class="row">
+          <!-- Social Icons Section -->
+    
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-user-plus fa-2x" style="color: rgb(175, 32, 32);"></i> Follow Us</h3>
+              <ul class="list-unstyled list-inline social-icons">
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-facebook fa-lg" style="color: #1a548b;" ></i>                
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-twitter fa-lg" style="color: #74C0FC;"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="fa-stack fa-xl"  style="border: 0;">
+                              <i class="fa-brands fa-linkedin fa-lg" style="color: #2d85d7;"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
+              <p>
+              Indian Institute of Technology Jodhpur
+
+              NH 62 Nagaur Road, Karwar 342030
+              
+              Jodhpur District</p>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
+              <p>Phone: 123-456-7890<br>
+              Email: info@example.com</p>
+          </div>
+        </ul>
+      </div>
+  </div>
+
+
+  <!-- Copyright Information Section -->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+  
+              <ul class="copyright">
+                  <li>&copy; 
+                      
+                      2024
+                      IIT Jodhpur SAIDE</li>
+                  <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+                  <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/aide_main/js/jquery.min.js"></script>
+<script src="/aide_main/js/jquery.scrollex.min.js"></script>
+<script src="/aide_main/js/jquery.scrolly.min.js"></script>
+<script src="/aide_main/js/skel.min.js"></script>
+<script src="/aide_main/js/util.js"></script>
+<!--[if lte IE 8]><script src="/aide_main/js/ie/respond.min.js"></script><![endif]-->
+<script src="/aide_main/js/main.js"></script>
+
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://localhost:4000/aide_main/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
