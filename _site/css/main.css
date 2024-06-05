@@ -10469,7 +10469,7 @@ body.is-menu-visible #menu {
   left: 0;
   width: 100%;
   height: 75%;
-  background-image: url("/aide_main/images/lamp.jpg");
+  background-image: url("/SAIDE_main/images/lamp.jpg");
   /* Initial background image */
   background-size: cover;
   background-position: center;
@@ -10486,7 +10486,7 @@ body.is-menu-visible #menu {
   transform: translateX(-50%);
   width: 80%;
   height: 70%;
-  background-image: url("/aide_main/images/lamp.jpg");
+  background-image: url("/SAIDE_main/images/lamp.jpg");
   /* Initial background image */
   background-size: cover;
   background-position: center;
@@ -10875,7 +10875,7 @@ body.is-mobile #main > header {
 /* Footer */
 #footer {
   padding: 6em 0 4em 0 ;
-  background-image: url("/aide_main/images/sk7.jpg");
+  background-image: url("/SAIDE_main/images/sk7.jpg");
   /* Initial background image */
   background-size: cover;
   background-position: center;
@@ -10945,10 +10945,10 @@ body.is-mobile.landing #page-wrapper {
   background: none; }
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/aide_main/images/banner.png");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/aide_main/images/banner.png");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/aide_main/images/banner.png");
-  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/aide_main/images/banner.png");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/SAIDE_main/images/banner.png");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/SAIDE_main/images/banner.png");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/SAIDE_main/images/banner.png");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/SAIDE_main/images/banner.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }

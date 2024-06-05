@@ -4,10 +4,10 @@
     <title>IIT Jodhpur SAIDE</title>
     <description>School of Artificial Intelligence and Data Science
 </description>
-    <link>http://localhost:4000/aide_main/</link>
-    <atom:link href="http://localhost:4000/aide_main/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Jun 2024 16:24:08 +0530</pubDate>
-    <lastBuildDate>Wed, 05 Jun 2024 16:24:08 +0530</lastBuildDate>
+    <link>http://localhost:4000/SAIDE_main/</link>
+    <atom:link href="http://localhost:4000/SAIDE_main/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 05 Jun 2024 16:30:11 +0530</pubDate>
+    <lastBuildDate>Wed, 05 Jun 2024 16:30:11 +0530</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
   </channel>
