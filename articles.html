@@ -17,7 +17,9 @@ des:  Odio porttitor sNte n unc adipis cing gravida em non mi non minon mi.
 
 </div>
 
-<script>
+<script type="module">
+
+import { newsData, eventData } from './js/script.js';
     document.getElementById('searchBar').addEventListener('input', function() {
     let filter = this.value.toLowerCase();
     let articleItems = document.querySelectorAll('.article-item');
@@ -33,13 +35,13 @@ des:  Odio porttitor sNte n unc adipis cing gravida em non mi non minon mi.
 });
 
 
-const articles = [
-    // Add at least 20 articles for demonstration purposes
-    { title: "NEWS 1", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/user.jpg" },
-    { title: "NEWS 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
+// const articles = [
+//     // Add at least 20 articles for demonstration purposes
+//     { title: "NEWS 1", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/user.jpg" },
+//     { title: "NEWS 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
     
-    // Add more articles here...
-];
+//     // Add more articles here...
+// ];
 
 const articlesPerPage = 10;
 let currentPage = 1;
@@ -49,7 +51,7 @@ function displayArticles(page) {
     articlesSection.innerHTML = '';
     const start = (page - 1) * articlesPerPage;
     const end = start + articlesPerPage;
-    const paginatedArticles = articles.slice(start, end);
+    const paginatedArticles = newsData.slice(start, end);
     
     paginatedArticles.forEach(article => {
         const articleItem = document.createElement('div');
@@ -72,7 +74,7 @@ function displayArticles(page) {
 function setupPagination() {
     const pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
-    const pageCount = Math.ceil(articles.length / articlesPerPage);
+    const pageCount = Math.ceil(newsData.length / articlesPerPage);
     
     for (let i = 1; i <= pageCount; i++) {
         const pageItem = document.createElement('a');
