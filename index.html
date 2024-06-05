@@ -257,7 +257,8 @@ layout: landing
 
 							function changeBackground() {
 								currentIndex = (currentIndex + 1) % backgroundImages.length;
-								const randomColor = getRandomColor();
+								// const randomColor = getRandomColor();
+								
 								$('.background').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
 								// $('.background').css('background-color',randomColor);
 
@@ -295,12 +296,12 @@ layout: landing
 							const container = document.getElementById("cardsContainer");
 							const container2 = document.getElementById("cardsContainer2");
 							container2.innerHTML = `
-								<div class="cards" id="news-card-1"><h1>News Title 7</h1></div>
-								<div class="cards" id="news-card-2"><h1>News Title 8</h1></div>
-								<div class="cards" id="news-card-3"><h1>News Title 9</h1></div>
-								<div class="cards" id="news-card-4"><h1>News Title 10</h1></div>
-								<div class="cards" id="news-card-5"><h1>News Title 11</h1></div>
-								<div class="cards" id="news-card-6"><h1>News Title 12</h1></div>
+								<div class="cards" id="news-card-7"><h1>News Title 7</h1></div>
+								<div class="cards" id="news-card-8"><h1>News Title 8</h1></div>
+								<div class="cards" id="news-card-9"><h1>News Title 9</h1></div>
+								<div class="cards" id="news-card-10"><h1>News Title 10</h1></div>
+								<div class="cards" id="news-card-11><h1>News Title 11</h1></div>
+								<div class="cards" id="news-card-12"><h1>News Title 12</h1></div>
 							`;
 							container.innerHTML = `
 

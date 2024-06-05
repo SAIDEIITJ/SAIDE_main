@@ -404,3 +404,78 @@ about
   
   }
 
+ <div class="theme">
+    <img src="images/eg1.jpg" alt="Education">
+    <div class="theme-content">
+      <a href=""><h3 id="h3title">
+          Artificial Intelligence of Things (AIoT)</h3></a>
+      <p>Our schools and online courses bring complees to professionals.</p>
+      <div class="hidden">
+        <div class="row">
+          <div class="col-md-12" style="text-align: left; font-size: 0.8em;" >
+            <p>Communication protocols for RF energy harvesting-based systems
+              Chipless RFID <br>
+              Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) <br>
+              Visual Computing (Computer Vision, Visual Forensics, Machine Learning)  </p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6" >
+            <h3 id ="hidden-title">
+              Associated Laboratories
+            </h3>
+            <ul id="bullets">
+              <li>Internet of Things Lab</li>
+              <li>Wireless & Microwave Lab</li>
+              <li>Microelectronics Lab</li>
+              <li>Electronic Circuit Simulation & VLSI Systems Lab</li>
+              <li>Special Manpower Development Program Lab</li>
+              <li>Flexible Large Area Mircoelectronics Research</li>
+            </ul>
+          </div>
+          <div class="col-md-6" >
+            <h3 id ="hidden-title">
+              Associated faculity members
+            </h3>
+            <ul id="bullets">
+              <li>Aashish Mathur</li>
+
+               <li>Ajay Agarwal</li>
+                
+              <li>  Amandeep Kaur</li>
+                
+               <li> Amit Bhardwaj</li>
+      
+                <li>Anil Kumar Tiwari</li>
+      
+                <li>Arpit Khandelwal</li>
+      
+                <li>Arun Kumar Singh</li>
+      
+                <li>Debasis Das (CSE)</li>
+      
+                <li>Himanshu Kumar</li>
+      
+                <li>Jai Narayan Tripathi</li>
+      
+               <li> Kamaljit Rangra</li>
+                
+               <li> Mahesh Kumar</li>
+      
+                <li>Nitin Bhatia</li>
+      
+                <li>Rajendra Nagar</li>
+      
+                <li>Saakshi Dhanekar</li>
+      
+               <li> Sandeep Kumar Yadav</li>
+      
+               <li> Shree Prakash Tiwari</li>
+                
+                <li>Soumava Mukherjee</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
