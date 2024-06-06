@@ -7618,15 +7618,12 @@ figcaption {
   margin-bottom: 20px; }
 
 .header-row .title {
-  flex: 1;
+  flex: 65%;
   font-family: "Roboto Mono", monospace;
   color: #872525;
   font-size: 40px;
   text-align: left;
   padding-left: 10px; }
-
-.header-row .button-group {
-  margin-left: 70px; }
 
 .header-row .dropdown1, .header-row .view-all {
   margin-left: 40px;
@@ -7769,7 +7766,8 @@ figcaption {
   background-blend-mode: multiply; }
 
 .button-group {
-  margin-left: 20px;
+  margin-left: 80px;
+  flex: 35%;
   display: flex;
   align-items: center;
   position: relative;
@@ -7905,9 +7903,10 @@ figcaption {
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 10px;
   border-radius: 5px;
   /* Rounded corners for a smoother look */
-  margin-top: 10px;
+  left: -1%;
   /* Slight offset from the parent menu */ }
 
 .dropdown {
@@ -7916,7 +7915,7 @@ figcaption {
 
 .dropdown-content a {
   color: white;
-  padding: 12px 16px;
+  padding: 12px 20px;
   text-decoration: none;
   display: block;
   text-transform: none; }
