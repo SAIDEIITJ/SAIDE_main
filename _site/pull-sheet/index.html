@@ -1,0 +1,138 @@
+<!-- ---
+layout: default
+title: Update Spreadsheet
+--- -->
+
+<!--These are JavaScript Libraries-->
+<!-- <script type="text/javascript" src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+
+<script type="text/javascript" src="papaparse.min.js"></script> <!-- https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js -->
+<script type="text/javascript" src="js-yaml.min.js"></script> <!-- https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -->
+<script type="text/javascript" src="github.js"></script>
+
+<h1>Update</h1>
+<script type="text/javascript">
+
+    // dict of all published sheets and corresponding resource names
+    var $resources = {
+        team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS5t61mHuC7lb5Di9KpF_yNZFVZjTtwrgtih3olNjX9ouJqJNTm62COkO8XMq6LPglLnhXsBHaOyq3l/pub?gid=253503174&single=true&output=tsv'
+    }
+
+    var header_maps = {
+        team: {
+            "Acknowledgement": "acknowledgement",
+            "Department / Center / School": "affiliation",
+            "Alumni?": "alumni",
+            "What do you do now?": "alumni_current",
+            "Short bio 1": "bio1",
+            "Short bio 2": "bio2",
+            "Short bio 3": "bio3",
+            "Short bio 4": "bio4",
+            "Display?": "display",
+            "email": "email",
+            "Image": "image",
+            "Name": "name",
+            "Position": "position",
+            "Timestamp": "timestamp",
+            "Year of joining": "year",
+        }
+    }
+
+    // some constants related to gh-pages repository
+    var $org = 'sw509073';
+    var $repo = 'webdesign-test-template';
+    var $branch = 'gh-pages';
+    
+    // this function extracts parameters from the URL to pass on to the javascript
+    function getUrlVar(key){
+        var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+        return result && unescape(result[1]) || "";
+    }
+
+    function getGDriveDlURL(url){
+        // reference: https://github.com/UltiRequiem/drive_link/blob/main/mod.ts
+        const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>.*?)$/;
+        if (regexp.test(url)) {
+            const res = regexp.exec(url);
+            var id = res?.groups?.id;
+            return `https://drive.google.com/thumbnail?id=${id.trim()}&sz=w300`
+        }
+        return url;
+    }
+
+    // extract parameters that need to be passed and should not be saved
+    var $GHToken = getUrlVar('ghtoken');
+
+    // variables that we will need later
+    var $yaml_store = "";
+    // var $resource = "";
+
+    function init() {
+        $.each($resources, function(name, url) {
+            // $resource = name;
+            function cb(results) {
+                showInfo(results, name);
+            }
+
+            function map_header(header, index) {
+                return header_maps[name][header];
+            }
+
+            function map_values(value, header) {
+                if ( header == "image" ) {return getGDriveDlURL(value);}
+                if ( header == "display") {return parseInt(value);}
+                if ( header == "alumni") {return parseInt(value);}
+                if ( header == "highlight") {return parseInt(value);}
+                if ( header == "conference") {return parseInt(value);}
+                return value;
+            }
+
+            Papa.parse(url, {
+                delimiter: "\t",
+                download: true,
+                skipEmptyLines: 'greedy',
+                dynamicTyping: 'true',
+                header: true,
+                transformHeader: map_header,
+                transform: map_values,
+                complete: cb
+            });
+        });
+    };
+
+    window.addEventListener('DOMContentLoaded', init)
+
+    function showInfo(results, $resource) {
+        // var GitHub = require('github-api');
+        console.log($resource);
+        console.log(results.data);
+        console.log(results.errors);
+        console.log(results.meta);
+        var data = results.data
+          
+        // data comes through as a simple array since simpleSheet is turned on
+        alert("Successfully processed " + data.length + " rows for " + $resource + "!")
+         
+        $items = new Array();
+
+        $.each( data, function(i, service) {
+            $p = {};
+            $.each(service, function($key, $value) {
+              $p[$key] = $value;
+            });
+            $items.push($p);
+        });
+
+        console.log($items);
+        
+        $yaml_dump = jsyaml.dump($items);
+        document.getElementById('source').value = $yaml_dump;
+
+        var github = new Github({token: $GHToken, auth: "oauth"});
+        var repo = github.getRepo($org, $repo);
+        $writepath = '_data/' + $resource + '.yaml';
+        
+        repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) { console.log(err); });
+    };
+</script>
+<textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 500px;"></textarea>

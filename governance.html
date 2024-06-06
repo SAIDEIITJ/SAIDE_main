@@ -1,0 +1,48 @@
+---
+layout: abt
+title: Governance
+link: HOME / ABOUT
+des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
+---
+	
+
+<div class="filter-indicators">
+    <div class="filter-indicator" id="" data-filter="">
+        <div class="checkbox"></div>
+        <span>Board Name 1</span>
+    </div>
+    <div class="filter-indicator" id="" data-filter="">
+        <div class="checkbox"></div>
+        <span>Board Name 2</span>
+    </div>
+    <div class="filter-indicator" id="" data-filter="">
+        <div class="checkbox"></div>
+        <span>Board Name 3</span>
+    </div>
+    <div class="filter-indicator" id="category1" data-filter="category1">
+        <div class="checkbox"></div>
+        <span>Board Name 4</span>
+    </div>
+    <div class="filter-indicator" id="category2" data-filter="category2">
+        <div class="checkbox"></div>
+        <span>Board Name 5</span>
+    </div>
+    <div class="filter-indicator" id="category3" data-filter="category3">
+        <div class="checkbox"></div>
+        <span>Board Name 6</span>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+
+<script>
+	document.querySelectorAll('.filter-indicator').forEach(indicator => {
+    indicator.addEventListener('click', () => {
+        indicator.classList.toggle('checked');
+    });
+});
+</script>
+

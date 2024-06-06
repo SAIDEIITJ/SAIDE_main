@@ -10,20 +10,15 @@ des: Ravida odio portt Nte nunc adip iscing git or sem non mi non minon mi.
     <input type="text" id="searchBar" placeholder="Search for an event...">
 </div>
 <section class="events-section" id="eventsSection">
-    <!-- Events will be dynamically added here by JavaScript -->
+    <!-- Events will be dynamically added here by js -->
 </section>
 <div class="pagination" id="pagination">
-    <!-- Page numbers will be dynamically added here by JavaScript -->
+    <!-- Page numbers will be dynamically added here by js -->
 </div>
 
-<script>
-    const events = [
-    // Add at least 20 events for demonstration purposes
-    { title: "Event 1", date: "JUNE 01, 2024", content: "Details of event 1...", icon: "fas fa-calendar-alt" },
-    { title: "Event 2", date: "JUNE 02, 2024", content: "Details of event 2...", icon: "fas fa-calendar-check" },
+<script type="module">
 
-    // Add more events here...
-];
+    import { newsData, eventData } from './js/script.js';
 
 const eventsPerPage = 10;
 let currentPage = 1;
@@ -33,7 +28,7 @@ function displayEvents(page) {
     eventsSection.innerHTML = '';
     const start = (page - 1) * eventsPerPage;
     const end = start + eventsPerPage;
-    const paginatedEvents = events.slice(start, end);
+    const paginatedEvents = eventData.slice(start, end);
     
     paginatedEvents.forEach(event => {
         const eventItem = document.createElement('div');
@@ -56,7 +51,7 @@ function displayEvents(page) {
 function setupPagination() {
     const pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
-    const pageCount = Math.ceil(events.length / eventsPerPage);
+    const pageCount = Math.ceil(eventData.length / eventsPerPage);
     
     for (let i = 1; i <= pageCount; i++) {
         const pageItem = document.createElement('a');
