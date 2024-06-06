@@ -22,8 +22,9 @@ $linkcolor:#ff6f61;
 	 width: 100%;
 
 }
-//reserach
 
+
+//reserach
 .ms-container{
 	padding:5px;
 	background-color: rgb(227, 227, 227);
@@ -35,32 +36,16 @@ $linkcolor:#ff6f61;
 	width: 100%;
 }
 
-
-.topcontent{
-	height: 390px;
-	padding: 90px;
-	margin-top: -51px;
-
-	  
-	  h2 {
-		text-align: left;
-		margin-left: 20px; 
-		font-size: 2em; 
-	  }
-	  
-	  p {
-		text-align: left;
-		margin-left: 20px;
-		width: 500px;
-		color: white;
-		font-family: "Roboto Mono", monospace;
-	  }
+#links{
+	color:$linkcolor;
+	border:0;
+	text-decoration: none;
 }
-
 .topcontent {
     height: 390px;
-    padding: 90px;
-    margin-top: -51px;
+    padding: 40px;
+	margin-top: -50px;
+
 
     h2 {
         text-align: left;
@@ -71,9 +56,10 @@ $linkcolor:#ff6f61;
     p {
         text-align: left;
         margin-left: 20px;
-        width: 500px;
+        width: 800px;
         color: white;
         font-family: "Roboto Mono", monospace;
+		font-size: 0.9em;
     }
 }
 
@@ -934,7 +920,7 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .share h3, .support h3 {
@@ -1377,7 +1363,25 @@ header p {
 }
 
 
-//Education
+//Education & adademics
+.general-section {
+	padding: 20px;
+    text-align: left;
+	width: 100%;
+	// margin-left: 120px;
+	h1{
+		color:$textcolor;
+		font-size: 2rem;
+		font-family: "Roboto Mono", monospace;
+	}
+
+}
+
+.side-news{
+	font-size:0.8em;
+	margin-top: 20px;
+	text-align: left;
+}
 #edusubtitle{
 	color:#17877a;
 	font-size: 1.2rem;
@@ -1851,25 +1855,22 @@ figcaption {
 	font-family: "Roboto Mono", monospace;
 	color:#872525;
 	font-size: 40px;
+	text-align: left;
+	padding-left: 10px;
+}
+.header-row .button-group {
+	margin-left: 70px;
 }
 
+
 .header-row .dropdown1, .header-row .view-all {
-	margin-left: 10px;
+	margin-left: 40px;
 	padding: 10px 15px;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
 }
 
-.header-row .dropdown1 {
-	background-color: #007bff;
-	color: white;
-}
-
-.header-row .view-all {
-	background-color: #28a745;
-	color: white;
-}
 
 .cards-container {
 	display: flex;
@@ -2017,18 +2018,9 @@ figcaption {
 }
 
 
-.dropdown1 {
-    padding: 0px 15px;
-    font-size: 16px;
-	width: 50%;
-    border: none;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    position: relative;
-}
 
 .button-group {
+	margin-left: 20px;
 
 	.dropdown1 {
 		display: flex;
@@ -2046,7 +2038,7 @@ figcaption {
 
 	.view-all {
 		padding:0px 15px;
-		width:30%;
+		width:100%;
 		font-size: 16px;
 		border: none;
 		cursor: pointer;
@@ -2142,7 +2134,8 @@ figcaption {
 	align-items: center;
   }
   
-  .site-title {
+  
+ #site-title {
 	text-decoration: none;
 	border: 0;
 	cursor: pointer;
@@ -2193,7 +2186,7 @@ figcaption {
 	display: none;
 	position: absolute;
 	background-color: #1ea8989e; /* Matching the navbar color */
-	min-width: 160px;
+	min-width: 200px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	border-radius: 5px; /* Rounded corners for a smoother look */
@@ -2292,7 +2285,8 @@ figcaption {
 		display: none;
 	}
   
-	.site-title {
+	
+	#site-title {
 	  font-size: 0.85em;
 	//   margin-left: -20px;
 	//   margin-top: 25px;
