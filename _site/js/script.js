@@ -5,18 +5,18 @@ function getRandomColor() {
 
 $(document).ready(function() {
     const backgroundImages = [
-        'lamp.jpg',
-        'book.jpg',
-        'sk2.jpg',
-        'mission.jpg',
-        'sk6.jpg', // Change to your image paths 
+        'bg.png',
+        'Programs.png',
+        'ar.png',
+        'ms.png',
+        'btech.png', // Change to your image paths 
     ];
 
     let currentIndex = 0;
     function changeBackground() {
         currentIndex = (currentIndex + 1) % backgroundImages.length;
         // const randomColor = getRandomColor();
-        $('.background').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
+        // $('.background').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
         // $('.background').css('background-color',randomColor);
         $('.rectangular-div').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
     }

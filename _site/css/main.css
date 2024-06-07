@@ -7573,7 +7573,7 @@ body {
   background-color: #ECEBE6; }
 
 #one {
-  margin-top: 1200px; }
+  margin-top: 700px; }
 
 .components {
   transition: transform .2s;
@@ -7829,23 +7829,20 @@ figcaption {
   margin-right: 9%; }
 
 #nav {
-  margin-top: -20px;
   width: max-content; }
 
 .horizontal-menu {
   display: flex;
   list-style: none;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.698);
-  /* Marble black with transparency */
   border-radius: 5px;
   /* Rounded corners for a smoother look */ }
 
 .horizontal-menu li {
   margin-right: 20px;
+  color: black;
   position: relative;
-  /* For dropdown positioning */
-  background-color: rgba(31, 30, 30, 0.698); }
+  /* For dropdown positioning */ }
 
 #site-main-title {
   text-transform: none;
@@ -7858,11 +7855,12 @@ figcaption {
   border: 0;
   cursor: pointer;
   text-align: left;
-  color: #ffffff;
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.3em;
+  color: #810f0f;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
   display: block;
-  line-height: 1.6em; }
+  line-height: 1.8em; }
 
 .site-logo {
   text-decoration: none;
@@ -7874,17 +7872,20 @@ figcaption {
   border: 0;
   margin-left: 5px; }
 
-.horizontal-menu li a {
+.horizontal-menu .dropdown .dropbtn {
   text-decoration: none;
-  color: #FFF;
+  color: #000000;
   text-transform: uppercase;
   font-family: "Roboto Mono", monospace;
   transition: color 0.3s ease;
   border: 0;
   display: block;
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing: 0.15em;
   padding-left: 0.2em; }
+
+.horizontal-menu .dropdown .dropbtn:hover {
+  color: white; }
 
 .logo-title-container {
   display: flex;
@@ -7898,16 +7899,16 @@ figcaption {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1ea8989e;
+  background-color: #e413139e;
   /* Matching the navbar color */
-  min-width: 200px;
+  min-width: 250px;
+  text-align: left;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 10px;
   border-radius: 5px;
   /* Rounded corners for a smoother look */
   left: -1%;
-  /* Slight offset from the parent menu */ }
+  margin-top: 10px; }
 
 .dropdown {
   padding: 10px;
@@ -7915,19 +7916,21 @@ figcaption {
 
 .dropdown-content a {
   color: white;
-  padding: 12px 20px;
+  padding: 12px 13px;
   text-decoration: none;
+  border: 0;
   display: block;
   text-transform: none; }
 
 .dropdown-content a:hover {
-  background-color: #1f8696; }
+  background-color: #ff3737; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
 
 .horizontal-menu li:hover {
-  background-color: #17877a; }
+  background-color: #ab0c0c;
+  color: white; }
 
 /* Menu toggle button */
 #menu-toggle {
@@ -10455,36 +10458,32 @@ body.is-menu-visible #menu {
       opacity: 0; }
 
 /* Banner */
+.brown-highlight {
+  background-color: #960b0b;
+  color: white;
+  padding: 10px;
+  text-align: center; }
+
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 75%;
-  background-image: url("/SAIDE_main/images/lamp.jpg");
-  /* Initial background image */
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply;
-  z-index: -1;
-  transition: background-image 1s ease-in-out;
-  filter: blur(3px);
-  /* Apply blur filter */ }
+  z-index: -1; }
 
 .rectangular-div {
   position: absolute;
-  top: 35%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  height: 70%;
-  background-image: url("/SAIDE_main/images/lamp.jpg");
+  width: 95%;
+  height: 80%;
+  background-image: url("/SAIDE_main/images/bg.png");
   /* Initial background image */
   background-size: cover;
   background-position: center;
   transition: background-image 1s ease-in-out;
-  border: 5px solid white;
-  /* Optional border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Optional shadow */
   z-index: -1; }
