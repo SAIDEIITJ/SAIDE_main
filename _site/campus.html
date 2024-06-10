@@ -60,11 +60,11 @@
           <div class="nav-content" id="nav-content">
             <ul class="horizontal-menu">
               <li class="dropdown">
-                <a href="index.html" class="dropbtn">Home</a>
+                <a href="index.html" id="dropbtn">Home</a>
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="dropbtn">Academics</a>
+                <a href="learn.html" id="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html">PhD</a>
                   <a href="ms.html">MS by Research</a>
@@ -73,16 +73,16 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="reserach.html" class="dropbtn">Research</a>
+                <a href="reserach.html" id="dropbtn" class="bg-buttons" data-image="#">Research</a>
                 <div class="dropdown-content">
-                  <a href="theme.html">Theme</a>
-                  <a href="projects.html">Projects</a>
-                  <a href="papers.html">Publications</a>
-                  <a href="labs.html">Facilities & Labs</a>
+                  <a href="theme.html"  class="bg-buttons"  data-image="themes.png">Theme</a>
+                  <a href="projects.html"  class="bg-buttons" data-image="projects.png">Projects</a>
+                  <a href="papers.html"  class="bg-buttons" data-image="pappers.png">Publications</a>
+                  <a href="labs.html"  class="bg-buttons" data-image="#">Facilities & Labs</a>
                 </div>
               </li>
               <li class="dropdown">
-                <a href="coes.html" class="dropbtn">CoEs</a>
+                <a href="coes.html" id="dropbtn">CoEs</a>
                 <div class="dropdown-content">
                   <a href="https://cbsaiitj.wordpress.com/">Brain Science and Applications</a>
                   <a href="https://cmceiitj.wordpress.com/">Mathematical and Computational Economics</a>
@@ -93,7 +93,7 @@
 
              
               <li class="dropdown">
-                <a href="faculity.html" class="dropbtn">People</a>
+                <a href="faculity.html" id="dropbtn">People</a>
                 <div class="dropdown-content">
                   <a href="faculity.html">Researchers</a>
                   <a href="staff.html">Staff</a>
@@ -104,7 +104,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="admissions.html" class="dropbtn">Join-Us</a>
+                <a href="admissions.html" id="dropbtn">Join-Us</a>
                 <div class="dropdown-content">
                   <a href="admissions.html">Admissions</a>
                   <a href="projectsPositions.html">Project Positions</a>
@@ -115,7 +115,7 @@
 
              
               <li class="dropdown">
-                <a href="about.html" class="dropbtn">About</a>
+                <a href="about.html" id="dropbtn">About</a>
                 <div class="dropdown-content">
                   <a href="about.html">Mission & Vision</a>
                   <!-- <a href="engage.html">Engage</a> -->
@@ -145,41 +145,8 @@
   </div>
 </header>
 
-<script>
-  //   function isHomePage() {
-  //   return window.location.pathname === '/SAIDE_main/index.html' || window.location.pathname === '/';
-  // }
-  document.addEventListener("DOMContentLoaded", function () {
-    // console.log(isHomePage());
-    // const tabButtons = document.querySelectorAll('.dropbtn');
-    // console.log(tabButtons);
-    // if (tabButtons.length > 0) {
-    //   // Iterate over each tab-button and add or remove the highlights class
-    //   tabButtons.forEach(function(button) {
-    //     if (!isHomePage()) {
-    //       button.classList.add('highlights');
-    //       console.log("applied");
-    //     } else {
-    //       button.classList.remove('highlights');
-    //     }
-    //   });
-    // }
-
-
-
-
-
-    const menuToggle = document.getElementById("menu-toggle");
-    const navContent = document.getElementById("nav-content");
-
-    menuToggle.addEventListener("click", function () {
-      if (navContent.style.display === "block") {
-        navContent.style.display = "none";
-      } else {
-        navContent.style.display = "block";
-      }
-    });
-  });
+<script src="js/script.js">
+ 
 </script>
 
       <div class="background-about"></div>
@@ -341,8 +308,8 @@
           <!-- Contact Us Section -->
           <div class="col-xs-12 col-md-4">
               <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
-              <p>Phone: 123-456-7890<br>
-              Email: info@example.com</p>
+              <p>Phone: (0291) 2801752;<br>
+              Email: office_saide@iitj.ac.in</p>
           </div>
         </ul>
       </div>

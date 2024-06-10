@@ -1,7 +1,7 @@
 ---
 layout: subdefault
 ---
-<div class="background-about"></div>
+<div class="background-about"  id="backgroundAbout"></div>
 <article id="main">
   <div class="topcontent">
     <header style="height: 148px; margin-top: 50px;">
@@ -11,11 +11,11 @@ layout: subdefault
 
     </header>
     <div class="button-bar">
-      <a href="learn.html" class="tab-button" data-color="steelblue">About</a>
-      <a href="phd.html" class="tab-button" data-color="lightsalmon">PhD</a>
-      <a href="ms.html" class="tab-button" data-color="cornflowerblue">MS by Research</a>
-      <a href="mtech.html" class="tab-button" data-color="orange">MTech</a>
-      <a href="btech.html" class="tab-button" data-color="lightcoral">BTech Minor</a>
+      <a href="learn.html" class="tab-button" data-image="#">About</a>
+      <a href="phd.html" class="tab-button" data-image="phd.png">PhD</a>
+      <a href="ms.html" class="tab-button" data-image="ms1.png">MS by Research</a>
+      <a href="mtech.html" class="tab-button" data-image="#">MTech</a>
+      <a href="btech.html" class="tab-button" data-image="#">BTech Minor</a>
     </div>
   </div>
 
@@ -27,36 +27,27 @@ layout: subdefault
 </article>
 
 <script>
-  // Retrieve saved color from localStorage before the page loads
-  var savedColor = localStorage.getItem("backgroundColor");
-  if (savedColor) {
-    document.documentElement.style.setProperty('--initial-background-color', savedColor);
-  }
+
   
   document.addEventListener("DOMContentLoaded", function() {
-    var targetDiv = document.getElementById("backgroundAbout");
-    if (savedColor && targetDiv) {
-      targetDiv.style.backgroundColor = savedColor;
+    const buttons = document.querySelectorAll('.tab-button');
+    const backgroundAbout = document.getElementById('backgroundAbout');
+
+    // Check if there's a stored image URL
+    const storedImage = localStorage.getItem('selectedImage');
+    if (storedImage) {
+      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
     }
 
-    var links = document.querySelectorAll(".tab-button");
-    links.forEach(function(link) {
-      link.addEventListener("click", function(event) {
-        var color = link.getAttribute("data-color");
-        if (targetDiv) {
-          targetDiv.style.backgroundColor = color;
-        }
-        // Save selected color to localStorage
-        localStorage.setItem("backgroundColor", color);
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        // e.preventDefault();
+        const imageName = this.getAttribute('data-image');
+        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
+
+        // Store the selected image URL
+        localStorage.setItem('selectedImage', imageName);
       });
     });
   });
 </script>
-<style>
-  .background-about {
-        background-image: url("images/bg2.jpg");
-    background-color: var(--initial-background-color, orange);
-    background-size: cover;
-    background-position: center;
-  }
-</style>

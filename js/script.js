@@ -1,25 +1,4 @@
-const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ff8800", "#8800ff", "#0088ff"];
-function getRandomColor() {
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-// function isHomePage() {
-//     return window.location.pathname === '/SAIDE_main/index.html' || window.location.pathname === '/';
-//   }
 
-//   // Wait for the DOM content to be fully loaded
-//   document.addEventListener('DOMContentLoaded', function() {
-//     console.log('Current page:', window.location.pathname);
-//     console.log('Is home page:', isHomePage());
-
-//     // Check if the current page is the home page
-//     if (isHomePage()) {
-//       console.log('Adding class for navbar without background color');
-//       document.querySelector('.navbar-container').classList.add('navbar-no-bg');
-//     } else {
-//       console.log('Adding class for navbar with background color');
-//       document.querySelector('.navbar-container').classList.add('navbar-bg');
-//     }
-//   });
 $(document).ready(function() {
     const backgroundImages = [
         'bg.png',
@@ -126,7 +105,7 @@ function showEvents() {
 function applyBackgroundImages(isEvent = false) {
     const cards1 = document.querySelectorAll(".card");
     // console.log(cards1);
-    const cards2 = document.querySelectorAll(".cards");
+    // const cards2 = document.querySelectorAll(".cards");
     const temp = isEvent; 
     // console.log(temp);
     const images2 = temp ? [
@@ -177,6 +156,38 @@ function applyBackgroundImages(isEvent = false) {
     
 
 document.addEventListener("DOMContentLoaded", () => {
+    
+    
+    const menuToggle = document.getElementById("menu-toggle");
+    const navContent = document.getElementById("nav-content");
+
+    menuToggle.addEventListener("click", function () {
+      if (navContent.style.display === "block") {
+        navContent.style.display = "none";
+      } else {
+        navContent.style.display = "block";
+      }
+    });
+
+    const buttons = document.querySelectorAll('.bg-buttons');
+    const backgroundAbout = document.getElementById('backgroundAbout');
+
+    // Check if there's a stored image URL
+    const storedImage = localStorage.getItem('selectedImage');
+    if (storedImage) {
+      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        // e.preventDefault();
+        const imageName = this.getAttribute('data-image');
+        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
+
+        // Store the selected image URL
+        localStorage.setItem('selectedImage', imageName);
+      });
+    });
     applyBackgroundImages();
     showNews();
 });

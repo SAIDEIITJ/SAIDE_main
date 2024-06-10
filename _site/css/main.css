@@ -7186,7 +7186,7 @@ header p {
   margin-top: 20px; }
 
 .resource-category {
-  width: 45%; }
+  width: 100%; }
 
 #resheading {
   font-size: 18px;
@@ -7898,7 +7898,7 @@ figcaption {
   border: 0;
   margin-left: 5px; }
 
-.horizontal-menu .dropdown .dropbtn {
+.horizontal-menu .dropdown #dropbtn {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
@@ -7910,7 +7910,7 @@ figcaption {
   letter-spacing: 0.15em;
   padding-left: 0.2em; }
 
-.horizontal-menu .dropdown .dropbtn:hover {
+.horizontal-menu .dropdown #dropbtn:hover {
   color: white; }
 
 .logo-title-container {

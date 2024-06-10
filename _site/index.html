@@ -67,11 +67,11 @@
           <div class="nav-content" id="nav-content">
             <ul class="horizontal-menu">
               <li class="dropdown">
-                <a href="index.html" class="dropbtn">Home</a>
+                <a href="index.html" id="dropbtn">Home</a>
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="dropbtn">Academics</a>
+                <a href="learn.html" id="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html">PhD</a>
                   <a href="ms.html">MS by Research</a>
@@ -80,16 +80,16 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="reserach.html" class="dropbtn">Research</a>
+                <a href="reserach.html" id="dropbtn" class="bg-buttons" data-image="#">Research</a>
                 <div class="dropdown-content">
-                  <a href="theme.html">Theme</a>
-                  <a href="projects.html">Projects</a>
-                  <a href="papers.html">Publications</a>
-                  <a href="labs.html">Facilities & Labs</a>
+                  <a href="theme.html"  class="bg-buttons"  data-image="themes.png">Theme</a>
+                  <a href="projects.html"  class="bg-buttons" data-image="projects.png">Projects</a>
+                  <a href="papers.html"  class="bg-buttons" data-image="pappers.png">Publications</a>
+                  <a href="labs.html"  class="bg-buttons" data-image="#">Facilities & Labs</a>
                 </div>
               </li>
               <li class="dropdown">
-                <a href="coes.html" class="dropbtn">CoEs</a>
+                <a href="coes.html" id="dropbtn">CoEs</a>
                 <div class="dropdown-content">
                   <a href="https://cbsaiitj.wordpress.com/">Brain Science and Applications</a>
                   <a href="https://cmceiitj.wordpress.com/">Mathematical and Computational Economics</a>
@@ -100,7 +100,7 @@
 
              
               <li class="dropdown">
-                <a href="faculity.html" class="dropbtn">People</a>
+                <a href="faculity.html" id="dropbtn">People</a>
                 <div class="dropdown-content">
                   <a href="faculity.html">Researchers</a>
                   <a href="staff.html">Staff</a>
@@ -111,7 +111,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="admissions.html" class="dropbtn">Join-Us</a>
+                <a href="admissions.html" id="dropbtn">Join-Us</a>
                 <div class="dropdown-content">
                   <a href="admissions.html">Admissions</a>
                   <a href="projectsPositions.html">Project Positions</a>
@@ -122,7 +122,7 @@
 
              
               <li class="dropdown">
-                <a href="about.html" class="dropbtn">About</a>
+                <a href="about.html" id="dropbtn">About</a>
                 <div class="dropdown-content">
                   <a href="about.html">Mission & Vision</a>
                   <!-- <a href="engage.html">Engage</a> -->
@@ -152,41 +152,8 @@
   </div>
 </header>
 
-<script>
-  //   function isHomePage() {
-  //   return window.location.pathname === '/SAIDE_main/index.html' || window.location.pathname === '/';
-  // }
-  document.addEventListener("DOMContentLoaded", function () {
-    // console.log(isHomePage());
-    // const tabButtons = document.querySelectorAll('.dropbtn');
-    // console.log(tabButtons);
-    // if (tabButtons.length > 0) {
-    //   // Iterate over each tab-button and add or remove the highlights class
-    //   tabButtons.forEach(function(button) {
-    //     if (!isHomePage()) {
-    //       button.classList.add('highlights');
-    //       console.log("applied");
-    //     } else {
-    //       button.classList.remove('highlights');
-    //     }
-    //   });
-    // }
-
-
-
-
-
-    const menuToggle = document.getElementById("menu-toggle");
-    const navContent = document.getElementById("nav-content");
-
-    menuToggle.addEventListener("click", function () {
-      if (navContent.style.display === "block") {
-        navContent.style.display = "none";
-      } else {
-        navContent.style.display = "block";
-      }
-    });
-  });
+<script src="js/script.js">
+ 
 </script>
 
       				<!-- Banner -->
@@ -202,6 +169,7 @@
 						</div>
 					</div>
 				</div> -->
+
 				<div class="rectangular-div">   
 							<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner" id ="mainslider">
@@ -298,7 +266,7 @@
 							</div> -->
 							<div class="header-row">
 								<div class="title">News & Events</div>
-								<div class="button-group">
+								<div class="button-group" style=" justify-content: end;">
 									<button class="dropdown1" onclick="toggleDropdown()">News <i class="fa-solid fa-caret-down"></i></button>
 									<div id="dropdownMenu" class="dropdown-content1">
 										<a href="#one" onclick="showNews()">News</a>
@@ -317,6 +285,7 @@
 								<div class="card" id="news-card-5"><h1>News Card 5</h1></div>
 								<div class="card" id="news-card-6"><h1>News Card 6</h1></div>
 							</div>
+							<br>
 							<!-- <div id="cardsContainer2" class="cards-container" >
 							
 								<div class="cards" id="news-card-7"><h1>News Card 7</h1></div>
@@ -327,7 +296,7 @@
 								<div class="cards" id="news-card-12"><h1>News Card 12</h1></div>
 							</div> -->
 
-								<br>
+							
 							<!-- <ul class="icons major">
 								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
 								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
@@ -336,93 +305,6 @@
 						<!-- </div> -->
 					</section>
 
-				<!-- Two -->
-					<!-- <section id="two" class="wrapper alt style2">
-						<h2 class="section-2">Programs @SAIDE</h2>
-						<section class="spotlight">
-							
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Phd<br />
-								</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>MS by Research<br />
-								</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>MTech in AR VR<br />
-								</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic04.jpg" alt="" /></div><div class="content">
-								<h2>MTech in DCS<br />
-								</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-					</section>
-
-				 Three 
-				<section id="three" class="wrapper style3 special">
-					<div class="inner">
-						<header class="major">
-							<h2>School of Artificial Intelligence & Data Science</h2>
-						</header>
-						<ul class="features">
-							<li class="icon fa-brain">
-								<h3>CENTER FOR BRAIN SCIENCE AND APPLICATION</h3>
-								<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-							</li>
-							<li class="icon fa-building">
-								<h3>CENTER FOR INTELLIGENT INFRASTRUCTURE</h3>
-								<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-							</li>
-							<li class="icon fa-stethoscope">
-								<h3>CENTER FOR AI & PRECISION MEDICINE</h3>
-								<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-							</li>
-							<li class="icon fa-calculator">
-								<h3>CENTER FOR MATHEMATICAL AND COMPUTATIONAL ECONOMICS</h3>
-								<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-							</li>
-						</ul>
-					</div>
-				</section> -->
-				
-				<!-- Modals -->
-			
-				<!-- CTA -->
-					<!-- <section id="cta" class="wrapper style4">
-							<h2 class="section-2">News & Announcements</h2>
-							<div class="inner">
-								<ul class="news-list">
-									<li>Indicative projects for upcoming PhD admission cycle, Sem-I, 2024-2025</li>
-									<li>Selected Candidates for Summer Internship Program 2024</li>
-									<li>Rolling Advertisement for Admission to Ph.D. Program (Last Date : 20/10/2024)</li>
-									<li>Rolling Advertisement for Admission to Ph.D. Program at CMCE, AIDE, IITJ (Last Date : 20/10/2024)</li>
-									<li>M.S. by Research in Next Generation AI</li>
-									<li>M.S. by Research in Computational Economics</li>
-									<li>M.S. by Research in Intelligent Infrastructure</li>
-									<li>M.S. by Research in Precision Healthcare and Integrative Medicine</li>
-									<li>M.Tech. in AR VR</li>
-									<li>M.Tech. in AR VR (for Working Professionals)</li>
-									<li>M.Tech. in DCS (for Working Professionals)</li>
-									<li>Rolling Advertisement for Faculty Hiring</li>
-								</ul>
-							 <ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul> 
-						</div>
-					</section> -->
 
 					<script src="js/script.js">
 					</script>
@@ -477,8 +359,8 @@
           <!-- Contact Us Section -->
           <div class="col-xs-12 col-md-4">
               <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
-              <p>Phone: 123-456-7890<br>
-              Email: info@example.com</p>
+              <p>Phone: (0291) 2801752;<br>
+              Email: office_saide@iitj.ac.in</p>
           </div>
         </ul>
       </div>
