@@ -45,12 +45,12 @@
 
     <div id="page-wrapper" style="margin-top: -52px;	 overflow-x:hidden;
     width: 100%;">
-      <div class="brown-highlight">
+      <div id="brown-highlight">
 
 </div>
 <header>
 
-  <div class="container">
+  <div class="container navbar-container navbar-no-bg" >
     <div class="row" style="display: flex; justify-content: center; align-items: center;">
       <div class="col-md-3" style="padding-left: 50px;">
             <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR</h1></a>
@@ -64,7 +64,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="dropbtn">Adacamics</a>
+                <a href="learn.html" class="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html">PhD</a>
                   <a href="ms.html">MS by Research</a>
@@ -97,17 +97,18 @@
                 <div class="dropdown-content">
                   <a href="faculity.html">Researchers</a>
                   <a href="staff.html">Staff</a>
-                  <a href="boards.html">Governance</a>
+                  <a href="students.html">Students</a>
+                  <a href="alumini.html">Alumini</a>
                   <a href="directory.html">Directory</a>
                 </div>
               </li>
 
               <li class="dropdown">
-                <a href="admissions.html" class="dropbtn">Join Us</a>
+                <a href="admissions.html" class="dropbtn">Join-Us</a>
                 <div class="dropdown-content">
                   <a href="admissions.html">Admissions</a>
                   <a href="projectsPositions.html">Project Positions</a>
-                  <a href="internships.html">Internships</a>
+                  <a href="intern.html">Internships</a>
                   <a href="faculty_joinus.html">Faculty</a>
                 </div>
               </li>
@@ -145,7 +146,29 @@
 </header>
 
 <script>
+  //   function isHomePage() {
+  //   return window.location.pathname === '/SAIDE_main/index.html' || window.location.pathname === '/';
+  // }
   document.addEventListener("DOMContentLoaded", function () {
+    // console.log(isHomePage());
+    // const tabButtons = document.querySelectorAll('.dropbtn');
+    // console.log(tabButtons);
+    // if (tabButtons.length > 0) {
+    //   // Iterate over each tab-button and add or remove the highlights class
+    //   tabButtons.forEach(function(button) {
+    //     if (!isHomePage()) {
+    //       button.classList.add('highlights');
+    //       console.log("applied");
+    //     } else {
+    //       button.classList.remove('highlights');
+    //     }
+    //   });
+    // }
+
+
+
+
+
     const menuToggle = document.getElementById("menu-toggle");
     const navContent = document.getElementById("nav-content");
 
@@ -159,22 +182,21 @@
   });
 </script>
 
-      <div class="background-about"></div>
-<article id="main">
+      <div class="background-about" id="backgroundAbout"></div>
+<article id="main" >
   <div class="topcontent" >
-    <header style="height: 148px;">
-      <p>HOME / RESEARCH</p>
-      <h2>Papers</h2>
+    <header style="height: 148px; margin-top: 50px;">
+      <h3 id = "topcontent-p">HOME / RESEARCH</h3>
+      <h2 id = "topcontent-h2">Papers</h2>
       <p style="z-index: -1;">At IITJ Aide School, our faculty and researchers are dedicated to advancing knowledge and contributing to the academic community through high-quality publications. Here are some selected publications highlighting our research contributions.</p>
 
     </header>
     <div class="button-bar">
-      <a href="reserach.html" class="tab-button" data-color="orange">Research</a>
-      <a href="theme.html" class="tab-button" data-color="green">Themes</a>
-      <a href="projects.html" class="tab-button" data-color="blue">Projects</a>
-      <a href="faculity.html" class="tab-button" data-color="orange">Researchers</a>
-      <a href="papers.html" class="tab-button" data-color="purple">Publications</a>
-      <a href="labs.html" class="tab-button" data-color="red">Facilities & Labs</a>
+      <a href="reserach.html" class="tab-button" data-image="#">Research</a>
+      <a href="theme.html" class="tab-button" data-image="themes.png">Themes</a>
+      <a href="projects.html" class="tab-button" data-image="projects.png">Projects</a>
+      <a href="papers.html" class="tab-button" data-image="pappers.png">Publications</a>
+      <a href="labs.html" class="tab-button" data-image="#">Facilities & Labs</a>
     </div>
   </div>
 
@@ -228,39 +250,31 @@
 </article>
 
 <script>
-  // Retrieve saved color from localStorage before the page loads
-  var savedColor = localStorage.getItem("backgroundColor");
-  if (savedColor) {
-    document.documentElement.style.setProperty('--initial-background-color', savedColor);
-  }
-  
+
   document.addEventListener("DOMContentLoaded", function() {
-    var targetDiv = document.getElementById("backgroundAbout");
-    if (savedColor && targetDiv) {
-      targetDiv.style.backgroundColor = savedColor;
+    const buttons = document.querySelectorAll('.tab-button');
+    const backgroundAbout = document.getElementById('backgroundAbout');
+
+    // Check if there's a stored image URL
+    const storedImage = localStorage.getItem('selectedImage');
+    if (storedImage) {
+      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
     }
 
-    var links = document.querySelectorAll(".tab-button");
-    links.forEach(function(link) {
-      link.addEventListener("click", function(event) {
-        var color = link.getAttribute("data-color");
-        if (targetDiv) {
-          targetDiv.style.backgroundColor = color;
-        }
-        // Save selected color to localStorage
-        localStorage.setItem("backgroundColor", color);
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        // e.preventDefault();
+        const imageName = this.getAttribute('data-image');
+        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
+
+        // Store the selected image URL
+        localStorage.setItem('selectedImage', imageName);
       });
     });
   });
+
 </script>
-<style>
-  .background-about {
-        background-image: url("images/sk7.jpg");
-    background-color: var(--initial-background-color, orange);
-    background-size: cover;
-    background-position: center;
-  }
-</style>
+
 
       
 <footer id="footer">
@@ -298,12 +312,11 @@
           <!-- Address Section -->
           <div class="col-xs-12 col-md-4">
               <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
-              <p>
+              <p>School Of Artificial Intelligence and Data Science, 
               Indian Institute of Technology Jodhpur
-
-              NH 62 Nagaur Road, Karwar 342030
+              NH 62 Nagaur Road, Karwar 342030, Rajasthan
               
-              Jodhpur District</p>
+              </p>
           </div>
 
           <!-- Contact Us Section -->

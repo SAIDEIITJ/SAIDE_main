@@ -45,12 +45,12 @@
 
     <div id="page-wrapper" style="margin-top: -52px;	 overflow-x:hidden;
     width: 100%;">
-      <div class="brown-highlight">
+      <div id="brown-highlight">
 
 </div>
 <header>
 
-  <div class="container">
+  <div class="container navbar-container navbar-no-bg" >
     <div class="row" style="display: flex; justify-content: center; align-items: center;">
       <div class="col-md-3" style="padding-left: 50px;">
             <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR</h1></a>
@@ -64,7 +64,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="dropbtn">Adacamics</a>
+                <a href="learn.html" class="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html">PhD</a>
                   <a href="ms.html">MS by Research</a>
@@ -97,17 +97,18 @@
                 <div class="dropdown-content">
                   <a href="faculity.html">Researchers</a>
                   <a href="staff.html">Staff</a>
-                  <a href="boards.html">Governance</a>
+                  <a href="students.html">Students</a>
+                  <a href="alumini.html">Alumini</a>
                   <a href="directory.html">Directory</a>
                 </div>
               </li>
 
               <li class="dropdown">
-                <a href="admissions.html" class="dropbtn">Join Us</a>
+                <a href="admissions.html" class="dropbtn">Join-Us</a>
                 <div class="dropdown-content">
                   <a href="admissions.html">Admissions</a>
                   <a href="projectsPositions.html">Project Positions</a>
-                  <a href="internships.html">Internships</a>
+                  <a href="intern.html">Internships</a>
                   <a href="faculty_joinus.html">Faculty</a>
                 </div>
               </li>
@@ -145,7 +146,29 @@
 </header>
 
 <script>
+  //   function isHomePage() {
+  //   return window.location.pathname === '/SAIDE_main/index.html' || window.location.pathname === '/';
+  // }
   document.addEventListener("DOMContentLoaded", function () {
+    // console.log(isHomePage());
+    // const tabButtons = document.querySelectorAll('.dropbtn');
+    // console.log(tabButtons);
+    // if (tabButtons.length > 0) {
+    //   // Iterate over each tab-button and add or remove the highlights class
+    //   tabButtons.forEach(function(button) {
+    //     if (!isHomePage()) {
+    //       button.classList.add('highlights');
+    //       console.log("applied");
+    //     } else {
+    //       button.classList.remove('highlights');
+    //     }
+    //   });
+    // }
+
+
+
+
+
     const menuToggle = document.getElementById("menu-toggle");
     const navContent = document.getElementById("nav-content");
 
@@ -162,18 +185,18 @@
       <div class="background-about"></div>
 <article id="main">
   <div class="topcontent">
-    <header style="height: 148px;">
-      <p>HOME / ACADEMICS</p>
-      <h2>MTech Programs</h2>
+    <header style="height: 148px; margin-top: 50px;">
+      <h3 id = "topcontent-p">HOME / ACADEMICS</h3>
+      <h2 id = "topcontent-h2">MTech Programs</h2>
       <p style="z-index: -1;">The Master of Technology (M.Tech) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers an advanced curriculum designed to prepare students for leadership roles in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).</p>
 
     </header>
     <div class="button-bar">
-      <a href="learn.html" class="tab-button" data-color="orange">About</a>
-      <a href="phd.html" class="tab-button" data-color="green">PhD</a>
-      <a href="ms.html" class="tab-button" data-color="yellow">MS by Research</a>
-      <a href="mtech.html" class="tab-button" data-color="purple">MTech</a>
-      <a href="btech.html" class="tab-button" data-color="blue">BTech Minor</a>
+      <a href="learn.html" class="tab-button" data-color="steelblue">About</a>
+      <a href="phd.html" class="tab-button" data-color="lightsalmon">PhD</a>
+      <a href="ms.html" class="tab-button" data-color="cornflowerblue">MS by Research</a>
+      <a href="mtech.html" class="tab-button" data-color="orange">MTech</a>
+      <a href="btech.html" class="tab-button" data-color="lightcoral">BTech Minor</a>
     </div>
   </div>
 
@@ -190,15 +213,9 @@
       <div class="col-md-4">
         <div class="side-content">
           <div class="share">
-              <h3>SHARE</h3>
-              <div class="social-icons">
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
-              </div>
-              <a href="#" class="sign-up">Check out the latest News</a>
+              <!-- <h3>SHARE</h3> -->
+              <a href="#" class="sign-up"> <i class="fa-regular fa-hand-point-right"></i> Check out the latest News</a>
+              <br>
               <!-- <ul class="side-news">
                 <a href="" style="border: 0;text-decoration: none;color: #ff6f61;"><li></li></a>
                 <a href="" style="border: 0;text-decoration: none;color: #ff6f61;"> <li></li></a>
@@ -253,7 +270,7 @@
 </script>
 <style>
   .background-about {
-        background-image: url("images/sk7.jpg");
+        background-image: url("images/bg2.jpg");
     background-color: var(--initial-background-color, orange);
     background-size: cover;
     background-position: center;
@@ -296,12 +313,11 @@
           <!-- Address Section -->
           <div class="col-xs-12 col-md-4">
               <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
-              <p>
+              <p>School Of Artificial Intelligence and Data Science, 
               Indian Institute of Technology Jodhpur
-
-              NH 62 Nagaur Road, Karwar 342030
+              NH 62 Nagaur Road, Karwar 342030, Rajasthan
               
-              Jodhpur District</p>
+              </p>
           </div>
 
           <!-- Contact Us Section -->

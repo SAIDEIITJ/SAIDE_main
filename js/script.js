@@ -2,7 +2,24 @@ const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"
 function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
+// function isHomePage() {
+//     return window.location.pathname === '/SAIDE_main/index.html' || window.location.pathname === '/';
+//   }
 
+//   // Wait for the DOM content to be fully loaded
+//   document.addEventListener('DOMContentLoaded', function() {
+//     console.log('Current page:', window.location.pathname);
+//     console.log('Is home page:', isHomePage());
+
+//     // Check if the current page is the home page
+//     if (isHomePage()) {
+//       console.log('Adding class for navbar without background color');
+//       document.querySelector('.navbar-container').classList.add('navbar-no-bg');
+//     } else {
+//       console.log('Adding class for navbar with background color');
+//       document.querySelector('.navbar-container').classList.add('navbar-bg');
+//     }
+//   });
 $(document).ready(function() {
     const backgroundImages = [
         'bg.png',
@@ -49,6 +66,7 @@ window.onclick = function(event) {
     { id: "news-card-2", title: "News Title 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
     { id: "news-card-3", title: "News Title 3", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/digital.jpg" },
 
+
     // Add more news items here
 ];
 
@@ -58,6 +76,12 @@ window.onclick = function(event) {
     { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt"},
     { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check" },
     { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer"},
+    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt"},
+    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check" },
+    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer"},
+    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt"},
+    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check" },
+
     // Add more event items here
 ];
 
@@ -77,10 +101,10 @@ function showNews() {
     button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("cardsContainer");
-    renderItems(container, newsData.slice(0, 6));
+    renderItems(container, newsData.slice(0, 8));
 
-    const container2 = document.getElementById("cardsContainer2");
-    renderItems(container2, newsData.slice(6));
+    // const container2 = document.getElementById("cardsContainer2");
+    // renderItems(container2, newsData.slice(8));
 
     applyBackgroundImages();
 }
@@ -91,20 +115,20 @@ function showEvents() {
     button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("cardsContainer");
-    renderItems(container, eventData.slice(0, 6));
+    renderItems(container, eventData.slice(0, 8));
 
-    const container2 = document.getElementById("cardsContainer2");
-    renderItems(container2, eventData.slice(6));
+    // const container2 = document.getElementById("cardsContainer2");
+    // renderItems(container2, eventData.slice(8));
 
     applyBackgroundImages(true);
 }
 
 function applyBackgroundImages(isEvent = false) {
     const cards1 = document.querySelectorAll(".card");
-    console.log(cards1);
+    // console.log(cards1);
     const cards2 = document.querySelectorAll(".cards");
     const temp = isEvent; 
-    console.log(temp);
+    // console.log(temp);
     const images2 = temp ? [
         "images/sk5.jpg",
         "images/sk4.jpg",
@@ -138,16 +162,16 @@ function applyBackgroundImages(isEvent = false) {
         "images/darkness.jpg",
         "images/pic04.jpg"
     ];
-    console.log(images);
+    // console.log(images);
 
     cards1.forEach((card, index2) => {
         card.style.backgroundImage = `url(${images[index2 % images.length]})`;
     });
 
     
-    cards2.forEach((cards, index) => {
-        cards.style.backgroundImage = `url(${images2[index % images2.length]})`;
-    });
+    // cards2.forEach((cards, index) => {
+    //     cards.style.backgroundImage = `url(${images2[index % images2.length]})`;
+    // });
 }
     
     

@@ -1,10 +1,35 @@
 ---
 layout: people
-title: Poeple
-link: HOME / FACULITY
+title: Staff
+link: HOME / PEOPLE
 des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
 ---
 	
+<div class="search-container">
+	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
+</div>
+<div class="filter-indicators">
+    <div class="filter-indicator" id="all" data-filter="all">
+        <div class="checkbox"></div>
+        <span>Scientific</span>
+    </div>
+    <div class="filter-indicator" id="phd" data-filter="phd">
+        <div class="checkbox"></div>
+        <span>Technical</span>
+    </div>
+    <div class="filter-indicator" id="ms" data-filter="ms">
+        <div class="checkbox"></div>
+        <span>Administrative</span>
+    </div>
+    <div class="filter-indicator" id="ms" data-filter="ms">
+      <div class="checkbox"></div>
+      <span>All</span>
+  </div>
+</div>
+
+
+
+
 {% assign ap_members = '' | split: '' %}
 {% assign us_members = '' | split: '' %}
 {% assign msr_members = '' | split: '' %}
@@ -63,3 +88,11 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 
 <br>
 <br>
+
+<script>
+	document.querySelectorAll('.filter-indicator').forEach(indicator => {
+    indicator.addEventListener('click', () => {
+        indicator.classList.toggle('checked');
+    });
+});
+</script>

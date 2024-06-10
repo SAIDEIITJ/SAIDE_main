@@ -6153,19 +6153,33 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   border: 0;
   text-decoration: none; }
 
+#topcontent-header {
+  height: 148px; }
+
 .topcontent {
-  height: 390px;
+  height: 550px;
   padding: 40px;
   margin-top: -50px; }
   .topcontent h2 {
     text-align: left;
     margin-left: 20px;
-    font-size: 2em; }
+    font-family: ' sans-serif';
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: #6e0d10;
+    text-transform: none; }
+  .topcontent h3 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: lighter; }
   .topcontent p {
     text-align: left;
     margin-left: 20px;
-    width: 800px;
-    color: white;
+    width: 550px;
+    color: black;
     font-family: "Roboto Mono", monospace;
     font-size: 0.9em; }
 
@@ -6206,7 +6220,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .button-bar {
   display: flex;
   justify-content: center;
-  margin-top: 195px; }
+  margin-top: 307px; }
   .button-bar a {
     text-decoration: none;
     color: #FFF;
@@ -6214,7 +6228,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
     display: block; }
 
 .tab-button {
-  background-color: #252525;
+  background-color: #6e0d10;
   /* Marble black with transparency */
   color: white;
   padding: 10px 20px;
@@ -6302,13 +6316,13 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #000000e7;
+  background-color: #ECEBE6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.321);
   width: 80%;
   max-width: 600px;
   padding: 20px;
-  border: solid 2px #ECEBE6;
   border-radius: 5px;
-  color: #00a5a5;
+  color: #000000;
   z-index: 100; }
 
 #circular-img {
@@ -6327,20 +6341,28 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   transform: translate(-50%, -50%); }
 
 .popup-content {
-  text-align: center; }
+  text-align: left; }
 
 #bullets {
-  font-size: 0.7em; }
+  font-size: 0.8em; }
+
+#hidden-content {
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 25px; }
 
 #hidden-title {
-  font-size: 0.8em;
-  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  font-family: sans-serif;
   text-transform: none;
-  color: #ff6f61; }
+  color: #6e0d10; }
 
 #popup-title {
-  color: #ff6f61;
-  text-transform: none; }
+  color: #6e0d10;
+  font-family: 'sans-serif';
+  font-size: 1.8em;
+  text-transform: none;
+  text-align: center; }
 
 .hidden {
   display: none; }
@@ -6349,7 +6371,8 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   position: absolute;
   top: 10px;
   right: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #000000; }
 
 .theme-grid {
   display: grid;
@@ -6379,7 +6402,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   margin: 15px 0 0 0;
   font-size: 1.2em;
   width: 100%;
-  color: #036e6e; }
+  color: #6e0d10; }
 
 .res-section h2 {
   text-align: left;
@@ -6412,7 +6435,8 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   padding: 20px; }
 
 #h3title {
-  color: #ff6f61;
+  color: #6e0d10;
+  letter-spacing: 2px;
   text-transform: none; }
 
 .res-content a {
@@ -7452,18 +7476,20 @@ p {
   padding: 20px; }
 
 .background-about {
-  background-color: orange;
-  position: fixed;
+  position: absolute;
+  margin-top: 150px;
   top: 0;
   left: 0;
   width: 100%;
   height: 75%;
-  background-image: url("images/sk7.jpg");
+  transition: background-image 0.5s ease;
   /* Initial background image */
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
   z-index: -1; }
+
+.highlights {
+  color: white !important; }
 
 #banner {
   padding-top: 80px;
@@ -7798,10 +7824,10 @@ figcaption {
   display: none;
   position: absolute;
   background-color: #151212;
-  width: 50%;
-  top: 40px;
+  width: 48%;
+  top: 50px;
   /* Adjust to position below the dropdown button */
-  left: 0;
+  left: 9%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
 
@@ -7855,11 +7881,11 @@ figcaption {
   border: 0;
   cursor: pointer;
   text-align: left;
-  color: #810f0f;
-  font-family: "Poppins", sans-serif;
+  color: #800F13;
+  font-family: sans-serif;
   font-weight: bold;
+  letter-spacing: 5px;
   font-size: 1.7em;
-  display: block;
   line-height: 1.8em; }
 
 .site-logo {
@@ -9183,7 +9209,6 @@ body, input, select, textarea {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 400;
-  letter-spacing: 0.075em;
   line-height: 1.65em; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
@@ -9220,7 +9245,6 @@ p {
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 800;
-  letter-spacing: 0.225em;
   line-height: 1em;
   margin: 0 0 1em 0;
   text-transform: uppercase; }
@@ -9754,7 +9778,6 @@ button,
   font-size: 0.8em;
   font-weight: 600;
   height: 3.125em;
-  letter-spacing: 0.225em;
   line-height: 3.125em;
   padding: 0 2.75em;
   text-align: center;
@@ -10338,7 +10361,6 @@ button,
         color: inherit;
         display: block;
         font-size: 0.8em;
-        letter-spacing: 0.225em;
         outline: 0;
         text-decoration: none;
         text-transform: uppercase; }
@@ -10423,7 +10445,6 @@ body.is-menu-visible #menu {
           color: #fff;
           display: block;
           font-size: 0.8em;
-          letter-spacing: 0.225em;
           padding: 0 1.5em;
           text-transform: uppercase; }
           #header nav > ul > li > a.menuToggle {
@@ -10458,11 +10479,9 @@ body.is-menu-visible #menu {
       opacity: 0; }
 
 /* Banner */
-.brown-highlight {
-  background-color: #960b0b;
-  color: white;
-  padding: 10px;
-  text-align: center; }
+#brown-highlight {
+  background-color: #800F13;
+  height: 12px; }
 
 .background {
   position: fixed;
@@ -10721,7 +10740,6 @@ body.is-menu-visible #menu {
       bottom: 0;
       right: 0; }
   #banner p {
-    letter-spacing: 0.225em;
     text-transform: uppercase; }
     #banner p a {
       color: inherit; }
@@ -10734,7 +10752,6 @@ body.is-menu-visible #menu {
     font-size: 0.8em;
     height: 8.5em;
     left: 50%;
-    letter-spacing: 0.225em;
     margin-left: -8.5em;
     opacity: 1;
     outline: 0;
@@ -10839,7 +10856,6 @@ body.is-loading #banner:after {
     margin: 0 0 0.5em 0; }
   #main > header p {
     color: inherit;
-    letter-spacing: 0.225em;
     text-transform: uppercase;
     top: 0; }
     #main > header p a {

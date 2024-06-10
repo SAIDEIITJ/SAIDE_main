@@ -4,17 +4,18 @@ layout: subdefault
 <div class="background-about"></div>
 <article id="main">
   <div class="topcontent">
-    <header style="height: 148px;">
-      <p>{{page.link}}</p>
-      <h2>{{ page.title }}</h2>
+    <header style="height: 148px; margin-top: 50px;">
+      <h3 id = "topcontent-p">{{page.link}}</h3>
+      <h2 id = "topcontent-h2">{{ page.title }}</h2>
       <p style="z-index: -1;">{{page.des}}</p>
 
     </header>
     <div class="button-bar">
-      <a href="faculity.html" class="tab-button" data-color="orange">Researchers</a>
-      <a href="staff.html" class="tab-button" data-color="green">Staff</a>
-      <a href="boards.html" class="tab-button" data-color="blue">Governance Boards</a>
-      <a href="directory.html" class="tab-button" data-color="purple">Directory</a>
+      <a href="faculity.html" class="tab-button" data-color="lightslategrey">Faculities</a>
+      <a href="staff.html" class="tab-button" data-color="orange">Staff</a>
+      <a href="students.html" class="tab-button" data-color="lightsalmon">Students</a>
+      <a href="alumini.html" class="tab-button" data-color="cornflowerblue">Alumini</a>
+      <a href="directory.html" class="tab-button" data-color="lightcoral">Directory</a>
     </div>
   </div>
 
@@ -53,7 +54,7 @@ layout: subdefault
 </script>
 <style>
   .background-about {
-        background-image: url("images/sk7.jpg");
+        background-image: url("images/bg2.jpg");
     background-color: var(--initial-background-color, orange);
     background-size: cover;
     background-position: center;
