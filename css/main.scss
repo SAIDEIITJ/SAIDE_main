@@ -84,7 +84,7 @@ $titlecolor:#6e0d10;
         width: 550px;
         color: rgb(0, 0, 0);
 		font-weight: bolder;
-        font-family: "Roboto Mono", monospace;
+        font-family: "Montserrat", sans-serif;
 		font-size: 1em;
     }
 }
@@ -133,7 +133,7 @@ $titlecolor:#6e0d10;
 	a{
 		text-decoration: none;
 		color: #FFF;
-		font-family: "Roboto Mono", monospace;
+		 font-family: "Montserrat", sans-serif;
 		
 		display: block;
 	}
@@ -163,7 +163,7 @@ $titlecolor:#6e0d10;
 .theme-section h2 {
 	text-align: left;
 	color:#005b5b;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
   }
 
 .theme-container {
@@ -357,7 +357,7 @@ $titlecolor:#6e0d10;
 .res-section h2 {
 	text-align: left;
 	color:#005b5b;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
   }
 
 .res-container {
@@ -395,7 +395,7 @@ $titlecolor:#6e0d10;
   }
   #h3title{
 	color: $titlecolor;
-	letter-spacing: 2px;
+
 	text-transform: none;
 
   }
@@ -478,7 +478,7 @@ $titlecolor:#6e0d10;
 
 	#faqtitle{
 		color:$textcolor;
-		font-family: "Roboto Mono", monospace;
+		 font-family: "Montserrat", sans-serif;
 		font-size: 1.7rem;
 	}
   }
@@ -547,7 +547,7 @@ h2 {
     margin-top: 0;
 }
 #paper-title{
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 	color:$textcolor
 	
 }
@@ -681,7 +681,7 @@ h2 {
 	h1{
 		color:$textcolor;
 		font-size: 2rem;
-		font-family: "Roboto Mono", monospace;
+		 font-family: "Montserrat", sans-serif;
 	}
 
 }
@@ -747,7 +747,7 @@ h2 {
 	h1{
 		color:$textcolor;
 		font-size: 2rem;
-		font-family: "Roboto Mono", monospace;
+		 font-family: "Montserrat", sans-serif;
 	}
 	#subheading{
 		text-transform: none;
@@ -926,7 +926,7 @@ h2 {
 .main-content h1 {
     color: #6e0d10;
 	font-size: 1.5rem;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 }
 
 .main-content p {
@@ -1021,7 +1021,7 @@ h2 {
 .layout-section h2 {
 	text-align: left;
 	color:#005b5b;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
   }
 
 .layout-container {
@@ -1132,7 +1132,7 @@ h2 {
 
 	#faqtitle{
 		color:$textcolor;
-		font-family: "Roboto Mono", monospace;
+		 font-family: "Montserrat", sans-serif;
 		font-size: 1.7rem;
 	}
   }
@@ -1228,7 +1228,7 @@ header p {
 .job-opening #jobheading {
     margin-top: 0;
 	color:$linkcolor;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 	font-size: 1.7rem;
 }
 
@@ -1285,7 +1285,7 @@ header p {
 #getintouch{
 	font-size: 24px;
 	color: $textcolor;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 
 }
 
@@ -1409,7 +1409,7 @@ header p {
 	h1{
 		color:$textcolor;
 		font-size: 2rem;
-		font-family: "Roboto Mono", monospace;
+		 font-family: "Montserrat", sans-serif;
 	}
 
 }
@@ -1428,7 +1428,7 @@ header p {
 .program-section h2 {
 	text-align: left;
 	color:#005b5b;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
   }
 
 .program-container {
@@ -1619,7 +1619,7 @@ header p {
 #titleh2 {
     margin: 10px 0;
     color: #d9534f;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -1902,7 +1902,7 @@ figcaption {
 
 .header-row .title {
 	flex: 65%;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 	color:#872525;
 	font-size: 40px;
 	text-align: left;
@@ -2211,11 +2211,11 @@ figcaption {
 	text-decoration: none;
 	color: #000000;
 	text-transform: uppercase;
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
 	transition: color 0.3s ease;
 	border: 0;
 	display: block;
-	font-size: 1em;
+	font-size: 0.85em;
 	letter-spacing: 0.15em;
 	padding-left: 0.2em;
   }
@@ -4134,7 +4134,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 
 .testimonails-title {
-	font-family: "Roboto Mono", monospace;
+	 font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     color: #17877a;
     margin-bottom: 10px;
@@ -4478,7 +4478,7 @@ body.is-loading {
 			text-align: left;
 			font-size: 2.2rem;
 			// margin-left: 100px;
-			font-family: "Roboto Mono", monospace;
+			 font-family: "Montserrat", sans-serif;
 			text-transform: none;
 		}
 
@@ -4543,7 +4543,7 @@ body.is-loading {
 				text-align: center;
 				font-size: 1.5rem;
 				margin-left: 20px;
-				font-family: "Roboto Mono", monospace;
+				 font-family: "Montserrat", sans-serif;
 				text-transform: none;
 			}
 

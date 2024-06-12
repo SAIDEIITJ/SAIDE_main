@@ -1,9 +1,178 @@
-<!-- ---
-layout: default
-title: Update Spreadsheet
---- -->
+<!DOCTYPE html>
+<html>
 
-<!--These are JavaScript Libraries-->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Update faculity</title>
+  <meta name="description" content="School of Artificial Intelligence and Data Science
+">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="http://localhost:4000/SAIDE_main/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/SAIDE_main/pull-sheet/">
+<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/SAIDE_main/images/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/c0ac67ef4b.js" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" title="IIT Jodhpur SAIDE" href="http://localhost:4000/SAIDE_main/feed.xml">
+
+</head>
+
+
+  <body>
+
+    <div id="page-wrapper">
+
+      <div id="brown-highlight">
+
+</div>
+<header>
+
+  <div class="container navbar-container navbar-no-bg" >
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+      <div class="col-md-3" style="padding-left: 50px;">
+            <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR</h1></a>
+      </div>
+      <div class="col-md-7" style=" text-transform: none; justify-content: center; text-align: center;">
+        <nav id="nav">
+          <div class="nav-content" id="nav-content">
+            <ul class="horizontal-menu">
+              <li class="dropdown">
+                <a href="index.html" id="dropbtn">Home</a>
+              </li>
+
+              <li class="dropdown">
+                <a href="learn.html" class="bg-buttons" data-image="1.png" id="dropbtn"><div   >Academics</div></a>
+                <div class="dropdown-content">
+                  <a href="phd.html" class="bg-buttons" data-image="3.png"><div    >PhD</div></a>
+                  <a href="ms.html" class="bg-buttons"  data-image="2.png"><div  >MS by Research</div></a>
+                  <a href="mtech.html" class="bg-buttons" data-image="4.png"><div   >MTech</div></a>
+                  <a href="btech.html" class="bg-buttons"  data-image="5.png"><div  >BTech Minor</div></a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="reserach.html" id="dropbtn" class="bg-buttons" data-image="6.png">Research</a>
+                <div class="dropdown-content">
+                  <a href="theme.html"  class="bg-buttons"  data-image="7.png">Theme</a>
+                  <a href="projects.html"  class="bg-buttons" data-image="8.png">Projects</a>
+                  <a href="papers.html"  class="bg-buttons" data-image="9.png">Publications</a>
+                  <a href="labs.html"  class="bg-buttons" data-image="10.png">Facilities & Labs</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="coes.html" id="dropbtn">CoEs</a>
+                <div class="dropdown-content">
+                  <a href="https://cbsaiitj.wordpress.com/">Brain Science and Applications</a>
+                  <a href="https://cmceiitj.wordpress.com/">Mathematical and Computational Economics</a>
+                  <a href="https://sites.google.com/iitj.ac.in/cii/about">Center of Excellence in Intelligent Infrastructure</a>
+                  <a href="#">Center of Excellence in AI based Precision Healthcare</a>
+                </div>
+              </li>
+
+             
+              <li class="dropdown">
+                <a href="faculity.html" id="dropbtn">People</a>
+                <div class="dropdown-content">
+                  <a href="staff.html">Staff</a>
+                  <a href="students.html">Students</a>
+                  <a href="alumini.html">Alumini</a>
+                  <a href="directory.html">Directory</a>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <a href="admissions.html" id="dropbtn">Join-Us</a>
+                <div class="dropdown-content">
+                  <a href="admissions.html">Admissions</a>
+                  <a href="projectsPositions.html">Project Positions</a>
+                  <a href="intern.html">Internships</a>
+                  <a href="faculty_joinus.html">Faculty</a>
+                </div>
+              </li>
+
+             
+              <li class="dropdown">
+                <a href="about.html" id="dropbtn">About</a>
+                <div class="dropdown-content">
+                  <a href="about.html">Mission & Vision</a>
+                  <!-- <a href="engage.html">Engage</a> -->
+                  <a href="outreach.html">Outreach</a>
+                  <a href="governance.html">Governance</a>
+                  <a href="campus.html">Campus</a>
+                  <a href="faq.html">FAQs</a>
+                  <!-- <a href="jobs.html">Jobs</a> -->
+                  <a href="contact.html">Contact</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-2" style="display: flex; justify-content: center; align-items: center; margin-top: 10px; padding-left: 95px;">
+        <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <a href="/SAIDE_main/index.html" class="site-sym">
+          <img src="images/logo_bg.png" alt="Logo" width="180" height="150">
+        </a>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-7 col-sm-8" >
+      </div>
+    </div> -->
+  </div>
+</header>
+
+<script >
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const buttons = document.querySelectorAll('.bg-buttons');
+    const backgroundAbout = document.getElementById('backgroundAbout');
+    console.log(backgroundAbout);
+
+    // Check if there's a stored image URL
+    // const storedImage = localStorage.getItem('selectedImage');
+    // if (storedImage) {
+    //   backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
+    // }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        // e.preventDefault();
+
+        const imageName = this.getAttribute('data-image');
+        console.log(imageName);
+        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
+
+        // Store the selected image URL
+        // localStorage.setItem('selectedImage', imageName);
+
+      });
+    });
+  });
+ 
+</script>
+
+      <!--These are JavaScript Libraries-->
 <!-- <script type="text/javascript" src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
 
 <script type="text/javascript" src="papaparse.min.js"></script> <!-- https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js -->
@@ -15,7 +184,7 @@ title: Update Spreadsheet
 
     // dict of all published sheets and corresponding resource names
     var $resources = {
-        team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS5t61mHuC7lb5Di9KpF_yNZFVZjTtwrgtih3olNjX9ouJqJNTm62COkO8XMq6LPglLnhXsBHaOyq3l/pub?gid=253503174&single=true&output=tsv'
+        team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTebgo1n_256MA0vxvH-zuC9_PQXqf_6zvXZqQU3TtYzAp155eRQQJMMVuE-0mDrFUiMVNFVy5jULxT/pub?output=tsv'
     }
 
     var header_maps = {
@@ -37,11 +206,12 @@ title: Update Spreadsheet
             "Year of joining": "year",
         }
     }
+    var tohen = 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;
 
     // some constants related to gh-pages repository
     var $org = 'sw509073';
-    var $repo = 'webdesign-test-template';
-    var $branch = 'gh-pages';
+    var $repo = 'SAIDE_main';
+    var $branch = 'main';
     
     // this function extracts parameters from the URL to pass on to the javascript
     function getUrlVar(key){
@@ -136,3 +306,96 @@ title: Update Spreadsheet
     };
 </script>
 <textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 500px;"></textarea>
+
+
+      
+<footer id="footer">
+  <div class="container">
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <h1 class="footer-title">School of Artificial Intelligence & Data Science</h1>
+        </div>
+    </div> -->
+    <br>
+      <div class="row">
+          <!-- Social Icons Section -->
+    
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-user-plus fa-2x" style="color: rgb(175, 32, 32);"></i> Follow Us</h3>
+              <ul class="list-unstyled list-inline social-icons">
+                  <li class="list-inline-item">
+                      <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-facebook fa-lg" style="color: #1a548b;" ></i>                
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://x.com/intent/post?url=https%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact&text=AIDE+School+-+Contacts" class="fa-stack fa-xl" style="border: 0;">
+                        <i class="fa-brands fa-twitter fa-lg" style="color: #74C0FC;"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" class="fa-stack fa-xl"  style="border: 0;">
+                              <i class="fa-brands fa-linkedin fa-lg" style="color: #2d85d7;"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
+              <p>School Of Artificial Intelligence and Data Science, 
+              Indian Institute of Technology Jodhpur
+              NH 62 Nagaur Road, Karwar 342030, Rajasthan
+              
+              </p>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div class="col-xs-12 col-md-4">
+              <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
+              <p>Phone: (0291) 2801752;<br>
+              Email: office_saide@iitj.ac.in</p>
+          </div>
+        </ul>
+      </div>
+  </div>
+
+
+  <!-- Copyright Information Section -->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+  
+              <ul class="copyright">
+                  <li>&copy; 
+                      
+                      2024
+                      IIT Jodhpur SAIDE</li>
+                  <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+                  <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/SAIDE_main/js/jquery.min.js"></script>
+<script src="/SAIDE_main/js/jquery.scrollex.min.js"></script>
+<script src="/SAIDE_main/js/jquery.scrolly.min.js"></script>
+<script src="/SAIDE_main/js/skel.min.js"></script>
+<script src="/SAIDE_main/js/util.js"></script>
+<!--[if lte IE 8]><script src="/SAIDE_main/js/ie/respond.min.js"></script><![endif]-->
+<script src="/SAIDE_main/js/main.js"></script>
+
+
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://localhost:4000/SAIDE_main/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

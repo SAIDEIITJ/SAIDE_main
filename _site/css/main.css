@@ -6186,7 +6186,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
     width: 550px;
     color: black;
     font-weight: bolder;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 1em; }
 
 /* Media query for mobile devices */
@@ -6230,7 +6230,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   .button-bar a {
     text-decoration: none;
     color: #FFF;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
     display: block; }
 
 .tab-button {
@@ -6255,7 +6255,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .theme-section h2 {
   text-align: left;
   color: #005b5b;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 .theme-container {
   display: flex;
@@ -6413,7 +6413,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .res-section h2 {
   text-align: left;
   color: #005b5b;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 .res-container {
   display: flex;
@@ -6442,7 +6442,6 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 
 #h3title {
   color: #6e0d10;
-  letter-spacing: 2px;
   text-transform: none; }
 
 .res-content a {
@@ -6505,7 +6504,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   padding: 20px; }
   .instr #faqtitle {
     color: #6e0d10;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.7rem; }
 
 .ins-item {
@@ -6559,7 +6558,7 @@ h2 {
   margin-top: 0; }
 
 #paper-title {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   color: #6e0d10; }
 
 #abstract-btn {
@@ -6674,7 +6673,7 @@ h2 {
   .about-section h1 {
     color: #6e0d10;
     font-size: 2rem;
-    font-family: "Roboto Mono", monospace; }
+    font-family: "Montserrat", sans-serif; }
 
 #subheading {
   text-transform: none;
@@ -6728,7 +6727,7 @@ h2 {
   .application-section h1 {
     color: #6e0d10;
     font-size: 2rem;
-    font-family: "Roboto Mono", monospace; }
+    font-family: "Montserrat", sans-serif; }
   .application-section #subheading {
     text-transform: none;
     color: #464040; }
@@ -6872,7 +6871,7 @@ h2 {
 .main-content h1 {
   color: #6e0d10;
   font-size: 1.5rem;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 .main-content p {
   line-height: 1.6;
@@ -6949,7 +6948,7 @@ h2 {
 .layout-section h2 {
   text-align: left;
   color: #005b5b;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 .layout-container {
   display: flex;
@@ -7034,7 +7033,7 @@ h2 {
   padding: 20px; }
   .faqs #faqtitle {
     color: #6e0d10;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.7rem; }
 
 .faq-item {
@@ -7110,7 +7109,7 @@ header p {
 .job-opening #jobheading {
   margin-top: 0;
   color: #ff6f61;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.7rem; }
 
 .job-opening #apply {
@@ -7158,7 +7157,7 @@ header p {
 #getintouch {
   font-size: 24px;
   color: #6e0d10;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 .visiting-section, .map-section {
   background-color: #f4f4ec; }
@@ -7255,7 +7254,7 @@ header p {
   .general-section h1 {
     color: #6e0d10;
     font-size: 2rem;
-    font-family: "Roboto Mono", monospace; }
+    font-family: "Montserrat", sans-serif; }
 
 .side-news {
   font-size: 0.8em;
@@ -7269,7 +7268,7 @@ header p {
 .program-section h2 {
   text-align: left;
   color: #005b5b;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 .program-container {
   display: flex;
@@ -7423,7 +7422,7 @@ header p {
 #titleh2 {
   margin: 10px 0;
   color: #d9534f;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
 p {
   margin: 10px 0; }
@@ -7652,7 +7651,7 @@ figcaption {
 
 .header-row .title {
   flex: 65%;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   color: #872525;
   font-size: 40px;
   text-align: left;
@@ -7907,11 +7906,11 @@ figcaption {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   transition: color 0.3s ease;
   border: 0;
   display: block;
-  font-size: 1em;
+  font-size: 0.85em;
   letter-spacing: 0.15em;
   padding-left: 0.2em; }
 
@@ -10640,7 +10639,7 @@ body.is-menu-visible #menu {
   margin-bottom: 20px; }
 
 .testimonails-title {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   color: #17877a;
   margin-bottom: 10px;
@@ -10896,7 +10895,7 @@ body.is-mobile #main > header {
   #footer h1 {
     text-align: left;
     font-size: 2.2rem;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
     text-transform: none; }
   #footer .icons {
     font-size: 1.25em; }
@@ -10942,7 +10941,7 @@ body.is-mobile #main > header {
         text-align: center;
         font-size: 1.5rem;
         margin-left: 20px;
-        font-family: "Roboto Mono", monospace;
+        font-family: "Montserrat", sans-serif;
         text-transform: none; } }
 
 /* Landing */
