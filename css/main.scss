@@ -20,20 +20,25 @@ $titlecolor:#6e0d10;
 #wholebody{
 	 overflow-x:hidden;
 	 width: 100%;
+	 background-color: white;
 
+}
+#parent-box{
+	background-color: rgb(241, 241, 241);
 }
 
 
 //reserach
 .ms-container{
 	padding:5px;
-	background-color: rgb(227, 227, 227);
 	border-radius: 10px;
-	border: solid 2px $bgcolor;
+	border-bottom: solid 2px $bgcolor;
 }
 
 .research-intro{
 	width: 100%;
+	padding:5px 5px;
+	background-color: rgb(239, 239, 239);
 }
 
 #links{
@@ -78,8 +83,9 @@ $titlecolor:#6e0d10;
         margin-left: 20px;
         width: 550px;
         color: rgb(0, 0, 0);
+		font-weight: bolder;
         font-family: "Roboto Mono", monospace;
-		font-size: 0.9em;
+		font-size: 1em;
     }
 }
 
@@ -1705,8 +1711,8 @@ p {
 	transition: background-image 0.5s ease; /* Initial background image */
     background-size: cover;
     background-position: center;
+	filter: saturate(50%);
 
-	// background-blend-mode: multiply;
     z-index: -1;
 }
 
@@ -1848,7 +1854,7 @@ body {
 }
 
 #one,#three,#cta{
-	background-color: #ECEBE6;
+	background-color: white;
 }
 #one{
 
@@ -1905,7 +1911,7 @@ figcaption {
 
 
 .header-row .dropdown1, .header-row .view-all {
-	margin-left: 40px;
+	margin-left: 20px;
 	padding: 10px 15px;
 	font-size: 16px;
 	border: none;
@@ -1923,7 +1929,7 @@ figcaption {
 
 
 .card {
-	flex: 1 0 25%; /* Four cards per row, adjust the gap as needed */
+	flex: 1 0 31%; /* Four cards per row, adjust the gap as needed */
 	margin: 10px;
 	background-color: #f0f0f0;
 	background-size: cover;
@@ -2062,7 +2068,7 @@ figcaption {
 
 .button-group {
 	margin-left: 80px;
-	flex:35%;
+	// flex:35%;
 
 	.dropdown1 {
 		display: flex;
@@ -2079,7 +2085,7 @@ figcaption {
 	}
 
 	.view-all {
-		padding:0px 15px;
+		padding:0px 5px;
 		width:100%;
 		font-size: 16px;
 		border: none;
@@ -2090,10 +2096,9 @@ figcaption {
 
 
     display: flex;
-    align-items: center;
     position: relative;
 	width: 40%;
-	margin-right: 50px
+	margin-right: 30px
 	
 }
 
@@ -2104,9 +2109,9 @@ figcaption {
     display: none;
     position: absolute;
     background-color: #151212;
-	width: 48%;
+	width: 49%;
 	top: 50px; /* Adjust to position below the dropdown button */
-    left: 9%;
+    left: 27%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -2475,7 +2480,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	body {
 		// background: _palette(bg);
-		background-color: #ECEBE6;
+		background-color: white;
 
 		&.is-loading {
 			*, *:before, *:after {
@@ -3697,7 +3702,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		&.style5 {
 			@include wrapper(accent7);
-			background-color: #ECEBE6;
+			background-color: #ffffff;
 		}
 
 		@include breakpoint(medium) {
@@ -4079,7 +4084,7 @@ $baseurl: '{{ site.baseurl }}/images';
 }
 
 #des{
-	background-color: #ECEBE6;
+	background-color: white;
 }
 
 .carousel-description {

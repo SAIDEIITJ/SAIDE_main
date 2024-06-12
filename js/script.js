@@ -44,29 +44,22 @@ window.onclick = function(event) {
     { id: "news-card-1", title: "News Title 1", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/user.jpg" },
     { id: "news-card-2", title: "News Title 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
     { id: "news-card-3", title: "News Title 3", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/digital.jpg" },
-
-
     // Add more news items here
 ];
 
 
 // Define an object for storing events
  const eventData = [
-    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt"},
-    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check" },
-    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer"},
-    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt"},
-    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check" },
-    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer"},
-    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt"},
-    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check" },
-
+    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/digital.jpg"},
+    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/user.jpg" },
+    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/ai.jpg"},
+    
     // Add more event items here
 ];
 
 function renderItems(container, items) {
     container.innerHTML = items.map(item => `
-        <div class="card" id="${item.id}">
+        <div class="card" id="${item.id}" style="background-image: url(${item.img});" >
             ${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
             <h1>${item.title}</h1>
             ${item.date ? '</div>' : ''}
@@ -79,13 +72,15 @@ function showNews() {
     var newText = "News"; 
     button.childNodes[0].textContent = newText + " ";
 
+
     const container = document.getElementById("cardsContainer");
-    renderItems(container, newsData.slice(0, 8));
+    const n = container.length;
+    renderItems(container, newsData.slice(0, n));
 
     // const container2 = document.getElementById("cardsContainer2");
     // renderItems(container2, newsData.slice(8));
 
-    applyBackgroundImages();
+    // applyBackgroundImages();
 }
 
 function showEvents() {
@@ -94,12 +89,13 @@ function showEvents() {
     button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("cardsContainer");
-    renderItems(container, eventData.slice(0, 8));
+    const n = container.length;
+    renderItems(container, eventData.slice(0, n));
 
     // const container2 = document.getElementById("cardsContainer2");
     // renderItems(container2, eventData.slice(8));
 
-    applyBackgroundImages(true);
+    // applyBackgroundImages(true);
 }
 
 function applyBackgroundImages(isEvent = false) {
@@ -108,29 +104,31 @@ function applyBackgroundImages(isEvent = false) {
     // const cards2 = document.querySelectorAll(".cards");
     const temp = isEvent; 
     // console.log(temp);
-    const images2 = temp ? [
-        "images/sk5.jpg",
-        "images/sk4.jpg",
-        "images/sk3.jpg",
-        "images/sk2.jpg",
-        "images/sk1.jpg",
-        "images/darkness.jpg",
-    ]:[
-        "images/darkness.jpg",
-        "images/sk1.jpg",
-        "images/sk2.jpg",
-        "images/sk3.jpg",
-        "images/sk4.jpg",
-        "images/sk5.jpg",
+    // const images2 = temp ? [
+    //     "images/sk5.jpg",
+    //     "images/sk4.jpg",
+    //     "images/sk3.jpg",
+    //     "images/sk2.jpg",
+    //     "images/sk1.jpg",
+    //     "images/darkness.jpg",
+    // ]:[
+    //     "images/darkness.jpg",
+    //     "images/sk1.jpg",
+    //     "images/sk2.jpg",
+    //     "images/sk3.jpg",
+    //     "images/sk4.jpg",
+    //     "images/sk5.jpg",
 
-    ];
+    // ];
     const images = temp ? [
         "images/digital.jpg",
         "images/robot.jpg",
         "images/ai.jpg",
         "images/user.jpg",
         "images/people.jpg",
-        "images/book.jpg"
+        "images/book.jpg",
+        "images/ai.jpg",
+        "images/user.jpg",
     ] : [
         "images/book.jpg",
         "images/people.jpg",
@@ -138,8 +136,8 @@ function applyBackgroundImages(isEvent = false) {
         "images/robot.jpg",
         "images/ai.jpg",
         "images/user.jpg",
-        "images/darkness.jpg",
-        "images/pic04.jpg"
+        "images/book.jpg",
+        "images/people.jpg"
     ];
     // console.log(images);
 
@@ -156,6 +154,7 @@ function applyBackgroundImages(isEvent = false) {
     
 
 document.addEventListener("DOMContentLoaded", () => {
+    showNews();
     
     
     const menuToggle = document.getElementById("menu-toggle");
@@ -169,27 +168,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    const buttons = document.querySelectorAll('.bg-buttons');
-    const backgroundAbout = document.getElementById('backgroundAbout');
+   
+    // applyBackgroundImages();
 
-    // Check if there's a stored image URL
-    const storedImage = localStorage.getItem('selectedImage');
-    if (storedImage) {
-      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        // e.preventDefault();
-        const imageName = this.getAttribute('data-image');
-        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
-
-        // Store the selected image URL
-        localStorage.setItem('selectedImage', imageName);
-      });
-    });
-    applyBackgroundImages();
-    showNews();
 });
 
 
