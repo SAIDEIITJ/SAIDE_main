@@ -45,12 +45,12 @@
 
     <div id="page-wrapper" style="margin-top: -52px;	 overflow-x:hidden;
     width: 100%;">
-      <div class="brown-highlight">
+      <div id="brown-highlight">
 
 </div>
 <header>
 
-  <div class="container">
+  <div class="container navbar-container navbar-no-bg" >
     <div class="row" style="display: flex; justify-content: center; align-items: center;">
       <div class="col-md-3" style="padding-left: 50px;">
             <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR</h1></a>
@@ -60,11 +60,11 @@
           <div class="nav-content" id="nav-content">
             <ul class="horizontal-menu">
               <li class="dropdown">
-                <a href="index.html" class="dropbtn">Home</a>
+                <a href="index.html" id="dropbtn">Home</a>
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="dropbtn">Adacamics</a>
+                <a href="learn.html" id="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html">PhD</a>
                   <a href="ms.html">MS by Research</a>
@@ -73,16 +73,16 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="reserach.html" class="dropbtn">Research</a>
+                <a href="reserach.html" id="dropbtn" class="bg-buttons" data-image="#">Research</a>
                 <div class="dropdown-content">
-                  <a href="theme.html">Theme</a>
-                  <a href="projects.html">Projects</a>
-                  <a href="papers.html">Publications</a>
-                  <a href="labs.html">Facilities & Labs</a>
+                  <a href="theme.html"  class="bg-buttons"  data-image="themes.png">Theme</a>
+                  <a href="projects.html"  class="bg-buttons" data-image="projects.png">Projects</a>
+                  <a href="papers.html"  class="bg-buttons" data-image="pappers.png">Publications</a>
+                  <a href="labs.html"  class="bg-buttons" data-image="#">Facilities & Labs</a>
                 </div>
               </li>
               <li class="dropdown">
-                <a href="coes.html" class="dropbtn">CoEs</a>
+                <a href="coes.html" id="dropbtn">CoEs</a>
                 <div class="dropdown-content">
                   <a href="https://cbsaiitj.wordpress.com/">Brain Science and Applications</a>
                   <a href="https://cmceiitj.wordpress.com/">Mathematical and Computational Economics</a>
@@ -93,28 +93,29 @@
 
              
               <li class="dropdown">
-                <a href="faculity.html" class="dropbtn">People</a>
+                <a href="faculity.html" id="dropbtn">People</a>
                 <div class="dropdown-content">
                   <a href="faculity.html">Researchers</a>
                   <a href="staff.html">Staff</a>
-                  <a href="boards.html">Governance</a>
+                  <a href="students.html">Students</a>
+                  <a href="alumini.html">Alumini</a>
                   <a href="directory.html">Directory</a>
                 </div>
               </li>
 
               <li class="dropdown">
-                <a href="admissions.html" class="dropbtn">Join Us</a>
+                <a href="admissions.html" id="dropbtn">Join-Us</a>
                 <div class="dropdown-content">
                   <a href="admissions.html">Admissions</a>
                   <a href="projectsPositions.html">Project Positions</a>
-                  <a href="internships.html">Internships</a>
+                  <a href="intern.html">Internships</a>
                   <a href="faculty_joinus.html">Faculty</a>
                 </div>
               </li>
 
              
               <li class="dropdown">
-                <a href="about.html" class="dropbtn">About</a>
+                <a href="about.html" id="dropbtn">About</a>
                 <div class="dropdown-content">
                   <a href="about.html">Mission & Vision</a>
                   <!-- <a href="engage.html">Engage</a> -->
@@ -144,36 +145,25 @@
   </div>
 </header>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navContent = document.getElementById("nav-content");
-
-    menuToggle.addEventListener("click", function () {
-      if (navContent.style.display === "block") {
-        navContent.style.display = "none";
-      } else {
-        navContent.style.display = "block";
-      }
-    });
-  });
+<script src="js/script.js">
+ 
 </script>
 
-      <div class="background-about"></div>
+      <div class="background-about"  id="backgroundAbout"></div>
 <article id="main">
   <div class="topcontent">
-    <header style="height: 148px;">
-      <p>HOME / ACADEMICS</p>
-      <h2>Btech Minor Programs</h2>
+    <header style="height: 148px; margin-top: 50px;">
+      <h3 id = "topcontent-p">HOME / ACADEMICS</h3>
+      <h2 id = "topcontent-h2">Btech Minor Programs</h2>
       <p style="z-index: -1;">The Minor Programs in Artificial Intelligence (AI) and Data Science (DS) at the School of Artificial Intelligence and Data Science (AIDE) offer undergraduate students pursuing Bachelor of Technology (B.Tech) degrees the opportunity to gain specialized knowledge and skills in these rapidly growing fields. These minor programs complement students' primary areas of study and prepare them for diverse career opportunities in AI and DS.</p>
 
     </header>
     <div class="button-bar">
-      <a href="learn.html" class="tab-button" data-color="orange">About</a>
-      <a href="phd.html" class="tab-button" data-color="green">PhD</a>
-      <a href="ms.html" class="tab-button" data-color="yellow">MS by Research</a>
-      <a href="mtech.html" class="tab-button" data-color="purple">MTech</a>
-      <a href="btech.html" class="tab-button" data-color="blue">BTech Minor</a>
+      <a href="learn.html" class="tab-button" data-image="#">About</a>
+      <a href="phd.html" class="tab-button" data-image="phd.png">PhD</a>
+      <a href="ms.html" class="tab-button" data-image="ms1.png">MS by Research</a>
+      <a href="mtech.html" class="tab-button" data-image="#">MTech</a>
+      <a href="btech.html" class="tab-button" data-image="#">BTech Minor</a>
     </div>
   </div>
 
@@ -190,15 +180,16 @@
       <div class="col-md-4">
         <div class="side-content">
           <div class="share">
-              <h3>SHARE</h3>
+              <!-- <h3>SHARE</h3>
               <div class="social-icons">
                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                   <a href="#"><i class="fa-brands fa-facebook"></i></a>
                   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                   <a href="#"><i class="fa-brands fa-instagram"></i></a>
                   <a href="#"><i class="fa-regular fa-envelope"></i></a>
-              </div>
-              <a href="#" class="sign-up">Check out the latest News</a>
+              </div> -->
+              <a href="#" class="sign-up"> <i class="fa-regular fa-hand-point-right"></i> Check out the latest News</a>
+              <br>
               <!-- <ul class="side-news">
                 <a href="" style="border: 0;text-decoration: none;color: #ff6f61;"><li></li></a>
                 <a href="" style="border: 0;text-decoration: none;color: #ff6f61;"> <li></li></a>
@@ -224,39 +215,31 @@
 </article>
 
 <script>
-  // Retrieve saved color from localStorage before the page loads
-  var savedColor = localStorage.getItem("backgroundColor");
-  if (savedColor) {
-    document.documentElement.style.setProperty('--initial-background-color', savedColor);
-  }
+
   
   document.addEventListener("DOMContentLoaded", function() {
-    var targetDiv = document.getElementById("backgroundAbout");
-    if (savedColor && targetDiv) {
-      targetDiv.style.backgroundColor = savedColor;
+    const buttons = document.querySelectorAll('.tab-button');
+    const backgroundAbout = document.getElementById('backgroundAbout');
+
+    // Check if there's a stored image URL
+    const storedImage = localStorage.getItem('selectedImage');
+    if (storedImage) {
+      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
     }
 
-    var links = document.querySelectorAll(".tab-button");
-    links.forEach(function(link) {
-      link.addEventListener("click", function(event) {
-        var color = link.getAttribute("data-color");
-        if (targetDiv) {
-          targetDiv.style.backgroundColor = color;
-        }
-        // Save selected color to localStorage
-        localStorage.setItem("backgroundColor", color);
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        // e.preventDefault();
+        const imageName = this.getAttribute('data-image');
+        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
+
+        // Store the selected image URL
+        localStorage.setItem('selectedImage', imageName);
       });
     });
   });
 </script>
-<style>
-  .background-about {
-        background-image: url("images/sk7.jpg");
-    background-color: var(--initial-background-color, orange);
-    background-size: cover;
-    background-position: center;
-  }
-</style>
+
 
       
 <footer id="footer">
@@ -294,19 +277,18 @@
           <!-- Address Section -->
           <div class="col-xs-12 col-md-4">
               <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
-              <p>
+              <p>School Of Artificial Intelligence and Data Science, 
               Indian Institute of Technology Jodhpur
-
-              NH 62 Nagaur Road, Karwar 342030
+              NH 62 Nagaur Road, Karwar 342030, Rajasthan
               
-              Jodhpur District</p>
+              </p>
           </div>
 
           <!-- Contact Us Section -->
           <div class="col-xs-12 col-md-4">
               <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
-              <p>Phone: 123-456-7890<br>
-              Email: info@example.com</p>
+              <p>Phone: (0291) 2801752;<br>
+              Email: office_saide@iitj.ac.in</p>
           </div>
         </ul>
       </div>

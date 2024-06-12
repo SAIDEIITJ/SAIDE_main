@@ -13,7 +13,7 @@ $darkred: #a75248;
 $bgcolor:#ECEBE6;
 $textcolor:#005b5b;
 $linkcolor:#ff6f61;
-
+$titlecolor:#6e0d10;
 
 
 
@@ -41,8 +41,15 @@ $linkcolor:#ff6f61;
 	border:0;
 	text-decoration: none;
 }
+
+
+//topcontent
+#topcontent-header{
+	height: 148px;
+
+}
 .topcontent {
-    height: 390px;
+    height: 550px;
     padding: 40px;
 	margin-top: -50px;
 
@@ -50,14 +57,27 @@ $linkcolor:#ff6f61;
     h2 {
         text-align: left;
         margin-left: 20px; 
-        font-size: 2em;
+		font-family:' sans-serif';
+		letter-spacing: 5px;
+		font-weight: bold;
+        font-size: 2.2em;
+		color: $titlecolor;
+		text-transform: none;
     }
+
+	h3{
+		text-align: left;
+        margin-left: 20px; 
+		font-size: 1.2em;
+		color:#000000;
+		font-weight: lighter;
+	}
 
     p {
         text-align: left;
         margin-left: 20px;
-        width: 800px;
-        color: white;
+        width: 550px;
+        color: rgb(0, 0, 0);
         font-family: "Roboto Mono", monospace;
 		font-size: 0.9em;
     }
@@ -103,7 +123,7 @@ $linkcolor:#ff6f61;
 .button-bar {
 	display: flex;
 	justify-content: center;
-	margin-top: 195px;
+	margin-top: 307px;
 	a{
 		text-decoration: none;
 		color: #FFF;
@@ -114,7 +134,7 @@ $linkcolor:#ff6f61;
   }
   
   .tab-button {
-	background-color: rgba(37, 37, 37,1); /* Marble black with transparency */
+	background-color: #6e0d10; /* Marble black with transparency */
 	color: white;
 	padding: 10px 20px;
 	text-align: center;
@@ -134,7 +154,6 @@ $linkcolor:#ff6f61;
   }
 
   //theme
-
 .theme-section h2 {
 	text-align: left;
 	color:#005b5b;
@@ -223,13 +242,13 @@ $linkcolor:#ff6f61;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #000000e7;
+	background-color: $bgcolor;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.321);
 	width: 80%;
 	max-width: 600px;
 	padding: 20px;
-	border: solid 2px $bgcolor;
 	border-radius: 5px;
-	color: #00a5a5;
+	color: #000000;
 	z-index: 100;
   }
 
@@ -251,22 +270,31 @@ $linkcolor:#ff6f61;
   }
   
   .popup-content {
-	text-align: center;
+	text-align: left;
   }
   #bullets{
-	font-size: 0.7em;
+	font-size: 0.8em;
+  }
+  #hidden-content{
+	text-align: left;
+	 font-size: 0.8em;
+	  padding-left:25px;
   }
   
 
   #hidden-title{
-	font-size: 0.8em;
-	font-family: "Roboto Mono", monospace;
+	font-size: 1.2em;
+	font-family: sans-serif;
 	text-transform: none;
-	color: $linkcolor;
+	color: $titlecolor;
+
   }
   #popup-title{
-	color: $linkcolor;
+	color: $titlecolor;
+	font-family: 'sans-serif';
+	font-size: 1.8em;
 	text-transform: none;
+	text-align: center;
   }
 
   .hidden{
@@ -278,6 +306,7 @@ $linkcolor:#ff6f61;
 	top: 10px;
 	right: 10px;
 	cursor: pointer;
+	color: #000000;
   }
 
   
@@ -314,7 +343,7 @@ $linkcolor:#ff6f61;
 	margin: 15px 0 0 0;
 	font-size: 1.2em;
 	width: 100%;
-	color:#036e6e;
+	color:$titlecolor;
   }
 
   //facilities
@@ -359,7 +388,8 @@ $linkcolor:#ff6f61;
 	padding: 20px;
   }
   #h3title{
-	color: $linkcolor;
+	color: $titlecolor;
+	letter-spacing: 2px;
 	text-transform: none;
 
   }
@@ -1293,7 +1323,7 @@ header p {
 }
 
 .resource-category {
-    width: 45%;
+    width: 100%;
 }
 
 #resheading{
@@ -1662,23 +1692,37 @@ p {
 
 
 
-//Reserach
+//Other pages bg
 .background-about{
-	background-color: orange;
-	position: fixed;
+	// background-color: orange;
+	position: absolute;
+	margin-top: 150px;
     top: 0;
     left: 0;
     width: 100%;
     height: 75%;
-    background-image: url("images/sk7.jpg"); /* Initial background image */
+    // background-image: url("images/bg2.jpg");
+	transition: background-image 0.5s ease; /* Initial background image */
     background-size: cover;
     background-position: center;
 
-	background-blend-mode: multiply;
+	// background-blend-mode: multiply;
     z-index: -1;
 }
 
+// .navbar-bg {
+// 	background-color: rgba(0, 0, 0, 0.759);
+//   }
+// .navbar-no-bg {
+// 	background-color: none;
+// 	color: ligh;
 
+//   }
+
+.highlights{
+	color:white !important;
+
+}
 
 
 #banner{
@@ -2060,9 +2104,9 @@ figcaption {
     display: none;
     position: absolute;
     background-color: #151212;
-	width: 50%;
-	top: 40px; /* Adjust to position below the dropdown button */
-    left: 0;
+	width: 48%;
+	top: 50px; /* Adjust to position below the dropdown button */
+    left: 9%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -2106,7 +2150,6 @@ figcaption {
   }
   
   #nav {
-
 	width: max-content;
   }
   
@@ -2139,11 +2182,11 @@ figcaption {
 	border: 0;
 	cursor: pointer;
 	text-align: left;
-	color: #810f0f;
-	font-family: "Poppins", sans-serif;
+	color: #800F13;
+	font-family: sans-serif;
 	font-weight:bold;
+	letter-spacing: 5px;
 	font-size: 1.7em;
-	display: block;
 	line-height: 1.8em;
   }
   
@@ -2159,7 +2202,7 @@ figcaption {
   }
   
   
-  .horizontal-menu .dropdown .dropbtn {
+  .horizontal-menu .dropdown #dropbtn {
 	text-decoration: none;
 	color: #000000;
 	text-transform: uppercase;
@@ -2172,7 +2215,7 @@ figcaption {
 	padding-left: 0.2em;
   }
   
-  .horizontal-menu .dropdown .dropbtn:hover{
+  .horizontal-menu .dropdown #dropbtn:hover{
 	color: white;
   }
 
@@ -2447,7 +2490,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		font-family: _font(family);
 		font-size: 15pt;
 		font-weight: _font(weight);
-		letter-spacing: _size(letter-spacing);
+		// letter-spacing: _size(letter-spacing);
 		line-height: 1.65em;
 
 		@include breakpoint(xlarge) {
@@ -2491,7 +2534,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
 		font-weight: _font(weight-extrabold);
-		letter-spacing: _size(letter-spacing-alt);
+		// letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
@@ -3212,7 +3255,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		font-size: 0.8em;
 		font-weight: _font(weight-bold);
 		height: 3.125em;
-		letter-spacing: _size(letter-spacing-alt);
+		// letter-spacing: _size(letter-spacing-alt);
 		line-height: 3.125em;
 		padding: 0 2.75em;
 		text-align: center;
@@ -3723,7 +3766,7 @@ $baseurl: '{{ site.baseurl }}/images';
 					color: inherit;
 					display: block;
 					font-size: 0.8em;
-					letter-spacing: _size(letter-spacing-alt);
+					// letter-spacing: _size(letter-spacing-alt);
 					outline: 0;
 					text-decoration: none;
 					text-transform: uppercase;
@@ -3824,7 +3867,7 @@ $baseurl: '{{ site.baseurl }}/images';
 						color: _palette(fg-bold);
 						display: block;
 						font-size: 0.8em;
-						letter-spacing: _size(letter-spacing-alt);
+						// letter-spacing: _size(letter-spacing-alt);
 						padding: 0 1.5em;
 						text-transform: uppercase;
 
@@ -3875,11 +3918,9 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 /* Banner */
 
-.brown-highlight {
-	background-color: rgb(150, 11, 11);
-	color: white;
-	padding: 10px;
-	text-align: center;
+#brown-highlight {
+	background-color: #800F13;
+	height: 12px;
   }
 
 .background {
@@ -4212,7 +4253,7 @@ $baseurl: '{{ site.baseurl }}/images';
     }
 
     p {
-        letter-spacing: _size(letter-spacing-alt);
+        // letter-spacing: _size(letter-spacing-alt);
         text-transform: uppercase;
 
         a {
@@ -4229,7 +4270,7 @@ $baseurl: '{{ site.baseurl }}/images';
         font-size: 0.8em;
         height: 8.5em;
         left: 50%;
-        letter-spacing: _size(letter-spacing-alt);
+        // letter-spacing: _size(letter-spacing-alt);
         margin-left: -8.5em;
         opacity: 1;
         outline: 0;
@@ -4377,7 +4418,7 @@ body.is-loading {
 
 			p {
 				color: inherit;
-				letter-spacing: _size(letter-spacing-alt);
+				// letter-spacing: _size(letter-spacing-alt);
 				text-transform: uppercase;
 				top: 0;
 
