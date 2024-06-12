@@ -64,21 +64,21 @@
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" id="dropbtn">Academics</a>
+                <a href="learn.html" class="bg-buttons" data-image="1.png" id="dropbtn"><div   >Academics</div></a>
                 <div class="dropdown-content">
-                  <a href="phd.html">PhD</a>
-                  <a href="ms.html">MS by Research</a>
-                  <a href="mtech.html">MTech</a>
-                  <a href="btech.html">BTech Minor</a>
+                  <a href="phd.html" class="bg-buttons" data-image="3.png"><div    >PhD</div></a>
+                  <a href="ms.html" class="bg-buttons"  data-image="2.png"><div  >MS by Research</div></a>
+                  <a href="mtech.html" class="bg-buttons" data-image="4.png"><div   >MTech</div></a>
+                  <a href="btech.html" class="bg-buttons"  data-image="5.png"><div  >BTech Minor</div></a>
                 </div>
               </li>
               <li class="dropdown">
-                <a href="reserach.html" id="dropbtn" class="bg-buttons" data-image="#">Research</a>
+                <a href="reserach.html" id="dropbtn" class="bg-buttons" data-image="6.png">Research</a>
                 <div class="dropdown-content">
-                  <a href="theme.html"  class="bg-buttons"  data-image="themes.png">Theme</a>
-                  <a href="projects.html"  class="bg-buttons" data-image="projects.png">Projects</a>
-                  <a href="papers.html"  class="bg-buttons" data-image="pappers.png">Publications</a>
-                  <a href="labs.html"  class="bg-buttons" data-image="#">Facilities & Labs</a>
+                  <a href="theme.html"  class="bg-buttons"  data-image="7.png">Theme</a>
+                  <a href="projects.html"  class="bg-buttons" data-image="8.png">Projects</a>
+                  <a href="papers.html"  class="bg-buttons" data-image="9.png">Publications</a>
+                  <a href="labs.html"  class="bg-buttons" data-image="10.png">Facilities & Labs</a>
                 </div>
               </li>
               <li class="dropdown">
@@ -145,7 +145,34 @@
   </div>
 </header>
 
-<script src="js/script.js">
+<script >
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const buttons = document.querySelectorAll('.bg-buttons');
+    const backgroundAbout = document.getElementById('backgroundAbout');
+    console.log(backgroundAbout);
+
+    // Check if there's a stored image URL
+    // const storedImage = localStorage.getItem('selectedImage');
+    // if (storedImage) {
+    //   backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
+    // }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        // e.preventDefault();
+
+        const imageName = this.getAttribute('data-image');
+        console.log(imageName);
+        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
+
+        // Store the selected image URL
+        // localStorage.setItem('selectedImage', imageName);
+
+      });
+    });
+  });
  
 </script>
 
@@ -155,15 +182,15 @@
     <header style="height: 148px; margin-top: 50px;">
       <h3 id = "topcontent-p">HOME / EDUCATION</h3>
       <h2 id = "topcontent-h2">Programs</h2>
-      <p style="z-index: -1;">Joi n SAInstia trans  forJoin transformatince in complex systems science asdas asdad .</p>
+      <p  id = "topcontent-para" style="z-index: -1;">Joi n SAInstia trans  forJoin transformatince in complex systems science asdas asdad .</p>
 
     </header>
     <div class="button-bar">
-      <a href="learn.html" class="tab-button" data-image="#">About</a>
-      <a href="phd.html" class="tab-button" data-image="phd.png">PhD</a>
-      <a href="ms.html" class="tab-button" data-image="ms1.png">MS by Research</a>
-      <a href="mtech.html" class="tab-button" data-image="#">MTech</a>
-      <a href="btech.html" class="tab-button" data-image="#">BTech Minor</a>
+      <a href="learn.html" class="tab-button" data-image="1.png">About</a>
+      <a href="phd.html" class="tab-button" data-image="3.png">PhD</a>
+      <a href="ms.html" class="tab-button" data-image="2.png">MS by Research</a>
+      <a href="mtech.html" class="tab-button" data-image="4.png">MTech</a>
+      <a href="btech.html" class="tab-button" data-image="5.png">BTech Minor</a>
     </div>
   </div>
 
@@ -304,17 +331,17 @@ function scrollRight() {
               <h3><i class="fa-solid fa-user-plus fa-2x" style="color: rgb(175, 32, 32);"></i> Follow Us</h3>
               <ul class="list-unstyled list-inline social-icons">
                   <li class="list-inline-item">
-                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                      <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" class="fa-stack fa-xl" style="border: 0;">
                         <i class="fa-brands fa-facebook fa-lg" style="color: #1a548b;" ></i>                
                       </a>
                   </li>
                   <li class="list-inline-item">
-                      <a href="#" class="fa-stack fa-xl" style="border: 0;">
+                      <a href="https://x.com/intent/post?url=https%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact&text=AIDE+School+-+Contacts" class="fa-stack fa-xl" style="border: 0;">
                         <i class="fa-brands fa-twitter fa-lg" style="color: #74C0FC;"></i>
                       </a>
                   </li>
                   <li class="list-inline-item">
-                      <a href="#" class="fa-stack fa-xl"  style="border: 0;">
+                      <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" class="fa-stack fa-xl"  style="border: 0;">
                               <i class="fa-brands fa-linkedin fa-lg" style="color: #2d85d7;"></i>
                       </a>
                   </li>
