@@ -11,7 +11,7 @@ $darkgrey: #554842;
 $red: #f01a19;
 $darkred: #a75248;
 $bgcolor:#ECEBE6;
-$textcolor:#005b5b;
+$textcolor:#6e0d10;
 $linkcolor:#ff6f61;
 $titlecolor:#6e0d10;
 
@@ -578,7 +578,7 @@ h2 {
     text-decoration: none;
 	font-size: 1.5rem;
 	border: 0;
-	color: #17877a;
+	color: #019494;
 }
 
 .alphabet-links a:hover {
@@ -643,7 +643,7 @@ h2 {
 .checkbox {
     width: 24px;
     height: 24px;
-    border: 2px solid rgb(12, 158, 85);
+    border: 2px solid #17877a;
     border-radius: 50%;
     margin-right: 5px; /* Added margin-right */
     position: relative;
@@ -656,7 +656,7 @@ h2 {
     left: 50%;
     width: 12px;
     height: 12px;
-    background-color: rgb(12, 158, 85);
+    background-color: #6e0d10;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.2s ease;
@@ -687,7 +687,7 @@ h2 {
 }
 #subheading{
 	text-transform: none;
-	color: #AFADA1;
+	color: #464040;
 }
 
 .image-section {
@@ -751,7 +751,7 @@ h2 {
 	}
 	#subheading{
 		text-transform: none;
-		color: #AFADA1;
+		color: #464040;
 	}
 	.terms-row {
 		display: flex;
@@ -796,6 +796,7 @@ h2 {
 	h1 {
 		font-size: 3em;
 		margin-bottom: 20px;
+		
 	}
 	
 	.insideImg2{
@@ -819,7 +820,7 @@ h2 {
 		color:#17877a;
 
 	}
-	#welcomebtn:hover{
+	#welcomebtn2:hover{
 		background-color: #17877a;
 		color: white;
 	}	
@@ -923,7 +924,7 @@ h2 {
 }
 
 .main-content h1 {
-    color: #005b5b;
+    color: #6e0d10;
 	font-size: 1.5rem;
 	font-family: "Roboto Mono", monospace;
 }
@@ -1187,7 +1188,7 @@ h2 {
   
   #image-title {
 	text-align: left;
-	color: #007BA7;
+	color: #6e0d10;
 	margin-bottom: 10px;
 	padding: 20px;
 	font-family: 'Roboto mono';
@@ -1313,7 +1314,7 @@ header p {
 
 .contact-info #subinf {
     font-size: 18px;
-	color: #AFADA1;
+	color: #464040;
 }
 
 .contact-info p, .contact-info a {
@@ -1334,7 +1335,7 @@ header p {
 
 #resheading{
 	font-size: 18px;
-	color: #AFADA1;
+	color: #464040;
 
 }
 
@@ -1419,7 +1420,7 @@ header p {
 	text-align: left;
 }
 #edusubtitle{
-	color:#17877a;
+	color: #6e0d10;
 	font-size: 1.2rem;
 }
 
@@ -1691,7 +1692,6 @@ p {
 .event-content {
     padding: 20px;
 }
-
 
 
 

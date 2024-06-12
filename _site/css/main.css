@@ -6504,7 +6504,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   flex: 3;
   padding: 20px; }
   .instr #faqtitle {
-    color: #005b5b;
+    color: #6e0d10;
     font-family: "Roboto Mono", monospace;
     font-size: 1.7rem; }
 
@@ -6560,7 +6560,7 @@ h2 {
 
 #paper-title {
   font-family: "Roboto Mono", monospace;
-  color: #005b5b; }
+  color: #6e0d10; }
 
 #abstract-btn {
   background-color: #005b5b;
@@ -6582,7 +6582,7 @@ h2 {
   text-decoration: none;
   font-size: 1.5rem;
   border: 0;
-  color: #17877a; }
+  color: #019494; }
 
 .alphabet-links a:hover {
   text-decoration: underline; }
@@ -6639,7 +6639,7 @@ h2 {
 .checkbox {
   width: 24px;
   height: 24px;
-  border: 2px solid #0c9e55;
+  border: 2px solid #17877a;
   border-radius: 50%;
   margin-right: 5px;
   /* Added margin-right */
@@ -6652,7 +6652,7 @@ h2 {
   left: 50%;
   width: 12px;
   height: 12px;
-  background-color: #0c9e55;
+  background-color: #6e0d10;
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.2s ease; }
@@ -6672,13 +6672,13 @@ h2 {
   text-align: left;
   width: 100%; }
   .about-section h1 {
-    color: #005b5b;
+    color: #6e0d10;
     font-size: 2rem;
     font-family: "Roboto Mono", monospace; }
 
 #subheading {
   text-transform: none;
-  color: #AFADA1; }
+  color: #464040; }
 
 .image-section {
   position: relative;
@@ -6726,12 +6726,12 @@ h2 {
   text-align: left;
   width: 100%; }
   .application-section h1 {
-    color: #005b5b;
+    color: #6e0d10;
     font-size: 2rem;
     font-family: "Roboto Mono", monospace; }
   .application-section #subheading {
     text-transform: none;
-    color: #AFADA1; }
+    color: #464040; }
   .application-section .terms-row {
     display: flex;
     flex-wrap: nowrap;
@@ -6787,7 +6787,7 @@ h2 {
     margin-top: 20px;
     background-color: #ECEBE6;
     color: #17877a; }
-  .image2-section #welcomebtn:hover {
+  .image2-section #welcomebtn2:hover {
     background-color: #17877a;
     color: white; }
 
@@ -6870,7 +6870,7 @@ h2 {
   margin-right: 20px; }
 
 .main-content h1 {
-  color: #005b5b;
+  color: #6e0d10;
   font-size: 1.5rem;
   font-family: "Roboto Mono", monospace; }
 
@@ -7033,7 +7033,7 @@ h2 {
   flex: 3;
   padding: 20px; }
   .faqs #faqtitle {
-    color: #005b5b;
+    color: #6e0d10;
     font-family: "Roboto Mono", monospace;
     font-size: 1.7rem; }
 
@@ -7077,11 +7077,11 @@ h2 {
 
 #image-title {
   text-align: left;
-  color: #007BA7;
+  color: #6e0d10;
   margin-bottom: 10px;
   padding: 20px;
   font-family: 'Roboto mono';
-  color: #005b5b; }
+  color: #6e0d10; }
 
 .full-width-image {
   margin-top: -80px;
@@ -7157,7 +7157,7 @@ header p {
 
 #getintouch {
   font-size: 24px;
-  color: #005b5b;
+  color: #6e0d10;
   font-family: "Roboto Mono", monospace; }
 
 .visiting-section, .map-section {
@@ -7165,7 +7165,7 @@ header p {
 
 .contact-section h1, .visiting-section h1, .info-section h1 {
   font-size: 24px;
-  color: #005b5b;
+  color: #6e0d10;
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px; }
 
@@ -7179,7 +7179,7 @@ header p {
 
 .contact-info #subinf {
   font-size: 18px;
-  color: #AFADA1; }
+  color: #464040; }
 
 .contact-info p, .contact-info a {
   font-size: 14px;
@@ -7196,7 +7196,7 @@ header p {
 
 #resheading {
   font-size: 18px;
-  color: #AFADA1; }
+  color: #464040; }
 
 .resource-category ul {
   list-style: none;
@@ -7253,7 +7253,7 @@ header p {
   text-align: left;
   width: 100%; }
   .general-section h1 {
-    color: #005b5b;
+    color: #6e0d10;
     font-size: 2rem;
     font-family: "Roboto Mono", monospace; }
 
@@ -7263,7 +7263,7 @@ header p {
   text-align: left; }
 
 #edusubtitle {
-  color: #17877a;
+  color: #6e0d10;
   font-size: 1.2rem; }
 
 .program-section h2 {
@@ -7292,7 +7292,7 @@ header p {
   padding: 20px; }
 
 #h3pgtitle {
-  color: #005b5b; }
+  color: #6e0d10; }
 
 .program-content a {
   border: 0;
@@ -7325,7 +7325,7 @@ header p {
   .program {
     max-width: 90%; } }
 #edunews {
-  color: #005b5b; }
+  color: #6e0d10; }
 
 #edubtn {
   background-color: #005a5a;
@@ -7429,7 +7429,7 @@ p {
   margin: 10px 0; }
 
 #read-more {
-  background-color: #005b5b;
+  background-color: #6e0d10;
   border: none;
   color: #fff;
   border-radius: 4px;
@@ -7451,7 +7451,7 @@ p {
   text-decoration: none;
   padding: 10px 15px;
   cursor: pointer;
-  color: #005b5b;
+  color: #6e0d10;
   border-radius: 4px;
   text-decoration: none; }
 
