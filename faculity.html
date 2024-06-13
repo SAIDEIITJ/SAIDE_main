@@ -30,7 +30,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 
 <br>
 <br>
-<!-- {% assign ap_members = '' | split: '' %}
+{% assign ap_members = '' | split: '' %}
 {% assign us_members = '' | split: '' %}
 {% assign msr_members = '' | split: '' %}
 {% assign phd_members = '' | split: '' %}
@@ -80,7 +80,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
   {% if member.bio1 != "" %}
     <li> {{ member.bio1 }} </li>
   {% endif %}
-  {% if member.bio2 != "" %}
+  <!-- {% if member.bio2 != "" %}
     <li> {{ member.bio2 }} </li>
   {% endif %}
   {% if member.bio3 != "" %}
@@ -88,7 +88,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
   {% endif %}
   {% if member.bio4 != "" %}
     <li> {{ member.bio4 }} </li>
-  {% endif %}
+  {% endif %} -->
 
   </ul>
 </div>
@@ -106,7 +106,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 </div>
 {% endif %}
 
-## Alumni
+<!-- ## Alumni
 <div style="margin-bottom: 800px;">
 {% for member in sorted_members %}
 {% if member.display == 1 and member.alumni == 1 %}
@@ -119,8 +119,8 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 </div>
 
 {% endif %}
-{% endfor %}
-</div> -->
+{% endfor %} -->
+</div>
 
 <script>
 	document.querySelectorAll('.filter-indicator').forEach(indicator => {
