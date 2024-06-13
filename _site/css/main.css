@@ -6293,6 +6293,19 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .theme-content p {
   color: #333; }
 
+#popup-button {
+  display: inline-block;
+  padding: 6px 2px;
+  background-color: #800F13;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 0;
+  font-weight: bold; }
+
+#popup-button:hover {
+  background-color: #510a0d; }
+
 .btn {
   display: inline-block;
   padding: 10px 15px;
@@ -6548,7 +6561,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   border-radius: 4px; }
 
 .paper {
-  background-color: #fff;
+  background-color: #ebe8e8;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 20px;
@@ -6562,7 +6575,7 @@ h2 {
   color: #6e0d10; }
 
 #abstract-btn {
-  background-color: #005b5b;
+  background-color: #831515;
   color: white;
   border: none;
   padding: 10 5px;
@@ -6892,8 +6905,12 @@ h2 {
   flex: 1; }
 
 .share, .support {
-  background-color: #ffffff;
-  padding: 20px;
+  background-image: url("images/scroll.png");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 350px;
+  padding: 5px 40px;
   margin-bottom: 20px;
   text-align: center;
   border-radius: 10px; }
@@ -6933,14 +6950,14 @@ h2 {
 .donate-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #005b5b;
+  background-color: #821414;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold; }
 
 .donate-button:hover {
-  background-color: #004444; }
+  background-color: #570707; }
 
 .layout-section {
   padding: 20px; }
@@ -7011,7 +7028,7 @@ h2 {
   flex: 1;
   max-width: 200px;
   padding: 20px;
-  background: #f4f4f4; }
+  background: #f8f8f8; }
 
 .category ul {
   list-style: none;
@@ -7144,8 +7161,7 @@ header p {
   width: 100%;
   margin: auto;
   padding: 20px;
-  background-color: #f1f1f1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  background-color: #f1f1f1; }
 
 .contact-section, .visiting-section, .map-section, .info-section {
   margin-bottom: 40px; }
@@ -7306,15 +7322,14 @@ header p {
 
 .btn {
   display: inline-block;
-  padding: 10px 15px;
-  background-color: #005b5b;
+  padding: 5px 10px;
+  background-color: #6e0d10;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease; }
+  border-radius: 5px; }
 
 .btn:hover {
-  background: #005f78; }
+  background: #790909; }
 
 @media (max-width: 768px) {
   .program-container {
