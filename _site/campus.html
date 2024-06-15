@@ -47,9 +47,9 @@
 </div>
 <header>
 
-  <div class="container navbar-container navbar-no-bg" >
-    <div class="row" style="display: flex; justify-content: center; align-items: center;">
-      <div class="col-md-3" style="padding-left: 50px;">
+  <div class="container" >
+    <div class="row navbar-container" style="	margin-top: -12px;">
+      <div class="col-md-3" style="padding-left: 50px; margin-bottom: 5px;">
             <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR</h1></a>
       </div>
       <div class="col-md-7" style=" text-transform: none; justify-content: center; text-align: center;">
@@ -197,7 +197,44 @@ document.addEventListener("DOMContentLoaded", () => {
   <section class="wrapper style5" style="z-index: -1;">
     <div class="inner">
       <div class="engage-container">
+
+
+    
     <div class="main-content">
+
+        <h1 style="color: #6e0d10;font-size: 2rem;font-family: 'Roboto Mono', monospace;padding:20px ">Location</h1>
+<div class="slider-container">
+
+
+    <div class="slider">
+        <button class="arrow arrow-left" onclick="prevSlide()">&#10094;</button>
+        <div class="slides" id="slides">
+            <div class="slide">
+                <img src="images/loc1.jpeg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/loc2.jpeg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/loc3.png" alt="Slide 3">
+            </div>
+        </div>
+        <button class="arrow arrow-right" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="info">
+        <div class="title" id="title">Title 1</div>
+        <br>
+        <div class="description" id="description">Description 1</div>
+    </div>
+    <br>
+    <div class="thumbnails">
+        <img src="images/loc1.jpeg" alt="Thumbnail 1" class="thumbnail" onclick="goToSlide(0)">
+        <img src="images/loc2.jpeg" alt="Thumbnail 2" class="thumbnail" onclick="goToSlide(1)">
+        <img src="images/loc3.png" alt="Thumbnail 3" class="thumbnail" onclick="goToSlide(2)">
+    </div>
+</div>
+<br>
         <h1 style="color: #6e0d10;">Campus of IIT Jodhpur</h1>
         <p>IIT Jodhpur has shifted to its sprawling state-of-the-art residential permanent campus on 852 acres of land located ~24 km away from the center of the city of Jodhpur on National Highway 62 towards Nagaur, N-NE from the center of Jodhpur. The permanent campus has 3 parcels of land. The Institute is finalising plans for adopting one of for harvesting technologies. This new campus has been planned meticulously and envisioned to stand as a symbol of academics – simple, but deep...</p>
 
@@ -218,7 +255,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>The first migrations into the campus took place during May-July 2017.</p>
     </div>
 </div>
-<div class="image-container">
+
+
+</div>
+
+<!-- <div class="image-container">
     <h2 id="image-title">Explore Our Campus</h2>
     <img src="images/bannerc.png" alt="Campus Image" class="full-width-image">
     <p>Lalshc asljhdb alshd alshdl alshd choud calsh alsdihf lfvl slaiadh lashji dlaivh alsdjhf dlshv alishf.ices risus velit, sit amet blandit massa auctor sit amet.</p>
@@ -231,8 +272,55 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna.</p>
         <p>Sagittis at facilisis vitae, pellentesque at etiam. Quisque asellus in odio at ipsum porttitor mollis id  posuere risus, eu faucibus</p>
     </div>
-</div>
-<br>
+</div> -->
+
+
+<script>
+    const imageInfo = [
+               { title: "Loc 1", description: "Dnunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integ." },
+               { title: "Loc 2", description: "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integcription. " },
+               { title: "Loc 3", description: "Tis interdum adipiscing gravida odio porttitor sem non mi integ." }
+           ];
+   
+           let currentSlide = 0;
+   
+           function showSlide(index) {
+               const slides = document.getElementById('slides');
+               const totalSlides = document.querySelectorAll('.slide').length;
+               if (index >= totalSlides) {
+                   currentSlide = 0;
+               } else if (index < 0) {
+                   currentSlide = totalSlides - 1;
+               } else {
+                   currentSlide = index;
+               }
+               slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+               updateInfo(currentSlide);
+           }
+   
+           function updateInfo(index) {
+               const title = document.getElementById('title');
+               const description = document.getElementById('description');
+               title.textContent = imageInfo[index].title;
+               description.textContent = imageInfo[index].description;
+           }
+   
+           function nextSlide() {
+               showSlide(currentSlide + 1);
+           }
+   
+           function prevSlide() {
+               showSlide(currentSlide - 1);
+           }
+   
+           function goToSlide(index) {
+               showSlide(index);
+           }
+   
+           // Initialize the first slide info
+           updateInfo(currentSlide);
+   
+   </script>
     </div>
   </section>
 </article>
@@ -266,7 +354,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       
 <footer id="footer">
-  <div class="container">
     <!-- <div class="row">
         <div class="col-md-12">
             <h1 class="footer-title">School of Artificial Intelligence & Data Science</h1>
@@ -315,11 +402,9 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </ul>
       </div>
-  </div>
 
 
   <!-- Copyright Information Section -->
-  <div class="container">
       <div class="row">
           <div class="col-md-12">
   
@@ -333,7 +418,6 @@ document.addEventListener("DOMContentLoaded", () => {
               </ul>
           </div>
       </div>
-  </div>
 </footer>
 
 

@@ -12,7 +12,7 @@ $(document).ready(function() {
     function changeBackground() {
         currentIndex = (currentIndex + 1) % backgroundImages.length;
         // const randomColor = getRandomColor();
-        // $('.background').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
+        $('.background').css('background-image', ` linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(images/${backgroundImages[currentIndex]})`);
         // $('.background').css('background-color',randomColor);
         $('.rectangular-div').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
     }

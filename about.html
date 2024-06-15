@@ -26,10 +26,9 @@ des: Advancing the field of AI and Data Sciences for good of humanity
     </div>
 </div>
 <br>
-<hr>
 
 
-<div class="application-section">
+<!-- <div class="application-section">
     <h1>Research</h1>
     <h2 id="subheading">Foundational Research</h2>
     <p>Breakthroughs in AI and Data Science are key to controlling and shaping the future technological landscape. Without continued progress in core AI and Data Science Technologies transformative potential of AI will not be realised. The school brings together faculty from diverse disciplines with shared interest in fundamental challenges in AI and Data Science to make significant contributions in next 5 years through publications in top ranking AI and Data Science conferences and journals</p>
@@ -119,98 +118,16 @@ des: Advancing the field of AI and Data Sciences for good of humanity
         </li>
     </ol>
     <p>We need to address these issues for analysing and assessing long term perspectives of AI and DS driven technology development.</p>
-</div>
+</div> -->
 
-<div class="image2-section">
+<!-- <div class="image2-section">
     <h1>AIDE's History</h1>
     <div class="insideImg2" >
         <p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</p>
         <a href="#"><button id="welcomebtn2">Learn More <i class="fa-solid fa-arrow-right"></i></button></a>
     </div>
-</div>
-<br>
-<hr>
-<h1 style="color: #6e0d10;font-size: 2rem;font-family: 'Roboto Mono', monospace;padding:20px ">Location</h1>
-<div class="slider-container">
-
-
-    <div class="slider">
-        <button class="arrow arrow-left" onclick="prevSlide()">&#10094;</button>
-        <div class="slides" id="slides">
-            <div class="slide">
-                <img src="images/loc1.jpeg" alt="Slide 1">
-            </div>
-            <div class="slide">
-                <img src="images/loc2.jpeg" alt="Slide 2">
-            </div>
-            <div class="slide">
-                <img src="images/loc3.png" alt="Slide 3">
-            </div>
-        </div>
-        <button class="arrow arrow-right" onclick="nextSlide()">&#10095;</button>
-    </div>
-
-    <div class="info">
-        <div class="title" id="title">Title 1</div>
-        <br>
-        <div class="description" id="description">Description 1</div>
-    </div>
-    <br>
-    <div class="thumbnails">
-        <img src="images/loc1.jpeg" alt="Thumbnail 1" class="thumbnail" onclick="goToSlide(0)">
-        <img src="images/loc2.jpeg" alt="Thumbnail 2" class="thumbnail" onclick="goToSlide(1)">
-        <img src="images/loc3.png" alt="Thumbnail 3" class="thumbnail" onclick="goToSlide(2)">
-    </div>
-</div>
-
-</div>
+</div> -->
 <br>
 
 
 
-<script>
- const imageInfo = [
-            { title: "Loc 1", description: "Dnunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integ." },
-            { title: "Loc 2", description: "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integcription. " },
-            { title: "Loc 3", description: "Tis interdum adipiscing gravida odio porttitor sem non mi integ." }
-        ];
-
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            const slides = document.getElementById('slides');
-            const totalSlides = document.querySelectorAll('.slide').length;
-            if (index >= totalSlides) {
-                currentSlide = 0;
-            } else if (index < 0) {
-                currentSlide = totalSlides - 1;
-            } else {
-                currentSlide = index;
-            }
-            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-            updateInfo(currentSlide);
-        }
-
-        function updateInfo(index) {
-            const title = document.getElementById('title');
-            const description = document.getElementById('description');
-            title.textContent = imageInfo[index].title;
-            description.textContent = imageInfo[index].description;
-        }
-
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-
-        function goToSlide(index) {
-            showSlide(index);
-        }
-
-        // Initialize the first slide info
-        updateInfo(currentSlide);
-
-</script>
