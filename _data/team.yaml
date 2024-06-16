@@ -1,22 +1,21 @@
 - timestamp: 2/2/2024 16:29:50
-  name: Akshay Pawar
+  name: Abhinaba Lahiri
   position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: abc
-  bio1: sryt
-  bio2: 'th '
-  bio3: ghmh
-  bio4: stg
-  image: >-
-    https://drive.google.com/thumbnail?id=1jEyhg_SiG3T1rqKmoTuDOn9ffB6--Wt6&sz=w300
-  affiliation: Center for Brain Sciences and Applications (IIT-Jodhpur)
-  display: 1
+  email: abhinaba@iitj.ac.in
   undefined: ''
+  bio1: Social Choice Theory, Mechanism Design, Game Theory
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/file/d/1HqkIgm29ey65zbHMe1WI5A9-lBRbFbEt/view?usp=drive_link
+  affiliation: Centre for Mathematical and Computational Economics
+  display: 1
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2021'
 - timestamp: 2/9/2024 11:03:05
   name: M. Sanket Rathod
@@ -26,6 +25,7 @@
   student: '0'
   alumni: 0
   email: xyz
+  undefined: ''
   bio1: Mesoscale whole-brain network modeling, epilepsy, memory in mouse brains
   bio2: rsg er
   bio3: ''
@@ -34,9 +34,7 @@
     https://drive.google.com/thumbnail?id=1D-3MdkThidQnSalXWOopjUNP787IOdYJ&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2022'
 - timestamp: 2/9/2024 11:20:27
   name: Prafulla Date
@@ -46,6 +44,7 @@
   student: '0'
   alumni: 0
   email: asd
+  undefined: ''
   bio1: Neural effects of smartphone use, functional connectivity
   bio2: ''
   bio3: ''
@@ -54,9 +53,7 @@
     https://drive.google.com/thumbnail?id=1jLPSgfbNrzG9s-Sc75LkOE32aIAyxMvt&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2023'
 - timestamp: 2/9/2024 11:33:19
   name: Richa Ahuja
@@ -66,6 +63,7 @@
   student: '0'
   alumni: 0
   email: dgsg
+  undefined: ''
   bio1: Neural effects of smartphone use, EEG biomarkers of anxiety
   bio2: ''
   bio3: ''
@@ -74,9 +72,7 @@
     https://drive.google.com/thumbnail?id=1U7ccOONZLLwaCkACat0GAj2eyU-VOYJ0&sz=w300
   affiliation: Center for Brain Science and Applications (IIT-Jodhpur)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2023'
 - timestamp: 2/9/2024 11:42:14
   name: Ujjwal
@@ -86,6 +82,7 @@
   student: '0'
   alumni: 1
   email: gfgh
+  undefined: ''
   bio1: Sleep and dreams
   bio2: ''
   bio3: ''
@@ -94,9 +91,7 @@
     https://drive.google.com/thumbnail?id=1bgGrzLcKAm3JRT_qrv-TdAOuSuxDNWoV&sz=w300
   affiliation: Electrical Engineering (IIT Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: System Engineer - Enphase Energy
   year: '2022'
 - timestamp: 2/9/2024 11:45:13
   name: Umesh
@@ -106,6 +101,7 @@
   student: '0'
   alumni: 1
   email: ugj
+  undefined: ''
   bio1: Classification of neurons based on Neuropixels ephys features
   bio2: ''
   bio3: ''
@@ -114,9 +110,7 @@
     https://drive.google.com/thumbnail?id=18p2NuiVRhprRLToq2nizT6PO-NuL42tX&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: Software job
   year: '2022'
 - timestamp: 2/9/2024 11:48:02
   name: Umang
@@ -126,6 +120,7 @@
   student: '0'
   alumni: 1
   email: ersf
+  undefined: ''
   bio1: Classification of neurons based on Neuropixels ephys features
   bio2: rger
   bio3: ''
@@ -134,9 +129,7 @@
     https://drive.google.com/thumbnail?id=1vuCUPEI4M3oy0Z197jGM8o4RDAIvi9dZ&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: Pursuing MS (Computer Engineering) at Carnegie Mellon University
   year: '2021'
 - timestamp: 2/9/2024 11:51:42
   name: Ulysyss
@@ -146,6 +139,7 @@
   student: '0'
   alumni: 1
   email: uigujg
+  undefined: ''
   bio1: Applying CURBD model to Neuropixels data
   bio2: ''
   bio3: ''
@@ -154,9 +148,7 @@
     https://drive.google.com/thumbnail?id=12zQE9FvuBWYYHINy6KDFgyCU17Mb6BAt&sz=w300
   affiliation: Electircal Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: Pursuing MS (Computer Science) at University of Wisconsin-Madison
   year: '2022'
 - timestamp: 2/9/2024 13:12:53
   name: Uday
@@ -166,6 +158,7 @@
   student: '0'
   alumni: 1
   email: vxvd
+  undefined: ''
   bio1: >-
     Detecting Brain Connectivity Changes with Virtual Transcranial Magnetic
     Stimulation
@@ -180,9 +173,7 @@
     https://drive.google.com/thumbnail?id=1MI8R_8TO-Hoo5y3k305AsZwWDuZ50CEr&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: Pursuing MS/PhD in the US
   year: '2023'
 - timestamp: 2/9/2024 13:55:20
   name: Isha
@@ -192,6 +183,7 @@
   student: '0'
   alumni: 1
   email: uryt
+  undefined: ''
   bio1: Using CURBD model on EEG dataset
   bio2: >-
     We used current-based decomposition (CURBD) model to identify the activity
@@ -204,9 +196,7 @@
     https://drive.google.com/thumbnail?id=18XWPNihceVtI8JBrs42gwLeunGu5-w2f&sz=w300
   affiliation: BITS Pilani, Pilani Campus
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: Undergraduate Research Intern at Harvard University
   year: '2023'
 - timestamp: 2/9/2024 15:25:56
   name: Uma
@@ -216,6 +206,7 @@
   student: '0'
   alumni: 0
   email: rwr
+  undefined: ''
   bio1: >-
     PeneWise - Using Machine Learning and Embedded Systems for Cost-Effective
     Handwriting Digitization
@@ -228,9 +219,7 @@
     https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300
   affiliation: Physics (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2023'
 - timestamp: ''
   name: ''
@@ -240,6 +229,7 @@
   student: '0'
   alumni: .nan
   email: uil
+  undefined: ''
   bio1: ''
   bio2: ''
   bio3: ''
@@ -247,9 +237,7 @@
   image: ''
   affiliation: ''
   display: .nan
-  undefined: ''
   acknowledgement: ''
-  alumni_current: ''
   year: ''
 - timestamp: 2/10/2024 7:34:47
   name: Meera S.
@@ -259,6 +247,7 @@
   student: '0'
   alumni: 0
   email: nvnv
+  undefined: ''
   bio1: Navigational network in the brain
   bio2: ''
   bio3: ''
@@ -267,9 +256,7 @@
     https://drive.google.com/thumbnail?id=1hbBGLJuTTPwJ5ORAFnm8nMlyMe-CNMRC&sz=w300
   affiliation: Cognitive Science (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2022'
 - timestamp: 2/10/2024 23:00:41
   name: Mithali S. Roy
@@ -279,6 +266,7 @@
   student: '0'
   alumni: 0
   email: o8iyy
+  undefined: ''
   bio1: Modeling of dynamics in the mouse brain in different states of consciousness
   bio2: sgrgr
   bio3: thrrt
@@ -287,9 +275,7 @@
     https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2023'
 - timestamp: ''
   name: ''
@@ -299,6 +285,7 @@
   student: '0'
   alumni: .nan
   email: dfgg
+  undefined: ''
   bio1: ''
   bio2: ''
   bio3: ''
@@ -306,9 +293,7 @@
   image: ''
   affiliation: ''
   display: .nan
-  undefined: ''
   acknowledgement: ''
-  alumni_current: ''
   year: ''
 - timestamp: 2/12/2024 13:09:31
   name: Mangesh Scott
@@ -318,6 +303,7 @@
   student: '0'
   alumni: 0
   email: sgf
+  undefined: ''
   bio1: Modelling of the Dynamics of Foveation and Attention in Human Visual System
   bio2: ''
   bio3: ''
@@ -326,9 +312,7 @@
     https://drive.google.com/thumbnail?id=1MI8R_8TO-Hoo5y3k305AsZwWDuZ50CEr&sz=w300
   affiliation: HSS(Humanities and Social Sciences) Department
   display: 1
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2023'
 - timestamp: 2/15/2024 16:18:19
   name: Izan
@@ -338,6 +322,7 @@
   student: '0'
   alumni: 0
   email: utyjyt
+  undefined: ''
   bio1: >-
     I work on multidisciplinary topics that brings together Dynamics,
     Statistical Mechanics, Biological Systems & Computing.
@@ -348,9 +333,7 @@
     https://drive.google.com/thumbnail?id=18XWPNihceVtI8JBrs42gwLeunGu5-w2f&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
   display: 0
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: Applying for PhD
   year: '2023'
 - timestamp: 2/29/2024 1:25:25
   name: Uri
@@ -360,6 +343,7 @@
   student: '0'
   alumni: 0
   email: bgfbf
+  undefined: ''
   bio1: 'Trekker Safety Device '
   bio2: >-
     Integration of device with Lora and GPS, incorporated in trekking pole,
@@ -370,7 +354,5 @@
     https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300
   affiliation: Industrial design (Savannah College of Art and Design, GA)
   display: 0
-  undefined: ''
   acknowledgement: I understand and agree
-  alumni_current: ''
   year: '2023'
