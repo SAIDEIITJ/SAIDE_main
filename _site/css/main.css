@@ -7523,7 +7523,7 @@ p {
 .background-about {
   position: absolute;
   margin-top: 150px;
-  top: -7%;
+  top: -5%;
   left: 0;
   width: 100%;
   height: 75%;
@@ -10544,7 +10544,7 @@ body.is-menu-visible #menu {
   background-size: cover;
   z-index: -1;
   transition: background-image 1s ease-in-out;
-  filter: blur(6px);
+  filter: blur(2px);
   /* Apply blur filter */ }
 
 ul #subbullet {
