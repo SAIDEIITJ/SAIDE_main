@@ -6606,12 +6606,45 @@ h2 {
   margin-left: 15px;
   font-size: 2rem; }
 
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #000000c5;
+  /* Matching the navbar color */
+  min-width: 250px;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  /* Rounded corners for a smoother look */
+  left: 70%;
+  margin-top: 10px; }
+
+.dropdown2 {
+  padding: 10px;
+  width: auto; }
+
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 13px;
+  text-decoration: none;
+  border: 0;
+  display: block;
+  text-transform: none; }
+
+.dropdown-content2 a:hover {
+  background-color: #000000; }
+
+.dropdown2:hover .dropdown-content2 {
+  display: block; }
+
 .search-container {
   display: flex;
   /* Use flexbox layout */
   align-items: center;
   /* Align items vertically */
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: -20px; }
 
 .search-container i {
   margin-right: 5px; }
@@ -6630,7 +6663,8 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   justify-items: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: -70px; }
 
 .filter-indicator {
   font-size: 1.5em;
@@ -7737,7 +7771,7 @@ figcaption {
   text-align: left;
   padding-left: 10px; }
 
-.header-row .dropdown1, .header-row .view-all {
+.header-row #dpbtn, .header-row #view-all {
   margin-left: 20px;
   padding: 10px 15px;
   font-size: 16px;
@@ -7883,7 +7917,7 @@ figcaption {
   position: relative;
   width: 40%;
   margin-right: 30px; }
-  .button-group .dropdown1 {
+  .button-group #dpbtn {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7895,7 +7929,7 @@ figcaption {
     background-color: #17877a;
     color: white;
     position: relative; }
-  .button-group .view-all {
+  .button-group #view-all {
     padding: 0px 5px;
     width: 100%;
     font-size: 16px;
@@ -9852,15 +9886,6 @@ input[type="reset"],
 input[type="button"],
 button,
 .button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: transparent;
   border-radius: 3px;
   border: 0;
   box-shadow: inset 0 0 0 2px #fff;
@@ -9878,18 +9903,6 @@ button,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
-  button:hover,
-  .button:hover {
-    background-color: rgba(144, 144, 144, 0.25); }
-  input[type="submit"]:active,
-  input[type="reset"]:active,
-  input[type="button"]:active,
-  button:active,
-  .button:active {
-    background-color: rgba(144, 144, 144, 0.5); }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,

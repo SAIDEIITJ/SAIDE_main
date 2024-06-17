@@ -16,8 +16,6 @@ permalink: /test
 {% assign oth_members = '' | split: '' %}
 
 {% assign sorted_members = site.data.team | sort: "year" %}
- 
-
 
 
 {% for member in sorted_members %}

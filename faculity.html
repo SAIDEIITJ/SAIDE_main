@@ -6,8 +6,14 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 ---
 
 <div class="search-container">
-    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: brown;"></i>
     <input type="text" id="search-bar" placeholder="Search by name ...">
+    <div class="dropdown2">
+        <button class="dropbtn">Search by Name  <i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown-content2">
+            <a href="#" id="searchByName">Search by Name </a>
+            <a href="#" id="searchByResearchArea">Search by Research Area</a>
+        </div>
+    </div>
 </div>
 <div class="filter-indicators">
     <div class="filter-indicator" id="all" data-filter="Core Faculty">
@@ -34,7 +40,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
     {% if member.display == 1 and member.faculity == '1' %}
-    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}">
+    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{member.bio1}}">
         <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
 
         <h4>{{ member.name }}</h4>
@@ -74,16 +80,71 @@ document.querySelectorAll('.filter-indicator').forEach(indicator => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    // Initial search behavior (search by name)
+    let searchBy = 'name';
 
-document.getElementById('search-bar').addEventListener('input', () => {
-    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    document.querySelectorAll('.member-card').forEach(member => {
-        const name = member.getAttribute('data-name').toLowerCase();
-        if (name.includes(searchTerm)) {
-            member.style.display = 'block';
-        } else {
-            member.style.display = 'none';
+    // Function to toggle search by name or research area
+    function toggleSearchBy(option) {
+        if (option === 'name') {
+            document.getElementById('search-bar').placeholder = 'Search by name ...';
+        } else if (option === 'researchArea') {
+            document.getElementById('search-bar').placeholder = 'Search by research area ...';
         }
+        searchBy = option;
+    }
+
+    // Toggle dropdown display
+    document.querySelector('.dropbtn').addEventListener('click', function () {
+        document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName('dropdown-content');
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+    // Search functionality based on selected option
+    document.getElementById('searchByName').addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleSearchBy('name');
+        var button = document.querySelector(".dropbtn");
+        var newText = "Search by Name"; 
+        button.childNodes[0].textContent = newText + " ";
+        document.querySelector('.dropdown-content').classList.remove('show');
+    });
+
+    document.getElementById('searchByResearchArea').addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleSearchBy('researchArea');
+        var button = document.querySelector(".dropbtn");
+        var newText = "Search by Research Area"; 
+        button.childNodes[0].textContent = newText + " ";
+        document.querySelector('.dropdown-content').classList.remove('show');
+    });
+
+    // Input event listener for search bar
+    document.getElementById('search-bar').addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase();
+        document.querySelectorAll('.member-card').forEach(member => {
+            const name = member.getAttribute('data-name').toLowerCase();
+            const researchArea = member.getAttribute('data-research-area').toLowerCase(); // Adjust this based on your data structure
+
+            if ((searchBy === 'name' && name.includes(searchTerm)) ||
+                (searchBy === 'researchArea' && researchArea.includes(searchTerm))) {
+                member.style.display = 'block';
+            } else {
+                member.style.display = 'none';
+            }
+        });
     });
 });
 </script>

@@ -29,7 +29,7 @@ function toggleDropdown() {
 }
 
 window.onclick = function(event) {
-    if (!event.target.matches('.dropdown1')) {
+    if (!event.target.matches('.dpdown1')) {
         var dropdowns = document.getElementsByClassName("dropdown-content1");
         for (var i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
@@ -68,7 +68,7 @@ function renderItems(container, items) {
 }
 
 function showNews() {
-    var button = document.querySelector(".dropdown1");
+    var button = document.querySelector(".dpdown1");
     var newText = "News"; 
     button.childNodes[0].textContent = newText + " ";
 
@@ -84,7 +84,7 @@ function showNews() {
 }
 
 function showEvents() {
-    var button = document.querySelector(".dropdown1");
+    var button = document.querySelector(".dpdown1");
     var newText = "Events"; 
     button.childNodes[0].textContent = newText + " ";
 

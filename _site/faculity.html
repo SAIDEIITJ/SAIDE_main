@@ -193,8 +193,14 @@ document.addEventListener("DOMContentLoaded", () => {
   <section class="wrapper style5">
     <div class="inner">
       <div class="search-container">
-    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: brown;"></i>
     <input type="text" id="search-bar" placeholder="Search by name ...">
+    <div class="dropdown2">
+        <button class="dropbtn">Search by Name  <i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown-content2">
+            <a href="#" id="searchByName">Search by Name </a>
+            <a href="#" id="searchByResearchArea">Search by Research Area</a>
+        </div>
+    </div>
 </div>
 <div class="filter-indicators">
     <div class="filter-indicator" id="all" data-filter="Core Faculty">
@@ -221,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Manish Aggarwal">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Manish Aggarwal" data-research-area="Preference learning, multi criteria decision making">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Manish Aggarwal</h4>
@@ -237,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Abhinaba Lahiri">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Abhinaba Lahiri" data-research-area="Social Choice Theory, Mechanism Design, Game Theory">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Abhinaba Lahiri</h4>
@@ -253,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Abhilasha Maheshwari ">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Abhilasha Maheshwari " data-research-area="Water Distribution Networks,  Sustainable Water and energy Management in Industrial Systems,  AI and ML for Environmental and Chemical Systems &#8211; ">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Abhilasha Maheshwari </h4>
@@ -269,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Saurabh Gandhi">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Saurabh Gandhi" data-research-area="Experimental cognitive neuroscience, computational neuroscience,neuraldynamics,complex systems.">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Saurabh Gandhi</h4>
@@ -285,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Bhivraj Suthar">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Bhivraj Suthar" data-research-area="Robotics and Artificial Intelligence">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Bhivraj Suthar</h4>
@@ -301,7 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Dipanjan Roy">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Dipanjan Roy" data-research-area="Large scale Brain Networks, Multisensory speech perception & ML; Network Neuroscience, Cognitive Brain dynamics, Visual computations, Eye tracking & Human behavior, Predictive coding">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Dipanjan Roy</h4>
@@ -317,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Ganesh Manjhi">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Ganesh Manjhi" data-research-area="Macroeconomics, Political Economy, Growth Economics, Applied Econometrics and Forecasting ">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Ganesh Manjhi</h4>
@@ -333,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Anand Krishnan Plappally">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Anand Krishnan Plappally" data-research-area="Wetlands, geospatial applications , agriculture">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Anand Krishnan Plappally</h4>
@@ -349,7 +355,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Anand Mishra">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Anand Mishra" data-research-area="">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Anand Mishra</h4>
@@ -363,7 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Angan Sengupta">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Angan Sengupta" data-research-area="Multiscale Modelling and Simulations, Computational Material Design, Fire and Explosion Dynamics and Safety Modelling, Transport Processes Modelling and Simulations">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Angan Sengupta</h4>
@@ -379,7 +385,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Anil Kumar Tiwari">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Anil Kumar Tiwari" data-research-area="Neuroscience, Image and video processing, Healthcare devices">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Anil Kumar Tiwari</h4>
@@ -395,7 +401,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Ankita Sharma">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Ankita Sharma" data-research-area="Advance form of human behavior as an integration for cognition, emotional, social, moral and self aspects">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Ankita Sharma</h4>
@@ -411,7 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Bikash Santra">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Bikash Santra" data-research-area="Computer Vision, Machine Learning, and Medical Image Analysis">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Bikash Santra</h4>
@@ -427,7 +433,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Dweepobotee Brahma">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Dweepobotee Brahma" data-research-area="Econometrics, Causal Inference and Machine Learning, Health Economics">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Dweepobotee Brahma</h4>
@@ -443,7 +449,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Shilpa Dang">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Shilpa Dang" data-research-area="Computational Cognitive Neuroscience; Connectomics; fMRI; Pupillometry">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Shilpa Dang</h4>
@@ -459,7 +465,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="S. Srivatsa Srinivas">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="S. Srivatsa Srinivas" data-research-area="Queueing Game Theory, Service Operations, Game Theory Applications, Public Policy Modeling">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>S. Srivatsa Srinivas</h4>
@@ -475,7 +481,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Vignesh Muralidharan">
+    <div class="col-sm-6 member-card" data-position="Core Faculty" data-name="Vignesh Muralidharan" data-research-area="Cognitive neuroscience of action control, Computational neuroscience, Impulse-control disorders, Non-invasive brain stimulation (TMS), Brain-imaging (EEG)">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Vignesh Muralidharan</h4>
@@ -491,7 +497,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Amit Bhardwaj">
+    <div class="col-sm-6 member-card" data-position="Affiliated Faculty" data-name="Amit Bhardwaj" data-research-area="Haptics, Perception, Teleoperation, Applications of Machine Learning and Augmented and Virtual Reality">
         <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300" class="img-responsive" width="35%" style="float: left" />
 
         <h4>Amit Bhardwaj</h4>
@@ -531,16 +537,71 @@ document.querySelectorAll('.filter-indicator').forEach(indicator => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    // Initial search behavior (search by name)
+    let searchBy = 'name';
 
-document.getElementById('search-bar').addEventListener('input', () => {
-    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    document.querySelectorAll('.member-card').forEach(member => {
-        const name = member.getAttribute('data-name').toLowerCase();
-        if (name.includes(searchTerm)) {
-            member.style.display = 'block';
-        } else {
-            member.style.display = 'none';
+    // Function to toggle search by name or research area
+    function toggleSearchBy(option) {
+        if (option === 'name') {
+            document.getElementById('search-bar').placeholder = 'Search by name ...';
+        } else if (option === 'researchArea') {
+            document.getElementById('search-bar').placeholder = 'Search by research area ...';
         }
+        searchBy = option;
+    }
+
+    // Toggle dropdown display
+    document.querySelector('.dropbtn').addEventListener('click', function () {
+        document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName('dropdown-content');
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+    // Search functionality based on selected option
+    document.getElementById('searchByName').addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleSearchBy('name');
+        var button = document.querySelector(".dropbtn");
+        var newText = "Search by Name"; 
+        button.childNodes[0].textContent = newText + " ";
+        document.querySelector('.dropdown-content').classList.remove('show');
+    });
+
+    document.getElementById('searchByResearchArea').addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleSearchBy('researchArea');
+        var button = document.querySelector(".dropbtn");
+        var newText = "Search by Research Area"; 
+        button.childNodes[0].textContent = newText + " ";
+        document.querySelector('.dropdown-content').classList.remove('show');
+    });
+
+    // Input event listener for search bar
+    document.getElementById('search-bar').addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase();
+        document.querySelectorAll('.member-card').forEach(member => {
+            const name = member.getAttribute('data-name').toLowerCase();
+            const researchArea = member.getAttribute('data-research-area').toLowerCase(); // Adjust this based on your data structure
+
+            if ((searchBy === 'name' && name.includes(searchTerm)) ||
+                (searchBy === 'researchArea' && researchArea.includes(searchTerm))) {
+                member.style.display = 'block';
+            } else {
+                member.style.display = 'none';
+            }
+        });
     });
 });
 </script>
