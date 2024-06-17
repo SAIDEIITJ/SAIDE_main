@@ -1,25 +1,26 @@
 ---
 layout: people
-title: Faculity
+title: Faculty
 link: HOME / PEOPLE
 des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
 ---
-	
+
 <div class="search-container">
-	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: brown;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
+    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: brown;"></i>
+    <input type="text" id="search-bar" placeholder="Search by name ...">
 </div>
 <div class="filter-indicators">
     <div class="filter-indicator" id="all" data-filter="Core Faculty">
         <div class="checkbox"></div>
-        <span>Core Faculity</span>
+        <span>Core Faculty</span>
     </div>
     <div class="filter-indicator" id="phd" data-filter="Affiliated Faculty">
         <div class="checkbox"></div>
-        <span>Affiliate Faculity</span>
+        <span>Affiliate Faculty</span>
     </div>
     <div class="filter-indicator" id="ms" data-filter="Adjunct Faculty">
         <div class="checkbox"></div>
-        <span>Adjunct Faculity</span>
+        <span>Adjunct Faculty</span>
     </div>
     <div class="filter-indicator" id="category1" data-filter="pp">
         <div class="checkbox"></div>
@@ -27,67 +28,51 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     </div>
 </div>
 
+<br><br>
 
-<br>
-<br>
-
-
-{% assign sorted_members = site.data.team | sort: "year" %}
-
-{% assign number_printed = 0 %}
-{% for member in sorted_members %}
-{% if member.display == 1 and member.faculity == '1'  %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-<div class="row" id="teamMember">
-{% endif %}
-
-  <div class="col-sm-6 member" data-position="{{ member.subfaculty }}" data-name = "{{member.name}}" >
-    <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
-    <h4>{{ member.name }}</h4>
-    <i>{{ member.position }}, {{ member.affiliation }} <br>email: {{ member.email }}</i>
-    <ul style="overflow: hidden">
-
-    {% if member.bio1 != "" %}
-      <li> {{ member.bio1 }} </li>
+<div class="row" id="teamMembers">
+    {% assign sorted_members = site.data.team | sort: "year" %}
+    {% for member in sorted_members %}
+    {% if member.display == 1 and member.faculity == '1' %}
+    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name = "{{member.name}}" >
+        <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
+        <h4>{{ member.name }}</h4>
+        <i>{{ member.position }}, {{ member.affiliation }} <br>email: {{ member.email }}</i>
+        <ul style="overflow: hidden">
+      
+        {% if member.bio1 != "" %}
+          <li> {{ member.bio1 }} </li>
+        {% endif %}
+        {% if member.bio2 != "" %}
+          <li> {{ member.bio2 }} </li>
+        {% endif %}
+        {% if member.bio3 != "" %}
+          <li> {{ member.bio3 }} </li>
+        {% endif %}
+        {% if member.bio4 != "" %}
+          <li> {{ member.bio4 }} </li>
+        {% endif %}
+      
+        </ul>
+      </div>
     {% endif %}
-
-    </ul>
-  </div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-{% endif %}
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
+    {% endfor %}
 </div>
 
 <script>
-
 document.querySelectorAll('.filter-indicator').forEach(indicator => {
     indicator.addEventListener('click', () => {
         const filter = indicator.getAttribute('data-filter');
         
-        // Toggle the checked class
         if (indicator.classList.contains('checked')) {
             indicator.classList.remove('checked');
-            document.querySelectorAll('.member').forEach(member => {
+            document.querySelectorAll('.member-card').forEach(member => {
                 member.style.display = 'block';
             });
         } else {
             document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
             indicator.classList.add('checked');
-            document.querySelectorAll('.member').forEach(member => {
+            document.querySelectorAll('.member-card').forEach(member => {
                 const category = member.getAttribute('data-position');
                 if (filter === 'all' || category === filter) {
                     member.style.display = 'block';
@@ -101,7 +86,7 @@ document.querySelectorAll('.filter-indicator').forEach(indicator => {
 
 document.getElementById('search-bar').addEventListener('input', () => {
     const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    document.querySelectorAll('.member').forEach(member => {
+    document.querySelectorAll('.member-card').forEach(member => {
         const name = member.getAttribute('data-name').toLowerCase();
         if (name.includes(searchTerm)) {
             member.style.display = 'block';
@@ -111,4 +96,3 @@ document.getElementById('search-bar').addEventListener('input', () => {
     });
 });
 </script>
-

@@ -6679,6 +6679,39 @@ h2 {
   font-size: 0.75em;
   /* Adjust the size of the text below the checkbox */ }
 
+.fac-card {
+  margin: 5px;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  text-align: left; }
+
+.member-card {
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+
+.member-card img {
+  border-radius: 50%;
+  margin-bottom: 10px; }
+
+.member-card h4 {
+  margin: 10px 0 5px; }
+
+.member-card i {
+  font-style: normal;
+  color: #777;
+  margin-bottom: 10px; }
+
 .about-section {
   padding: 20px;
   text-align: left;
