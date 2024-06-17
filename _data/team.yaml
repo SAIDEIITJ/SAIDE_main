@@ -1,4 +1,4 @@
-- timestamp: 2/2/2024 16:29:50
+- undefined: ''
   name: Abhinaba Lahiri
   position: Assistant Professor
   faculity: '1'
@@ -6,7 +6,6 @@
   student: '0'
   alumni: 0
   email: abhinaba@iitj.ac.in
-  undefined: ''
   bio1: Social Choice Theory, Mechanism Design, Game Theory
   bio2: ''
   bio3: ''
@@ -17,342 +16,330 @@
   display: 1
   acknowledgement: I understand and agree
   year: '2021'
-- timestamp: 2/9/2024 11:03:05
-  name: M. Sanket Rathod
-  position: MS(R) student
+- undefined: ''
+  name: Bhivraj Suthar
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: xyz
-  undefined: ''
-  bio1: Mesoscale whole-brain network modeling, epilepsy, memory in mouse brains
-  bio2: rsg er
+  email: ' bhivraj@iitj.ac.in'
+  bio1: Robotics and Artificial Intelligence
+  bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1D-3MdkThidQnSalXWOopjUNP787IOdYJ&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
+  affiliation: ' School of Artificial Intelligence and Data Science'
   display: 1
   acknowledgement: I understand and agree
   year: '2022'
-- timestamp: 2/9/2024 11:20:27
-  name: Prafulla Date
-  position: PhD student
+- undefined: ''
+  name: Bikash Santra
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: asd
-  undefined: ''
-  bio1: Neural effects of smartphone use, functional connectivity
+  email: bikash@iitj.ac.in
+  bio1: Computer Vision, Machine Learning, and Medical Image Analysis
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1jLPSgfbNrzG9s-Sc75LkOE32aIAyxMvt&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
+  affiliation: ' School of Artificial Intelligence and Data Science'
   display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: 2/9/2024 11:33:19
-  name: Richa Ahuja
-  position: Research Assistant
+- undefined: ''
+  name: Dweepobotee Brahma
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: dgsg
-  undefined: ''
-  bio1: Neural effects of smartphone use, EEG biomarkers of anxiety
+  email: dweepobotee@iitj.ac.in
+  bio1: Econometrics, Causal Inference and Machine Learning, Health Economics
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1U7ccOONZLLwaCkACat0GAj2eyU-VOYJ0&sz=w300
-  affiliation: Center for Brain Science and Applications (IIT-Jodhpur)
+  affiliation: Centre for Mathematical and Computational Economics
   display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: 2/9/2024 11:42:14
-  name: Ujjwal
-  position: Undergraduate student
+- undefined: ''
+  name: Dipanjan Roy
+  position: Associate Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 1
-  email: gfgh
-  undefined: ''
-  bio1: Sleep and dreams
+  email: droy@iitj.ac.in
+  bio1: >-
+    Large scale Brain Networks, Multisensory speech perception & ML; Network
+    Neuroscience, Cognitive Brain dynamics, Visual computations, Eye tracking &
+    Human behavior, Predictive coding
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1bgGrzLcKAm3JRT_qrv-TdAOuSuxDNWoV&sz=w300
-  affiliation: Electrical Engineering (IIT Delhi)
+  affiliation: Centre for Brain Science and Applications
   display: 1
   acknowledgement: I understand and agree
   year: '2022'
-- timestamp: 2/9/2024 11:45:13
-  name: Umesh
-  position: Undergraduate student
+- undefined: ''
+  name: Ganesh Manjhi
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 1
-  email: ugj
-  undefined: ''
-  bio1: Classification of neurons based on Neuropixels ephys features
+  email: gmanjhi@iitj.ac.in
+  bio1: >-
+    Macroeconomics, Political Economy, Growth Economics, Applied Econometrics
+    and Forecasting 
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=18p2NuiVRhprRLToq2nizT6PO-NuL42tX&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
+  affiliation: Centre for Mathematical and Computational Economics
   display: 1
   acknowledgement: I understand and agree
   year: '2022'
-- timestamp: 2/9/2024 11:48:02
-  name: Umang
-  position: Undergraduate student
+- undefined: ''
+  name: Manish Aggarwal
+  position: Associate Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 1
-  email: ersf
-  undefined: ''
-  bio1: Classification of neurons based on Neuropixels ephys features
-  bio2: rger
+  email: ma@iitj.ac.in
+  bio1: Preference learning, multi criteria decision making
+  bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1vuCUPEI4M3oy0Z197jGM8o4RDAIvi9dZ&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
+  affiliation: School of Artificial Intelligence and Data Science
   display: 1
   acknowledgement: I understand and agree
   year: '2021'
-- timestamp: 2/9/2024 11:51:42
-  name: Ulysyss
-  position: Undergraduate student
+- undefined: ''
+  name: Saurabh Gandhi
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 1
-  email: uigujg
-  undefined: ''
-  bio1: Applying CURBD model to Neuropixels data
+  email: sgandhi@iitj.ac.in
+  bio1: >-
+    Experimental cognitive neuroscience, computational
+    neuroscience,neuraldynamics,complex systems.
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=12zQE9FvuBWYYHINy6KDFgyCU17Mb6BAt&sz=w300
-  affiliation: Electircal Engineering (IIT-Delhi)
+  affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   acknowledgement: I understand and agree
   year: '2022'
-- timestamp: 2/9/2024 13:12:53
-  name: Uday
-  position: Undergraduate student
+- undefined: ''
+  name: Shilpa Dang
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 1
-  email: vxvd
-  undefined: ''
-  bio1: >-
-    Detecting Brain Connectivity Changes with Virtual Transcranial Magnetic
-    Stimulation
-  bio2: >-
-    Simulated the effect of TMS on a virtual brain model using The Virtual Brain
-    (TVB)
-  bio3: >-
-    Attempted to discern differences in stimulation response between normal
-    patients and patients with Alzheimer&#8217;s Disease. 
+  email: sdang@iitj.ac.in
+  bio1: Computational Cognitive Neuroscience; Connectomics; fMRI; Pupillometry
+  bio2: ''
+  bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1MI8R_8TO-Hoo5y3k305AsZwWDuZ50CEr&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
+  affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: 2/9/2024 13:55:20
-  name: Isha
-  position: Intern
+- undefined: ''
+  name: S. Srivatsa Srinivas
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 1
-  email: uryt
-  undefined: ''
-  bio1: Using CURBD model on EEG dataset
-  bio2: >-
-    We used current-based decomposition (CURBD) model to identify the activity
-    in brain regions responding to a stimulus
-  bio3: >-
-    The differences in the activity between healthy and Alz heimer's patients
-    helped us gauge the affected regions
-  bio4: gsrgd
+  email: srivatsa@iitj.ac.in
+  bio1: >-
+    Queueing Game Theory, Service Operations, Game Theory Applications, Public
+    Policy Modeling
+  bio2: ''
+  bio3: ''
+  bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=18XWPNihceVtI8JBrs42gwLeunGu5-w2f&sz=w300
-  affiliation: BITS Pilani, Pilani Campus
+  affiliation: Centre for Mathematical and Computational Economics
   display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: 2/9/2024 15:25:56
-  name: Uma
-  position: Undergraduate student
+- undefined: ''
+  name: Vignesh Muralidharan
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: rwr
-  undefined: ''
+  email: vigneshmdharan@iitj.ac.in
   bio1: >-
-    PeneWise - Using Machine Learning and Embedded Systems for Cost-Effective
-    Handwriting Digitization
-  bio2: >-
-    Interested in robotics, especially in developing hardware for novel robotic
-    applications.
+    Cognitive neuroscience of action control, Computational neuroscience,
+    Impulse-control disorders, Non-invasive brain stimulation (TMS),
+    Brain-imaging (EEG)
+  bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300
-  affiliation: Physics (IIT-Delhi)
+  affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: ''
-  name: ''
-  position: ''
-  faculity: '1'
-  staff: '0'
-  student: '0'
-  alumni: .nan
-  email: uil
-  undefined: ''
-  bio1: ''
-  bio2: ''
-  bio3: ''
-  bio4: ''
-  image: ''
-  affiliation: ''
-  display: .nan
-  acknowledgement: ''
-  year: ''
-- timestamp: 2/10/2024 7:34:47
-  name: Meera S.
-  position: MSc student
+- undefined: ''
+  name: 'Abhilasha Maheshwari '
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: nvnv
-  undefined: ''
-  bio1: Navigational network in the brain
+  email: abhilasham@iitj.ac.in
+  bio1: >-
+    Water Distribution Networks,  Sustainable Water and energy Management in
+    Industrial Systems,  AI and ML for Environmental and Chemical Systems &#8211; 
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1hbBGLJuTTPwJ5ORAFnm8nMlyMe-CNMRC&sz=w300
-  affiliation: Cognitive Science (IIT-Delhi)
+  affiliation: Chemical engineering
   display: 1
   acknowledgement: I understand and agree
   year: '2022'
-- timestamp: 2/10/2024 23:00:41
-  name: Mithali S. Roy
-  position: MS(R) student
+- undefined: ''
+  name: Amit Bhardwaj
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: o8iyy
-  undefined: ''
-  bio1: Modeling of dynamics in the mouse brain in different states of consciousness
-  bio2: sgrgr
-  bio3: thrrt
-  bio4: 'Personal interests: Chess, Swimming, Traveling, Yoga & Meditation'
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
-  display: 1
-  acknowledgement: I understand and agree
-  year: '2023'
-- timestamp: ''
-  name: ''
-  position: ''
-  faculity: '1'
-  staff: '0'
-  student: '0'
-  alumni: .nan
-  email: dfgg
-  undefined: ''
-  bio1: ''
+  email: ' amitb@iitj.ac.in'
+  bio1: >-
+    Haptics, Perception, Teleoperation, Applications of Machine Learning and
+    Augmented and Virtual Reality
   bio2: ''
   bio3: ''
   bio4: ''
-  image: ''
-  affiliation: ''
-  display: .nan
-  acknowledgement: ''
-  year: ''
-- timestamp: 2/12/2024 13:09:31
-  name: Mangesh Scott
-  position: MSc Student
+  image: >-
+    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  acknowledgement: I understand and agree
+  year: '2023'
+- undefined: ''
+  name: Anand Krishnan Plappally
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: sgf
-  undefined: ''
-  bio1: Modelling of the Dynamics of Foveation and Attention in Human Visual System
+  email: anandk@iitj.ac.in
+  bio1: Wetlands, geospatial applications , agriculture
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1MI8R_8TO-Hoo5y3k305AsZwWDuZ50CEr&sz=w300
-  affiliation: HSS(Humanities and Social Sciences) Department
+  affiliation: ' Mechanical Engineering'
   display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: 2/15/2024 16:18:19
-  name: Izan
-  position: Intern
+- undefined: ''
+  name: Anand Mishra
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: utyjyt
-  undefined: ''
-  bio1: >-
-    I work on multidisciplinary topics that brings together Dynamics,
-    Statistical Mechanics, Biological Systems & Computing.
+  email: mishra@iitj.ac.in
+  bio1: ''
   bio2: ''
   bio3: ''
   bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=18XWPNihceVtI8JBrs42gwLeunGu5-w2f&sz=w300
-  affiliation: Electrical Engineering (IIT-Delhi)
-  display: 0
+  affiliation: Computer Science & Engineering
+  display: 1
   acknowledgement: I understand and agree
   year: '2023'
-- timestamp: 2/29/2024 1:25:25
-  name: Uri
-  position: Undergraduate student
+- undefined: ''
+  name: Angan Sengupta
+  position: Assistant Professor
   faculity: '1'
   staff: '0'
   student: '0'
   alumni: 0
-  email: bgfbf
-  undefined: ''
-  bio1: 'Trekker Safety Device '
-  bio2: >-
-    Integration of device with Lora and GPS, incorporated in trekking pole,
-    trekker when in trouble can send distsess signal
-  bio3: Reduce rescue search time by the authorities
-  bio4: sfsre
+  email: angan@iitj.ac.in
+  bio1: >-
+    Multiscale Modelling and Simulations, Computational Material Design, Fire
+    and Explosion Dynamics and Safety Modelling, Transport Processes Modelling
+    and Simulations
+  bio2: ''
+  bio3: ''
+  bio4: ''
   image: >-
     https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300
-  affiliation: Industrial design (Savannah College of Art and Design, GA)
-  display: 0
+  affiliation: Chemical Engineering
+  display: 1
+  acknowledgement: I understand and agree
+  year: '2023'
+- undefined: ''
+  name: Anil Kumar Tiwari
+  position: Associate Professor
+  faculity: '1'
+  staff: '0'
+  student: '0'
+  alumni: 0
+  email: akt@iitj.ac.in
+  bio1: Neuroscience, Image and video processing, Healthcare devices
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  acknowledgement: I understand and agree
+  year: '2023'
+- undefined: ''
+  name: Ankita Sharma
+  position: Associate Professor
+  faculity: '1'
+  staff: '0'
+  student: '0'
+  alumni: 0
+  email: ankitasharma@iitj.ac.in
+  bio1: >-
+    Advance form of human behavior as an integration for cognition, emotional,
+    social, moral and self aspects
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300
+  affiliation: 'School of Liberal Arts '
+  display: 1
   acknowledgement: I understand and agree
   year: '2023'
