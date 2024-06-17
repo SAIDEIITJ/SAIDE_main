@@ -194,8 +194,9 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="inner">
       <div class="search-container">
     <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i>
-    <input type="text" id="search-bar" placeholder="Search by name ...">
+    <input type="text" id="search-bar" placeholder="Search by name ..." oninput="searchEntries()">
 </div>
+
 <br>
 <div class="alphabet-links">
     <a href="#" class="alphabet-link">A</a>
@@ -246,26 +247,71 @@ document.addEventListener("DOMContentLoaded", () => {
     </tbody>
 </table>
 
+<div class="pagination-container">
+    <ul id="pagination" class="pagination"></ul>
+</div>
+
 <script>
-    const data = [
-    { name: "Alice", phone: "123-456-7890", email: "alice@example.com", office: "Office 1" },
-    { name: "Bob", phone: "534-567-8901", email: "bob@example.com", office: "Office 2" },
-    { name: "Alex", phone: "723-456-7890", email: "alex@example.com", office: "Office 3" },
-    { name: "Champ", phone: "534-5-7501", email: "chmap@example.com", office: "Office 4" },
-    { name: "Keele", phone: "323-456-7890", email: "keele@example.com", office: "Office 5" },
-    { name: "Jay", phone: "634-567-8921", email: "jay@example.com", office: "Office 6" },
-    { name: "Ross", phone: "233-456-7890", email: "ross@example.com", office: "Office 7" },
-    { name: "Rachel", phone: "264-567-8901", email: "rachel@example.com", office: "Office 8" },
-    // Add more entries as needed
+     var teamMembers = [
+  
+  
+    { name: "Abhinaba Lahiri", phone: "(91 291) 280", email:"abhinaba@iitj.ac.in" },
+  
+    { name: "Bhivraj Suthar", phone: "(91 291) 280", email:" bhivraj@iitj.ac.in" },
+  
+    { name: "Bikash Santra", phone: " (91 291) 280", email:"bikash@iitj.ac.in" },
+  
+    { name: "Dweepobotee Brahma", phone: "(91 291) 280 1755", email:"dweepobotee@iitj.ac.in" },
+  
+    { name: "Dipanjan Roy", phone: "(91 291) 280 1757", email:"droy@iitj.ac.in" },
+  
+    { name: "Ganesh Manjhi", phone: "(91 291) 280 1759 ", email:"gmanjhi@iitj.ac.in" },
+  
+    { name: "Manish Aggarwal", phone: "(91 291) 280 1811", email:"ma@iitj.ac.in" },
+  
+    { name: "Saurabh Gandhi", phone: "", email:"sgandhi@iitj.ac.in" },
+  
+    { name: "Shilpa Dang", phone: "(91 291) 280 1758", email:"sdang@iitj.ac.in" },
+  
+    { name: "S. Srivatsa Srinivas", phone: "(91 291) 280 1754", email:"srivatsa@iitj.ac.in" },
+  
+    { name: "Vignesh Muralidharan", phone: " (91 291) 280 1753", email:"vigneshmdharan@iitj.ac.in" },
+  
+    { name: "Abhilasha Maheshwari ", phone: "(0291)2801713", email:"abhilasham@iitj.ac.in" },
+  
+    { name: "Amit Bhardwaj", phone: "(91 291) 280 1372", email:" amitb@iitj.ac.in" },
+  
+    { name: "Anand Krishnan Plappally", phone: "(91 291) 280 1507", email:"anandk@iitj.ac.in" },
+  
+    { name: "Anand Mishra", phone: "(91 291) 280 1264", email:"mishra@iitj.ac.in" },
+  
+    { name: "Angan Sengupta", phone: "(91 291) 280 1706", email:"angan@iitj.ac.in" },
+  
+    { name: "Anil Kumar Tiwari", phone: "(91 291) 280 1353", email:"akt@iitj.ac.in" },
+  
+    { name: "Ankita Sharma", phone: " (91 291) 280 1406", email:"ankitasharma@iitj.ac.in" }
+  
 ];
 
+
+function searchEntries() {
+    const searchText = document.getElementById("search-bar").value.trim().toUpperCase();
+    const filteredEntries = teamMembers.filter(entry => {
+        return entry.name.toUpperCase().includes(searchText);
+    });
+    renderEntries(filteredEntries);
+}
 // Function to render entries in the table
-function renderEntries(entries) {
+function renderEntries(entries, page = 1, perPage = 12) {
     const table = document.getElementById("entry-table");
     const tbody = table.querySelector("tbody");
     tbody.innerHTML = ""; // Clear only the tbody
 
-    entries.forEach(entry => {
+    const startIndex = (page - 1) * perPage;
+    const endIndex = startIndex + perPage;
+    const paginatedEntries = entries.slice(startIndex, endIndex);
+
+    paginatedEntries.forEach(entry => {
         const row = tbody.insertRow();
         row.innerHTML = `
             <td>${entry.name}</td>
@@ -274,11 +320,35 @@ function renderEntries(entries) {
             <td>${entry.office}</td>
         `;
     });
+
+    renderPagination(entries.length, page, perPage);
+}
+
+function renderPagination(totalEntries, currentPage, perPage) {
+    const totalPages = Math.ceil(totalEntries / perPage);
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = "#";
+        link.textContent = i;
+        if (i === currentPage) {
+            link.classList.add("active");
+        }
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            renderEntries(teamMembers, i, perPage);
+        });
+        li.appendChild(link);
+        pagination.appendChild(li);
+    }
 }
 
 // Filter entries based on selected alphabet
 function filterEntriesByAlphabet(alphabet) {
-    const filteredEntries = data.filter(entry => entry.name.charAt(0).toUpperCase() === alphabet);
+    const filteredEntries = teamMembers.filter(entry => entry.name.charAt(0).toUpperCase() === alphabet);
     renderEntries(filteredEntries);
 }
 
@@ -293,7 +363,7 @@ alphabetLinks.forEach(link => {
 });
 
 // Initially render all entries
-renderEntries(data);
+renderEntries(teamMembers, 1, 12);
 </script>
 
 

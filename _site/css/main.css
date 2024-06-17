@@ -6682,7 +6682,6 @@ h2 {
 #teamMembers {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   /* Adjust the gap between cards */ }
 
 .member-card {
@@ -6690,6 +6689,7 @@ h2 {
   /* Two cards per row, minus the gap */
   padding: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -6701,14 +6701,17 @@ h2 {
   border-radius: 50%;
   margin-bottom: 10px;
   max-width: 100%;
-  height: auto;
-  /* Ensure image scales properly */ }
+  height: auto; }
+
+.member-card ul li {
+  font-size: 0.8em; }
 
 .member-card h4 {
   margin: 10px 0 5px; }
 
 .member-card i {
   font-style: normal;
+  font-size: 0.9em;
   color: #777;
   margin-bottom: 10px; }
 
