@@ -34,31 +34,19 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
     {% if member.display == 1 and member.faculity == '1' %}
-    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name = "{{member.name}}" >
+    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}">
         <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
         <h4>{{ member.name }}</h4>
         <i>{{ member.position }}, {{ member.affiliation }} <br>email: {{ member.email }}</i>
         <ul style="overflow: hidden">
-      
-        {% if member.bio1 != "" %}
-          <li> {{ member.bio1 }} </li>
-        {% endif %}
-        {% if member.bio2 != "" %}
-          <li> {{ member.bio2 }} </li>
-        {% endif %}
-        {% if member.bio3 != "" %}
-          <li> {{ member.bio3 }} </li>
-        {% endif %}
-        {% if member.bio4 != "" %}
-          <li> {{ member.bio4 }} </li>
-        {% endif %}
-      
+            {% if member.bio1 != "" %}
+            <li>{{ member.bio1 }}</li>
+            {% endif %}
         </ul>
-      </div>
+    </div>
     {% endif %}
     {% endfor %}
 </div>
-
 <script>
 document.querySelectorAll('.filter-indicator').forEach(indicator => {
     indicator.addEventListener('click', () => {
