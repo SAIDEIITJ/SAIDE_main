@@ -2,6 +2,7 @@
   name: Abhinaba Lahiri
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -20,6 +21,7 @@
   name: Bhivraj Suthar
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -38,6 +40,7 @@
   name: Bikash Santra
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -56,6 +59,7 @@
   name: Dweepobotee Brahma
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -74,6 +78,7 @@
   name: Dipanjan Roy
   position: Associate Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 1
@@ -95,6 +100,7 @@
   name: Ganesh Manjhi
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 1
@@ -115,6 +121,7 @@
   name: Manish Aggarwal
   position: Associate Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 1
@@ -133,6 +140,7 @@
   name: Saurabh Gandhi
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 1
@@ -153,6 +161,7 @@
   name: Shilpa Dang
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 1
@@ -171,6 +180,7 @@
   name: S. Srivatsa Srinivas
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 1
@@ -191,6 +201,7 @@
   name: Vignesh Muralidharan
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Core Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -212,6 +223,7 @@
   name: 'Abhilasha Maheshwari '
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -232,6 +244,7 @@
   name: Amit Bhardwaj
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -252,6 +265,7 @@
   name: Anand Krishnan Plappally
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -270,6 +284,7 @@
   name: Anand Mishra
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -288,6 +303,7 @@
   name: Angan Sengupta
   position: Assistant Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -309,6 +325,7 @@
   name: Anil Kumar Tiwari
   position: Associate Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
@@ -327,6 +344,7 @@
   name: Ankita Sharma
   position: Associate Professor
   faculity: '1'
+  subfaculty: Affiliated Faculty
   staff: '0'
   student: '0'
   alumni: 0
