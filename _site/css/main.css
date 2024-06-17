@@ -6646,12 +6646,12 @@ h2 {
   border: 1px solid transparent;
   /* Add a border for better visibility */
   transition: border 0.3s ease;
-  border-bottom: 2px solid #17877a; }
+  border-bottom: 2px solid #6e0d10; }
 
 .checkbox {
   width: 24px;
   height: 24px;
-  border: 2px solid #17877a;
+  border: 2px solid brown;
   border-radius: 50%;
   margin-right: 5px;
   /* Added margin-right */

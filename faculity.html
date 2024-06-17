@@ -6,22 +6,22 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 ---
 	
 <div class="search-container">
-	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
+	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: brown;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
 </div>
 <div class="filter-indicators">
-    <div class="filter-indicator" id="all" data-filter="all">
+    <div class="filter-indicator" id="all" data-filter="Core Faculty">
         <div class="checkbox"></div>
         <span>Core Faculity</span>
     </div>
-    <div class="filter-indicator" id="phd" data-filter="phd">
+    <div class="filter-indicator" id="phd" data-filter="Affiliated Faculty">
         <div class="checkbox"></div>
         <span>Affiliate Faculity</span>
     </div>
-    <div class="filter-indicator" id="ms" data-filter="ms">
+    <div class="filter-indicator" id="ms" data-filter="Adjunct Faculty">
         <div class="checkbox"></div>
         <span>Adjunct Faculity</span>
     </div>
-    <div class="filter-indicator" id="category1" data-filter="category1">
+    <div class="filter-indicator" id="category1" data-filter="pp">
         <div class="checkbox"></div>
         <span>Professor in Practice</span>
     </div>
@@ -71,7 +71,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 <div class="row" id="teamMember">
 {% endif %}
 
-<div class="col-sm-6 member" data-position="{{ member.position }}" data-name = "{{member.name}}" >
+<div class="col-sm-6 member" data-position="{{ member.subfaculty }}" data-name = "{{member.name}}" >
   <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
   <h4>{{ member.name }}</h4>
   <i>{{ member.position }}, {{ member.affiliation }} <br>email: {{ member.email }}</i>
@@ -106,26 +106,44 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 </div>
 {% endif %}
 
-<!-- ## Alumni
-<div style="margin-bottom: 800px;">
-{% for member in sorted_members %}
-{% if member.display == 1 and member.alumni == 1 %}
-
-<div class="col-sm-6 member" data-position="{{ member.position }}" data-name = "{{member.name}}" id="teamMember">
-  <img src="{{ member.image }}" class="img-thumbnail" width="100px" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.position }}, {{ member.affiliation }} ({{ member.year }}) <br>email: {{ member.email }}</i>
-  <h5>{{ member.alumni_current }}</h5>
-</div>
-
-{% endif %}
-{% endfor %} -->
 </div>
 
 <script>
-	document.querySelectorAll('.filter-indicator').forEach(indicator => {
+
+document.querySelectorAll('.filter-indicator').forEach(indicator => {
     indicator.addEventListener('click', () => {
-        indicator.classList.toggle('checked');
+        const filter = indicator.getAttribute('data-filter');
+        
+        // Toggle the checked class
+        if (indicator.classList.contains('checked')) {
+            indicator.classList.remove('checked');
+            document.querySelectorAll('.member').forEach(member => {
+                member.style.display = 'block';
+            });
+        } else {
+            document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
+            indicator.classList.add('checked');
+            document.querySelectorAll('.member').forEach(member => {
+                const category = member.getAttribute('data-position');
+                if (filter === 'all' || category === filter) {
+                    member.style.display = 'block';
+                } else {
+                    member.style.display = 'none';
+                }
+            });
+        }
+    });
+});
+
+document.getElementById('search-bar').addEventListener('input', () => {
+    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+    document.querySelectorAll('.member').forEach(member => {
+        const name = member.getAttribute('data-name').toLowerCase();
+        if (name.includes(searchTerm)) {
+            member.style.display = 'block';
+        } else {
+            member.style.display = 'none';
+        }
     });
 });
 </script>
