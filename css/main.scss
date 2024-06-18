@@ -614,6 +614,13 @@ h2 {
 
   //people
 
+  #circular-image {
+    border-radius: 50%;
+    width: 35%;
+    height: auto;
+    object-fit:cover; /* Ensures the image covers the circular area without distortion */
+}
+
 
   .dropdown-content2 {
 	display: none;

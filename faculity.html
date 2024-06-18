@@ -41,7 +41,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% for member in sorted_members %}
     {% if member.display == 1 and member.faculity == '1' %}
     <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{member.bio1}}">
-        <img src="{{ member.image }}" class="img-responsive" width="35%" style="float: left" />
+        <img src="{{ member.image }}" id="circular-image" style="float: left" />
 
         <h4>{{ member.name }}</h4>
  

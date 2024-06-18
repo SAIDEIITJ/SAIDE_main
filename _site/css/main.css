@@ -6606,6 +6606,13 @@ h2 {
   margin-left: 15px;
   font-size: 2rem; }
 
+#circular-image {
+  border-radius: 50%;
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  /* Ensures the image covers the circular area without distortion */ }
+
 .dropdown-content2 {
   display: none;
   position: absolute;
