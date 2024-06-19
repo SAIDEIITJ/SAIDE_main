@@ -1003,7 +1003,7 @@
   faculties: ''
   researchArea: ''
   education: ''
-- name: "Reetanjali Moharana\r \r "
+- name: "Reetanjali Moharana"
   position: Assistant Professor
   faculity: '1'
   subfaculty: Affiliated Faculty
@@ -1189,7 +1189,7 @@
   student: '0'
   alumni: 0
   email: sbhagat@iitj.ac.in
-  phone: "(91 291) 280 1468\r "
+  phone: "(91 291) 280 1468"
   bio1: Distributed Computing for Swarm Robotics and Multi-agent Systems
   bio2: ''
   bio3: ''

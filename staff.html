@@ -5,34 +5,31 @@ link: HOME / PEOPLE
 des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
 ---
 	
-<div class="search-container">
+<!-- <div class="search-container">
 	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
-</div>
-<div class="filter-indicators">
-    <div class="filter-indicator" id="all" data-filter="all">
+</div> -->
+<div class="filter-indicators" style="margin-left: 15%;">
+    <div class="filter-indicator"  data-filter="Scientific Staff">
         <div class="checkbox"></div>
         <span>Scientific</span>
     </div>
-    <div class="filter-indicator" id="phd" data-filter="phd">
+    <div class="filter-indicator"  data-filter="Technical Staff">
         <div class="checkbox"></div>
         <span>Technical</span>
     </div>
-    <div class="filter-indicator" id="ms" data-filter="ms">
+    <div class="filter-indicator"  data-filter="Administrative Staff">
         <div class="checkbox"></div>
         <span>Administrative</span>
     </div>
-    <div class="filter-indicator" id="ms" data-filter="ms">
-      <div class="checkbox"></div>
-      <span>All</span>
-  </div>
 </div>
 
-
+<br>
+<br>
 <div class="row" id="teamMembers">
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
     {% if member.display == 1 and member.staff == '1' %}
-    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{member.bio1}}">
+    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}">
         <img src="{{ member.image }}" id="circular-image" style="float: left" />
 
         <h4>{{ member.name }}</h4>
@@ -50,9 +47,27 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 </div>
 
 <script>
-	document.querySelectorAll('.filter-indicator').forEach(indicator => {
+document.querySelectorAll('.filter-indicator').forEach(indicator => {
     indicator.addEventListener('click', () => {
-        indicator.classList.toggle('checked');
+        const filter = indicator.getAttribute('data-filter');
+        
+        if (indicator.classList.contains('checked')) {
+            indicator.classList.remove('checked');
+            document.querySelectorAll('.member-card').forEach(member => {
+                member.style.display = 'block';
+            });
+        } else {
+            document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
+            indicator.classList.add('checked');
+            document.querySelectorAll('.member-card').forEach(member => {
+                const category = member.getAttribute('data-position');
+                if (filter === 'all' || category === filter) {
+                    member.style.display = 'block';
+                } else {
+                    member.style.display = 'none';
+                }
+            });
+        }
     });
 });
 </script>

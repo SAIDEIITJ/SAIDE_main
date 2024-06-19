@@ -67,8 +67,11 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 <script>
      var teamMembers = [
     {% assign team_data = site.data.team %}
+
     {% for member in team_data %}
-        { name: "{{ member.name }}", phone: "{{ member.phone }}", email:"{{member.email}}" }{% unless forloop.last %},{% endunless %}
+        {% if member.faculity == '1' %}
+        { name:"{{ member.name }}", phone:"{{ member.phone }}", email:"{{member.email}}" }{% unless forloop.last %},{% endunless %}
+        {% endif %}
     {% endfor %}
     ];
 
