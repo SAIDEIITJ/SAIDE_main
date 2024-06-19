@@ -6451,7 +6451,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   height: auto; }
 
 .res-content {
-  padding: 20px; }
+  padding: 10px; }
 
 #h3title {
   color: #6e0d10;
@@ -7608,11 +7608,12 @@ p {
   top: -5%;
   left: 0;
   width: 100%;
-  height: 75%;
+  height: 64vh;
   transition: background-image 0.5s ease;
   /* Initial background image */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   filter: saturate(50%);
   z-index: -1; }
 

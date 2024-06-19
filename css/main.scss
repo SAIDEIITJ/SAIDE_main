@@ -408,7 +408,7 @@ $titlecolor:#6e0d10;
   }
   
   .res-content {
-	padding: 20px;
+	padding: 10px;
   }
   #h3title{
 	color: $titlecolor;
@@ -1856,11 +1856,13 @@ p {
     top: -5%;
     left: 0;
     width: 100%;
-    height: 75%;
+    height: 64vh;
     // background-image: url("images/bg2.jpg");
 	transition: background-image 0.5s ease; /* Initial background image */
     background-size: cover;
     background-position: center;
+	background-repeat: no-repeat;
+
 	filter: saturate(50%);
 
     z-index: -1;
