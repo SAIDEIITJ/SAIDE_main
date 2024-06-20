@@ -2095,6 +2095,7 @@ figcaption {
 
 	.inside{
 		margin-top: -40px;
+		margin: 15px;
 		display:flex;
 		flex-direction: column;
 	}
@@ -2107,19 +2108,17 @@ figcaption {
 	
 	h1 {
 		font-size: 24px; /* Size for the heading text */
-		margin: 0; /* Remove default margin */
+		margin: 0; 
+		text-transform: none;/* Remove default margin */
 	}
 }
 .cards {
 	flex: 1 0 25%; /* Four cards per row, adjust the gap as needed */
 	margin: 10px;
-	background-color: #f0f0f0;
 	background-size: cover;
     background-position: center;
 	color: white;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 250px;
 	text-align: left;
 	font-size: 24px;
@@ -2133,12 +2132,14 @@ figcaption {
 	p {
 		font-size: 14px; /* Size for the paragraph text */
 		margin: 0; /* Remove default margin */
-		margin-bottom: 10px; /* Space between the <p> and <h1> */
+		margin-bottom: 10px;
+		text-align: left; /* Space between the <p> and <h1> */
 	}
 	
 	h1 {
 		font-size: 24px; /* Size for the heading text */
-		margin: 0; /* Remove default margin */
+		margin: 0;
+		text-align: left; /* Remove default margin */
 	}
 }
 
@@ -2342,13 +2343,30 @@ figcaption {
   
   #site-main-title {
 	text-transform: none;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
+	// justify-content: center;
+	// text-align: center;
+	// align-items: center;
+	font-size: 0.5em;
+	 color: brown;
+	//  word-spacing: 10px;
+	letter-spacing: 1px;
+	margin-top: -10px;
+  }
+  #site-main-title2 {
+	text-transform: none;
+	// justify-content: center;
+	// text-align: center;
+	// align-items: center;
+	font-size: 0.5em;
+	 color: brown;
+	//  word-spacing: 10px;
+	letter-spacing: 1px;
+	margin-top: -27px;
   }
   
   
  #site-title {
+	margin-top: 5px;
 	text-decoration: none;
 	border: 0;
 	cursor: pointer;
@@ -4126,14 +4144,14 @@ $baseurl: '{{ site.baseurl }}/images';
     height: 79%;
 	background-image:
     linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url("#{$baseurl}/bg.png"); 
+    url("#{$baseurl}/bg_text.png"); 
     background-size: cover;
     // background-position: center;
     z-index: -1;
     transition: background-image 1s ease-in-out;
 	// border-bottom: solid 5px #800F13;
 	
-	 filter: blur(2px); /* Apply blur filter */
+	//  filter: blur(2px); /* Apply blur filter */
 }
 
 ul #subbullet{

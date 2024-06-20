@@ -18,7 +18,6 @@ $(document).ready(function() {
 
     // Function to change the background image
     function changeBackground() {
-        $('.background').css('background-image', `linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(images/${backgroundImages[currentIndex]})`);
         $('.rectangular-div').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
     }
 
@@ -68,10 +67,16 @@ window.onclick = function(event) {
 }
 
  const newsData = [
-    { id: "news-card-1", title: "Next Generation AI", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/news4.png" },
-    { id: "news-card-2", title: "Phd Admissions", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
-    { id: "news-card-3", title: "MS (by Research)", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news5.png" },
-        { id: "news-card-3", title: "Intelligent Infrastructure", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
+
+    { id: "news-card-1", title: "Selected Candidates for PhD Program (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
+    { id: "news-card-2", title: "Selected Candidates for PhD Program in CMCE (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news5.png" },
+    { id: "news-card-3", title: "Selected Candidates for MS by Research Program in CMCE (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
+    { id: "news-card-4", title: "Selected Candidates for MS by Research Program in CII (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
+    { id: "news-card-5", title: "Indicative projects for upcoming PhD admission cycle, Sem-I, 2024-2025", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news5.png" },
+    { id: "news-card-6", title: "Selected Candidates for Summer Internship Program 2024", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
+    { id: "news-card-7", title: "Rolling Advertisement for Admission to Ph.D. Program at CMCE, AIDE, IITJ", date: "JULY, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
+    { id: "news-card-8", title: "Rolling Advertisement for Admission to Ph.D. Program", date: "MAY, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/news4.png" },
+    { id: "news-card-9", title: "Rolling Advertisement for Faculty Hiring", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
 
     // Add more news items here
 ];
@@ -79,10 +84,13 @@ window.onclick = function(event) {
 
 // Define an object for storing events
  const eventData = [
-    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
-    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
-    
+    { id: "event-card-1", date: "12 June 2024", title: "M.S. by Research in Next Generation AI", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
+    { id: "event-card-2", date: "13 June 2024", title: "M.S. by Research in Computational Economics", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
+    { id: "event-card-3", date: "14 June 2024", title: "M.S. by Research in Intelligent Infrastructure", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
+    { id: "event-card-4", date: "12 June 2024", title: "M.S. by Research in Precision Healthcare and Integrative Medicine", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
+    { id: "event-card-5", date: "13 June 2024", title: "M.Tech. in AR VR", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
+    { id: "event-card-6", date: "14 June 2024", title: "M.Tech. in AR VR (for Working Professionals)", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
+    { id: "event-card-7", date: "12 June 2024", title: "M.Tech. in DCS (for Working Professionals)", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
     // Add more event items here
 ];
 
@@ -106,10 +114,6 @@ function showNews() {
     const n = container.length;
     renderItems(container, newsData.slice(0, n));
 
-    // const container2 = document.getElementById("cardsContainer2");
-    // renderItems(container2, newsData.slice(8));
-
-    // applyBackgroundImages();
 }
 
 function showEvents() {
@@ -121,66 +125,7 @@ function showEvents() {
     const n = container.length;
     renderItems(container, eventData.slice(0, n));
 
-    // const container2 = document.getElementById("cardsContainer2");
-    // renderItems(container2, eventData.slice(8));
-
-    // applyBackgroundImages(true);
-}
-
-function applyBackgroundImages(isEvent = false) {
-    const cards1 = document.querySelectorAll(".card");
-    // console.log(cards1);
-    // const cards2 = document.querySelectorAll(".cards");
-    const temp = isEvent; 
-    // console.log(temp);
-    // const images2 = temp ? [
-    //     "images/sk5.jpg",
-    //     "images/sk4.jpg",
-    //     "images/sk3.jpg",
-    //     "images/sk2.jpg",
-    //     "images/sk1.jpg",
-    //     "images/darkness.jpg",
-    // ]:[
-    //     "images/darkness.jpg",
-    //     "images/sk1.jpg",
-    //     "images/sk2.jpg",
-    //     "images/sk3.jpg",
-    //     "images/sk4.jpg",
-    //     "images/sk5.jpg",
-
-    // ];
-    const images = temp ? [
-        "images/digital.jpg",
-        "images/robot.jpg",
-        "images/ai.jpg",
-        "images/user.jpg",
-        "images/people.jpg",
-        "images/book.jpg",
-        "images/ai.jpg",
-        "images/user.jpg",
-    ] : [
-        "images/book.jpg",
-        "images/people.jpg",
-        "images/digital.jpg",
-        "images/robot.jpg",
-        "images/ai.jpg",
-        "images/user.jpg",
-        "images/book.jpg",
-        "images/people.jpg"
-    ];
-    // console.log(images);
-
-    cards1.forEach((card, index2) => {
-        card.style.backgroundImage = `url(${images[index2 % images.length]})`;
-    });
-
-    
-    // cards2.forEach((cards, index) => {
-    //     cards.style.backgroundImage = `url(${images2[index % images2.length]})`;
-    // });
-}
-    
-    
+}    
 
 document.addEventListener("DOMContentLoaded", () => {
     showNews();
@@ -196,10 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
         navContent.style.display = "block";
       }
     });
-
-   
-    // applyBackgroundImages();
-
 });
 
 
