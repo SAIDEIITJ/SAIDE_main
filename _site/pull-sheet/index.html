@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Date":"date",
             "News?": "news",
             "Event?":"event",
-            "Image":"image",
+            "Graphic":"graphic",
             "Content":"content",
         }
     }
@@ -278,8 +278,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if ( header == "image" ) {return getGDriveDlURL(value);}
                 if ( header == "display") {return parseInt(value);}
                 if ( header == "alumni") {return parseInt(value);}
-                if ( header == "highlight") {return parseInt(value);}
-                if ( header == "conference") {return parseInt(value);}
+                if ( header == "staff") {return parseInt(value);}
+                if ( header == "faculty") {return parseInt(value);}
+                if ( header == "student") {return parseInt(value);}
                 if ( header == "image" ) {return getGDriveDlURL(value);}
                 if ( header == "news") {return parseInt(value);}
                 if ( header == "event") {return parseInt(value);}

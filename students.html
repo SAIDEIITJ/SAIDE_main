@@ -21,7 +21,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 <div class="row" id="teamMembers">
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
-    {% if member.display == 1 and member.student == '1' %}
+    {% if member.display == 1 and member.student == 1 %}
     <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-fac="{{member.faculties}}">
         <img src="{{ member.image }}" id="circular-image" style="float: left" />
 
