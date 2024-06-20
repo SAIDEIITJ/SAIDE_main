@@ -15,7 +15,9 @@ title: Update faculity
 
     // dict of all published sheets and corresponding resource names
     var $resources = {
-        team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlkUKS3F0ObI73MPs3bprVyNBKN6RqINtipRkELpaTGrC2qMVvR6SyUgoAvSKPX1YHdfS3fyEF9Ni8/pub?output=tsv'
+        team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlkUKS3F0ObI73MPs3bprVyNBKN6RqINtipRkELpaTGrC2qMVvR6SyUgoAvSKPX1YHdfS3fyEF9Ni8/pub?output=tsv',
+        news_events: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSYZExFU_O-a7QMx7bSMCOUsz8kjEErd3RVnlfIld1MYN40IpKoxYVuyxEesJvbimzKOKpVDE4FgbCC/pub?output=tsv'
+ 
     }
 
     var header_maps = {
@@ -45,7 +47,14 @@ title: Update faculity
             "Supervisor(s)":"faculties",
             "Research Area":"researchArea",
             "Education":"education",
-
+        },
+        news_events: {
+            "Id": "id",
+            "Title": "title",
+            "News?": "news",
+            "Event?":"event",
+            "Image":"image",
+            "Content":"content",
         }
     }
 
@@ -95,6 +104,9 @@ title: Update faculity
                 if ( header == "alumni") {return parseInt(value);}
                 if ( header == "highlight") {return parseInt(value);}
                 if ( header == "conference") {return parseInt(value);}
+                if ( header == "image" ) {return getGDriveDlURL(value);}
+                if ( header == "news") {return parseInt(value);}
+                if ( header == "event") {return parseInt(value);}
                 return value;
             }
 
@@ -120,6 +132,11 @@ title: Update faculity
         console.log(results.errors);
         console.log(results.meta);
         var data = results.data
+
+        if (results.data.length === 0) {
+        console.warn("No data found for", $resource);
+        return;
+    }
           
         // data comes through as a simple array since simpleSheet is turned on
         alert("Successfully processed " + data.length + " rows for " + $resource + "!")
@@ -141,8 +158,13 @@ title: Update faculity
 
         var github = new Github({token: $GHToken, auth: "oauth"});
         var repo = github.getRepo($org, $repo);
-        $writepath = '_data/' + $resource + '.yaml';
-        
+        var $writepath = '_data/';
+
+        if ($resource === 'news_events') {
+            $writepath += 'news_events.yaml';
+        } else if ($resource === 'team') {
+            $writepath += 'team.yaml';
+        }
         repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) { console.log(err); });
     };
 </script>
