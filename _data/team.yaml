@@ -1,6 +1,6 @@
 - name: Abhinaba Lahiri
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -23,7 +23,7 @@
   education: ''
 - name: Bhivraj Suthar
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -46,7 +46,7 @@
   education: ''
 - name: Bikash Santra
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -69,7 +69,7 @@
   education: ''
 - name: Dweepobotee Brahma
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -92,7 +92,7 @@
   education: ''
 - name: Dipanjan Roy
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -118,7 +118,7 @@
   education: ''
 - name: Ganesh Manjhi
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -143,7 +143,7 @@
   education: ''
 - name: Manish Aggarwal
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -166,7 +166,7 @@
   education: ''
 - name: Saurabh Gandhi
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -191,7 +191,7 @@
   education: ''
 - name: Shilpa Dang
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -213,7 +213,7 @@
   education: ''
 - name: S. Srivatsa Srinivas
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -238,7 +238,7 @@
   education: ''
 - name: Vignesh Muralidharan
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Core Faculty
   staff: 0
   student: 0
@@ -264,7 +264,7 @@
   education: ''
 - name: 'Abhilasha Maheshwari '
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -289,7 +289,7 @@
   education: ''
 - name: Amit Bhardwaj
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -314,7 +314,7 @@
   education: ''
 - name: Anand Krishnan Plappally
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -337,7 +337,7 @@
   education: ''
 - name: Anand Mishra
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -360,7 +360,7 @@
   education: ''
 - name: Angan Sengupta
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -386,7 +386,7 @@
   education: ''
 - name: Anil Kumar Tiwari
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -409,7 +409,7 @@
   education: ''
 - name: Ankita Sharma
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -434,7 +434,7 @@
   education: ''
 - name: Anuj Pal Kapoor
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -458,7 +458,7 @@
   education: ''
 - name: Arun Kumar Singh
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -480,7 +480,7 @@
   education: ''
 - name: Avinash Sharma
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -502,7 +502,7 @@
   education: ''
 - name: Chhanda Chakraborti
   position: Visiting Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -524,7 +524,7 @@
   education: ''
 - name: Debasis Das
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -546,7 +546,7 @@
   education: ''
 - name: Deepak Mishra
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -568,7 +568,7 @@
   education: ''
 - name: Dilpreet Kaur
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -590,7 +590,7 @@
   education: ''
 - name: Dip Sankar Banerjee
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -612,7 +612,7 @@
   education: ''
 - name: Gaurav Bhatnagar
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -636,7 +636,7 @@
   education: ''
 - name: Harshal Akolekar
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -660,7 +660,7 @@
   education: ''
 - name: Krunal M. Gangawane
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -684,7 +684,7 @@
   education: ''
 - name: Krishna Kumar Balaraman
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -706,7 +706,7 @@
   education: ''
 - name: Manoj Choudhary
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -728,7 +728,7 @@
   education: ''
 - name: Mayank Vatsa
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -750,7 +750,7 @@
   education: ''
 - name: Mitali Mukerji
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -772,7 +772,7 @@
   education: ''
 - name: Md Abu Talhamainuddin Ansary
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -794,7 +794,7 @@
   education: ''
 - name: Neeraj Jain
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -816,7 +816,7 @@
   education: ''
 - name: Nishant Kumar
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -841,7 +841,7 @@
   education: ''
 - name: Pankaj Yadav
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -863,7 +863,7 @@
   education: ''
 - name: Pradip Kumar Tewari
   position: Visiting Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -887,7 +887,7 @@
   education: ''
 - name: P. Ravi Prakash
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -911,7 +911,7 @@
   education: ''
 - name: Puneet Sharma
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -933,7 +933,7 @@
   education: ''
 - name: Rajendra Nagar
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -955,7 +955,7 @@
   education: ''
 - name: Ravi Yadav
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -981,7 +981,7 @@
   education: ''
 - name: Ranju Mohan
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1005,7 +1005,7 @@
   education: ''
 - name: 'Reetanjali Moharana  '
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1027,7 +1027,7 @@
   education: ''
 - name: Richa Singh
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1049,7 +1049,7 @@
   education: ''
 - name: Romi Banerjee
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1071,7 +1071,7 @@
   education: ''
 - name: Santanu Chaudhury
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1093,7 +1093,7 @@
   education: ''
 - name: Sandeep Kumar Yadav
   position: Associate Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1115,7 +1115,7 @@
   education: ''
 - name: Saran Aadhar
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1139,7 +1139,7 @@
   education: ''
 - name: Somitra Sanadhya
   position: Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1161,7 +1161,7 @@
   education: ''
 - name: Sucharita Dey
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1183,7 +1183,7 @@
   education: ''
 - name: Subhash Bhagat
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1205,7 +1205,7 @@
   education: ''
 - name: Suman Dhaka
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1227,7 +1227,7 @@
   education: ''
 - name: V. Narayanan
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1251,7 +1251,7 @@
   education: ''
 - name: Vivek Vijay
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1273,7 +1273,7 @@
   education: ''
 - name: V. V. M. S. Chandramouli
   position: Assistant Professor
-  faculity: '1'
+  faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
   student: 0
@@ -1295,7 +1295,7 @@
   education: ''
 - name: Abhimanyu Kumar
   position: Adjunct Faculty
-  faculity: '1'
+  faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
   student: 0
@@ -1319,7 +1319,7 @@
   education: ''
 - name: Saptarshi Mukherjee
   position: Adjunct Faculty
-  faculity: '1'
+  faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
   student: 0
@@ -1341,7 +1341,7 @@
   education: ''
 - name: Sylvain Baillet
   position: Adjunct Faculty
-  faculity: '1'
+  faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
   student: 0
@@ -1363,7 +1363,7 @@
   education: ''
 - name: Tapan K. Gandhi
   position: Adjunct Faculty
-  faculity: '1'
+  faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
   student: 0
@@ -1387,7 +1387,7 @@
   education: ''
 - name: Vinay Kulkarni
   position: Professor of Practice
-  faculity: '1'
+  faculty: 1
   subfaculty: Professor of Practice
   staff: 0
   student: 0
@@ -1409,7 +1409,7 @@
   education: ''
 - name: Taranjit Kaur
   position: Scientific Officer
-  faculity: '1'
+  faculty: 1
   subfaculty: Scientific Officer
   staff: 0
   student: 0
@@ -1433,7 +1433,7 @@
   education: ''
 - name: Abinaya Vairam
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1455,7 +1455,7 @@
   education: M.Tech - Data Science and Engineering, B.Tech - Industrial Biotechnology
 - name: Arpit Shrimankar
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1477,7 +1477,7 @@
   education: B.E,M.E in Biomedical Engineering from GEC Gandhinagar
 - name: Debottam Bhunia
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1499,7 +1499,7 @@
   education: ' M.TECH: Power Electronics & Electrical Drives, B.TECH: Electrical Engineering'
 - name: Gargi Bhattacharjee
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1521,7 +1521,7 @@
   education: M.E (Software Engineering), B.Tech (CSE)
 - name: Kunjesh Kamleshbhai Parekh
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1543,7 +1543,7 @@
   education: ''
 - name: Manuj Jha
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1565,7 +1565,7 @@
   education: M.A. (Economics)
 - name: Md Shaheen Perwez
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1587,7 +1587,7 @@
   education: B.Tech (Electrical Engineering)
 - name: N Akhila
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1609,7 +1609,7 @@
   education: M.Tech (Data Science), B.Tech (Computer Science)
 - name: Preetam Kumar
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1631,7 +1631,7 @@
   education: M.Tech (Data Science and Engineering)
 - name: Rashmi Singh
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1653,7 +1653,7 @@
   education: ' M.Tech (Machine Learning), B.Tech (Computer Science and Engineering)'
 - name: Ramjan Ali
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1675,7 +1675,7 @@
   education: MSc Mathematics
 - name: Shreya Deb
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1697,7 +1697,7 @@
   education: B.Tech in Electrical and Electronics Engineering
 - name: Shubham Kumar
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1719,7 +1719,7 @@
   education: MSc in Economics
 - name: Swatantra Dhara
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1741,7 +1741,7 @@
   education: ''
 - name: Sweta Kaman
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1765,7 +1765,7 @@
     Engineering)
 - name: Tirthankar Roy
   position: Research Scholar
-  faculity: '0'
+  faculty: 0
   subfaculty: Research Scholar
   staff: 0
   student: 1
@@ -1789,7 +1789,7 @@
     Automation Engineering)
 - name: Shankar Singh
   position: Administrative Staff
-  faculity: '0'
+  faculty: 0
   subfaculty: Administrative Staff
   staff: 1
   student: 0
