@@ -17,12 +17,12 @@
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="bg-buttons" data-image="1.png" id="dropbtn"><div   >Academics</div></a>
+                <a href="learn.html" class="bg-buttons" data-image="1.png" id="dropbtn">Academics</a>
                 <div class="dropdown-content">
-                  <a href="phd.html" class="bg-buttons" data-image="3.png"><div    >PhD</div></a>
-                  <a href="ms.html" class="bg-buttons"  data-image="2.png"><div  >MS by Research</div></a>
-                  <a href="mtech.html" class="bg-buttons" data-image="4.png"><div   >MTech</div></a>
-                  <a href="btech.html" class="bg-buttons"  data-image="5.png"><div  >BTech Minor</div></a>
+                  <a href="phd.html" class="bg-buttons" data-image="3.png">PhD</a>
+                  <a href="ms.html" class="bg-buttons"  data-image="2.png">MS by Research</a>
+                  <a href="mtech.html" class="bg-buttons" data-image="4.png">MTech</a>
+                  <a href="btech.html" class="bg-buttons"  data-image="5.png">BTech Minor</a>
                 </div>
               </li>
               <li class="dropdown">
@@ -35,7 +35,7 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="coes.html" id="dropbtn">CoEs</a>
+                <a href="coes.html" id="dropbtn" class="bg-buttons" data-image="#">CoEs</a>
                 <div class="dropdown-content">
                   <a href="https://cbsaiitj.wordpress.com/">Brain Science and Applications</a>
                   <a href="https://cmceiitj.wordpress.com/">Mathematical and Computational Economics</a>
@@ -46,37 +46,37 @@
 
              
               <li class="dropdown">
-                <a href="faculity.html" id="dropbtn">People</a>
+                <a href="faculity.html" id="dropbtn" class="bg-buttons" data-image="13.png">People</a>
                 <div class="dropdown-content">
-                  <a href="staff.html">Staff</a>
-                  <a href="students.html">Students</a>
-                  <a href="alumini.html">Alumini</a>
-                  <a href="directory.html">Directory</a>
+                  <a href="staff.html" class="bg-buttons" data-image="13.png">Staff</a>
+                  <a href="students.html" class="bg-buttons" data-image="11.png">Students</a>
+                  <a href="alumini.html" class="bg-buttons" data-image="12.png">Alumini</a>
+                  <a href="directory.html" class="bg-buttons" data-image="14.png">Directory</a>
                 </div>
               </li>
 
               <li class="dropdown">
-                <a href="admissions.html" id="dropbtn">Join-Us</a>
+                <a href="admissions.html" id="dropbtn"  class="bg-buttons"  data-image="16.png">Join-Us</a>
                 <div class="dropdown-content">
-                  <a href="admissions.html">Admissions</a>
-                  <a href="projectsPositions.html">Project Positions</a>
-                  <a href="intern.html">Internships</a>
-                  <a href="faculty_joinus.html">Faculty</a>
+                  <a href="admissions.html"  class="bg-buttons"  data-image="16.png">Admissions</a>
+                  <a href="projectsPositions.html"  class="bg-buttons"  data-image="15.png">Project Positions</a>
+                  <a href="intern.html" class="bg-buttons"  data-image="17.png">Internships</a>
+                  <a href="faculty_joinus.html"  class="bg-buttons"  data-image="13.png">Faculty</a>
                 </div>
               </li>
 
              
               <li class="dropdown">
-                <a href="about.html" id="dropbtn">About</a>
+                <a href="about.html" id="dropbtn" class="bg-buttons"  data-image="#">About</a>
                 <div class="dropdown-content">
-                  <a href="about.html">Mission & Vision</a>
+                  <a href="about.html" class="bg-buttons"  data-image="#">Mission & Vision</a>
                   <!-- <a href="engage.html">Engage</a> -->
-                  <a href="outreach.html">Outreach</a>
-                  <a href="governance.html">Governance</a>
-                  <a href="campus.html">Campus</a>
-                  <a href="faq.html">FAQs</a>
+                  <a href="outreach.html" class="bg-buttons"  data-image="#">Outreach</a>
+                  <a href="governance.html" class="bg-buttons"  data-image="#">Governance</a>
+                  <a href="campus.html" class="bg-buttons"  data-image="#">Campus</a>
+                  <a href="faq.html" class="bg-buttons"  data-image="#">FAQs</a>
                   <!-- <a href="jobs.html">Jobs</a> -->
-                  <a href="contact.html">Contact</a>
+                  <a href="contact.html" class="bg-buttons"  data-image="3">Contact</a>
                 </div>
               </li>
             </ul>
@@ -106,21 +106,24 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(backgroundAbout);
 
     // Check if there's a stored image URL
-    // const storedImage = localStorage.getItem('selectedImage');
-    // if (storedImage) {
-    //   backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    // }
+    const storedImage = localStorage.getItem('selectedImage');
+    if (storedImage) {
+      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
+    }
 
     buttons.forEach(button => {
       button.addEventListener('click', function(e) {
-        // e.preventDefault();
+        e.preventDefault();
 
         const imageName = this.getAttribute('data-image');
         console.log(imageName);
         backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
 
         // Store the selected image URL
-        // localStorage.setItem('selectedImage', imageName);
+        localStorage.setItem('selectedImage', imageName);
+          setTimeout(() => {
+        window.location.href = this.getAttribute('href');
+      }, 100);
 
       });
     });
