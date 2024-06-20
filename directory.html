@@ -69,7 +69,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% assign team_data = site.data.team %}
 
     {% for member in team_data %}
-        {% if member.faculity == '1' %}
+        {% if member.display == 1 %}
         { name:"{{ member.name }}", phone:"{{ member.phone }}", email:"{{member.email}}" }{% unless forloop.last %},{% endunless %}
         {% endif %}
     {% endfor %}

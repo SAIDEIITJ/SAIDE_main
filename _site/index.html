@@ -312,12 +312,11 @@ document.addEventListener("DOMContentLoaded", () => {
 				
 							<div id="cardsContainer" class="cards-container">
 						
-								<!-- <div class="card" id="news-card-1"><h1>News Card 1</h1></div>
-								<div class="card" id="news-card-2"><h1>News Card 2</h1></div>
-								<div class="card" id="news-card-3"><h1>News Card 3</h1></div>
-								<div class="card" id="news-card-4"><h1>News Card 4</h1></div>
-								<div class="card" id="news-card-5"><h1>News Card 5</h1></div>
-								<div class="card" id="news-card-6"><h1>News Card 6</h1></div> -->
+								<div class="card" id="${item.id}" style="background-image: url(${item.img});" >
+									${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
+									<h1>${item.title}</h1>
+									${item.date ? '</div>' : ''}
+								</div>
 							</div>
 							<br>
 							<!-- <div id="cardsContainer2" class="cards-container" >
@@ -338,8 +337,65 @@ document.addEventListener("DOMContentLoaded", () => {
 							</ul> -->
 						<!-- </div> -->
 					</section>
-
-
+					<script>
+					var newsData = [
+					
+					
+						
+						{ id:"1", title:"Selected Candidates for PhD Program (2024&#8211;25 Semester-I, July 2024)", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"2", title:"Selected Candidates for PhD Program in CMCE 2024&#8211;25 Semester-I, July 2024)", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"3", title:"Selected Candidates for MS by Research Program in CMCE (2024&#8211;25 Semester-I, July 2024)", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"4", title:"Selected Candidates for MS by Research Program in CII (2024&#8211;25 Semester-I, July 2024)", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"5", title:"Indicative projects for upcoming PhD admission cycle, Sem-I, 2024-2025", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"6", title:"Selected Candidates for Summer Internship Program 2024", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"7", title:"Rolling Advertisement for Admission to Ph.D. Program (Last Date : 20/10/2024)", date:"", content:"", img:"" },
+						
+					
+						
+						{ id:"8", title:"Rolling Advertisement for Admission to Ph.D. Program at CMCE, AIDE, IITJ (Last Date : 20/10/2024)", date:"", content:"", img:"" },
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						{ id:"16", title:"Rolling Advertisement for Faculty Hiring", date:"", content:"", img:"" },
+						
+					
+						
+					
+				];
+					</script>
+				</script>
 					<script src="js/script.js">
 					</script>
 

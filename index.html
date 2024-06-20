@@ -128,12 +128,11 @@ layout: landing
 				
 							<div id="cardsContainer" class="cards-container">
 						
-								<!-- <div class="card" id="news-card-1"><h1>News Card 1</h1></div>
-								<div class="card" id="news-card-2"><h1>News Card 2</h1></div>
-								<div class="card" id="news-card-3"><h1>News Card 3</h1></div>
-								<div class="card" id="news-card-4"><h1>News Card 4</h1></div>
-								<div class="card" id="news-card-5"><h1>News Card 5</h1></div>
-								<div class="card" id="news-card-6"><h1>News Card 6</h1></div> -->
+								<div class="card" id="${item.id}" style="background-image: url(${item.img});" >
+									${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
+									<h1>${item.title}</h1>
+									${item.date ? '</div>' : ''}
+								</div>
 							</div>
 							<br>
 							<!-- <div id="cardsContainer2" class="cards-container" >
@@ -154,8 +153,17 @@ layout: landing
 							</ul> -->
 						<!-- </div> -->
 					</section>
-
-
+					<script>
+					var newsData = [
+					{% assign news_event_data = site.data.news_events %}
+					{% for mem in news_event_data %}
+						{% if mem.news == 1 %}
+						{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.img }}" }{% unless forloop.last %},{% endunless %}
+						{% endif %}
+					{% endfor %}
+				];
+					</script>
+				</script>
 					<script src="js/script.js">
 					</script>
 
