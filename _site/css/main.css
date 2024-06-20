@@ -7861,61 +7861,61 @@ figcaption {
 
 .card:nth-child(6n+1) {
   background-image: url("images/book.jpg");
-  background-color: green;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .card:nth-child(6n+2) {
   background-image: url("images/people.jpg");
-  background-color: purple;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .card:nth-child(6n+3) {
   background-image: url("images/digital.jpg");
-  background-color: orange;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .card:nth-child(6n+4) {
   background-image: url("images/robot.jpg");
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .card:nth-child(6n+5) {
   background-image: url("images/ai.jpg");
-  background-color: green;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .card:nth-child(6n+6) {
   background-image: url("images/user.jpg");
-  background-color: yellow;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .cards:nth-child(6n+1) {
   background-image: url("images/darkness.jpg");
-  background-color: #494949;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply; }
 
 .cards:nth-child(6n+2) {
-  background-color: violet;
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("images/sk1.jpg");
   background-blend-mode: multiply; }
 
 .cards:nth-child(6n+3) {
-  background-color: yellow;
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("images/sk2.jpg");
   background-blend-mode: multiply; }
 
 .cards:nth-child(6n+4) {
-  background-color: darkgreen;
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("images/sk3.jpg");
   background-blend-mode: multiply; }
 
 .cards:nth-child(6n+5) {
-  background-color: darkblue;
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("images/sk4.jpg");
   background-blend-mode: multiply; }
 
 .cards:nth-child(6n+6) {
-  background-color: indigo;
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url("images/sk5.jpg");
   background-blend-mode: multiply; }
 

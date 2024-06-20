@@ -68,18 +68,20 @@ window.onclick = function(event) {
 }
 
  const newsData = [
-    { id: "news-card-1", title: "News Title 1", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/digital.jpg" },
-    { id: "news-card-2", title: "News Title 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
-    { id: "news-card-3", title: "News Title 3", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/digital.jpg" },
+    { id: "news-card-1", title: "Next Generation AI", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/news4.png" },
+    { id: "news-card-2", title: "Phd Admissions", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
+    { id: "news-card-3", title: "MS (by Research)", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news5.png" },
+        { id: "news-card-3", title: "Intelligent Infrastructure", date: "MAY 28, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
+
     // Add more news items here
 ];
 
 
 // Define an object for storing events
  const eventData = [
-    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/digital.jpg"},
-    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/digital.jpg" },
-    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/digital.jpg"},
+    { id: "event-card-1", date: "12 June 2024", title: "Event Title 1", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
+    { id: "event-card-2", date: "13 June 2024", title: "Event Title 2", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
+    { id: "event-card-3", date: "14 June 2024", title: "Event Title 3", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
     
     // Add more event items here
 ];
