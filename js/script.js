@@ -2,7 +2,6 @@ $(document).ready(function() {
     const backgroundImages = [
         'bg.png',
         'Banners-2.png',
-        'Banners-3.png',
         'Banners-1.png',
         'Banners-4.png',
         'Banners-5.png',
@@ -12,6 +11,7 @@ $(document).ready(function() {
         'Banners-9.png',
         'Banners-10.png',
         'Banners-11.png',
+        'Banners-3.png',
     ];
 
     let currentIndex = 0;
@@ -81,20 +81,20 @@ window.onclick = function(event) {
 
 //     // Add more news items here
 // ];
-console.log(newsData);
+// console.log(newsData);
 
 // Define an object for storing events
- const eventData = [
-    { id: "event-card-1", date: "12 June 2024", title: "M.S. by Research in Next Generation AI", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-    { id: "event-card-2", date: "13 June 2024", title: "M.S. by Research in Computational Economics", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
-    { id: "event-card-3", date: "14 June 2024", title: "M.S. by Research in Intelligent Infrastructure", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
-    { id: "event-card-4", date: "12 June 2024", title: "M.S. by Research in Precision Healthcare and Integrative Medicine", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-    { id: "event-card-5", date: "13 June 2024", title: "M.Tech. in AR VR", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
-    { id: "event-card-6", date: "14 June 2024", title: "M.Tech. in AR VR (for Working Professionals)", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
-    { id: "event-card-7", date: "12 June 2024", title: "M.Tech. in DCS (for Working Professionals)", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-    // Add more event items here
-];
-
+//  const eventData = [
+//     { id: "event-card-1", date: "12 June 2024", title: "M.S. by Research in Next Generation AI", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
+//     { id: "event-card-2", date: "13 June 2024", title: "M.S. by Research in Computational Economics", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
+//     { id: "event-card-3", date: "14 June 2024", title: "M.S. by Research in Intelligent Infrastructure", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
+//     { id: "event-card-4", date: "12 June 2024", title: "M.S. by Research in Precision Healthcare and Integrative Medicine", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
+//     { id: "event-card-5", date: "13 June 2024", title: "M.Tech. in AR VR", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
+//     { id: "event-card-6", date: "14 June 2024", title: "M.Tech. in AR VR (for Working Professionals)", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
+//     { id: "event-card-7", date: "12 June 2024", title: "M.Tech. in DCS (for Working Professionals)", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
+//     // Add more event items here
+// ];
+let scrollInterval = null;
 function renderItems(container, items) {
     container.innerHTML = items.map(item => `
         <div class="card" id="${item.id}" style="background-image: url(${item.img});" >
@@ -110,11 +110,10 @@ function showNews() {
     var newText = "News"; 
     button.childNodes[0].textContent = newText + " ";
 
-
     const container = document.getElementById("cardsContainer");
-    const n = container.length;
-    renderItems(container, newsData.slice(0, n));
-
+    renderItems(container, newsData); // Render all news items
+    scrollContainerToStart(); // Scroll container to the start
+    restartScrollInterval();
 }
 
 function showEvents() {
@@ -123,10 +122,57 @@ function showEvents() {
     button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("cardsContainer");
-    const n = container.length;
-    renderItems(container, eventData.slice(0, n));
+    renderItems(container, eventData); // Render all event items
+    scrollContainerToStart(); // Scroll container to the start
+    restartScrollInterval();
+}
 
-}    
+// Function to scroll the container to the left
+function scrollLeft() {
+    const container = document.getElementById("cardsContainer");
+    container.scrollTo({
+        left: container.scrollLeft - 300, // Adjust scroll amount as needed
+        behavior: 'smooth' // Smooth scroll behavior
+    });
+}
+
+// Function to smoothly scroll the container to the right
+function scrollRight() {
+    const container = document.getElementById("cardsContainer");
+    container.scrollTo({
+        left: container.scrollLeft + 300, // Adjust scroll amount as needed
+        behavior: 'smooth' // Smooth scroll behavior
+    });
+}
+
+// Function to scroll the container to the start
+function scrollContainerToStart() {
+    const container = document.getElementById("cardsContainer");
+    container.scrollLeft = 0;
+}
+
+function restartScrollInterval() {
+    // Clear previous interval if exists
+    if (scrollInterval) {
+        clearInterval(scrollInterval);
+    }
+    // Set new interval for scrolling every 4 seconds
+    scrollInterval = setInterval(scrollRight, 4000); // Adjust timing as needed
+}
+
+// Event listeners for scroll buttons
+$('#scrollLeftButton').click(function() {
+    scrollLeft(); // Change to the next background
+});
+
+// Event listener for previous button click
+$('#scrollRightButton').click(function() {
+    scrollRight(); // Change to the previous background
+});
+
+restartScrollInterval();
+ 
+
 
 document.addEventListener("DOMContentLoaded", () => {
     showNews();

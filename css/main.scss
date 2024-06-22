@@ -129,7 +129,7 @@ $titlecolor:#6e0d10;
 .button-bar {
 	display: flex;
 	justify-content: center;
-	margin-top: 258px;
+	margin-top: 16.8%;
 	a{
 		text-decoration: none;
 		color: #FFF;
@@ -150,8 +150,8 @@ $titlecolor:#6e0d10;
 	margin: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	border: 0;
   }
   
@@ -1721,7 +1721,6 @@ header p {
 
 //news
 .search-box {
-    background-color: $bgcolor;
     padding: 10px;
 
     position: sticky;
@@ -1744,7 +1743,7 @@ header p {
 
 .article-item {
     display: flex;
-    background-color: #fff;
+    background-color: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -1754,6 +1753,8 @@ header p {
 .article-item img {
     max-width: 300px;
     object-fit: cover;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
 }
 
 .article-content {
@@ -1767,7 +1768,7 @@ header p {
 
 #titleh2 {
     margin: 10px 0;
-    color: #d9534f;
+    color: $textcolor;
 	 font-family: "Montserrat", sans-serif;
 }
 
@@ -1776,7 +1777,7 @@ p {
 }
 
 #read-more {
-    background-color: $textcolor;
+    background-color: rgb(141, 64, 64);
     border: none;
     // padding: 10px 15px;
     color: #fff;
@@ -1805,46 +1806,16 @@ p {
     cursor: pointer;
     color: $textcolor;
     border-radius: 4px;
-    text-decoration: none;
 }
 
 .page-item:hover {
-    background-color: #31b0d5;
+    background-color: #781919;
 }
 
 .page-item.active {
-    background-color: #ffffff;
+    background-color: #afafaf;
     font-weight: bold;
 }
-
-
-//events
-.events-section {
-    padding: 20px;
-}
-
-.event-item {
-    display: flex;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.event-item .icon {
-    font-size: 48px;
-    color: #d9534f;
-    padding: 20px;
-}
-
-.event-content {
-    padding: 20px;
-}
-
-
-
-
 
 
 //Other pages bg
@@ -1855,7 +1826,7 @@ p {
     top: -5%;
     left: 0;
     width: 100%;
-    height: 64vh;
+    height: 54vh;
     // background-image: url("images/bg2.jpg");
 	transition: background-image 0.5s ease; /* Initial background image */
     background-size: cover;
@@ -2070,14 +2041,41 @@ figcaption {
 }
 
 
-.cards-container {
-	display: flex;
-	flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
-	overflow-x: scroll; /* Enable horizontal scrolling */
-	overflow-y: hidden; /* Hide vertical overflow */
-	max-height: 400px; /* Adjust height as needed */
+#navigation {
+
+    display: flex;
+
+    justify-content: center;
+    width: 100%;
+
+ /* Adjust margin as needed */
 }
 
+.navigation-button {
+	margin-left: 10px;
+    cursor: pointer;
+    padding: 13px;
+    background-color: #000000d5; /* Button background color */
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+    background-color: #a55050; /* Darker background color on hover */
+}
+
+.cards-container {
+
+
+	display: flex;
+	flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+	overflow-x:hidden; /* Enable horizontal scrolling */
+	// overflow-y: hidden; /* Hide vertical overflow */
+	max-height: 400px; 
+	scroll-behavior: smooth; /* Smooth scrolling behavior */
+    -webkit-overflow-scrolling: touch; /* Adjust height as needed */
+}
 
 .card {
 	flex: 1 0 31%; /* Four cards per row, adjust the gap as needed */
@@ -2092,6 +2090,11 @@ figcaption {
 	height: 250px;
 	text-align: left;
 	font-size: 24px;
+	transition: transform 0.3s ease;
+
+	.active {
+		transform: translateX(0);
+	}
 
 	.inside{
 		margin-top: -40px;
@@ -2112,111 +2115,42 @@ figcaption {
 		text-transform: none;/* Remove default margin */
 	}
 }
-.cards {
-	flex: 1 0 25%; /* Four cards per row, adjust the gap as needed */
-	margin: 10px;
-	background-size: cover;
-    background-position: center;
-	color: white;
-	display: flex;
-	height: 250px;
-	text-align: left;
-	font-size: 24px;
-
-	.inside{
-		margin-top: -40px;
-		display:flex;
-		flex-direction: column;
-	}
-
-	p {
-		font-size: 14px; /* Size for the paragraph text */
-		margin: 0; /* Remove default margin */
-		margin-bottom: 10px;
-		text-align: left; /* Space between the <p> and <h1> */
-	}
-	
-	h1 {
-		font-size: 24px; /* Size for the heading text */
-		margin: 0;
-		text-align: left; /* Remove default margin */
-	}
-}
-
 .card:nth-child(6n+1) {
 
-	background-image: url("images/book.jpg");
+
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: multiply;
 }
 
 .card:nth-child(6n+2) {
-	background-image: url("images/people.jpg");
+
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: multiply;
 }
 
 .card:nth-child(6n+3) {
-	background-image: url("images/digital.jpg");
+
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: multiply;
 }
 
 .card:nth-child(6n+4) {
-	background-image: url("images/robot.jpg");
+
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: multiply;
 }
 
 .card:nth-child(6n+5) {
-	background-image: url("images/ai.jpg");
+
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: multiply;
 }
 
 .card:nth-child(6n+6) {
-	background-image: url("images/user.jpg");
+
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: multiply;
 }
-
-.cards:nth-child(6n+1) {
-	background-image: url("images/darkness.jpg");
-	background-color: rgba(0, 0, 0, 0.6);
-	background-blend-mode: multiply;
-}
-
-.cards:nth-child(6n+2) {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url("images/sk1.jpg");
-	background-blend-mode: multiply;
-}
-
-.cards:nth-child(6n+3) {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url("images/sk2.jpg");
-	background-blend-mode: multiply;
-}
-
-.cards:nth-child(6n+4) {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url("images/sk3.jpg");
-	background-blend-mode: multiply;
-}
-
-.cards:nth-child(6n+5) {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url("images/sk4.jpg");
-	background-blend-mode: multiply;
-}
-
-.cards:nth-child(6n+6) {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url("images/sk5.jpg");
-	background-blend-mode: multiply;
-}
-
-
 
 .button-group {
 	margin-left: 80px;
@@ -2350,6 +2284,7 @@ figcaption {
 	 color: brown;
 	//  word-spacing: 10px;
 	letter-spacing: 1px;
+	word-spacing: 0.5px;
 	margin-top: -10px;
   }
   #site-main-title2 {
@@ -2365,7 +2300,7 @@ figcaption {
   }
   
   
- #site-title {
+  #site-title {
 	margin-top: 5px;
 	text-decoration: none;
 	border: 0;
@@ -2374,7 +2309,8 @@ figcaption {
 	color: #800F13;
 	font-family: sans-serif;
 	font-weight:bold;
-	letter-spacing: 5px;
+	letter-spacing: 6px;
+	word-spacing: 1px;
 	font-size: 1.7em;
 	line-height: 1.8em;
   }
@@ -2423,7 +2359,7 @@ figcaption {
 	display: none;
 	position: absolute;
 	// background-color: #1ea8989e;
-	background-color: #ab0e0ec5;  /* Matching the navbar color */
+	background-color: #860f0ff0;  /* Matching the navbar color */
 	min-width: 250px;
 	text-align: left;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -4165,10 +4101,11 @@ ul #subbullet{
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height:73%;
+    height:70vh;
     background-image: url("#{$baseurl}/bg.png"); /* Initial background image */
     background-size: cover;
     background-position: center;
+	background-repeat: no-repeat;
     transition: background-image 1s ease-in-out;
     border: 5px solid #ffffff; /* Optional border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */

@@ -125,15 +125,16 @@ layout: landing
 									<a href="latest.html"><button id="view-all">View All <i class="fa-solid fa-arrow-right"></i></button></a>
 								</div>
 							</div>
-				
+			
 							<div id="cardsContainer" class="cards-container">
 						
-								<div class="card" id="${item.id}" style="background-image: url(${item.img});" >
-									${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
-									<h1>${item.title}</h1>
-									${item.date ? '</div>' : ''}
-								</div>
 							</div>
+							<div id="navigation">
+								<div id="scrollLeftButton" class="navigation-button">&#9664;</div>
+								<div id="scrollRightButton" class="navigation-button">&#9654;</div>
+							</div>
+		
+					
 							<br>
 							<!-- <div id="cardsContainer2" class="cards-container" >
 							
@@ -162,6 +163,15 @@ layout: landing
 						{% endif %}
 					{% endfor %}
 				];
+
+						var eventData = [
+							{% assign news_event_data = site.data.news_events %}
+							{% for mem in news_event_data %}
+								{% if mem.event == 1 %}
+								{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}" }{% unless forloop.last %},{% endunless %}
+								{% endif %}
+							{% endfor %}
+						];
 					</script>
 					<script src="js/script.js">
 					</script>

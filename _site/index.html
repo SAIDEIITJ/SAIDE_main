@@ -58,8 +58,9 @@
 
   <div class="container" >
     <div class="row navbar-container" style="	margin-top: -12px;">
-      <div class="col-md-3" style="padding-left: 50px; margin-bottom: 5px;">
-            <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR <br> <p id = "site-main-title">School of Artificial Intelligence<br> <p id = "site-main-title2">& Data Science</p></h1></a>
+      <div class="col-md-3" style="padding-left: 50px; margin-bottom: 15px;">
+            <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR<br> <p id = "site-main-title">School of Artificial Intelligence<br> <p id = "site-main-title2">& Data Science</p> </h1></a>
+           
            
       </div>
       <div class="col-md-7" style=" text-transform: none; justify-content: center; text-align: center;">
@@ -71,12 +72,13 @@
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="bg-buttons" data-image="1.png" id="dropbtn">Academics</a>
+                <a href="phd.html" class="bg-buttons" data-image="3.png" id="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html" class="bg-buttons" data-image="3.png">PhD</a>
                   <a href="ms.html" class="bg-buttons"  data-image="2.png">MS by Research</a>
                   <a href="mtech.html" class="bg-buttons" data-image="4.png">MTech</a>
                   <a href="btech.html" class="bg-buttons"  data-image="5.png">BTech Minor</a>
+                  <a href="continuing_edu.html" class="bg-buttons"  data-image="1.png">Continuing Education</a>
                 </div>
               </li>
               <li class="dropdown">
@@ -309,15 +311,16 @@ document.addEventListener("DOMContentLoaded", () => {
 									<a href="latest.html"><button id="view-all">View All <i class="fa-solid fa-arrow-right"></i></button></a>
 								</div>
 							</div>
-				
+			
 							<div id="cardsContainer" class="cards-container">
 						
-								<div class="card" id="${item.id}" style="background-image: url(${item.img});" >
-									${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
-									<h1>${item.title}</h1>
-									${item.date ? '</div>' : ''}
-								</div>
 							</div>
+							<div id="navigation">
+								<div id="scrollLeftButton" class="navigation-button">&#9664;</div>
+								<div id="scrollRightButton" class="navigation-button">&#9654;</div>
+							</div>
+		
+					
 							<br>
 							<!-- <div id="cardsContainer2" class="cards-container" >
 							
@@ -392,6 +395,57 @@ document.addEventListener("DOMContentLoaded", () => {
 						
 					
 				];
+
+						var eventData = [
+							
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+								{ id:"9", title:"M.S. by Research in Next Generation AI", date:"July 2024", content:"", img:"images/news4.png" },
+								
+							
+								
+								{ id:"10", title:"M.S. by Research in Computational Economics", date:"July 2024", content:"", img:"images/news5.png" },
+								
+							
+								
+								{ id:"11", title:"M.S. by Research in Intelligent Infrastructure", date:"July 2024", content:"", img:"images/news1.png" },
+								
+							
+								
+								{ id:"12", title:"M.S. by Research in Precision Healthcare and Integrative Medicine", date:"July 2024", content:"", img:"images/news4.png" },
+								
+							
+								
+								{ id:"13", title:"M.Tech. in AR VR", date:"July 2024", content:"", img:"images/news5.png" },
+								
+							
+								
+								{ id:"14", title:"M.Tech. in AR VR (for Working Professionals)", date:"July 2024", content:"", img:"images/news1.png" },
+								
+							
+								
+								{ id:"15", title:"M.Tech. in DCS (for Working Professionals)", date:"July 2024", content:"", img:"images/news4.png" },
+								
+							
+								
+							
+						];
 					</script>
 					<script src="js/script.js">
 					</script>

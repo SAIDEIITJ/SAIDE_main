@@ -2,34 +2,117 @@
 layout: news
 title: News + Events
 link: HOME / LATEST
-des: Nte nunc adipiscing gravida odio porttitor sem non mi non minon mi.
+des:
 ---
 
-<div class="engage-container">
-    <div class="main-content">
-        <div>
-            <img src="images/pic03.jpg"  style="width: 400px; float: left; margin-right: 15px;"  alt="as">
-        </div>
-        <p>Elis sagittis eget tempus euismod. Vestibulum ante ip  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt f sum primis <br><br> In faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus.Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</p>
-        <p>Continue your explorations into complexity below!</p>
-        <hr style="color: antiquewhite;">
-        <p style="color: rgb(151, 151, 151);">News asd at the institutiosasd, generous donors, and as daasd so undat iona sd asdrants.</p>
-    </div>
-    <div class="side-content">
-        <div class="share">
-            <h3>SHARE</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-            <a href="#" class="sign-up">Sign Up For AIDE News</a>
-        </div>
-        <div class="support">
-            <h3>Contact US</h3>
-            <p>Thanks for reaching out to us.</p>
-            <a href="contact.html" id="donate-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-    </div>
+
+<div class="search-box">
+    <input type="text" id="searchBar" placeholder="Search for an article...">
 </div>
+<section class="articles-section"  id="articlesSection">
+
+</section>
+<div class="pagination" id="pagination">
+
+</div>
+
+<script >
+    	var data = [
+					{% assign news_event_data = site.data.news_events %}
+					{% for mem in news_event_data %}
+						{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}" }{% unless forloop.last %},{% endunless %}
+					{% endfor %}
+				];
+
+    document.getElementById('searchBar').addEventListener('input', function() {
+    let filter = this.value.toLowerCase();
+    let articleItems = document.querySelectorAll('.article-item');
+    
+    articleItems.forEach(function(item) {
+        let title = item.getAttribute('data-title').toLowerCase();
+        if (title.includes(filter)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+
+
+// const articles = [
+//     // Add at least 20 articles for demonstration purposes
+//     { title: "NEWS 1", date: "MAY 29, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/user.jpg" },
+//     { title: "NEWS 2", date: "MAY 28, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/digital.jpg" },
+    
+//     // Add more articles here...
+// ];
+
+const articlesPerPage = 10;
+let currentPage = 1;
+
+function displayArticles(page) {
+    const articlesSection = document.getElementById('articlesSection');
+    articlesSection.innerHTML = '';
+    const start = (page - 1) * articlesPerPage;
+    const end = start + articlesPerPage;
+    const paginatedArticles = data.slice(start, end);
+    
+    paginatedArticles.forEach(article => {
+        const articleItem = document.createElement('div');
+        articleItem.className = 'article-item';
+        articleItem.setAttribute('data-title', article.title);
+        
+        articleItem.innerHTML = `
+            <img src="${article.img}" alt="Article Image">
+            <div class="article-content">
+                <p class="date">${article.date}</p>
+                <h2 id = "titleh2">${article.title}</h2>
+                <p>${article.content}</p>
+                <button id="read-more">Read More</button>
+            </div>
+        `;
+        articlesSection.appendChild(articleItem);
+    });
+}
+
+function setupPagination() {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+    const pageCount = Math.ceil(data.length / articlesPerPage);
+    
+    for (let i = 1; i <= pageCount; i++) {
+        const pageItem = document.createElement('a');
+        pageItem.className = 'page-item';
+        pageItem.innerText = i;
+        pageItem.href = '#';
+        if (i === currentPage) {
+            pageItem.classList.add('active');
+        }
+        pageItem.addEventListener('click', function(event) {
+            event.preventDefault();
+            currentPage = i;
+            displayArticles(currentPage);
+            setupPagination();
+        });
+        pagination.appendChild(pageItem);
+    }
+}
+
+document.getElementById('searchBar').addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const articleItems = document.querySelectorAll('.article-item');
+    
+    articleItems.forEach(item => {
+        const title = item.getAttribute('data-title').toLowerCase();
+        if (title.includes(filter)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+
+// Initial setup
+displayArticles(currentPage);
+setupPagination();
+</script>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Events</title>
+  <title>Continuing Education</title>
   <meta name="description" content="School of Artificial Intelligence and Data Science
 ">
 
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="http://localhost:4000/SAIDE_main/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/SAIDE_main/events.html">
+  <link rel="canonical" href="http://localhost:4000/SAIDE_main/continuing_edu.html">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/SAIDE_main/images/favicon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,8 +51,9 @@
 
   <div class="container" >
     <div class="row navbar-container" style="	margin-top: -12px;">
-      <div class="col-md-3" style="padding-left: 50px; margin-bottom: 5px;">
-            <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR <br> <p id = "site-main-title">School of Artificial Intelligence<br> <p id = "site-main-title2">& Data Science</p></h1></a>
+      <div class="col-md-3" style="padding-left: 50px; margin-bottom: 15px;">
+            <a href="/SAIDE_main/index.html" id="links"><h1 id="site-title">IIT JODHPUR<br> <p id = "site-main-title">School of Artificial Intelligence<br> <p id = "site-main-title2">& Data Science</p> </h1></a>
+           
            
       </div>
       <div class="col-md-7" style=" text-transform: none; justify-content: center; text-align: center;">
@@ -64,12 +65,13 @@
               </li>
 
               <li class="dropdown">
-                <a href="learn.html" class="bg-buttons" data-image="1.png" id="dropbtn">Academics</a>
+                <a href="phd.html" class="bg-buttons" data-image="3.png" id="dropbtn">Academics</a>
                 <div class="dropdown-content">
                   <a href="phd.html" class="bg-buttons" data-image="3.png">PhD</a>
                   <a href="ms.html" class="bg-buttons"  data-image="2.png">MS by Research</a>
                   <a href="mtech.html" class="bg-buttons" data-image="4.png">MTech</a>
                   <a href="btech.html" class="bg-buttons"  data-image="5.png">BTech Minor</a>
+                  <a href="continuing_edu.html" class="bg-buttons"  data-image="1.png">Continuing Education</a>
                 </div>
               </li>
               <li class="dropdown">
@@ -178,113 +180,74 @@ document.addEventListener("DOMContentLoaded", () => {
  
 </script>
 
-      <div class="background-about" id="backgroundAbout"></div>
+      <div class="background-about"  id="backgroundAbout"></div>
 <article id="main">
   <div class="topcontent">
-    <header style="height: 148px; margin-top: 50px;">
-      <h3 id = "topcontent-p">HOME / LATEST</h3>
-      <h2 id = "topcontent-h2">Events</h2>
-      <p id = "topcontent-para" style="z-index: -1;">Ravida odio portt Nte nunc adip iscing git or sem non mi non minon mi.</p>
+    <header style="height: 148px; margin-top: 70px;">
+      <h3 id = "topcontent-p">HOME / ACADEMICS</h3>
+      <h2 id = "topcontent-h2">Continuing Education</h2>
+      <!-- <p  id = "topcontent-para" style="z-index: -1;">Welcome to the School of Artificial Intelligence and Data Science (SAIDE), where transformative learning meets cutting-edge research in complex systems science. At SAIDE, we are committed to nurturing the next generation of innovators, thinkers, and problem solvers in the dynamic fields of artificial intelligence (AI) and data science (DS).</p> -->
 
     </header>
     <div class="button-bar">
-      <a href="latest.html" class="tab-button" data-image="#">About</a>
-      <a href="articles.html" class="tab-button" data-image="#">News</a>
-      <a href="events.html" class="tab-button" data-image="#">Events</a>
+      <!-- <a href="learn.html" class="tab-button" data-image="1.png">About</a> -->
+      <a href="phd.html" class="tab-button" data-image="3.png">PhD</a>
+      <a href="ms.html" class="tab-button" data-image="2.png">MS by Research</a>
+      <a href="mtech.html" class="tab-button" data-image="4.png">MTech</a>
+      <a href="btech.html" class="tab-button" data-image="5.png">BTech Minor</a>
+      <a href="continuing_edu.html" class="tab-button" data-image="1.png">Continuing Education</a>
     </div>
   </div>
 
   <section class="wrapper style5" style="z-index: -1;">
     <div class="inner">
-      <div class="search-container">
-    <input type="text" id="searchBar" placeholder="Search for an event...">
-</div>
-<section class="events-section" id="eventsSection">
-    <!-- Events will be dynamically added here by js -->
-</section>
-<div class="pagination" id="pagination">
-    <!-- Page numbers will be dynamically added here by js -->
-</div>
+      <div id = "parent-box">
+        <div class="general-section" >
+            <h1>Continuing Education</h1>
+            <div class="row">
+              <div class="col-md-8">
+                <p>The School runs degree, diploma and certificate programmes in online and/or part-time mode for interested learners, having different career paths and different levels of preparation. This will include specialised programmmes meeting need of working professionals in the field of AI&DS, awareness programmes for senior executives, cross-disciplinary programmes for in depth training of professionals from other disciplines, programmes for add-on diploma/certificates for students pursuing academic programmes in other disciplines. In other words, the School will play a key role in extending the reach of the AI and DS knowledge in the country.</p>
+              </div>
+              <div class="col-md-4">
+                <div class="side-content">
+                  <div class="share">
+                    <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+                    <ul class="side-news">
 
-<script type="module">
-
-    import { newsData, eventData } from './js/script.js';
-
-const eventsPerPage = 10;
-let currentPage = 1;
-
-function displayEvents(page) {
-    const eventsSection = document.getElementById('eventsSection');
-    eventsSection.innerHTML = '';
-    const start = (page - 1) * eventsPerPage;
-    const end = start + eventsPerPage;
-    const paginatedEvents = eventData.slice(start, end);
-    
-    paginatedEvents.forEach(event => {
-        const eventItem = document.createElement('div');
-        eventItem.className = 'event-item';
-        eventItem.setAttribute('data-title', event.title);
-        
-        eventItem.innerHTML = `
-            <div class="icon"><i class="${event.icon}"></i></div>
-            <div class="event-content">
-                <p class="date">${event.date}</p>
-                <h2 id = "titleh2">${event.title}</h2>
-                <p>${event.content}</p>
-                <button id="read-more">Read More</button>
+                    </ul>
+                    <br>
+           
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        `;
-        eventsSection.appendChild(eventItem);
-    });
-}
+            
+        <div style="padding: 20px;">
+            <h2 id="subheading">Curriculum</h2>
+            <p></p>
+            <h2 id="subheading">Supervisor Selection</h2>
+            <p></p>
+        </div>
+    </div>
 
-function setupPagination() {
-    const pagination = document.getElementById('pagination');
-    pagination.innerHTML = '';
-    const pageCount = Math.ceil(eventData.length / eventsPerPage);
+    <hr>
+  </div>
     
-    for (let i = 1; i <= pageCount; i++) {
-        const pageItem = document.createElement('a');
-        pageItem.className = 'page-item';
-        pageItem.innerText = i;
-        pageItem.href = '#';
-        if (i === currentPage) {
-            pageItem.classList.add('active');
-        }
-        pageItem.addEventListener('click', function(event) {
-            event.preventDefault();
-            currentPage = i;
-            displayEvents(currentPage);
-            setupPagination();
-        });
-        pagination.appendChild(pageItem);
-    }
-}
-
-document.getElementById('searchBar').addEventListener('input', function() {
-    const filter = this.value.toLowerCase();
-    const eventItems = document.querySelectorAll('.event-item');
     
-    eventItems.forEach(item => {
-        const title = item.getAttribute('data-title').toLowerCase();
-        if (title.includes(filter)) {
-            item.style.display = 'flex';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-});
+  
+    
 
-// Initial setup
-displayEvents(currentPage);
-setupPagination();
-</script>
+
+
     </div>
   </section>
 </article>
 
 <script>
 
+  
   document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll('.tab-button');
     const backgroundAbout = document.getElementById('backgroundAbout');
@@ -306,7 +269,6 @@ setupPagination();
       });
     });
   });
-
 </script>
 
 
