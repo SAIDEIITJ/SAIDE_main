@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function getGDriveDlURL(url){
         // reference: https://github.com/UltiRequiem/drive_link/blob/main/mod.ts
-        const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>.*?)$/;
+        const regexp = /https:\/\/drive\.google\.com\/file\/d\/(?<id>[^/]+)\/view\?usp=sharing/;
         if (regexp.test(url)) {
             const res = regexp.exec(url);
             var id = res?.groups?.id;
