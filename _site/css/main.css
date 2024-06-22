@@ -10814,12 +10814,15 @@ body.is-mobile #main > header {
 /* Footer */
 #footer {
   padding: 6em 0 4em 0 ;
-  background-image: url("/SAIDE_main/images/sk7.jpg");
+  background-image: url("/SAIDE_main/images/footer.png");
   /* Initial background image */
   background-size: cover;
   background-position: center;
   z-index: -1;
-  text-align: center; }
+  text-align: center;
+  color: #000000; }
+  #footer h3 {
+    color: #000000; }
   #footer h1 {
     text-align: left;
     font-size: 2.2rem;
@@ -10832,7 +10835,7 @@ body.is-mobile #main > header {
       #footer .icons a:hover {
         color: #fff; }
   #footer .copyright {
-    color: rgba(255, 255, 255, 0.5);
+    color: #000000;
     font-size: 0.8em;
     letter-spacing: 0.225em;
     list-style: none;

@@ -4593,12 +4593,16 @@ body.is-loading {
 
 	#footer {
 		@include padding(6em, 0);
-		background-image: url("#{$baseurl}/sk7.jpg"); /* Initial background image */
+		background-image: url("#{$baseurl}/footer.png"); /* Initial background image */
 		background-size: cover;
 		background-position: center;
 		z-index: -1;
 		text-align: center;
-		
+		color: #000000;
+
+		h3{
+			color: #000000;
+		}
 		
 		h1{
 			text-align: left;
@@ -4621,7 +4625,8 @@ body.is-loading {
 		}
 
 		.copyright {
-			color: _palette(fg-light);
+			// color: _palette(fg-light);
+			color: #000000;
 			font-size: 0.8em;
 			letter-spacing: _size(letter-spacing-alt);
 			list-style: none;
