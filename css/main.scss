@@ -280,11 +280,17 @@ $titlecolor:#6e0d10;
 
   
   #circular-img {
-	overflow: hidden;
-	position: relative;
-	width: 390px;
-	height: 180px; 
-	padding-right: 20px;
+
+	width: 50%;
+	height: auto; 
+	padding-right: 15px;
+	margin-top: -20px;
+  }
+  #circular-img-2 {
+
+	width: 50%;
+	height: auto; 
+	padding-right: 15px;
 	margin-top: -20px;
   }
   
@@ -293,9 +299,14 @@ $titlecolor:#6e0d10;
   }
   #bullets{
 	font-size: 0.9em;
+	list-style-type: none; /* Remove default bullets */
+	padding: 0; /* Remove default padding */
+	text-align: left;
+	width: 90%;
   }
   #hidden-content{
 	display: flex;
+	padding-right: 5px;
 	text-align: left;
 	 font-size: 0.8em;
 	//   padding-left:25px;
@@ -318,6 +329,9 @@ $titlecolor:#6e0d10;
 
   }
   #hidden-content-3{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	margin-left: 5px;
 	font-size: 0.8em;
 	 background-color: #f8f7f7;
@@ -333,6 +347,7 @@ $titlecolor:#6e0d10;
 	text-transform: none;
 	color: $titlecolor;
 	text-align: center;
+	margin-top: 0;
 
   }
   #popup-title{
@@ -682,6 +697,36 @@ h2 {
   }
 
 
+  .coe-dropdown{
+	display: none;
+	background-color: $bgcolor;
+	width: 101%;
+	margin-left: -2%;
+	padding: 10px;
+
+	.coe-checkbox input[type="checkbox"] {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 18px;
+		height: 18px;
+		border: 2px solid #8B4513; /* Brown color */
+		border-radius: 50%; /* Circular shape */
+		outline: none;
+		cursor: pointer;
+	}
+	
+	.coe-checkbox input[type="checkbox"]:checked {
+		background-color: #8B4513; /* Brown color when checked */
+	}
+	
+	.coe-checkbox label {
+		margin-left: 8px; /* Space between checkbox and label */
+		cursor: pointer;
+	}
+
+  }
+
   .search-container {
     display: flex; /* Use flexbox layout */
     align-items: center; /* Align items vertically */
@@ -761,46 +806,84 @@ h2 {
 }
 #teamMembers {
     display: flex;
-    flex-wrap: wrap;
-	/* Adjust the gap between cards */
+    flex-wrap: wrap;/* Adjust the gap between cards */
 }
 
 .member-card {
-    flex: 0 0 calc(50% - 20px); /* Two cards per row, minus the gap */
+    flex: 1 0 calc(50% - 20px); /* Two cards per row, minus the gap */
     padding: 20px;
-    margin-bottom: 20px;
-	margin-left: 10px;
     border: 1px solid #ccc;
+	margin-left: 10px;
+	margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #e7e7e7;
+    background-color: #f0efef;
     overflow: hidden; /* Ensure content doesn't overflow */
+    position: relative; /* Ensure position context for absolute positioning */
 }
 
-.member-card img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    max-width: 100%;
-    height: auto; 
-}
-.member-card ul li{
-	font-size: 0.8em;
+.member-info {
+    display: flex;
+    flex-direction: column; /* Stack image on top of details */
 }
 
-.member-card h4 {
-    margin: 10px 0 5px;
+.member-img {
+    width: 100px; /* Adjust image size as needed */
+    height: 120px;
+    object-fit: cover;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    border: 3px solid #ffffff; /* White border to stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.member-card i {
-    font-style: normal;
-	font-size: 0.9em;
+.member-details {
+    flex: 1;
+}
+
+.member-details h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.member-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.member-details .member-position {
+    font-style: italic;
     color: #777;
-    margin-bottom: 10px;
+}
+
+.member-details .member-bio {
+    font-size: 0.9em;
+}
+
+@media (max-width: 992px) {
+    .member-card {
+        flex: 1 0 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
 }
 
 @media (max-width: 768px) {
     .member-card {
-        flex: 0 0 100%; /* Cards take full width on smaller screens */
+        flex: 1 0 100%; /* Full width on small screens */
+    }
+
+    .member-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .member-img {
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 10px;
+        top: auto;
+        right: auto;
     }
 }
 
@@ -2076,6 +2159,7 @@ figcaption {
 
 .navigation-button {
 	margin-left: 10px;
+	color: white;
     cursor: pointer;
     padding: 13px;
     background-color: #000000d5; /* Button background color */

@@ -97,9 +97,10 @@
               <li class="dropdown">
                 <a href="faculity.html" id="dropbtn" class="bg-buttons" data-image="13.png">People</a>
                 <div class="dropdown-content">
-                  <a href="staff.html" class="bg-buttons" data-image="13.png">Staff</a>
+                  <a href="faculity.html" class="bg-buttons" data-image="13.png">Faculty</a>
                   <a href="students.html" class="bg-buttons" data-image="11.png">Students</a>
                   <a href="alumini.html" class="bg-buttons" data-image="12.png">Alumini</a>
+                  <a href="staff.html" class="bg-buttons" data-image="13.png">Staff</a>
                   <a href="directory.html" class="bg-buttons" data-image="14.png">Directory</a>
                 </div>
               </li>
@@ -190,10 +191,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </header>
     <div class="button-bar">
-      <a href="faculity.html" class="tab-button"  data-image="13.png">Faculities</a>
-      <a href="staff.html" class="tab-button"     data-image="13.png">Staff</a>
+      <a href="faculity.html" class="tab-button"  data-image="13.png">Faculty</a>
       <a href="students.html" class="tab-button"  data-image="11.png">Students</a>
       <a href="alumini.html" class="tab-button"   data-image="12.png">Alumini</a>
+      <a href="staff.html" class="tab-button"     data-image="13.png">Staff</a>
       <a href="directory.html" class="tab-button"   data-image="14.png">Directory</a>
     </div>
   </div>
@@ -201,13 +202,23 @@ document.addEventListener("DOMContentLoaded", () => {
   <section class="wrapper style5">
     <div class="inner">
       <div class="search-container">
-    <input type="text" id="search-bar" placeholder="Search by name ...">
+    <input type="text" id="search-bar" placeholder="Search by Research Area ...">
     <div class="dropdown2">
-        <button class="dropbtn">Search by Name  <i class="fa-solid fa-caret-down"></i></button>
-        <div class="dropdown-content2">
-            <a href="#" id="searchByName">Search by Name </a>
-            <a href="#" id="searchByfaculty">Search by Supervisor(s)</a>
-        </div>
+        <button class="dropbtn">Search by Research Area</button>
+    </div>
+</div>
+<div class="filter-indicators" style="margin-left: 15%;">
+    <div class="filter-indicator"  data-filter="Ph.D">
+        <div class="checkbox"></div>
+        <span>Ph.D</span>
+    </div>
+    <div class="filter-indicator" data-filter="MS (by Research)">
+        <div class="checkbox"></div>
+        <span>MS (by Research)</span>
+    </div>
+    <div class="filter-indicator" data-filter="M.Tech.">
+        <div class="checkbox"></div>
+        <span>M.Tech.</span>
     </div>
 </div>
 <br><br>
@@ -340,7 +351,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Abinaya Vairam" data-research-fac="Dr. Dipanjan Roy">
+    <div class="col-sm-6 member-card" data-position=" Ph.D" data-name="Abinaya Vairam" data-research-area="Computational Neuroscience, Neurogenetics">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Abinaya Vairam</h4>
@@ -357,7 +368,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Arpit Shrimankar" data-research-fac="Dr. Vignesh Muralidharan, Dr. Dipanjan Roy">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Arpit Shrimankar" data-research-area="Neuroscience of Action Control, Computational Neuroscience">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Arpit Shrimankar</h4>
@@ -374,7 +385,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Debottam Bhunia" data-research-fac="Dr. Dipanjan Roy">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Debottam Bhunia" data-research-area="Developing large-scale computational models of multisensory perception">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Debottam Bhunia</h4>
@@ -391,7 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Gargi Bhattacharjee" data-research-fac="Dr. Shilpa Dang">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Gargi Bhattacharjee" data-research-area="Cognitive Neuroscience - Spatial Working Memory">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Gargi Bhattacharjee</h4>
@@ -408,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Kunjesh Kamleshbhai Parekh" data-research-fac=" (TBD)">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Kunjesh Kamleshbhai Parekh" data-research-area="Artificial Intelligence">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Kunjesh Kamleshbhai Parekh</h4>
@@ -425,7 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Manuj Jha" data-research-fac=" Dr. Ganesh Manjhi">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Manuj Jha" data-research-area="Macroeconomic Implications of Climate Change">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Manuj Jha</h4>
@@ -442,7 +453,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Md Shaheen Perwez" data-research-fac="Dr. Vignesh Muralidharan , Dr. Bhivraj Suthar">
+    <div class="col-sm-6 member-card" data-position="MS (by Research)" data-name="Md Shaheen Perwez" data-research-area="Brain-Computer Interface, Artificial Intelligence ">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Md Shaheen Perwez</h4>
@@ -459,7 +470,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="N Akhila" data-research-fac="Dr. Dipanjan Roy">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="N Akhila" data-research-area="Exploring Brain Dynamics using Heart-Brain coupling">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>N Akhila</h4>
@@ -476,7 +487,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Preetam Kumar" data-research-fac="Dr. Saurabh Gandhi">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Preetam Kumar" data-research-area="Computational Vision, Machine Learning">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Preetam Kumar</h4>
@@ -493,7 +504,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Rashmi Singh" data-research-fac="(TBD)">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Rashmi Singh" data-research-area="Computer Vision & Deep Learning">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Rashmi Singh</h4>
@@ -510,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Ramjan Ali" data-research-fac="Dr. S. Srivatsa Srinivas">
+    <div class="col-sm-6 member-card" data-position="MS (by Research)" data-name="Ramjan Ali" data-research-area="Queuing game theory">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Ramjan Ali</h4>
@@ -527,7 +538,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Shreya Deb" data-research-fac=" Dr. Dipanjan Roy , Dr. Vignsh Muralidharan">
+    <div class="col-sm-6 member-card" data-position="MS (by Research)" data-name="Shreya Deb" data-research-area="Computational and coginitive neuroscience">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Shreya Deb</h4>
@@ -544,7 +555,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Shubham Kumar" data-research-fac="Dr. Abhinaba Lahiri">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Shubham Kumar" data-research-area="Mechanism Design, Game Theory, Social Choice Theory">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Shubham Kumar</h4>
@@ -561,7 +572,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Swatantra Dhara" data-research-fac=" Dr. Dipanjan Roy">
+    <div class="col-sm-6 member-card" data-position="MS (by Research)" data-name="Swatantra Dhara" data-research-area="Computational Approaches to Episodic Memory">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Swatantra Dhara</h4>
@@ -578,7 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Sweta Kaman" data-research-fac="Prof. Ankita Sharma , Dr. Romi Banerjee">
+    <div class="col-sm-6 member-card" data-position="Ph.D" data-name="Sweta Kaman" data-research-area="Cognitive Neuropsychology, Wise Decision Making, Psychometrics">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Sweta Kaman</h4>
@@ -595,7 +606,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    <div class="col-sm-6 member-card" data-position="Research Scholar" data-name="Tirthankar Roy" data-research-fac="Dr Amit Bhardwaj, Dr Rajendra Nagar">
+    <div class="col-sm-6 member-card" data-position="" data-name="Tirthankar Roy" data-research-area="Haptics,Computer Vision">
         <img src="" id="circular-image" style="float: left" />
 
         <h4>Tirthankar Roy</h4>
@@ -617,23 +628,32 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Initial search behavior (search by name)
-    let searchBy = 'name';
+    document.querySelectorAll('.filter-indicator').forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            indicator.classList.toggle('checked');
 
-    // Function to toggle search by name or research area
-    function toggleSearchBy(option) {
-        if (option === 'name') {
-            document.getElementById('search-bar').placeholder = 'Search by name ...';
-        } else if (option === 'faculties') {
-            document.getElementById('search-bar').placeholder = 'Search by supervisor(s) ...';
-        }
-        searchBy = option;
-    }
+            const activeFilters = [];
+            document.querySelectorAll('.filter-indicator.checked').forEach(ind => {
+                activeFilters.push(ind.getAttribute('data-filter'));
+            });
 
-    // Toggle dropdown display
-    document.querySelector('.dropbtn').addEventListener('click', function () {
-        document.querySelector('.dropdown-content').classList.toggle('show');
+            document.querySelectorAll('.member-card').forEach(member => {
+                const category = member.getAttribute('data-position');
+                const filtersToApply = activeFilters.length > 0 ? activeFilters : ['all'];
+
+                if (filtersToApply.includes('all') || filtersToApply.includes(category)) {
+                    member.style.display = 'block';
+                } else {
+                    member.style.display = 'none';
+                }
+            });
+        });
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    
 
     // Close the dropdown menu if the user clicks outside of it
     window.onclick = function (event) {
@@ -649,33 +669,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Search functionality based on selected option
-    document.getElementById('searchByName').addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleSearchBy('name');
-        var button = document.querySelector(".dropbtn");
-        var newText = "Search by Name"; 
-        button.childNodes[0].textContent = newText + " ";
-        document.querySelector('.dropdown-content').classList.remove('show');
-    });
-
-    document.getElementById('searchByfaculty').addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleSearchBy('faculties');
-        var button = document.querySelector(".dropbtn");
-        var newText = "Search by Superviosr(s)"; 
-        button.childNodes[0].textContent = newText + " ";
-        document.querySelector('.dropdown-content').classList.remove('show');
-    });
+   
 
     // Input event listener for search bar
     document.getElementById('search-bar').addEventListener('input', function () {
         const searchTerm = this.value.toLowerCase();
         document.querySelectorAll('.member-card').forEach(member => {
             const name = member.getAttribute('data-name').toLowerCase();
-            const researchArea = member.getAttribute('data-research-fac').toLowerCase(); // Adjust this based on your data structure
+            const researchArea = member.getAttribute('data-research-area').toLowerCase(); // Adjust this based on your data structure
 
-            if ((searchBy === 'name' && name.includes(searchTerm)) ||
-                (searchBy === 'faculties' && researchArea.includes(searchTerm))) {
+            if ((researchArea.includes(searchTerm))) {
                 member.style.display = 'block';
             } else {
                 member.style.display = 'none';

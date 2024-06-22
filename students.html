@@ -7,13 +7,23 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 	
 
 <div class="search-container">
-    <input type="text" id="search-bar" placeholder="Search by name ...">
+    <input type="text" id="search-bar" placeholder="Search by Research Area ...">
     <div class="dropdown2">
-        <button class="dropbtn">Search by Name  <i class="fa-solid fa-caret-down"></i></button>
-        <div class="dropdown-content2">
-            <a href="#" id="searchByName">Search by Name </a>
-            <a href="#" id="searchByfaculty">Search by Supervisor(s)</a>
-        </div>
+        <button class="dropbtn">Search by Research Area</button>
+    </div>
+</div>
+<div class="filter-indicators" style="margin-left: 15%;">
+    <div class="filter-indicator"  data-filter="Ph.D">
+        <div class="checkbox"></div>
+        <span>Ph.D</span>
+    </div>
+    <div class="filter-indicator" data-filter="MS (by Research)">
+        <div class="checkbox"></div>
+        <span>MS (by Research)</span>
+    </div>
+    <div class="filter-indicator" data-filter="M.Tech.">
+        <div class="checkbox"></div>
+        <span>M.Tech.</span>
     </div>
 </div>
 <br><br>
@@ -22,7 +32,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
     {% if member.display == 1 and member.student == 1 %}
-    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-fac="{{member.faculties}}">
+    <div class="col-sm-6 member-card" data-position="{{ member.enrolled }}" data-name="{{ member.name }}" data-research-area="{{member.researchArea}}">
         <img src="{{ member.image }}" id="circular-image" style="float: left" />
 
         <h4>{{ member.name }}</h4>
@@ -42,23 +52,32 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 <script>
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Initial search behavior (search by name)
-    let searchBy = 'name';
+    document.querySelectorAll('.filter-indicator').forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            indicator.classList.toggle('checked');
 
-    // Function to toggle search by name or research area
-    function toggleSearchBy(option) {
-        if (option === 'name') {
-            document.getElementById('search-bar').placeholder = 'Search by name ...';
-        } else if (option === 'faculties') {
-            document.getElementById('search-bar').placeholder = 'Search by supervisor(s) ...';
-        }
-        searchBy = option;
-    }
+            const activeFilters = [];
+            document.querySelectorAll('.filter-indicator.checked').forEach(ind => {
+                activeFilters.push(ind.getAttribute('data-filter'));
+            });
 
-    // Toggle dropdown display
-    document.querySelector('.dropbtn').addEventListener('click', function () {
-        document.querySelector('.dropdown-content').classList.toggle('show');
+            document.querySelectorAll('.member-card').forEach(member => {
+                const category = member.getAttribute('data-position');
+                const filtersToApply = activeFilters.length > 0 ? activeFilters : ['all'];
+
+                if (filtersToApply.includes('all') || filtersToApply.includes(category)) {
+                    member.style.display = 'block';
+                } else {
+                    member.style.display = 'none';
+                }
+            });
+        });
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    
 
     // Close the dropdown menu if the user clicks outside of it
     window.onclick = function (event) {
@@ -74,33 +93,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Search functionality based on selected option
-    document.getElementById('searchByName').addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleSearchBy('name');
-        var button = document.querySelector(".dropbtn");
-        var newText = "Search by Name"; 
-        button.childNodes[0].textContent = newText + " ";
-        document.querySelector('.dropdown-content').classList.remove('show');
-    });
-
-    document.getElementById('searchByfaculty').addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleSearchBy('faculties');
-        var button = document.querySelector(".dropbtn");
-        var newText = "Search by Superviosr(s)"; 
-        button.childNodes[0].textContent = newText + " ";
-        document.querySelector('.dropdown-content').classList.remove('show');
-    });
+   
 
     // Input event listener for search bar
     document.getElementById('search-bar').addEventListener('input', function () {
         const searchTerm = this.value.toLowerCase();
         document.querySelectorAll('.member-card').forEach(member => {
             const name = member.getAttribute('data-name').toLowerCase();
-            const researchArea = member.getAttribute('data-research-fac').toLowerCase(); // Adjust this based on your data structure
+            const researchArea = member.getAttribute('data-research-area').toLowerCase(); // Adjust this based on your data structure
 
-            if ((searchBy === 'name' && name.includes(searchTerm)) ||
-                (searchBy === 'faculties' && researchArea.includes(searchTerm))) {
+            if ((researchArea.includes(searchTerm))) {
                 member.style.display = 'block';
             } else {
                 member.style.display = 'none';

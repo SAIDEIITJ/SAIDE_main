@@ -97,9 +97,10 @@
               <li class="dropdown">
                 <a href="faculity.html" id="dropbtn" class="bg-buttons" data-image="13.png">People</a>
                 <div class="dropdown-content">
-                  <a href="staff.html" class="bg-buttons" data-image="13.png">Staff</a>
+                  <a href="faculity.html" class="bg-buttons" data-image="13.png">Faculty</a>
                   <a href="students.html" class="bg-buttons" data-image="11.png">Students</a>
                   <a href="alumini.html" class="bg-buttons" data-image="12.png">Alumini</a>
+                  <a href="staff.html" class="bg-buttons" data-image="13.png">Staff</a>
                   <a href="directory.html" class="bg-buttons" data-image="14.png">Directory</a>
                 </div>
               </li>
@@ -190,10 +191,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </header>
     <div class="button-bar">
-      <a href="faculity.html" class="tab-button"  data-image="13.png">Faculities</a>
-      <a href="staff.html" class="tab-button"     data-image="13.png">Staff</a>
+      <a href="faculity.html" class="tab-button"  data-image="13.png">Faculty</a>
       <a href="students.html" class="tab-button"  data-image="11.png">Students</a>
       <a href="alumini.html" class="tab-button"   data-image="12.png">Alumini</a>
+      <a href="staff.html" class="tab-button"     data-image="13.png">Staff</a>
       <a href="directory.html" class="tab-button"   data-image="14.png">Directory</a>
     </div>
   </div>
@@ -396,27 +397,27 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
 <script>
-document.querySelectorAll('.filter-indicator').forEach(indicator => {
-    indicator.addEventListener('click', () => {
-        const filter = indicator.getAttribute('data-filter');
-        
-        if (indicator.classList.contains('checked')) {
-            indicator.classList.remove('checked');
-            document.querySelectorAll('.member-card').forEach(member => {
-                member.style.display = 'block';
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.filter-indicator').forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            indicator.classList.toggle('checked');
+
+            const activeFilters = [];
+            document.querySelectorAll('.filter-indicator.checked').forEach(ind => {
+                activeFilters.push(ind.getAttribute('data-filter'));
             });
-        } else {
-            document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
-            indicator.classList.add('checked');
+
             document.querySelectorAll('.member-card').forEach(member => {
                 const category = member.getAttribute('data-position');
-                if (filter === 'all' || category === filter) {
+                const filtersToApply = activeFilters.length > 0 ? activeFilters : ['all'];
+
+                if (filtersToApply.includes('all') || filtersToApply.includes(category)) {
                     member.style.display = 'block';
                 } else {
                     member.style.display = 'none';
                 }
             });
-        }
+        });
     });
 });
 </script>
