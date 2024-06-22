@@ -12,7 +12,7 @@
   bio3: ''
   bio4: ''
   image: >-
-    https://drive.google.com/thumbnail?id=1HqkIgm29ey65zbHMe1WI5A9-lBRbFbEt&sz=w300"
+    https://drive.google.com/thumbnail?id=1HqkIgm29ey65zbHMe1WI5A9-lBRbFbEt&sz=w300
   affiliation: Centre for Mathematical and Computational Economics
   display: 1
   primaryaffiliation: ''
@@ -35,7 +35,7 @@
   bio3: ''
   bio4: ''
   image: >-
-    https://drive.google.com/thumbnail?id=1AHFEi4a7PUd1BEnAcZOzUw2yHEde8CBo&sz=w300"
+    https://drive.google.com/thumbnail?id=1AHFEi4a7PUd1BEnAcZOzUw2yHEde8CBo&sz=w300
   affiliation: ' School of Artificial Intelligence and Data Science'
   display: 1
   primaryaffiliation: ''
@@ -277,8 +277,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: Chemical engineering
   display: 1
   primaryaffiliation: ''
@@ -302,8 +301,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
@@ -325,8 +323,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: ' Mechanical Engineering'
   display: 1
   primaryaffiliation: ''
@@ -348,8 +345,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
@@ -374,8 +370,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: Chemical Engineering
   display: 1
   primaryaffiliation: ''
@@ -397,8 +392,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
@@ -422,8 +416,7 @@
   bio2: ''
   bio3: ''
   bio4: ''
-  image: >-
-    https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&sz=w300
+  image: https://drive.google.com/open?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y
   affiliation: 'School of Liberal Arts '
   display: 1
   primaryaffiliation: ''
@@ -1409,9 +1402,9 @@
   education: ''
 - name: Taranjit Kaur
   position: Scientific Officer
-  faculty: 1
-  subfaculty: Scientific Officer
-  staff: 0
+  faculty: 0
+  subfaculty: Scientific Staff
+  staff: 1
   student: 0
   alumni: 0
   email: taranjit@iitj.ac.in
