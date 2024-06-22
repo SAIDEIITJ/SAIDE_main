@@ -29,18 +29,25 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
     {% if member.display == 1 and member.staff == 1 %}
-    <div class="col-sm-6 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}">
-        <img src="{{ member.image }}" id="circular-image" style="float: left" />
 
-        <h4>{{ member.name }}</h4>
- 
-        <i>{{ member.position }}, <br>Department: {{ member.affiliation }} <br>Email: {{ member.email }} <br>Phone: {{member.phone}}  </i>
-  
-        <ul style="overflow: hidden">
-            {% if member.bio1 != "" %}
-            <li>{{ member.bio1 }}</li>
-            {% endif %}
-        </ul>
+    <div class="col-lg-6 col-md-6 col-sm-12 member-card"data-position="{{ member.subfaculty }}" data-name="{{ member.name }}">
+        <div class="member-info">
+         
+            <div class="member-details">
+                <h4 id="fac-title">{{ member.name }}</h4>
+               
+                <p class="member-position">{{ member.position }}</p>
+                <p><strong>Department:</strong> {{ member.affiliation }}</p>
+   
+                <p><strong>Email:</strong> {{ member.email }}</p>
+                <p><strong>Phone:</strong> {{ member.phone }}</p>
+
+                {% if member.bio1 != "" %}
+                    <p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
+                {% endif %}
+            </div>
+            <img src="{{ member.image }}" class="member-img" alt="{{ member.name }}" />
+        </div>
     </div>
     {% endif %}
     {% endfor %}

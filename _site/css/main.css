@@ -6637,25 +6637,18 @@ h2 {
   margin-left: 15px;
   font-size: 2rem; }
 
-#circular-image {
-  border-radius: 50%;
-  width: 35%;
-  height: auto;
-  object-fit: cover;
-  /* Ensures the image covers the circular area without distortion */ }
-
 .dropdown-content2 {
   display: none;
   position: absolute;
-  background-color: #000000c5;
+  background-color: #950b0bed;
   /* Matching the navbar color */
-  min-width: 250px;
+  min-width: 280px;
   text-align: left;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
   /* Rounded corners for a smoother look */
-  left: 70%;
+  left: 66%;
   margin-top: 10px; }
 
 .dropdown2 {
@@ -6665,13 +6658,14 @@ h2 {
 .dropdown-content2 a {
   color: white;
   padding: 12px 13px;
+  border-bottom: 1px solid white;
   text-decoration: none;
   border: 0;
   display: block;
   text-transform: none; }
 
 .dropdown-content2 a:hover {
-  background-color: #000000; }
+  background-color: #f01919e4; }
 
 .dropdown2:hover .dropdown-content2 {
   display: block; }
@@ -6817,7 +6811,8 @@ h2 {
 .member-details {
   flex: 1; }
 
-.member-details h4 {
+#fac-title {
+  color: #6e0d10;
   margin-top: 0;
   margin-bottom: 5px; }
 

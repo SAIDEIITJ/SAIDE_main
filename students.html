@@ -32,20 +32,23 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
     {% assign sorted_members = site.data.team | sort: "year" %}
     {% for member in sorted_members %}
     {% if member.display == 1 and member.student == 1 %}
-    <div class="col-sm-6 member-card" data-position="{{ member.enrolled }}" data-name="{{ member.name }}" data-research-area="{{member.researchArea}}">
-        <img src="{{ member.image }}" id="circular-image" style="float: left" />
-
-        <h4>{{ member.name }}</h4>
- 
-        <i>Enrolled: {{ member.enrolled }}, <br>Department: {{ member.affiliation }} <br>Email: {{ member.email }} <br>Supervisor(s): {{member.faculties}}  </i>
-  
-        <ul style="overflow: hidden">
-           
-            <li>Reserach Area: {{ member.researchArea }}</li>
-			<li>Education: {{ member.education }}</li>
-       
-        </ul>
+    <div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.enrolled }}" data-name="{{ member.name }}" data-research-area="{{member.researchArea}}">
+        <div class="member-info">
+         
+            <div class="member-details">
+                <h4 id="fac-title">{{ member.name }}</h4>
+               
+                <p class="member-position">Program: {{ member.enrolled }}</p>
+   
+                <p><strong>Email:</strong> {{ member.email }}</p>
+                <p><strong>Phone:</strong> {{ member.phone }}</p>
+                <p><strong>Supervisor(s):</strong> {{member.faculties}}</p>
+                <p class="member-bio"><strong>Research Area:</strong> {{ member.researchArea }}</p>
+            </div>
+            <img src="{{ member.image }}" class="member-img" alt="{{ member.name }}" />
+        </div>
     </div>
+
     {% endif %}
     {% endfor %}
 </div>
