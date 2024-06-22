@@ -6783,12 +6783,12 @@ h2 {
   /* Adjust the gap between cards */ }
 
 .member-card {
-  flex: 1 0 calc(50% - 20px);
+  flex: 0 0 calc(50% - 20px);
   /* Two cards per row, minus the gap */
   padding: 20px;
   border: 1px solid #ccc;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f0efef;
