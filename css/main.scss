@@ -2233,12 +2233,18 @@ figcaption {
     border: 0;
     text-decoration: none;
     color: inherit;
- /* Ensures text color matches inherited color */
+
 }
 
 .card-link:hover {
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none;
 	color: rgb(210, 209, 209);
+	border:0;
+}
+.card-link:visited {
+    color: inherit;
+	text-decoration: none;
+
 }
 
 // .card:hover {

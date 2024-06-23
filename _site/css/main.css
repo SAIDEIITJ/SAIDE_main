@@ -7934,13 +7934,16 @@ figcaption {
 .card-link {
   border: 0;
   text-decoration: none;
-  color: inherit;
-  /* Ensures text color matches inherited color */ }
+  color: inherit; }
 
 .card-link:hover {
   text-decoration: none;
-  /* Remove underline on hover */
-  color: #d2d1d1; }
+  color: #d2d1d1;
+  border: 0; }
+
+.card-link:visited {
+  color: inherit;
+  text-decoration: none; }
 
 .card:nth-child(6n+1) {
   background-color: rgba(0, 0, 0, 0.6);
