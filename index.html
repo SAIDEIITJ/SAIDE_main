@@ -51,7 +51,7 @@ layout: landing
 					{% assign news_event_data = site.data.news_events %}
 					{% for mem in news_event_data %}
 						{% if mem.news == 1 %}
-						{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}" }{% unless forloop.last %},{% endunless %}
+						{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}", link:"{{mem.link}}" }{% unless forloop.last %},{% endunless %}
 						{% endif %}
 					{% endfor %}
 				];
