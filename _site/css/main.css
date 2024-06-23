@@ -7891,6 +7891,7 @@ figcaption {
   /* Adjust height as needed */ }
 
 .card {
+  cursor: pointer;
   flex: 1 0 31%;
   /* Four cards per row, adjust the gap as needed */
   margin: 10px;
@@ -7904,7 +7905,8 @@ figcaption {
   height: 250px;
   text-align: left;
   font-size: 24px;
-  transition: transform 0.3s ease; }
+  transition: transform 0.3s ease;
+  transition: transform 0.2s ease-in-out; }
   .card .active {
     transform: translateX(0); }
   .card .inside {
@@ -7925,6 +7927,20 @@ figcaption {
     margin: 0;
     text-transform: none;
     /* Remove default margin */ }
+
+.card:hover {
+  transform: scale(1.05); }
+
+.card-link {
+  border: 0;
+  text-decoration: none;
+  color: inherit;
+  /* Ensures text color matches inherited color */ }
+
+.card-link:hover {
+  text-decoration: none;
+  /* Remove underline on hover */
+  color: #d2d1d1; }
 
 .card:nth-child(6n+1) {
   background-color: rgba(0, 0, 0, 0.6);

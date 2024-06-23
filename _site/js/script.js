@@ -94,14 +94,18 @@ window.onclick = function(event) {
 //     { id: "event-card-7", date: "12 June 2024", title: "M.Tech. in DCS (for Working Professionals)", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
 //     // Add more event items here
 // ];
+
+{/*  */}
 let scrollInterval = null;
 function renderItems(container, items) {
     container.innerHTML = items.map(item => `
-        <div class="card" id="${item.id}" style="background-image: url(${item.img});" >
+     
+        <div class="card" id="${item.id}" style="background-image: url(${item.img});">
             ${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
-            <h1>${item.title}</h1>
+            <h1><a href="${item.link}" target="_blank" class="card-link">${item.title}</a></h1>
             ${item.date ? '</div>' : ''}
         </div>
+   
     `).join('');
 }
 

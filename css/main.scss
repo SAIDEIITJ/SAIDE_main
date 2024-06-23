@@ -2182,7 +2182,11 @@ figcaption {
     -webkit-overflow-scrolling: touch; /* Adjust height as needed */
 }
 
+
+
 .card {
+
+	cursor: pointer;
 	flex: 1 0 31%; /* Four cards per row, adjust the gap as needed */
 	margin: 10px;
 	background-color: #f0f0f0;
@@ -2196,6 +2200,7 @@ figcaption {
 	text-align: left;
 	font-size: 24px;
 	transition: transform 0.3s ease;
+	transition: transform 0.2s ease-in-out;
 
 	.active {
 		transform: translateX(0);
@@ -2220,6 +2225,27 @@ figcaption {
 		text-transform: none;/* Remove default margin */
 	}
 }
+.card:hover{
+	transform: scale(1.05);
+}
+
+.card-link {
+    border: 0;
+    text-decoration: none;
+    color: inherit;
+ /* Ensures text color matches inherited color */
+}
+
+.card-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+	color: rgb(210, 209, 209);
+}
+
+// .card:hover {
+// 	transform: scale(1.1);
+// 	z-index: 1;
+// }
+
 .card:nth-child(6n+1) {
 
 
