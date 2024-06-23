@@ -131,6 +131,7 @@ function showEvents() {
     restartScrollInterval();
 }
 
+
 // Function to scroll the container to the left
 function scrollLeft() {
     const container = document.getElementById("cardsContainer");
@@ -147,6 +148,7 @@ function scrollRight() {
         left: container.scrollLeft + 300, // Adjust scroll amount as needed
         behavior: 'smooth' // Smooth scroll behavior
     });
+
 }
 
 // Function to scroll the container to the start
@@ -175,6 +177,7 @@ $('#scrollRightButton').click(function() {
 });
 
 restartScrollInterval();
+
  
 
 
