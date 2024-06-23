@@ -1942,20 +1942,10 @@ p {
     z-index: -1;
 }
 
-// .navbar-bg {
-// 	background-color: rgba(0, 0, 0, 0.759);
-//   }
-// .navbar-no-bg {
-// 	background-color: none;
-// 	color: ligh;
-
-//   }
 
 .highlights{
 	color:white !important;
-
 }
-
 
 #banner{
 	padding-top: 80px;
@@ -2536,16 +2526,31 @@ figcaption {
   /* Menu toggle button */
   #menu-toggle {
 	display: none;
-	color: white;
+	color: rgb(162, 20, 20);
 	border: none;
+	background-color: #ffffff72;
 	// padding: 10px;
 	font-size: 12px;
 	cursor: pointer;
 	position: fixed; 
-	top: 10px;
-	right: 10px;
+	top: 5%;
+	right: 5%;
 	z-index: 1000; 
   }
+  #menu-close {
+	display: none;
+	color: rgb(255, 255, 255);
+	border: none;
+	background-color: #000000dd;
+	// padding: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	position: fixed; 
+	top: 0%;
+	right: 41%;
+	z-index: 1000; 
+  }
+
 
   /* Responsive Navbar */
   @media (max-width: 768px) {
@@ -2556,15 +2561,29 @@ figcaption {
 		display: none;
 	}
 	.site-sym{
-		display: none;
+		top: 0;
+		transform: translateX(-290%);
+		img{
+			width: 160px;
+			height:150px;
+
+		}
 	}
 	#site-main-title {
-		margin-top: 20px;
+		margin-top: 10px;
+		line-height: 18px;
+		font-size: 1em;
+
+		width: 100%;
 		text-transform: none;
 		justify-content: center;
 		text-align: left;
 		align-items: center;
 	  }
+		#site-main-title2{
+			font-size: 1em;
+
+		}
 	  
 	.nav-content{
 		display: none;
@@ -2572,10 +2591,14 @@ figcaption {
 		overflow-y: auto; /* Enable vertical scrolling */
 		position: fixed;
 		top: 0;
-		right: 2%;
-		width: 30%; /* Initially position off-screen */
-		background-color: rgba(0, 0, 0, 0.914); /* Same background color as your navbar */
+		right: 1%;
+		z-index: 10;
+
+
+		width: 40%; /* Initially position off-screen */
+		background-color: rgba(0, 0, 0, 0.895); /* Same background color as your navbar */
 		transition: right 0.3s ease; /* Add smooth transition */
+		overflow-x: hidden;
 	}
 
 	.horizontal-menu {
@@ -2585,6 +2608,7 @@ figcaption {
   
 	.horizontal-menu li {
 	  margin: 10px 0;
+
 	}
   
 	.container {
@@ -2592,24 +2616,29 @@ figcaption {
 	}
   
 	.col-md-3, .col-md-7, .col-md-2 {
-	  flex: 0 0 100%;
+	//   flex: 0 0 100%;
 	  max-width: 90%;
 	  text-align: left;
 	}
 	.logo-title-container{
 		display: none;
 	}
+	.horizontal-menu .dropdown #dropbtn {
+		color:white;
+	}
   
 	
 	#site-title {
-	  font-size: 0.85em;
-	//   margin-left: -20px;
-	//   margin-top: 25px;
+	  font-size: 1em;
+	  margin-left: 180px;
+	  margin-top: 5px;
+	  width: max-content;
 	}
   
 	.horizontal-menu li a {
 	  font-size: 1em;
 	  padding: 10px;
+	  color: white;
 	}
   
 	.dropdown-content {
