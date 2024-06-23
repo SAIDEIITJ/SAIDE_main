@@ -71,11 +71,15 @@ $titlecolor:#6e0d10;
     }
 
 	h3{
+		background-color: #6e0d10;
 		text-align: left;
         margin-left: 20px; 
 		font-size: 1.2em;
-		color:#000000;
-		font-weight: lighter;
+		color:#ffffff;
+		font-weight: normal;
+		display: inline-block;
+		padding: 5px;
+		border-radius: 10px;
 	}
 
     p {
