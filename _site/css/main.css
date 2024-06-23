@@ -6175,11 +6175,15 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
     color: #6e0d10;
     text-transform: none; }
   .topcontent h3 {
+    background-color: #6e0d10;
     text-align: left;
     margin-left: 20px;
     font-size: 1.2em;
-    color: #000000;
-    font-weight: lighter; }
+    color: #ffffff;
+    font-weight: normal;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px; }
   .topcontent p {
     text-align: left;
     margin-left: 20px;
@@ -7675,13 +7679,12 @@ p {
   top: -5%;
   left: 0;
   width: 100%;
-  height: 54vh;
+  height: 56vh;
   transition: background-image 0.5s ease;
   /* Initial background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: saturate(50%);
   z-index: -1; }
 
 .highlights {
