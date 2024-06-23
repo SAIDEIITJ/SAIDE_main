@@ -6230,7 +6230,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .button-bar {
   display: flex;
   justify-content: center;
-  margin-top: 16.8%; }
+  margin-top: 18%; }
   .button-bar a {
     text-decoration: none;
     color: #FFF;
