@@ -2113,10 +2113,12 @@ figcaption {
 .header-row {
 	display: flex;
 	align-items: center;
+
 	margin-bottom: 20px;
 }
 
 .header-row .title {
+
 	flex: 65%;
 	 font-family: "Montserrat", sans-serif;
 	color:#872525;
@@ -2349,17 +2351,36 @@ figcaption {
 /* Adjust for responsiveness */
 @media (max-width: 768px) {
 	.card {
-		flex: 1 0 calc(50% - 10px); /* Two cards per row on smaller screens */
+		flex: 1 0 calc(100% - 10px); /* Two cards per row on smaller screens */
 	}
-}
+	.header-row .title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
 
-@media (max-width: 480px) {
-	.card {
-		flex: 1 0 calc(100% - 10px); /* One card per row on smallest screens */
+    .header-row .button-group button,
+    .header-row .button-group .view-all {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .header-row .button-group {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        align-items: center; /* Center align buttons on mobile */
+    }
+
+    .dropdown-content1 {
+        left: 60px; /* Position dropdown to the right */
+    }
+	#view-all{
+		display: none;
 	}
+	.button-group {
+		left: 70px;
+		width: 100%;
+		// flex:35%;
+	}
+
+
 }
-
-
 
 
 .container {
@@ -2381,8 +2402,6 @@ figcaption {
   }
   #nav {
 	width: max-content;
-
-
 
   }
   
@@ -2526,9 +2545,9 @@ figcaption {
   /* Menu toggle button */
   #menu-toggle {
 	display: none;
-	color: rgb(162, 20, 20);
+	color: rgb(255, 255, 255);
 	border: none;
-	background-color: #ffffff72;
+	background-color: #ac1b1bd1;
 	// padding: 10px;
 	font-size: 12px;
 	cursor: pointer;
@@ -2539,6 +2558,8 @@ figcaption {
   }
   #menu-close {
 	display: none;
+	border:none;
+	height:80px;
 	color: rgb(255, 255, 255);
 	border: none;
 	background-color: #000000dd;
@@ -2547,13 +2568,15 @@ figcaption {
 	cursor: pointer;
 	position: fixed; 
 	top: 0%;
-	right: 41%;
+	right: 70%;
 	z-index: 1000; 
   }
 
 
   /* Responsive Navbar */
   @media (max-width: 768px) {
+
+
 	#menu-toggle {
 		display: block;
 	  }
@@ -2595,7 +2618,7 @@ figcaption {
 		z-index: 10;
 
 
-		width: 40%; /* Initially position off-screen */
+		width: 70%; /* Initially position off-screen */
 		background-color: rgba(0, 0, 0, 0.895); /* Same background color as your navbar */
 		transition: right 0.3s ease; /* Add smooth transition */
 		overflow-x: hidden;
@@ -3537,10 +3560,10 @@ $baseurl: '{{ site.baseurl }}/images';
 		// @include vendor('appearance', 'none');
 		// @include vendor('transition', ('background-color #{_duration(transitions)} ease-in-out', 'color #{_duration(transitions)} ease-in-out'));
 		// background-color: transparent;
-		border-radius: 3px;
-		border: 0;
-		box-shadow: inset 0 0 0 2px _palette(border);
-		color: _palette(fg-bold);
+		// border-radius: 3px;
+		// border: 0;
+		// box-shadow: inset 0 0 0 2px _palette(border);
+		// color: _palette(fg-bold);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -3925,8 +3948,8 @@ $baseurl: '{{ site.baseurl }}/images';
 			input[type="button"],
 			button,
 			.button {
-				box-shadow: inset 0 0 0 2px _palette($p, border);
-				color: _palette($p, fg-bold);
+				// box-shadow: inset 0 0 0 2px _palette($p, border);
+				// color: _palette($p, fg-bold);
 
 				&:hover {
 					background-color: _palette($p, border-bg);
@@ -4277,6 +4300,31 @@ ul #subbullet{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
     z-index: -1;
 }
+
+@media (max-width: 768px) {
+	.indicators-bg {
+	  top: 63%; /* Adjust position to bottom */
+	  right: 39%;
+	  justify-content: center;
+	}
+
+	.indicators-bg-btn {
+		width: 45px;
+		height: 35px;
+
+	}
+	.background{
+		height: 75%;
+	}
+  
+	.rectangular-div {
+	  top: 25%; /* Adjust top position */
+	  width: 95%; /* Adjust width */
+	  height: 35vh; /* Adjust height */
+	}
+  
+	/* Optionally hide or adjust other elements as needed */
+  }
 
 
 // .parent-marquee{

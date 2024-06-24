@@ -8020,12 +8020,34 @@ figcaption {
 /* Adjust for responsiveness */
 @media (max-width: 768px) {
   .card {
-    flex: 1 0 calc(50% - 10px);
-    /* Two cards per row on smaller screens */ } }
-@media (max-width: 480px) {
-  .card {
     flex: 1 0 calc(100% - 10px);
-    /* One card per row on smallest screens */ } }
+    /* Two cards per row on smaller screens */ }
+
+  .header-row .title {
+    font-size: 24px;
+    /* Adjust font size for smaller screens */ }
+
+  .header-row .button-group button,
+  .header-row .button-group .view-all {
+    font-size: 12px;
+    /* Adjust font size for smaller screens */ }
+
+  .header-row .button-group {
+    flex-direction: column;
+    /* Stack buttons vertically on mobile */
+    align-items: center;
+    /* Center align buttons on mobile */ }
+
+  .dropdown-content1 {
+    left: 60px;
+    /* Position dropdown to the right */ }
+
+  #view-all {
+    display: none; }
+
+  .button-group {
+    left: 70px;
+    width: 100%; } }
 .container {
   width: 100%;
   margin-right: 9%;
@@ -8156,9 +8178,9 @@ figcaption {
 /* Menu toggle button */
 #menu-toggle {
   display: none;
-  color: #a21414;
+  color: white;
   border: none;
-  background-color: #ffffff72;
+  background-color: #ac1b1bd1;
   font-size: 12px;
   cursor: pointer;
   position: fixed;
@@ -8168,6 +8190,8 @@ figcaption {
 
 #menu-close {
   display: none;
+  border: none;
+  height: 80px;
   color: white;
   border: none;
   background-color: #000000dd;
@@ -8175,7 +8199,7 @@ figcaption {
   cursor: pointer;
   position: fixed;
   top: 0%;
-  right: 41%;
+  right: 70%;
   z-index: 1000; }
 
 /* Responsive Navbar */
@@ -8215,7 +8239,7 @@ figcaption {
     top: 0;
     right: 1%;
     z-index: 10;
-    width: 40%;
+    width: 70%;
     /* Initially position off-screen */
     background-color: rgba(0, 0, 0, 0.895);
     /* Same background color as your navbar */
@@ -9986,10 +10010,6 @@ input[type="reset"],
 input[type="button"],
 button,
 .button {
-  border-radius: 3px;
-  border: 0;
-  box-shadow: inset 0 0 0 2px #fff;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -10301,25 +10321,18 @@ button,
       border-color: rgba(0, 0, 0, 0.125); }
     .wrapper.style1 table.alt tbody tr td {
       border-color: rgba(0, 0, 0, 0.125); }
-    .wrapper.style1 input[type="submit"],
-    .wrapper.style1 input[type="reset"],
-    .wrapper.style1 input[type="button"],
-    .wrapper.style1 button,
-    .wrapper.style1 .button {
-      box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-      color: #ffffff; }
-      .wrapper.style1 input[type="submit"]:hover,
-      .wrapper.style1 input[type="reset"]:hover,
-      .wrapper.style1 input[type="button"]:hover,
-      .wrapper.style1 button:hover,
-      .wrapper.style1 .button:hover {
-        background-color: rgba(255, 255, 255, 0.075); }
-      .wrapper.style1 input[type="submit"]:active,
-      .wrapper.style1 input[type="reset"]:active,
-      .wrapper.style1 input[type="button"]:active,
-      .wrapper.style1 button:active,
-      .wrapper.style1 .button:active {
-        background-color: rgba(255, 255, 255, 0.2); }
+    .wrapper.style1 input[type="submit"]:hover,
+    .wrapper.style1 input[type="reset"]:hover,
+    .wrapper.style1 input[type="button"]:hover,
+    .wrapper.style1 button:hover,
+    .wrapper.style1 .button:hover {
+      background-color: rgba(255, 255, 255, 0.075); }
+    .wrapper.style1 input[type="submit"]:active,
+    .wrapper.style1 input[type="reset"]:active,
+    .wrapper.style1 input[type="button"]:active,
+    .wrapper.style1 button:active,
+    .wrapper.style1 .button:active {
+      background-color: rgba(255, 255, 255, 0.2); }
     @media screen and (max-width: 736px) {
       .wrapper.style1 .features li {
         border-top-color: rgba(0, 0, 0, 0.125); } }
@@ -10390,25 +10403,18 @@ button,
       border-color: rgba(0, 0, 0, 0.125); }
     .wrapper.style3 table.alt tbody tr td {
       border-color: rgba(0, 0, 0, 0.125); }
-    .wrapper.style3 input[type="submit"],
-    .wrapper.style3 input[type="reset"],
-    .wrapper.style3 input[type="button"],
-    .wrapper.style3 button,
-    .wrapper.style3 .button {
-      box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-      color: #ffffff; }
-      .wrapper.style3 input[type="submit"]:hover,
-      .wrapper.style3 input[type="reset"]:hover,
-      .wrapper.style3 input[type="button"]:hover,
-      .wrapper.style3 button:hover,
-      .wrapper.style3 .button:hover {
-        background-color: rgba(255, 255, 255, 0.075); }
-      .wrapper.style3 input[type="submit"]:active,
-      .wrapper.style3 input[type="reset"]:active,
-      .wrapper.style3 input[type="button"]:active,
-      .wrapper.style3 button:active,
-      .wrapper.style3 .button:active {
-        background-color: rgba(255, 255, 255, 0.2); }
+    .wrapper.style3 input[type="submit"]:hover,
+    .wrapper.style3 input[type="reset"]:hover,
+    .wrapper.style3 input[type="button"]:hover,
+    .wrapper.style3 button:hover,
+    .wrapper.style3 .button:hover {
+      background-color: rgba(255, 255, 255, 0.075); }
+    .wrapper.style3 input[type="submit"]:active,
+    .wrapper.style3 input[type="reset"]:active,
+    .wrapper.style3 input[type="button"]:active,
+    .wrapper.style3 button:active,
+    .wrapper.style3 .button:active {
+      background-color: rgba(255, 255, 255, 0.2); }
     @media screen and (max-width: 736px) {
       .wrapper.style3 .features li {
         border-top-color: rgba(0, 0, 0, 0.125); } }
@@ -10480,25 +10486,18 @@ button,
       border-color: #dfdfdf; }
     .wrapper.style5 table.alt tbody tr td {
       border-color: #dfdfdf; }
-    .wrapper.style5 input[type="submit"],
-    .wrapper.style5 input[type="reset"],
-    .wrapper.style5 input[type="button"],
-    .wrapper.style5 button,
-    .wrapper.style5 .button {
-      box-shadow: inset 0 0 0 2px #dfdfdf;
-      color: #2E3842; }
-      .wrapper.style5 input[type="submit"]:hover,
-      .wrapper.style5 input[type="reset"]:hover,
-      .wrapper.style5 input[type="button"]:hover,
-      .wrapper.style5 button:hover,
-      .wrapper.style5 .button:hover {
-        background-color: rgba(0, 0, 0, 0.0375); }
-      .wrapper.style5 input[type="submit"]:active,
-      .wrapper.style5 input[type="reset"]:active,
-      .wrapper.style5 input[type="button"]:active,
-      .wrapper.style5 button:active,
-      .wrapper.style5 .button:active {
-        background-color: rgba(0, 0, 0, 0.1); }
+    .wrapper.style5 input[type="submit"]:hover,
+    .wrapper.style5 input[type="reset"]:hover,
+    .wrapper.style5 input[type="button"]:hover,
+    .wrapper.style5 button:hover,
+    .wrapper.style5 .button:hover {
+      background-color: rgba(0, 0, 0, 0.0375); }
+    .wrapper.style5 input[type="submit"]:active,
+    .wrapper.style5 input[type="reset"]:active,
+    .wrapper.style5 input[type="button"]:active,
+    .wrapper.style5 button:active,
+    .wrapper.style5 .button:active {
+      background-color: rgba(0, 0, 0, 0.1); }
     @media screen and (max-width: 736px) {
       .wrapper.style5 .features li {
         border-top-color: #dfdfdf; } }
@@ -10745,6 +10744,29 @@ ul #subbullet {
   /* Optional shadow */
   z-index: -1; }
 
+@media (max-width: 768px) {
+  .indicators-bg {
+    top: 63%;
+    /* Adjust position to bottom */
+    right: 39%;
+    justify-content: center; }
+
+  .indicators-bg-btn {
+    width: 45px;
+    height: 35px; }
+
+  .background {
+    height: 75%; }
+
+  .rectangular-div {
+    top: 25%;
+    /* Adjust top position */
+    width: 95%;
+    /* Adjust width */
+    height: 35vh;
+    /* Adjust height */ }
+
+  /* Optionally hide or adjust other elements as needed */ }
 /* Define the animation */
 .rect-button {
   display: flex;

@@ -97,6 +97,8 @@ window.onclick = function(event) {
 
 {/*  */}
 let scrollInterval = null;
+let scrollLength = 300; 
+
 function renderItems(container, items) {
     container.innerHTML = items.map(item => `
      
@@ -136,7 +138,7 @@ function showEvents() {
 function scrollLeft() {
     const container = document.getElementById("cardsContainer");
     container.scrollTo({
-        left: container.scrollLeft - 300, // Adjust scroll amount as needed
+        left: container.scrollLeft - scrollLength, // Adjust scroll amount as needed
         behavior: 'smooth' // Smooth scroll behavior
     });
 }
@@ -145,7 +147,7 @@ function scrollLeft() {
 function scrollRight() {
     const container = document.getElementById("cardsContainer");
     container.scrollTo({
-        left: container.scrollLeft + 300, // Adjust scroll amount as needed
+        left: container.scrollLeft + scrollLength, // Adjust scroll amount as needed
         behavior: 'smooth' // Smooth scroll behavior
     });
 
@@ -182,6 +184,9 @@ restartScrollInterval();
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    var deviceWidth = window.innerWidth;
+    // Determine which scroll length to use based on device width
+    scrollLength = deviceWidth <= 768 ? 450 : 300;
     showNews();
     
     
