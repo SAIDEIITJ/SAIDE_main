@@ -55,7 +55,7 @@
            
            
       </div>
-      <div class="col-md-7 col-3 text-right" style=" text-transform: none; justify-content: center; text-align: center;">
+      <div class="col-md-8" style=" text-transform: none; justify-content: center; text-align: center; 	margin-right: 20px;">
         <nav id="nav">
           <div class="nav-content" id="nav-content">
             <ul class="horizontal-menu">
@@ -132,7 +132,7 @@
           </div>
         </nav>
       </div>
-      <div class="col-md-2" style="display: flex; justify-content: center; align-items: center; margin-top: 10px; padding-left: 95px;">
+      <div class="col-md-1" style="display: flex; justify-content: center; align-items: center; margin-top: 10px; ">
         <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         <button class="menu-close" id="menu-close"><i class="fa-solid fa-times"></i></button>
         <a href="/SAIDE_main/index.html" class="site-sym">
@@ -217,7 +217,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <section class="wrapper style5" style="z-index: -1;">
     <div class="inner">
-      <div class="visiting-section">
+      <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .visiting-section {
+        /* padding: 20px; */
+        background-color: #f9f9f9;
+    }
+    h1 {
+        color: #8B0000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .resource-category {
+        margin-top: 20px;
+    }
+    #resheading {
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-transform: none;
+        border-bottom: 2px solid #8B0000;
+        padding-bottom: 5px;
+        padding-left: 7px;
+    }
+    ul {
+        list-style-type:circle;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a#links {
+        color: #912b2b;
+        text-decoration: none;
+    }
+    a#links:hover {
+        text-decoration: underline;
+    }
+    .row {
+        margin-bottom: 30px;
+    }
+    .col-md-6 {
+        padding: 10px;
+        width: 46%;
+        margin-left:37px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        height: 300px;
+    }
+    @media (max-width: 767px) {
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+<div class="visiting-section">
     <h1 id = getintouch>Administration</h1>
 
     <div class="resources">
@@ -276,14 +333,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     </ul>
                 </div>
             </div>
-
-            <h2 id="resheading">Social media</h2>
-            <ul>
-                <li><a href="#" id="links">   Facebook - Dr. Dweepobotee Brahma</a></li>
-                <li><a href="#" id="links">   LinkedIn - Prof. Bikash Santra, Prof. Saurabh Gandhi </a></li>
-                <li><a href="#" id="links">Twitter - Dr. Dweepobotee Brahma</a></li>
-               
-            </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 id="resheading">Social media</h2>
+                    <ul>
+                        <li><a href="#" id="links">   Facebook - Dr. Dweepobotee Brahma</a></li>
+                        <li><a href="#" id="links">   LinkedIn - Prof. Bikash Santra, Prof. Saurabh Gandhi </a></li>
+                        <li><a href="#" id="links">Twitter - Dr. Dweepobotee Brahma</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

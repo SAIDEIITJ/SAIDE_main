@@ -5,7 +5,63 @@ link: HOME / ABOUT
 des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
 ---
 	
-
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .visiting-section {
+        /* padding: 20px; */
+        background-color: #f9f9f9;
+    }
+    h1 {
+        color: #8B0000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .resource-category {
+        margin-top: 20px;
+    }
+    #resheading {
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-transform: none;
+        border-bottom: 2px solid #8B0000;
+        padding-bottom: 5px;
+        padding-left: 7px;
+    }
+    ul {
+        list-style-type:circle;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a#links {
+        color: #912b2b;
+        text-decoration: none;
+    }
+    a#links:hover {
+        text-decoration: underline;
+    }
+    .row {
+        margin-bottom: 30px;
+    }
+    .col-md-6 {
+        padding: 10px;
+        width: 46%;
+        margin-left:37px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        height: 300px;
+    }
+    @media (max-width: 767px) {
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+    }
+</style>
 <div class="visiting-section">
     <h1 id = getintouch>Administration</h1>
 
@@ -65,14 +121,17 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
                     </ul>
                 </div>
             </div>
-
-            <h2 id="resheading">Social media</h2>
-            <ul>
-                <li><a href="#" id="links">   Facebook - Dr. Dweepobotee Brahma</a></li>
-                <li><a href="#" id="links">   LinkedIn - Prof. Bikash Santra, Prof. Saurabh Gandhi </a></li>
-                <li><a href="#" id="links">Twitter - Dr. Dweepobotee Brahma</a></li>
-               
-            </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 id="resheading">Social media</h2>
+                    <ul>
+                        <li><a href="#" id="links">   Facebook - Dr. Dweepobotee Brahma</a></li>
+                        <li><a href="#" id="links">   LinkedIn - Prof. Bikash Santra, Prof. Saurabh Gandhi </a></li>
+                        <li><a href="#" id="links">Twitter - Dr. Dweepobotee Brahma</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
