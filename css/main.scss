@@ -959,14 +959,14 @@ h2 {
 }
 
 .application-section {
-    padding: 20px;
+    // padding: 20px;
     text-align: left;
     width: 100%;
-    position: relative; // Make the application-section the relative container
+// Make the application-section the relative container
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; // Ensure the section takes at least the full viewport height
+    // min-height: 100vh; // Ensure the section takes at least the full viewport height
 
     h1 {
         color: $textcolor;
