@@ -6,8 +6,13 @@
 </description>
     <link>http://localhost:4000/SAIDE_main/</link>
     <atom:link href="http://localhost:4000/SAIDE_main/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Tue, 25 Jun 2024 18:55:17 +0530</pubDate>
     <lastBuildDate>Tue, 25 Jun 2024 18:55:17 +0530</lastBuildDate>
+=======
+    <pubDate>Tue, 25 Jun 2024 17:04:21 +0530</pubDate>
+    <lastBuildDate>Tue, 25 Jun 2024 17:04:21 +0530</lastBuildDate>
+>>>>>>> 22a399c8f769a1d41e5897db3d0a12856d996c94
     <generator>Jekyll v3.9.5</generator>
     
   </channel>
