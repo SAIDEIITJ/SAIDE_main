@@ -6299,7 +6299,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 
 #popup-button {
   display: inline-block;
-  padding: 6px 2px;
+  padding: 6px 12px;
   background-color: #800F13;
   color: #fff;
   text-decoration: none;
