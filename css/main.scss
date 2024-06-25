@@ -73,11 +73,15 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     }
 
 	h3{
+		background-color: #6e0d10;
 		text-align: left;
         margin-left: 20px; 
 		font-size: 1.2em;
-		color:#000000;
-		font-weight: lighter;
+		color:#ffffff;
+		font-weight: normal;
+		display: inline-block;
+		padding: 5px;
+		border-radius: 10px;
 	}
 
     p {
@@ -131,7 +135,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 .button-bar {
 	display: flex;
 	justify-content: center;
-	margin-top: 16.8%;
+	margin-top: 18%;
 	a{
 		text-decoration: none;
 		color: #FFF;
@@ -282,11 +286,17 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
   
   #circular-img {
-	overflow: hidden;
-	position: relative;
-	width: 390px;
-	height: 180px; 
-	padding-right: 20px;
+
+	width: 50%;
+	height: auto; 
+	padding-right: 15px;
+	margin-top: -20px;
+  }
+  #circular-img-2 {
+
+	width: 50%;
+	height: auto; 
+	padding-right: 15px;
 	margin-top: -20px;
   }
   
@@ -295,9 +305,14 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   }
   #bullets{
 	font-size: 0.9em;
+	list-style-type: none; /* Remove default bullets */
+	padding: 0; /* Remove default padding */
+	text-align: left;
+	width: 90%;
   }
   #hidden-content{
 	display: flex;
+	padding-right: 5px;
 	text-align: left;
 	 font-size: 0.8em;
 	//   padding-left:25px;
@@ -320,6 +335,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
   }
   #hidden-content-3{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	margin-left: 5px;
 	font-size: 0.8em;
 	 background-color: #f8f7f7;
@@ -335,6 +353,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	text-transform: none;
 	color: $titlecolor;
 	text-align: center;
+	margin-top: 0;
 
   }
   #popup-title{
@@ -639,25 +658,17 @@ h2 {
 
   //people
 
-  #circular-image {
-    border-radius: 50%;
-    width: 35%;
-    height: auto;
-    object-fit:cover; /* Ensures the image covers the circular area without distortion */
-}
-
-
   .dropdown-content2 {
 	display: none;
 	position: absolute;
 	// background-color: #1ea8989e;
-	background-color: #000000c5;  /* Matching the navbar color */
-	min-width: 250px;
+	background-color: #950b0bed;  /* Matching the navbar color */
+	min-width: 280px;
 	text-align: left;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	border-radius: 5px; /* Rounded corners for a smoother look */
-	left: 70%;
+	left: 66%;
 	margin-top: 10px;
  }
   
@@ -669,6 +680,7 @@ h2 {
   .dropdown-content2 a {
 	color: white;
 	padding: 12px 13px;
+	border-bottom: 1px solid white;
 	text-decoration: none;
 	border:0;
 	display: block;
@@ -676,13 +688,43 @@ h2 {
   }
   
   .dropdown-content2 a:hover {
-	background-color: #000000;
+	background-color: #f01919e4;
   }
   
   .dropdown2:hover .dropdown-content2 {
 	display: block;
   }
 
+
+  .coe-dropdown{
+	display: none;
+	background-color: $bgcolor;
+	width: 101%;
+	margin-left: -2%;
+	padding: 10px;
+
+	.coe-checkbox input[type="checkbox"] {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 18px;
+		height: 18px;
+		border: 2px solid #8B4513; /* Brown color */
+		border-radius: 50%; /* Circular shape */
+		outline: none;
+		cursor: pointer;
+	}
+	
+	.coe-checkbox input[type="checkbox"]:checked {
+		background-color: #8B4513; /* Brown color when checked */
+	}
+	
+	.coe-checkbox label {
+		margin-left: 8px; /* Space between checkbox and label */
+		cursor: pointer;
+	}
+
+  }
 
   .search-container {
     display: flex; /* Use flexbox layout */
@@ -763,46 +805,85 @@ h2 {
 }
 #teamMembers {
     display: flex;
-    flex-wrap: wrap;
-	/* Adjust the gap between cards */
+    flex-wrap: wrap;/* Adjust the gap between cards */
 }
 
 .member-card {
     flex: 0 0 calc(50% - 20px); /* Two cards per row, minus the gap */
     padding: 20px;
-    margin-bottom: 20px;
-	margin-left: 10px;
     border: 1px solid #ccc;
+	margin-left: 10px;
+	margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #e7e7e7;
+    background-color: #f0efef;
     overflow: hidden; /* Ensure content doesn't overflow */
+    position: relative; /* Ensure position context for absolute positioning */
 }
 
-.member-card img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    max-width: 100%;
-    height: auto; 
-}
-.member-card ul li{
-	font-size: 0.8em;
+.member-info {
+    display: flex;
+    flex-direction: column; /* Stack image on top of details */
 }
 
-.member-card h4 {
-    margin: 10px 0 5px;
+.member-img {
+    width: 100px; /* Adjust image size as needed */
+    height: 120px;
+    object-fit: cover;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    border: 3px solid #ffffff; /* White border to stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.member-card i {
-    font-style: normal;
-	font-size: 0.9em;
+.member-details {
+    flex: 1;
+}
+
+#fac-title{
+	color: $textcolor;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.member-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.member-details .member-position {
+    font-style: italic;
     color: #777;
-    margin-bottom: 10px;
+}
+
+.member-details .member-bio {
+    font-size: 0.9em;
+}
+
+@media (max-width: 992px) {
+    .member-card {
+        flex: 1 0 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
 }
 
 @media (max-width: 768px) {
     .member-card {
-        flex: 0 0 100%; /* Cards take full width on smaller screens */
+        flex: 1 0 100%; /* Full width on small screens */
+    }
+
+    .member-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .member-img {
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 10px;
+        top: auto;
+        right: auto;
     }
 }
 
@@ -1913,32 +1994,22 @@ p {
     top: -5%;
     left: 0;
     width: 100%;
-    height: 54vh;
+    height: 57vh;
     // background-image: url("images/bg2.jpg");
 	transition: background-image 0.5s ease; /* Initial background image */
     background-size: cover;
     background-position: center;
 	background-repeat: no-repeat;
 
-	filter: saturate(50%);
+	// filter: saturate(50%);
 
     z-index: -1;
 }
 
-// .navbar-bg {
-// 	background-color: rgba(0, 0, 0, 0.759);
-//   }
-// .navbar-no-bg {
-// 	background-color: none;
-// 	color: ligh;
-
-//   }
 
 .highlights{
 	color:white !important;
-
 }
-
 
 #banner{
 	padding-top: 80px;
@@ -2106,10 +2177,12 @@ figcaption {
 .header-row {
 	display: flex;
 	align-items: center;
+
 	margin-bottom: 20px;
 }
 
 .header-row .title {
+
 	flex: 65%;
 	 font-family: "Montserrat", sans-serif;
 	color:#872525;
@@ -2140,6 +2213,7 @@ figcaption {
 
 .navigation-button {
 	margin-left: 10px;
+	color: white;
     cursor: pointer;
     padding: 13px;
     background-color: #000000d5; /* Button background color */
@@ -2164,7 +2238,11 @@ figcaption {
     -webkit-overflow-scrolling: touch; /* Adjust height as needed */
 }
 
+
+
 .card {
+
+	cursor: pointer;
 	flex: 1 0 31%; /* Four cards per row, adjust the gap as needed */
 	margin: 10px;
 	background-color: #f0f0f0;
@@ -2178,6 +2256,7 @@ figcaption {
 	text-align: left;
 	font-size: 24px;
 	transition: transform 0.3s ease;
+	transition: transform 0.2s ease-in-out;
 
 	.active {
 		transform: translateX(0);
@@ -2202,6 +2281,33 @@ figcaption {
 		text-transform: none;/* Remove default margin */
 	}
 }
+.card:hover{
+	transform: scale(1.05);
+}
+
+.card-link {
+    border: 0;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.card-link:hover {
+    text-decoration: none;
+	color: rgb(210, 209, 209);
+	border:0;
+}
+.card-link:visited {
+    color: inherit;
+	text-decoration: none;
+
+}
+
+// .card:hover {
+// 	transform: scale(1.1);
+// 	z-index: 1;
+// }
+
 .card:nth-child(6n+1) {
 
 
@@ -2309,17 +2415,36 @@ figcaption {
 /* Adjust for responsiveness */
 @media (max-width: 768px) {
 	.card {
-		flex: 1 0 calc(50% - 10px); /* Two cards per row on smaller screens */
+		flex: 1 0 calc(100% - 10px); /* Two cards per row on smaller screens */
 	}
-}
+	.header-row .title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
 
-@media (max-width: 480px) {
-	.card {
-		flex: 1 0 calc(100% - 10px); /* One card per row on smallest screens */
+    .header-row .button-group button,
+    .header-row .button-group .view-all {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .header-row .button-group {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        align-items: center; /* Center align buttons on mobile */
+    }
+
+    .dropdown-content1 {
+        left: 60px; /* Position dropdown to the right */
+    }
+	#view-all{
+		display: none;
 	}
+	.button-group {
+		left: 70px;
+		width: 100%;
+		// flex:35%;
+	}
+
+
 }
-
-
 
 
 .container {
@@ -2341,8 +2466,6 @@ figcaption {
   }
   #nav {
 	width: max-content;
-
-
 
   }
   
@@ -2486,19 +2609,38 @@ figcaption {
   /* Menu toggle button */
   #menu-toggle {
 	display: none;
-	color: white;
+	color: rgb(255, 255, 255);
 	border: none;
+	background-color: #ac1b1bd1;
 	// padding: 10px;
 	font-size: 12px;
 	cursor: pointer;
 	position: fixed; 
-	top: 10px;
-	right: 10px;
+	top: 5%;
+	right: 5%;
+	z-index: 1000; 
+  }
+  #menu-close {
+	display: none;
+	border:none;
+	height:80px;
+	color: rgb(255, 255, 255);
+	border: none;
+	background-color: #000000dd;
+	// padding: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	position: fixed; 
+	top: 0%;
+	right: 70%;
 	z-index: 1000; 
   }
 
+
   /* Responsive Navbar */
   @media (max-width: 768px) {
+
+
 	#menu-toggle {
 		display: block;
 	  }
@@ -2506,15 +2648,29 @@ figcaption {
 		display: none;
 	}
 	.site-sym{
-		display: none;
+		top: 0;
+		transform: translateX(-290%);
+		img{
+			width: 160px;
+			height:150px;
+
+		}
 	}
 	#site-main-title {
-		margin-top: 20px;
+		margin-top: 10px;
+		line-height: 18px;
+		font-size: 1em;
+
+		width: 100%;
 		text-transform: none;
 		justify-content: center;
 		text-align: left;
 		align-items: center;
 	  }
+		#site-main-title2{
+			font-size: 1em;
+
+		}
 	  
 	.nav-content{
 		display: none;
@@ -2522,10 +2678,14 @@ figcaption {
 		overflow-y: auto; /* Enable vertical scrolling */
 		position: fixed;
 		top: 0;
-		right: 2%;
-		width: 30%; /* Initially position off-screen */
-		background-color: rgba(0, 0, 0, 0.914); /* Same background color as your navbar */
+		right: 1%;
+		z-index: 10;
+
+
+		width: 70%; /* Initially position off-screen */
+		background-color: rgba(0, 0, 0, 0.895); /* Same background color as your navbar */
 		transition: right 0.3s ease; /* Add smooth transition */
+		overflow-x: hidden;
 	}
 
 	.horizontal-menu {
@@ -2535,6 +2695,7 @@ figcaption {
   
 	.horizontal-menu li {
 	  margin: 10px 0;
+
 	}
   
 	.container {
@@ -2542,24 +2703,29 @@ figcaption {
 	}
   
 	.col-md-3, .col-md-7, .col-md-2 {
-	  flex: 0 0 100%;
+	//   flex: 0 0 100%;
 	  max-width: 90%;
 	  text-align: left;
 	}
 	.logo-title-container{
 		display: none;
 	}
+	.horizontal-menu .dropdown #dropbtn {
+		color:white;
+	}
   
 	
 	#site-title {
-	  font-size: 0.85em;
-	//   margin-left: -20px;
-	//   margin-top: 25px;
+	  font-size: 1em;
+	  margin-left: 180px;
+	  margin-top: 5px;
+	  width: max-content;
 	}
   
 	.horizontal-menu li a {
 	  font-size: 1em;
 	  padding: 10px;
+	  color: white;
 	}
   
 	.dropdown-content {
@@ -3458,10 +3624,10 @@ $baseurl: '{{ site.baseurl }}/images';
 		// @include vendor('appearance', 'none');
 		// @include vendor('transition', ('background-color #{_duration(transitions)} ease-in-out', 'color #{_duration(transitions)} ease-in-out'));
 		// background-color: transparent;
-		border-radius: 3px;
-		border: 0;
-		box-shadow: inset 0 0 0 2px _palette(border);
-		color: _palette(fg-bold);
+		// border-radius: 3px;
+		// border: 0;
+		// box-shadow: inset 0 0 0 2px _palette(border);
+		// color: _palette(fg-bold);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -3846,8 +4012,8 @@ $baseurl: '{{ site.baseurl }}/images';
 			input[type="button"],
 			button,
 			.button {
-				box-shadow: inset 0 0 0 2px _palette($p, border);
-				color: _palette($p, fg-bold);
+				// box-shadow: inset 0 0 0 2px _palette($p, border);
+				// color: _palette($p, fg-bold);
 
 				&:hover {
 					background-color: _palette($p, border-bg);
@@ -4198,6 +4364,31 @@ ul #subbullet{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
     z-index: -1;
 }
+
+@media (max-width: 768px) {
+	.indicators-bg {
+	  top: 63%; /* Adjust position to bottom */
+	  right: 39%;
+	  justify-content: center;
+	}
+
+	.indicators-bg-btn {
+		width: 45px;
+		height: 35px;
+
+	}
+	.background{
+		height: 75%;
+	}
+  
+	.rectangular-div {
+	  top: 25%; /* Adjust top position */
+	  width: 95%; /* Adjust width */
+	  height: 35vh; /* Adjust height */
+	}
+  
+	/* Optionally hide or adjust other elements as needed */
+  }
 
 
 // .parent-marquee{
