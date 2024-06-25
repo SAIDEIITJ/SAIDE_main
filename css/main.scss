@@ -14,6 +14,8 @@ $bgcolor:#ECEBE6;
 $textcolor:#6e0d10;
 $linkcolor:#ff6f61;
 $titlecolor:#6e0d10;
+$row-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for rows
+$cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 
 
@@ -804,6 +806,9 @@ h2 {
     }
 }
 
+// join-us
+
+//admission
 
 //about
 .about-section {
@@ -872,41 +877,100 @@ h2 {
 }
 
 .application-section {
-	padding: 20px;
-	// margin-left: 120px;
+    padding: 20px;
     text-align: left;
-	width: 100%;
-	h1{
-		color:$textcolor;
-		font-size: 2rem;
-		 font-family: "Montserrat", sans-serif;
-	}
-	#subheading{
-		text-transform: none;
-		color: #464040;
-	}
-	.terms-row {
-		display: flex;
-		flex-wrap: nowrap; /* Allow items to wrap to the next row */
-		gap: 10px; /* Gap between items */
-	}
-	
-	
-	.term, .definition {
-		flex-basis: calc(33.33% - 10px); /* Set width of each item to fit maximum 3 in a row */
-		padding: 10px;
-		box-sizing: border-box; /* Include padding and border in width calculation */
-	}
-	
-	.term {
-		border-bottom: 1px solid #ccc;
-		color:#824a29;
-		font-weight: bold;
-	}
-	
-	.definition {
-		 /* Example background color for definitions */
-	}
+    width: 100%;
+    position: relative; // Make the application-section the relative container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // Ensure the section takes at least the full viewport height
+
+    h1 {
+        color: $textcolor;
+        font-size: 2rem;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    #subheading {
+        text-transform: none;
+        color: #464040;
+    }
+    
+    .terms-row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    
+    .term, .definition {
+        flex-basis: calc(33.33% - 10px);
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .term {
+        border-bottom: 1px solid #ccc;
+        color: #824a29;
+        font-weight: bold;
+    }
+    
+    .definition {
+        // Example background color for definitions
+    }
+
+    
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            
+            th,
+            td {
+                padding: 15px;
+                color: #616161;
+				background-color: #ffffff52;
+            }
+            
+            th {
+                text-align: left;
+            }
+            
+            thead {
+                th {
+                    background-color: #6e0d10;
+					color: white !important;
+                }
+            }
+            
+            tbody {
+                tr {
+                    &:hover {
+                       // background-color: $row-hover-color;
+                    }
+                    
+                    td {
+                        position: relative;
+                        
+                        &:hover {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: -9999px;
+                                bottom: -9999px;
+                                // background-color: $cell-hover-color;
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
 }
 
 .image2-section {

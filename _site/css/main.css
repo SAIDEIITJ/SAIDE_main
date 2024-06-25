@@ -6832,7 +6832,12 @@ h2 {
 .application-section {
   padding: 20px;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
   .application-section h1 {
     color: #6e0d10;
     font-size: 2rem;
@@ -6843,21 +6848,39 @@ h2 {
   .application-section .terms-row {
     display: flex;
     flex-wrap: nowrap;
-    /* Allow items to wrap to the next row */
-    gap: 10px;
-    /* Gap between items */ }
+    gap: 10px; }
   .application-section .term, .application-section .definition {
     flex-basis: calc(33.33% - 10px);
-    /* Set width of each item to fit maximum 3 in a row */
     padding: 10px;
-    box-sizing: border-box;
-    /* Include padding and border in width calculation */ }
+    box-sizing: border-box; }
   .application-section .term {
     border-bottom: 1px solid #ccc;
     color: #824a29;
     font-weight: bold; }
-  .application-section .definition {
-    /* Example background color for definitions */ }
+  .application-section table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+    .application-section table th,
+    .application-section table td {
+      padding: 15px;
+      color: #616161;
+      background-color: #ffffff52; }
+    .application-section table th {
+      text-align: left; }
+    .application-section table thead th {
+      background-color: #6e0d10;
+      color: white !important; }
+    .application-section table tbody tr td {
+      position: relative; }
+      .application-section table tbody tr td:hover:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px; }
 
 .image2-section {
   position: relative;
