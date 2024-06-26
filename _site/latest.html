@@ -85,9 +85,9 @@
               <li class="dropdown">
                 <a href="coes.html" id="dropbtn" class="bg-buttons" data-image="CoE.png">CoEs</a>
                 <div class="dropdown-content">
-                  <a href="https://cbsaiitj.wordpress.com/">Brain Science and Applications</a>
-                  <a href="https://cmceiitj.wordpress.com/">Mathematical and Computational Economics</a>
-                  <a href="https://sites.google.com/iitj.ac.in/cii/about">Center of Excellence in Intelligent Infrastructure</a>
+                  <a href="https://cbsaiitj.wordpress.com/"  target="_blank">Brain Science and Applications</a>
+                  <a href="https://cmceiitj.wordpress.com/"  target="_blank">Mathematical and Computational Economics</a>
+                  <a href="https://sites.google.com/iitj.ac.in/cii/about"  target="_blank">Center of Excellence in Intelligent Infrastructure</a>
                   <a href="#">Center of Excellence in AI based Precision Healthcare</a>
                 </div>
               </li>
@@ -357,25 +357,8 @@ setupPagination();
 <script>
 
   document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.tab-button');
     const backgroundAbout = document.getElementById('backgroundAbout');
-
-    // Check if there's a stored image URL
-    const storedImage = localStorage.getItem('selectedImage');
-    if (storedImage) {
-      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        // e.preventDefault();
-        const imageName = this.getAttribute('data-image');
-        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
-
-        // Store the selected image URL
-        localStorage.setItem('selectedImage', imageName);
-      });
-    });
+        backgroundAbout.style.backgroundImage = `url(images/16.png)`;
   });
 
 </script>
