@@ -733,7 +733,7 @@ h2 {
 
 .member-card {
     flex: 0 0 calc(50% - 20px); /* Two cards per row, minus the gap */
-    padding: 20px;
+    // padding: 10px;
     border: 1px solid #ccc;
 	margin-left: 10px;
 	margin-bottom: 10px;
@@ -745,6 +745,7 @@ h2 {
 }
 
 .member-info {
+	padding-top: 15px;
     display: flex;
     flex-direction: column; /* Stack image on top of details */
 }
@@ -768,6 +769,8 @@ h2 {
 	color: $textcolor;
     margin-top: 0;
     margin-bottom: 5px;
+	text-transform: none;
+	font-size: 1.1em;
 }
 
 .member-details p {

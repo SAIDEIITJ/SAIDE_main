@@ -72,9 +72,14 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
                         <h4 id="fac-title">{{ member.name }}</h4>
                         <p class="member-position">{{ member.position }}</p>
            
-                        <p><strong>Email:</strong> {{ member.email }}</p>
-                        <p><strong>Phone:</strong> {{ member.phone }}</p>
+                        <p><strong><i class="fa-solid fa-envelope"></i> </strong> {{ member.email }}</p>
+                        <p><strong><i class="fa-solid fa-phone"></i></strong>  {{ member.phone }}</p>
+                        {% if member.subfaculty == "Core Faculty" %}
+                        <p><strong>Office Number:</i></strong> {{ member.phone }}</p>
+                        <p><strong>Center:</strong> {{ member.affiliation }}</p>
+                        {%  else %}
                         <p><strong>Department:</strong> {{ member.affiliation }}</p>
+                        {% endif %}
 
                         {% if member.bio1 != "" %}
                             <p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
