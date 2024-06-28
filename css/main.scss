@@ -618,36 +618,53 @@ h2 {
 	display: block;
   }
 
-
   .coe-dropdown{
 	display: none;
-	background-color: $bgcolor;
+	background-color: rgb(231, 231, 231);
 	width: 101%;
 	margin-left: -2%;
 	padding: 10px;
+	border-radius: 10px;
 
-	.coe-checkbox input[type="checkbox"] {
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		width: 18px;
-		height: 18px;
-		border: 2px solid #8B4513; /* Brown color */
-		border-radius: 50%; /* Circular shape */
-		outline: none;
-		cursor: pointer;
-	}
 	
-	.coe-checkbox input[type="checkbox"]:checked {
-		background-color: #8B4513; /* Brown color when checked */
-	}
-	
-	.coe-checkbox label {
-		margin-left: 8px; /* Space between checkbox and label */
-		cursor: pointer;
-	}
-
   }
+
+  .coe-checkbox {
+	padding: 4px;
+    display: flex;
+    align-items: center;
+	vertical-align: middle;
+    margin-bottom: 5px; /* Adjust spacing between items */
+}
+
+.coe-checkbox input[type="checkbox"] {
+    display: none; /* Hide the actual checkboxes */
+}
+
+.coe-checkbox label {
+    cursor: pointer;
+
+    padding-left: 28px; /* Space for custom checkbox */
+    position: relative;
+}
+
+.coe-checkbox label:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #8b1313; /* Brown color */
+    border-radius: 50%; /* Circular shape */
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.coe-checkbox input[type="checkbox"]:checked + label:before {
+    background-color: #bd2f2f;
+	border: 2px solid #20B1A6;
+
+}
 
   .search-container {
     display: flex; /* Use flexbox layout */
@@ -742,6 +759,26 @@ h2 {
     background-color: #f0efef;
     overflow: hidden; /* Ensure content doesn't overflow */
     position: relative; /* Ensure position context for absolute positioning */
+}
+
+.website{
+	display: flex;
+	flex-direction: row;
+}
+.learn-more-button {
+    display: inline;
+    padding: 2px 6px;
+	margin-left: 10px;
+    background-color: #8B0000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #5d0000;
 }
 
 .member-info {
@@ -2781,74 +2818,6 @@ $baseurl: '{{ site.baseurl }}/images';
 	textarea {
 		padding: 0.75em 1em;
 	}
-
-	input[type="checkbox"],
-	input[type="radio"], {
-		@include vendor('appearance', 'none');
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-
-		& + label {
-			@include icon;
-			color: _palette(fg);
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: _font(weight);
-			padding-left: (_size(element-height) * 0.6) + 0.75em;
-			padding-right: 0.75em;
-			position: relative;
-
-			&:before {
-				background: _palette(border-bg);
-				border-radius: 3px;
-				content: '';
-				display: inline-block;
-				height: (_size(element-height) * 0.6);
-				left: 0;
-				line-height: (_size(element-height) * 0.575);
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: (_size(element-height) * 0.6);
-			}
-		}
-
-		&:checked + label {
-			&:before {
-				background: _palette(bg);
-				color: _palette(fg-bold);
-				content: '\f00c';
-			}
-		}
-
-		&:focus + label {
-			&:before {
-				box-shadow: 0 0 0 2px _palette(accent1, bg);
-			}
-		}
-	}
-
-	input[type="checkbox"] {
-		& + label {
-			&:before {
-				border-radius: 3px;
-			}
-		}
-	}
-
-	input[type="radio"] {
-		& + label {
-			&:before {
-				border-radius: 100%;
-			}
-		}
-	}
-
 	::-webkit-input-placeholder {
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
@@ -3519,24 +3488,6 @@ $baseurl: '{{ site.baseurl }}/images';
 			.select-wrapper {
 				&:before {
 					color: _palette($p, border);
-				}
-			}
-
-			input[type="checkbox"],
-			input[type="radio"], {
-				& + label {
-					color: _palette($p, fg);
-
-					&:before {
-						background: _palette($p, border-bg);
-					}
-				}
-
-				&:checked + label {
-					&:before {
-						background: _palette($p, fg-bold);
-						color: _palette($p, bg);
-					}
 				}
 			}
 

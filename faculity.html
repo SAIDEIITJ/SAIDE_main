@@ -21,6 +21,8 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
         </div>
     </div>
 </div>
+
+
 <div class="coe-dropdown">
     <div class="coe-checkbox">
         <input type="checkbox" id="coe1" value="Centre for Mathematical and Computational Economics">
@@ -39,6 +41,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
         <label for="coe4">Centre for Excellence in AI-based Precision Healthcare</label>
     </div>
 </div>
+
 <div class="filter-indicators">
     <div class="filter-indicator"  data-filter="Core Faculty">
         <div class="checkbox"></div>
@@ -75,7 +78,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
                         <p><strong><i class="fa-solid fa-envelope"></i> </strong> {{ member.email }}</p>
                         <p><strong><i class="fa-solid fa-phone"></i></strong>  {{ member.phone }}</p>
                         {% if member.subfaculty == "Core Faculty" %}
-                        <p><strong>Office Number:</i></strong> {{ member.phone }}</p>
+                        <p><strong>Office Number:</i></strong> {{ member.office_phone }}</p>
                         <p><strong>Center:</strong> {{ member.affiliation }}</p>
                         {%  else %}
                         <p><strong>Department:</strong> {{ member.affiliation }}</p>
@@ -84,6 +87,11 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
                         {% if member.bio1 != "" %}
                             <p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
                         {% endif %}
+                        <div class="website">
+                            <p><strong>Website:</strong></p>
+                            <a href="{{ member.website }}" target="_blank" style="border: 0;text-decoration: none;"><div class="learn-more-button">Learn More</div></a>
+                        </div>
+                        
                     </div>
                     <img src="{{ member.image }}" class="member-img" alt="{{ member.name }}" />
                 </div>
@@ -154,13 +162,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Event listener for COE checkbox change
-    document.querySelectorAll('.coe-checkbox input').forEach(function (checkbox) {
-        checkbox.addEventListener('change', function () {
-            const selectedCOEs = Array.from(document.querySelectorAll('.coe-checkbox input:checked')).map(checkbox => checkbox.value.toLowerCase());
-            filterMembers(selectedCOEs);
-        });
+    document.querySelectorAll('.coe-checkbox input[type="checkbox"]').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        const isChecked = this.checked;
+        if (!isChecked) {
+            this.checked = false; // Uncheck if already checked
+        } else {
+            // Uncheck other checkboxes in the group
+            document.querySelectorAll('.coe-checkbox input[type="checkbox"]').forEach(function (otherCheckbox) {
+                if (otherCheckbox !== checkbox) {
+                    otherCheckbox.checked = false;
+                }
+            });
+        }
+        const selectedCOEs = Array.from(document.querySelectorAll('.coe-checkbox input:checked')).map(checkbox => checkbox.value.toLowerCase());
+        filterMembers(selectedCOEs);
     });
+});
 
     document.getElementById('searchByCOE').addEventListener('click', function (e) {
         e.preventDefault();
