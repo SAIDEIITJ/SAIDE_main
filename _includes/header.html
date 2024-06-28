@@ -84,8 +84,8 @@
         </nav>
       </div>
       <div class="col-md-1" style="display: flex; justify-content: center; align-items: center; margin-top: 10px; ">
-        <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-        <button class="menu-close" id="menu-close"><i class="fa-solid fa-times"></i></button>
+        <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        <div class="menu-close" id="menu-close"><i class="fa-solid fa-times"></i></div>
         <a href="{{ site.baseurl }}/index.html" class="site-sym">
           <img src="images/logo_bg.png" alt="Logo" width="180" height="150">
         </a>
@@ -95,26 +95,26 @@
 </header>
 
 <script >
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById('menu-toggle');
   const menuClose = document.getElementById('menu-close');
   const navbar = document.getElementById('nav-content');
-  menuClose.style.display='none';
-  function close() {
-      menuToggle.style.display = 'none';
-      menuClose.style.display = 'block';
-      navbar.style.display = 'none';
-      
-   } 
-   function open() {
-      navbar.style.display = 'none';
-      menuToggle.style.display = 'block';
-      menuClose.style.display = 'none';
-    }
 
-  menuToggle.addEventListener('click', close);
-  menuClose.addEventListener('click', open);
+
+  function openMenu() {
+    menuToggle.style.display = 'none';
+    menuClose.style.display = 'flex';
+    navbar.style.right = '0'; // Slide the nav-content into view
+  }
+
+  function closeMenu() {
+    menuToggle.style.display = 'flex';
+    menuClose.style.display = 'none';
+    navbar.style.right = '-100%'; // Slide the nav-content out of view
+  }
+
+  menuToggle.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
 
     const buttons = document.querySelectorAll('.bg-buttons');
     const backgroundAbout = document.getElementById('backgroundAbout');

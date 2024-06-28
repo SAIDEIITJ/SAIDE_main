@@ -81,36 +81,6 @@ window.onclick = function(event) {
     }
 }
 
-
-//  const newsData = [
-
-//     { id: "news-card-1", title: "Selected Candidates for PhD Program (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
-//     { id: "news-card-2", title: "Selected Candidates for PhD Program in CMCE (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news5.png" },
-//     { id: "news-card-3", title: "Selected Candidates for MS by Research Program in CMCE (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
-//     { id: "news-card-4", title: "Selected Candidates for MS by Research Program in CII (2024–25 Semester-I, July 2024)", date: "JULY, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
-//     { id: "news-card-5", title: "Indicative projects for upcoming PhD admission cycle, Sem-I, 2024-2025", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news5.png" },
-//     { id: "news-card-6", title: "Selected Candidates for Summer Internship Program 2024", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
-//     { id: "news-card-7", title: "Rolling Advertisement for Admission to Ph.D. Program at CMCE, AIDE, IITJ", date: "JULY, 2024", content: "Gakjs akljshd coia aklsuhd ausdc asoich auosy saou...", img: "images/news2.png" },
-//     { id: "news-card-8", title: "Rolling Advertisement for Admission to Ph.D. Program", date: "MAY, 2024", content: "Mas asjd cioue c asu coausc clow dcwl sdcoua couc el...", img: "images/news4.png" },
-//     { id: "news-card-9", title: "Rolling Advertisement for Faculty Hiring", date: "JULY, 2024", content: "Guah ssuhd a usdc asoich aalsih  saou...", img: "images/news3.png" },
-
-//     // Add more news items here
-// ];
-// console.log(newsData);
-
-// Define an object for storing events
-//  const eventData = [
-//     { id: "event-card-1", date: "12 June 2024", title: "M.S. by Research in Next Generation AI", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-//     { id: "event-card-2", date: "13 June 2024", title: "M.S. by Research in Computational Economics", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
-//     { id: "event-card-3", date: "14 June 2024", title: "M.S. by Research in Intelligent Infrastructure", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
-//     { id: "event-card-4", date: "12 June 2024", title: "M.S. by Research in Precision Healthcare and Integrative Medicine", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-//     { id: "event-card-5", date: "13 June 2024", title: "M.Tech. in AR VR", content: "Details of event 2...", icon: "fas fa-calendar-check", img: "images/news5.png" },
-//     { id: "event-card-6", date: "14 June 2024", title: "M.Tech. in AR VR (for Working Professionals)", content: "Details of event 3...", icon: "fa-solid fa-computer", img: "images/news1.png"},
-//     { id: "event-card-7", date: "12 June 2024", title: "M.Tech. in DCS (for Working Professionals)", content: "Details of event 1...", icon: "fas fa-calendar-alt",  img: "images/news4.png"},
-//     // Add more event items here
-// ];
-
-{/*  */}
 let scrollInterval = null;
 let scrollLength = 300; 
 
@@ -204,17 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollLength = deviceWidth <= 768 ? 450 : 300;
     showNews();
     
-    
-    const menuToggle = document.getElementById("menu-toggle");
-    const navContent = document.getElementById("nav-content");
-
-    menuToggle.addEventListener("click", function () {
-      if (navContent.style.display === "block") {
-        navContent.style.display = "none";
-      } else {
-        navContent.style.display = "block";
-      }
-    });
 });
 
 

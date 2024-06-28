@@ -2242,41 +2242,59 @@ figcaption {
   
   /* Menu toggle button */
   #menu-toggle {
+	width: 50px; /* Adjust the width as needed */
+	height: 50px;
 	display: none;
+	align-items: center;
+	justify-content: center;
 	color: rgb(255, 255, 255);
 	border: none;
 	background-color: #ac1b1bd1;
-	// padding: 10px;
 	font-size: 12px;
 	cursor: pointer;
-	position: fixed; 
+	position: fixed;
 	top: 5%;
 	right: 5%;
-	z-index: 1000; 
+	z-index: 1000;
   }
+  
   #menu-close {
+	width: 50px; /* Adjust the width as needed */
+	height: 50px;
+	align-items: center;
+	justify-content: center;
 	display: none;
-	border:none;
-	height:80px;
 	color: rgb(255, 255, 255);
 	border: none;
-	background-color: #000000dd;
-	// padding: 10px;
+	background-color: #323232f4;
 	font-size: 12px;
 	cursor: pointer;
-	position: fixed; 
-	top: 0%;
-	right: 70%;
-	z-index: 1000; 
+	position: fixed;
+	top: 2.5%;
+	right: 5%;
+	z-index: 1000;
   }
-
+  
 
   /* Responsive Navbar */
   @media (max-width: 768px) {
 
+	.nav-content {
+		height: 100vh;
+		overflow-y: auto;
+		position: fixed;
+		top: 0;
+		right: -100%; /* Initially position off-screen */
+		z-index: 10;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.895);
+		transition: right 0.3s ease;
+		overflow-x: hidden;
+	  }
+
 
 	#menu-toggle {
-		display: block;
+		display: flex;
 	  }
 	.site-logo{
 		display: none;
@@ -2305,22 +2323,7 @@ figcaption {
 			font-size: 1em;
 
 		}
-	  
-	.nav-content{
-		display: none;
-		height: 100vh;
-		overflow-y: auto; /* Enable vertical scrolling */
-		position: fixed;
-		top: 0;
-		right: 1%;
-		z-index: 10;
 
-
-		width: 70%; /* Initially position off-screen */
-		background-color: rgba(0, 0, 0, 0.895); /* Same background color as your navbar */
-		transition: right 0.3s ease; /* Add smooth transition */
-		overflow-x: hidden;
-	}
 
 	.horizontal-menu {
 	  flex-direction: column;
