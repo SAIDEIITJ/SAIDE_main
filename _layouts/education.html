@@ -7,11 +7,11 @@ layout: subdefault
     <header style="height: 148px; margin-top: 70px;">
     </header>
     <div class="button-bar">
-      <a href="phd.html" class="tab-button" data-image="PhD.png">PhD</a>
-      <a href="ms.html" class="tab-button" data-image="MSR.png">MS by Research</a>
-      <a href="mtech.html" class="tab-button" data-image="MTech.png">MTech</a>
-      <a href="btech.html" class="tab-button" data-image="BTech.png">BTech Minor</a>
-      <a href="continuing_edu.html" class="tab-button" data-image="Continuing.png">Continuing Education</a>
+      <a href="phd.html" class="tab-button">PhD</a>
+      <a href="ms.html" class="tab-button">MS by Research</a>
+      <a href="mtech.html" class="tab-button">MTech</a>
+      <a href="btech.html" class="tab-button">BTech Minor</a>
+      <a href="continuing_edu.html" class="tab-button">Continuing Education</a>
     </div>
   </div>
 
@@ -21,29 +21,3 @@ layout: subdefault
     </div>
   </section>
 </article>
-
-<script>
-
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.tab-button');
-    const backgroundAbout = document.getElementById('backgroundAbout');
-
-    // Check if there's a stored image URL
-    const storedImage = localStorage.getItem('selectedImage');
-    if (storedImage) {
-      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        // e.preventDefault();
-        const imageName = this.getAttribute('data-image');
-        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
-
-        // Store the selected image URL
-        localStorage.setItem('selectedImage', imageName);
-      });
-    });
-  });
-</script>
