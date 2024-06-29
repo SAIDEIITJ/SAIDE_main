@@ -506,49 +506,32 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 
   //publication
-  .paper-container {
-    width: 100%;
-    margin: auto;
-}
-
-#searchInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.paper {
-    background-color: #ebe8e8;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  .paper-section {
     padding: 20px;
+}
+
+.paper-item {
+    display: flex;
+    background-color: #EDE0D4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    overflow: hidden;
+	padding-left: 10px;
+}
+.paper-item:hover {
+	border: 2px solid brown;
 }
 
-h2 {
-    margin-top: 0;
-}
-#paper-title{
-	 font-family: "Montserrat", sans-serif;
-	color:$textcolor
-	
+.paper-item img {
+	margin-top: 50px;
+    max-width: 200px;
+	height: 150px;
 }
 
-#abstract-btn {
-    background-color: rgb(131, 21, 21);
-    color: white;
-    border: none;
-    padding: 10 5px;
-    border-radius: 4px;
-    cursor: pointer;
+.paper-content {
+    padding: 20px;
 }
-
-#abstract-btn:hover {
-    background-color: #019494;
-}
-
 
 
 //directory
@@ -1732,6 +1715,7 @@ h2 {
     margin: 10px 0;
     color: $textcolor;
 	 font-family: "Montserrat", sans-serif;
+	 text-transform: none;
 }
 
 p {
