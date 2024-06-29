@@ -49,7 +49,7 @@ function displayArticles(page) {
         articleItem.innerHTML = `
             <img src="images/paper.png" alt="Article Image">
             <div class="paper-content">
-                <h2 id = "titleh2"> ${article.title}</h2>
+                <h2 id = "titleh2"><a href="${article.link}" id = "paperlinks" target="_blank"> ${article.title}</a></h2>
                 <p><strong>Authors:</strong> ${article.author}</p>
                 <p class="date"><strong>Date:</strong> ${article.date}</p>
             </div>

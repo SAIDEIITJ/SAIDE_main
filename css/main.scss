@@ -37,7 +37,16 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	border:0;
 	text-decoration: none;
 }
+#paperlinks{
+	border:0;
+	text-decoration: none;
+	color: inherit;
+}
+#paperlinks:hover{
+	color: inherit;
+	text-decoration: none;
 
+}
 //topcontent of each page (banner text)
 #topcontent-header{
 	height: 148px;
