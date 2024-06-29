@@ -433,7 +433,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	flex: 1;
 	max-width: 200px;
 	padding: 20px;
-	background: #f4f4f4;
+	background-color: #ffffff;
   }
   
   .category ul {
@@ -620,11 +620,12 @@ h2 {
 
   .coe-dropdown{
 	display: none;
-	background-color: rgb(231, 231, 231);
+	background-color: #EDE0D4;
 	width: 101%;
 	margin-left: -2%;
 	padding: 10px;
 	border-radius: 10px;
+	border: 1px solid #ccc;
 
 	
   }
@@ -681,9 +682,9 @@ h2 {
     width: 100%;
     padding: 10px;
     font-size: 1em;
-	background-color: $bgcolor;
+	background-color: #EFEFEF;
 	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -745,7 +746,23 @@ h2 {
 }
 #teamMembers {
     display: flex;
-    flex-wrap: wrap;/* Adjust the gap between cards */
+    flex-wrap: wrap;
+
+/* Adjust the gap between cards */
+}
+.HOD-details{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.HOD-details #hod{
+	width: 100%;
+	color: white;
+	background-color: rgb(113, 28, 28);
+	text-align: center;
 }
 
 .member-card {
@@ -756,7 +773,19 @@ h2 {
 	margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f0efef;
+    background-color: #EDE0D4;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    position: relative; /* Ensure position context for absolute positioning */
+}
+.member-card_HOD {
+    width: 55%; /* Two cards per row, minus the gap */
+    // padding: 10px;
+    border: 1px solid #ccc;
+	margin-left: 10px;
+	margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #EDE0D4;
     overflow: hidden; /* Ensure content doesn't overflow */
     position: relative; /* Ensure position context for absolute positioning */
 }
@@ -766,9 +795,11 @@ h2 {
 	flex-direction: row;
 }
 .learn-more-button {
-    display: inline;
+    display: flex;
     padding: 2px 6px;
-	margin-left: 10px;
+	margin-left: 15px;
+
+
     background-color: #8B0000;
     color: #fff;
     text-align: center;
@@ -784,7 +815,8 @@ h2 {
 .member-info {
 	padding-top: 15px;
     display: flex;
-    flex-direction: column; /* Stack image on top of details */
+    flex-direction: column; 
+	padding-bottom: 15px;/* Stack image on top of details */
 }
 
 .member-img {
@@ -1098,10 +1130,11 @@ h2 {
     border-radius: 10px;
 }
 
-.share h3, .support h3 {
+#shareh3{
     color: #005b5b;
     font-size: 18px;
     margin-bottom: 10px;
+	text-transform: none;
 }
 
 .social-icons {
@@ -1146,6 +1179,7 @@ h2 {
 	border: 0;
     border-radius: 4px;
     font-weight: bold;
+	margin-bottom: 15px;
 }
 
 #donate-button:hover {
@@ -1487,6 +1521,7 @@ h2 {
 	h1{
 		color:$textcolor;
 		font-size: 2rem;
+		text-transform: none;
 		 font-family: "Montserrat", sans-serif;
 	}
 

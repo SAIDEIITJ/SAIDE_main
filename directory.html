@@ -51,13 +51,13 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 
 
 
-<table id="entry-table" style="background-color: #ECEBE5;">
+<table id="entry-table" style="background-color: #EDE0D4;">
     <thead>
-        <tr>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>Office</th>
+        <tr style="background-color: rgb(114, 30, 30);">
+            <th style="color: rgb(255, 255, 255);">Name</th>
+            <th style="color: rgb(255, 255, 255);">Phone</th>
+            <th style="color: rgb(255, 255, 255);">Email</th>
+            <th style="color: rgb(255, 255, 255);">Office Number</th>
         </tr>
     </thead>
     <tbody>
@@ -75,7 +75,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 
     {% for member in team_data %}
         {% if member.display == 1 %}
-        { name:"{{ member.name }}", phone:"{{ member.phone }}", email:"{{member.email}}" }{% unless forloop.last %},{% endunless %}
+        { name:"{{ member.name }}", phone:"{{ member.phone }}", email:"{{member.email}}", office:"{{member.office_number}}" }{% unless forloop.last %},{% endunless %}
         {% endif %}
     {% endfor %}
     ];
@@ -105,6 +105,7 @@ function renderEntries(entries, page = 1, perPage = 12) {
             <td>${entry.phone}</td>
             <td>${entry.email}</td>
             <td>${entry.office}</td>
+
         `;
     });
 
