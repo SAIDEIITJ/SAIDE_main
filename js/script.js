@@ -137,6 +137,7 @@ $(document).ready(function() {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
             changeBackground();
+            restartScrollInterval();
             let intervalId = setInterval(nextBackground, 5000);
 
             // Event listener for next button click
