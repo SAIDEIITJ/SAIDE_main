@@ -28,10 +28,77 @@ $(document).ready(function() {
         'banner25.png',
     ];
 
+   
+    const otherImages = [
+        'Admissions.png',
+        'Alumini.png',
+        'bg_text.png',
+        'bg2.jpg',
+        'BTech.png',
+        'campus_master.png',
+        'Campus.png',
+        'CoE.png',
+        'Contact.png',
+        'Continuing.png',
+        'digital.jpg',
+        'Directory.png',
+        'Ecosystem.png',
+        'Faculty.png',
+        'FacultyPositions.png',
+        'FAQs.png',
+        'footer.png',
+        'Governance.png',
+        'iitj.png',
+        'iitjc.png',
+        'Labs.png',
+        'loc1.jpeg',
+        'loc2.jpeg',
+        'loc3.png',
+        'logo_bg.png',
+        'logo.png',
+        'Mission.png',
+        'MSR.png',
+        'MTech.png',
+        'news1.png',
+        'news2.png',
+        'news3.png',
+        'news4.png',
+        'news5.png',
+        'Outreach.png',
+        'paper.png',
+        'permanent2.png',
+        'PhD.png',
+        'ProjectPositions.png',
+        'Projects.png',
+        'Publications.png',
+        'Research.png',
+        'SIP.png',
+        'Staff.png',
+        'Students.png',
+        'Themes.png',
+        '1.gif',
+        '2.gif',
+        '3.gif',
+        '4.gif',
+        '5.gif',
+        '6.gif',
+        '7.gif',
+        '8.gif',
+        '9.gif',
+        'Robotics.svg',
+        'NLP.svg',
+        'Intelligence.svg',
+        'Economics.svg',
+        'DeepLearning.svg',
+        'Cognitive.svg',
+        // Add more image URLs as needed
+    ];
+
     let currentIndex = 0;
 
     // Preload images
     function preloadImages(imageArray) {
+
         for (let i = 0; i < imageArray.length; i++) {
             const img = new Image();
             img.src = `images/${imageArray[i]}`;
@@ -40,6 +107,7 @@ $(document).ready(function() {
 
     // Call preloadImages to start preloading
     preloadImages(backgroundImages);
+    preloadImages(otherImages);
 
     // Function to change the background image
     function changeBackground() {
