@@ -5,17 +5,23 @@
 
   <body class="landing" id="wholebody">
 
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <div id="main-content" style="display: none;">
+
     <!-- Page Wrapper -->
-    <div id="page-wrapper">
+      <div id="page-wrapper">
 
-      {% include header.html %}
+        {% include header.html %}
 
-      {{ content }}
+        {{ content }}
 
-      {% include footer.html %}
+        {% include footer.html %}
 
-      {% include scripts.html %}
+        {% include scripts.html %}
 
+      </div>
     </div>
 
   </body>

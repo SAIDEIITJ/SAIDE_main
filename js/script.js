@@ -98,16 +98,38 @@ $(document).ready(function() {
 
     // Preload images
     function preloadImages(imageArray) {
+        let loadedImages = 0;
+        let totalImages = imageArray.length;
 
-        for (let i = 0; i < imageArray.length; i++) {
-            const img = new Image();
-            img.src = `images/${imageArray[i]}`;
-        }
+        return new Promise((resolve, reject) => {
+            for (let i = 0; i < imageArray.length; i++) {
+                const img = new Image();
+                img.src = `images/${imageArray[i]}`;
+                img.onload = () => {
+                    loadedImages++;
+                    if (loadedImages === totalImages) {
+                        resolve();
+                    }
+                };
+                img.onerror = () => {
+                    loadedImages++;
+                    if (loadedImages === totalImages) {
+                        resolve();
+                    }
+                };
+            }
+        });
     }
 
-    // Call preloadImages to start preloading
-    preloadImages(backgroundImages);
-    preloadImages(otherImages);
+    // Call preloadImages to start preloading and handle loading screen
+    Promise.all([
+        preloadImages(backgroundImages),
+        preloadImages(otherImages)
+    ]).then(() => {
+        $('#loading-screen').fadeOut(500, function() {
+            $('#main-content').fadeIn(500);
+        });
+    });
 
     // Function to change the background image
     function changeBackground() {
