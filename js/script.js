@@ -76,15 +76,15 @@ $(document).ready(function() {
         'Staff.png',
         'Students.png',
         'Themes.png',
-        '1.gif',
-        '2.gif',
-        '3.gif',
-        '4.gif',
-        '5.gif',
-        '6.gif',
-        '7.gif',
-        '8.gif',
-        '9.gif',
+        // '1.gif',
+        // '2.gif',
+        // '3.gif',
+        // '4.gif',
+        // '5.gif',
+        // '6.gif',
+        // '7.gif',
+        // '8.gif',
+        // '9.gif',
         'Robotics.svg',
         'NLP.svg',
         'Intelligence.svg',
@@ -128,6 +128,7 @@ $(document).ready(function() {
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
+            changeBackground();
         });
     });
 
