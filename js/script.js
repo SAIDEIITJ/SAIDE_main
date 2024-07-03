@@ -136,7 +136,6 @@ $(document).ready(function() {
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
-            $('#loading-screen').fadeIn(500);
             changeBackground();
             let intervalId = setInterval(nextBackground, 5000);
 
