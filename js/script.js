@@ -96,6 +96,14 @@ $(document).ready(function() {
 
     let currentIndex = 0;
 
+     lottie.loadAnimation({
+        container: document.getElementById('spinner'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'js/animation.json' // Path to your animation file
+    });
+
     // Preload images
     function preloadImages(imageArray) {
         let loadedImages = 0;
@@ -128,6 +136,7 @@ $(document).ready(function() {
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
+            $('#loading-screen').fadeIn(500);
             changeBackground();
             let intervalId = setInterval(nextBackground, 5000);
 
