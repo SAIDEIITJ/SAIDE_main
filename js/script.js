@@ -26,10 +26,20 @@ $(document).ready(function() {
         'banner23.png',
         'banner24.png',
         'banner25.png',
-
     ];
 
     let currentIndex = 0;
+
+    // Preload images
+    function preloadImages(imageArray) {
+        for (let i = 0; i < imageArray.length; i++) {
+            const img = new Image();
+            img.src = `images/${imageArray[i]}`;
+        }
+    }
+
+    // Call preloadImages to start preloading
+    preloadImages(backgroundImages);
 
     // Function to change the background image
     function changeBackground() {
@@ -64,6 +74,9 @@ $(document).ready(function() {
         prevBackground(); // Change to the previous background
         intervalId = setInterval(nextBackground, 5000); // Restart automatic change
     });
+
+    // Initial background setup
+    changeBackground();
 });
 function toggleDropdown() {
     document.getElementById("dropdownMenu").classList.toggle("show");
