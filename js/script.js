@@ -129,6 +129,7 @@ $(document).ready(function() {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
             changeBackground();
+            let intervalId = setInterval(nextBackground, 5000);
         });
     });
 
@@ -150,7 +151,7 @@ $(document).ready(function() {
     }
 
     // Set interval to automatically change background every 5 seconds
-    let intervalId = setInterval(nextBackground, 5000);
+    // let intervalId = setInterval(nextBackground, 5000);
 
     // Event listener for next button click
     $('#nextBtn').click(function() {
