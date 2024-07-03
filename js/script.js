@@ -130,6 +130,20 @@ $(document).ready(function() {
             $('#main-content').fadeIn(500);
             changeBackground();
             let intervalId = setInterval(nextBackground, 5000);
+
+            // Event listener for next button click
+            $('#nextBtn').click(function() {
+                clearInterval(intervalId); // Stop automatic change
+                nextBackground(); // Change to the next background
+                intervalId = setInterval(nextBackground, 5000); // Restart automatic change
+            });
+        
+            // Event listener for previous button click
+            $('#prevBtn').click(function() {
+                clearInterval(intervalId); // Stop automatic change
+                prevBackground(); // Change to the previous background
+                intervalId = setInterval(nextBackground, 5000); // Restart automatic change
+            });
         });
     });
 
@@ -152,20 +166,6 @@ $(document).ready(function() {
 
     // Set interval to automatically change background every 5 seconds
     // let intervalId = setInterval(nextBackground, 5000);
-
-    // Event listener for next button click
-    $('#nextBtn').click(function() {
-        clearInterval(intervalId); // Stop automatic change
-        nextBackground(); // Change to the next background
-        intervalId = setInterval(nextBackground, 5000); // Restart automatic change
-    });
-
-    // Event listener for previous button click
-    $('#prevBtn').click(function() {
-        clearInterval(intervalId); // Stop automatic change
-        prevBackground(); // Change to the previous background
-        intervalId = setInterval(nextBackground, 5000); // Restart automatic change
-    });
 
     // Initial background setup
     changeBackground();
