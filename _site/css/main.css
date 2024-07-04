@@ -6905,14 +6905,11 @@ h2 {
     color: white; }
 
 .application-section {
-  padding: 20px;
   text-align: left;
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh; }
+  align-items: center; }
   .application-section h1 {
     color: #6e0d10;
     font-size: 2rem;
