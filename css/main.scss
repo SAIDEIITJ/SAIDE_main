@@ -1125,7 +1125,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-	background-color: rgb(241, 241, 241);
+	// background-color: rgb(241, 241, 241);
 }
 
 .main-content {
@@ -1165,7 +1165,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 .share, .support {
 
-	background-color: white;
+	background-color: rgb(241, 241, 241);
     padding: 5px 30px;
     margin-bottom: 20px;
     text-align: center;
