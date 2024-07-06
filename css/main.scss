@@ -626,58 +626,46 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   .dropdown-content2 {
 	display: none;
 	position: absolute;
-	// background-color: #1ea8989e;
-	background-color: #950b0bed;  /* Matching the navbar color */
 	min-width: 280px;
+	padding: 5px;
 	text-align: left;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	border-radius: 5px; /* Rounded corners for a smoother look */
-	left: 66%;
-	margin-top: 10px;
+	background-color: #860f0ff0; 
+    min-width: 270px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 230px; /* Adjust the height as needed */
+    overflow-y: auto; 
+	left:0;
  }
-  
+ .centers{
+	left:-30px;
+ }
+ .Title{
+	left:-45px;
+
+ }
+ .labs{
+	left:-5px;
+	min-width: 300px;
+
+ }
+
   .dropdown2 {
 	padding: 10px;
 	width: auto;
+	position: relative;
+	display: inline-block;
   }
   
-  .dropdown-content2 a {
-	color: white;
-	padding: 12px 13px;
-	border-bottom: 1px solid white;
-	text-decoration: none;
-	border:0;
-	display: block;
-	text-transform: none;
-  }
-  
-  .dropdown-content2 a:hover {
-	background-color: #f01919e4;
-  }
   
   .dropdown2:hover .dropdown-content2 {
 	display: block;
   }
 
-  .coe-dropdown{
-	display: none;
-	background-color: #EDE0D4;
-	width: 101%;
-	margin-left: -2%;
-	padding: 10px;
-	border-radius: 10px;
-	border: 1px solid #ccc;
-
-	
-  }
 
   .coe-checkbox {
-	padding: 4px;
     display: flex;
-    align-items: center;
-	vertical-align: middle;
-    margin-bottom: 5px; /* Adjust spacing between items */
+	color: white;
 }
 
 .coe-checkbox input[type="checkbox"] {
@@ -687,7 +675,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 .coe-checkbox label {
     cursor: pointer;
 
-    padding-left: 28px; /* Space for custom checkbox */
+    padding-left: 35px; /* Space for custom checkbox */
     position: relative;
 }
 
@@ -696,7 +684,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     display: inline-block;
     width: 22px;
     height: 22px;
-    border: 2px solid #8b1313; /* Brown color */
+    border: 2px solid #dbdbdb; /* Brown color */
     border-radius: 50%; /* Circular shape */
     position: absolute;
     left: 0;
@@ -704,8 +692,8 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 }
 
 .coe-checkbox input[type="checkbox"]:checked + label:before {
-    background-color: #bd2f2f;
-	border: 2px solid #20B1A6;
+    background-color: #ea3838;
+	border: 2px solid #dddddd;
 
 }
 
@@ -713,7 +701,44 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     display: flex; /* Use flexbox layout */
     align-items: center; /* Align items vertically */
     margin-bottom: 20px;
-	margin-left: -20px;
+	margin-left: 70px;
+
+}
+
+.show {
+	display: block;
+}
+.dropbtn{
+	color: rgb(113, 17, 17);
+	height: 60px;
+	background-color: white;
+	border: 1px solid rgb(108, 29, 29);
+	text-transform: none;
+	font-size: 1em;
+	font-weight: bold;
+ }
+ .dropbtn:hover{
+	background-color: rgb(167, 115, 115);
+
+ }
+
+#peopleh3{
+	background-color: #019494;
+	color: white;
+	display: inline-block;
+	position: absolute;
+	padding: 7px 25px;
+	margin-top: -30px;
+	margin-left: -120px;
+}
+#filter-bg{
+	display: block;
+    background-color: #EDE0D4;
+	padding-left: 100px;
+	padding-right: 100px;
+	width: 120%;
+	margin-left: -120px;
+	height: 300px;
 }
 
 .search-container i {
@@ -801,7 +826,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 }
 .HOD-details #hod{
-	width: 100%;
+	width: 120%;
+	margin-left: -31px;
+	margin-top: -29px;
 	color: white;
 	background-color: rgb(113, 28, 28);
 	text-align: center;
@@ -809,16 +836,90 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 .member-card {
     flex: 0 0 calc(50% - 20px); /* Two cards per row, minus the gap */
-    // padding: 10px;
     border: 1px solid #ccc;
 	margin-left: 10px;
 	margin-bottom: 10px;
     border-radius: 10px;
+	min-height: 260px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #EDE0D4;
     overflow: hidden; /* Ensure content doesn't overflow */
     position: relative; /* Ensure position context for absolute positioning */
 }
+
+.flip-container {
+	perspective: 1000px;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 260px;
+	height: 200px;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+	top:10px;
+	right:40px;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	padding-top: 25px;
+
+}
+
+.selected-filters {
+    margin: 10px 0;
+	display: none;
+}
+
+.selected-filters div {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #7b1313;
+	color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.selected-filters div .remove-filter {
+    cursor: pointer;
+    margin-left: 5px;
+    color: rgb(13, 209, 150);
+    font-weight: bold;
+}
+
+
+
+
 .member-card_HOD {
     width: 55%; /* Two cards per row, minus the gap */
     // padding: 10px;
@@ -836,23 +937,10 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	display: flex;
 	flex-direction: row;
 }
-.learn-more-button {
-    display: flex;
-    padding: 2px 6px;
-	margin-left: 15px;
-
-
-    background-color: #8B0000;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+#website-link{
+	color:#005a5a;
 }
 
-.learn-more-button:hover {
-    background-color: #5d0000;
-}
 
 .member-info {
 	padding-top: 15px;
@@ -862,15 +950,18 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 }
 
 .member-img {
-    width: 100px; /* Adjust image size as needed */
-    height: 120px;
-    object-fit: cover;
+    width: 120px; /* Adjust image size as needed */
+    height: 140px;
+    // object-fit: cover;
     position: absolute;
-    top: 9px;
-    right: 9px;
+    top: 20px;
+    right: 80px;
     border: 3px solid #ffffff; /* White border to stand out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	z-index: 1000;
 }
+
 
 .member-details {
     flex: 1;
@@ -881,7 +972,8 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     margin-top: 0;
     margin-bottom: 5px;
 	text-transform: none;
-	font-size: 1.1em;
+	font-size: 1.15em;
+	font-weight: 700;
 }
 
 .member-details p {
@@ -889,6 +981,19 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     font-size: 0.9em;
     color: #555;
 }
+.back p{
+	margin: 5px 0;
+    font-size: 0.7em;
+	line-height: 18px;
+}
+.back p strong{
+	margin: 5px 0;
+    font-size: 0.9em;
+    color: #4d0e0e;
+	line-height: 18px;
+}
+
+
 
 .member-details .member-position {
     font-style: italic;
@@ -2654,7 +2759,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
+		// color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 	}
 
@@ -2847,7 +2952,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	label {
-		color: _palette(fg-bold);
+		// color: _palette(fg-bold);
 		display: block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
@@ -3529,7 +3634,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		// Basic
 
 			strong, b {
-				color: _palette($p, fg-bold);
+				// color: _palette($p, fg-bold);
 			}
 
 			h2, h3, h4, h5, h6 {
@@ -3569,7 +3674,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		// Form
 
 			label {
-				color: _palette($p, fg-bold);
+				// color: _palette($p, fg-bold);
 			}
 
 			input[type="text"],
@@ -4010,6 +4115,7 @@ ul #subbullet{
     background-size: cover;
     background-position: center;
 	background-repeat: no-repeat;
+	
     transition: background-image 1s ease-in-out;
     border: 5px solid #a14343; /* Optional border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
