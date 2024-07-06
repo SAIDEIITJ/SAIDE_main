@@ -15,7 +15,7 @@ link: HOME / RESEARCH
 <div class="search-box">
     <input type="text" id="searchBar" placeholder="Search for an article...">
 </div>
-<section class="paper-section"  id="papersSection">
+<section class="paper-section papers-grid"  id="papersSection" >
 
 </section>
 <div class="pagination" id="pagination">
@@ -47,7 +47,6 @@ function displayArticles(page) {
         articleItem.setAttribute('data-title', article.title);
         
         articleItem.innerHTML = `
-            <img src="images/paper.png" alt="Article Image">
             <div class="paper-content">
                 <h2 id = "titleh2"><a href="${article.link}" id = "paperlinks" target="_blank"> ${article.title}</a></h2>
                 <p><strong>Authors:</strong> ${article.author}</p>
