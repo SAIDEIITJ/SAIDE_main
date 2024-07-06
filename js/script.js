@@ -196,7 +196,10 @@ window.onclick = function(event) {
 }
 
 let scrollInterval = null;
-let scrollLength = 300; 
+let scrollEInterval = null;
+let scrollLength = 418; 
+let scrollELength = 260;
+
 
 function renderItems(container, items) {
     container.innerHTML = items.map(item => `
@@ -210,10 +213,21 @@ function renderItems(container, items) {
     `).join('');
 }
 
+function renderEItems(container, items) {
+    container.innerHTML = items.map(item => `
+        <div class="card Events" id="${item.id}" style="background-image: url(${item.img});">
+            ${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
+            <h1><a href="${item.link}" target="_blank" class="card-link">${item.title}</a></h1>
+            ${item.date ? '</div>' : ''}
+        </div>
+    `).join('');
+}
+
+
 function showNews() {
-    var button = document.querySelector(".dpdown1");
-    var newText = "News"; 
-    button.childNodes[0].textContent = newText + " ";
+    // var button = document.querySelector(".dpdown1");
+    // var newText = "News"; 
+    // button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("cardsContainer");
     renderItems(container, newsData); // Render all news items
@@ -222,15 +236,33 @@ function showNews() {
 }
 
 function showEvents() {
-    var button = document.querySelector(".dpdown1");
-    var newText = "Events"; 
-    button.childNodes[0].textContent = newText + " ";
+    // var button = document.querySelector(".dpdown1");
+    // var newText = "Events"; 
+    // button.childNodes[0].textContent = newText + " ";
 
-    const container = document.getElementById("cardsContainer");
-    renderItems(container, eventData); // Render all event items
-    scrollContainerToStart(); // Scroll container to the start
-    restartScrollInterval();
+    const container = document.getElementById("EcardsContainer");
+    renderEItems(container, eventData); // Render all event items
+    scrollEContainerToStart(); // Scroll container to the start
+    restartScrollEInterval();
 }
+
+function scrollUp() {
+    const container = document.getElementById("EcardsContainer");
+    container.scrollTo({
+        top: container.scrollTop - scrollELength, // Adjust scroll amount as needed
+        behavior: 'smooth' // Smooth scroll behavior
+    });
+}
+
+// Function to smoothly scroll the event container down
+function scrollDown() {
+    const container = document.getElementById("EcardsContainer");
+    container.scrollTo({
+        top: container.scrollTop + scrollELength, // Adjust scroll amount as needed
+        behavior: 'smooth' // Smooth scroll behavior
+    });
+}
+
 
 
 // Function to scroll the container to the left
@@ -257,6 +289,10 @@ function scrollContainerToStart() {
     const container = document.getElementById("cardsContainer");
     container.scrollLeft = 0;
 }
+function scrollEContainerToStart() {
+    const container = document.getElementById("EcardsContainer");
+    container.scrollTop = 0;
+}
 
 function restartScrollInterval() {
     // Clear previous interval if exists
@@ -266,6 +302,16 @@ function restartScrollInterval() {
     // Set new interval for scrolling every 4 seconds
     scrollInterval = setInterval(scrollRight, 4000); // Adjust timing as needed
 }
+
+function restartScrollEInterval() {
+    // Clear previous interval if exists
+    if (scrollEInterval) {
+        clearInterval(scrollEInterval);
+    }
+    // Set new interval for scrolling every 4 seconds
+    scrollEInterval = setInterval(scrollDown, 4000); // Adjust timing as needed
+}
+
 
 // Event listeners for scroll buttons
 $('#scrollLeftButton').click(function() {
@@ -277,7 +323,17 @@ $('#scrollRightButton').click(function() {
     scrollRight(); // Change to the previous background
 });
 
+$('#scrollUpButton').click(function() {
+    scrollUp(); // Change to the next background
+});
+
+// Event listener for previous button click
+$('#scrollDownButton').click(function() {
+    scrollDown(); // Change to the previous background
+});
+
 restartScrollInterval();
+
 
  
 
@@ -285,9 +341,9 @@ restartScrollInterval();
 document.addEventListener("DOMContentLoaded", () => {
     var deviceWidth = window.innerWidth;
     // Determine which scroll length to use based on device width
-    scrollLength = deviceWidth <= 768 ? 340 : 300;
+    // scrollLength = deviceWidth <= 768 ? 340 : 340;
     showNews();
-    
+    showEvents();
 });
 
 

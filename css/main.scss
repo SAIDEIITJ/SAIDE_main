@@ -2056,7 +2056,7 @@ figcaption {
 }
 
 
-
+//events and news coursel
 .header-row {
 	display: flex;
 	align-items: center;
@@ -2083,6 +2083,27 @@ figcaption {
 	cursor: pointer;
 }
 
+#line {
+	display: flex;
+	position: absolute;
+    width: 4px; /* Adjust the width as needed */
+    background-color: #860808; /* Brown color */
+    height: 200px; /* Full height *//* Adjust the margin to control spacing between the divs */
+}
+#line-container {
+	display: flex;
+	position: absolute;
+	left:56.7%;
+	margin-top: 80px;
+    width: 5px; /* Adjust the width as needed */
+/* Brown color */
+    height: 200px; /* Full height *//* Adjust the margin to control spacing between the divs */
+}
+@media (max-width: 768px) {
+	#line-container{
+		display: none;
+	}
+}
 
 #navigation {
 
@@ -2090,8 +2111,14 @@ figcaption {
 
     justify-content: center;
     width: 100%;
+}
 
- /* Adjust margin as needed */
+#eventNavigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: center;
+    margin-top: 10px;
 }
 
 .navigation-button {
@@ -2111,20 +2138,36 @@ figcaption {
 
 .cards-container {
 	display: flex;
-	flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
-	overflow-x:hidden; /* Enable horizontal scrolling */
-	// overflow-y: hidden; /* Hide vertical overflow */
+	flex-wrap: nowrap; 
+	overflow-x:auto; 
+	overflow-y: hidden; 
 	max-height: 400px; 
-	scroll-behavior: smooth; /* Smooth scrolling behavior */
-    -webkit-overflow-scrolling: touch; /* Adjust height as needed */
+	scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch;
 }
 
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.Ecards-container {
+    // display: flex;
+    flex-direction: column; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    max-height: 260px; 
+    scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch; 
+}
+.Ecards-container::-webkit-scrollbar {
+    display: none;
+}
 
 
 .card {
 
 	cursor: pointer;
-	flex: 1 0 31%; /* Four cards per row, adjust the gap as needed */
+	flex: 1 0 48%; /* Four cards per row, adjust the gap as needed */
 	margin: 10px;
 	background-color: #f0f0f0;
 	background-size: cover;
@@ -2162,6 +2205,12 @@ figcaption {
 		text-transform: none;/* Remove default margin */
 	}
 }
+
+.Events {
+    height: 250px !important; /* Ensure the height is same as .card */
+    flex: 100%;
+}
+
 .card:hover{
 	transform: scale(1.05);
 }
@@ -2181,7 +2230,6 @@ figcaption {
 .card-link:visited {
     color: inherit;
 	text-decoration: none;
-
 }
 
 .card:nth-child(6n+1) {
@@ -2258,9 +2306,6 @@ figcaption {
 	
 }
 
-
-
-
 .dropdown-content1 {
     display: none;
     position: absolute;
@@ -2318,8 +2363,6 @@ figcaption {
 		width: 100%;
 
 	}
-
-
 }
 
 //Navbar
@@ -4117,9 +4160,16 @@ ul #subbullet{
 	background-repeat: no-repeat;
 	
     transition: background-image 1s ease-in-out;
-    border: 5px solid #a14343; /* Optional border */
+    border: 5px solid #ffc0c0; /* Optional border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
     z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .rectangular-div {
+        width: 90%; /* Adjust width for medium screens */
+        height: 70vh; /* Adjust height for medium screens */
+    }
 }
 
 @media (max-width: 768px) {

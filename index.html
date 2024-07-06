@@ -14,16 +14,18 @@ title: Home
 					</div>
 
 					<section id="one" class="wrapper style1 special">
+						<div class="row">
+							<div class="col-md-7">
 								<div class="header-row">
-									<div class="title">News & Events</div>
-									<div class="button-group">
+									<div class="title">News </div>
+									<!-- <div class="button-group">
 										<button class="dpdown1" onclick="toggleDropdown()" id = "dpbtn">News <i class="fa-solid fa-caret-down"></i></button>
-										<div id="dropdownMenu" class="dropdown-content1">
+										 <div id="dropdownMenu" class="dropdown-content1">
 											<a href="#one" onclick="showNews()">News</a>
 											<a href="#one" onclick="showEvents()">Events</a>
 										</div>
-										<a href="latest.html"><button id="view-all">View All <i class="fa-solid fa-arrow-right"></i></button></a>
-									</div>
+										<a href="latest.html"><button id="view-all">View All <i class="fa-solid fa-arrow-right"></i></button></a> 
+									</div> -->
 								</div>
 				
 								<div id="cardsContainer" class="cards-container">
@@ -33,7 +35,24 @@ title: Home
 									<div id="scrollLeftButton" class="navigation-button">&#9664;</div>
 									<div id="scrollRightButton" class="navigation-button">&#9654;</div>
 								</div>
-								<br>
+							</div>
+							<div id="line-container"><div id="line"></div></div>
+							<div class="col-md-5">
+								<div class="header-row" >
+									<div class="title">Events</div>
+									
+								</div>
+								<div id="EcardsContainer" class="Ecards-container">
+									<!-- Event cards will be rendered here -->
+								</div>
+								<div id="eventNavigation">
+									<div id="scrollUpButton" class="navigation-button">&#9650;</div>
+									<div id="scrollDownButton" class="navigation-button">&#9660;</div>
+								</div>
+							</div>
+						</div>
+								
+					<br>
 					</section>
 
 					<script>
