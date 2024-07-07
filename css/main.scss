@@ -242,7 +242,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(255, 255, 255);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.321);
 	width: 80%;
 	max-width: 850px;
@@ -250,6 +250,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	border-radius: 5px;
 	color: #000000;
 	z-index: 100;
+	background-size: cover; /* Prevents the image from zooming in */
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   #circular-img {
@@ -264,6 +267,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
   .popup-content {
 	text-align: left;
+	
   }
 
   #bullets{
@@ -281,7 +285,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	padding-left: 10px;
 	text-align: left;
 	 font-size: 0.8em;
-	  background-color: #f8f7f7;
+	//   background-color: #f8f7f7;
 	  margin-left: 3px;
 	  border-radius: 10px;
 	  border:1px solid rgb(210, 210, 210);
@@ -290,7 +294,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   #hidden-content-2{
 
 	 font-size: 0.8em;
-	  background-color: #f8f7f7;
+	//   background-color: #f8f7f7;
 	  margin-left: 10px;
 	  width: 40%;
 	  border-radius: 10px;
@@ -304,7 +308,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	flex-direction: column;
 	margin-left: 5px;
 	font-size: 0.8em;
-	 background-color: #f8f7f7;
+	//  background-color: #f8f7f7;
 	 margin-top: 11px;
 	 border-radius: 10px;
 	 border:1px solid rgb(210, 210, 210);
@@ -579,7 +583,6 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 .paper-content h2 {
     margin-top: 0;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: large;
     text-decoration: underline;
