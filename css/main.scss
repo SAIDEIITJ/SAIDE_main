@@ -291,10 +291,10 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	  margin-left: 3px;
 	  border-radius: 10px;
 	  border:1px solid rgb(210, 210, 210);
-
+	font-weight: 600;
   }
   #hidden-content-2{
-
+	font-weight: 600;
 	 font-size: 0.8em;
 	//   background-color: #f8f7f7;
 	  margin-left: 10px;
@@ -314,7 +314,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	 margin-top: 11px;
 	 border-radius: 10px;
 	 border:1px solid rgb(210, 210, 210);
-
+	 font-weight: 600;
  }
   
 
@@ -550,9 +550,21 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 .papers-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding: 20px;
+}
+
+@media (min-width: 600px) {
+    .papers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .papers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .paper-item {
@@ -593,9 +605,8 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 .paper-content .date {
     margin-top: auto;
     font-weight: bold;
-	color: #000000;
+    color: #000000;
 }
-
 
 
 //directory
