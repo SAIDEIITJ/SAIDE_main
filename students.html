@@ -5,6 +5,11 @@ link: HOME / PEOPLE
 des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
 ---
 	
+<style>
+    .background-about{
+      background-image: url("images/Students.png");
+    }
+</style>
 
 <div class="search-container">
     <input type="text" id="search-bar" placeholder="Search by Research Area ...">
@@ -56,25 +61,27 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.filter-indicator').forEach(indicator => {
-        indicator.addEventListener('click', () => {
-            indicator.classList.toggle('checked');
-
-            const activeFilters = [];
-            document.querySelectorAll('.filter-indicator.checked').forEach(ind => {
-                activeFilters.push(ind.getAttribute('data-filter'));
+    indicator.addEventListener('click', () => {
+        const filter = indicator.getAttribute('data-filter');
+        
+        if (indicator.classList.contains('checked')) {
+            indicator.classList.remove('checked');
+            document.querySelectorAll('.member-card').forEach(member => {
+                member.style.display = 'block';
             });
-
+        } else {
+            document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
+            indicator.classList.add('checked');
             document.querySelectorAll('.member-card').forEach(member => {
                 const category = member.getAttribute('data-position');
-                const filtersToApply = activeFilters.length > 0 ? activeFilters : ['all'];
-
-                if (filtersToApply.includes('all') || filtersToApply.includes(category)) {
+                if (filter === 'all' || category === filter) {
                     member.style.display = 'block';
                 } else {
                     member.style.display = 'none';
                 }
             });
-        });
+        }
+    });
     });
 });
 

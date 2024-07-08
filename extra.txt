@@ -479,3 +479,30 @@ about
       </div>
     </div>
   </div>
+
+
+
+  filter option :
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.filter-indicator').forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            indicator.classList.toggle('checked');
+
+            const activeFilters = [];
+            document.querySelectorAll('.filter-indicator.checked').forEach(ind => {
+                activeFilters.push(ind.getAttribute('data-filter'));
+            });
+
+            document.querySelectorAll('.member-card').forEach(member => {
+                const category = member.getAttribute('data-position');
+                const filtersToApply = activeFilters.length > 0 ? activeFilters : ['all'];
+
+                if (filtersToApply.includes('all') || filtersToApply.includes(category)) {
+                    member.style.display = 'block';
+                } else {
+                    member.style.display = 'none';
+                }
+            });
+        });
+    });
+});

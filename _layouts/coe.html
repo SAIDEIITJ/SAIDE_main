@@ -5,14 +5,7 @@ layout: subdefault
 <article id="main">
   <div class="topcontent">
     <header style="height: 148px; margin-top: 70px;">
-      <h3 id = "topcontent-p">{{page.link}}</h3>
-      <!-- <h2 id = "topcontent-h2">{{ page.title }}</h2> -->
-      <!-- <p id = "topcontent-para" style="z-index: -1;">{{page.des}}</p> -->
-
     </header>
-    <!-- <div class="button-bar">
-      <a href="coes.html" class="tab-button" data-image="#">About</a>
-    </div> -->
   </div>
 
   <section class="wrapper style5" style="z-index: -1;">
@@ -21,29 +14,3 @@ layout: subdefault
     </div>
   </section>
 </article>
-
-<script>
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.tab-button');
-    const backgroundAbout = document.getElementById('backgroundAbout');
-
-    // Check if there's a stored image URL
-    const storedImage = localStorage.getItem('selectedImage');
-    if (storedImage) {
-      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        // e.preventDefault();
-        const imageName = this.getAttribute('data-image');
-        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
-
-        // Store the selected image URL
-        localStorage.setItem('selectedImage', imageName);
-      });
-    });
-  });
-
-</script>

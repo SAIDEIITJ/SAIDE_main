@@ -5,17 +5,13 @@ layout: subdefault
 <article id="main">
   <div class="topcontent">
     <header style="height: 148px; margin-top: 70px;">
-      <h3 id = "topcontent-p">{{page.link}}</h3>
-      <!-- <h2 id = "topcontent-h2">{{ page.title }}</h2> -->
-      <!-- <p id = "topcontent-para" style="z-index: -1;">{{page.des}}</p> -->
-
     </header>
     <div class="button-bar">
-      <a href="faculity.html" class="tab-button"  data-image="Faculty.png">Faculty</a>
-      <a href="students.html" class="tab-button"  data-image="Students.png">Students</a>
-      <a href="alumini.html" class="tab-button"   data-image="Alumini.png">Alumini</a>
-      <a href="staff.html" class="tab-button"     data-image="Staff.png">Staff</a>
-      <a href="directory.html" class="tab-button"   data-image="Directory.png">Directory</a>
+      <a href="faculity.html" class="tab-button">Faculty</a>
+      <a href="students.html" class="tab-button">Students</a>
+      <a href="alumini.html" class="tab-button">Alumini</a>
+      <a href="staff.html" class="tab-button">Staff</a>
+      <a href="directory.html" class="tab-button">Directory</a>
     </div>
   </div>
 
@@ -25,28 +21,3 @@ layout: subdefault
     </div>
   </section>
 </article>
-
-<script>
-  // Retrieve saved color from localStorage before the page loads
-  document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.tab-button');
-    const backgroundAbout = document.getElementById('backgroundAbout');
-
-    // Check if there's a stored image URL
-    const storedImage = localStorage.getItem('selectedImage');
-    if (storedImage) {
-      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        // e.preventDefault();
-        const imageName = this.getAttribute('data-image');
-        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
-
-        // Store the selected image URL
-        localStorage.setItem('selectedImage', imageName);
-      });
-    });
-  });
-</script>

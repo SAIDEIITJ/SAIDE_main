@@ -5,9 +5,12 @@ link: HOME / PEOPLE
 des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
 ---
 	
-<!-- <div class="search-container">
-	<i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i><input type="text" id="search-bar" placeholder="Search by name ...">
-</div> -->
+<style>
+    .background-about{
+      background-image: url("images/Staff.png");
+    }
+</style>
+
 <div class="filter-indicators" style="margin-left: 15%;">
     <div class="filter-indicator"  data-filter="Scientific Staff">
         <div class="checkbox"></div>
@@ -56,25 +59,27 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.filter-indicator').forEach(indicator => {
-        indicator.addEventListener('click', () => {
-            indicator.classList.toggle('checked');
-
-            const activeFilters = [];
-            document.querySelectorAll('.filter-indicator.checked').forEach(ind => {
-                activeFilters.push(ind.getAttribute('data-filter'));
+    indicator.addEventListener('click', () => {
+        const filter = indicator.getAttribute('data-filter');
+        
+        if (indicator.classList.contains('checked')) {
+            indicator.classList.remove('checked');
+            document.querySelectorAll('.member-card').forEach(member => {
+                member.style.display = 'block';
             });
-
+        } else {
+            document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
+            indicator.classList.add('checked');
             document.querySelectorAll('.member-card').forEach(member => {
                 const category = member.getAttribute('data-position');
-                const filtersToApply = activeFilters.length > 0 ? activeFilters : ['all'];
-
-                if (filtersToApply.includes('all') || filtersToApply.includes(category)) {
+                if (filter === 'all' || category === filter) {
                     member.style.display = 'block';
                 } else {
                     member.style.display = 'none';
                 }
             });
-        });
+        }
+    });
     });
 });
 </script>

@@ -5,17 +5,13 @@ layout: subdefault
 <article id="main" >
   <div class="topcontent" >
     <header style="height: 148px; margin-top: 70px;">
-      <h3 id = "topcontent-p">{{page.link}}</h3>
-      <!-- <h2 id = "topcontent-h2">{{ page.title }}</h2> -->
-      <!-- <p id = "topcontent-para" style="z-index: -1;">{{page.des}}</p> -->
-
     </header>
     <div class="button-bar">
-      <a href="reserach.html" class="tab-button" data-image="Research.png">Research</a>
-      <a href="theme.html" class="tab-button" data-image="Themes.png">Themes</a>
-      <a href="projects.html" class="tab-button" data-image="Projects.png">Projects</a>
-      <a href="papers.html" class="tab-button" data-image="Publications.png">Publications</a>
-      <a href="labs.html" class="tab-button" data-image="Labs.png">Facilities & Labs</a>
+      <a href="reserach.html" class="tab-button">Research</a>
+      <a href="theme.html" class="tab-button">Themes</a>
+      <a href="projects.html" class="tab-button">Projects</a>
+      <a href="papers.html" class="tab-button">Publications</a>
+      <a href="labs.html" class="tab-button">Facilities & Labs</a>
     </div>
   </div>
 
@@ -25,29 +21,3 @@ layout: subdefault
     </div>
   </section>
 </article>
-
-<script>
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.tab-button');
-    const backgroundAbout = document.getElementById('backgroundAbout');
-
-    // Check if there's a stored image URL
-    const storedImage = localStorage.getItem('selectedImage');
-    if (storedImage) {
-      backgroundAbout.style.backgroundImage = `url(images/${storedImage})`;
-    }
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        // e.preventDefault();
-        const imageName = this.getAttribute('data-image');
-        backgroundAbout.style.backgroundImage = `url(images/${imageName})`;
-
-        // Store the selected image URL
-        localStorage.setItem('selectedImage', imageName);
-      });
-    });
-  });
-
-</script>
