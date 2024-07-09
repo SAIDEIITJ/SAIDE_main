@@ -1,0 +1,82 @@
+---
+layout: landing
+title: Home
+permalink: /
+---
+				<!-- Banner -->
+					<div class="background">
+					</div>
+				
+					<div class="rectangular-div">   
+					</div>
+					<div class="indicators-bg">
+						<div id="prevBtn" class="indicators-bg-btn"><i class="fa-solid fa-chevron-left"></i></div>
+						<div id="nextBtn" class="indicators-bg-btn"><i class="fa-solid fa-chevron-right"></i></div>
+					</div>
+
+					<section id="one" class="wrapper style1 special">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="header-row">
+									<div class="title">News </div>
+									<!-- <div class="button-group">
+										<button class="dpdown1" onclick="toggleDropdown()" id = "dpbtn">News <i class="fa-solid fa-caret-down"></i></button>
+										 <div id="dropdownMenu" class="dropdown-content1">
+											<a href="#one" onclick="showNews()">News</a>
+											<a href="#one" onclick="showEvents()">Events</a>
+										</div>
+										<a href="latest.html"><button id="view-all">View All <i class="fa-solid fa-arrow-right"></i></button></a> 
+									</div> -->
+								</div>
+				
+								<div id="cardsContainer" class="cards-container">
+							
+								</div>
+								<div id="navigation">
+									<div id="scrollLeftButton" class="navigation-button">&#9664;</div>
+									<div id="scrollRightButton" class="navigation-button">&#9654;</div>
+								</div>
+							</div>
+							<div id="line-container"><div id="line"></div></div>
+							<div class="col-md-5">
+								<div class="header-row" >
+									<div class="title">Events</div>
+									
+								</div>
+								<div id="EcardsContainer" class="Ecards-container">
+									<!-- Event cards will be rendered here -->
+								</div>
+								<div id="eventNavigation">
+									<div id="scrollUpButton" class="navigation-button">&#9650;</div>
+									<div id="scrollDownButton" class="navigation-button">&#9660;</div>
+								</div>
+							</div>
+						</div>
+								
+					<br>
+					</section>
+
+					<script>
+					var newsData = [
+					{% assign news_event_data = site.data.news_events %}
+					{% for mem in news_event_data %}
+						{% if mem.news == 1 %}
+						{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}", link:"{{mem.link}}" }{% unless forloop.last %},{% endunless %}
+						{% endif %}
+					{% endfor %}
+				];
+
+						var eventData = [
+							{% assign news_event_data = site.data.news_events %}
+							{% for mem in news_event_data %}
+								{% if mem.event == 1 %}
+								{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}", link:"{{mem.link}}" }{% unless forloop.last %},{% endunless %}
+								{% endif %}
+							{% endfor %}
+						];
+					</script>
+					<script src="{{ site.baseurl }}/js/script.js">
+					</script>
+
+
+

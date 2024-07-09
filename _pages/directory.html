@@ -1,0 +1,158 @@
+---
+layout: people
+title: Directory
+link: HOME / PEOPLE
+des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla ipsum, et pharetra libero rh.
+permalink: /directory/
+---
+<style>
+    .background-about{
+      background-image: url("{{ site.baseurl }}/images/Directory.png");
+    }
+</style>	
+
+<div class="search-container">
+    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #17877a;"></i>
+    <input type="text" id="search-bar" placeholder="Search by name ..." oninput="searchEntries()">
+</div>
+
+<br>
+<div class="alphabet-links">
+    <a href="#" class="alphabet-link">A</a>
+    <a href="#" class="alphabet-link">B</a>
+    <a href="#" class="alphabet-link">C</a>
+    <a href="#" class="alphabet-link">D</a>
+    <a href="#" class="alphabet-link">E</a>
+    <a href="#" class="alphabet-link">F</a>
+    <a href="#" class="alphabet-link">G</a>
+    <a href="#" class="alphabet-link">H</a>
+    <a href="#" class="alphabet-link">I</a>
+    <a href="#" class="alphabet-link">J</a>
+    <a href="#" class="alphabet-link">K</a>
+    <a href="#" class="alphabet-link">L</a>
+    <a href="#" class="alphabet-link">M</a>
+    <a href="#" class="alphabet-link">N</a>
+    <a href="#" class="alphabet-link">O</a>
+    <a href="#" class="alphabet-link">P</a>
+    <a href="#" class="alphabet-link">Q</a>
+    <a href="#" class="alphabet-link">R</a>
+    <a href="#" class="alphabet-link">S</a>
+    <a href="#" class="alphabet-link">T</a>
+    <a href="#" class="alphabet-link">U</a>
+    <a href="#" class="alphabet-link">V</a>
+    <a href="#" class="alphabet-link">W</a>
+    <a href="#" class="alphabet-link">X</a>
+    <a href="#" class="alphabet-link">Y</a>
+    <a href="#" class="alphabet-link">Z</a>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<table id="entry-table" style="background-color: #EDE0D4;">
+    <thead>
+        <tr style="background-color: rgb(114, 30, 30);">
+            <th style="color: rgb(255, 255, 255);">Name</th>
+            <th style="color: rgb(255, 255, 255);">Phone</th>
+            <th style="color: rgb(255, 255, 255);">Email</th>
+            <th style="color: rgb(255, 255, 255);">Office Number</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div class="pagination-container">
+    <ul id="pagination" class="pagination"></ul>
+</div>
+
+<script>
+     var teamMembers = [
+    {% assign team_data = site.data.team %}
+
+    {% for member in team_data %}
+        {% if member.display == 1 %}
+        { name:"{{ member.name }}", phone:"{{ member.phone }}", email:"{{member.email}}", office:"{{member.office_number}}" }{% unless forloop.last %},{% endunless %}
+        {% endif %}
+    {% endfor %}
+    ];
+
+
+function searchEntries() {
+    const searchText = document.getElementById("search-bar").value.trim().toUpperCase();
+    const filteredEntries = teamMembers.filter(entry => {
+        return entry.name.toUpperCase().includes(searchText);
+    });
+    renderEntries(filteredEntries);
+}
+// Function to render entries in the table
+function renderEntries(entries, page = 1, perPage = 12) {
+    const table = document.getElementById("entry-table");
+    const tbody = table.querySelector("tbody");
+    tbody.innerHTML = ""; // Clear only the tbody
+
+    const startIndex = (page - 1) * perPage;
+    const endIndex = startIndex + perPage;
+    const paginatedEntries = entries.slice(startIndex, endIndex);
+
+    paginatedEntries.forEach(entry => {
+        const row = tbody.insertRow();
+        row.innerHTML = `
+            <td>${entry.name}</td>
+            <td>${entry.phone}</td>
+            <td>${entry.email}</td>
+            <td>${entry.office}</td>
+
+        `;
+    });
+
+    renderPagination(entries.length, page, perPage);
+}
+
+function renderPagination(totalEntries, currentPage, perPage) {
+    const totalPages = Math.ceil(totalEntries / perPage);
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = "#";
+        link.textContent = i;
+        if (i === currentPage) {
+            link.classList.add("active");
+        }
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            renderEntries(teamMembers, i, perPage);
+        });
+        li.appendChild(link);
+        pagination.appendChild(li);
+    }
+}
+
+// Filter entries based on selected alphabet
+function filterEntriesByAlphabet(alphabet) {
+    const filteredEntries = teamMembers.filter(entry => entry.name.charAt(0).toUpperCase() === alphabet);
+    renderEntries(filteredEntries);
+}
+
+// Add event listeners to alphabet links
+const alphabetLinks = document.querySelectorAll(".alphabet-link");
+alphabetLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const selectedAlphabet = this.textContent;
+        filterEntriesByAlphabet(selectedAlphabet);
+    });
+});
+
+// Initially render all entries
+renderEntries(teamMembers, 1, 12);
+</script>
+
+

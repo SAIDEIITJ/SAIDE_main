@@ -1,0 +1,80 @@
+---
+layout: joinUs
+title: Admissions
+link: HOME / JOIN US
+des: Join SAIDE for a transformative learning experience in complex systems science.
+permalink: /admissions/
+---
+
+<style>
+.background-about{
+  background-image: url("{{ site.baseurl }}/images/Admissions.png");
+}
+</style>
+
+<div id="parent-box">
+<div class="general-section">
+<h1 style="text-transform: none;">Admissions at School of Artificial Intelligence & Data Science</h1>
+<div class="row">
+<div class="col-md-9">
+<p>IIT Jodhpur invites applications for admission to various programs in specific disciplines and interdisciplinary areas. </p>
+</div>
+</div>
+</div>
+<div class="application-section">
+<table>
+<thead>
+<tr>
+<th>Programs</th>
+<th>Curriculum</th>
+<th>Admissions Start</th>
+<th>Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+
+</tr>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+
+</tr>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+
+</tr>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+
+</tr>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+
+</tr>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+<td>Cell 4</td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
