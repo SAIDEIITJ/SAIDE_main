@@ -16,6 +16,7 @@ background-image: url("{{ site.baseurl }}/images/Research.png");
 <div class="main-content">
 <h1>Research at School Of Artificial Intelligence and Data Science</h1>
 <p style="text-align: justify;">The School of Artificial Intelligence and Data Science focuses on three key research areas. Foundational Research aims to advance core AI and Data Science technologies through interdisciplinary collaboration and publications. Application-Directed Research integrates AI into sectors like basic sciences, biological sciences, environmental sciences to tackle specific challenges. Locally Relevant Research applies AI and Data Science to uplift communities in Rajasthan by enhancing agriculture, exploiting solar energy, and preserving local art and culture.</p>
+<br>
 <h2 id="edusubtitle">About Our Research</h2>
 <ul>
 <li style="text-align: justify;"><b>Foundational Research:</b> Breakthroughs in AI and Data Science are key to controlling and shaping the future technological landscape. Without continued progress in core AI and Data Science Technologies transformative potential of AI will not be realised. The school brings together faculty from diverse disciplines with shared interest in fundamental challenges in AI and Data Science to make significant contributions in next 5 years through publications in top ranking AI and Data Science conferences and journals.</li><br>
@@ -26,7 +27,7 @@ background-image: url("{{ site.baseurl }}/images/Research.png");
 </div>
 <div class="side-content">
 <div class="share">
-<h3 id="shareh3"> <i class="fa-regular fa-newspaper"></i> Latest </h3>
+<h3 id="shareh3"> <i class="fa-regular fa-newspaper"></i> LATEST </h3>
 <p style="text-align: justify;">Stay updated on the latest news, events, and developments at SAIDE by following us on social media:</p>
 <div class="social-icons">
 <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -35,7 +36,7 @@ background-image: url("{{ site.baseurl }}/images/Research.png");
 </div>
 </div>
 <div class="support">
-<h3 id="shareh3"> <i class="fa-regular fa-address-card"></i> Contact Us</h3>
+<h3 id="shareh3"> <i class="fa-regular fa-address-card"></i> CONTACT US</h3>
 <p style="text-align: justify;">Thank you for your interest. We're here to assist you with any inquiries.</p>
 <a href="contact.html" id="donate-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
 </div>

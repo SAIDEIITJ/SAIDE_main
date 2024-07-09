@@ -978,6 +978,10 @@ flex-direction: row;
     position: relative;
 	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure position context for absolute positioning */
 }
+.studentCard{
+	margin-left: 28px;
+	flex: 0 0 calc(48% - 10px); 
+}
 
 .member-info {
 	padding-top: 15px;
@@ -999,6 +1003,11 @@ flex-direction: row;
 	z-index: 1;
 }
 
+.std{
+	left:0px;
+
+}
+
 
 
 .member-details {
@@ -1010,6 +1019,10 @@ flex-direction: row;
     justify-content: center;
 }
 
+.studentdetails{
+	width: 80%;
+
+}
 #fac-title{
 	color: $textcolor;
     margin-top: 0;
@@ -1339,11 +1352,11 @@ flex-direction: row;
 
 .share, .support {
 
-	background-color: rgb(241, 241, 241);
+	background-color: rgb(246, 246, 246);
     padding: 5px 30px;
     margin-bottom: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #shareh3{

@@ -17,7 +17,7 @@ background-image: url("{{ site.baseurl }}/images/CoE.png");
 <h1>What Are Centres of Excellence?</h1>
 
 <p style="text-align: justify;">Centres of Excellence at SAIDE are dedicated hubs of transdisciplinary collaboration, focusing on specific areas of research and education. These centres provide a unique and distinguished capability to conduct high-quality fundamental and translational research, addressing pressing challenges and opportunities in today's world.</p>
-
+<br>
 <h2 id="subheading">Elaborating on Our Centres of Excellence</h2>
 <ul>
 <li style="text-align: justify;"><a href="https://cbsaiitj.wordpress.com/" target="_blank" id="links">Brain Science and Applications:</a> This CoE is at the forefront of exploring the science of intelligence, brain-machine interface, assistive technologies, and the application of AI and data science in understanding brain diseases and injuries. Through interdisciplinary research and cutting-edge technologies, we aim to unlock new insights into the complexities of the human brain.</li>

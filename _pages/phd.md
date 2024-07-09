@@ -52,8 +52,7 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 </ul>
 <h2 id="subheading">Curriculum</h2>
 <p style="text-align: justify;">The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.</p>
-
-<div>
+<br>
 <h2 id="subheading">Fellowships</h2>
 <div class="msgrid-container">
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
