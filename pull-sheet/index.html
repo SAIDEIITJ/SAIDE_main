@@ -60,6 +60,13 @@ title: Update faculity
             "Graphic":"graphic",
             "Content":"content",
             "Link":"link",
+            "Phd?":"phd",
+            "Ms?":"ms",
+            "Mtech?":"mtech",
+            "Btech?":"btech",
+            "ProfessionalP?":"professionalP",
+            "Visibility?":"visibility",
+
         },
         publications:{
             "Id":'id',
@@ -123,6 +130,12 @@ title: Update faculity
                 if ( header == "graphic" ) {return getGDriveDlURL(value);}
                 if ( header == "news") {return parseInt(value);}
                 if ( header == "event") {return parseInt(value);}
+                if ( header == "phd") {return parseInt(value);}
+                if ( header == "ms") {return parseInt(value);}
+                if ( header == "mtech") {return parseInt(value);}
+                if ( header == "btech") {return parseInt(value);}
+                if ( header == "professionalP") {return parseInt(value);}
+                if ( header == "visibility") {return parseInt(value);}
                 return value;
             }
 
