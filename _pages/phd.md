@@ -24,8 +24,15 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
 <ul class="side-news">
-<a href="https://aide.iitj.ac.in/images/pdf/phd-page/Advertisement-PhD-Rolling-Revised_24_3_2021.pdf" target="_blank" id="links"><li>Rolling Advertisement for Admission to PhD Program</li></a>
-<a href="https://aide.iitj.ac.in/images/new-header/Poster/saide_spring_2024_project_offerings.pdf?_t=1711210652" target="_blank" id="links"><li>Indicative Projects</li></a>
+
+{% assign news_event_data = site.data.news_events %}
+{% for mem in news_event_data %}
+{% if mem.phd == 1 and mem.visibility == 1 %}
+						
+<a href="{{mem.link}}" target="_blank" id="links"><li>{{ mem.title }}</li></a>
+{% endif %}
+{% endfor %}
+
 </ul>
 <br>
 <p style="text-align: left; color: #23674ce6; font-size:0.9em ;"><b>PhD Coordinator -</b> Dr. Ranju Mohan</p>

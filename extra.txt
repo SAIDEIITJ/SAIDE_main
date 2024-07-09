@@ -506,3 +506,57 @@ about
         });
     });
 });
+
+
+
+<div class="HOD-details">
+    <h2 id="hod">Head of School</h2>
+    {% assign sorted_members = site.data.team | sort: "year" %}
+    {% for member in sorted_members %}
+        {% if member.display == 1 and member.faculty == 1  and member.position == 'Professor (Head of School)'%}
+        <div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{ member.bio1 }}" data-coe="{{ member.affiliation }}" data-title = "{{member.position}}">
+            <div class="member-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="member-details">
+                            <h4 id="fac-title">{{ member.name }}</h4>
+                            <p class="member-position">{{ member.position }}</p>
+            
+                            <p><strong><i class="fa-solid fa-envelope"></i> </strong> {{ member.email }}</p>
+                            <p><strong><i class="fa-solid fa-phone"></i></strong>  {{ member.phone }}</p>
+                        
+                            <div class="website">
+                                <a href="{{ member.website }}" target="_blank" style="border: 0;"><p id= "website-link"><i class="fa-regular fa-hand-point-right"></i> Personal Website</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="{{ member.image }}" class="member-img" alt="{{ member.name }}" />
+                                    <!-- front content -->
+                                </div>
+                                <div class="back">
+                                    {% if member.subfaculty == "Core Faculty" %}
+                                    <p><strong>Center:</strong> {{ member.affiliation }}</p>
+                                    <p><strong>Office Number:</i></strong> {{ member.office_phone }}</p>
+                        
+                                    {%  else %}
+                                    <p><strong>Department:</strong> {{ member.affiliation }}</p>
+                                    {% endif %}
+            
+                                    {% if member.bio1 != "" %}
+                                        <p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>

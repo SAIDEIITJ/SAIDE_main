@@ -648,7 +648,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	background-color: #860f0ff0; 
     min-width: 270px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
     max-height: 230px; /* Adjust the height as needed */
     overflow-y: auto; 
 	left:0;
@@ -663,11 +663,14 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
  .labs{
 	left:-5px;
 	min-width: 300px;
+ }
+ .Type{
+	left:-40px;
 
  }
 
   .dropdown2 {
-	padding: 10px;
+	padding: 5px;
 	width: auto;
 	position: relative;
 	display: inline-block;
@@ -745,24 +748,40 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	position: absolute;
 	padding: 7px 25px;
 	margin-top: -30px;
-	margin-left: -120px;
+	margin-left: -80px;
 }
 #filter-bg{
 	display: block;
-    background-color: #EDE0D4;
-	padding-left: 100px;
+    background-color: #ffffff;
+	padding-left: 40px;
 	padding-right: 100px;
 	width: 120%;
-	margin-left: -120px;
-	height: 300px;
+	margin-left: -90px;
+	height: auto;
 }
 
 .search-container i {
     margin-right: 5px; 
 }
 
+
+.bar-box{
+display: flex;
+flex-direction: row;
+
+}
+.research-btn{
+	color: rgb(0, 0, 0);
+
+	background-color: #EFEFEF;
+	border: 1px solid #949494;
+
+	text-transform: none;
+	font-size: 0.9em;
+ }
+
 #search-bar {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     font-size: 1em;
 	background-color: #EFEFEF;
@@ -833,83 +852,72 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 /* Adjust the gap between cards */
 }
-.HOD-details{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+// .HOD-details{
+// 	width: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
 
-}
-.HOD-details #hod{
-	width: 120%;
-	margin-left: -31px;
-	margin-top: -29px;
-	color: white;
-	background-color: rgb(113, 28, 28);
-	text-align: center;
-}
+// }
+// .HOD-details #hod{
+// 	width: 120%;
+// 	margin-left: -31px;
+// 	margin-top: -29px;
+// 	color: white;
+// 	background-color: rgb(113, 28, 28);
+// 	text-align: center;
+// }
 
-.member-card {
-    flex: 0 0 calc(50% - 20px); /* Two cards per row, minus the gap */
-    border: 1px solid #ccc;
-	margin-left: 10px;
-	margin-bottom: 10px;
-    border-radius: 10px;
-	min-height: 260px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #EDE0D4;
-    overflow: hidden; /* Ensure content doesn't overflow */
-    position: relative; /* Ensure position context for absolute positioning */
-}
 
-.flip-container {
-	perspective: 1000px;
 
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+// .flip-container {
+// 	perspective: 1000px;
 
-.flip-container, .front, .back {
-	width: 260px;
-	height: 200px;
+// }
+// 	/* flip the pane when hovered */
+// 	.flip-container:hover .flipper, .flip-container.hover .flipper {
+// 		transform: rotateY(180deg);
+// 	}
 
-}
+// .flip-container, .front, .back {
+// 	width: 260px;
+// 	height: 200px;
 
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
+// }
 
-	position: relative;
-	top:10px;
-	right:40px;
-}
+// /* flip speed goes here */
+// .flipper {
+// 	transition: 0.6s;
+// 	transform-style: preserve-3d;
 
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
+// 	position: relative;
+// 	top:10px;
+// 	right:40px;
+// }
 
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+// /* hide back of pane during swap */
+// .front, .back {
+// 	backface-visibility: hidden;
 
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// }
 
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-	padding-top: 25px;
+// /* front pane, placed above back */
+// .front {
+// 	z-index: 2;
+// 	/* for firefox 31 */
+// 	transform: rotateY(0deg);
+// }
 
-}
+// /* back, initially hidden pane */
+// .back {
+// 	transform: rotateY(180deg);
+// 	padding-top: 25px;
+
+// }
 
 .selected-filters {
     margin: 10px 0;
@@ -936,18 +944,18 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 
 
-.member-card_HOD {
-    width: 55%; /* Two cards per row, minus the gap */
-    // padding: 10px;
-    border: 1px solid #ccc;
-	margin-left: 10px;
-	margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #EDE0D4;
-    overflow: hidden; /* Ensure content doesn't overflow */
-    position: relative; /* Ensure position context for absolute positioning */
-}
+// .member-card_HOD {
+//     width: 30%; /* Two cards per row, minus the gap */
+//     // padding: 10px;
+//     border: 1px solid #ccc;
+// 	margin-left: 10px;
+// 	margin-bottom: 10px;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     background-color: #EDE0D4;
+//     overflow: hidden; /* Ensure content doesn't overflow */
+//     position: relative; /* Ensure position context for absolute positioning */
+// }
 
 .website{
 	display: flex;
@@ -955,32 +963,51 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 }
 #website-link{
 	color:#005a5a;
+	font-size: 0.9em;
 }
 
+.member-card {
+    flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
+    border: 1px solid #ccc;
+	margin-left: 84px;
+	margin-bottom: 10px;
+	min-height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #EDE0D4;
+    overflow:visible; /* Ensure content doesn't overflow */
+    position: relative;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure position context for absolute positioning */
+}
 
 .member-info {
 	padding-top: 15px;
+	padding-right: 10px;
     display: flex;
     flex-direction: column; 
 	padding-bottom: 15px;/* Stack image on top of details */
 }
 
 .member-img {
-    width: 120px; /* Adjust image size as needed */
-    height: 140px;
-    // object-fit: cover;
-    position: absolute;
-    top: 20px;
-    right: 80px;
-    border: 3px solid #ffffff; /* White border to stand out */
+    width: 140px; /* Adjust image size as needed */
+    height: 160px;
+	position: relative;
+    top: 10px;
+    left: -100px;
+    border: 3px solid #ffe9e9; /* White border to stand out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	z-index: 1000;
+	z-index: 1;
 }
 
 
+
 .member-details {
-    flex: 1;
+	padding-top: 10px;
+
+    // flex: 1;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #fac-title{
@@ -997,17 +1024,43 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     font-size: 0.9em;
     color: #555;
 }
-.back p{
-	margin: 5px 0;
-    font-size: 0.7em;
-	line-height: 18px;
+.additional-info {
+	padding: 6px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
+	p{
+		padding-top: 5px;
+	}
 }
-.back p strong{
-	margin: 5px 0;
-    font-size: 0.9em;
-    color: #4d0e0e;
-	line-height: 18px;
+.member-bio{
+	font-style: italic;
+    color: #777;
 }
+
+.member-card:hover .additional-info {
+    max-height: 300px; /* Adjust based on content */
+    opacity: 1;
+}
+
+.member-card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase the size of the card */
+}
+
+
+
+// .back p{
+// 	margin: 5px 0;
+//     font-size: 0.7em;
+// 	line-height: 18px;
+// }
+// .back p strong{
+// 	margin: 5px 0;
+//     font-size: 0.9em;
+//     color: #4d0e0e;
+// 	line-height: 18px;
+// }
 
 
 
@@ -2826,9 +2879,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		font-style: italic;
 	}
 
-	p {
-		margin: 0 0 _size(element-margin) 0;
-	}
+	// p {
+	// 	margin: 0 0 _size(element-margin) 0;
+	// }
 
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
