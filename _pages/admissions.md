@@ -27,8 +27,8 @@ permalink: /admissions/
 <tr>
 <th>Programs</th>
 <th>Curriculum</th>
-<th>Admissions Start</th>
-<th>Deadline</th>
+<th>Application Deadline</th>
+<th>Application Link</th>
 </tr>
 </thead>
 <tbody>
