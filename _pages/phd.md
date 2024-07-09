@@ -45,6 +45,45 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 </ul>
 <h2 id="subheading">Curriculum</h2>
 <p style="text-align: justify;">The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.</p>
+
+<div>
+<h2 id="subheading">Fellowships</h2>
+<div class="msgrid-container">
+<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/nextGen.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-content" style="padding: 20px;">
+<h2 id="subheading" style="margin: 0;">
+<a href="#" target="_blank" style="border: 0;text-decoration: none;">MoE (Institute Fellowship)</a></h2>
+</div>
+</div>
+
+<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/compEco.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-content" style="padding: 20px;">
+<h2 id="subheading" style="margin: 0;">
+<a href="#" target="_blank" style="border: 0;text-decoration: none;">The Prime Minsiter Research Fellowship</a></h2>
+</div>
+</div>
+
+<!-- Card for Intelligent Infrastructure -->
+<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/intelliInfra.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-content" style="padding: 20px;">
+<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CII.pdf" target="_blank" style="border: 0;text-decoration: none;">Visvesvarya Phd Reserach Fellowship</a></h2>
+
+</div>
+</div>
+
+<!-- Card for Precision Health and Integrative Medicine -->
+<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/AIhealth.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-content" style="padding: 20px;">
+<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CAIPH.pdf" target="_blank" style="border: 0;text-decoration: none;">Project-Fellowships</a></h2>
+</div>
+</div>
+</div>
+<br>
+
 <h2 id="subheading">Supervisor Selection</h2>
 <p style="text-align: justify;">The students can choose to work with any core or affiliated faculty from the School of AIDE</p>
 </div>

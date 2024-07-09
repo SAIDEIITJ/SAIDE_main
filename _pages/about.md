@@ -11,7 +11,6 @@ permalink: /about/
 }
 </style>
 
-<br>
 <div>
 <div class="about-section">
 <h1>Vision</h1>
