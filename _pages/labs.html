@@ -32,7 +32,7 @@ background-image: url("{{ site.baseurl }}/images/Labs.png");
 </div>
 <section class="res-section">
 <div class="theme-container">
-<div class="theme">
+<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/theoritical.png')">
 <img src="{{ site.baseurl }}/images/Cognitive.svg" alt="Education">
 <div class="theme-content">
 <h3 id="h3title">
@@ -44,7 +44,7 @@ Cognitive Engineering Laboratory</h3>
 <h3 id ="hidden-title">
 More Information
 </h3>
-<p> <img src="{{ site.baseurl }}/images/Cognitive.svg" alt="" style="float: left;" id="circular-img"></p>
+<p></p>
 </div>
 <div class="row" id = hidden-content-3>
 <h3 id ="hidden-title">
@@ -77,7 +77,7 @@ Associated faculity members
 </div>
 </div>
 
-<div class="theme">
+<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/vision.png')">
 <img src="{{ site.baseurl }}/images/DeepLearning.svg" alt="Education">
 <div class="theme-content">
 <h3 id="h3title">
@@ -91,7 +91,7 @@ More Information
 </h3>
  
 
-<p><img src="{{ site.baseurl }}/images/DeepLearning.svg" alt="" style="float: left;" id="circular-img"></p>
+<p></p>
 </div>
 
 <div class="row" id = hidden-content-3>
@@ -121,7 +121,7 @@ Associated faculity members
 </div>
 </div>
 
-<div class="theme">
+<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/socialEng.png')">
 <img src="{{ site.baseurl }}/images/NLP.svg" alt="Education">
 <div class="theme-content">
 <h3 id="h3title">
@@ -135,7 +135,7 @@ More Information
 </h3>
 
 
-<p> <img src="{{ site.baseurl }}/images/NLP.svg" alt="" style="float: left;" id="circular-img"> </p>
+<p> </p>
 </div>
 
 <div class="row" id = hidden-content-3>
@@ -165,7 +165,7 @@ Associated faculity members
 </div>
 </div>
 
-<div class="theme">
+<div class="theme"data-bg-image="url('{{ site.baseurl }}/images/robot.png')">
 <img src="{{ site.baseurl }}/images/Robotics.svg" alt="Education">
 <div class="theme-content">
 <h3 id="h3title">
@@ -180,7 +180,7 @@ More Information
 </h3>
  
 
-<p> <img src="{{ site.baseurl }}/images/Robotics.svg" alt="" style="float: left;" id="circular-img"></p>
+<p></p>
 </div>
 
 <div class="row" id = hidden-content-3>
@@ -210,7 +210,7 @@ Associated faculity members
 </div>
 </div>
 
-<div class="theme">
+<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/economics.png')">
 <img src="{{ site.baseurl }}/images/Economics.svg" alt="Education">
 <div class="theme-content">
 <h3 id="h3title">
@@ -224,7 +224,7 @@ More Information
 </h3>
  
 
-<p> <img src="{{ site.baseurl }}/images/Economics.svg" alt="" style="float: left;" id="circular-img"></p>
+<p> </p>
 </div>
 
 <div class="row" id = hidden-content-3>
@@ -259,7 +259,7 @@ Associated faculity members
 </div>
 </div>
 
-<div class="theme">
+<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/brain.png')">
 <img src="{{ site.baseurl }}/images/Intelligence.svg" alt="Education">
 <div class="theme-content">
 <h3 id="h3title">
@@ -274,7 +274,7 @@ More Information
 </h3>
  
 
-<p><img src="{{ site.baseurl }}/images/Intelligence.svg" alt="" style="float: left;" id="circular-img"></p>
+<p></p>
 </div>
 
 <div class="row" id = hidden-content-3>
@@ -336,16 +336,18 @@ const popupContent = document.getElementById('popup-content');
 const popupDiv = document.getElementById('popup-div');
 
 // Function to open popup
-function openPopup(title, content, hiddenContent) {
+function openPopup(title, hiddenContent,bgImage) {
 popupTitle.textContent = title;
 // popupContent.textContent = content;
 popupDiv.innerHTML = hiddenContent.innerHTML;
 popup.style.display = 'block';
+popup.style.backgroundImage = bgImage;
 }
 
 // Function to close popup
 function closePopup() {
 popup.style.display = 'none';
+popup.style.backgroundImage = '';
 
 }
 
@@ -354,9 +356,9 @@ popup.style.display = 'none';
 themes.forEach(theme => {
 theme.addEventListener('click', () => {
 const title = theme.querySelector('#h3title').textContent;
-const content = theme.querySelector('p').textContent;
+const bgImage = theme.getAttribute('data-bg-image');
 const hiddenContent = theme.querySelector('.hidden');
-openPopup(title, content, hiddenContent);
+openPopup(title, hiddenContent,bgImage);
 });
 });
 
@@ -370,25 +372,5 @@ closePopup();
 }
 });
 
-
- document.addEventListener('DOMContentLoaded', () => {
-const faqItems = document.querySelectorAll('.ins-item h3');
-
-// Expand/Collapse FAQ answers
-faqItems.forEach(item => {
-item.addEventListener('click', () => {
-const answer = item.nextElementSibling;
-const icon = item.querySelector('.downicon1');
-
-if (answer.style.display === 'block') {
-answer.style.display = 'none';
-icon.textContent = '▼';
-} else {
-answer.style.display = 'block';
-icon.textContent = '▲';
-}
-});
-});
-});
 
 </script>

@@ -60,8 +60,8 @@ $(document).ready(function() {
         'Governance.png',
         'health.png',
         'iit.png',
-        'intellilnfra.png',
-
+        'intelliInfra.png',
+    
         'Labs.png',
         'loc1.jpeg',
         'loc2.jpeg',
