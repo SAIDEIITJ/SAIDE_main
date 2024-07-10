@@ -56,7 +56,7 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <h2 id="subheading">Fellowships</h2>
 <div class="msgrid-container">
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/nextGen.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/institute.png'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
 <h2 id="subheading" style="margin: 0;">
 <a href="#" target="_blank" style="border: 0;text-decoration: none;">MoE (Institute Fellowship)</a></h2>
@@ -64,27 +64,27 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 </div>
 
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/compEco.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/pmrf.png'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
 <h2 id="subheading" style="margin: 0;">
-<a href="#" target="_blank" style="border: 0;text-decoration: none;">The Prime Minsiter Research Fellowship</a></h2>
+<a href="#" target="_blank" style="border: 0;text-decoration: none;">PMRF (Prime Minsiter Research Fellowship)</a></h2>
 </div>
 </div>
 
 <!-- Card for Intelligent Infrastructure -->
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/intelliInfra.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/Visvesvaraya.png'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CII.pdf" target="_blank" style="border: 0;text-decoration: none;">Visvesvarya Phd Reserach Fellowship</a></h2>
+<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CII.pdf" target="_blank" style="border: 0;text-decoration: none;">Visvesvaraya PhD Scheme</a></h2>
 
 </div>
 </div>
 
 <!-- Card for Precision Health and Integrative Medicine -->
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/AIhealth.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/project.png'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CAIPH.pdf" target="_blank" style="border: 0;text-decoration: none;">Project-Fellowships</a></h2>
+<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CAIPH.pdf" target="_blank" style="border: 0;text-decoration: none;">Project Fellowships</a></h2>
 </div>
 </div>
 </div>
