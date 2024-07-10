@@ -32,66 +32,81 @@ $(document).ready(function() {
     const otherImages = [
         'iit.png',
         'Admissions.png',
+        'AIhealth.png',
         'Alumini.png',
-        'bg_text.png',
-        'bg2.jpg',
+        'brain.png',
         'BTech.png',
+        'btech1.png',
+        'btech2.png',
+
         'campus_master.png',
         'Campus.png',
         'CoE.png',
+        'compEco.png',
+
         'Contact.png',
         'Continuing.png',
         'digital.jpg',
         'Directory.png',
+        'economics.png',
+
         'Ecosystem.png',
+        'ethics.png',
+
         'Faculty.png',
         'FacultyPositions.png',
         'FAQs.png',
         'footer.png',
         'Governance.png',
-        'iitj.png',
-        'iitjc.png',
+        'health.png',
+        'iit.png',
+        'intellilnfra.png',
+
         'Labs.png',
         'loc1.jpeg',
         'loc2.jpeg',
         'loc3.png',
         'logo_bg.png',
-        'logo.png',
+        'Logo_IITJ.png',
+
         'Mission.png',
         'MSR.png',
         'MTech.png',
+        'mtech1.png',
+        'mtech2.png',
+        'mtech3.png',
+
+
         'news1.png',
         'news2.png',
         'news3.png',
         'news4.png',
         'news5.png',
+        'nextGen.png',
+
         'Outreach.png',
-        'paper.png',
         'permanent2.png',
         'PhD.png',
+        'postdoc.png',
+
         'ProjectPositions.png',
         'Projects.png',
         'Publications.png',
         'Research.png',
+        'robot.png',
+
+
         'SIP.png',
+        'smartCity.png',
+        'socialEng.png',
+
+
         'Staff.png',
         'Students.png',
         'Themes.png',
-        // '1.gif',
-        // '2.gif',
-        // '3.gif',
-        // '4.gif',
-        // '5.gif',
-        // '6.gif',
-        // '7.gif',
-        // '8.gif',
-        // '9.gif',
-        'Robotics.svg',
-        'NLP.svg',
-        'Intelligence.svg',
-        'Economics.svg',
-        'DeepLearning.svg',
-        'Cognitive.svg',
+        'theoritical.png',
+        'vision.png',
+
         // Add more image URLs as needed
     ];
 
