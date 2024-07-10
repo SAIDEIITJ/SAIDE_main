@@ -30,6 +30,7 @@ $(document).ready(function() {
 
    
     const otherImages = [
+        'iit.png',
         'Admissions.png',
         'Alumini.png',
         'bg_text.png',
