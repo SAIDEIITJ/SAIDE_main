@@ -71,7 +71,7 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 </div>
 </div>
 
-<!-- Card for Intelligent Infrastructure -->
+
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
 <div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/Visvesvaraya.png'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
@@ -80,7 +80,6 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 </div>
 </div>
 
-<!-- Card for Precision Health and Integrative Medicine -->
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
 <div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/project.png'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
