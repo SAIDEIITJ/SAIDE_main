@@ -23,15 +23,14 @@ background-image: url("{{ site.baseurl }}/images/BTech.png");
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+{% assign links_data = site.data.links %}
 <ul class="side-news">
-
-{% assign news_event_data = site.data.news_events %}
-{% for mem in news_event_data %}
-{% if mem.btech == 1 and mem.visibility == 1 %}
-<a href="{{mem.link}}" target="_blank" id="links"><li>{{ mem.title }}</li></a>
-{% endif %}
-{% endfor %}
-</ul> 
+  {% for mem in links_data %}
+    {% if mem.page == 'btech' %}
+      <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 <br>
 </div>
 </div>

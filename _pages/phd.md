@@ -23,16 +23,14 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+
+{% assign links_data = site.data.links %}
 <ul class="side-news">
-
-{% assign news_event_data = site.data.news_events %}
-{% for mem in news_event_data %}
-{% if mem.phd == 1 and mem.visibility == 1 %}
-						
-<a href="{{mem.link}}" target="_blank" id="links"><li>{{ mem.title }}</li></a>
-{% endif %}
-{% endfor %}
-
+  {% for mem in links_data %}
+    {% if mem.page == 'phd' %}
+      <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
+    {% endif %}
+  {% endfor %}
 </ul>
 <br>
 <p style="text-align: left; color: #23674ce6; font-size:0.9em ;"><b>PhD Coordinator -</b> Dr. Ranju Mohan</p>

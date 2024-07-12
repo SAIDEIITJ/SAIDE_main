@@ -2229,6 +2229,7 @@ figcaption {
 	max-height: 400px; 
 	scroll-behavior: smooth; 
     -webkit-overflow-scrolling: touch;
+	padding-right: 5px;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -2236,18 +2237,17 @@ figcaption {
 }
 
 .Ecards-container {
-    // display: flex;
-    flex-direction: column; 
-    overflow-y: auto;
-    overflow-x: hidden; 
-    max-height: 260px; 
-    scroll-behavior: smooth; 
-    -webkit-overflow-scrolling: touch; 
+	display: flex;
+	flex-wrap: nowrap; 
+	overflow-x: auto; 
+	overflow-y: hidden; 
+	max-height: 400px; 
+	scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch;
 }
 .Ecards-container::-webkit-scrollbar {
     display: none;
 }
-
 
 .card {
 
@@ -2292,8 +2292,10 @@ figcaption {
 }
 
 .Events {
-    height: 250px !important; /* Ensure the height is same as .card */
-    flex: 100%;
+    // height: 250px !important; /* Ensure the height is same as .card */
+    // flex: 100%;
+	// width: 400px !important;
+	flex: 1 0 95%;
 }
 
 .card:hover{
