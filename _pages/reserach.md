@@ -25,20 +25,4 @@ background-image: url("{{ site.baseurl }}/images/Research.png");
 </ul>
 <p>Continue your explorations into complexity below!</p>
 </div>
-<div class="side-content">
-<div class="share">
-<h3 id="shareh3"> <i class="fa-regular fa-newspaper"></i> LATEST </h3>
-<p style="text-align: justify;">Stay updated on the latest news, events, and developments at SAIDE by following us on social media:</p>
-<div class="social-icons">
-<a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-<a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Faide.iitj.ac.in%252Findex.php%252Fcontact&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-<a href="https://twitter.com/x/migrate?tok=7b2265223a222f73686172653f75726c3d6874747073253341253246253246616964652e6969746a2e61632e696e253246696e6465782e706870253246636f6e7461637426746578743d414944452532305363686f6f6c2532302d253230436f6e7461637473222c2274223a313731383136373435367d5abfac05571e017ecce3d8944d5723d3" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-</div>
-</div>
-<div class="support">
-<h3 id="shareh3"> <i class="fa-regular fa-address-card"></i> CONTACT US</h3>
-<p style="text-align: justify;">Thank you for your interest. We're here to assist you with any inquiries.</p>
-<a href="contact.html" id="donate-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</div>
 </div>

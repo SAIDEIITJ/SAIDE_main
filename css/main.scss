@@ -671,10 +671,11 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
  }
 
   .dropdown2 {
-	padding: 5px;
+	padding: 5px 0;
 	width: auto;
 	position: relative;
 	display: inline-block;
+
   }
   
   
@@ -724,19 +725,27 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	margin-left: 70px;
 	padding: 20px 0 10px 0;
 
+	p{
+		width:-webkit-fill-available;
+	}
+
 }
 
 .show {
 	display: block;
 }
 .dropbtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: rgb(113, 17, 17);
-	height: 60px;
+	height: 40px;
 	background-color: white;
 	border: 1px solid rgb(108, 29, 29);
 	text-transform: none;
 	font-size: 1em;
 	font-weight: bold;
+	gap: 13px;
  }
  .dropbtn:hover{
 	background-color: rgb(167, 115, 115);
@@ -748,7 +757,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	color: white;
 	display: inline-block;
 	position: absolute;
-	padding: 7px 25px;
+	padding: 5px 20px;
 	margin-top: -30px;
 	margin-left: -20px;
 }
@@ -783,7 +792,7 @@ flex-direction: row;
  }
 
 #search-bar {
-    width: 70%;
+    width: 100%;
     padding: 10px;
     font-size: 1em;
 	background-color: #EFEFEF;
@@ -854,22 +863,22 @@ flex-direction: row;
 
 /* Adjust the gap between cards */
 }
-// .HOD-details{
-// 	width: 100%;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	align-items: center;
+.HOD-details{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-// }
-// .HOD-details #hod{
-// 	width: 120%;
-// 	margin-left: -31px;
-// 	margin-top: -29px;
-// 	color: white;
-// 	background-color: rgb(113, 28, 28);
-// 	text-align: center;
-// }
+}
+.HOD-details #hod{
+	width: 120%;
+	margin-left: -31px;
+	margin-top: -29px;
+	color: white;
+	background-color: rgb(113, 28, 28);
+	text-align: center;
+}
 
 
 
@@ -1004,6 +1013,11 @@ flex-direction: row;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	z-index: 1;
+}
+
+.HOD{
+	left: -90px;
+
 }
 
 .std{

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     const backgroundImages = [
         'bg.png',

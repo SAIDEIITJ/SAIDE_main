@@ -10,7 +10,6 @@ permalink: /faculty/
     .background-about{
       background-image: url("{{ site.baseurl }}/images/Faculty.png");
     }
-
 </style>
 
 <h3 id ="peopleh3"> <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i> Filter By</h3>
@@ -29,8 +28,8 @@ permalink: /faculty/
         <div class="col-md-12">
             <div class="dropdown2">
                 <button class="dropbtn">Research Area <i class="fa-solid fa-caret-down"></i></button>
-                <div class="dropdown-content2">
-                    <div class="coe-checkbox">
+                <div class="dropdown-content2" data-category="researchArea">
+                    <div class="coe-checkbox" >
                         <input type="checkbox" id="Machine Learning" value="Machine Learning">
                         <label for="Machine Learning">Machine Learning</label>
                     </div>
@@ -99,7 +98,7 @@ permalink: /faculty/
             </div>
             <div class="dropdown2">
                 <button class="dropbtn">Centers <i class="fa-solid fa-caret-down"></i></button>
-                <div class="dropdown-content2 centers">
+                <div class="dropdown-content2 centers" data-category="coe">
                     <div class="coe-checkbox">
                         <input type="checkbox" id="Centre for Mathematical and Computational Economics" value="Centre for Mathematical and Computational Economics">
                         <label for="Centre for Mathematical and Computational Economics">Centre for Mathematical and Computational Economics</label>
@@ -134,7 +133,7 @@ permalink: /faculty/
             </div>
             <div class="dropdown2">
                 <button class="dropbtn">Title <i class="fa-solid fa-caret-down"></i></button>
-                <div class="dropdown-content2 Title">
+                <div class="dropdown-content2 Title" data-category="title">
                     <div class="coe-checkbox">
                         <input type="checkbox" id="Assistant Professor" value="Assistant Professor">
                         <label for="Assistant Professor">Assistant Professor</label>
@@ -156,7 +155,7 @@ permalink: /faculty/
             </div>
             <div class="dropdown2">
                 <button class="dropbtn">Type <i class="fa-solid fa-caret-down"></i></button>
-                <div class="dropdown-content2 Type">
+                <div class="dropdown-content2 Type" data-category="type">
                     <div class="coe-checkbox">
                         <input type="checkbox" id="Core Faculty" value="Core Faculty">
                         <label for="Core Faculty">Core Faculty</label>
@@ -180,28 +179,55 @@ permalink: /faculty/
     </div>
 </div>
 
-<!-- <div class="filter-indicators">
-    <div class="filter-indicator"  data-filter="Core Faculty">
-        <div class="checkbox"></div>
-        <span>Core Faculty</span>
-    </div>
-    <div class="filter-indicator" data-filter="Affiliated Faculty">
-        <div class="checkbox"></div>
-        <span>Affiliate Faculty</span>
-    </div>
-    <div class="filter-indicator" data-filter="Adjunct Faculty">
-        <div class="checkbox"></div>
-        <span>Adjunct Faculty</span>
-    </div>
-    <div class="filter-indicator"  data-filter="Professor of Practice">
-        <div class="checkbox"></div>
-        <span>Professor in Practice</span>
-    </div>
-</div> -->
 
 </div>
 <div class="selected-filters">
     <div id="selected-filters-container"></div>
+</div>
+
+
+<div class="HOD-details">
+
+    {% assign sorted_members = site.data.team | sort: "year" %}
+    {% for member in sorted_members %}
+        {% if member.display == 1 and member.faculty == 1  and member.position == 'Professor (Head of School)'%}
+        <div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{ member.bio1 }}" data-coe="{{ member.affiliation }}" data-title = "{{member.position}}">
+            <div class="member-info">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="{{ member.image }}" class="member-img HOD" alt="{{ member.name }}" />
+                    </div>
+                    <div class="col-md-10" style="padding-left: 10px;">
+                        <div class="member-details">
+                            <h4 id="fac-title">{{ member.name }}</h4>
+                            <p class="member-position">{{ member.position }}, {{member.affiliation}}</p>
+                            <p class="member-position">{% if member.subfaculty == "Core Faculty" %}
+                                <strong>Center:</strong> {{ member.affiliation }}
+                                {%  else %}
+                                <strong>Department:</strong> {{ member.affiliation }}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div class="website">
+                            <a href="{{ member.website }}" target="_blank" style="border: 0;">
+                                <p id="website-link"><i class="fa-regular fa-hand-point-right"></i> Personal Website</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.email }}</p>
+                    <p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong>  {{ member.phone }}</p>
+                    {% if member.bio1 != "" %}
+                        <p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
+                    {% endif %}
+                    
+                   
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
 </div>
 
 <br>
@@ -220,6 +246,12 @@ permalink: /faculty/
                             <div class="member-details">
                                 <h4 id="fac-title">{{ member.name }}</h4>
                                 <p class="member-position">{{ member.position }}, {{member.affiliation}}</p>
+                                <p class="member-position">{% if member.subfaculty == "Core Faculty" %}
+                                    <strong>Center:</strong> {{ member.affiliation }}
+                                    {%  else %}
+                                    <strong>Department:</strong> {{ member.affiliation }}
+                                    {% endif %}
+                                </p>
                             </div>
                             <div class="website">
                                 <a href="{{ member.website }}" target="_blank" style="border: 0;">
@@ -234,135 +266,12 @@ permalink: /faculty/
                         {% if member.bio1 != "" %}
                             <p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
                         {% endif %}
-                        
-                       
                     </div>
                 </div>
             </div>
         {% endif %}
     {% endfor %}
 </div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
 
-    document.querySelectorAll('.member-img').forEach(img => {
-        img.addEventListener('click', function() {
-            const memberCard = this.closest('.member-card');
-            memberCard.classList.toggle('flip');
-        });
-    });
-
-    document.querySelectorAll('.filter-indicator').forEach(indicator => {
-    indicator.addEventListener('click', () => {
-        const filter = indicator.getAttribute('data-filter');
-        
-        if (indicator.classList.contains('checked')) {
-            indicator.classList.remove('checked');
-            document.querySelectorAll('.member-card').forEach(member => {
-                member.style.display = 'block';
-                document.querySelector('.HOD-details').style.display = 'flex';
-            });
-        } else {
-            document.querySelectorAll('.filter-indicator').forEach(ind => ind.classList.remove('checked'));
-            indicator.classList.add('checked');
-            document.querySelectorAll('.member-card').forEach(member => {
-                const category = member.getAttribute('data-position');
-                if (filter === 'all' || category === filter) {
-                    member.style.display = 'block';
-                    document.querySelector('.HOD-details').style.display = 'none';
-                } else {
-                    member.style.display = 'none';
-                    document.querySelector('.HOD-details').style.display = 'none';
-                }
-            });
-        }
-    });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.dropbtn').forEach(button => {
-        button.addEventListener('click', function () {
-            this.nextElementSibling.classList.toggle('show');
-        });
-    });
-
-    document.getElementById('search-bar').addEventListener('input', function () {
-        const searchTerm = this.value.toLowerCase();
-        filterUsingBar(searchTerm);
-    });
-
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            document.querySelectorAll('.dropdown-content2').forEach(dropdown => {
-                dropdown.classList.remove('show');
-            });
-        }
-    }
-
-    document.querySelectorAll('.coe-checkbox input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', function () {
-            const selectedFilters = Array.from(document.querySelectorAll('.coe-checkbox input:checked')).map(cb => cb.value.toLowerCase());
-            displaySelectedFilters(selectedFilters);
-            filterMembers(selectedFilters);
-        });
-    });
-
-    function displaySelectedFilters() {
-          const selectedFiltersContainer = document.querySelector('.selected-filters');
-          selectedFiltersContainer.style.display  = 'block';
-          selectedFiltersContainer.innerHTML = '';
-
-          const selectedCheckboxes = document.querySelectorAll('.coe-checkbox input:checked');
-          selectedCheckboxes.forEach(checkbox => {
-            const filterTag = document.createElement('div');
-            filterTag.classList.add('filter-tag');
-            filterTag.textContent = checkbox.value;
-            const removeButton = document.createElement('span');
-            removeButton.classList.add('remove-filter');
-            removeButton.textContent = '✖';
-            removeButton.addEventListener('click', () => {
-              checkbox.checked = false;
-              filterMembers(Array.from(selectedCheckboxes).map(cb => cb.value.toLowerCase()).filter(value => value !== checkbox.value.toLowerCase()));
-              displaySelectedFilters();
-            });
-
-            filterTag.appendChild(removeButton);
-            selectedFiltersContainer.appendChild(filterTag);
-          });
-        }
-
-    function filterMembers(filters) {
-        document.querySelectorAll('.member-card').forEach(member => {
-            const researchArea = member.getAttribute('data-research-area').toLowerCase();
-            const coe = member.getAttribute('data-coe').toLowerCase();
-            const title = member.getAttribute('data-title').toLowerCase();
-            const category = member.getAttribute('data-position').toLowerCase();
-
-            const isVisible = filters.length === 0 || filters.some(filter => {
-                return category.includes(filter) || researchArea.includes(filter) || coe.includes(filter) || title === filter;
-            }); 
-
-            member.style.display = isVisible ? 'block' : 'none';
-        });
-        // const displayHOD = filters.length === 0;
-        // if (!displayHOD){
-        //     document.querySelector('.HOD-details').style.display = 'none';
-        // }
-        // else{
-        //     document.querySelector('.HOD-details').style.display = 'flex';
-        // }
-    }
-    function filterUsingBar(filter) {
-        document.querySelectorAll('.member-card').forEach(member => {
-            const researchArea = member.getAttribute('data-research-area').toLowerCase();
-                if (researchArea.includes(filter)) {
-                    member.style.display = 'block';
-                } else {
-                    member.style.display = 'none';
-                }
-            
-        });
-    }
-});
+<script src="{{ site.baseurl }}/js/faculty.js">
 </script>
