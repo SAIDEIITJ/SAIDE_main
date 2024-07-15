@@ -29,6 +29,7 @@ permalink: /staff/
 <br>
 <br>
 <div class="row" id="teamMembers">
+
 {% assign sorted_members = site.data.team | sort: "year" %}
 {% for member in sorted_members %}
 {% if member.display == 1 and member.staff == 1 %}
@@ -60,5 +61,5 @@ permalink: /staff/
 {% endfor %}
 </div>
 
-<script src="{{ site.baseurl }}/js/staff.js">
+<script src="{{ site.baseurl }}/js/pages/staff.js">
 </script>

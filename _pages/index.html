@@ -49,26 +49,42 @@ permalink: /
 					</section>
 
 					<script>
-						var newsData = [
-    {% assign news_event_data = site.data.news_events %}
-    {% for mem in news_event_data %}
-        {% if mem.news == 1 %}
-        { id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}", link:"{{mem.link}}" }{% unless forloop.last %},{% endunless %}
-        {% endif %}
-    {% endfor %}
-];
 
-        var eventData = [
-            {% assign news_event_data = site.data.news_events %}
-            {% for mem in news_event_data %}
-                {% if mem.event == 1 %}
-                { id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", content:"{{ mem.content }}", img:"{{ mem.graphic }}", link:"{{mem.link}}" }{% unless forloop.last %},{% endunless %}
-                {% endif %}
-            {% endfor %}
-        ];
-				
+					// Dynamic Data
+					 var newsData = [
+						{% assign news_event_data = site.data.news_events %}
+						{% for mem in news_event_data %}
+							{% if mem.news == 1 %}
+							{
+								id: "{{ mem.id }}",
+								title: "{{ mem.title }}",
+								date: "{{ mem.date }}",
+								content: "{{ mem.content }}",
+								img: "{{ mem.graphic }}",
+								link: "{{ mem.link }}"
+							}{% unless forloop.last %},{% endunless %}
+							{% endif %}
+						{% endfor %}
+					];
+
+					var eventData = [
+						{% assign news_event_data = site.data.news_events %}
+						{% for mem in news_event_data %}
+							{% if mem.event == 1 %}
+							{
+								id:"{{ mem.id }}",
+								title:"{{ mem.title }}",
+								date:"{{ mem.date }}",
+								content:"{{ mem.content }}",
+								img:"{{ mem.graphic }}", link:"{{mem.link}}"
+							}
+							{% unless forloop.last %},{% endunless %}
+							{% endif %}
+						{% endfor %}
+					];
 					</script>
-					<script src="{{ site.baseurl }}/js/script.js">
+
+					<script src="{{ site.baseurl }}/js/pages/script.js">
 					</script>
 
 

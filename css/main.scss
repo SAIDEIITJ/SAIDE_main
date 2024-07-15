@@ -613,6 +613,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 //directory
 .alphabet-links {
     margin-top: 10px;
+	margin-left: 25px;
 }
 
 .alphabet-links a {
@@ -722,11 +723,18 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     display: flex; /* Use flexbox layout */
     align-items: center; /* Align items vertically */
     margin-bottom: 20px;
-	margin-left: 70px;
+	width: 90%;
+	margin-left: 60px;
 	padding: 20px 0 10px 0;
 
 	p{
 		width:-webkit-fill-available;
+	}
+
+}
+.search-container direct{
+	p{
+		width: 100%;
 	}
 
 }
@@ -745,7 +753,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	text-transform: none;
 	font-size: 1em;
 	font-weight: bold;
-	gap: 13px;
+	gap: 12.2px;
  }
  .dropbtn:hover{
 	background-color: rgb(167, 115, 115);
