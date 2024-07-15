@@ -19,6 +19,7 @@ title: Update faculity
         news_events: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSYZExFU_O-a7QMx7bSMCOUsz8kjEErd3RVnlfIld1MYN40IpKoxYVuyxEesJvbimzKOKpVDE4FgbCC/pub?output=tsv',
         publications: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS7BjibDsFW9NSTkOu8fjheRlrEPsboaelGw6YIXwjsiM0w0C6Lzada-eq8XR9wEmfaLmlKa-DP5_0o/pub?output=tsv',
         links:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1206947112&single=true&output=tsv',
+        faqs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1456991437&single=true&output=tsv',
     }
 
     var header_maps = {
@@ -82,6 +83,12 @@ title: Update faculity
             "Page":"page",
             "Name":"name",
             "URL":"url",            
+        },
+        faqs:{
+            "Category":"category",
+            "Question":"question",
+            "Answer":"answer",
+            "Visible":"visible",
         }
 
     }
@@ -206,6 +213,8 @@ title: Update faculity
             $writepath += 'publications.yaml';
         } else if ($resource === 'links'){
             $writepath += 'links.yaml';
+        } else if ($resource === 'faqs'){
+            $writepath += 'faqs.yaml';
         }
         repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) { console.log(err); });
     };
