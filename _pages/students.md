@@ -35,7 +35,7 @@ permalink: /students/
 <br><br>
 
 <div class="row" id="teamMembers">
-{% assign sorted_members = site.data.students %}
+{% assign sorted_members = site.data.students | sort: 'name' %}
 {% for member in sorted_members %}
 {% if member.hidden == 0  %}
 <div class="col-lg-6 col-md-6 col-sm-12 member-card studentCard" data-position="{{ member.program }}" data-name="{{ member.name }}" data-research-area="{{member.researchArea}}">
@@ -50,7 +50,7 @@ permalink: /students/
 <p class="member-position">Program: {{ member.program }}</p>
 <p><strong>Email:</strong> {{ member.email }}</p>
 <!-- <p><strong>Phone:</strong> {{ member.phone }}</p> -->
-<!-- <p><strong>Supervisor(s):</strong> {{member.faculties}}</p> -->
+<p><strong>Supervisor(s):</strong> {{member.supervisor}}</p>
 <p class="member-bio"><strong>Research Area:</strong> {{ member.researchArea }}</p>
 </div>
 </div>
