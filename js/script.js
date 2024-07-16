@@ -30,67 +30,69 @@ $(document).ready(function() {
 
    
     const otherImages = [
+        'iit.png',
         'Admissions.png',
+        'AIhealth.png',
         'Alumini.png',
-        'bg_text.png',
-        'bg2.jpg',
+        'brain.png',
         'BTech.png',
+        'btech1.png',
+        'btech2.png',
         'campus_master.png',
         'Campus.png',
         'CoE.png',
+        'compEco.png',
         'Contact.png',
         'Continuing.png',
         'digital.jpg',
         'Directory.png',
+        'economics.png',
         'Ecosystem.png',
+        'ethics.png',
         'Faculty.png',
         'FacultyPositions.png',
         'FAQs.png',
         'footer.png',
         'Governance.png',
-        'iitj.png',
-        'iitjc.png',
+        'health.png',
+        'iit.png',
+        'intelliInfra.png',
         'Labs.png',
         'loc1.jpeg',
         'loc2.jpeg',
         'loc3.png',
         'logo_bg.png',
-        'logo.png',
+        'Logo_IITJ.png',
         'Mission.png',
         'MSR.png',
         'MTech.png',
+        'mtech1.png',
+        'mtech2.png',
+        'mtech3.png',
         'news1.png',
         'news2.png',
         'news3.png',
         'news4.png',
         'news5.png',
+        'nextGen.png',
         'Outreach.png',
-        'paper.png',
         'permanent2.png',
         'PhD.png',
+        'postdoc.png',
         'ProjectPositions.png',
         'Projects.png',
         'Publications.png',
         'Research.png',
+        'robot.png',
         'SIP.png',
+        'smartCity.png',
+        'socialEng.png',
         'Staff.png',
         'Students.png',
         'Themes.png',
-        // '1.gif',
-        // '2.gif',
-        // '3.gif',
-        // '4.gif',
-        // '5.gif',
-        // '6.gif',
-        // '7.gif',
-        // '8.gif',
-        // '9.gif',
-        'Robotics.svg',
-        'NLP.svg',
-        'Intelligence.svg',
-        'Economics.svg',
-        'DeepLearning.svg',
-        'Cognitive.svg',
+        'theoritical.png',
+        'vision.png',
+
         // Add more image URLs as needed
     ];
 
@@ -198,7 +200,7 @@ window.onclick = function(event) {
 let scrollInterval = null;
 let scrollEInterval = null;
 let scrollLength = 418; 
-let scrollELength = 260;
+let scrollELength = 575; 
 
 
 function renderItems(container, items) {
@@ -225,9 +227,6 @@ function renderEItems(container, items) {
 
 
 function showNews() {
-    // var button = document.querySelector(".dpdown1");
-    // var newText = "News"; 
-    // button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("cardsContainer");
     renderItems(container, newsData); // Render all news items
@@ -236,9 +235,6 @@ function showNews() {
 }
 
 function showEvents() {
-    // var button = document.querySelector(".dpdown1");
-    // var newText = "Events"; 
-    // button.childNodes[0].textContent = newText + " ";
 
     const container = document.getElementById("EcardsContainer");
     renderEItems(container, eventData); // Render all event items
@@ -246,19 +242,18 @@ function showEvents() {
     restartScrollEInterval();
 }
 
-function scrollUp() {
+function scrollELeft() {
     const container = document.getElementById("EcardsContainer");
     container.scrollTo({
-        top: container.scrollTop - scrollELength, // Adjust scroll amount as needed
+        left: container.scrollLeft- scrollELength, // Adjust scroll amount as needed
         behavior: 'smooth' // Smooth scroll behavior
     });
 }
-
 // Function to smoothly scroll the event container down
-function scrollDown() {
+function scrollERight() {
     const container = document.getElementById("EcardsContainer");
     container.scrollTo({
-        top: container.scrollTop + scrollELength, // Adjust scroll amount as needed
+        left: container.scrollLeft + scrollELength, // Adjust scroll amount as needed
         behavior: 'smooth' // Smooth scroll behavior
     });
 }
@@ -290,8 +285,8 @@ function scrollContainerToStart() {
     container.scrollLeft = 0;
 }
 function scrollEContainerToStart() {
-    const container = document.getElementById("EcardsContainer");
-    container.scrollTop = 0;
+    const Econtainer = document.getElementById("EcardsContainer");
+   Econtainer.scrollLeft = 0;
 }
 
 function restartScrollInterval() {
@@ -309,7 +304,7 @@ function restartScrollEInterval() {
         clearInterval(scrollEInterval);
     }
     // Set new interval for scrolling every 4 seconds
-    scrollEInterval = setInterval(scrollDown, 4000); // Adjust timing as needed
+    scrollEInterval = setInterval(scrollERight, 4000); // Adjust timing as needed
 }
 
 
@@ -323,17 +318,17 @@ $('#scrollRightButton').click(function() {
     scrollRight(); // Change to the previous background
 });
 
-$('#scrollUpButton').click(function() {
-    scrollUp(); // Change to the next background
+$('#scrollELeftButton').click(function() {
+    scrollELeft(); // Change to the next background
 });
 
 // Event listener for previous button click
-$('#scrollDownButton').click(function() {
-    scrollDown(); // Change to the previous background
+$('#scrollERightButton').click(function() {
+    scrollERight(); // Change to the previous background
 });
 
 restartScrollInterval();
-
+restartScrollEInterval();
 
  
 

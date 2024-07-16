@@ -149,6 +149,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	justify-content: center;
 	gap: 20px;
 	flex-wrap: wrap;
+	padding-top: 10px;
   }
   
   .theme {
@@ -157,11 +158,11 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	max-width: 28%;
+	max-width: 30%;
 	transition: transform 1s;
   }
   .theme:hover{
-	transform: scale(1.2);
+	transform: scale(1.15);
 
   }
   
@@ -620,7 +621,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     text-decoration: none;
 	font-size: 1.5rem;
 	border: 0;
-	color: #019494;
+	color: #003049;
 }
 
 .alphabet-links a:hover {
@@ -648,7 +649,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	background-color: #860f0ff0; 
     min-width: 270px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
     max-height: 230px; /* Adjust the height as needed */
     overflow-y: auto; 
 	left:0;
@@ -663,11 +664,14 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
  .labs{
 	left:-5px;
 	min-width: 300px;
+ }
+ .Type{
+	left:-40px;
 
  }
 
   .dropdown2 {
-	padding: 10px;
+	padding: 5px;
 	width: auto;
 	position: relative;
 	display: inline-block;
@@ -718,6 +722,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     align-items: center; /* Align items vertically */
     margin-bottom: 20px;
 	margin-left: 70px;
+	padding: 20px 0 10px 0;
 
 }
 
@@ -739,30 +744,46 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
  }
 
 #peopleh3{
-	background-color: #019494;
+	background-color: #003049;
 	color: white;
 	display: inline-block;
 	position: absolute;
 	padding: 7px 25px;
 	margin-top: -30px;
-	margin-left: -120px;
+	margin-left: -20px;
 }
 #filter-bg{
 	display: block;
-    background-color: #EDE0D4;
-	padding-left: 100px;
+    background-color: #ffffff;
+	padding-left: 40px;
 	padding-right: 100px;
 	width: 120%;
-	margin-left: -120px;
-	height: 300px;
+	margin-left: -90px;
+	height: auto;
 }
 
 .search-container i {
     margin-right: 5px; 
 }
 
+
+.bar-box{
+display: flex;
+flex-direction: row;
+
+}
+.research-btn{
+	color: rgb(0, 0, 0);
+
+	background-color: #EFEFEF;
+	border: 1px solid #949494;
+
+	text-transform: none;
+	font-size: 0.9em;
+ }
+
 #search-bar {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     font-size: 1em;
 	background-color: #EFEFEF;
@@ -833,83 +854,72 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 /* Adjust the gap between cards */
 }
-.HOD-details{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+// .HOD-details{
+// 	width: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
 
-}
-.HOD-details #hod{
-	width: 120%;
-	margin-left: -31px;
-	margin-top: -29px;
-	color: white;
-	background-color: rgb(113, 28, 28);
-	text-align: center;
-}
+// }
+// .HOD-details #hod{
+// 	width: 120%;
+// 	margin-left: -31px;
+// 	margin-top: -29px;
+// 	color: white;
+// 	background-color: rgb(113, 28, 28);
+// 	text-align: center;
+// }
 
-.member-card {
-    flex: 0 0 calc(50% - 20px); /* Two cards per row, minus the gap */
-    border: 1px solid #ccc;
-	margin-left: 10px;
-	margin-bottom: 10px;
-    border-radius: 10px;
-	min-height: 260px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #EDE0D4;
-    overflow: hidden; /* Ensure content doesn't overflow */
-    position: relative; /* Ensure position context for absolute positioning */
-}
 
-.flip-container {
-	perspective: 1000px;
 
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+// .flip-container {
+// 	perspective: 1000px;
 
-.flip-container, .front, .back {
-	width: 260px;
-	height: 200px;
+// }
+// 	/* flip the pane when hovered */
+// 	.flip-container:hover .flipper, .flip-container.hover .flipper {
+// 		transform: rotateY(180deg);
+// 	}
 
-}
+// .flip-container, .front, .back {
+// 	width: 260px;
+// 	height: 200px;
 
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
+// }
 
-	position: relative;
-	top:10px;
-	right:40px;
-}
+// /* flip speed goes here */
+// .flipper {
+// 	transition: 0.6s;
+// 	transform-style: preserve-3d;
 
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
+// 	position: relative;
+// 	top:10px;
+// 	right:40px;
+// }
 
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+// /* hide back of pane during swap */
+// .front, .back {
+// 	backface-visibility: hidden;
 
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// }
 
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-	padding-top: 25px;
+// /* front pane, placed above back */
+// .front {
+// 	z-index: 2;
+// 	/* for firefox 31 */
+// 	transform: rotateY(0deg);
+// }
 
-}
+// /* back, initially hidden pane */
+// .back {
+// 	transform: rotateY(180deg);
+// 	padding-top: 25px;
+
+// }
 
 .selected-filters {
     margin: 10px 0;
@@ -929,60 +939,93 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 .selected-filters div .remove-filter {
     cursor: pointer;
     margin-left: 5px;
-    color: rgb(13, 209, 150);
+    color: #fff;
     font-weight: bold;
 }
 
 
 
 
-.member-card_HOD {
-    width: 55%; /* Two cards per row, minus the gap */
-    // padding: 10px;
-    border: 1px solid #ccc;
-	margin-left: 10px;
-	margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #EDE0D4;
-    overflow: hidden; /* Ensure content doesn't overflow */
-    position: relative; /* Ensure position context for absolute positioning */
-}
+// .member-card_HOD {
+//     width: 30%; /* Two cards per row, minus the gap */
+//     // padding: 10px;
+//     border: 1px solid #ccc;
+// 	margin-left: 10px;
+// 	margin-bottom: 10px;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     background-color: #EDE0D4;
+//     overflow: hidden; /* Ensure content doesn't overflow */
+//     position: relative; /* Ensure position context for absolute positioning */
+// }
 
 .website{
 	display: flex;
 	flex-direction: row;
 }
 #website-link{
-	color:#005a5a;
+	color:#003049;
+	font-size: 0.9em;
 }
 
+.member-card {
+    flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
+    border: 1px solid #ccc;
+	margin-left: 84px;
+	margin-bottom: 20px;
+	min-height: auto;
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // background-color: #EDE0D4;
+	background-color: #cae9ff5d;
+    overflow:visible; /* Ensure content doesn't overflow */
+    position: relative;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure position context for absolute positioning */
+}
+.studentCard{
+	margin-left: 28px;
+	flex: 0 0 calc(48% - 10px); 
+}
 
 .member-info {
 	padding-top: 15px;
+	padding-right: 10px;
     display: flex;
     flex-direction: column; 
 	padding-bottom: 15px;/* Stack image on top of details */
 }
 
 .member-img {
-    width: 120px; /* Adjust image size as needed */
-    height: 140px;
-    // object-fit: cover;
-    position: absolute;
-    top: 20px;
-    right: 80px;
-    border: 3px solid #ffffff; /* White border to stand out */
+    width: 140px; /* Adjust image size as needed */
+    height: 160px;
+	position: relative;
+    top: 10px;
+    left: -100px;
+    border: 1px solid #014f86; /* White border to stand out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	z-index: 1000;
+	z-index: 1;
 }
+
+.std{
+	left:0px;
+
+}
+
 
 
 .member-details {
-    flex: 1;
+	padding-top: 10px;
+
+    // flex: 1;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.studentdetails{
+	width: 80%;
+
+}
 #fac-title{
 	color: $textcolor;
     margin-top: 0;
@@ -997,17 +1040,43 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     font-size: 0.9em;
     color: #555;
 }
-.back p{
-	margin: 5px 0;
-    font-size: 0.7em;
-	line-height: 18px;
+.additional-info {
+	padding: 6px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
+	p{
+		padding-top: 5px;
+	}
 }
-.back p strong{
-	margin: 5px 0;
-    font-size: 0.9em;
-    color: #4d0e0e;
-	line-height: 18px;
+.member-bio{
+	font-style: italic;
+    color: #777;
 }
+
+.member-card:hover .additional-info {
+    max-height: 300px; /* Adjust based on content */
+    opacity: 1;
+}
+
+.member-card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase the size of the card */
+}
+
+
+
+// .back p{
+// 	margin: 5px 0;
+//     font-size: 0.7em;
+// 	line-height: 18px;
+// }
+// .back p strong{
+// 	margin: 5px 0;
+//     font-size: 0.9em;
+//     color: #4d0e0e;
+// 	line-height: 18px;
+// }
 
 
 
@@ -1286,11 +1355,11 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 .share, .support {
 
-	background-color: rgb(241, 241, 241);
+	background-color: rgb(246, 246, 246);
     padding: 5px 30px;
     margin-bottom: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #shareh3{
@@ -2160,6 +2229,7 @@ figcaption {
 	max-height: 400px; 
 	scroll-behavior: smooth; 
     -webkit-overflow-scrolling: touch;
+	padding-right: 5px;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -2167,18 +2237,17 @@ figcaption {
 }
 
 .Ecards-container {
-    // display: flex;
-    flex-direction: column; 
-    overflow-y: auto;
-    overflow-x: hidden; 
-    max-height: 260px; 
-    scroll-behavior: smooth; 
-    -webkit-overflow-scrolling: touch; 
+	display: flex;
+	flex-wrap: nowrap; 
+	overflow-x: auto; 
+	overflow-y: hidden; 
+	max-height: 400px; 
+	scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch;
 }
 .Ecards-container::-webkit-scrollbar {
     display: none;
 }
-
 
 .card {
 
@@ -2223,8 +2292,10 @@ figcaption {
 }
 
 .Events {
-    height: 250px !important; /* Ensure the height is same as .card */
-    flex: 100%;
+    // height: 250px !important; /* Ensure the height is same as .card */
+    // flex: 100%;
+	// width: 400px !important;
+	flex: 1 0 95%;
 }
 
 .card:hover{
@@ -2386,7 +2457,7 @@ figcaption {
 	width: 100%;
 	margin-right: 9%;
 	margin-top: -1px;
-	background-color: #f6f6f6e9;
+	background-color: #fff;
 
 	height: 100px;
 
@@ -2417,24 +2488,28 @@ figcaption {
   }
   
   #site-main-title {
+	font-family: sans-serif;
 	text-transform: none;
 	font-size: 0.5em;
-	 color: brown;
-	letter-spacing: 1px;
-	word-spacing: 0.5px;
-	margin-top: -25px;
+	 color: #800F13;
+	// letter-spacing: 1px;
+	// word-spacing: 0.5px;
+	padding-top: 15px;
+	line-height: normal;
+	font-size: 1em;
+	font-weight: 500;
   }
-  #site-main-title2 {
-	text-transform: none;
-	font-size: 0.5em;
-	 color: brown;
-	letter-spacing: 1px;
-	margin-top: -67px;
-  }
+//   #site-main-title2 {
+// 	text-transform: none;
+// 	font-size: 0.5em;
+// 	 color: brown;
+// 	letter-spacing: 1px;
+// 	margin-top: -38px;
+//   }
   
   
   #site-title {
-	margin-top: 19px;
+	margin-top: -10px;
 	text-decoration: none;
 	border: 0;
 	cursor: pointer;
@@ -2442,10 +2517,11 @@ figcaption {
 	color: #800F13;
 	font-family: sans-serif;
 	font-weight:bold;
-	letter-spacing: 6px;
-	word-spacing: 1px;
-	font-size: 1.7em;
-	line-height: 1.8em;
+	letter-spacing: 4px;
+	// word-spacing: 1px;
+	font-size: 1.3em;
+	// line-height: 1.8em;
+	line-height: normal;
   }
   
   .site-sym {
@@ -2461,7 +2537,7 @@ figcaption {
   .logo {
 	// margin-bottom: 10px;
 	// margin-top: 10px; 
-	padding-bottom:4px ;
+	margin:4px ;
   }
   
   .logo-bg {
@@ -2630,11 +2706,7 @@ figcaption {
 		text-align: left;
 		align-items: center;
 	  }
-		#site-main-title2{
-			font-size: 1em;
-
-		}
-
+	
 
 	.horizontal-menu {
 	  flex-direction: column;
@@ -2666,6 +2738,7 @@ figcaption {
 	#site-title {
 	  display: none;
 	}
+	
   
 	.horizontal-menu li a {
 	  font-size: 1em;
@@ -2681,6 +2754,10 @@ figcaption {
   
 	.dropdown-content a {
 	  padding: 10px;
+	}
+
+	.site-sym{
+		display: none;
 	}
   
 	.logo-title-container {
@@ -2826,9 +2903,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		font-style: italic;
 	}
 
-	p {
-		margin: 0 0 _size(element-margin) 0;
-	}
+	// p {
+	// 	margin: 0 0 _size(element-margin) 0;
+	// }
 
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
@@ -4114,7 +4191,7 @@ $baseurl: '{{ site.baseurl }}/images';
 /* Banner */
 #brown-highlight {
 	background-color: #800F13;
-	height: 12px;
+	height: 8px;
   }
   .indicators-bg {
     position: absolute;
@@ -4149,8 +4226,8 @@ $baseurl: '{{ site.baseurl }}/images';
     width: 100%;
     height: 79%;
 	background-image:
-    linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url("#{$baseurl}/bg_text.png"); 
+    linear-gradient(to right, rgba(245, 246, 252, 0.265), rgba(245, 246, 252, 0.265)),
+    url("#{$baseurl}/iit.png"); 
     background-size: cover;
     // background-position: center;
     z-index: -1;
