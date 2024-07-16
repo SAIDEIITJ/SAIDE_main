@@ -6,11 +6,6 @@ des: The Minor Programs in Artificial Intelligence (AI) and Data Science (DS) at
 permalink: /btech/
 ---
 
-<style>
-.background-about{
-background-image: url("{{ site.baseurl }}/images/BTech.png");
-}
-</style>
 
 <div id="parent-box">
 <div class="general-section">
@@ -59,3 +54,11 @@ background-image: url("{{ site.baseurl }}/images/BTech.png");
 </div>
 </div>
 </div>
+
+
+<style>
+/* page-banner image */
+.background-about{
+background-image: url("{{ site.baseurl }}/images/BTech.png");
+}
+</style>

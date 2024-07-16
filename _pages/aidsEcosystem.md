@@ -5,13 +5,9 @@ link: HOME / ABOUT
 des: Advancing the field of AI and Data Sciences for good of humanity
 permalink: /aidsEcosystem/
 ---
-<style>
-.background-about{
-  background-image: url("{{ site.baseurl }}/images/Ecosystem.png");
-}
-</style>
 
-<div>
+
+
 <div class="about-section">
 
 <h1>AI & DS Innovation Ecosystem</h1>
@@ -84,3 +80,9 @@ World economic forum identifies following ethical questions related to AI <br>
 <br>
 
 
+<style>
+   /* page-banner image */
+.background-about{
+  background-image: url("{{ site.baseurl }}/images/Ecosystem.png");
+}
+</style>
