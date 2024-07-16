@@ -15,11 +15,11 @@ permalink: /alumini/
 </div>
 </div>
 <div class="filter-indicators" style="margin-left: 15%;">
-<div class="filter-indicator"  data-filter="Ph.D">
+<div class="filter-indicator"  data-filter="Ph.D.">
 <div class="checkbox"></div>
 <span>Ph.D</span>
 </div>
-<div class="filter-indicator" data-filter="MS (by Research)">
+<div class="filter-indicator" data-filter="MS(R)">
 <div class="checkbox"></div>
 <span>MS (by Research)</span>
 </div>
