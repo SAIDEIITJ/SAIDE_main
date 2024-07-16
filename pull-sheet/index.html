@@ -21,6 +21,7 @@ title: Update faculity
         links:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1206947112&single=true&output=tsv',
         faqs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1456991437&single=true&output=tsv',
         administration:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=728873275&single=true&output=tsv',
+        students:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1554989096&single=true&output=tsv',
     }
 
     var header_maps = {
@@ -89,6 +90,22 @@ title: Update faculity
             "Entry":"entry",
             "Link":"link",
         },
+        students:{
+            "Name":"name",
+            "Program":"program",
+            "Specialization":"specialization",
+            "Center":"center",
+            "Email":"email",
+            "ResearchArea":"researchArea",
+            "Supervisor":"supervisor",
+            "SecondSupervisor":"secondSupervisor",
+            "HighestQualification":"highestQualification",
+            "Website":"website",
+            "ProfilePhoto":"profilePhoto",
+            "Email":"email",
+            "Hidden":"hidden",
+            "Alumnus":"alumnus",
+        },
 
     }
 
@@ -113,6 +130,17 @@ title: Update faculity
         }
         return url;
     }
+
+    function getGDriveOURL(url) {
+    // Regular expression to match Google Drive open links
+        const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+        if (regexp.test(url)) {
+            const res = regexp.exec(url);
+            var id = res?.groups?.id;
+            return `https://drive.google.com/thumbnail?id=${id.trim()}&sz=w300`;
+        }
+        return url;
+}
 
     // extract parameters that need to be passed and should not be saved
     var $GHToken = getUrlVar('ghtoken');
@@ -151,6 +179,9 @@ title: Update faculity
                 if ( header == "internship") {return parseInt(value);}
                 if ( header == "facultyPos") {return parseInt(value);}
                 if ( header == "visibility") {return parseInt(value);}
+                if ( header == "hidden") {return parseInt(value);}
+                if ( header == "alumnus") {return parseInt(value);}
+                if ( header == "profilePhoto" ) {return getGDriveOURL(value);}
                 return value;
             }
 
@@ -216,6 +247,8 @@ title: Update faculity
             $writepath += 'faqs.yaml';
         } else if ($resource === 'administration'){
             $writepath += 'administration.yaml';
+        }else if ($resource === 'students'){
+            $writepath += 'students.yaml';
         }
         repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) { console.log(err); });
     };
