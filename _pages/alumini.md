@@ -6,11 +6,6 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 permalink: /alumini/
 ---
 
-<style>
-    .background-about{
-      background-image: url("{{ site.baseurl }}/images/Alumini.png");
-    }
-</style>	
 
 <div class="search-container">
 <input type="text" id="search-bar" placeholder="Search by Research Area ...">
@@ -62,6 +57,14 @@ permalink: /alumini/
 {% endif %}
 {% endfor %}
 </div>
+
+
+<style>
+   /* page-banner image */
+    .background-about{
+      background-image: url("{{ site.baseurl }}/images/Alumini.png");
+    }
+</style>	
 
 <script src="{{ site.baseurl }}/js/pages/student.js">
 </script>

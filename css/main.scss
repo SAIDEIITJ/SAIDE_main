@@ -1252,82 +1252,81 @@ flex-direction: row;
 .slider-container {
 
 	display: flex;
-	flex-direction: column;
+	flex-direction:column;
+	position:relative;
 	align-items: center;
-	width: 100%;
+	width: 800px;
 	margin: auto;
-}
-
-.slider {
+  }
+  
+  .slider {
 	position: relative;
 	width: 100%;
-// max-width: 500px;
-	max-height: 500px;
+	max-height: 540px;
 	overflow: hidden;
-}
-
-.slides {
+  }
+  
+  .slides {
 	display: flex;
-	transition: transform 0.5s ease-in-out;
-}
-
-.slide {
+	transition: transform 0.5s ease;
+  }
+  
+  .slide {
 	min-width: 100%;
 	box-sizing: border-box;
-}
-.slide img {
+  }
+  
+  .slide img {
 	width: 100%;
 	height: 100%;
 	border: none;
 }
-
-.thumbnails {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-.thumbnail {
-	width: 100px;
-	height: 60px;
-	margin: 0 5px;
-	cursor: pointer;
-}
-
-.arrow {
+  
+  .arrow {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
-	border: none;
 	padding: 10px;
 	cursor: pointer;
-}
-
-.arrow-left {
+	z-index: 10;
+	user-select: none; /* Prevent text selection */
+  }
+  .arrow:hover{
+	background-color: rgba(124, 14, 14, 0.5);
+  }
+  
+  .arrow-left {
 	left: 10px;
-}
-
-.arrow-right {
+  }
+  
+  .arrow-right {
 	right: 10px;
-}
-
-.info {
+  }
+  
+  .info {
 	text-align: center;
+  }
+  
+  .thumbnails {
+	display: flex;
+	justify-content: center;
 	margin-top: 10px;
-}
-
-.title {
-	font-size: 24px;
-	font-weight: bold;
-	text-transform: none;
-	color: #AFADA1;
-}
-
-.description {
-	font-size: 16px;
-}
+  }
+  
+  .thumbnail {
+	width: 80px;
+	height: auto;
+	cursor: pointer;
+	margin: 0 5px;
+	border: 2px solid transparent;
+	transition: border 0.3s;
+  }
+  
+  .thumbnail:hover {
+	border: 2px solid #770000;
+  }
 
 
 //Reserach Section 
@@ -1620,7 +1619,7 @@ flex-direction: row;
 
 .address,.phone,.email{
 	padding-left:15px;
-	background-color: white;
+	background-color: rgb(241, 241, 241);
 	border: 1px solid rgb(225, 225, 225);
 }
 .contactbox {

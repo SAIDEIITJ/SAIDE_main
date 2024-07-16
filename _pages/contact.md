@@ -6,11 +6,7 @@ des: Inia ante nunc ac nterdum adipiscing gravida laci odio porttitor sem non mi
 permalink: /contact/
 ---
 
-<style>
-.background-about{
-  background-image: url("{{ site.baseurl }}/images/Contact.png");
-}
-</style>
+
 
 <div class="contactbox">
 <div class="contact-section">
@@ -47,6 +43,12 @@ Rajasthan, India</p>
    
 </div>
 </div>
+</div>
 
-</div>
-</div>
+
+<style>
+    /* page-banner image */
+.background-about{
+  background-image: url("{{ site.baseurl }}/images/Contact.png");
+}
+</style>

@@ -7,7 +7,6 @@ permalink: /directory/
 ---
 
 <div class="search-container direct">
-<!-- <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #003049;"></i> -->
 <input type="text" id="search-bar" placeholder="Search by name ..." oninput="searchEntries()">
 </div>
 

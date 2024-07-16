@@ -6,11 +6,7 @@ des: The School of Artificial Intelligence and Data Science (SAIDE) at is proud 
 permalink: /coe/
 ---
 
-<style>
-.background-about{
-background-image: url("{{ site.baseurl }}/images/CoE.png");
-}
-</style>
+
 
 <div class="research-intro">
 <div class="about-section">
@@ -30,3 +26,11 @@ background-image: url("{{ site.baseurl }}/images/CoE.png");
 </ul>
 </div>
 </div>
+
+
+<style>
+  /* page-banner image */
+.background-about{
+background-image: url("{{ site.baseurl }}/images/CoE.png");
+}
+</style>

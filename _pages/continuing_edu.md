@@ -6,11 +6,7 @@ des: Welcome to the School of Artificial Intelligence and Data Science (SAIDE), 
 permalink: /continuing_edu/
 ---
 
-<style>
-.background-about{
-background-image: url("{{ site.baseurl }}/images/Continuing.png");
-}
-</style>
+
 
 <div id="parent-box">
 <div class="general-section">
@@ -59,3 +55,10 @@ background-image: url("{{ site.baseurl }}/images/Continuing.png");
 </div>
 </div>
 </div>
+
+<style>
+   /* page-banner image */
+.background-about{
+background-image: url("{{ site.baseurl }}/images/Continuing.png");
+}
+</style>

@@ -6,11 +6,6 @@ des: Join SAIDE for a transformative learning experience in complex systems scie
 permalink: /admissions/
 ---
 
-<style>
-.background-about{
-  background-image: url("{{ site.baseurl }}/images/Admissions.png");
-}
-</style>
 
 <div id="parent-box">
 <div class="general-section">
@@ -78,3 +73,12 @@ permalink: /admissions/
 </table>
 </div>
 </div>
+
+
+<style>
+  /* page-banner image */
+  
+.background-about{
+  background-image: url("{{ site.baseurl }}/images/Admissions.png");
+}
+</style>
