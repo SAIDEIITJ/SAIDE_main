@@ -180,6 +180,8 @@ title: Update faculity
                 if ( header == "hidden") {return parseInt(value);}
                 if ( header == "alumnus") {return parseInt(value);}
                 if ( header == "profilePhoto" ) {return getGDriveOURL(value);}
+                if ( header == "background" ) {return getGDriveOURL(value);}
+                
                 return value;
             }
 
