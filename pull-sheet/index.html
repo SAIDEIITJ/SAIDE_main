@@ -228,32 +228,42 @@ title: Update faculity
 
         console.log($items);
         
-        $yaml_dump = jsyaml.dump($items);
-        document.getElementById('source').value = $yaml_dump;
+        try {
+            $yaml_dump = jsyaml.dump($items);
+            document.getElementById('source').value = $yaml_dump;
 
-        var github = new Github({token: $GHToken, auth: "oauth"});
-        var repo = github.getRepo($org, $repo);
-        var $writepath = '_data/';
+            var github = new Github({ token: $GHToken, auth: "oauth" });
+            var repo = github.getRepo($org, $repo);
+            var $writepath = '_data/';
 
-        if ($resource === 'news_events') {
-            $writepath += 'news_events.yaml';
-        } else if ($resource === 'team') {
-            $writepath += 'team.yaml';
-        } else if ($resource === 'publications'){
-            $writepath += 'publications.yaml';
-        } else if ($resource === 'links'){
-            $writepath += 'links.yaml';
-        } else if ($resource === 'faqs'){
-            $writepath += 'faqs.yaml';
-        } else if ($resource === 'administration'){
-            $writepath += 'administration.yaml';
-        }else if ($resource === 'students'){
-            $writepath += 'students.yaml';
-        }else if ($resource === 'programs'){
-            $writepath += 'programs.yaml';
+            if ($resource === 'news_events') {
+                $writepath += 'news_events.yaml';
+            } else if ($resource === 'team') {
+                $writepath += 'team.yaml';
+            } else if ($resource === 'publications') {
+                $writepath += 'publications.yaml';
+            } else if ($resource === 'links') {
+                $writepath += 'links.yaml';
+            } else if ($resource === 'faqs') {
+                $writepath += 'faqs.yaml';
+            } else if ($resource === 'administration') {
+                $writepath += 'administration.yaml';
+            } else if ($resource === 'students') {
+                $writepath += 'students.yaml';
+            } else if ($resource === 'programs') {
+                $writepath += 'programs.yaml';
+            }
+
+            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
+                if (err) {
+                    console.error("Error writing to GitHub:", err);
+                } else {
+                    console.log("Successfully updated " + $resource);
+                }
+            });
+        } catch (error) {
+            console.error("Error dumping YAML:", error);
         }
-
-        repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) { console.log(err); });
-    };
+    }
 </script>
 <textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 500px;"></textarea>
