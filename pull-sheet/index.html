@@ -22,6 +22,8 @@ title: Update faculity
         faqs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1456991437&single=true&output=tsv',
         administration:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=728873275&single=true&output=tsv',
         students:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1554989096&single=true&output=tsv',
+        programs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=668775554&single=true&output=tsv',
+
     }
 
     var header_maps = {
@@ -98,6 +100,18 @@ title: Update faculity
             "ProfilePhoto":"profilePhoto",
             "Hidden":"hidden",
             "Alumnus":"alumnus",
+        },
+        programs:{
+            "Timestamp":"timestamp",
+            "Name":"name",
+            "OfferedBy":"offered",
+            "Level":"level",
+            "Coordinator":"coordinator",
+            "URL":"url",
+            "Document":"document",
+            "Background":"background",
+            "Deadline":"deadline",
+            "Application":"application",
         },
 
     }
@@ -242,7 +256,10 @@ title: Update faculity
             $writepath += 'administration.yaml';
         }else if ($resource === 'students'){
             $writepath += 'students.yaml';
+        }else if ($resource === 'programs'){
+            $writepath += 'programs.yaml';
         }
+
         repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) { console.log(err); });
     };
 </script>

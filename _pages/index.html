@@ -3,89 +3,75 @@ layout: landing
 title: Home
 permalink: /
 ---
-				<!-- Banner -->
-					<div class="background">
-					</div>
-				
-					<div class="rectangular-div">   
-					</div>
-					<div class="indicators-bg">
-						<div id="prevBtn" class="indicators-bg-btn"><i class="fa-solid fa-chevron-left"></i></div>
-						<div id="nextBtn" class="indicators-bg-btn"><i class="fa-solid fa-chevron-right"></i></div>
-					</div>
+<!-- Banner -->
+<div class="background">
+</div>
+<div class="rectangular-div">   
+</div>
+<div class="indicators-bg">
+	<div id="prevBtn" class="indicators-bg-btn"><i class="fa-solid fa-chevron-left"></i></div>
+	<div id="nextBtn" class="indicators-bg-btn"><i class="fa-solid fa-chevron-right"></i></div>
+</div>
 
-					<section id="one" class="wrapper style1 special">
-						<div class="row">
-							
-							
-							<div class="col-md-5">
-								<div class="header-row" >
-									<div class="title">Events</div>
-									
-								</div>
-								<div id="EcardsContainer" class="Ecards-container">
-									<!-- Event cards will be rendered here -->
-								</div>
-								<div id="eventNavigation">
-									<div id="scrollELeftButton" class="navigation-button">&#9664;</div>
-									<div id="scrollERightButton" class="navigation-button">&#9654;</div>
-								</div>
-							</div>
-							<div id="line-container"><div id="line"></div></div>
-							<div class="col-md-7">
-								<div class="header-row">
-									<div class="title">News </div>
-								</div>
-								<div id="cardsContainer" class="cards-container">
-								</div>
-								<div id="navigation">
-									<div id="scrollLeftButton" class="navigation-button">&#9664;</div>
-									<div id="scrollRightButton" class="navigation-button">&#9654;</div>
-								</div>
-							</div>
+<!-- news and event card section -->
+<section id="one" class="wrapper style1 special">
+	<div class="row">
+		<div class="col-md-5">
+			<div class="header-row">
+				<div class="title">Events</div>
+			</div>
+			<div id="EcardsContainer" class="Ecards-container">
+				{% assign news_event_data = site.data.news_events | sort 'date' | reverse %}
+				{% for mem in news_event_data %}
+					{% if mem.event == 1 %}
+					<div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.graphic }});">
+						{% if mem.date %}
+						<div class="inside">
+							<p>{{ mem.date }}</p>
+						{% endif %}
+						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.title }}</a></h1>
+						{% if mem.date %}
 						</div>
-								
-					<br>
-					</section>
+						{% endif %}
+					</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+			<div id="eventNavigation">
+				<div id="scrollELeftButton" class="navigation-button">&#9664;</div>
+				<div id="scrollERightButton" class="navigation-button">&#9654;</div>
+			</div>
+		</div>
+		<div id="line-container"><div id="line"></div></div>
+		<div class="col-md-7">
+			<div class="header-row">
+				<div class="title">News </div>
+			</div>
+			<div id="cardsContainer" class="cards-container">
+				{% assign news_event_data = site.data.news_events | sort: 'date' | reverse %}
+				{% for mem in news_event_data %}
+					{% if mem.news == 1 %}
+					<div class="card" id="{{ mem.id }}" style="background-image: url({{ mem.graphic }});">
+						{% if mem.date %}
+						<div class="inside">
+							<p>{{ mem.date }}</p>
+						{% endif %}
+						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.title }}</a></h1>
+						{% if mem.date %}
+						</div>
+						{% endif %}
+					</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+			<div id="navigation">
+				<div id="scrollLeftButton" class="navigation-button">&#9664;</div>
+				<div id="scrollRightButton" class="navigation-button">&#9654;</div>
+			</div>
+		</div>
+	</div>
+	<br>
+</section>
 
-					<script>
-
-					// Dynamic Data
-					 var newsData = [
-						{% assign news_event_data = site.data.news_events %}
-						{% for mem in news_event_data %}
-							{% if mem.news == 1 %}
-							{
-								id: "{{ mem.id }}",
-								title: "{{ mem.title }}",
-								date: "{{ mem.date }}",
-								content: "{{ mem.content }}",
-								img: "{{ mem.graphic }}",
-								link: "{{ mem.link }}"
-							}{% unless forloop.last %},{% endunless %}
-							{% endif %}
-						{% endfor %}
-					];
-
-					var eventData = [
-						{% assign news_event_data = site.data.news_events %}
-						{% for mem in news_event_data %}
-							{% if mem.event == 1 %}
-							{
-								id:"{{ mem.id }}",
-								title:"{{ mem.title }}",
-								date:"{{ mem.date }}",
-								content:"{{ mem.content }}",
-								img:"{{ mem.graphic }}", link:"{{mem.link}}"
-							}
-							{% unless forloop.last %},{% endunless %}
-							{% endif %}
-						{% endfor %}
-					];
-					</script>
-
-					<script src="{{ site.baseurl }}/js/pages/script.js">
-					</script>
-
-
-
+<script src="{{ site.baseurl }}/js/pages/script.js"></script>
+					
