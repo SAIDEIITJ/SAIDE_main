@@ -270,8 +270,26 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
   .popup-content {
 	text-align: left;
-	
+	padding: 20px;
   }
+  .arrow-left, .arrow-right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+	color: #6e0d10; /* Adjust color as needed */
+	cursor: pointer;
+  }
+
+  .arrow-left {
+	left: 10px; /* Adjust spacing from the left edge */
+
+  }
+
+  .arrow-right {
+	right: 10px; /* Adjust spacing from the right edge */
+  }
+
 
   #bullets{
 	font-size: 0.9em;
