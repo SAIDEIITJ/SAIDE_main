@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    const baseURL = 'https://sw509073.github.io/image-hosting/images/';
     const backgroundImages = [
         'bg.png',
         'banner1.png',
@@ -113,7 +114,7 @@ $(document).ready(function() {
         return new Promise((resolve, reject) => {
             for (let i = 0; i < imageArray.length; i++) {
                 const img = new Image();
-                img.src = `images/${imageArray[i]}`;
+                img.src = `${baseURL}${imageArray[i]}`;
                 img.onload = () => {
                     loadedImages++;
                     if (loadedImages === totalImages) {
