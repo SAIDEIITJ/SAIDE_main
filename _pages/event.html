@@ -32,7 +32,7 @@ permalink: /event/
     }
 
     .event-image p {
-        font-size: large;
+        font-size: medium;
         padding-top: 15px;
         font-weight: 500;
         line-height: 1.2em;
@@ -55,15 +55,12 @@ permalink: /event/
     .main-heading {
         font-size: 1.8rem;
         color: darkred;
+        text-align: center;
+        padding: 30px;
     }
 
     .info {
-        padding: 20px;
         text-align: left;
-    }
-
-    .info .main-heading {
-        text-align: center;
     }
 
     .details {
@@ -256,9 +253,66 @@ permalink: /event/
     }
 
     .sponsers img {
-        margin: 20px;
         height: 150px;
         width: auto;
+        margin-bottom: 50px;
+        }
+    .schedule {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .event-week{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #events {
+        width: 90%;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .event-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .event-heading {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      background-color: #cfdce2;
+      margin: 0;
+      padding: 5px;
+    }
+
+    .event-details {
+      display: flex;
+      align-items: center;
+      background-color: #edf2f4;
+      margin: 0;
+      padding: 5px;
+    }
+
+    .event-circle {
+      width: 10px;
+      height: 10px;
+      background-color: rgb(84, 156, 234);
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    #prev-week, #next-week{
+        background-color: #2B2D42;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        padding: 5px 10px 5px 10px;
     }
 </style>
 
@@ -340,48 +394,153 @@ permalink: /event/
             </div>
 
         </div>
-
         <h1 class="main-heading">Event Schedule</h1>
-        <div id='calendar'></div>
-        <!-- <script>
-
-            document.addEventListener('DOMContentLoaded', function () {
-                var calendarEl = document.getElementById('calendar');
-
-                var calendar = new FullCalendar.Calendar(calendarEl, {
-                    googleCalendarApiKey: 'AIzaSyB4QT4d_LGwVXUHwBndy5_A_pvu5S4hWag',
-                    events: {
-                        googleCalendarId: 'iva.agarwal.bkn@gmail.com'
-                    }
-                });
-                calendar.render();
-            });
-
-
-        </script> -->
-        <script type='text/javascript'>
-
-            document.addEventListener('DOMContentLoaded', function() {
-              var calendarEl = document.getElementById('calendar');
-          
-              var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView:'listWeek',
-                googleCalendarApiKey: 'AIzaSyB4QT4d_LGwVXUHwBndy5_A_pvu5S4hWag',
-                eventSources: [
-                  {
-                    googleCalendarId: 'iva.agarwal.bkn@gmail.com'
-                  },
-                  {
-                    googleCalendarId: 'iva.agarwal.bkn@gmail.com',
+        <div class="schedule">
+            <div class="event-week">
+              <h2 id="week-heading"></h2>
+              <div>
+                <button id="prev-week">Previous Week</button>
+                <button id="next-week">Next Week</button>
+              </div>
+            </div>
+            <ul id="events"></ul>
+          </div>
+        </div>
+      
+     
+        <script>
+            const apiKey = 'AIzaSyB4QT4d_LGwVXUHwBndy5_A_pvu5S4hWag'; // Replace with your API key
+            const calendarId = 'iva.agarwal.bkn@gmail.com'; // Replace with your calendar ID
+        
+            let allEvents = [];
+            let currentWeekStart = new Date();
+        
+            // Function to fetch events from Google Calendar
+            async function fetchEvents() {
+              const now = new Date().toISOString();
+              const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime`;
+        
+              try {
+                const response = await fetch(url);
+                const data = await response.json();
+                allEvents = data.items;
+                displayEventsForWeek(currentWeekStart);
+              } catch (error) {
+                console.error('Error fetching events:', error);
+              }
+            }
+        
+            // Function to format date and time
+            function formatDateTime(dateTime) {
+              const options = {
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true,
+              };
+              return new Intl.DateTimeFormat('en-US', options).format(new Date(dateTime));
+            }
+        
+            // Function to format date only
+            function formatDate(date) {
+              const options = {
+                month: 'short',
+                day: 'numeric',
+              };
+              return new Intl.DateTimeFormat('en-US', options).format(new Date(date));
+            }
+        
+            // Function to display events for the specified week
+            function displayEventsForWeek(startOfWeek) {
+              const eventsList = document.getElementById('events');
+              const weekHeading = document.getElementById('week-heading');
+              eventsList.innerHTML = '';
+        
+              const endOfWeek = new Date(startOfWeek);
+              endOfWeek.setDate(startOfWeek.getDate() + 6); // Set to the last day of the week (6 days after start)
+        
+              // Update the week heading
+              weekHeading.textContent = `${formatDate(startOfWeek)} - ${formatDate(endOfWeek)}`;
+        
+              const eventsByDay = {};
+        
+              allEvents.forEach(event => {
+                const eventDate = new Date(event.start.dateTime || event.start.date);
+                if (eventDate >= startOfWeek && eventDate <= endOfWeek) {
+                  const eventDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(eventDate);
+                  const eventDateFormatted = formatDate(eventDate);
+                  const formattedStart = formatDateTime(event.start.dateTime || event.start.date);
+                  
+                  if (!eventsByDay[eventDay]) {
+                    eventsByDay[eventDay] = {
+                      date: eventDateFormatted,
+                      events: []
+                    };
                   }
-                ]
+                  eventsByDay[eventDay].events.push({ time: formattedStart, summary: event.summary });
+                }
               });
-          
-              calendar.render();
+        
+              for (const [day, { date, events }] of Object.entries(eventsByDay)) {
+                const listItem = document.createElement('li');
+                listItem.classList.add('event-item');
+        
+                const eventHeading = document.createElement('div');
+                eventHeading.classList.add('event-heading');
+        
+                const eventDay = document.createElement('span');
+                eventDay.textContent = day;
+        
+                const eventDateSpan = document.createElement('span');
+                eventDateSpan.textContent = date;
+        
+                eventHeading.appendChild(eventDay);
+                eventHeading.appendChild(eventDateSpan);
+                listItem.appendChild(eventHeading);
+        
+                events.forEach(event => {
+                  const eventDetails = document.createElement('div');
+                  eventDetails.classList.add('event-details');
+        
+                  const eventTime = document.createElement('span');
+                  eventTime.textContent = event.time;
+        
+                  const eventCircle = document.createElement('div');
+                  eventCircle.classList.add('event-circle');
+        
+                  const eventText = document.createElement('p');
+                  eventText.textContent = event.summary;
+        
+                  eventDetails.appendChild(eventTime);
+                  eventDetails.appendChild(eventCircle);
+                  eventDetails.appendChild(eventText);
+        
+                  listItem.appendChild(eventDetails);
+                });
+        
+                eventsList.appendChild(listItem);
+              }
+        
+              if (eventsList.innerHTML === '') {
+                eventsList.innerHTML = '<li>No events found for this week.</li>';
+              }
+            }
+        
+            // Event listeners for week navigation buttons
+            document.getElementById('prev-week').addEventListener('click', () => {
+              currentWeekStart.setDate(currentWeekStart.getDate() - 7);
+              displayEventsForWeek(currentWeekStart);
             });
-          
+        
+            document.getElementById('next-week').addEventListener('click', () => {
+              currentWeekStart.setDate(currentWeekStart.getDate() + 7);
+              displayEventsForWeek(currentWeekStart);
+            });
+        
+            // Fetch and display events when the page loads
+            fetchEvents();
           </script>
-
+            
+       
         <h1 class="main-heading">Sponsors</h1>
         <div class="sponsers">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_IITJ.png" alt="">
@@ -390,6 +549,8 @@ permalink: /event/
             <img src="https://st3.depositphotos.com/43745012/44906/i/450/depositphotos_449066958-stock-photo-financial-accounting-logo-financial-logo.jpg"
                 alt="">
         </div>
+    </div>   
+
     </div>
 
 </div>

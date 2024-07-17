@@ -40,6 +40,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	z-index: 9999;
   }
   
+  
   /* Hide main content initially */
   #main-content {
 	display: none;
@@ -1412,6 +1413,7 @@ table {
     margin-bottom: 20px;
     text-align: center;
     border-radius: 5px;
+	border: 1px solid rgb(233, 233, 233) ;
 }
 
 #shareh3{

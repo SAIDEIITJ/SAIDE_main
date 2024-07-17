@@ -1,5 +1,7 @@
 
 $(document).ready(function() {
+    // cdn images uploaded online
+    // const baseURL = 'https://sw509073.github.io/image-hosting/images/';
     const backgroundImages = [
         'bg.png',
         'banner1.png',
@@ -31,21 +33,20 @@ $(document).ready(function() {
 
    
     const otherImages = [
-        'iit.png',
         'Admissions.png',
-        'AIhealth.png',
+        // 'AIhealth.png',
         'Alumini.png',
         'brain.png',
         'BTech.png',
-        'btech1.png',
-        'btech2.png',
-        'campus_master.png',
+        // 'btech1.png',
+        // 'btech2.png',
+        // 'campus_master.png',
         'Campus.png',
         'CoE.png',
-        'compEco.png',
+        // 'compEco.png',
         'Contact.png',
         'Continuing.png',
-        'digital.jpg',
+        // 'digital.jpg',
         'Directory.png',
         'economics.png',
         'Ecosystem.png',
@@ -57,27 +58,27 @@ $(document).ready(function() {
         'Governance.png',
         'health.png',
         'iit.png',
-        'intelliInfra.png',
+        // 'intelliInfra.png',
         'Labs.png',
-        'loc1.jpeg',
-        'loc2.jpeg',
-        'loc3.png',
+        // 'loc1.jpeg',
+        // 'loc2.jpeg',
+        // 'loc3.png',
         'logo_bg.png',
         'Logo_IITJ.png',
         'Mission.png',
         'MSR.png',
         'MTech.png',
-        'mtech1.png',
-        'mtech2.png',
-        'mtech3.png',
-        'news1.png',
-        'news2.png',
-        'news3.png',
-        'news4.png',
-        'news5.png',
-        'nextGen.png',
+        // 'mtech1.png',
+        // 'mtech2.png',
+        // 'mtech3.png',
+        // 'news1.png',
+        // 'news2.png',
+        // 'news3.png',
+        // 'news4.png',
+        // 'news5.png',
+        // 'nextGen.png',
         'Outreach.png',
-        'permanent2.png',
+        // 'permanent2.png',
         'PhD.png',
         'postdoc.png',
         'ProjectPositions.png',
@@ -93,7 +94,6 @@ $(document).ready(function() {
         'Themes.png',
         'theoritical.png',
         'vision.png',
-
         // Add more image URLs as needed
     ];
 
@@ -115,6 +115,7 @@ $(document).ready(function() {
         return new Promise((resolve, reject) => {
             for (let i = 0; i < imageArray.length; i++) {
                 const img = new Image();
+                // img.src = `${baseURL}${imageArray[i]}`;
                 img.src = `images/${imageArray[i]}`;
                 img.onload = () => {
                     loadedImages++;
@@ -175,11 +176,6 @@ $(document).ready(function() {
         currentIndex = (currentIndex - 1 + backgroundImages.length) % backgroundImages.length;
         changeBackground();
     }
-
-    // Set interval to automatically change background every 5 seconds
-    // let intervalId = setInterval(nextBackground, 5000);
-
-    // Initial background setup
     changeBackground();
 });
 function toggleDropdown() {
@@ -204,33 +200,9 @@ let scrollLength = 418;
 let scrollELength = 575; 
 
 
-function renderItems(container, items) {
-    container.innerHTML = items.map(item => `
-     
-        <div class="card" id="${item.id}" style="background-image: url(${item.img});">
-            ${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
-            <h1><a href="${item.link}" target="_blank" class="card-link">${item.title}</a></h1>
-            ${item.date ? '</div>' : ''}
-        </div>
-   
-    `).join('');
-}
-
-function renderEItems(container, items) {
-    container.innerHTML = items.map(item => `
-        <div class="card Events" id="${item.id}" style="background-image: url(${item.img});">
-            ${item.date ? `<div class="inside"><p>${item.date}</p>` : ''}
-            <h1><a href="${item.link}" target="_blank" class="card-link">${item.title}</a></h1>
-            ${item.date ? '</div>' : ''}
-        </div>
-    `).join('');
-}
-
-
 function showNews() {
 
     const container = document.getElementById("cardsContainer");
-    renderItems(container, newsData); // Render all news items
     scrollContainerToStart(); // Scroll container to the start
     restartScrollInterval();
 }
@@ -238,7 +210,6 @@ function showNews() {
 function showEvents() {
 
     const container = document.getElementById("EcardsContainer");
-    renderEItems(container, eventData); // Render all event items
     scrollEContainerToStart(); // Scroll container to the start
     restartScrollEInterval();
 }
