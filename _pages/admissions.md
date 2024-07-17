@@ -8,7 +8,9 @@ permalink: /admissions/
 
 
 <div id="parent-box">
+
 <div class="general-section">
+
 <h1 style="text-transform: none;">Admissions at School of Artificial Intelligence & Data Science</h1>
 <div class="row">
 <div class="col-md-9">
@@ -17,58 +19,28 @@ permalink: /admissions/
 </div>
 </div>
 <div class="application-section">
+
 <table>
 <thead>
+
 <tr>
-<th>Programs</th>
+<th style="text-align:left">Programs</th>
 <th>Curriculum</th>
 <th>Application Deadline</th>
 <th>Application Link</th>
 </tr>
 </thead>
 <tbody>
+{% assign programs_data = site.data.programs  %}
+{% for member in programs_data %}
 <tr>
-<td>Cell 1</td>
-<td>Cell 2</td>
-<td>Cell 3</td>
-<td>Cell 4</td>
+<td style="text-align:left">{{member.name}}</td>
+<td><a href="{{ member.document }}" target="_blank" class="view-more" style="border:0;">View More</a></td>
+<td>{{member.deadline}}</td>
 
+<td><a href="{{ member.application }}" target="_blank" class="apply-now" style="border:0;text-decoration:none;"><i class="fa-regular fa-hand-point-right"></i> Apply Now</a></td>
 </tr>
-<tr>
-<td>Cell 1</td>
-<td>Cell 2</td>
-<td>Cell 3</td>
-<td>Cell 4</td>
-
-</tr>
-<tr>
-<td>Cell 1</td>
-<td>Cell 2</td>
-<td>Cell 3</td>
-<td>Cell 4</td>
-
-</tr>
-<tr>
-<td>Cell 1</td>
-<td>Cell 2</td>
-<td>Cell 3</td>
-<td>Cell 4</td>
-
-</tr>
-<tr>
-<td>Cell 1</td>
-<td>Cell 2</td>
-<td>Cell 3</td>
-<td>Cell 4</td>
-
-</tr>
-<tr>
-<td>Cell 1</td>
-<td>Cell 2</td>
-<td>Cell 3</td>
-<td>Cell 4</td>
-
-</tr>
+{% endfor %}
 </tbody>
 </table>
 </div>
