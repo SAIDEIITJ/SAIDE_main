@@ -3,8 +3,6 @@
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: abhinaba@iitj.ac.in
   phone: (91 291) 280
   office_number: ''
@@ -18,18 +16,11 @@
   affiliation: Centre for Mathematical and Computational Economics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Bhivraj Suthar
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' bhivraj@iitj.ac.in'
   phone: (91 291) 280
   office_number: ''
@@ -43,18 +34,11 @@
   affiliation: ' School of Artificial Intelligence and Data Science'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Bikash Santra
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: bikash@iitj.ac.in
   phone: ' (91 291) 280'
   office_number: ''
@@ -68,18 +52,11 @@
   affiliation: ' School of Artificial Intelligence and Data Science'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Dweepobotee Brahma
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: dweepobotee@iitj.ac.in
   phone: (91 291) 280 1755
   office_number: ''
@@ -93,18 +70,11 @@
   affiliation: Centre for Mathematical and Computational Economics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Dipanjan Roy
   position: Associate Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: droy@iitj.ac.in
   phone: (91 291) 280 1757
   office_number: ''
@@ -121,18 +91,11 @@
   affiliation: Center for Brain Science and Applications
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Ganesh Manjhi
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: gmanjhi@iitj.ac.in
   phone: '(91 291) 280 1759 '
   office_number: ''
@@ -148,18 +111,11 @@
   affiliation: Centre for Mathematical and Computational Economics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Manish Aggarwal
   position: Associate Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ma@iitj.ac.in
   phone: (91 291) 280 1811
   office_number: ''
@@ -173,18 +129,11 @@
   affiliation: School of Artificial Intelligence and Data Science
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Saurabh Gandhi
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: sgandhi@iitj.ac.in
   phone: ''
   office_number: ''
@@ -200,18 +149,11 @@
   affiliation: Center for Brain Science and Applications
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Shilpa Dang
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: sdang@iitj.ac.in
   phone: (91 291) 280 1758
   office_number: ''
@@ -225,18 +167,11 @@
   affiliation: Center for Brain Science and Applications
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: S. Srivatsa Srinivas
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: srivatsa@iitj.ac.in
   phone: (91 291) 280 1754
   office_number: ''
@@ -252,18 +187,11 @@
   affiliation: Centre for Mathematical and Computational Economics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Vignesh Muralidharan
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: vigneshmdharan@iitj.ac.in
   phone: ' (91 291) 280 1753'
   office_number: ''
@@ -280,18 +208,11 @@
   affiliation: Center for Brain Science and Applications
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: 'Abhilasha Maheshwari '
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: abhilasham@iitj.ac.in
   phone: (0291)2801713
   office_number: ''
@@ -307,18 +228,11 @@
   affiliation: Chemical engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Amit Bhardwaj
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' amitb@iitj.ac.in'
   phone: (91 291) 280 1372
   office_number: ''
@@ -334,18 +248,11 @@
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Anand Krishnan Plappally
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: anandk@iitj.ac.in
   phone: (91 291) 280 1507
   office_number: ''
@@ -359,18 +266,11 @@
   affiliation: ' Mechanical Engineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Anand Mishra
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: mishra@iitj.ac.in
   phone: (91 291) 280 1264
   office_number: ''
@@ -384,18 +284,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Angan Sengupta
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: angan@iitj.ac.in
   phone: (91 291) 280 1706
   office_number: ''
@@ -412,18 +305,11 @@
   affiliation: Chemical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Anil Kumar Tiwari
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: akt@iitj.ac.in
   phone: (91 291) 280 1353
   office_number: ''
@@ -437,18 +323,11 @@
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Ankita Sharma
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ankitasharma@iitj.ac.in
   phone: ' (91 291) 280 1406'
   office_number: ''
@@ -464,18 +343,11 @@
   affiliation: 'School of Liberal Arts '
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Anuj Pal Kapoor
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: anujkapoor@iitj.ac.in
   phone: ''
   office_number: ''
@@ -491,18 +363,11 @@
   affiliation: School of Management and Entrepreneurship
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Arun Kumar Singh
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' singhak@iitj.ac.in'
   phone: (91 291) 280 1358
   office_number: ''
@@ -516,18 +381,11 @@
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Avinash Sharma
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: avinashsharma@iitj.ac.in
   phone: (91 291) 280 1275
   office_number: ''
@@ -541,18 +399,11 @@
   affiliation: Computer Science Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Chhanda Chakraborti
   position: Visiting Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: chhanda@iitj.ac.in
   phone: ' (91 291) 280 1420'
   office_number: ''
@@ -566,18 +417,11 @@
   affiliation: School of Liberal Arts
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Debasis Das
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: debasis@iitj.ac.in
   phone: (91 291) 280 1261
   office_number: ''
@@ -591,18 +435,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Deepak Mishra
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: dmishra@iitj.ac.in
   phone: (91 291) 280 1262
   office_number: ''
@@ -616,18 +453,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Dilpreet Kaur
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: dilpreetkaur@iitj.ac.in
   phone: (91 291) 280 1460
   office_number: ''
@@ -641,18 +471,11 @@
   affiliation: Mathematics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Dip Sankar Banerjee
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: dipsankarb@iitj.ac.in
   phone: (91 291) 280 1272
   office_number: ''
@@ -666,18 +489,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Gaurav Bhatnagar
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: goravb@iitj.ac.in
   phone: (91 291) 280 1457
   office_number: ''
@@ -693,18 +509,11 @@
   affiliation: Mathematics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Harshal Akolekar
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: harshal.akolekar@iitj.ac.in
   phone: ' (91 291) 280 1527 '
   office_number: ''
@@ -720,18 +529,11 @@
   affiliation: Mechanical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Krunal M. Gangawane
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: krunalg@iitj.ac.in
   phone: (91 291) 280 1347
   office_number: ''
@@ -747,18 +549,11 @@
   affiliation: Department of Chemical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Krishna Kumar Balaraman
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' krishna@iitj.ac.in'
   phone: ' (91 291) 280 1815 '
   office_number: ''
@@ -772,18 +567,11 @@
   affiliation: School of Management & Entrepreneurship
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Manoj Choudhary
   position: Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: manoj@iitj.ac.in
   phone: (91 291) 280 1383
   office_number: ''
@@ -797,18 +585,11 @@
   affiliation: ' Electrical Engineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Mayank Vatsa
   position: Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: mvatsa@iitj.ac.in
   phone: (91 291) 280 1266
   office_number: ''
@@ -822,18 +603,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Mitali Mukerji
   position: Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' mitali@iitj.ac.in'
   phone: ' (91 291) 280 1217'
   office_number: ''
@@ -847,18 +621,11 @@
   affiliation: BioScience and Bioengineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Md Abu Talhamainuddin Ansary
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: mdabutalha@iitj.ac.in
   phone: ' (91 291) 280 1465'
   office_number: ''
@@ -872,18 +639,11 @@
   affiliation: Mathematics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Neeraj Jain
   position: Professor (Head of School)
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: neeraj.jain@iitj.ac.in
   phone: (91 291) 280
   office_number: ''
@@ -897,18 +657,11 @@
   affiliation: Bioscience & Bioengineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Nishant Kumar
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: nishantkumar@iitj.ac.in
   phone: (91 291) 280 1382
   office_number: ''
@@ -925,18 +678,11 @@
   affiliation: ' Electrical Engineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Pankaj Yadav
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: pyadav@iitj.ac.in
   phone: (91 291) 280 1211
   office_number: ''
@@ -950,18 +696,11 @@
   affiliation: Biioinformatics, Multi-omics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Pradip Kumar Tewari
   position: Visiting Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: pradiptewari@iitj.ac.in
   phone: (91 291) 280 1703
   office_number: ''
@@ -977,18 +716,11 @@
   affiliation: Chemical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: P. Ravi Prakash
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: rp@iitj.ac.in
   phone: 91 291) 280 1661
   office_number: ''
@@ -1004,18 +736,11 @@
   affiliation: Civil and Infrastructure Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Puneet Sharma
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: puneet@iitj.ac.in
   phone: ' (91 291) 280 1455'
   office_number: ''
@@ -1029,18 +754,11 @@
   affiliation: Mathematics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Rajendra Nagar
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: rn@iitj.ac.in
   phone: (91 291) 280 1369
   office_number: ''
@@ -1054,18 +772,11 @@
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Ravi Yadav
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: raviyee@iitj.ac.in
   phone: (91 291) 280 1380
   office_number: ''
@@ -1083,18 +794,11 @@
   affiliation: ' Electrical Engineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Ranju Mohan
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ranju@iitj.ac.in
   phone: (91 291) 280 1657
   office_number: ''
@@ -1110,18 +814,11 @@
   affiliation: ' Civil Engineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: 'Reetanjali Moharana  '
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: reetanjali@iitj.ac.in
   phone: (91 291) 280 1616
   office_number: ''
@@ -1135,18 +832,11 @@
   affiliation: ' Physics'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Richa Singh
   position: Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: richa@iitj.ac.in
   phone: (91 291) 280 1267
   office_number: ''
@@ -1160,18 +850,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Romi Banerjee
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: romibanerjee@iitj.ac.in
   phone: (91 291) 280 1269
   office_number: ''
@@ -1185,18 +868,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Santanu Chaudhury
   position: Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: santanuc@iitj.ac.in
   phone: (91 291) 280 1025
   office_number: ''
@@ -1210,18 +886,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Sandeep Kumar Yadav
   position: Associate Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: sy@iitj.ac.in
   phone: (91 291) 280 1354
   office_number: ''
@@ -1235,18 +904,11 @@
   affiliation: Electrical Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Saran Aadhar
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: saran.aadhar@iitj.ac.in
   phone: (91 291) 280 1662
   office_number: ''
@@ -1262,18 +924,11 @@
   affiliation: ' Civil and Infrastructure Engineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Somitra Sanadhya
   position: Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' somitra@iitj.ac.in'
   phone: (91 291) 280 1271
   office_number: ''
@@ -1287,18 +942,11 @@
   affiliation: Computer Science & Engineering
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Sucharita Dey
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: sdey@iitj.ac.in
   phone: ' (91 291) 280 1218'
   office_number: ''
@@ -1312,18 +960,11 @@
   affiliation: ' Bioscience and Bioengineering'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Subhash Bhagat
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: sbhagat@iitj.ac.in
   phone: (91 291) 280 1468
   office_number: ''
@@ -1337,18 +978,11 @@
   affiliation: ' Department of Mathematics'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Suman Dhaka
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: dhakas@iitj.ac.in
   phone: (91 291) 280 1415
   office_number: ''
@@ -1362,18 +996,11 @@
   affiliation: School of Liberal Arts
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: V. Narayanan
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: vnara@iitj.ac.in
   phone: (91 291) 280 1607
   office_number: ''
@@ -1389,18 +1016,11 @@
   affiliation: Physics
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Vivek Vijay
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: vivek@iitj.ac.in
   phone: (91 291) 280 1454
   office_number: ''
@@ -1414,18 +1034,11 @@
   affiliation: ' Mathematics'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: V. V. M. S. Chandramouli
   position: Assistant Professor
   faculty: 1
   subfaculty: Affiliated Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ' dhakas@iitj.ac.in'
   phone: (91 291) 280 1415
   office_number: ''
@@ -1439,18 +1052,11 @@
   affiliation: ' Mathematics'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Abhimanyu Kumar
   position: Adjunct Faculty
   faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: ''
   phone: ''
   office_number: ''
@@ -1466,18 +1072,11 @@
   affiliation: CAIPM, School of AIDE
   display: 1
   primaryaffiliation: DSRRAU, Jodhpur
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Saptarshi Mukherjee
   position: Adjunct Faculty
   faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: saptarshi@hss.iitd.ac.in
   phone: ''
   office_number: ''
@@ -1491,18 +1090,11 @@
   affiliation: CMCE, School of AIDE
   display: 1
   primaryaffiliation: 'Indian Institute of Technology Delhi '
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Sylvain Baillet
   position: Adjunct Faculty
   faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: sylvain.baillet@mcgill.ca
   phone: ''
   office_number: ''
@@ -1516,18 +1108,11 @@
   affiliation: CBSA, School of AIDE
   display: 1
   primaryaffiliation: Faculty of Medicine & Health Sciences, McGill University
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Tapan K. Gandhi
   position: Adjunct Faculty
   faculty: 1
   subfaculty: Adjunct Faculty
   staff: 0
-  student: 0
-  alumni: 0
   email: tgandhi@ee.iitd.ac.in
   phone: ''
   office_number: ''
@@ -1543,18 +1128,11 @@
   affiliation: CBSA, School of AIDE
   display: 1
   primaryaffiliation: Indian Institute of Technology Delhi
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Vinay Kulkarni
   position: Professor of Practice
   faculty: 1
   subfaculty: Professor of Practice
   staff: 0
-  student: 0
-  alumni: 0
   email: ''
   phone: ''
   office_number: ''
@@ -1567,18 +1145,11 @@
   affiliation: ''
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Taranjit Kaur
   position: Scientific Officer
   faculty: 0
   subfaculty: Scientific Staff
   staff: 1
-  student: 0
-  alumni: 0
   email: taranjit@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1594,18 +1165,11 @@
   affiliation: CBSA, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
 - name: Abinaya Vairam
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p22ai001@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1619,18 +1183,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ' Ph.D'
-  faculties: Dr. Dipanjan Roy
-  researchArea: Computational Neuroscience, Neurogenetics
-  education: M.Tech - Data Science and Engineering, B.Tech - Industrial Biotechnology
 - name: Arpit Shrimankar
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p23ai0004@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1644,18 +1201,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Dr. Vignesh Muralidharan, Dr. Dipanjan Roy
-  researchArea: Neuroscience of Action Control, Computational Neuroscience
-  education: B.E,M.E in Biomedical Engineering from GEC Gandhinagar
 - name: Debottam Bhunia
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p22ai203@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1669,18 +1219,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Dr. Dipanjan Roy
-  researchArea: Developing large-scale computational models of multisensory perception
-  education: ' M.TECH: Power Electronics & Electrical Drives, B.TECH: Electrical Engineering'
 - name: Gargi Bhattacharjee
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p22ai002@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1694,18 +1237,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Dr. Shilpa Dang
-  researchArea: Cognitive Neuroscience - Spatial Working Memory
-  education: M.E (Software Engineering), B.Tech (CSE)
 - name: Kunjesh Kamleshbhai Parekh
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' p23ai0003@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1719,18 +1255,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: ' (TBD)'
-  researchArea: Artificial Intelligence
-  education: ''
 - name: Manuj Jha
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p22ai202@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1744,18 +1273,11 @@
   affiliation: Center for Mathematical and Computational Economics, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: ' Dr. Ganesh Manjhi'
-  researchArea: Macroeconomic Implications of Climate Change
-  education: M.A. (Economics)
 - name: Md Shaheen Perwez
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' r23ab0004@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1769,18 +1291,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: MS (by Research)
-  faculties: Dr. Vignesh Muralidharan , Dr. Bhivraj Suthar
-  researchArea: 'Brain-Computer Interface, Artificial Intelligence '
-  education: B.Tech (Electrical Engineering)
 - name: N Akhila
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' p23ai0001@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1794,18 +1309,11 @@
   affiliation: ' Center for Brain Science and Applications, School of AIDE'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Dr. Dipanjan Roy
-  researchArea: Exploring Brain Dynamics using Heart-Brain coupling
-  education: M.Tech (Data Science), B.Tech (Computer Science)
 - name: Preetam Kumar
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' p23ai0002@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1819,18 +1327,11 @@
   affiliation: ' Center for Brain Science and Applications, School of AIDE'
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Dr. Saurabh Gandhi
-  researchArea: Computational Vision, Machine Learning
-  education: M.Tech (Data Science and Engineering)
 - name: Rashmi Singh
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p23ai0006@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1844,18 +1345,11 @@
   affiliation: School of Artificial Intelligence and Data Science
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: (TBD)
-  researchArea: Computer Vision & Deep Learning
-  education: ' M.Tech (Machine Learning), B.Tech (Computer Science and Engineering)'
 - name: Ramjan Ali
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: r23am0001@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1869,18 +1363,11 @@
   affiliation: Center for Mathematical and Computational Economics, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: MS (by Research)
-  faculties: Dr. S. Srivatsa Srinivas
-  researchArea: Queuing game theory
-  education: MSc Mathematics
 - name: Shreya Deb
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' r23ab0002@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1894,18 +1381,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: MS (by Research)
-  faculties: ' Dr. Dipanjan Roy , Dr. Vignsh Muralidharan'
-  researchArea: Computational and coginitive neuroscience
-  education: B.Tech in Electrical and Electronics Engineering
 - name: Shubham Kumar
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' p23ai0009@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1919,18 +1399,11 @@
   affiliation: Center for Mathematical and Computational Economics, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Dr. Abhinaba Lahiri
-  researchArea: Mechanism Design, Game Theory, Social Choice Theory
-  education: MSc in Economics
 - name: Swatantra Dhara
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: ' r23ab0003@iitj.ac.in'
   phone: ''
   office_number: ''
@@ -1944,18 +1417,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: MS (by Research)
-  faculties: ' Dr. Dipanjan Roy'
-  researchArea: Computational Approaches to Episodic Memory
-  education: ''
 - name: Sweta Kaman
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: kaman.1@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1969,20 +1435,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: Ph.D
-  faculties: Prof. Ankita Sharma , Dr. Romi Banerjee
-  researchArea: Cognitive Neuropsychology, Wise Decision Making, Psychometrics
-  education: >-
-    B.Tech (Computer Science and Engineering) M.Tech (Computer Science and
-    Engineering)
 - name: Tirthankar Roy
   position: Research Scholar
   faculty: 0
   subfaculty: Research Scholar
   staff: 0
-  student: 1
-  alumni: 0
   email: p22ai201@iitj.ac.in
   phone: ''
   office_number: ''
@@ -1996,20 +1453,11 @@
   affiliation: Center for Brain Science and Applications, School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: Dr Amit Bhardwaj, Dr Rajendra Nagar
-  researchArea: Haptics,Computer Vision
-  education: >-
-    B.Tech(Electrical and Electronics Engineering),M.Tech(Robotics and
-    Automation Engineering)
 - name: Shankar Singh
   position: Administrative Staff
   faculty: 0
   subfaculty: Administrative Staff
   staff: 1
-  student: 0
-  alumni: 0
   email: office_saide@iitj.ac.in
   phone: ''
   office_number: ''
@@ -2023,8 +1471,3 @@
   affiliation: School of AIDE
   display: 1
   primaryaffiliation: ''
-  undefined: ''
-  enrolled: ''
-  faculties: ''
-  researchArea: ''
-  education: ''
