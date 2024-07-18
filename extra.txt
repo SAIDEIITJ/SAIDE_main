@@ -646,3 +646,112 @@ css.slider-container {
 .description {
 	font-size: 16px;
 }
+
+
+
+
+ team: {
+            "Acknowledgement": "acknowledgement",
+            "Department / Center / School": "affiliation",
+            "Faculity?": "faculty",
+            "Subfaculty": "subfaculty",
+            "Staff?": "staff",
+            "Short bio 1": "bio1",
+            "Short bio 2": "bio2",
+            "Short bio 3": "bio3",
+            "Short bio 4": "bio4",
+            "Website": "website",
+            "Office_number": "office_number",
+            "Display?": "display",
+            "email": "email",
+            "Image": "image",
+            "Name": "name",
+            "phone": "phone",
+            "Position": "position",
+            "Timestamp": "timestamp",
+            "Year of joining": "year",
+            "Primary Affiliation": "primaryaffiliation"
+        },
+        news_events: {
+            "Id": "id",
+            "Title": "title",
+            "Date": "date",
+            "News?": "news",
+            "Event?": "event",
+            "Graphic": "graphic",
+            "Content": "content",
+            "Link": "link",
+            "Visibility?": "visibility"
+        },
+        publications: {
+            "Timestamp": "timestamp",
+            "Journal": "journal",
+            "Title": "title",
+            "SAIDE Author 1": "author1",
+            "Date": "date",
+            "Link": "link",
+            "Authors": "author",
+            "Image": "image"
+        },
+        links: {
+            "Page": "page",
+            "Name": "name",
+            "URL": "url"
+        },
+        faqs: {
+            "Category": "category",
+            "Question": "question",
+            "Answer": "answer",
+            "Visible": "visible"
+        },
+        administration: {
+            "Position": "position",
+            "Entry": "entry",
+            "Link": "link"
+        },
+        students: {
+            "Timestamp": "timestamp",
+            "Name": "name",
+            "Program": "program",
+            "Specialization": "specialization",
+            "Center": "center",
+            "Email": "email",
+            "ResearchArea": "researchArea",
+            "Supervisor": "supervisor",
+            "SecondSupervisor": "secondSupervisor",
+            "HighestQualification": "highestQualification",
+            "Website": "website",
+            "ProfilePhoto": "profilePhoto",
+            "Hidden": "hidden",
+            "Alumnus": "alumnus"
+        },
+        programs: {
+            "Timestamp": "timestamp",
+            "Name": "name",
+            "OfferedBy": "offered",
+            "Level": "level",
+            "Coordinator": "coordinator",
+            "URL": "url",
+            "Document": "document",
+            "Background": "background",
+            "Deadline": "deadline",
+            "Application": "application"
+        },
+        events: {
+            "Timestamp": "id",
+            "Name": "name",
+            "Start": "start",
+            "End": "end",
+            "Description": "description",
+            "Type": "type",
+            "Banner": "banner",
+            "Preset": "preset",
+            "TileBackground": "tileBackground",
+            "Registration": "registration",
+            "Schedule": "schedule",
+            "Location": "location",
+            "People": "people",
+            "Sponsors": "sponsors",
+            "Contact": "contact",
+            "Hidden": "hidden"
+        }
