@@ -271,6 +271,31 @@
         _request("DELETE", repoPath + "/git/refs/"+ref, options, cb);
       };
 
+            // List all releases of a repository
+      // -------
+      this.listReleases = function(cb) {
+        _request("GET", repoPath + "/releases", null, function(err, releases) {
+          if (err) return cb(err);
+          cb(null, releases);
+        });
+      };
+
+        // Add writeFile method
+  this.writeFile = function(branch, path, content, message, options, callback) {
+    var data = {
+      message: message,
+      content: btoa(content),
+      branch: branch,
+    };
+
+    if (options && options.sha) {
+      data.sha = options.sha;
+    }
+
+    _request('PUT', repoPath + '/contents/' + path, data, callback);
+  };
+
+
       // Create a repo
       // -------
 
