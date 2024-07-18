@@ -11,7 +11,7 @@ permalink: /publications/
 </div>
 
 <section class="paper-section papers-grid" id="papersSection">
-    {% assign sorted_papers = site.data.publications | sort: 'date' %}
+    {% assign sorted_papers = site.data.publications | sort: 'date' | reverse %}
     {% for paper in sorted_papers %}
     <div class="paper-item" data-title="{{ paper.title }}">
         <div class="paper-content">
