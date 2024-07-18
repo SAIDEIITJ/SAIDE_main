@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - position: School Faculty Board
   entry: Chairperson - Director of the Institute
   link: '#'
@@ -54,3 +55,1478 @@
 - position: AI Standards Group
   entry: Prof. Mayank Vatsa, Convenor
   link: http://home.iitj.ac.in/~mvatsa/
+=======
+- name: Abhinaba Lahiri
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: abhinaba@iitj.ac.in
+  phone: (91 291) 280
+  office_number: ''
+  bio1: Social Choice Theory, Mechanism Design, Game Theory
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/abhinabalahiri/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1HqkIgm29ey65zbHMe1WI5A9-lBRbFbEt&sz=w300
+  affiliation: Centre for Mathematical and Computational Economics
+  display: 1
+  primaryaffiliation: ''
+- name: Bhivraj Suthar
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: ' bhivraj@iitj.ac.in'
+  phone: (91 291) 280
+  office_number: ''
+  bio1: Robotics and Artificial Intelligence
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://bhivraj.wixsite.com/about
+  image: >-
+    https://drive.google.com/thumbnail?id=1AHFEi4a7PUd1BEnAcZOzUw2yHEde8CBo&sz=w300
+  affiliation: ' School of Artificial Intelligence and Data Science'
+  display: 1
+  primaryaffiliation: ''
+- name: Bikash Santra
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: bikash@iitj.ac.in
+  phone: ' (91 291) 280'
+  office_number: ''
+  bio1: Computer Vision, Machine Learning, and Medical Image Analysis
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~bikash/
+  image: >-
+    https://drive.google.com/thumbnail?id=1fSrrA9TIKxUN1u_ZSol9HJHn8McroUpp&sz=w300
+  affiliation: ' School of Artificial Intelligence and Data Science'
+  display: 1
+  primaryaffiliation: ''
+- name: Dweepobotee Brahma
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: dweepobotee@iitj.ac.in
+  phone: (91 291) 280 1755
+  office_number: ''
+  bio1: Econometrics, Causal Inference and Machine Learning, Health Economics
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/dweepoboteebrahma/home
+  image: >-
+    https://drive.google.com/thumbnail?id=18UH3harsRjMFjqvOkWLovSv300IHOOIM&sz=w300
+  affiliation: Centre for Mathematical and Computational Economics
+  display: 1
+  primaryaffiliation: ''
+- name: Dipanjan Roy
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: droy@iitj.ac.in
+  phone: (91 291) 280 1757
+  office_number: ''
+  bio1: >-
+    Large scale Brain Networks, Multisensory speech perception & ML; Network
+    Neuroscience, Cognitive Brain dynamics, Visual computations, Eye tracking &
+    Human behavior, Predictive coding
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://dipanjanr.com/
+  image: >-
+    https://drive.google.com/thumbnail?id=13mWwpbmHT21BHKpIFTTZIqvJtqdnzmIE&sz=w300
+  affiliation: Center for Brain Science and Applications
+  display: 1
+  primaryaffiliation: ''
+- name: Ganesh Manjhi
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: gmanjhi@iitj.ac.in
+  phone: '(91 291) 280 1759 '
+  office_number: ''
+  bio1: >-
+    Macroeconomics, Political Economy, Growth Economics, Applied Econometrics
+    and Forecasting 
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/ganesh-manjhi
+  image: >-
+    https://drive.google.com/thumbnail?id=1BCYFfDB7cDK7Oc3IN9Tc3tORveMWWJDm&sz=w300
+  affiliation: Centre for Mathematical and Computational Economics
+  display: 1
+  primaryaffiliation: ''
+- name: Manish Aggarwal
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: ma@iitj.ac.in
+  phone: (91 291) 280 1811
+  office_number: ''
+  bio1: Preference learning, multi criteria decision making
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
+  image: >-
+    https://drive.google.com/thumbnail?id=1UjXbdRdFNqbJTODc902Fhca1MIm3Z-8V&sz=w300
+  affiliation: School of Artificial Intelligence and Data Science
+  display: 1
+  primaryaffiliation: ''
+- name: Saurabh Gandhi
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: sgandhi@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: >-
+    Experimental cognitive neuroscience, computational
+    neuroscience,neuraldynamics,complex systems.
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://csndl-iitd.github.io/cndl-website/
+  image: >-
+    https://drive.google.com/thumbnail?id=192jHmMle7XJzRxG77aMVeWy7YdhW2VcL&sz=w300
+  affiliation: Center for Brain Science and Applications
+  display: 1
+  primaryaffiliation: ''
+- name: Shilpa Dang
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: sdang@iitj.ac.in
+  phone: (91 291) 280 1758
+  office_number: ''
+  bio1: Computational Cognitive Neuroscience; Connectomics; fMRI; Pupillometry
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/shilpadang/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1oSPTebJ2OaA8sW5U8gchFEuFWiQpYiEV&sz=w300
+  affiliation: Center for Brain Science and Applications
+  display: 1
+  primaryaffiliation: ''
+- name: S. Srivatsa Srinivas
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: srivatsa@iitj.ac.in
+  phone: (91 291) 280 1754
+  office_number: ''
+  bio1: >-
+    Queueing Game Theory, Service Operations, Game Theory Applications, Public
+    Policy Modeling
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/srivatsasrinivas/
+  image: >-
+    https://drive.google.com/thumbnail?id=1Pbijvs9H1flX1pCkgWFXvQ9eR0U_-wKF&sz=w300
+  affiliation: Centre for Mathematical and Computational Economics
+  display: 1
+  primaryaffiliation: ''
+- name: Vignesh Muralidharan
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Core Faculty
+  staff: 0
+  email: vigneshmdharan@iitj.ac.in
+  phone: ' (91 291) 280 1753'
+  office_number: ''
+  bio1: >-
+    Cognitive neuroscience of action control, Computational neuroscience,
+    Impulse-control disorders, Non-invasive brain stimulation (TMS),
+    Brain-imaging (EEG)
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/muralilabiitj/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1nHDdnhNDAmRxXBBWxoTSdL8pOqNoh6kV&sz=w300
+  affiliation: Center for Brain Science and Applications
+  display: 1
+  primaryaffiliation: ''
+- name: 'Abhilasha Maheshwari '
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: abhilasham@iitj.ac.in
+  phone: (0291)2801713
+  office_number: ''
+  bio1: >-
+    Water Distribution Networks,  Sustainable Water and energy Management in
+    Industrial Systems,  AI and ML for Environmental and Chemical Systems &#8211; 
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/abhilasham/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1YbJw5HW7a_IjutwFmNeRfsvZZZjejAqe&sz=w300
+  affiliation: Chemical engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Amit Bhardwaj
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ' amitb@iitj.ac.in'
+  phone: (91 291) 280 1372
+  office_number: ''
+  bio1: >-
+    Haptics, Perception, Teleoperation, Applications of Machine Learning and
+    Augmented and Virtual Reality
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~amitb/
+  image: >-
+    https://drive.google.com/thumbnail?id=1tvAnF1MXyUOO5ZHijzoRUQgtMInA6I3G&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Anand Krishnan Plappally
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: anandk@iitj.ac.in
+  phone: (91 291) 280 1507
+  office_number: ''
+  bio1: Wetlands, geospatial applications , agriculture
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/a/iitj.ac.in/plappally/
+  image: >-
+    https://drive.google.com/thumbnail?id=1emQlCF5IequaL4k_dK64wbn6ZMcpMSwz&sz=w300
+  affiliation: ' Mechanical Engineering'
+  display: 1
+  primaryaffiliation: ''
+- name: Anand Mishra
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: mishra@iitj.ac.in
+  phone: (91 291) 280 1264
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://anandmishra22.github.io/
+  image: >-
+    https://drive.google.com/thumbnail?id=1oDz246dAtzdGFmo6XmOwukoif8gc1vfd&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Angan Sengupta
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: angan@iitj.ac.in
+  phone: (91 291) 280 1706
+  office_number: ''
+  bio1: >-
+    Multiscale Modelling and Simulations, Computational Material Design, Fire
+    and Explosion Dynamics and Safety Modelling, Transport Processes Modelling
+    and Simulations
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/aces-laboratory/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1Rpid_FeKMVWHneXRnEmaGqIdVzcx6-3x&sz=w300
+  affiliation: Chemical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Anil Kumar Tiwari
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: akt@iitj.ac.in
+  phone: (91 291) 280 1353
+  office_number: ''
+  bio1: Neuroscience, Image and video processing, Healthcare devices
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~akt/
+  image: >-
+    https://drive.google.com/thumbnail?id=1aJa6TZu2bTLFubjRvk7xMIdVssfmmCLd&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Ankita Sharma
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ankitasharma@iitj.ac.in
+  phone: ' (91 291) 280 1406'
+  office_number: ''
+  bio1: >-
+    Advance form of human behavior as an integration for cognition, emotional,
+    social, moral and self aspects
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/59529
+  image: >-
+    https://drive.google.com/thumbnail?id=1Kpk9l8K_E4d50LPS7SdNFpIn5UeN3K5c&sz=w300
+  affiliation: 'School of Liberal Arts '
+  display: 1
+  primaryaffiliation: ''
+- name: Anuj Pal Kapoor
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: anujkapoor@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: >-
+    Consumer Behavior, Multi-sensory experiences, Neuro-marketing and Design
+    Aesthetics
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/sme-faculty/faculty/anuj-pal-kapoor
+  image: >-
+    https://drive.google.com/thumbnail?id=1NkGRH3ARWpr3nGPzIEqAyRhLBN_hMNkA&sz=w300
+  affiliation: School of Management and Entrepreneurship
+  display: 1
+  primaryaffiliation: ''
+- name: Arun Kumar Singh
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ' singhak@iitj.ac.in'
+  phone: (91 291) 280 1358
+  office_number: ''
+  bio1: Wireless Communications, Spread Spectrum Systems, ML for communications
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~singhak/
+  image: >-
+    https://drive.google.com/thumbnail?id=1HDf_YNTKWP4OI2CnzKxfBwqKbM82xqBu&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Avinash Sharma
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: avinashsharma@iitj.ac.in
+  phone: (91 291) 280 1275
+  office_number: ''
+  bio1: Applied Mathematics for Computer Vision, Brain Modelling
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://3dcomputervision.github.io/
+  image: >-
+    https://drive.google.com/thumbnail?id=1C3y4ix45mWrJ8uSeBpSXWIJWIlPvqRed&sz=w300
+  affiliation: Computer Science Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Chhanda Chakraborti
+  position: Visiting Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: chhanda@iitj.ac.in
+  phone: ' (91 291) 280 1420'
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/chhandachakraborti
+  image: >-
+    https://drive.google.com/thumbnail?id=1-vmOdNuS5N6wVuL_ewiSG8hAdKR3VqJq&sz=w300
+  affiliation: School of Liberal Arts
+  display: 1
+  primaryaffiliation: ''
+- name: Debasis Das
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: debasis@iitj.ac.in
+  phone: (91 291) 280 1261
+  office_number: ''
+  bio1: Networking, IoT and Machine Learning
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/debasisdas
+  image: >-
+    https://drive.google.com/thumbnail?id=1qTwdNuXT6aNLvUR_IbEIfeVsQCwovIYN&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Deepak Mishra
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: dmishra@iitj.ac.in
+  phone: (91 291) 280 1262
+  office_number: ''
+  bio1: Medical Image Analysis, Machine Learning, Resource Constrained AI
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/dmishra
+  image: >-
+    https://drive.google.com/thumbnail?id=1cXZuZnfsNYnV_rM4pQqzSOqA_L87rsac&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Dilpreet Kaur
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: dilpreetkaur@iitj.ac.in
+  phone: (91 291) 280 1460
+  office_number: ''
+  bio1: Group Theory
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/dilpreetkaur
+  image: >-
+    https://drive.google.com/thumbnail?id=1MIEvwhWOLTN9VneZF0o4TIv9yEyK5GBr&sz=w300
+  affiliation: Mathematics
+  display: 1
+  primaryaffiliation: ''
+- name: Dip Sankar Banerjee
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: dipsankarb@iitj.ac.in
+  phone: (91 291) 280 1272
+  office_number: ''
+  bio1: High Performance Computing, Computer Architecture
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/site/dipsankarban/
+  image: >-
+    https://drive.google.com/thumbnail?id=106BhT-uKVBkQeS4cv1MKepYQjJflRFv3&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Gaurav Bhatnagar
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: goravb@iitj.ac.in
+  phone: (91 291) 280 1457
+  office_number: ''
+  bio1: >-
+    Multimedia Security, Image Fusion, Floor Plan Analysis, Image Segmentation,
+    Image Completion
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~goravb/
+  image: >-
+    https://drive.google.com/thumbnail?id=1tWnVOM73SQrc4VL9ICDLcQbmq1H6d20-&sz=w300
+  affiliation: Mathematics
+  display: 1
+  primaryaffiliation: ''
+- name: Harshal Akolekar
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: harshal.akolekar@iitj.ac.in
+  phone: ' (91 291) 280 1527 '
+  office_number: ''
+  bio1: >-
+    Aerodynamics; Computational fluid dynamics; Machine learning; Submarine
+    hydrodynamics; Turbulence Modeling
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://www.harshalakolekar.com/
+  image: >-
+    https://drive.google.com/thumbnail?id=13A_esT1v1duqg_4pHjHDzW6BcJJwnyGy&sz=w300
+  affiliation: Mechanical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Krunal M. Gangawane
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: krunalg@iitj.ac.in
+  phone: (91 291) 280 1347
+  office_number: ''
+  bio1: >-
+    Numerical simulation, Modelling and Optimization, Lattice Boltzmann method,
+    Nanoparticles, Thermal Energy Storage
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://krunalgangawane.wixsite.com/kmgangawane
+  image: >-
+    https://drive.google.com/thumbnail?id=1z8Erx1u1zvOfQlsOezwQ5IdDJ6pBXrMA&sz=w300
+  affiliation: Department of Chemical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Krishna Kumar Balaraman
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ' krishna@iitj.ac.in'
+  phone: ' (91 291) 280 1815 '
+  office_number: ''
+  bio1: Foresight, Microfoundations of Strategic Capability Building
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/280037
+  image: >-
+    https://drive.google.com/thumbnail?id=1LyhywRMIS5VWUQakY_-qY48WXm1znhVG&sz=w300
+  affiliation: School of Management & Entrepreneurship
+  display: 1
+  primaryaffiliation: ''
+- name: Manoj Choudhary
+  position: Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: manoj@iitj.ac.in
+  phone: (91 291) 280 1383
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=10pLUIO6E1T0AQw01tSIYfatrbhNd1H7u&sz=w300
+  affiliation: ' Electrical Engineering'
+  display: 1
+  primaryaffiliation: ''
+- name: Mayank Vatsa
+  position: Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: mvatsa@iitj.ac.in
+  phone: (91 291) 280 1266
+  office_number: ''
+  bio1: Computer Vision, Machine Leanring (deep learning)
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~mvatsa/
+  image: >-
+    https://drive.google.com/thumbnail?id=1q6wwa0uOegPQyI85Anssus4IQqo09-6U&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Mitali Mukerji
+  position: Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ' mitali@iitj.ac.in'
+  phone: ' (91 291) 280 1217'
+  office_number: ''
+  bio1: Genomics, Ayurgenomics and Precision medicine
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/216195
+  image: >-
+    https://drive.google.com/thumbnail?id=1oJQx1R7oqjI_drCHRsRsuNu9VO_MdJxZ&sz=w300
+  affiliation: BioScience and Bioengineering
+  display: 1
+  primaryaffiliation: ''
+- name: Md Abu Talhamainuddin Ansary
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: mdabutalha@iitj.ac.in
+  phone: ' (91 291) 280 1465'
+  office_number: ''
+  bio1: Numerical optimization, Interval analysis
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/md-abu-talhamainuddin-ansary/home?pli=1
+  image: >-
+    https://drive.google.com/thumbnail?id=1EkBX74e9T7q-N9uQhIARzkXHOrWWedOW&sz=w300
+  affiliation: Mathematics
+  display: 1
+  primaryaffiliation: ''
+- name: Neeraj Jain
+  position: Professor (Head of School)
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: neeraj.jain@iitj.ac.in
+  phone: (91 291) 280
+  office_number: ''
+  bio1: Neuroscience
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/205254
+  image: >-
+    https://drive.google.com/thumbnail?id=1T9XmLRuy7POb16n0uCRmMPGKXyvMVtx0&sz=w300
+  affiliation: Bioscience & Bioengineering
+  display: 1
+  primaryaffiliation: ''
+- name: Nishant Kumar
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: nishantkumar@iitj.ac.in
+  phone: (91 291) 280 1382
+  office_number: ''
+  bio1: >-
+    Power System Optimization and Control; Renewable Energy Generation; Control
+    of Microgrid & Smart Grid; Electric Vehicle; Cybersecurity for Electric
+    Power Infrastructure
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~nishantkumar/
+  image: >-
+    https://drive.google.com/thumbnail?id=1EKK3jNayxyMR9_G0GPelhghBiSDJQwsz&sz=w300
+  affiliation: ' Electrical Engineering'
+  display: 1
+  primaryaffiliation: ''
+- name: Pankaj Yadav
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: pyadav@iitj.ac.in
+  phone: (91 291) 280 1211
+  office_number: ''
+  bio1: Biioinformatics, Multi-omics
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/94299
+  image: >-
+    https://drive.google.com/thumbnail?id=1wsPdtCD64V6DdGwWr4vcjn8aqwkv3lhY&sz=w300
+  affiliation: Biioinformatics, Multi-omics
+  display: 1
+  primaryaffiliation: ''
+- name: Pradip Kumar Tewari
+  position: Visiting Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: pradiptewari@iitj.ac.in
+  phone: (91 291) 280 1703
+  office_number: ''
+  bio1: >-
+    AI/ ML based Performance Analysis of Process Equipment and Chemical
+    Industries, Smart Water Grid.
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/pradipktewari/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1aZwJh8B05C9Dc_T6Mg2xPfIcyhg0joGa&sz=w300
+  affiliation: Chemical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: P. Ravi Prakash
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: rp@iitj.ac.in
+  phone: 91 291) 280 1661
+  office_number: ''
+  bio1: >-
+    Computational Mechanics, Structural Fire Engineering, Discrete Element
+    Method
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/raviprakash/
+  image: >-
+    https://drive.google.com/thumbnail?id=1Eg6In-5i11rZycr_9GZqwaOz9NU-Q3qe&sz=w300
+  affiliation: Civil and Infrastructure Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Puneet Sharma
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: puneet@iitj.ac.in
+  phone: ' (91 291) 280 1455'
+  office_number: ''
+  bio1: Dynamical Systems
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/sharmapuneet/home?authuser=0
+  image: >-
+    https://drive.google.com/thumbnail?id=14_9_wQvywUKUgYOrvjnO-E2ElQTOncTy&sz=w300
+  affiliation: Mathematics
+  display: 1
+  primaryaffiliation: ''
+- name: Rajendra Nagar
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: rn@iitj.ac.in
+  phone: (91 291) 280 1369
+  office_number: ''
+  bio1: Computer Vision, Computer Graphics, Digital Geometry Processing
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~rn/
+  image: >-
+    https://drive.google.com/thumbnail?id=10XlEACLm5_iv3YfLnBzRu_v9V0hEa-t7&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Ravi Yadav
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: raviyee@iitj.ac.in
+  phone: (91 291) 280 1380
+  office_number: ''
+  bio1: >-
+    Power system dynamics, wide area monitoring systems, anomaly detection and
+    characterization, AI/ML applications to power systems, power system
+    resiliency, impact of climate events on power grid, and cyber-attack
+    modelling and diagnosis
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/iitj.ac.in/raviyadav/home?pli=1
+  image: >-
+    https://drive.google.com/thumbnail?id=1xCNieZaegc9PQStpDZWwOhqc3Fe6biNZ&sz=w300
+  affiliation: ' Electrical Engineering'
+  display: 1
+  primaryaffiliation: ''
+- name: Ranju Mohan
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ranju@iitj.ac.in
+  phone: (91 291) 280 1657
+  office_number: ''
+  bio1: >-
+    Traffic flow modelling and simulation,Driver behaviour analysis, connected
+    and autonomous vehicles
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/151682
+  image: >-
+    https://drive.google.com/thumbnail?id=1cstj29sYyOfH3A7LYkN4AyvJ3N2nKzaU&sz=w300
+  affiliation: ' Civil Engineering'
+  display: 1
+  primaryaffiliation: ''
+- name: 'Reetanjali Moharana  '
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: reetanjali@iitj.ac.in
+  phone: (91 291) 280 1616
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/94327
+  image: >-
+    https://drive.google.com/thumbnail?id=17FWbBjPYM1zVbcpSnv-nGL63_59JfArT&sz=w300
+  affiliation: ' Physics'
+  display: 1
+  primaryaffiliation: ''
+- name: Richa Singh
+  position: Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: richa@iitj.ac.in
+  phone: (91 291) 280 1267
+  office_number: ''
+  bio1: Machine Learning and Trustable AI
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~richa/
+  image: >-
+    https://drive.google.com/thumbnail?id=1MzerZ_fjJdkk61zlwALPdy5a_pIzwRxP&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Romi Banerjee
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: romibanerjee@iitj.ac.in
+  phone: (91 291) 280 1269
+  office_number: ''
+  bio1: Natural Language Understanding, Creativity in Children, Embodied Systems
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/site/romibitsnbob/home
+  image: >-
+    https://drive.google.com/thumbnail?id=1nb5F_aPFOUJvkiC_wyzDjbcTocEsx7Li&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Santanu Chaudhury
+  position: Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: santanuc@iitj.ac.in
+  phone: (91 291) 280 1025
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://web.iitd.ac.in/~santanuc/
+  image: >-
+    https://drive.google.com/thumbnail?id=1XD1QCX8l9pZaDOfbFptjknMIeoHsKRNB&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Sandeep Kumar Yadav
+  position: Associate Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: sy@iitj.ac.in
+  phone: (91 291) 280 1354
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/89215
+  image: >-
+    https://drive.google.com/thumbnail?id=1p2irp7dz0WS5zGntj_sdjCU5np6TZFiL&sz=w300
+  affiliation: Electrical Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Saran Aadhar
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: saran.aadhar@iitj.ac.in
+  phone: (91 291) 280 1662
+  office_number: ''
+  bio1: >-
+    Surface Hydrology; Hydroclimatic extremes; Hydrologic modeling in natural
+    and anthropogenic climate; Climate change and resilience.
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/247983
+  image: >-
+    https://drive.google.com/thumbnail?id=1FLLz0NN9rDEBTfjmV89MI3mWaJ5Ja5zD&sz=w300
+  affiliation: ' Civil and Infrastructure Engineering'
+  display: 1
+  primaryaffiliation: ''
+- name: Somitra Sanadhya
+  position: Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ' somitra@iitj.ac.in'
+  phone: (91 291) 280 1271
+  office_number: ''
+  bio1: Cryptography; Quantum Computation
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://somitra-sanadhya.github.io/
+  image: >-
+    https://drive.google.com/thumbnail?id=1nlbFg1VWP4N3rugcZLYAxoAvXe3vqilC&sz=w300
+  affiliation: Computer Science & Engineering
+  display: 1
+  primaryaffiliation: ''
+- name: Sucharita Dey
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: sdey@iitj.ac.in
+  phone: ' (91 291) 280 1218'
+  office_number: ''
+  bio1: Structural Bioinformatics
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/218669
+  image: >-
+    https://drive.google.com/thumbnail?id=19gtqHTxaSn1Kznr4cEWQTco0AXSydVgv&sz=w300
+  affiliation: ' Bioscience and Bioengineering'
+  display: 1
+  primaryaffiliation: ''
+- name: Subhash Bhagat
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: sbhagat@iitj.ac.in
+  phone: (91 291) 280 1468
+  office_number: ''
+  bio1: Distributed Computing for Swarm Robotics and Multi-agent Systems
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://sites.google.com/view/subhash-bhagat/home?authuser=0
+  image: >-
+    https://drive.google.com/thumbnail?id=1U2UxET9P1ySGqGGoV9fHwsPMxKGYjUpj&sz=w300
+  affiliation: ' Department of Mathematics'
+  display: 1
+  primaryaffiliation: ''
+- name: Suman Dhaka
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: dhakas@iitj.ac.in
+  phone: (91 291) 280 1415
+  office_number: ''
+  bio1: Cognitive Neuroscience
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/203225
+  image: >-
+    https://drive.google.com/thumbnail?id=18cot7Jc4w88czS28nMi7jvevbgz_KXx5&sz=w300
+  affiliation: School of Liberal Arts
+  display: 1
+  primaryaffiliation: ''
+- name: V. Narayanan
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: vnara@iitj.ac.in
+  phone: (91 291) 280 1607
+  office_number: ''
+  bio1: >-
+    Experimental Quantum Optics, Optical Coherence Tomography (OCT) and Quantum
+    Imaging
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitj.irins.org/profile/89239
+  image: >-
+    https://drive.google.com/thumbnail?id=13510xShGNP92JaQ1NOptdEQu7wyzgduc&sz=w300
+  affiliation: Physics
+  display: 1
+  primaryaffiliation: ''
+- name: Vivek Vijay
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: vivek@iitj.ac.in
+  phone: (91 291) 280 1454
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~vivek/
+  image: >-
+    https://drive.google.com/thumbnail?id=1TDzc4PPAssc8hVYdN_GGDIKjO7EwEgG_&sz=w300
+  affiliation: ' Mathematics'
+  display: 1
+  primaryaffiliation: ''
+- name: V. V. M. S. Chandramouli
+  position: Assistant Professor
+  faculty: 1
+  subfaculty: Affiliated Faculty
+  staff: 0
+  email: ' dhakas@iitj.ac.in'
+  phone: (91 291) 280 1415
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: http://home.iitj.ac.in/~chsarma/
+  image: >-
+    https://drive.google.com/thumbnail?id=18DTJtH-bd9a2eu7C6Z9zyd2QaWmt3z5A&sz=w300
+  affiliation: ' Mathematics'
+  display: 1
+  primaryaffiliation: ''
+- name: Abhimanyu Kumar
+  position: Adjunct Faculty
+  faculty: 1
+  subfaculty: Adjunct Faculty
+  staff: 0
+  email: ''
+  phone: ''
+  office_number: ''
+  bio1: >-
+    Ayurveda Pediatrics & concept of Prakriti, Child Mental Health, Respiratory
+    Allergy, Prakriti (Ayurveda body-mind profiling) techniques
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1NBIIR6Fcoub0me5FJZa0zRG-n9WpKGmQ&sz=w300
+  affiliation: CAIPM, School of AIDE
+  display: 1
+  primaryaffiliation: DSRRAU, Jodhpur
+- name: Saptarshi Mukherjee
+  position: Adjunct Faculty
+  faculty: 1
+  subfaculty: Adjunct Faculty
+  staff: 0
+  email: saptarshi@hss.iitd.ac.in
+  phone: ''
+  office_number: ''
+  bio1: Mechanism Design, Social Choice, Game Theory, Bounded Rationality
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://iitd.irins.org/profile/70361
+  image: >-
+    https://drive.google.com/thumbnail?id=1ww1WItAg7VaR3s9nTZH6VdnKtxi4yTGv&sz=w300
+  affiliation: CMCE, School of AIDE
+  display: 1
+  primaryaffiliation: 'Indian Institute of Technology Delhi '
+- name: Sylvain Baillet
+  position: Adjunct Faculty
+  faculty: 1
+  subfaculty: Adjunct Faculty
+  staff: 0
+  email: sylvain.baillet@mcgill.ca
+  phone: ''
+  office_number: ''
+  bio1: Systems Neuroscience
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://www.neurospeed-bailletlab.org/
+  image: >-
+    https://drive.google.com/thumbnail?id=1eChsIP0tmDp2Uedm2KY5wt6RW6VR0BHR&sz=w300
+  affiliation: CBSA, School of AIDE
+  display: 1
+  primaryaffiliation: Faculty of Medicine & Health Sciences, McGill University
+- name: Tapan K. Gandhi
+  position: Adjunct Faculty
+  faculty: 1
+  subfaculty: Adjunct Faculty
+  staff: 0
+  email: tgandhi@ee.iitd.ac.in
+  phone: ''
+  office_number: ''
+  bio1: >-
+    Computational Neuroscience, Human-Machine Interaction, Medical Signal/Image
+    Processing, ML/AI, AR/VR/MR, Assistive Technology
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://tapankgandhi.com/
+  image: >-
+    https://drive.google.com/thumbnail?id=1oj2XwwLY1hMMjm9LtlWKj6DyrYm9VQr_&sz=w300
+  affiliation: CBSA, School of AIDE
+  display: 1
+  primaryaffiliation: Indian Institute of Technology Delhi
+- name: Vinay Kulkarni
+  position: Professor of Practice
+  faculty: 1
+  subfaculty: Professor of Practice
+  staff: 0
+  email: ''
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: ''
+  affiliation: ''
+  display: 1
+  primaryaffiliation: ''
+- name: Taranjit Kaur
+  position: Scientific Officer
+  faculty: 0
+  subfaculty: Scientific Staff
+  staff: 1
+  email: taranjit@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: >-
+    Computational Neuroscience, Medical Signal/Image Processing, Healthcare
+    Technology
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: https://scholar.google.co.in/citations?user=ItXL8b0AAAAJ&hl=en
+  image: >-
+    https://drive.google.com/thumbnail?id=18JJ5xRcj5LY61fXTmo-N4n8Tx5f_oSgP&sz=w300
+  affiliation: CBSA, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Abinaya Vairam
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p22ai001@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1rzwcdQI6ZDTXEZkmI6gawRL2jBn3Oksa&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Arpit Shrimankar
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p23ai0004@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1Q4BHHBx4gN4eYXMSDGKuth0LcEFCzuB-&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Debottam Bhunia
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p22ai203@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1dsgEV-3rV_1BtgR2zl62-DLNOkqtVhbU&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Gargi Bhattacharjee
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p22ai002@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1G3dkweFxdnxI8me7g1VwLVEXLvamcfaw&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Kunjesh Kamleshbhai Parekh
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' p23ai0003@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1nesYvmynzYow86zFso0TXn1v_jOGOgho&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Manuj Jha
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p22ai202@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1VPzFTNcxTpcg3Ze0SsV0lGSdSxQbcTqr&sz=w300
+  affiliation: Center for Mathematical and Computational Economics, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Md Shaheen Perwez
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' r23ab0004@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1DgKEaXU0HjPgdXTO4qTUtbsBl4gPNsq5&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: N Akhila
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' p23ai0001@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1pgmHALw44TM7D6AJrEC0fV5qbfOwF7tl&sz=w300
+  affiliation: ' Center for Brain Science and Applications, School of AIDE'
+  display: 1
+  primaryaffiliation: ''
+- name: Preetam Kumar
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' p23ai0002@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1TiA9fA7nS6hAnPo-FcA8kNJvrN9gwdbV&sz=w300
+  affiliation: ' Center for Brain Science and Applications, School of AIDE'
+  display: 1
+  primaryaffiliation: ''
+- name: Rashmi Singh
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p23ai0006@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1StWr25N1jXl1DGCs06TfwBOqCKKBWDyW&sz=w300
+  affiliation: School of Artificial Intelligence and Data Science
+  display: 1
+  primaryaffiliation: ''
+- name: Ramjan Ali
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: r23am0001@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1xZlCah8Y5yZp_yOmZIiCvViFnI9jLq7z&sz=w300
+  affiliation: Center for Mathematical and Computational Economics, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Shreya Deb
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' r23ab0002@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=14m6_07PMizGXJEYqjO17Us3SW54s7lcY&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Shubham Kumar
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' p23ai0009@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1MGgI4lLBeNBvSaW_oAWpqj9GyHfzo9xW&sz=w300
+  affiliation: Center for Mathematical and Computational Economics, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Swatantra Dhara
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: ' r23ab0003@iitj.ac.in'
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1uiv9jb_N6czfLx-XpwDw31uPxKpEK_Nc&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Sweta Kaman
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: kaman.1@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1ayel5HRyJ2R97UF_RyjxSTW-KSJbZqTu&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Tirthankar Roy
+  position: Research Scholar
+  faculty: 0
+  subfaculty: Research Scholar
+  staff: 0
+  email: p22ai201@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1CN0OHV55A8EaMFdnCrjxJtck9VfYEyMw&sz=w300
+  affiliation: Center for Brain Science and Applications, School of AIDE
+  display: 1
+  primaryaffiliation: ''
+- name: Shankar Singh
+  position: Administrative Staff
+  faculty: 0
+  subfaculty: Administrative Staff
+  staff: 1
+  email: office_saide@iitj.ac.in
+  phone: ''
+  office_number: ''
+  bio1: ''
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  website: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1-arvo1ukAfSUU3Tsr8SnKvOTb8Us90VF&sz=w300
+  affiliation: School of AIDE
+  display: 1
+  primaryaffiliation: ''
+>>>>>>> fd6bad2 (data)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - position: School Faculty Board
   entry: Chairperson - Director of the Institute
   link: '#'
@@ -54,3 +55,27 @@
 - position: AI Standards Group
   entry: Prof. Mayank Vatsa, Convenor
   link: http://home.iitj.ac.in/~mvatsa/
+=======
+- timestamp: 7/8/2024 11:45:11
+  name: PhD in Artificial Intelligence and Data Science
+  offered: School of AIDE
+  level: PhD
+  coordinator: Dr. Ranju Mohan
+  url: ''
+  document: https://drive.google.com/open?id=13jIJuQGiAFNvmMtn8zR87_PJqa1557AX
+  background: >-
+    https://drive.google.com/thumbnail?id=1Ao2AhE6WC7D6acORnPaIdNWA_2sTf5MJ&sz=w300
+  deadline: 10/25/2024
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
+- timestamp: 7/8/2024 11:53:36
+  name: MS by Research in Next Generation AI
+  offered: Center for Brain Science and Applications
+  level: MS by Research
+  coordinator: Dr. Dipanjan Roy
+  url: ''
+  document: https://drive.google.com/open?id=1YO9YxLaRDFlqfXjSDhGTPEthFKngzZjR
+  background: >-
+    https://drive.google.com/thumbnail?id=1EXfeXm0jixtD-l_8yJSblx-4-vuYK1G6&sz=w300
+  deadline: 10/25/2024
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
+>>>>>>> fd6bad2 (data)

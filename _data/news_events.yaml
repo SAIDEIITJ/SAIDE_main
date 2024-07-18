@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - position: School Faculty Board
   entry: Chairperson - Director of the Institute
   link: '#'
@@ -54,3 +55,165 @@
 - position: AI Standards Group
   entry: Prof. Mayank Vatsa, Convenor
   link: http://home.iitj.ac.in/~mvatsa/
+=======
+- id: '1'
+  title: Selected Candidates for PhD Program (2024&#8211;25 Semester-I, July 2024)
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news2.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://aide.iitj.ac.in/images/Admission%202024-25/July%202024%20Admission_%20PhD_AIDE.pdf?_t=1717755349
+- id: '2'
+  title: Selected Candidates for PhD Program in CMCE 2024&#8211;25 Semester-I, July 2024)
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news5.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://aide.iitj.ac.in/images/Admission%202024-25/July%202024%20Admission_PhD%20_CMCE.pdf?_t=1717755349
+- id: '3'
+  title: >-
+    Selected Candidates for MS by Research Program in CMCE (2024&#8211;25 Semester-I,
+    July 2024)
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news3.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://aide.iitj.ac.in/images/Admission%202024-25/July%202024%20Admission_MS%20By%20Reasearch_CMCE.pdf?_t=1717755349
+- id: '4'
+  title: >-
+    Selected Candidates for MS by Research Program in CII (2024&#8211;25 Semester-I,
+    July 2024)
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news2.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://aide.iitj.ac.in/images/Admission%202024-25/July%202024%20Admission_MS%20By%20Reasearch_CII.pdf?_t=1717755349
+- id: '5'
+  title: Indicative projects for upcoming PhD admission cycle, Sem-I, 2024-2025
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news3.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://aide.iitj.ac.in/images/new-header/Poster/saide_spring_2024_project_offerings.pdf?_t=1711210652
+- id: '6'
+  title: Selected Candidates for Summer Internship Program 2024
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news2.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://aide.iitj.ac.in/images/new-header/Poster/Provisionally_selected_candidates_SIP%40SAIDE2024.pdf?_t=1714132530
+- id: '7'
+  title: >-
+    Rolling Advertisement for Admission to Ph.D. Program (Last Date :
+    20/10/2024)
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news4.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://iitj.ac.in/assets/uploads/document/2024/03/2024-03-22-65fd209f45d5a-1711087775.pdf
+- id: '8'
+  title: >-
+    Rolling Advertisement for Admission to Ph.D. Program at CMCE, AIDE, IITJ
+    (Last Date : 20/10/2024)
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news3.png
+  content: ''
+  date: July 2024
+  link: >-
+    https://iitj.ac.in/assets/uploads/document/2024/03/2024-03-22-65fd209f45d5a-1711087775.pdf
+- id: '9'
+  title: M.S. by Research in Next Generation AI
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news4.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '10'
+  title: M.S. by Research in Computational Economics
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news5.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '11'
+  title: M.S. by Research in Intelligent Infrastructure
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news1.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '12'
+  title: M.S. by Research in Precision Healthcare and Integrative Medicine
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news4.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '13'
+  title: M.Tech. in AR VR
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news5.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '14'
+  title: M.Tech. in AR VR (for Working Professionals)
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news1.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '15'
+  title: M.Tech. in DCS (for Working Professionals)
+  news: 0
+  event: 1
+  visibility: 1
+  graphic: images/news4.png
+  content: ''
+  date: July 2024
+  link: https://oa.iitj.ac.in/PG_ADMISSION/
+- id: '16'
+  title: Rolling Advertisement for Faculty Hiring
+  news: 1
+  event: 0
+  visibility: 1
+  graphic: images/news5.png
+  content: ''
+  date: June 2024
+  link: https://oa.iitj.ac.in/Advertisement/Advertisment_31.pdf
+>>>>>>> fd6bad2 (data)
