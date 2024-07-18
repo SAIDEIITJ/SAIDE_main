@@ -1,69 +1,11 @@
-<<<<<<< HEAD
-- position: School Faculty Board
-  entry: Chairperson - Director of the Institute
-  link: '#'
-- position: School Faculty Board
-  entry: Head of School - Prof. Neeraj Jain
-  link: https://iitj.irins.org/profile/205254
-- position: School Faculty Board
-  entry: Convenor of School - Dr. Shilpa Dang
-  link: https://sites.google.com/iitj.ac.in/shilpadang/home
-- position: School Faculty Board
-  entry: Members - All faculty members
-  link: '#'
-- position: School Research Committee
-  entry: School of AIDE (Chairman) - Dr. Dipanjan Roy
-  link: https://dipanjanr.com/
-- position: School Research Committee
-  entry: >-
-    Civil and Infrastructure Engineering (Coordinator of the Ph.D. Program) -
-    Dr. Ranju Mohan
-  link: '#'
-- position: School Research Committee
-  entry: Head, School of AIDE - Prof. Neeraj Jain
-  link: https://iitj.irins.org/profile/205254
-- position: School Research Committee
-  entry: CMCE, School of AIDE (Member) - Dr. Abhinaba Lahiri
-  link: https://sites.google.com/view/abhinabalahiri/home
-- position: School Research Committee
-  entry: Electrical Engineering (Member) - Dr. Amit Bhardwaj
-  link: http://home.iitj.ac.in/~amitb/
-- position: Website
-  entry: Bikash Santra
-  link: http://home.iitj.ac.in/~bikash/
-- position: Website
-  entry: Saurabh Gandhi
-  link: https://csndl-iitd.github.io/cndl-website/
-- position: Social Media
-  entry: Facebook - Dr. Dweepobotee Brahma
-  link: '#'
-- position: Social Media
-  entry: LinkedIn - Prof. Bikash Santra, Prof. Saurabh Gandhi
-  link: '#'
-- position: Social Media
-  entry: Twitter - Dr. Dweepobotee Brahma
-  link: '#'
-- position: Webminar Committee
-  entry: Dr. Rajendra Nagar
-  link: http://home.iitj.ac.in/~rn/
-- position: Webminar Committee
-  entry: Dr. Manish Narwaria
-  link: '#'
-- position: AI and IP
-  entry: Dr. Anil Kumar Tiwari, Convenor
-  link: http://home.iitj.ac.in/~akt/
-- position: AI Standards Group
-  entry: Prof. Mayank Vatsa, Convenor
-  link: http://home.iitj.ac.in/~mvatsa/
-=======
 - name: Abhinaba Lahiri
   position: Assistant Professor
   faculty: 1
   subfaculty: Core Faculty
   staff: 0
   email: abhinaba@iitj.ac.in
-  phone: (91 291) 280
-  office_number: ''
+  phone: ''
+  office_number: '12'
   bio1: Social Choice Theory, Mechanism Design, Game Theory
   bio2: ''
   bio3: ''
@@ -81,7 +23,7 @@
   staff: 0
   email: ' bhivraj@iitj.ac.in'
   phone: (91 291) 280
-  office_number: ''
+  office_number: '11'
   bio1: Robotics and Artificial Intelligence
   bio2: ''
   bio3: ''
@@ -99,7 +41,7 @@
   staff: 0
   email: bikash@iitj.ac.in
   phone: ' (91 291) 280'
-  office_number: ''
+  office_number: '3'
   bio1: Computer Vision, Machine Learning, and Medical Image Analysis
   bio2: ''
   bio3: ''
@@ -117,7 +59,7 @@
   staff: 0
   email: dweepobotee@iitj.ac.in
   phone: (91 291) 280 1755
-  office_number: ''
+  office_number: '22'
   bio1: Econometrics, Causal Inference and Machine Learning, Health Economics
   bio2: ''
   bio3: ''
@@ -135,7 +77,7 @@
   staff: 0
   email: droy@iitj.ac.in
   phone: (91 291) 280 1757
-  office_number: ''
+  office_number: '33'
   bio1: >-
     Large scale Brain Networks, Multisensory speech perception & ML; Network
     Neuroscience, Cognitive Brain dynamics, Visual computations, Eye tracking &
@@ -1529,4 +1471,3 @@
   affiliation: School of AIDE
   display: 1
   primaryaffiliation: ''
->>>>>>> fd6bad2 (data)
