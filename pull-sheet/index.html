@@ -23,7 +23,8 @@ title: Update faculity
         administration:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=728873275&single=true&output=tsv',
         students:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1554989096&single=true&output=tsv',
         programs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=668775554&single=true&output=tsv',
-        events:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1893940642&single=true&output=tsv'
+        events:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1893940642&single=true&output=tsv',
+        news:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1362293174&single=true&output=tsv',
     }
 
     var header_maps = {
@@ -131,9 +132,18 @@ title: Update faculity
             "Sponsors": "sponsors",
             "Contact": "contact",
             "Hidden": "hidden"
+        },
+        news:{
+            "Timestamp": "id",
+            "Title":"title",
+            "Date":"date",
+            "URL":"url",
+            "Document":"document",
+            "Media":"media",
+            "Background":"background",
+            "Preset":"preset",
+            "Hidden":"hidden",
         }
-
-
     }
 
     // some constants related to gh-pages repository
@@ -273,6 +283,9 @@ alert("Successfully processed " + data.length + " rows for " + $resource + "!")
             break;
         case 'events':
             $writepath += 'events.yaml';
+            break;
+        case 'news':
+            $writepath += 'news.yaml';
             break;
         default:
             console.error("Unknown resource:", $resource);
