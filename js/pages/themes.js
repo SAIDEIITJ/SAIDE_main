@@ -21,6 +21,9 @@ function openPopup(index) {
     popupDiv.innerHTML = hiddenContent.innerHTML;
     popup.style.display = 'block';
     popup.style.backgroundImage = bgImage;
+
+    nextButton.style.display = (currentIndex < themes.length - 1) ? 'block' : 'none';
+    prevButton.style.display = (currentIndex > 0) ? 'block' : 'none';
 }
 
 // Function to close popup
@@ -57,20 +60,12 @@ document.querySelector('.close').addEventListener('click', closePopup);
 nextButton.addEventListener('click', showNextTheme);
 prevButton.addEventListener('click', showPrevTheme);
 
-// Close popup when clicking outside of it
-window.addEventListener('click', (event) => {
-    if (event.target === popup) {
-        closePopup();
-    }
-});
+
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
       closePopup();
     }
   });
-  
-  function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-  }
+
   
