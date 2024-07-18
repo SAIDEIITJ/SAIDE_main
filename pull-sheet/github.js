@@ -370,18 +370,11 @@
       // For a given file path, get the corresponding sha (blob for files, tree for dirs)
       // -------
 
-      // this.getSha = function(branch, path, cb) {
-      //   if (!path || path === "") return that.getRef("heads/"+branch, cb);
-      //   _request("GET", repoPath + "/contents/"+path, {ref: branch}, function(err, pathContent) {
-      //     if (err) return cb(err);
-      //     cb(null, pathContent.sha);
-      //   });
-      // };
       this.getSha = function(branch, path, cb) {
-        var url = repoPath + "/contents/" + path + "?ref=" + branch;
-        _request("GET", url, null, function(err, res) {
+        if (!path || path === "") return that.getRef("heads/"+branch, cb);
+        _request("GET", repoPath + "/contents/"+path, {ref: branch}, function(err, pathContent) {
           if (err) return cb(err);
-          cb(null, res.sha);
+          cb(null, pathContent.sha);
         });
       };
 
