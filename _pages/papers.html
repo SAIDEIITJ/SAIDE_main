@@ -4,97 +4,102 @@ title: Papers
 des: At IITJ Aide School, our faculty and researchers are dedicated to advancing knowledge and contributing to the academic community through high-quality publications. Here are some selected publications highlighting our research contributions.
 link: HOME / RESEARCH
 permalink: /publications/
-
 ---
 
 <style>
     .background-about{
       background-image: url("{{ site.baseurl }}/images/Publications.png");
     }
-  </style>
-
+</style>
 
 <div class="search-box">
-<input type="text" id="searchBar" placeholder="Search for an article...">
+    <input type="text" id="searchBar" placeholder="Search for an article...">
 </div>
-<section class="paper-section papers-grid"  id="papersSection" >
+<section class="paper-section papers-grid" id="papersSection">
 </section>
 <div class="pagination" id="pagination">
 </div>
 
-<script >
-    	var data = [
-					{% assign paper_data = site.data.publications %}
-					{% for mem in paper_data %}
-						{ id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}",link:"{{mem.link}}",author:"{{mem.author}}" }{% unless forloop.last %},{% endunless %}
-					{% endfor %}
-				];
+<script>
+    var data = [
+        {% assign paper_data = site.data.publications %}
+        {% for mem in paper_data %}
+            { id:"{{ mem.id }}", title:"{{ mem.title }}", date:"{{ mem.date }}", link:"{{ mem.link }}", author:"{{ mem.author }}" }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
 
-
-const articlesPerPage = 10;
-let currentPage = 1;
-
-function displayArticles(page) {
-    const articlesSection = document.getElementById('papersSection');
-    articlesSection.innerHTML = '';
-    const start = (page - 1) * articlesPerPage;
-    const end = start + articlesPerPage;
-    const paginatedArticles = data.slice(start, end);
-    
-    paginatedArticles.forEach(article => {
-        const articleItem = document.createElement('div');
-        articleItem.className = 'paper-item';
-        articleItem.setAttribute('data-title', article.title);
-        
-        articleItem.innerHTML = `
-            <div class="paper-content">
-                <h2 id = "titleh2"><a href="${article.link}" id = "paperlinks" target="_blank"> ${article.title}</a></h2>
-                <p><strong>Authors:</strong> ${article.author}</p>
-                <p class="date"><strong>Date:</strong> ${article.date}</p>
-            </div>
-        `;
-        articlesSection.appendChild(articleItem);
-    });
-}
-
-function setupPagination() {
-    const pagination = document.getElementById('pagination');
-    pagination.innerHTML = '';
-    const pageCount = Math.ceil(data.length / articlesPerPage);
-    
-    for (let i = 1; i <= pageCount; i++) {
-        const pageItem = document.createElement('a');
-        pageItem.className = 'page-item';
-        pageItem.innerText = i;
-        pageItem.href = '#';
-        if (i === currentPage) {
-            pageItem.classList.add('active');
-        }
-        pageItem.addEventListener('click', function(event) {
-            event.preventDefault();
-            currentPage = i;
-            displayArticles(currentPage);
-            setupPagination();
-        });
-        pagination.appendChild(pageItem);
+    // Function to parse and compare dates
+    function parseDate(dateString) {
+        return new Date(dateString);
     }
-}
 
-document.getElementById('searchBar').addEventListener('input', function() {
-    const filter = this.value.toLowerCase();
-    const articleItems = document.querySelectorAll('.paper-item');
-    
-    articleItems.forEach(item => {
-        const title = item.getAttribute('data-title').toLowerCase();
-        if (title.includes(filter)) {
-            item.style.display = 'flex';
-        } else {
-            item.style.display = 'none';
+    // Sort data by latest date first
+    data.sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
+    const articlesPerPage = 10;
+    let currentPage = 1;
+
+    function displayArticles(page) {
+        const articlesSection = document.getElementById('papersSection');
+        articlesSection.innerHTML = '';
+        const start = (page - 1) * articlesPerPage;
+        const end = start + articlesPerPage;
+        const paginatedArticles = data.slice(start, end);
+
+        paginatedArticles.forEach(article => {
+            const articleItem = document.createElement('div');
+            articleItem.className = 'paper-item';
+            articleItem.setAttribute('data-title', article.title);
+
+            articleItem.innerHTML = `
+                <div class="paper-content">
+                    <h2 id="titleh2"><a href="${article.link}" id="paperlinks" target="_blank">${article.title}</a></h2>
+                    <p><strong>Authors:</strong> ${article.author}</p>
+                    <p class="date"><strong>Date:</strong> ${article.date}</p>
+                </div>
+            `;
+            articlesSection.appendChild(articleItem);
+        });
+    }
+
+    function setupPagination() {
+        const pagination = document.getElementById('pagination');
+        pagination.innerHTML = '';
+        const pageCount = Math.ceil(data.length / articlesPerPage);
+
+        for (let i = 1; i <= pageCount; i++) {
+            const pageItem = document.createElement('a');
+            pageItem.className = 'page-item';
+            pageItem.innerText = i;
+            pageItem.href = '#';
+            if (i === currentPage) {
+                pageItem.classList.add('active');
+            }
+            pageItem.addEventListener('click', function(event) {
+                event.preventDefault();
+                currentPage = i;
+                displayArticles(currentPage);
+                setupPagination();
+            });
+            pagination.appendChild(pageItem);
         }
-    });
-});
+    }
 
-// Initial setup
-displayArticles(currentPage);
-setupPagination();
+    document.getElementById('searchBar').addEventListener('input', function() {
+        const filter = this.value.toLowerCase();
+        const articleItems = document.querySelectorAll('.paper-item');
+
+        articleItems.forEach(item => {
+            const title = item.getAttribute('data-title').toLowerCase();
+            if (title.includes(filter)) {
+                item.style.display = 'flex';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
+    // Initial setup
+    displayArticles(currentPage);
+    setupPagination();
 </script>
