@@ -21,16 +21,16 @@ permalink: /
 				<div class="title">Events</div>
 			</div>
 			<div id="EcardsContainer" class="Ecards-container">
-				{% assign news_event_data = site.data.news_events %}
-				{% for mem in news_event_data %}
-					{% if mem.event == 1 %}
-					<div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.graphic }});">
+				{% assign event_data = site.data.events %}
+				{% for mem in event_data %}
+					{% if mem.hidden != 1 %}
+					<div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.tileBackground }});">
 						
 						<div class="inside">
-						{% if mem.date %}
-							<p>{{ mem.date }}</p>
+						{% if mem.start %}
+							<p>{{ mem.start }}</p>
 						{% endif %}
-						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.title }}</a></h1>
+						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.name }}</a></h1>
 						</div>
 					</div>
 					{% endif %}
