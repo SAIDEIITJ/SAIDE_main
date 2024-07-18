@@ -1,53 +1,67 @@
-- undefined: '1'
-  title: >-
-    Utilizing domain knowledge to improve intravenous contrast phase
-    classification of CT scans
-  link: >-
-    https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12927/129271G/Utilizing-domain-knowledge-to-improve-intravenous-contrast-phase-classification-of/10.1117/12.3008785.short#_=_
-  date: 2024/4/3
-- undefined: '1'
-  title: Weakly supervised detection of pheochromocytomas and paragangliomas in CT
-  link: >-
-    https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12927/129270S/Weakly-supervised-detection-of-pheochromocytomas-and-paragangliomas-in-CT/10.1117/12.3008833.short#_=_
-  date: 2024/4/3
-- undefined: '1'
+- timestamp: 7/8/2024 12:44:58
   title: >-
     Propagation of transient explosive synchronization in a mesoscale mouse
     brain network model of epilepsy
+  author: Avinash Ranjan, Saurabh R. Gandhi
+  date: 4/30/2024
   link: https://direct.mit.edu/netn/article/doi/10.1162/netn_a_00379/120865
-  date: 2024/4/30
-- undefined: '1'
-  title: 'Fractional order modified Treves model: Simulation and Learning'
-  link: https://ieeexplore.ieee.org/abstract/document/10153321
-  date: 2023/3/14
-- undefined: '1'
-  title: Stochastic same-sidedness in the random voting model
-  link: https://link.springer.com/article/10.1007/s00355-023-01491-1
-  date: 2024/2
-- undefined: '1'
+  image: ''
+  journal: Network Neuroscience
+  author1: Saurabh Gandhi
+  undefined: ''
+- timestamp: 7/8/2024 12:46:09
   title: >-
     Design of robotic finger using twisted string actuator with modular passive
     return rotational joints to achieve high grasping force: Application to
     wearable sixth finger
+  author: >-
+    Bhivraj Suthar, Mohammad I Awad, Lakmal Seneviratne, Yahya Zweiri, Irfan
+    Hussain
+  date: 5/1/2024
   link: https://www.sciencedirect.com/science/article/abs/pii/S0957415824000229
-  date: 2024/5/1
-- undefined: '1'
-  title: ' Early warning signs: targeting neonatal and infant mortality using machine learning'
+  image: ''
+  journal: Mechatronics
+  author1: Bhivraj Suthar
+  undefined: ''
+- timestamp: 7/8/2024 12:47:07
+  title: >-
+    Early warning signs: targeting neonatal and infant mortality using machine
+    learning
+  author: Dweepobotee Brahma, Debasri Mukherjee
+  date: 8/10/2021
   link: https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1958141
-  date: 2022/1/2
-- undefined: '1'
+  image: ''
+  journal: Applied Economics
+  author1: Dweepobotee Brahma
+  undefined: ''
+- timestamp: 7/8/2024 12:48:27
   title: >-
     Characterization of the Temporal Stability of ToM and Pain Functional Brain
     Networks Carry Distinct Developmental Signatures during Naturalistic Viewing
+  author: Km Bhavna, Niniva Ghosh, Romi Banerjee, Dipanjan Roy
+  date: 1/15/2024
   link: https://www.researchsquare.com/article/rs-3859295/v1
-  date: 2024/1/16
-- undefined: '1'
+  image: ''
+  journal: preprint
+  author1: Dipanjan Roy
+  undefined: ''
+- timestamp: 7/8/2024 12:50:08
   title: Implications of Banking Regulations on Online Payment Failures
+  author: Aditi Chawla, Ganesh Manjhi, Gaurav Bhattacharya
+  date: 1/19/2021
   link: https://mpra.ub.uni-muenchen.de/105285/
-  date: 2021/1/16
-- undefined: '1'
+  image: ''
+  journal: preprint
+  author1: Ganesh Manjhi
+  undefined: ''
+- timestamp: 7/8/2024 12:52:06
   title: >-
     How pupil tracks cognitive processes underlying internally- and
     externally-directed attention tasks
+  author: Shilpa Dang, Adarsh Palaskar
+  date: 1/1/2024
   link: https://escholarship.org/uc/item/0bz930mm
-  date: '2024'
+  image: ''
+  journal: preprint
+  author1: Shilpa Dang
+  undefined: ''
