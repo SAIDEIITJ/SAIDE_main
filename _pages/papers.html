@@ -16,6 +16,8 @@ permalink: /publications/
     {% for paper in sorted_papers %}
     <div class="paper-item" data-title="{{ paper.title }}">
         <div class="paper-content">
+            <p style="text-align: right;"><i>{{paper.journal}}</i></p>
+            <br>
             <h2 id="titleh2"><a href="{{ paper.link }}" target="_blank" style="border: 0;">{{ paper.title }}</a></h2>
             <p><strong>Authors:</strong> {{ paper.author }}</p>
             <p class="date"><strong>Date:</strong> {{ paper.date }}</p>
