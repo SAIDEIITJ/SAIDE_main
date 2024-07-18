@@ -252,40 +252,51 @@ title: Update faculity
         console.log($items);
         
         try {
-            $yaml_dump = jsyaml.dump($items);
+            var $yaml_dump = jsyaml.dump($items);
             document.getElementById('source').value = $yaml_dump;
 
             var github = new Github({ token: $GHToken, auth: "oauth" });
             var repo = github.getRepo($org, $repo);
             var $writepath = '_data/';
 
-            if ($resource === 'news_events') {
-                $writepath += 'news_events.yaml';
-            } else if ($resource === 'team') {
-                $writepath += 'team.yaml';
-            } else if ($resource === 'publications') {
-                $writepath += 'publications.yaml';
-            } else if ($resource === 'links') {
-                $writepath += 'links.yaml';
-            } else if ($resource === 'faqs') {
-                $writepath += 'faqs.yaml';
-            } else if ($resource === 'administration') {
-                $writepath += 'administration.yaml';
-            } else if ($resource === 'students') {
-                $writepath += 'students.yaml';
-            } else if ($resource === 'programs') {
-                $writepath += 'programs.yaml';
-            }else if ($resource === 'events') {
-                $writepath += 'events.yaml';
-            }
+            if ($resource === 'news_events') $writepath += 'news_events.yaml';
+            else if ($resource === 'team') $writepath += 'team.yaml';
+            else if ($resource === 'publications') $writepath += 'publications.yaml';
+            else if ($resource === 'links') $writepath += 'links.yaml';
+            else if ($resource === 'faqs') $writepath += 'faqs.yaml';
+            else if ($resource === 'administration') $writepath += 'administration.yaml';
+            else if ($resource === 'students') $writepath += 'students.yaml';
+            else if ($resource === 'programs') $writepath += 'programs.yaml';
+            else if ($resource === 'events') $writepath += 'events.yaml';
 
-            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
+            repo.read($branch, $writepath, function(err, fileData) {
                 if (err) {
-                    console.error("Error writing to GitHub:", err);
+                    if (err.code === 404) {
+                        // File does not exist, so create it
+                        writeFile();
+                    } else {
+                        console.error("Error reading from GitHub:", err);
+                    }
                 } else {
-                    console.log("Successfully updated " + $resource);
+                    var currentContent = fileData.content;
+                    if (currentContent !== btoa($yaml_dump)) {
+                        // Content has changed, proceed with the update
+                        writeFile();
+                    } else {
+                        console.log("No changes detected for " + $resource);
+                    }
                 }
             });
+
+            function writeFile() {
+                repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
+                    if (err) {
+                        console.error("Error writing to GitHub:", err);
+                    } else {
+                        console.log("Successfully updated " + $resource);
+                    }
+                });
+            }
         } catch (error) {
             console.error("Error dumping YAML:", error);
         }
