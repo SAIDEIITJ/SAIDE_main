@@ -269,27 +269,22 @@ title: Update faculity
             else if ($resource === 'programs') $writepath += 'programs.yaml';
             else if ($resource === 'events') $writepath += 'events.yaml';
 
-            repo.read($branch, $writepath, function(err, fileData) {
+            repo.getContents($branch, $writepath, false, function(err, fileData) {
                 if (err) {
-                    if (err.code === 404) {
+                    if (err.error === 404) {
                         // File does not exist, so create it
                         writeFile();
                     } else {
                         console.error("Error reading from GitHub:", err);
                     }
                 } else {
-                    var currentContent = fileData.content;
-                    if (currentContent !== btoa($yaml_dump)) {
-                        // Content has changed, proceed with the update
-                        writeFile();
-                    } else {
-                        console.log("No changes detected for " + $resource);
-                    }
+                    var latestSHA = fileData.sha;
+                    writeFile(latestSHA);
                 }
             });
 
-            function writeFile() {
-                repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
+            function writeFile(latestSHA) {
+                repo.writeFile($branch, $writepath, $yaml_dump, 'Update ' + $resource, { sha: latestSHA }, function(err) {
                     if (err) {
                         console.error("Error writing to GitHub:", err);
                     } else {
