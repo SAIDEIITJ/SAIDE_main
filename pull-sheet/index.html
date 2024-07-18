@@ -244,7 +244,7 @@ title: Update faculity
     }
 
     alert("Successfully processed " + data.length + " rows for " + $resource + "!");
-    
+
     var $items = [];
 
     $.each(data, function(i, service) {
@@ -285,6 +285,16 @@ title: Update faculity
             $writepath += 'news.yaml';
         }
 
+        function writeToGithub(sha) {
+            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, { sha: sha }, function(err) {
+                if (err) {
+                    console.error("Error writing to GitHub:", err);
+                } else {
+                    console.log("Successfully updated " + $resource);
+                }
+            });
+        }
+
         // Fetch the latest sha of the file
         repo.getContents($branch, $writepath, false, function(err, contents) {
             if (err) {
@@ -294,20 +304,13 @@ title: Update faculity
             var sha = contents.sha;
 
             // Use the write function with the sha parameter
-            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, { sha: sha }, function(err) {
-                if (err) {
-                    console.error("Error writing to GitHub:", err);
-                } else {
-                    console.log("Successfully updated " + $resource);
-                }
-            });
+            writeToGithub(sha);
         });
 
     } catch (error) {
         console.error("Error dumping YAML:", error);
     }
 }
-
 
 
 </script>
