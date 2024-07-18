@@ -7,7 +7,7 @@
   media: ''
   background: ''
   preset: iitj
-  hidden: 1
+  hidden: 0
 - id: 7/18/2024 19:07:51
   title: >-
     Selected Candidates for MS by Research Program in CMCE (2024&#8211;25 Semester-I,
@@ -19,7 +19,7 @@
   media: ''
   background: ''
   preset: infra
-  hidden: 1
+  hidden: 0
 - id: 7/18/2024 19:09:08
   title: Selected Candidates for Summer Internship Program 2024
   date: 5/1/2024
@@ -29,7 +29,7 @@
   media: ''
   background: ''
   preset: coes
-  hidden: 1
+  hidden: 0
 - id: 7/18/2024 19:15:51
   title: Indicative projects for upcoming PhD admission cycle, Sem-I, 2024-2025
   date: 7/1/2024
@@ -37,7 +37,6 @@
     https://aide.iitj.ac.in/images/new-header/Poster/saide_spring_2024_project_offerings.pdf?_t=1711210652
   document: ''
   media: ''
-  background: >-
-    https://drive.google.com/thumbnail?id=12NX9-5XTDFaT5y-LAZaMp-FLoiUX2KYZ&sz=w300
-  preset: ''
-  hidden: 1
+  background: ''
+  preset: brain
+  hidden: 0
