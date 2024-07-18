@@ -228,65 +228,75 @@ if (data.length === 0) {
     console.warn("No data found for", $resource);
     return;
 }
+alert("Successfully processed " + data.length + " rows for " + $resource + "!")
 
 // Convert data to YAML format
 var $items = data.map(function(service) {
-    var $p = {};
-    Object.keys(service).forEach(function($key) {
-        $p[$key] = service[$key];
+        var $p = {};
+        Object.keys(service).forEach(function($key) {
+            $p[$key] = service[$key];
+        });
+        return $p;
     });
-    return $p;
-});
 
-var $yaml_dump = jsyaml.dump($items);
-document.getElementById('source').value = $yaml_dump;
+    var $yaml_dump = jsyaml.dump($items);
+    document.getElementById('source').value = $yaml_dump;
 
-var github = new Github({ token: $GHToken, auth: "oauth" });
-var repo = github.getRepo($org, $repo);
-var $writepath = '_data/';
+    var github = new Github({ token: $GHToken, auth: "oauth" });
+    var repo = github.getRepo($org, $repo);
+    var $writepath = '_data/';
 
-if ($resource === 'news_events') {
-    $writepath += 'news_events.yaml';
-} else if ($resource === 'team') {
-    $writepath += 'team.yaml';
-} else if ($resource === 'publications') {
-    $writepath += 'publications.yaml';
-} else if ($resource === 'links') {
-    $writepath += 'links.yaml';
-} else if ($resource === 'faqs') {
-    $writepath += 'faqs.yaml';
-} else if ($resource === 'administration') {
-    $writepath += 'administration.yaml';
-} else if ($resource === 'students') {
-    $writepath += 'students.yaml';
-} else if ($resource === 'programs') {
-    $writepath += 'programs.yaml';
-} else if ($resource === 'events') {
-    $writepath += 'events.yaml';
-}
-
-// Fetch existing content from GitHub
-repo.read($branch, $writepath, function(err, existingContent) {
-    if (err) {
-        console.error("Error reading existing content from GitHub:", err);
-        return;
+    if ($resource === 'news_events') {
+        $writepath += 'news_events.yaml';
+    } else if ($resource === 'team') {
+        $writepath += 'team.yaml';
+    } else if ($resource === 'publications') {
+        $writepath += 'publications.yaml';
+    } else if ($resource === 'links') {
+        $writepath += 'links.yaml';
+    } else if ($resource === 'faqs') {
+        $writepath += 'faqs.yaml';
+    } else if ($resource === 'administration') {
+        $writepath += 'administration.yaml';
+    } else if ($resource === 'students') {
+        $writepath += 'students.yaml';
+    } else if ($resource === 'programs') {
+        $writepath += 'programs.yaml';
+    } else if ($resource === 'events') {
+        $writepath += 'events.yaml';
     }
 
-    var existingYAML = existingContent.data;
-    if (existingYAML === $yaml_dump) {
-        console.log($resource + " is unchanged. Skipping update.");
-        return;
-    }
-
-    // Write updated content to GitHub
-    repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
+    // Fetch existing content from GitHub
+    repo.read($branch, $writepath, function(err, existingContent) {
         if (err) {
-            console.error("Error writing to GitHub:", err);
-        } else {
-            console.log("Successfully updated " + $resource);
+            console.error("Error reading existing content from GitHub:", err);
+            return;
         }
+
+        var existingYAML = existingContent.data;
+        if (existingYAML === $yaml_dump) {
+            console.log($resource + " is unchanged. Skipping update.");
+            return;
+        }
+
+        // Fetch the latest SHA for the file to handle potential conflicts
+        repo.getSha($branch, $writepath, function(err, sha) {
+            if (err) {
+                console.error("Error getting SHA for the file from GitHub:", err);
+                return;
+            }
+
+            // Write updated content to GitHub
+            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, { sha: sha }, function(err) {
+                if (err) {
+                    console.error("Error writing to GitHub:", err);
+                } else {
+                    console.log("Successfully updated " + $resource);
+                }
+            });
+        });
     });
-});
 }
+Explanation
 </script>
 <textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 500px;"></textarea>
