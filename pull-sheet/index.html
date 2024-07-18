@@ -150,6 +150,11 @@ title: Update faculity
     var $org = 'sw509073';
     var $repo = 'SAIDE_main';
     var $branch = 'main';
+
+
+    const octokit = new Octokit({
+            auth: $GHToken
+        });
     
     // this function extracts parameters from the URL to pass on to the javascript
     function getUrlVar(key){
@@ -231,87 +236,95 @@ title: Update faculity
 
     window.addEventListener('DOMContentLoaded', init)
 
-    function showInfo(results, $resource) {
-    console.log($resource);
-    console.log(results.data);
-    console.log(results.errors);
-    console.log(results.meta);
-    var data = results.data;
+    async function showInfo(results, $resource) {
+            console.log($resource);
+            console.log(results.data);
+            console.log(results.errors);
+            console.log(results.meta);
+            var data = results.data;
 
-    if (results.data.length === 0) {
-        console.warn("No data found for", $resource);
-        return;
-    }
-
-    alert("Successfully processed " + data.length + " rows for " + $resource + "!");
-
-    var $items = [];
-
-    $.each(data, function(i, service) {
-        var $p = {};
-        $.each(service, function($key, $value) {
-            $p[$key] = $value;
-        });
-        $items.push($p);
-    });
-
-    console.log($items);
-
-    try {
-        var $yaml_dump = jsyaml.dump($items);
-        document.getElementById('source').value = $yaml_dump;
-
-        var $writepath = '_data/';
-
-        if ($resource === 'news_events') {
-            $writepath += 'news_events.yaml';
-        } else if ($resource === 'team') {
-            $writepath += 'team.yaml';
-        } else if ($resource === 'publications') {
-            $writepath += 'publications.yaml';
-        } else if ($resource === 'links') {
-            $writepath += 'links.yaml';
-        } else if ($resource === 'faqs') {
-            $writepath += 'faqs.yaml';
-        } else if ($resource === 'administration') {
-            $writepath += 'administration.yaml';
-        } else if ($resource === 'students') {
-            $writepath += 'students.yaml';
-        } else if ($resource === 'programs') {
-            $writepath += 'programs.yaml';
-        } else if ($resource === 'events') {
-            $writepath += 'events.yaml';
-        } else if ($resource === 'news') {
-            $writepath += 'news.yaml';
-        }
-
-        function writeToGithub(sha) {
-            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, { sha: sha }, function(err) {
-                if (err) {
-                    console.error("Error writing to GitHub:", err);
-                } else {
-                    console.log("Successfully updated " + $resource);
-                }
-            });
-        }
-
-        // Fetch the latest sha of the file
-        repo.getContents($branch, $writepath, false, function(err, contents) {
-            if (err) {
-                console.error("Error fetching file contents:", err);
+            if (results.data.length === 0) {
+                console.warn("No data found for", $resource);
                 return;
             }
-            var sha = contents.sha;
 
-            // Use the write function with the sha parameter
-            writeToGithub(sha);
-        });
+            alert("Successfully processed " + data.length + " rows for " + $resource + "!");
+            
+            var $items = [];
 
-    } catch (error) {
-        console.error("Error dumping YAML:", error);
-    }
-}
+            $.each(data, function(i, service) {
+                var $p = {};
+                $.each(service, function($key, $value) {
+                    $p[$key] = $value;
+                });
+                $items.push($p);
+            });
 
+            console.log($items);
+
+            try {
+                var $yaml_dump = jsyaml.dump($items);
+                document.getElementById('source').value = $yaml_dump;
+
+                var $writepath = '_data/';
+
+                if ($resource === 'news_events') {
+                    $writepath += 'news_events.yaml';
+                } else if ($resource === 'team') {
+                    $writepath += 'team.yaml';
+                } else if ($resource === 'publications') {
+                    $writepath += 'publications.yaml';
+                } else if ($resource === 'links') {
+                    $writepath += 'links.yaml';
+                } else if ($resource === 'faqs') {
+                    $writepath += 'faqs.yaml';
+                } else if ($resource === 'administration') {
+                    $writepath += 'administration.yaml';
+                } else if ($resource === 'students') {
+                    $writepath += 'students.yaml';
+                } else if ($resource === 'programs') {
+                    $writepath += 'programs.yaml';
+                } else if ($resource === 'events') {
+                    $writepath += 'events.yaml';
+                } else if ($resource === 'news') {
+                    $writepath += 'news.yaml';
+                }
+
+                async function writeToGithub(sha) {
+                    try {
+                        await octokit.repos.createOrUpdateFileContents({
+                            owner: $org,
+                            repo: $repoName,
+                            path: $writepath,
+                            message: 'Update ' + $resource,
+                            content: btoa($yaml_dump),
+                            sha: sha
+                        });
+                        console.log("Successfully updated " + $resource);
+                    } catch (err) {
+                        console.error("Error writing to GitHub:", err);
+                    }
+                }
+
+                // Fetch the latest sha of the file
+                try {
+                    const { data: contents } = await octokit.repos.getContent({
+                        owner: $org,
+                        repo: $repoName,
+                        path: $writepath,
+                    });
+                    var sha = contents.sha;
+
+                    // Use the write function with the sha parameter
+                    await writeToGithub(sha);
+                } catch (err) {
+                    console.error("Error fetching file contents:", err);
+                }
+
+            } catch (error) {
+                console.error("Error dumping YAML:", error);
+            }
+        }
 
 </script>
 <textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 500px;"></textarea>
