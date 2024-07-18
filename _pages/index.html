@@ -25,14 +25,13 @@ permalink: /
 				{% for mem in news_event_data %}
 					{% if mem.event == 1 %}
 					<div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.graphic }});">
-						{% if mem.date %}
+						
 						<div class="inside">
+						{% if mem.date %}
 							<p>{{ mem.date }}</p>
 						{% endif %}
 						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.title }}</a></h1>
-						{% if mem.date %}
 						</div>
-						{% endif %}
 					</div>
 					{% endif %}
 				{% endfor %}
@@ -48,20 +47,34 @@ permalink: /
 				<div class="title">News </div>
 			</div>
 			<div id="cardsContainer" class="cards-container">
-				{% assign news_event_data = site.data.news_events %}
-				{% for mem in news_event_data %}
-					{% if mem.news == 1 %}
-					<div class="card" id="{{ mem.id }}" style="background-image: url({{ mem.graphic }});">
-						{% if mem.date %}
-						<div class="inside">
-							<p>{{ mem.date }}</p>
+				{% assign news_data = site.data.news %}
+				{% for mem in news_data %}
+				  {% if mem.hidden != 1 %}
+					<div class="card" id="{{ mem.id }}" style="
+					  	{% if mem.preset %}
+						  	background-image: url('{{ '/images/' | append: mem.preset | append: '.png' | prepend: site.baseurl }}');
+						{% elsif mem.background %}
+							background-image: url('{{ mem.background }}');
 						{% endif %}
-						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.title }}</a></h1>
+					">
+					  <div class="inside">
 						{% if mem.date %}
-						</div>
+						  <p>Date: {{ mem.date }}</p>
 						{% endif %}
+						<h1>
+						  {% if mem.url %}
+							<a href="{{ mem.url }}" target="_blank" class="card-link">{{ mem.title }}</a>
+						  {% elsif mem.document %}
+							<a href="{{ mem.document }}" target="_blank" class="card-link">{{ mem.title }}</a>
+						  {% elsif mem.media %}
+							<a href="{{ mem.media }}" target="_blank" class="card-link">{{ mem.title }}</a>
+						  {% else %}
+							<span class="card-link">{{ mem.title }}</span>
+						  {% endif %}
+						</h1>
+					  </div>
 					</div>
-					{% endif %}
+				  {% endif %}
 				{% endfor %}
 			</div>
 			<div id="navigation">
