@@ -6,7 +6,8 @@
   type: Conference
   banner: https://drive.google.com/open?id=1BgbT_NCNbQ2o9WI5mVLbWKY6K0fJkyMT
   preset: ''
-  tileBackground: https://drive.google.com/open?id=1PrGT4M1-_S8cIXbnxB9Imbt6_ylWJLix
+  tileBackground: >-
+    https://drive.google.com/thumbnail?id=1PrGT4M1-_S8cIXbnxB9Imbt6_ylWJLix&sz=w300
   undefined: ''
   registration: ''
   schedule: >-
