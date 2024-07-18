@@ -232,29 +232,33 @@ title: Update faculity
     window.addEventListener('DOMContentLoaded', init)
 
     function showInfo(results, $resource) {
+        // var GitHub = require('github-api');
         console.log($resource);
         console.log(results.data);
         console.log(results.errors);
         console.log(results.meta);
-        var data = results.data;
+        var data = results.data
 
         if (results.data.length === 0) {
-            console.warn("No data found for", $resource);
-            return;
-        }
-
+        console.warn("No data found for", $resource);
+        return;
+    }
+          
+        // data comes through as a simple array since simpleSheet is turned on
+        alert("Successfully processed " + data.length + " rows for " + $resource + "!")
+         
         $items = new Array();
 
-        $.each(data, function(i, service) {
+        $.each( data, function(i, service) {
             $p = {};
             $.each(service, function($key, $value) {
-                $p[$key] = $value;
+              $p[$key] = $value;
             });
             $items.push($p);
         });
 
         console.log($items);
-
+        
         try {
             $yaml_dump = jsyaml.dump($items);
             document.getElementById('source').value = $yaml_dump;
@@ -279,39 +283,22 @@ title: Update faculity
                 $writepath += 'students.yaml';
             } else if ($resource === 'programs') {
                 $writepath += 'programs.yaml';
-            } else if ($resource === 'events') {
+            }else if ($resource === 'events') {
                 $writepath += 'events.yaml';
-            } else if ($resource === 'news') {
+            }else if ($resource === 'news') {
                 $writepath += 'news.yaml';
             }
 
-            getSha(repo, $writepath, function(err, sha) {
+            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
                 if (err) {
-                    console.error("Error getting SHA:", err);
+                    console.error("Error writing to GitHub:", err);
                 } else {
-                    repo.writeFile($branch, $writepath, $yaml_dump, 'Update ' + $resource, { sha: sha }, function(err) {
-                        if (err) {
-                            console.error("Error writing to GitHub:", err);
-                        } else {
-                            console.log("Successfully updated " + $resource);
-                        }
-                    });
+                    console.log("Successfully updated " + $resource);
                 }
             });
         } catch (error) {
             console.error("Error dumping YAML:", error);
         }
-    }
-
-    function getSha(repo, path, callback) {
-        repo.getSha($branch, path, function(err, sha) {
-            if (err) {
-                console.error("Error getting SHA:", err);
-                callback(err);
-            } else {
-                callback(null, sha);
-            }
-        });
     }
 
 </script>
