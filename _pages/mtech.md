@@ -40,27 +40,27 @@ background-image: url("{{ site.baseurl }}/images/MTech.png");
 <div style="padding: 20px;">
 <h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
 <div class="msgrid-container">
+{% assign programs_data = site.data.programs  %}
+{% for member in programs_data %}
+{% if member.level == 'MTech' %}
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/mtech1.png'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-image" style="background-image: url('{{member.background}}'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CMCE.pdf" target="_blank" style="border: 0; text-decoration: none;">M.Tech. (Regular) in AR VR</a></h2>
-<p><strong>Coordinator:</strong> Dr. Amit Bhardwaj, Dr. Rajendra Nagar</p>
+<h2 id="subheading" style="margin: 0;">
+{% if member.document %}
+<a href="{{ member.document }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
+</a>
+{% else %}
+<a href="{{ member.url }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
+</a>
+{% endif %}
+</h2>
+<p><strong>Offered by:</strong> {{member.offered}}</p>
+<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
 </div>
 </div>
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/mtech2.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CMCE.pdf" target="_blank" style="border: 0; text-decoration: none;">M.Tech. (Executive) in AR VR</a></h2>
-<p><strong>Coordinator:</strong> Dr. Amit Bhardwaj, Dr. Rajendra Nagar</p>
-</div>
-</div>
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/mtech3.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CMCE.pdf" target="_blank" style="border: 0; text-decoration: none;"> M.Tech. (Executive) in Data and Computational Science</a></h2>
-<p><strong>Coordinator:</strong> Dr. Gaurav Bhatnagar</p>
-</div>
-</div>
+{% endif %}
+{% endfor %}
 </div>
 </div>
 </div>

@@ -48,6 +48,35 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Brain Science and Applications</li>
 <a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Mathematical and Computational Economics</li>
 </ul>
+
+<div style="padding: 20px;">
+<h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
+<div class="msgrid-container">
+{% assign programs_data = site.data.programs  %}
+{% for member in programs_data %}
+{% if member.level == 'PhD' %}
+<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
+<div class="ms-card-image" style="background-image: url('{{member.background}}'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-content" style="padding: 20px;">
+<h2 id="subheading" style="margin: 0;">
+{% if member.document %}
+<a href="{{ member.document }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
+</a>
+{% else %}
+<a href="{{ member.url }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
+</a>
+{% endif %}
+</h2>
+<p><strong>Offered by:</strong> {{member.offered}}</p>
+<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
+</div>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+
+
 <h2 id="subheading">Curriculum</h2>
 <p style="text-align: justify;">The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.</p>
 <br>

@@ -36,22 +36,27 @@ permalink: /continuing_edu/
 <div style="padding: 20px;">
 <h2 id="subheading">More Information about the program:</h2>
 <div class="msgrid-container">
+{% assign programs_data = site.data.programs  %}
+{% for member in programs_data %}
+{% if member.level == '' %}
 <div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/compEco.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 15px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CMCE.pdf" target="_blank" style="border: 0;text-decoration: none;">Program 1</a></h2>
-<p><strong></strong> </p>
-<p><strong></strong> </p>
+<div class="ms-card-image" style="background-image: url('{{member.background}}'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="ms-card-content" style="padding: 20px;">
+<h2 id="subheading" style="margin: 0;">
+{% if member.document %}
+<a href="{{ member.document }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
+</a>
+{% else %}
+<a href="{{ member.url }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
+</a>
+{% endif %}
+</h2>
+<p><strong>Offered by:</strong> {{member.offered}}</p>
+<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
 </div>
 </div>
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/compEco.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 15px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CMCE.pdf" target="_blank" style="border: 0;text-decoration: none;">Program 2</a></h2>
-<p><strong></strong> </p>
-<p><strong></strong> </p>
-</div>
-</div>
+{% endif %}
+{% endfor %}
 </div>
 </div>
 </div>
