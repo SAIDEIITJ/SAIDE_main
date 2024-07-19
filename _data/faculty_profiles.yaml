@@ -3,9 +3,9 @@
   name: Saurabh Gandhi
   position: Assistant Professor
   office: '1761'
-  undefined: ''
+  Wwbsite: https://csndl-iitd.github.io/cndl-website/
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1o82THiveTh89t7AQ6IUbJ4d-iPebwatZ&sz=w300
   researchArea1: cognitive neuroscience
@@ -17,20 +17,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 2/26/2024 12:58:20
   emailAddress: srivatsa@iitj.ac.in
   name: S. Srivatsa Srinivas
   position: Assistant Professor
   office: '1754'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/srivatsasrinivas/home
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Mathematical and Computational Economics
+  centerIDRP: Center for Mathematical and Computational Economics
   profilePic: >-
     https://drive.google.com/thumbnail?id=1BHR33GDZLf19omuax0z0s12rPqltAnIB&sz=w300
   researchArea1: Operations Research Applications
@@ -42,20 +43,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: Somewhat
   theoreticalAI/ML: Somewhat
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/1/2024 5:46:02
   emailAddress: bikash@iitj.ac.in
   name: Bikash Santra
   position: Assistant Professor
   office: '1763'
-  undefined: ''
+  Wwbsite: http://home.iitj.ac.in/~bikash/
   department: Artificial Intelligence and Data Science
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1hIR7qssZ-0toid9V_9FPxmpASwhYEZIK&sz=w300
   researchArea1: 'Computer Vision '
@@ -67,20 +69,23 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: AI driven Precision Agriculture
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/1/2024 6:53:47
   emailAddress: ma@iitj.ac.in
   name: Manish Aggarwal
   position: Associate Professor
   office: '1811'
-  undefined: ''
+  Wwbsite: >-
+    https://research.iitj.ac.in/researcher/manish-aggarwal  /  
+    https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
   department: Artificial Intelligence and Data Science
-  center/IDRP: Digital Humanities
+  centerIDRP: Digital Humanities
   profilePic: >-
     https://drive.google.com/thumbnail?id=1QSjDWdgT1bAUFMSS5Cj6DYvKiS_4p51o&sz=w300
   researchArea1: Uncertainty and Preferences in Machine Learning
@@ -92,20 +97,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
+  undefined: ''
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: 'Yes'
   theoreticalAI/ML: 'Yes'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/2/2024 9:30:57
   emailAddress: bhivraj@iitj.ac.in
   name: Dr. Bhivraj Suthar
   position: Assistant Professor
   office: '1764'
-  undefined: https://drive.google.com/open?id=1KdQ2Z4rjI_3hotnX0wrGAyr1s0V-rPm7
+  Wwbsite: https://bhivraj.wixsite.com/about
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1XEu83Ou6P6BzqQB4B5aviyyoIVx7-Bfk&sz=w300
   researchArea1: Bio-inspired Mechanisms
@@ -117,20 +123,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
+  undefined: https://drive.google.com/open?id=1KdQ2Z4rjI_3hotnX0wrGAyr1s0V-rPm7
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/7/2024 5:51:01
   emailAddress: abhinaba@iitj.ac.in
   name: Abhinaba Lahiri
   position: Assistant Professor
   office: '1756'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/abhinabalahiri/home
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Mathematical and Computational Economics
+  centerIDRP: Center for Mathematical and Computational Economics
   profilePic: >-
     https://drive.google.com/thumbnail?id=1vGQKZFPhcacrPYVMhbN62J_AcH4TqfsG&sz=w300
   researchArea1: Mechanism Design
@@ -142,20 +149,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/11/2024 4:56:26
   emailAddress: vigneshmdharan@iitj.ac.in
   name: Vignesh Muralidharan
   position: Assistant Professor
   office: '1753'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/muralilabiitj/home
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1emwQLETkQckO1WilRStzLli_zC1GuUpj&sz=w300
   researchArea1: Cognitive neuroscience of action control
@@ -167,20 +175,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'Yes'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: Maybe Brain-inspired computational modelling
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/11/2024 9:44:19
   emailAddress: dweepobotee@iitj.ac.in
   name: Dweepobotee Brahma
   position: Assistant Professor
   office: '1755'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/dweepoboteebrahma/home?pli=1
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Mathematical and Computational Economics
+  centerIDRP: Center for Mathematical and Computational Economics
   profilePic: >-
     https://drive.google.com/thumbnail?id=1PRsWTSkvNhtVIUB5Zo9uQj4TuVCrNyCL&sz=w300
   researchArea1: Econometrics
@@ -192,20 +201,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: Somewhat
   theoreticalAI/ML: 'No'
   suggestions: AI/ML for Social Good
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/11/2024 10:50:25
   emailAddress: romibanerjee@iitj.ac.in
   name: Romi Banerjee
   position: Assistant Professor
   office: '1269'
-  undefined: ''
+  Wwbsite: https://sites.google.com/site/romibitsnbob/home
   department: Computer Science and Engineering
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1BBwOgGiHpi-uiXjlHd5Im5GDkwpYRo1m&sz=w300
   researchArea1: Cognitive Architectures
@@ -217,20 +227,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/11/2024 14:21:35
   emailAddress: sdang@iitj.ac.in
   name: 'Shilpa Dang '
   position: Assistant Professor
   office: '1758'
-  undefined: ''
+  Wwbsite: https://sites.google.com/iitj.ac.in/shilpadang/home
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1yra85CqpIsnFx5pcDSMaU18bSrrKf5HA&sz=w300
   researchArea1: 'Computational Cognitive Neuroscience '
@@ -242,20 +253,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/13/2024 4:29:20
   emailAddress: pyadav@iitj.ac.in
   name: Pankaj Yadav
   position: Assistant Professor
   office: '1211'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/pankaj-iitj/home
   department: Bioscience and Bioengineering
-  center/IDRP: Centre of Excellence in AI based Precision Healthcare
+  centerIDRP: Centre of Excellence in AI based Precision Healthcare
   profilePic: >-
     https://drive.google.com/thumbnail?id=1NnMl3vVk6i92STpslUEVDV4FQSaRjEck&sz=w300
   researchArea1: Statistical Genomics
@@ -267,20 +279,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/16/2024 8:22:09
   emailAddress: saran.aadhar@iitj.ac.in
   name: Saran Aadhar
   position: Assistant Professor
   office: '1662'
-  undefined: ''
+  Wwbsite: https://sites.google.com/iitj.ac.in/hydromonitoringlab/home
   department: Civil and Infrastructure Engineering
-  center/IDRP: Centre of Excellence in Intelligent Infrastructure
+  centerIDRP: Centre of Excellence in Intelligent Infrastructure
   profilePic: >-
     https://drive.google.com/thumbnail?id=1AwewlxMhRZH1EV53JtQgHXy2ptsaxWZh&sz=w300
   researchArea1: Resilient Water Infrastructure
@@ -292,20 +305,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: Somewhat
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/16/2024 8:25:01
   emailAddress: chsarma@iitj.ac.in
   name: V.V.M.S. Chandramouli
   position: Associate Professor
   office: '1456'
-  undefined: ''
+  Wwbsite: home.iitj.ac.in/~chsarma
   department: Mathematics
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1_oSWUwjtcHo2eLE2t7-Gin74moIeQOkh&sz=w300
   researchArea1: Renormalization in low-dim dynamics
@@ -317,20 +331,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: Somewhat
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/16/2024 9:14:18
   emailAddress: mvatsa@iitj.ac.in
   name: Mayank Vatsa
   position: Professor
   office: '1266'
-  undefined: ''
+  Wwbsite: iab-rubric.org
   department: Computer Science and Engineering
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1ScYme0wq7CvM37HVnTRIZvkXdqRm7170&sz=w300
   researchArea1: 'Deep learning '
@@ -342,20 +357,21 @@
   aIdrivenHealth: Somewhat
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'Yes'
   suggestions: Generative AI; Responsible AI
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/16/2024 17:23:24
   emailAddress: gmanjhi@iitj.ac.in
   name: GANESH MANJHI
   position: Assistant Professor
   office: '1759'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/ganesh-manjhi/home
   department: Artificial Intelligence and Data Science
-  center/IDRP: Center for Mathematical and Computational Economics
+  centerIDRP: Center for Mathematical and Computational Economics
   profilePic: >-
     https://drive.google.com/thumbnail?id=1chyB3ByFJsdbMOxywBcAfu3OLFuNySSo&sz=w300
   researchArea1: Macroeconomics
@@ -367,20 +383,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: Somewhat
   theoreticalAI/ML: Somewhat
   suggestions: AI, LLM, and Economics
-  type: ''
-  hidden: .nan
+  type: Core Faculty
+  hidden: 0
 - timestamp: 3/17/2024 5:00:45
   emailAddress: dhakas@iitj.ac.in
   name: Suman Dhaka
   position: Assistant Professor
   office: '1415'
-  undefined: ''
+  Wwbsite: 'https://sites.google.com/iitj.ac.in/dhakas?usp=sharing '
   department: Liberal Arts
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1vyfzJPvR0Z_C3y8R74DIJ7j5mZFbZZ9Y&sz=w300
   researchArea1: ' Sleep, Cognition and Affect Regulation '
@@ -392,20 +409,22 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/20/2024 7:23:35
   emailAddress: krunalg@iitj.ac.in
   name: Krunal Gangawane
   position: Assistant Professor
   office: '1721'
-  undefined: ''
+  Wwbsite: >-
+    https://sites.google.com/iitj.ac.in/dr-krunal-m-gangawane/about-pi?authuser=0
   department: Chemical Engineering
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1hPdjVC5Ip_oKxi1znZobvqhCkSu-LoIh&sz=w300
   researchArea1: CFD
@@ -417,20 +436,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 3/26/2024 5:29:07
   emailAddress: dipsankarb@iitj.ac.in
   name: Dip Sankar Banerjee
   position: Associate Professor
   office: '1272'
-  undefined: ''
+  Wwbsite: https://sites.google.com/site/dipsankarban/
   department: Computer Science and Engineering
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1-sVm9iZfYLrFWVy41mSn2ShxAEkUcCgJ&sz=w300
   researchArea1: Computing Systems
@@ -442,20 +462,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: Data Science and Data Engineering
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/19/2024 10:43:28
   emailAddress: ranju@iitj.ac.in
   name: Ranju Mohan
   position: Associate Professor
   office: '1657'
-  undefined: ''
+  Wwbsite: https://sites.google.com/iitj.ac.in/tstmlab/home
   department: Civil and Infrastructure Engineering
-  center/IDRP: Centre of Excellence in Intelligent Infrastructure
+  centerIDRP: Centre of Excellence in Intelligent Infrastructure
   profilePic: >-
     https://drive.google.com/thumbnail?id=1H24Xb1b85v_BDjqawC0pFlOR93s_9Cjm&sz=w300
   researchArea1: Traffic flow modelling and Simulation
@@ -467,20 +488,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: Somewhat
+  undefined: ''
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
   name: vivek vijay
   position: Associate Professor
   office: '1454'
-  undefined: ''
+  Wwbsite: vivekvijay.in
   department: Mathematics
-  center/IDRP: Center for Mathematical and Computational Economics
+  centerIDRP: Center for Mathematical and Computational Economics
   profilePic: >-
     https://drive.google.com/thumbnail?id=1GWI8HoTUnucNfMy9GUq3_j0-olVLigZM&sz=w300
   researchArea1: Financial Engineering
@@ -492,20 +514,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
   theoreticalAI/ML: 'Yes'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/23/2024 8:28:52
   emailAddress: nishantkumar@iitj.ac.in
   name: Nishant Kumar
   position: Assistant Professor
   office: '1382'
-  undefined: ''
+  Wwbsite: http://home.iitj.ac.in/~nishantkumar/publications.html
   department: Electrical Engineering
-  center/IDRP: 'IRDP on Robotics and Mobility Systems '
+  centerIDRP: 'IRDP on Robotics and Mobility Systems '
   profilePic: >-
     https://drive.google.com/thumbnail?id=110ZLNwNIcd8omiQe3qvkAI8TnXuM7rZ7&sz=w300
   researchArea1: Control of Microgrid & Smart Grid
@@ -517,20 +540,21 @@
   aIdrivenHealth: Somewhat
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: Somewhat
   theoreticalAI/ML: Somewhat
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/23/2024 8:40:38
   emailAddress: vnara@iitj.ac.in
   name: V Narayanan
   position: Associate Professor
   office: '1607'
-  undefined: ''
+  Wwbsite: http://home.iitj.ac.in/~vnara/
   department: Physics
-  center/IDRP: IDRP-QIC
+  centerIDRP: IDRP-QIC
   profilePic: >-
     https://drive.google.com/thumbnail?id=19ICseOonVs7t2H28ibKqvrIGmR0DBrYs&sz=w300
   researchArea1: Experimental Quantum Optics
@@ -542,20 +566,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/23/2024 13:38:53
   emailAddress: mdabutalha@iitj.ac.in
   name: Md Abu Talhamainuddin Ansary
   position: Assistant Professor
   office: '1465'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/md-abu-talhamainuddin-ansary/home?pli=1
   department: Mathematics
-  center/IDRP: Center for Mathematical and Computational Economics
+  centerIDRP: Center for Mathematical and Computational Economics
   profilePic: >-
     https://drive.google.com/thumbnail?id=17Iqa6Qanl35z68s2wuH8-dFbLMs_tFEN&sz=w300
   researchArea1: 'Multiobjective Optimization '
@@ -567,20 +592,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: Somewhat
   theoreticalAI/ML: 'Yes'
   suggestions: 'Application of optimization in any field of engineering '
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/23/2024 15:15:36
   emailAddress: harshal.akolekar@iitj.ac.in
   name: Harshal Akolekar
   position: Assistant Professor
   office: '1527'
-  undefined: ''
+  Wwbsite: www.harshalakolekar.com
   department: Mechanical Engineering
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=17D8ErMjaOAdU3Esf7SGnsZhYNzj8hdBp&sz=w300
   researchArea1: Computational Fluid Dynamics
@@ -592,20 +618,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
   theoreticalAI/ML: Somewhat
   suggestions: NA
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
   name: Chhanda Chakraborti
   position: Head, School of Management and Entrepreneurship IIT Jodhpur
   office: '1801'
-  undefined: ''
+  Wwbsite: https://sites.google.com/iitj.ac.in/chhandachakraborti
   department: Liberal Arts
-  center/IDRP: >-
+  centerIDRP: >-
     Center of Excellence on Art and Digital Immersion (ADI), Center on Law and
     Technology
   profilePic: >-
@@ -619,20 +646,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: Somewhat
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
   theoreticalAI/ML: Somewhat
   suggestions: Brain, behaviour, and Philosophy of Neuroscience
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/26/2024 14:52:14
   emailAddress: sdey@iitj.ac.in
   name: sucharita dey
   position: Assistant Professor
   office: '1218'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/sdey-iitj/home
   department: Bioscience and Bioengineering
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1pDWB8dCPqBBXWeC5xthjA1oAO6CJN3Gs&sz=w300
   researchArea1: Protein mutational robustness
@@ -644,20 +672,21 @@
   aIdrivenHealth: Somewhat
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: Somewhat
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
   name: Neeraj Jain
   position: Professor
   office: '9999'
-  undefined: ''
+  Wwbsite: https://neerajlab.weebly.com/
   department: Bioscience and Bioengineering
-  center/IDRP: Center for Brain Science and Applications
+  centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1abhxJ5W0Z1AzOHgnCvqNFGg2emuWEm4l&sz=w300
   researchArea1: Mammalian Sensory and Motor Systems
@@ -669,20 +698,21 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/29/2024 11:06:52
   emailAddress: dilpreetkaur@iitj.ac.in
   name: Dilpreet Kaur
   position: Associate Professor
   office: '1460'
-  undefined: ''
+  Wwbsite: https://sites.google.com/view/dilpreetkaur/home
   department: Mathematics
-  center/IDRP: ''
+  centerIDRP: ''
   profilePic: >-
     https://drive.google.com/thumbnail?id=1a06MIWoYh0Qk7s18q5XF-XfryvQQU-XM&sz=w300
   researchArea1: Algebra
@@ -694,20 +724,21 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
+  undefined: ''
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
   theoreticalAI/ML: 'Yes'
   suggestions: ''
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
 - timestamp: 4/29/2024 12:13:41
   emailAddress: mitali@iitj.ac.in
   name: ' Mitali Mukerji'
   position: Professor
   office: '1201'
-  undefined: ''
+  Wwbsite: ''
   department: Bioscience and Bioengineering
-  center/IDRP: Centre of Excellence in AI based Precision Healthcare
+  centerIDRP: Centre of Excellence in AI based Precision Healthcare
   profilePic: >-
     https://drive.google.com/thumbnail?id=1VyrjeGLuDdVD7pKsDVRAkp7UHk5-d3hs&sz=w300
   researchArea1: 'Genomics '
@@ -719,9 +750,10 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
+  undefined: ''
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
   theoreticalAI/ML: 'No'
   suggestions: AI and Omics
-  type: ''
-  hidden: .nan
+  type: Affiliated Faculty
+  hidden: 0
