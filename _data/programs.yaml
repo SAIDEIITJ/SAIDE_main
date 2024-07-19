@@ -1,6 +1,6 @@
 - timestamp: 7/8/2024 11:45:11
   name: PhD in Artificial Intelligence and Data Science
-  offered: School of AIDE
+  undefined: School of AIDE
   level: PhD
   coordinator: Dr. Ranju Mohan
   url: ''
@@ -9,9 +9,9 @@
     https://drive.google.com/thumbnail?id=1Ao2AhE6WC7D6acORnPaIdNWA_2sTf5MJ&sz=w300
   deadline: 10/25/2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
-- timestamp: 7/8/2024 11:53:36
+- timestamp: 7/8/2024 11:53:30
   name: MS by Research in Next Generation AI
-  offered: Center for Brain Science and Applications
+  undefined: Center for Brain Science and Applications
   level: MS by Research
   coordinator: Dr. Dipanjan Roy
   url: ''
