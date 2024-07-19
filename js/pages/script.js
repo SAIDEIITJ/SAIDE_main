@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
     const backgroundImages = [
-        'iit.png',
         'bg.png',
         'banner1.png',
         'banner2.png',
@@ -45,6 +44,7 @@ $(document).ready(function() {
         'FAQs.png',
         'footer.png',
         'Governance.png',
+        'iit.png',
         'Labs.png',
         'logo_bg.png',
         'Logo_IITJ.png',
@@ -138,7 +138,7 @@ $(document).ready(function() {
     // Preload the first 3 banners and other images
     Promise.all([
         preloadImages(backgroundImages, 0, 3),
-        preloadImages(pagebanners, 0, 5)
+        preloadImages(pagebanners, 0, pagebanners.length)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
@@ -147,8 +147,8 @@ $(document).ready(function() {
             let intervalId = setInterval(nextBackground, 5000);
 
             preloadNextBatch(backgroundImages, 3, 3); // Load background banners
-            preloadNextBatch(pagebanners, 5, 5);
             preloadNextBatch(otherImages, 0, otherImages.length);    
+             // Start preloading the next 3 banners
 
             $('#nextBtn').click(function() {
                 clearInterval(intervalId);
