@@ -37,7 +37,7 @@ permalink: /students/
 <div class="row" id="teamMembers">
 {% assign sorted_members = site.data.students | sort: 'name' %}
 {% for member in sorted_members %}
-{% if member.hidden == 0  %}
+{% if member.hidden == 0  and member.alumnus == 0 %}
 <div class="col-lg-6 col-md-6 col-sm-12 member-card studentCard" data-position="{{ member.program }}" data-name="{{ member.name }}" data-research-area="{{member.researchArea}}">
 <div class="member-info">
 <div class="row" style="display: flex; flex-direction: row;">

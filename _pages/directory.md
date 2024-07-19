@@ -51,14 +51,14 @@ permalink: /directory/
 </tr>
 </thead>
 <tbody id="entries">
-{% assign team_data = site.data.team %}
-{% for member in team_data %}
-{% if member.display == 1 %}
+{% assign faculty_data = site.data.faculty_profiles | sort: 'name'%}
+{% for member in faculty_data %}
+{% if member.hidden != 1 %}
 <tr class="member-row">
 <td class="name">{{ member.name }}</td>
 <td class="ph">{{ member.phone }}</td>
-<td class="em">{{ member.email }}</td>
-<td class="office">{{ member.office_number }}</td>
+<td class="em">{{ member.emailAddress }}</td>
+<td class="office">{{ member.office }}</td>
 </tr>
 {% endif %}
 {% endfor %}
