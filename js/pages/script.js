@@ -32,7 +32,7 @@ $(document).ready(function() {
     const otherImages = [
         'Admissions.png',
         'Alumini.png',
-        'brain.png',
+        'brainTheme.png',
         'BTech.png',
         'Campus.png',
         'CoE.png',
