@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+        // document.querySelectorAll('.member-card').forEach(member => {
+        //     const themesAttr = member.getAttribute('data-themes');
+            
+        //     if (themesAttr) {
+        //         try {
+        //             const themes = JSON.parse(themesAttr);
+        //             console.log(themes);  // Debugging: Check the parsed themes object
+        //         } catch (error) {
+        //             console.error('Error parsing data-themes:', error);
+        //         }
+        //     } else {
+        //         console.warn('data-themes attribute is missing or empty');
+        //     }
+        // });
+    
+        // Rest of your existing code...
     document.querySelectorAll('.dropbtn').forEach(button => {
         button.addEventListener('click', function () {
             this.nextElementSibling.classList.toggle('show');
@@ -53,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
             coe: [],
             title: [],
             position: [],
+            themes: [],
         };
 
         document.querySelectorAll('.coe-checkbox input:checked').forEach(checkbox => {
@@ -62,10 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (category && filters[category]) {
                     filters[category].push(checkbox.value.toLowerCase());
                 }
+                else if (!category) { // Assume no category means theme
+                    filters.themes.push(checkbox.value);
+                    
+                }
             }
         });
 
         displaySelectedFilters();
+        console.log(filters);
         filterMembers(filters);
     }
 
@@ -75,16 +98,27 @@ document.addEventListener('DOMContentLoaded', function () {
             const coe = member.getAttribute('data-coe').toLowerCase();
             const title = member.getAttribute('data-title').toLowerCase();
             const position = member.getAttribute('data-position').toLowerCase();
+            let themes = {};
+            const themesAttr = member.getAttribute('data-themes');
+            if (themesAttr) {
+                try {
+                    themes = JSON.parse(themesAttr);
+                    console.log(themesAttr);
+                } catch (error) {
+                    console.error('Error parsing data-themes:', error);
+                }
+            }
             
 
             const isResearchAreaMatch = filters.researchArea.length === 0 || filters.researchArea.some(filter => researchArea.includes(filter));
             const isCoeMatch = filters.coe.length === 0 || filters.coe.some(filter => coe.includes(filter));
             const isTitleMatch = filters.title.length === 0 || filters.title.some(filter => title === filter);
             const isPositionMatch = filters.position.length === 0 || filters.position.some(filter => position.includes(filter));
+            const isThemeMatch = filters.themes.length === 0 || filters.themes.some(filter => themes[filter] === 'Yes' || themes[filter] === 'Somewhat');
      
            
 
-            const isVisible = isResearchAreaMatch && isCoeMatch && isTitleMatch && isPositionMatch;
+            const isVisible = isResearchAreaMatch && isCoeMatch && isTitleMatch && isPositionMatch && isThemeMatch;
 
             member.style.display = isVisible ? 'block' : 'none';
         });

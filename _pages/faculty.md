@@ -85,27 +85,28 @@ permalink: /faculty/
 <div class="coe-checkbox">
 <input type="checkbox" id="Macroeconomics" value="Macroeconomics">
 <label for="Macroeconomics">Macroeconomics</label>
-</div>                <!-- Add more checkboxes as needed -->
+</div>
+<!-- Add more checkboxes as needed -->
 </div>
 </div>
 <div class="dropdown2">
 <button class="dropbtn">Centers <i class="fa-solid fa-caret-down"></i></button>
 <div class="dropdown-content2 centers" data-category="coe">
 <div class="coe-checkbox">
-<input type="checkbox" id="Centre for Mathematical and Computational Economics" value="Centre for Mathematical and Computational Economics">
-<label for="Centre for Mathematical and Computational Economics">Centre for Mathematical and Computational Economics</label>
+<input type="checkbox" id="Centre for Mathematical and Computational Economics" value="Center for Mathematical and Computational Economics">
+<label for="Centre for Mathematical and Computational Economics">Center for Mathematical and Computational Economics</label>
 </div>
 <div class="coe-checkbox">
-<input type="checkbox" id="Centre for Brain Science and Applications" value="Center for Brain Science and Applications">
-<label for="Centre for Brain Science and Applications">Centre for Brain Science and Applications</label>
+<input type="checkbox" id="Center for Brain Science and Applications" value="Center for Brain Science and Applications">
+<label for="Center for Brain Science and Applications">Center for Brain Science and Applications</label>
 </div>
 <div class="coe-checkbox">
-<input type="checkbox" id="Centre for Excellence in Intelligent Infrastructure" value="Centre for Excellence in Intelligent Infrastructure">
-<label for="Centre for Excellence in Intelligent Infrastructure">Centre for Excellence in Intelligent Infrastructure</label>
+<input type="checkbox" id="Centre for Excellence in Intelligent Infrastructure" value="Centre of Excellence in Intelligent Infrastructure">
+<label for="Centre for Excellence in Intelligent Infrastructure">Center for Excellence in Intelligent Infrastructure</label>
 </div>
 <div class="coe-checkbox">
-<input type="checkbox" id="Centre for Excellence in AI-based Precision Healthcare" value="Centre for Excellence in AI-based Precision Healthcare">
-<label for="Centre for Excellence in AI-based Precision Healthcare">Centre for Excellence in AI-based Precision Healthcare</label>
+<input type="checkbox" id="Centre for Excellence in AI-based Precision Healthcare" value="Centre of Excellence in AI based Precision Healthcare">
+<label for="Centre for Excellence in AI-based Precision Healthcare">Center for Excellence in AI-based Precision Healthcare</label>
 </div>
 </div>
 </div>
@@ -113,12 +114,36 @@ permalink: /faculty/
 <button class="dropbtn">Themes <i class="fa-solid fa-caret-down"></i></button>
 <div class="dropdown-content2 labs">
 <div class="coe-checkbox">
-<input type="checkbox" id="" value="">
-<label for="">XYZ</label>
+  <input type="checkbox" id="aIandEconomics" value="aIandEconomics">
+  <label for="aIandEconomics">AI and Economics</label>
 </div>
 <div class="coe-checkbox">
-<input type="checkbox" id="" value="">
-<label for="">ABC</label>
+  <input type="checkbox" id="aIandEthics" value="aIandEthics">
+  <label for="aIandEthics">AI and Ethics</label>
+</div>
+<div class="coe-checkbox">
+  <input type="checkbox" id="aIdrivenHealth" value="aIdrivenHealth">
+  <label for="aIdrivenHealth">AI-driven Health</label>
+</div>
+<div class="coe-checkbox">
+  <input type="checkbox" id="aIforTechnology" value="aIforTechnology">
+  <label for="aIforTechnology">AI for Technology</label>
+</div>
+<div class="coe-checkbox">
+  <input type="checkbox" id="behaviorCognitionBrain" value="behaviorCognitionBrain">
+  <label for="behaviorCognitionBrain">Behavior, Cognition, Brain</label>
+</div>
+<div class="coe-checkbox">
+  <input type="checkbox" id="smartCitiesInfraEnvironment" value="smartCitiesInfraEnvironment">
+  <label for="smartCitiesInfraEnvironment">Smart Cities, Infrastructure, Environment</label>
+</div>
+<div class="coe-checkbox">
+  <input type="checkbox" id="socialEngineering" value="socialEngineering">
+  <label for="socialEngineering">Social Engineering</label>
+</div>
+<div class="coe-checkbox">
+  <input type="checkbox" id="theoreticalAI_ML" value="theoreticalAI_ML">
+  <label for="theoreticalAI_ML">Theoretical AI/ML</label>
 </div>
 <!-- Add checkboxes for Labs and Themes -->
 </div>
@@ -178,38 +203,70 @@ permalink: /faculty/
 </div>
 
 <div class="HOD-details">
+{% assign faculty_members = site.data.faculty_profiles %}
+{% for member in faculty_members %}
+{% if member.hidden != 1  and member.name == 'Neeraj Jain' %}
+{% assign researchArea1 = member.researchArea1 %}
+{% assign researchArea2 = member.researchArea2 %}
+{% assign researchArea3 = member.researchArea3 %}
+{% assign researchArea4 = member.researchArea4 %}
 
-{% assign sorted_members = site.data.team | sort: "year" %}
-{% for member in sorted_members %}
-{% if member.display == 1 and member.faculty == 1  and member.position == 'Professor (Head of School)'%}
-<div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{ member.bio1 }}" data-coe="{{ member.affiliation }}" data-title = "{{member.position}}">
+{% assign research_areas = '' %}
+
+{% if researchArea1 != '' %}
+  {% assign research_areas = research_areas | append: researchArea1 %}
+{% endif %}
+{% if researchArea2 != '' %}
+  {% if research_areas != '' %}
+    {% assign research_areas = research_areas | append: ', ' %}
+  {% endif %}
+  {% assign research_areas = research_areas | append: researchArea2 %}
+{% endif %}
+{% if researchArea3 != '' %}
+  {% if research_areas != '' %}
+    {% assign research_areas = research_areas | append: ', ' %}
+  {% endif %}
+  {% assign research_areas = research_areas | append: researchArea3 %}
+{% endif %}
+{% if researchArea4 != '' %}
+  {% if research_areas != '' %}
+    {% assign research_areas = research_areas | append: ', ' %}
+  {% endif %}
+  {% assign research_areas = research_areas | append: researchArea4 %}
+{% endif %}
+<div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.type }}" data-name="{{ member.name }}" data-research-area="{{ research_areas }}" data-coe="{{ member.centerIDRP }}" data-title = "{{member.position}}" data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
+<!-- Member Details -->
 <div class="member-info">
 <div class="row">
 <div class="col-md-2">
-<img src="{{ member.image }}" class="member-img HOD" alt="{{ member.name }}" />
+<img src="{{ member.profilePic }}" class="member-img HOD" alt="{{ member.name }}" />
 </div>
 <div class="col-md-10" style="padding-left: 10px;">
 <div class="member-details">
 <h4 id="fac-title">{{ member.name }}</h4>
-<p class="member-position">{{ member.position }}, {{member.affiliation}}</p>
-<p class="member-position">{% if member.subfaculty == "Core Faculty" %}
-<strong>Center:</strong> {{ member.affiliation }}
-{%  else %}
-<strong>Department:</strong> {{ member.affiliation }}
+<p class="member-position">{{ member.position }}</p>
+<p class="member-position">{% if member.centerIDRP  and member.type == 'Core Faculty'%}
+<strong>Center:</strong> {{ member.centerIDRP }}
+{% else %}
+<strong>Department:</strong> {{ member.department }}
 {% endif %}
 </p>
 </div>
 <div class="website">
-<a href="{{ member.website }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;"><i class="fa-regular fa-hand-point-right"></i> Personal Website</a>
+<a href="{{ member.Wwbsite }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
+<i class="fa-regular fa-hand-point-right"></i> Personal Website
+</a>
 </div>
 </div>
 </div>
 <div class="additional-info">
-<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.email }}</p>
-<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong>  {{ member.phone }}</p>
-{% if member.bio1 != "" %}
-<p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
+<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.emailAddress }}</p>
+<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong>  {{ member.office }}</p>
+
+{% if research_areas != "" %}
+<p class="member-bio"><strong>Research Area:</strong> {{ research_areas }}</p>
 {% endif %}
+
 </div>
 </div>
 </div>
@@ -218,48 +275,102 @@ permalink: /faculty/
 </div>
 
 <br>
-
 <div class="row" id="teamMembers">
-{% assign sorted_members = site.data.team | sort: "year" %}
-{% for member in sorted_members %}
-{% if member.display == 1 and member.faculty == 1 %}
-<div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}" data-research-area="{{ member.bio1 }}" data-coe="{{ member.affiliation }}" data-title = "{{member.position}}">
+{% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
+{% assign core_members = site.data.faculty_profiles | where: "type", "Core Faculty" %}
+{% assign non_core_members = site.data.faculty_profiles | where_exp: "item", "item.type != 'Core Faculty'" %}
+{% assign core_members_sorted = core_members | sort: "name" %}
+{% assign non_core_members_sorted = non_core_members | sort: "name" %}
+
+{% assign all_members_sorted = core_members_sorted | concat: non_core_members_sorted %}
+
+{% for member in all_members_sorted %}
+  {% assign researchArea1 = member.researchArea1 %}
+  {% assign researchArea2 = member.researchArea2 %}
+  {% assign researchArea3 = member.researchArea3 %}
+  {% assign researchArea4 = member.researchArea4 %}
+
+  {% assign research_areas = '' %}
+
+  {% if researchArea1 != '' %}
+    {% assign research_areas = research_areas | append: researchArea1 %}
+  {% endif %}
+  {% if researchArea2 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea2 %}
+  {% endif %}
+  {% if researchArea3 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea3 %}
+  {% endif %}
+  {% if researchArea4 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  
+<div class="col-lg-6 col-md-6 col-sm-12 member-card" 
+     data-position="{{ member.type }}" 
+     data-name="{{ member.name }}" 
+     data-research-area="{{ research_areas }}" 
+     data-coe="{{ member.centerIDRP }}" 
+     data-title="{{ member.position }}" 
+     data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
+<!-- Member Details -->
 <div class="member-info">
 <div class="row">
 <div class="col-md-2">
-<img src="{{ member.image }}" class="member-img" alt="{{ member.name }}" />
+<img src="{{ member.profilePic }}" class="member-img" alt="{{ member.name }}" />
 </div>
 <div class="col-md-10" style="padding-left: 10px;">
 <div class="member-details">
 <h4 id="fac-title">{{ member.name }}</h4>
-<p class="member-position">{{ member.position }}, {{member.affiliation}}</p>
-<p class="member-position">{% if member.subfaculty == "Core Faculty" %}
-<strong>Center:</strong> {{ member.affiliation }}
-{%  else %}
-<strong>Department:</strong> {{ member.affiliation }}
+<p class="member-position">{{ member.position }}</p>
+<p class="member-position">
+{% if member.centerIDRP and member.type == 'Core Faculty' %}
+<strong>Center:</strong> {{ member.centerIDRP }}
+{% else %}
+<strong>Department:</strong> {{ member.department }}
 {% endif %}
 </p>
 </div>
 <div class="website">
-<a href="{{ member.website }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
+<a href="{{ member.Wwbsite }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
 <i class="fa-regular fa-hand-point-right"></i> Personal Website
 </a>
 </div>
 </div>
 </div>
 <div class="additional-info">
-<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.email }}</p>
-<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong>  {{ member.phone }}</p>
-{% if member.bio1 != "" %}
-<p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
+<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.emailAddress }}</p>
+<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong> {{ member.office }}</p>
+{% if research_areas != "" %}
+<p class="member-bio"><strong>Research Area:</strong> {{ research_areas }}</p>
 {% endif %}
 </div>
 </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 
+<!-- {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
+{% assign core_members = site.data.faculty_profiles | where: "type", "Core Faculty" %}
+{% assign non_core_members = site.data.faculty_profiles | where_exp: "item", "item.type != 'Core Faculty'" %}
+{% assign core_members_sorted = core_members | sort: "name" %}
+{% assign non_core_members_sorted = non_core_members | sort: "name" %}
+
+{% assign all_members_sorted = core_members_sorted | concat: non_core_members_sorted %}
+
+<ul>
+<h3>Core Members:</h3>
+{% for member in all_members_sorted %}
+  <li>{{ member.name }} - {{ member.type }}</li>
+{% endfor %} -->
 
 
 <style>
@@ -272,3 +383,5 @@ permalink: /faculty/
 
 <script src="{{ site.baseurl }}/js/pages/faculty.js">
 </script>
+
+
