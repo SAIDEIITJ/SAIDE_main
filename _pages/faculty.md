@@ -134,6 +134,10 @@ permalink: /faculty/
   <label for="behaviorCognitionBrain">Behavior, Cognition, Brain</label>
 </div>
 <div class="coe-checkbox">
+  <input type="checkbox" id="roboticsandIntelligentMachines" value="roboticsandIntelligentMachines">
+  <label for="roboticsandIntelligentMachines">Robotics and Intelligent Machines</label>
+</div>
+<div class="coe-checkbox">
   <input type="checkbox" id="smartCitiesInfraEnvironment" value="smartCitiesInfraEnvironment">
   <label for="smartCitiesInfraEnvironment">Smart Cities, Infrastructure, Environment</label>
 </div>
@@ -142,8 +146,8 @@ permalink: /faculty/
   <label for="socialEngineering">Social Engineering</label>
 </div>
 <div class="coe-checkbox">
-  <input type="checkbox" id="theoreticalAI_ML" value="theoreticalAI_ML">
-  <label for="theoreticalAI_ML">Theoretical AI/ML</label>
+  <input type="checkbox" id="theoreticalAIML" value="theoreticalAIML">
+  <label for="theoreticalAIML">Theoretical AI/ML</label>
 </div>
 <!-- Add checkboxes for Labs and Themes -->
 </div>
@@ -357,22 +361,6 @@ permalink: /faculty/
 </div>
 {% endfor %}
 </div>
-
-<!-- {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
-{% assign core_members = site.data.faculty_profiles | where: "type", "Core Faculty" %}
-{% assign non_core_members = site.data.faculty_profiles | where_exp: "item", "item.type != 'Core Faculty'" %}
-{% assign core_members_sorted = core_members | sort: "name" %}
-{% assign non_core_members_sorted = non_core_members | sort: "name" %}
-
-{% assign all_members_sorted = core_members_sorted | concat: non_core_members_sorted %}
-
-<ul>
-<h3>Core Members:</h3>
-{% for member in all_members_sorted %}
-  <li>{{ member.name }} - {{ member.type }}</li>
-{% endfor %} -->
-
-
 <style>
   /* page-banner image */
     .background-about{
