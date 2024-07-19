@@ -1,7 +1,5 @@
 
 $(document).ready(function() {
-    // cdn images uploaded online
-    // const baseURL = 'https://sw509073.github.io/image-hosting/images/';
     const backgroundImages = [
         'bg.png',
         'banner1.png',
@@ -31,22 +29,15 @@ $(document).ready(function() {
         'banner25.png',
     ];
 
-   
     const otherImages = [
         'Admissions.png',
-        // 'AIhealth.png',
         'Alumini.png',
         'brain.png',
         'BTech.png',
-        // 'btech1.png',
-        // 'btech2.png',
-        // 'campus_master.png',
         'Campus.png',
         'CoE.png',
-        // 'compEco.png',
         'Contact.png',
         'Continuing.png',
-        // 'digital.jpg',
         'Directory.png',
         'economics.png',
         'Ecosystem.png',
@@ -58,27 +49,13 @@ $(document).ready(function() {
         'Governance.png',
         'health.png',
         'iit.png',
-        // 'intelliInfra.png',
         'Labs.png',
-        // 'loc1.jpeg',
-        // 'loc2.jpeg',
-        // 'loc3.png',
         'logo_bg.png',
         'Logo_IITJ.png',
         'Mission.png',
         'MSR.png',
         'MTech.png',
-        // 'mtech1.png',
-        // 'mtech2.png',
-        // 'mtech3.png',
-        // 'news1.png',
-        // 'news2.png',
-        // 'news3.png',
-        // 'news4.png',
-        // 'news5.png',
-        // 'nextGen.png',
         'Outreach.png',
-        // 'permanent2.png',
         'PhD.png',
         'postdoc.png',
         'ProjectPositions.png',
@@ -94,28 +71,25 @@ $(document).ready(function() {
         'Themes.png',
         'theoritical.png',
         'vision.png',
-        // Add more image URLs as needed
     ];
 
     let currentIndex = 0;
 
-     lottie.loadAnimation({
+    lottie.loadAnimation({
         container: document.getElementById('spinner'),
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'js/animation.json' // Path to your animation file
+        path: 'js/animation.json'
     });
 
-    // Preload images
-    function preloadImages(imageArray) {
+    function preloadImages(imageArray, startIndex, count) {
         let loadedImages = 0;
-        let totalImages = imageArray.length;
+        let totalImages = Math.min(count, imageArray.length - startIndex);
 
         return new Promise((resolve, reject) => {
-            for (let i = 0; i < imageArray.length; i++) {
+            for (let i = startIndex; i < startIndex + totalImages; i++) {
                 const img = new Image();
-                // img.src = `${baseURL}${imageArray[i]}`;
                 img.src = `images/${imageArray[i]}`;
                 img.onload = () => {
                     loadedImages++;
@@ -133,10 +107,18 @@ $(document).ready(function() {
         });
     }
 
-    // Call preloadImages to start preloading and handle loading screen
+    function preloadNextBatch(startIndex, count) {
+        if (startIndex < backgroundImages.length) {
+            preloadImages(backgroundImages, startIndex, count).then(() => {
+                preloadNextBatch(startIndex + count, count);
+            });
+        }
+    }
+
+    // Preload the first 3 banners and other images
     Promise.all([
-        preloadImages(backgroundImages),
-        preloadImages(otherImages)
+        preloadImages(backgroundImages, 0, 3),
+        preloadImages(otherImages, 0, otherImages.length)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
@@ -144,18 +126,18 @@ $(document).ready(function() {
             restartScrollInterval();
             let intervalId = setInterval(nextBackground, 5000);
 
-            // Event listener for next button click
+            preloadNextBatch(3, 3); // Start preloading the next 3 banners
+
             $('#nextBtn').click(function() {
-                clearInterval(intervalId); // Stop automatic change
-                nextBackground(); // Change to the next background
-                intervalId = setInterval(nextBackground, 5000); // Restart automatic change
+                clearInterval(intervalId);
+                nextBackground();
+                intervalId = setInterval(nextBackground, 5000);
             });
-        
-            // Event listener for previous button click
+
             $('#prevBtn').click(function() {
-                clearInterval(intervalId); // Stop automatic change
-                prevBackground(); // Change to the previous background
-                intervalId = setInterval(nextBackground, 5000); // Restart automatic change
+                clearInterval(intervalId);
+                prevBackground();
+                intervalId = setInterval(nextBackground, 5000);
             });
         });
     });
