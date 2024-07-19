@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
     const backgroundImages = [
+        'iit.png',
         'bg.png',
         'banner1.png',
         'banner2.png',
@@ -29,26 +30,21 @@ $(document).ready(function() {
         'banner25.png',
     ];
 
-    const otherImages = [
+    const pagebanners = [
         'Admissions.png',
         'Alumini.png',
-        'brainTheme.png',
         'BTech.png',
         'Campus.png',
         'CoE.png',
         'Contact.png',
         'Continuing.png',
         'Directory.png',
-        'economics.png',
         'Ecosystem.png',
-        'ethics.png',
         'Faculty.png',
         'FacultyPositions.png',
         'FAQs.png',
         'footer.png',
         'Governance.png',
-        'health.png',
-        'iit.png',
         'Labs.png',
         'logo_bg.png',
         'Logo_IITJ.png',
@@ -62,15 +58,39 @@ $(document).ready(function() {
         'Projects.png',
         'Publications.png',
         'Research.png',
-        'robot.png',
         'SIP.png',
-        'smartCity.png',
-        'socialEng.png',
         'Staff.png',
         'Students.png',
         'Themes.png',
+    ];
+
+    const otherImages = [
+        'AIhealth.png',
+        'brain.png',
+        'btech1.png',
+        'btech2.png',
+        'campus_master.png',
+        'compEco.png',
+        'digital.jpg',
+        'economics.png',
+        'ethics.png',
+        'health.png',
+        'intelliInfra.png',
+        'loc1.jpeg',
+        'loc2.jpeg',
+        'loc3.png',
+        'mtech1.png',
+        'mtech2.png',
+        'mtech3.png',
+        'news1.png',
+        'nextGen.png',
+        'permanent2.png',
+        'robot.png',
+        'smartCity.png',
+        'socialEng.png',
         'theoritical.png',
         'vision.png',
+        // Add more image URLs as needed
     ];
 
     let currentIndex = 0;
@@ -83,9 +103,9 @@ $(document).ready(function() {
         path: 'js/animation.json'
     });
 
-    function preloadImages(imageArray, startIndex, count) {
+    function preloadImages(imageArray, startIndex = 0, count) {
         let loadedImages = 0;
-        let totalImages = Math.min(count, imageArray.length - startIndex);
+        let totalImages = Math.min(count || imageArray.length, imageArray.length - startIndex);
 
         return new Promise((resolve, reject) => {
             for (let i = startIndex; i < startIndex + totalImages; i++) {
@@ -107,10 +127,10 @@ $(document).ready(function() {
         });
     }
 
-    function preloadNextBatch(startIndex, count) {
-        if (startIndex < backgroundImages.length) {
-            preloadImages(backgroundImages, startIndex, count).then(() => {
-                preloadNextBatch(startIndex + count, count);
+    function preloadNextBatch(imageArray, startIndex, batchSize) {
+        if (startIndex < imageArray.length) {
+            preloadImages(imageArray, startIndex, batchSize).then(() => {
+                preloadNextBatch(imageArray, startIndex + batchSize, batchSize);
             });
         }
     }
@@ -118,7 +138,7 @@ $(document).ready(function() {
     // Preload the first 3 banners and other images
     Promise.all([
         preloadImages(backgroundImages, 0, 3),
-        preloadImages(otherImages, 0, otherImages.length)
+        preloadImages(pagebanners, 0, 5)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
@@ -126,7 +146,9 @@ $(document).ready(function() {
             restartScrollInterval();
             let intervalId = setInterval(nextBackground, 5000);
 
-            preloadNextBatch(3, 3); // Start preloading the next 3 banners
+            preloadNextBatch(backgroundImages, 3, 3); // Load background banners
+            preloadNextBatch(pagebanners, 5, 5);
+            preloadNextBatch(otherImages, 0, otherImages.length);    
 
             $('#nextBtn').click(function() {
                 clearInterval(intervalId);
