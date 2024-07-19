@@ -15,8 +15,9 @@ title: Update faculity
 
     // dict of all published sheets and corresponding resource names
     var $resources = {
-        team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlkUKS3F0ObI73MPs3bprVyNBKN6RqINtipRkELpaTGrC2qMVvR6SyUgoAvSKPX1YHdfS3fyEF9Ni8/pub?output=tsv',
-        news_events: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSYZExFU_O-a7QMx7bSMCOUsz8kjEErd3RVnlfIld1MYN40IpKoxYVuyxEesJvbimzKOKpVDE4FgbCC/pub?output=tsv',
+        // team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlkUKS3F0ObI73MPs3bprVyNBKN6RqINtipRkELpaTGrC2qMVvR6SyUgoAvSKPX1YHdfS3fyEF9Ni8/pub?output=tsv',
+        faculty_profiles:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=444037338&single=true&output=tsv',
+        // news_events: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSYZExFU_O-a7QMx7bSMCOUsz8kjEErd3RVnlfIld1MYN40IpKoxYVuyxEesJvbimzKOKpVDE4FgbCC/pub?output=tsv',
         publications: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=2127468410&single=true&output=tsv',
         links:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1206947112&single=true&output=tsv',
         faqs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1456991437&single=true&output=tsv',
@@ -28,39 +29,66 @@ title: Update faculity
     }
 
     var header_maps = {
-        team: {
-            "Acknowledgement": "acknowledgement",
-            "Department / Center / School": "affiliation",
-            "Faculity?": "faculty",
-            "Subfaculty": "subfaculty",
-            "Staff?": "staff",
-            "Short bio 1": "bio1",
-            "Short bio 2": "bio2",
-            "Short bio 3": "bio3",
-            "Short bio 4": "bio4",
-            "Website": "website",
-            "Office_number": "office_number",
-            "Display?": "display",
-            "email": "email",
-            "Image": "image",
-            "Name": "name",
-            "phone": "phone",
-            "Position": "position",
-            "Timestamp": "timestamp",
-            "Year of joining": "year",
-            "Primary Affiliation": "primaryaffiliation"
+        // team: {
+        //     "Acknowledgement": "acknowledgement",
+        //     "Department / Center / School": "affiliation",
+        //     "Faculity?": "faculty",
+        //     "Subfaculty": "subfaculty",
+        //     "Staff?": "staff",
+        //     "Short bio 1": "bio1",
+        //     "Short bio 2": "bio2",
+        //     "Short bio 3": "bio3",
+        //     "Short bio 4": "bio4",
+        //     "Website": "website",
+        //     "Office_number": "office_number",
+        //     "Display?": "display",
+        //     "email": "email",
+        //     "Image": "image",
+        //     "Name": "name",
+        //     "phone": "phone",
+        //     "Position": "position",
+        //     "Timestamp": "timestamp",
+        //     "Year of joining": "year",
+        //     "Primary Affiliation": "primaryaffiliation"
+        // },
+
+        faculty_profiles:{
+            "Timestamp":"timestamp",
+            "Email Address":"emailAddress",
+            "Name":"name",
+            "Position":"position",
+            "Office Telephone Extension":"office",
+            "Department":"department",
+            "Center / IDRP":"center/IDRP",
+            "Recent profile photograph":"profilePic",
+            "Research area 1":"researchArea1",
+            "Research area 2":"researchArea2",
+            "Research area 3":"researchArea3",
+            "Research area 4":"researchArea4",
+            "Theme [AI and Economics]":"aIandEconomics",
+            "Theme [AI and Ethics]":"aIandEthics",
+            "Theme [AI driven Healthcare]":"aIdrivenHealth",
+            "Theme [AI for Technology]":"aIforTechnology",
+            "Theme [Behavior, Cognition and the Brain]":"behaviorCognitionBrain",
+            "Theme [Smart Cities, Infrastructure and Environment]":"smartCitiesInfraEnvironment",
+            "Theme [Social engineering]":"socialEngineering",
+            "Theme [Theoretical AI/ML]":"theoreticalAI/ML",
+            "Suggestions":"suggestions",
+            "Type":"type",
+            "Hidden":"hidden",
+
         },
-        news_events: {
-            "Id": "id",
-            "Title": "title",
-            "Date": "date",
-            "News?": "news",
-            "Event?": "event",
-            "Graphic": "graphic",
-            "Content": "content",
-            "Link": "link",
-            "Visibility?": "visibility"
-        },
+        // news_events: {
+        //     "Id": "id",
+        //     "Title": "title",
+        //     "Date": "date",
+        //     "News?": "news",
+        //     "Event?": "event",
+        //     "Graphic": "graphic",
+        //     "Content": "content",
+        //     "Link": "link",
+        //     "Visibility?": "visibility"
+        // },
         publications: {
             "Timestamp": "timestamp",
             "Journal": "journal",
@@ -212,6 +240,10 @@ title: Update faculity
                 if ( header == "profilePhoto" ) {return getGDriveOURL(value);}
                 if ( header == "background" ) {return getGDriveOURL(value);}
                 if ( header == "tileBackground" ) {return getGDriveOURL(value);}
+                if ( header == "profilePic" ) {return getGDriveOURL(value);}
+
+
+                
                 
                 return value;
             }
@@ -268,25 +300,35 @@ title: Update faculity
             var repo = github.getRepo($org, $repo);
             var $writepath = '_data/';
 
-            if ($resource === 'news_events') {
-                $writepath += 'news_events.yaml';
-            } else if ($resource === 'team') {
-                $writepath += 'team.yaml';
-            } else if ($resource === 'publications') {
+            if ($resource === 'faculty_profiles') {
+                $writepath += 'faculty_profiles.yaml';
+            }
+            else if ($resource === 'publications') {
                 $writepath += 'publications.yaml';
-            } else if ($resource === 'links') {
+            }
+            else if ($resource === 'links') {
                 $writepath += 'links.yaml';
-            } else if ($resource === 'faqs') {
+            }
+            else if ($resource === 'faqs') {
                 $writepath += 'faqs.yaml';
-            } else if ($resource === 'administration') {
+            }
+            else if ($resource === 'administration') {
                 $writepath += 'administration.yaml';
-            } else if ($resource === 'students') {
+            }
+            else if ($resource === 'students') {
                 $writepath += 'students.yaml';
-            } else if ($resource === 'programs') {
+            }
+            else if ($resource === 'programs') {
                 $writepath += 'programs.yaml';
-            }else if ($resource === 'events') {
+            }
+            else if ($resource === 'events') {
                 $writepath += 'events.yaml';
             }
+            else if ($resource === 'news') {
+                $writepath += 'news.yaml';
+            }
+
+            
 
             repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
                 if (err) {
