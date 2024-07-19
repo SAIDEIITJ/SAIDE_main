@@ -17,11 +17,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 2/26/2024 12:58:20
@@ -43,11 +44,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: Somewhat
-  theoreticalAI/ML: Somewhat
+  theoreticalAIML: Somewhat
   suggestions: ''
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/1/2024 5:46:02
@@ -69,11 +71,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'Yes'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: AI driven Precision Agriculture
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/1/2024 6:53:47
@@ -97,11 +100,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: 'Yes'
-  theoreticalAI/ML: 'Yes'
+  theoreticalAIML: 'Yes'
   suggestions: ''
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/2/2024 9:30:57
@@ -123,11 +127,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
-  undefined: https://drive.google.com/open?id=1KdQ2Z4rjI_3hotnX0wrGAyr1s0V-rPm7
+  roboticsandIntelligentMachines: 'Yes'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: https://drive.google.com/open?id=1KdQ2Z4rjI_3hotnX0wrGAyr1s0V-rPm7
   type: Core Faculty
   hidden: 0
 - timestamp: 3/7/2024 5:51:01
@@ -149,11 +154,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/11/2024 4:56:26
@@ -175,11 +181,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'Yes'
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: Maybe Brain-inspired computational modelling
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/11/2024 9:44:19
@@ -201,11 +208,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: Somewhat
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: AI/ML for Social Good
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/11/2024 10:50:25
@@ -227,11 +235,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
-  undefined: ''
+  roboticsandIntelligentMachines: 'Yes'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/11/2024 14:21:35
@@ -253,11 +262,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/13/2024 4:29:20
@@ -279,11 +289,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/16/2024 8:22:09
@@ -305,11 +316,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: Somewhat
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/16/2024 8:25:01
@@ -331,11 +343,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: Somewhat
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/16/2024 9:14:18
@@ -357,11 +370,12 @@
   aIdrivenHealth: Somewhat
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'Yes'
+  theoreticalAIML: 'Yes'
   suggestions: Generative AI; Responsible AI
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/16/2024 17:23:24
@@ -383,11 +397,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: Somewhat
-  theoreticalAI/ML: Somewhat
+  theoreticalAIML: Somewhat
   suggestions: AI, LLM, and Economics
+  undefined: ''
   type: Core Faculty
   hidden: 0
 - timestamp: 3/17/2024 5:00:45
@@ -409,11 +424,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/20/2024 7:23:35
@@ -436,11 +452,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 3/26/2024 5:29:07
@@ -462,11 +479,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: Data Science and Data Engineering
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/19/2024 10:43:28
@@ -488,11 +506,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: Somewhat
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/19/2024 13:20:15
@@ -514,11 +533,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
-  theoreticalAI/ML: 'Yes'
+  theoreticalAIML: 'Yes'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/23/2024 8:28:52
@@ -540,11 +560,12 @@
   aIdrivenHealth: Somewhat
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'Yes'
   smartCitiesInfraEnvironment: 'Yes'
   socialEngineering: Somewhat
-  theoreticalAI/ML: Somewhat
+  theoreticalAIML: Somewhat
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/23/2024 8:40:38
@@ -566,11 +587,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/23/2024 13:38:53
@@ -592,11 +614,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: Somewhat
-  theoreticalAI/ML: 'Yes'
+  theoreticalAIML: 'Yes'
   suggestions: 'Application of optimization in any field of engineering '
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/23/2024 15:15:36
@@ -618,11 +641,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
-  theoreticalAI/ML: Somewhat
+  theoreticalAIML: Somewhat
   suggestions: NA
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/23/2024 17:24:59
@@ -646,11 +670,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: Somewhat
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: Somewhat
-  theoreticalAI/ML: Somewhat
+  theoreticalAIML: Somewhat
   suggestions: Brain, behaviour, and Philosophy of Neuroscience
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/26/2024 14:52:14
@@ -672,11 +697,12 @@
   aIdrivenHealth: Somewhat
   aIforTechnology: Somewhat
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: Somewhat
+  theoreticalAIML: Somewhat
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/27/2024 5:12:41
@@ -698,11 +724,12 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'Yes'
-  undefined: ''
+  roboticsandIntelligentMachines: Somewhat
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/29/2024 11:06:52
@@ -724,11 +751,12 @@
   aIdrivenHealth: 'No'
   aIforTechnology: 'No'
   behaviorCognitionBrain: 'No'
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: 'No'
   socialEngineering: 'No'
-  theoreticalAI/ML: 'Yes'
+  theoreticalAIML: 'Yes'
   suggestions: ''
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
 - timestamp: 4/29/2024 12:13:41
@@ -750,10 +778,11 @@
   aIdrivenHealth: 'Yes'
   aIforTechnology: 'Yes'
   behaviorCognitionBrain: Somewhat
-  undefined: ''
+  roboticsandIntelligentMachines: 'No'
   smartCitiesInfraEnvironment: Somewhat
   socialEngineering: 'No'
-  theoreticalAI/ML: 'No'
+  theoreticalAIML: 'No'
   suggestions: AI and Omics
+  undefined: ''
   type: Affiliated Faculty
   hidden: 0
