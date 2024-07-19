@@ -1,6 +1,6 @@
 - timestamp: 7/8/2024 11:45:11
   name: PhD in Artificial Intelligence and Data Science
-  undefined: School of AIDE
+  offered: School of AIDE
   level: PhD
   coordinator: Dr. Ranju Mohan
   url: ''
@@ -11,7 +11,7 @@
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/8/2024 11:53:30
   name: MS by Research in Next Generation AI
-  undefined: Center for Brain Science and Applications
+  offered: Center for Brain Science and Applications
   level: MS by Research
   coordinator: Dr. Dipanjan Roy
   url: ''
@@ -22,7 +22,7 @@
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/19/2024 16:12:49
   name: M.S. by Research in Computational Economics
-  undefined: CMCE
+  offered: CMCE
   level: MS by Research
   coordinator: Dr. Abhinaba Lahiri
   url: ''
@@ -33,7 +33,7 @@
   application: https://oa.iitj.ac.in/OA_PG_ADMISSION/
 - timestamp: 7/19/2024 20:32:39
   name: M.Tech. (Regular) in AR VR
-  undefined: School of AIDE
+  offered: School of AIDE
   level: MTech
   coordinator: Dr. Amit Bhardwaj, Dr. Rajendra Nagar
   url: ''
@@ -44,7 +44,7 @@
   application: https://oa.iitj.ac.in/OA_PG_ADMISSION/
 - timestamp: 7/19/2024 20:37:06
   name: Minor Program in Science of Intelligence
-  undefined: CBSA
+  offered: CBSA
   level: BTech
   coordinator: Dr. Suman Dhaka
   url: ''
