@@ -47,7 +47,7 @@ background-image: url("{{ site.baseurl }}/images/MTech.png");
 <div class="ms-card-image" style="background-image: url('{{member.background}}'); background-size: cover; background-position: center; height: 200px;"></div>
 <div class="ms-card-content" style="padding: 20px;">
 <h2 id="subheading" style="margin: 0;">
-{% if member.document %}
+{% if member.document != ''%}
 <a href="{{ member.document }}" target="_blank" style="border: 0; text-decoration: none;">{{ member.name }}
 </a>
 {% else %}

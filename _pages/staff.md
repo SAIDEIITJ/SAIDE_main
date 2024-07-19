@@ -29,12 +29,16 @@ permalink: /staff/
 <br>
 <br>
 <div class="row" id="teamMembers">
-
-{% assign sorted_members = site.data.team | sort: "year" %}
-{% for member in sorted_members %}
-{% if member.display == 1 and member.staff == 1 %}
-
-<div class="col-lg-6 col-md-6 col-sm-12 member-card studentCard" data-position="{{ member.subfaculty }}" data-name="{{ member.name }}">
+{% assign faculty_members = site.data.faculty_profiles %}
+{% for member in faculty_members %}
+{% assign show_member = false %}
+{% if member.hidden != 1 %}
+{% if member.type == 'Administrative Staff' or member.type == 'Scientific Staff' or member.type == 'Technical Staff' %}
+{% assign show_member = true %}
+{% endif %}
+{% endif %}
+{% if show_member %}
+<div class="col-lg-6 col-md-6 col-sm-12 member-card studentCard" data-position="{{ member.type }}" data-name="{{ member.name }}">
 <div class="member-info">
 <div class="row" style="display: flex; flex-direction: row;">
 <div class="col-nd-1">
@@ -44,22 +48,47 @@ permalink: /staff/
 <div class="member-details studentdetails">
 <h4 id="fac-title">{{ member.name }}</h4>
 <p class="member-position">{{ member.position }}</p>
-<p><strong>Department:</strong> {{ member.affiliation }}</p>
-        
-<p><strong>Email:</strong> {{ member.email }}</p>
-<p><strong>Phone:</strong> {{ member.phone }}</p>
-
-{% if member.bio1 != "" %}
-<p class="member-bio"><strong>Research Area:</strong> {{ member.bio1 }}</p>
+<p><strong>Department:</strong> {{ member.department }}</p>
+<p><strong>Email:</strong> {{ member.emailAddress }}</p>
+<p><strong>Phone:</strong> {{ member.office }}</p>
+{% assign researchArea1 = member.researchArea1 %}
+{% assign researchArea2 = member.researchArea2 %}
+{% assign researchArea3 = member.researchArea3 %}
+{% assign researchArea4 = member.researchArea4 %}
+{% assign research_areas = '' %}
+{% if researchArea1 %}
+{% assign research_areas = research_areas | append: researchArea1 %}
+{% endif %}
+{% if researchArea2 %}
+{% if research_areas != '' %}
+{% assign research_areas = research_areas | append: ', ' %}
+{% endif %}
+{% assign research_areas = research_areas | append: researchArea2 %}
+{% endif %}
+{% if researchArea3 %}
+{% if research_areas != '' %}
+{% assign research_areas = research_areas | append: ', ' %}
+{% endif %}
+{% assign research_areas = research_areas | append: researchArea3 %}
+{% endif %}
+{% if researchArea4 %}
+{% if research_areas != '' %}
+{% assign research_areas = research_areas | append: ', ' %}
+{% endif %}
+{% assign research_areas = research_areas | append: researchArea4 %}
+{% endif %}
+{% if research_areas != '' %}
+<p class="member-bio"><strong>Research Area:</strong> {{ research_areas }}</p>
 {% endif %}
 </div>
 </div>
-</div>     
+</div>
 </div>
 </div>
 {% endif %}
 {% endfor %}
 </div>
+
 
 <script src="{{ site.baseurl }}/js/pages/staff.js">
 </script>

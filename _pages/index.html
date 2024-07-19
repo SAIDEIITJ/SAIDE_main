@@ -51,9 +51,9 @@ permalink: /
 				{% for mem in news_data %}
 				  {% if mem.hidden != 1 %}
 					<div class="card" id="{{ mem.id }}" style="
-					  	{% if mem.preset %}
+					  	{% if mem.preset != '' %}
 						  	background-image: url('{{ '/images/' | append: mem.preset | append: '.png' | prepend: site.baseurl }}');
-						{% elsif mem.background %}
+						{% elsif mem.background != '' %}
 							background-image: url('{{ mem.background }}');
 						{% endif %}
 					">
@@ -62,11 +62,11 @@ permalink: /
 						  <p>Date: {{ mem.date |  date: '%d-%m-%Y' }}</p>
 						{% endif %}
 						<h1>
-						  {% if mem.url %}
-							<a href="{{ mem.url }}" target="_blank" class="card-link">{{ mem.title }}</a>
-						  {% elsif mem.document %}
+						  {% if mem.document != '' %}
 							<a href="{{ mem.document }}" target="_blank" class="card-link">{{ mem.title }}</a>
-						  {% elsif mem.media %}
+						  {% elsif mem.url != '' %}
+							<a href="{{ mem.url }}" target="_blank" class="card-link">{{ mem.title }}</a>
+						  {% elsif mem.media != '' %}
 							<a href="{{ mem.media }}" target="_blank" class="card-link">{{ mem.title }}</a>
 						  {% else %}
 							<span class="card-link">{{ mem.title }}</span>
