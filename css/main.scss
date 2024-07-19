@@ -1254,7 +1254,7 @@ table {
 
 .apply-now{
 	transition: background-color 0.3s ease;
-	animation: rgbAnimation 1.5s infinite;
+
 
 }
 
@@ -1267,17 +1267,17 @@ table {
 }
 
 
-@keyframes rgbAnimation {
-    0% {
-        color: #FF0000; /* Red */
-    }
-    50% {
-        color: #21b021; /* Green */
-    }
-    100% {
-        color: #0000FF; /* Blue */
-    }
-}
+// @keyframes rgbAnimation {
+//     0% {
+//         color: #FF0000; /* Red */
+//     }
+//     50% {
+//         color: #21b021; /* Green */
+//     }
+//     100% {
+//         color: #0000FF; /* Blue */
+//     }
+// }
 
 //slider
 .slider-container {

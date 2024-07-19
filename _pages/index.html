@@ -21,14 +21,14 @@ permalink: /
 				<div class="title">Events</div>
 			</div>
 			<div id="EcardsContainer" class="Ecards-container">
-				{% assign event_data = site.data.events %}
+				{% assign event_data = site.data.events | sort: 'start' | reverse %}
 				{% for mem in event_data %}
 					{% if mem.hidden != 1 %}
 					<div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.tileBackground }});">
 						
 						<div class="inside">
-						{% if mem.start %}
-							<p>{{ mem.start }}</p>
+						{% if mem.start  %}
+						<p>Date: {{ mem.start |  date: '%d-%m-%Y' }}</p>
 						{% endif %}
 						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.name }}</a></h1>
 						</div>
@@ -47,7 +47,7 @@ permalink: /
 				<div class="title">News </div>
 			</div>
 			<div id="cardsContainer" class="cards-container">
-				{% assign news_data = site.data.news %}
+				{% assign news_data = site.data.news | sort: 'date' | reverse  %}
 				{% for mem in news_data %}
 				  {% if mem.hidden != 1 %}
 					<div class="card" id="{{ mem.id }}" style="
@@ -59,7 +59,7 @@ permalink: /
 					">
 					  <div class="inside">
 						{% if mem.date %}
-						  <p>Date: {{ mem.date }}</p>
+						  <p>Date: {{ mem.date |  date: '%d-%m-%Y' }}</p>
 						{% endif %}
 						<h1>
 						  {% if mem.url %}
