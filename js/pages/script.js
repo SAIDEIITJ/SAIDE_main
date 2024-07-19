@@ -152,7 +152,7 @@ $(document).ready(function() {
 
     // Preload the first 3 banners and other images
     Promise.all([
-        preloadImages(backgroundImages, 0, 3),
+        preloadImages(backgroundImages, 0, 4),
         preloadImages(pagebanners, 0, pagebanners.length)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
@@ -161,7 +161,7 @@ $(document).ready(function() {
             restartScrollInterval();
             let intervalId = setInterval(nextBackground, 5000);
 
-            preloadNextBatch(backgroundImages, 3, 3); // Load background banners
+            preloadNextBatch(backgroundImages, 4, 3); // Load background banners
             preloadNextBatch(otherImages, 0, otherImages.length);    
              // Start preloading the next 3 banners
 
