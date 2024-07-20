@@ -19,7 +19,7 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <div class="col-md-8">
 <p style="text-align: justify;">PhD students at the AIDE School are trained in theoretical as well as applied research that will be visible through publications in the top-ranking international journals and conferences, or state-of-the-art tangible end-products. The students can choose to work with the faculty in the Centers of Excellence, or choose a transdisciplinary project with the affiliated faculty. Students have round-the-clock access to high-end research and computational facilities. Our graduating doctoral students will be trained in critical thinking, independent research, development, operations and management of emerging technological challenges, and will be prepared to fulfil the needs of both industry and academia, or to venture out on their own.</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 implinkBox">
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
@@ -49,7 +49,6 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Mathematical and Computational Economics</li>
 </ul>
 
-<div style="padding: 20px;">
 <h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
 <div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
@@ -73,7 +72,6 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 </div>
 {% endif %}
 {% endfor %}
-</div>
 </div>
 
 

@@ -327,7 +327,8 @@ restartScrollEInterval();
 document.addEventListener("DOMContentLoaded", () => {
     var deviceWidth = window.innerWidth;
     // Determine which scroll length to use based on device width
-    // scrollLength = deviceWidth <= 768 ? 340 : 340;
+    scrollLength = deviceWidth <= 768 ? 380 : 418;
+    scrollELength = deviceWidth <= 768 ? 575 : 575;
     showNews();
     showEvents();
 });

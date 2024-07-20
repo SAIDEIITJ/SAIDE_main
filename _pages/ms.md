@@ -19,7 +19,7 @@ background-image: url("{{ site.baseurl }}/images/MSR.png");
 <div class="col-md-8">
 <p style="text-align: justify;">IIT Jodhpur invites applications for admission to the M.S. (by Research) program offered by the Centre of Excellence on Brain Science and Applications (CBSA) in the School of Artificial Intelligence & Data Science, IIT Jodhpur.</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 implinkBox">
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>

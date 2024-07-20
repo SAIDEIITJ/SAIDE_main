@@ -14,7 +14,7 @@ permalink: /btech/
 <div class="col-md-8">
 <p style="text-align: justify;">The Minor Programs in AI and DS at AIDE are designed to provide B.Tech students with a foundational understanding of key concepts, techniques, and applications in AI and DS. These programs offer a blend of theoretical knowledge, practical skills, and hands-on experience through a combination of coursework, projects, and experiential learning opportunities.</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 implinkBox">
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>

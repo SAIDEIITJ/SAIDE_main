@@ -19,7 +19,7 @@ Professor of Practice and Young Faculty Associates working in all areas of AI an
 contribute towards achieving goals of the school. </p>
    
 </div>
-<div class="col-md-4">
+<div class="col-md-4 implinkBox">
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>

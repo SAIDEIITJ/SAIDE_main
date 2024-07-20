@@ -15,7 +15,7 @@ permalink: /governance/
 {% assign categories = site.data.administration | group_by: 'position' %}
 <div class="row categories">
 {% for category in categories %}
-<div class="col-md-6 categoriesCol">
+<div class="col-sm-12 col-md-6 categoriesCol">
 <h2 id="categoryName">{{ category.name }}</h2>
 <ul>
 {% for item in category.items %}

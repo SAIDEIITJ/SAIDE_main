@@ -279,6 +279,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	font-size: 2rem;
 	color: #6e0d10; /* Adjust color as needed */
 	cursor: pointer;
+
   }
 
   .arrow-left {
@@ -368,6 +369,53 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	color: #000000;
   }
 
+  @media (max-width: 768px) {
+
+   #hidden-content-2{
+	padding: 20px;
+	width: 100%;
+	font-size: 0.6em;
+	border: none;
+	}
+
+	#hidden-content-3{
+		padding: -10px;
+		width: 100%;
+		font-size: 0.6em;
+		border: none;
+	}
+
+	#hidden-content{
+		padding: 0;
+		width: 100%;
+		font-size: 0.6em;
+		border: none;
+		p{
+			line-height: 1.7;
+		}
+	}
+	.popup{
+		padding: 5px;
+	}
+	.popup-content{
+		padding: 5px;
+	}
+	#bullets li{
+		margin-top: -14px;
+	}
+
+	#popup-button{
+		padding: 4px 6px;
+		margin-top: -20px;
+	}
+
+	#popup-title{
+		font-size: 1.2em;
+	}
+
+  }
+
+  
   
 
   //projects
@@ -403,6 +451,19 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	font-size: 1.2em;
 	width: 100%;
 	color:$titlecolor;
+  }
+
+  @media (max-width: 768px) {
+	.theme-grid{
+		flex-wrap: nowrap;
+		display: block;
+
+	}
+	.grid-item {
+		width: 100%;
+
+	}
+
   }
 
   //facilities
@@ -477,6 +538,10 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	.res {
 	  max-width: 90%;
 	}
+
+	.category{
+		width: 100%;
+	}
   }
 
 
@@ -487,7 +552,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   
   .category {
 	flex: 1;
-	max-width: 200px;
+	// max-width: 200px;
 	padding: 20px;
 	background-color: #ffffff;
   }
@@ -1063,7 +1128,7 @@ flex-direction: row;
 }
 
 .studentdetails{
-	width: 80%;
+	width: 90%;
 
 }
 #fac-title{
@@ -1309,7 +1374,7 @@ table {
   
   .slide img {
 	width: 100%;
-	height: 100%;
+	height: 400px;
 	border: none;
 }
   
@@ -1344,6 +1409,9 @@ table {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
+	p{
+		display: flex;
+	}
   }
   
   .thumbnail {
@@ -1582,13 +1650,14 @@ table {
 	margin-left:40px;
 	margin-bottom: 15px;
 	background-color: #cae9ff22;
-	border: 1px solid #014f86; 
+	border: 1px solid #d5d5d5; 
 	border-radius: 5px;
 	height: 300px;
 	}
 	@media (max-width: 767px) {
 	.categoriesCol {
 	margin-bottom: 20px;
+	width: 100%;
 	}
 	}
 
@@ -1602,7 +1671,6 @@ table {
   
   .category {
 	flex: 1;
-	max-width: 200px;
 	padding: 20px;
 	background: #f8f8f8;
   }
@@ -1677,6 +1745,10 @@ table {
 
 
   //campus
+
+  .campus-content p {
+    line-height: 1.6;
+}
   .image-container {
 	width: 100%;
 	margin-top: 20px;
@@ -1686,7 +1758,8 @@ table {
 		margin-top: -30px;
 	}
   }
-  
+
+
   #image-title {
 	text-align: left;
 	color: #6e0d10;
@@ -1818,6 +1891,20 @@ table {
     color: #004d4d;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+	.contact-info{
+		flex-direction: column;
+	}
+	.contact-info > div{
+		width: 100%;
+	}
+	.address,.email,.phone{
+		margin-top: 10px;
+	}
+
+  }
+
 
 
 //Education & adademics
@@ -2340,7 +2427,7 @@ figcaption {
 	max-height: 400px; 
 	scroll-behavior: smooth; 
     -webkit-overflow-scrolling: touch;
-	padding-right: 5px;
+
 }
 
 .cards-container::-webkit-scrollbar {
@@ -2764,6 +2851,7 @@ figcaption {
 
   /* Responsive Navbar */
   @media (max-width: 768px) {
+
 	#wholebody{
 		overflow-x:hidden;
    }
@@ -2771,6 +2859,8 @@ figcaption {
 	overflow-x:hidden;
 
    }
+
+
 	.nav-content {
 		height: 100vh;
 		overflow-y: auto;
@@ -2807,7 +2897,7 @@ figcaption {
 		}
 	}
 	#site-main-title {
-		margin-top: 10px;
+		margin-top: 15px;
 		line-height: 18px;
 		font-size: 1em;
 
@@ -2833,9 +2923,9 @@ figcaption {
 	  margin-right: 0;
 	}
   
-	.col-md-3, .col-md-7, .col-md-2 {
+	.col-md-5, .col-md-7, .col-md-2 {
 	//   flex: 0 0 100%;
-	  max-width: 90%;
+	  max-width: 99.7%;
 	  text-align: left;
 	  
 	}
@@ -2880,6 +2970,11 @@ figcaption {
   
 	.logo-title-container img {
 	  margin: 0 0 10px 0;
+	}
+
+	.implinkBox{
+		margin-top: 20px;
+		width: 100%;
 	}
   }
 
@@ -4392,8 +4487,6 @@ ul #subbullet{
 
 	}
 
-
-
 	.indicators-bg {
 	  top: 48%; /* Adjust position to bottom */
 	  right: 39%;
@@ -4415,7 +4508,10 @@ ul #subbullet{
 	//   height: 19vh; /* Adjust height */
 	// }
 	#one{
-		margin-top: 450px;
+		margin-top: 400px;
+	}
+	.newsContainer{
+		margin-top: 30px;
 	}
   
 	/* Optionally hide or adjust other elements as needed */

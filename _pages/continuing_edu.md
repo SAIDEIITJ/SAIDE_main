@@ -15,7 +15,7 @@ permalink: /continuing_edu/
 <div class="col-md-8">
 <p style="text-align: justify;">The School runs degree, diploma and certificate programmes in online and/or part-time mode for interested learners, having different career paths and different levels of preparation. This will include specialised programmmes meeting need of working professionals in the field of AI&DS, awareness programmes for senior executives, cross-disciplinary programmes for in depth training of professionals from other disciplines, programmes for add-on diploma/certificates for students pursuing academic programmes in other disciplines. In other words, the School will play a key role in extending the reach of the AI and DS knowledge in the country.</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 implinkBox">
 <div class="side-content">
 <div class="share">
 <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
