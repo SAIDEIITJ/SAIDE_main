@@ -12,9 +12,9 @@ permalink: /students/
     }
 </style>
 
-<div class="search-container">
+<div class="search-container student-section">
 <input type="text" id="search-bar" placeholder="Search by Research Area ...">
-<div class="dropdown2">
+<div class="srchbtn">
 <button class="dropbtn">Search by Research Area</button>
 </div>
 </div>
@@ -34,7 +34,7 @@ permalink: /students/
 </div>
 <br><br>
 
-<div class="row" id="teamMembers">
+<div class="row" id="teamMembers" class = "student-div">
 {% assign sorted_members = site.data.students | sort: 'name' %}
 {% for member in sorted_members %}
 {% if member.hidden == 0  and member.alumnus == 0 %}

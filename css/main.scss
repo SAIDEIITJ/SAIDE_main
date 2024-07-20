@@ -19,6 +19,22 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 
 
+// fonts-sizes
+@media (max-width: 768px) {
+	.general-section,.about-section{
+		h1{
+			font-size: 1.5em !important;
+
+		}
+
+
+	}
+	#getintouch{
+		font-size: 1.5em !important;
+	}
+	
+  }
+
 #wholebody{
 	 overflow-x:hidden;
 	 width: 100%;
@@ -761,6 +777,13 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	display: inline-block;
 
   }
+  .srchbtn{
+	padding: 5px 0;
+	width: auto;
+	position: relative;
+	display: inline-block;
+
+  }
   
   
   .dropdown2:hover .dropdown-content2 {
@@ -840,6 +863,37 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
  }
  .dropbtn:hover{
 	background-color: rgb(167, 115, 115);
+
+ }
+
+
+ @media (max-width: 768px) {
+	.search-container{
+		width: 112%;
+	}
+	.research-btn{
+		display: none;
+	}
+	#search-bar{
+		width: 185% !important;
+	}
+	.dropdown2{
+	}
+	.dropbtn{
+		padding: 3px;
+	}
+	.dropdown-content2{
+		min-width: 248px;
+	}
+	.centers{
+		left:-54px;
+	}
+	.labs{
+		left:-120px;
+	}
+	.Title{
+		left:0;
+	}
 
  }
 
@@ -1205,6 +1259,10 @@ flex-direction: row;
         flex: 1 0 100%; /* Full width on small screens */
     }
 
+	.member-details{
+		padding-left: 16px;
+	}
+
     .member-info {
         flex-direction: column;
         align-items: flex-start;
@@ -1217,6 +1275,75 @@ flex-direction: row;
         top: auto;
         right: auto;
     }
+
+	.HOD{
+		left:-5px;
+	}
+	.HOD_pic{
+		margin-left: -87px;
+	}
+	.HOD_row{
+		display:flex;
+	}
+	.fac_img{
+		margin-left: -87px;
+	}
+	.fac_row{
+		display:flex;
+	}
+	#profile_pic{
+		left:11px;
+	}
+	.member-card{
+		width: auto;
+	}
+	#teamMembers{
+		width: 84%;
+	}
+	.student-div{
+		width: 96% !important;
+	}
+	.studentdetails{
+		padding-left: 0px !important;
+		width: 104%;
+	}
+	.studentCard{
+		margin-left: 9px;
+	}
+
+	.student-section{
+		margin-left: 0px;
+		width: 54%;
+	}
+
+	.srchbtn{
+		display: none;
+	}
+	.filter-indicators{
+		margin-left: 1% !important;
+	}
+	.staffFilter{
+		font-size: 1em;
+	}
+	.alphabet-links{
+		margin-top: -30px;
+		margin-left: -5px;
+	}
+	.alphabet-links a{
+		font-size: 1em;
+	}
+
+	#entries{
+		font-size:0.6em;
+
+	}
+	#entry-table{
+		margin-top: -46px;
+
+	}
+	#admissions-table{
+		font-size: 0.6em;
+	}
 }
 
 // join-us
@@ -1386,7 +1513,7 @@ table {
 	color: white;
 	padding: 10px;
 	cursor: pointer;
-	z-index: 10;
+	z-index: 1;
 	user-select: none; /* Prevent text selection */
   }
   .arrow:hover{
@@ -1658,6 +1785,10 @@ table {
 	.categoriesCol {
 	margin-bottom: 20px;
 	width: 100%;
+	margin-left: 26px;
+	}
+	#categoryName{
+		font-size: 1.1em;
 	}
 	}
 
@@ -1774,6 +1905,24 @@ table {
 	width: 100%;
 	height:auto;
 	border-radius: 5px;
+
+  }
+  .campus-pic{
+	border-radius: 0px;
+	 height: 550px;
+	  float:left
+
+  }
+
+  @media (max-width: 768px) {
+	.slider-container{
+		height: 438px;
+		width: 330px;
+		margin: 4px;
+	}
+	.campus-pic{
+		height: 249px;
+	}
 
   }
 
@@ -1904,8 +2053,6 @@ table {
 	}
 
   }
-
-
 
 //Education & adademics
 .msgrid-container {
@@ -2118,7 +2265,7 @@ table {
 
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 #searchBar {

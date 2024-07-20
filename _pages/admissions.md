@@ -30,7 +30,7 @@ permalink: /admissions/
 <th>Application Link</th>
 </tr>
 </thead>
-<tbody>
+<tbody id = "admissions-table">
 {% assign programs_data = site.data.programs  %}
 {% for member in programs_data %}
 <tr>

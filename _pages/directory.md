@@ -6,7 +6,7 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 permalink: /directory/
 ---
 
-<div class="search-container direct">
+<div class="search-container direct student-section">
 <input type="text" id="search-bar" placeholder="Search by name ..." oninput="searchEntries()">
 </div>
 
@@ -45,7 +45,7 @@ permalink: /directory/
 <thead>
 <tr style="background-color: rgb(114, 30, 30);">
 <th style="color: rgb(255, 255, 255);">Name</th>
-<th style="color: rgb(255, 255, 255);">Phone</th>
+<!-- <th style="color: rgb(255, 255, 255);">Phone</th> -->
 <th style="color: rgb(255, 255, 255);">Email</th>
 <th style="color: rgb(255, 255, 255);">Office Number</th>
 </tr>
@@ -56,7 +56,7 @@ permalink: /directory/
 {% if member.hidden != 1 %}
 <tr class="member-row">
 <td class="name">{{ member.name }}</td>
-<td class="ph">{{ member.phone }}</td>
+<!-- <td class="ph">{{ member.phone }}</td> -->
 <td class="em">{{ member.emailAddress }}</td>
 <td class="office">{{ member.office }}</td>
 </tr>

@@ -13,15 +13,15 @@ permalink: /staff/
 </style>
 
 <div class="filter-indicators" style="margin-left: 15%;">
-<div class="filter-indicator"  data-filter="Scientific Staff">
+<div class="filter-indicator staffFilter"  data-filter="Scientific Staff">
 <div class="checkbox"></div>
 <span>Scientific</span>
 </div>
-<div class="filter-indicator"  data-filter="Technical Staff">
+<div class="filter-indicator staffFilter"  data-filter="Technical Staff">
 <div class="checkbox"></div>
 <span>Technical</span>
 </div>
-<div class="filter-indicator"  data-filter="Administrative Staff">
+<div class="filter-indicator staffFilter"  data-filter="Administrative Staff">
 <div class="checkbox"></div>
 <span>Administrative</span>
 </div>

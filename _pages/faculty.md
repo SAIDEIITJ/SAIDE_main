@@ -241,8 +241,8 @@ permalink: /faculty/
 <div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.type }}" data-name="{{ member.name }}" data-research-area="{{ research_areas }}" data-coe="{{ member.centerIDRP }}" data-title = "{{member.position}}" data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
 <!-- Member Details -->
 <div class="member-info">
-<div class="row">
-<div class="col-md-2">
+<div class="row HOD_row">
+<div class="col-md-2 HOD_pic">
 <img src="{{ member.profilePic }}" class="member-img HOD" alt="{{ member.name }}" />
 </div>
 <div class="col-md-10" style="padding-left: 10px;">
@@ -327,9 +327,9 @@ permalink: /faculty/
      data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
 <!-- Member Details -->
 <div class="member-info">
-<div class="row">
-<div class="col-md-2">
-<img src="{{ member.profilePic }}" class="member-img" alt="{{ member.name }}" />
+<div class="row fac_row">
+<div class="col-md-2 fac_img">
+<img src="{{ member.profilePic }}" class="member-img" id="profile_pic" alt="{{ member.name }}" />
 </div>
 <div class="col-md-10" style="padding-left: 10px;">
 <div class="member-details">
