@@ -20,7 +20,7 @@ permalink: /admissions/
 </div>
 <div class="application-section">
 
-<table>
+<table id="admissionTable">
 <thead>
 
 <tr>

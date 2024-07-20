@@ -26,8 +26,6 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 			font-size: 1.5em !important;
 
 		}
-
-
 	}
 	#getintouch{
 		font-size: 1.5em !important;
@@ -880,7 +878,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	.dropdown2{
 	}
 	.dropbtn{
-		padding: 3px;
+		padding: 1px;
 	}
 	.dropdown-content2{
 		min-width: 248px;
@@ -1343,6 +1341,9 @@ flex-direction: row;
 	}
 	#admissions-table{
 		font-size: 0.6em;
+	}
+	#admissionTable{
+		margin-left: -3px;
 	}
 }
 
