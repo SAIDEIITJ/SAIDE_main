@@ -10,7 +10,7 @@ event:
   type: Conference
   banner: https://drive.google.com/open?id=1BgbT_NCNbQ2o9WI5mVLbWKY6K0fJkyMT
   preset: 
-  tileBackground: 
+  tileBackground: https://drive.google.com/thumbnail?id=1PrGT4M1-_S8cIXbnxB9Imbt6_ylWJLix&sz=w300
   registration: 
   schedule: 954a19fb6ace8deb7e69d4e4209ff279691d05b51f31ea48d56e08763f68eeee@group.calendar.google.com
   location: School of AIDE, IIT Jodhpur
