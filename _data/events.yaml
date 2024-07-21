@@ -1,4 +1,5 @@
-- id: 7/8/2024 12:18:12
+- undefined: ''
+  id: 7/8/2024 12:18:12
   name: Neuroscience with AI Technologies
   start: 2/12/2025
   end: 2/15/2025
@@ -6,9 +7,6 @@
   type: Conference
   banner: https://drive.google.com/open?id=1BgbT_NCNbQ2o9WI5mVLbWKY6K0fJkyMT
   preset: ''
-  tileBackground: >-
-    https://drive.google.com/thumbnail?id=1PrGT4M1-_S8cIXbnxB9Imbt6_ylWJLix&sz=w300
-  undefined: ''
   registration: ''
   schedule: >-
     954a19fb6ace8deb7e69d4e4209ff279691d05b51f31ea48d56e08763f68eeee@group.calendar.google.com
@@ -19,3 +17,19 @@
     https://docs.google.com/spreadsheets/d/e/2PACX-1vTcfzfpsVWYhEEn4cO1gIT69quSuLbrUVHt8x0HptJhsOqJbAzIucUVfwV6lqfBslLV_6jSdJ7o_Jh4/pub?gid=167035070&single=true&output=tsv
   contact: sgandhi@iitj.ac.in
   hidden: 0
+- undefined: ''
+  id: ''
+  name: name
+  start: ''
+  end: ''
+  description: Description
+  type: Conference
+  banner: ''
+  preset: ''
+  registration: ''
+  schedule: ''
+  location: ''
+  people: ''
+  sponsors: ''
+  contact: ''
+  hidden: .nan
