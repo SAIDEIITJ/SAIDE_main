@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="max-age=86400">
+  <title>{% if page.title %} School of AIDE - {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Bootstrap and fontawsome cdn servers -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- css link -->
+  <link rel="stylesheet" href="{{ '/css/event.css' | prepend: site.baseurl | prepend: site.url}}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+<link rel="icon" type ="image/icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Jquery Lib -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Lottie animation Lib -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+<!-- Bootstrap Lib -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Lib for fontawsome icons  -->
+<script src="https://kit.fontawesome.com/c0ac67ef4b.js" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+</head>
+
+
+  <body>
+
+    <div id="page-wrapper" style="margin-top: -52px;   overflow-x:hidden;
+    width: 100%;">
+      {% include header.html %}
+
+      <style>
+        .event-page {
+            color: black;
+        }
+    
+        #event-banner {
+            /* height: 90vh; */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            padding: 150px 3vw 150px 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+        }
+    
+        .event-image h1 {
+            font-size: xx-large;
+            padding-top: 15px;
+            margin: 0;
+        }
+    
+        .event-image p {
+            font-size: 1.4rem;
+            padding-top: 15px;
+            font-weight: 500;
+            line-height: 1.2em;
+            display: flex;
+            gap: 10px;
+        }
+    
+        .event-image .type {
+            font-size: 1.5rem;
+            padding-top: 15px;
+            font-weight: 500;
+            line-height: 1.2em;
+            display: flex;
+            gap: 10px;
+            text-transform: uppercase;
+        }
+    
+        .event-image .register {
+            font-size: x-large;
+            background-color: darkred;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            box-sizing: content-box;
+            max-width: fit-content;
+        }
+    
+        .main-heading {
+            font-size: 1.8rem;
+            color: darkred;
+            text-align: center;
+            padding: 30px;
+        }
+    
+        .info {
+            text-align: left;
+        }
+    
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    
+        #calendar {
+            max-width: 1100px;
+            margin: 40px auto;
+            color: #111;
+        }
+    
+        .event-card {
+            cursor: pointer;
+        }
+    
+        .details-card,
+        .event-card {
+            font-family: "Arial";
+            padding: 1rem;
+            background: #edf2f4;
+            box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+            position: relative;
+            border-radius: 0.75rem;
+        }
+    
+        .details-card-title,
+        .card__title {
+            padding: 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: darkred;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    
+        .details-card-content,
+        .card__content {
+            font-size: 0.94rem;
+            line-height: 1.5rem;
+        }
+    
+        .card__date {
+            color: #6e6b80;
+            font-size: 0.8rem;
+        }
+    
+        .card__arrow {
+            position: absolute;
+            background: darkred;
+            padding: 0.4rem;
+            border-top-left-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
+            bottom: 0;
+            right: 0;
+            transition: 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .card__arrow svg {
+            transition: 0.2s;
+        }
+    
+        /* Hover effects */
+        .event-card:hover .card__title {
+            color: darkred;
+            text-decoration: underline;
+        }
+    
+        .event-card:hover .card__arrow {
+            background: #111;
+        }
+    
+        .event-card:hover .card__arrow svg {
+            transform: translateX(3px);
+        }
+    
+        @media (max-width: 768px) {
+            .details {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .details {
+                grid-template-columns: 1fr;
+            }
+        }
+    
+        #speakers, #organizers {
+            padding: 10px 0 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+        }
+    
+        .blog-card {
+            display: block;
+            position: relative;
+            width: 250px;
+            height: 350px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.85);
+            transition: all 450ms ease-out 0s;
+            overflow: hidden;
+    
+        }
+    
+        .blog-card .blog-img {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            height: 100%;
+            top: -9999px;
+            left: -9999px;
+            right: -9999px;
+            bottom: -9999px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 0%;
+        }
+    
+        .blog-card:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+        }
+    
+        .blog-card:hover .text-overlay {
+            background: rgba(255, 255, 255, 0.8);
+            height: 40%;
+            top: 60%;
+            transition: all 450ms ease-in-out 0s;
+        }
+    
+        .blog-card:hover p {
+            height: 50px;
+            transition: all 350ms ease-in-out 0s;
+        }
+    
+        .blog-card:hover p a {
+            visibility: visible;
+        }
+    
+        .text-overlay {
+            position: relative;
+            background: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            height: 30%;
+            top: 70%;
+            padding: 10px 12px;
+            overflow: hidden;
+            transition: all 450ms ease-in-out 0s;
+            cursor: pointer;
+        }
+    
+        .text-overlay h2 {
+            color: rgba(0, 0, 0, 0.85);
+            letter-spacing: 0.0225em;
+            width: auto;
+            margin: 0;
+            font-size: medium;
+            line-height: 1.25;
+        }
+    
+        .text-overlay p {
+            color: #323232;
+            width: 170px;
+            height: 38px;
+            margin: 8px 0;
+            line-height: 1.25;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: medium;
+        }
+    
+        #sponsers {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+    
+        .sponser img {
+            height: 100px;
+            width: auto;
+            margin-bottom: 50px;
+            }
+        .schedule {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .event-week{
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        #events {
+            width: 90%;
+          list-style-type: none;
+          padding: 0;
+        }
+    
+        .event-item {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .event-heading {
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          background-color: #cfdce2;
+          margin: 0;
+          padding: 10px;
+        }
+    
+        .event-details {
+          display: flex;
+          align-items: center;
+          background-color: #edf2f4;
+          margin: 0;
+          padding: 10px;
+        }
+    
+        .event-circle {
+          width: 10px;
+          height: 10px;
+          background-color: rgb(84, 156, 234);
+          border-radius: 50%;
+          margin: 10px;
+        }
+    
+        #prev-week, #next-week{
+            background-color: #2B2D42;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 5px 10px 5px 10px;
+        }
+    
+        .about_event{
+            padding: 0 3vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:60px;
+        }
+
+        @media (max-width: 768px) {
+    .about_event {
+        flex-direction: column;
+        gap: 30px; /* Adjust the gap if needed */
+    }
+
+    .about_event img {
+        max-width: 100%; /* Ensure the image scales properly */
+        height: auto;
+    }
+}
+
+    
+        .about_event img{
+           height: 400px;
+           width: 400px;
+        }
+    </style>
+    
+    <div class="event-page">
+        <div class="event-image" id="event-banner">
+            <p class="type">{{page.event.type}}</p>
+            <div>
+                <h1 style="color: #fff;">{{page.event.name}}</h1>
+                <p>{{page.event.description}}</p>
+            </div>
+            <div class="register">REGISTER NOW</div>
+        </div>
+    
+        <div class="info">
+            <div class="details">
+                <div class="details-card">
+                    <h3 class="details-card-title"><i class="fa-solid fa-location-dot"></i> Location</h3>
+                    <p class="details-card-content">{{page.event.location}}</p>
+                </div>
+                <div class="details-card">
+                    <h3 class="details-card-title"><i class="fa-solid fa-user"></i> Date</h3>
+                    <p class="details-card-content">{{page.event.start}} - {{page.event.end}}</p>
+                </div>
+                <div class="event-card">
+                    <h3 class="card__title">Deadline</h3>
+                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="card__date">
+                        Registrations open from April 15, 2022 to April 20, 2022
+                    </div>
+                    <div class="card__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    
+            <h1 class="main-heading">About</h1>
+            <div class="about_event">
+                <img src="https://orlandosydney.com/wp-content/uploads/2023/08/Conference-at-Darling-Harbour-Theatre-Interior-Photo%C2%B7-ICC-Sydney.-2500-seated-capacity.-Photography-By-orlandosydney.com-OS1_7156.jpg" alt="Event Image">
+                <p>{{page.event.description}}</p>
+            </div>
+    
+            <h1 class="main-heading">Speakers</h1>
+            <div id="speakers">
+                <!-- Speakers will be dynamically added here -->
+            </div>
+    
+            <h1 class="main-heading">Event Schedule</h1>
+            <div class="schedule">
+                <div class="event-week">
+                    <h2 id="week-heading"></h2>
+                    <div>
+                        <button id="prev-week">Previous Week</button>
+                        <button id="next-week">Next Week</button>
+                    </div>
+                </div>
+                <ul id="events"></ul>
+            </div>
+    
+            <h1 class="main-heading">Organizers</h1>
+            <div id="organizers">
+                <!-- Organizers will be statically added here -->
+            </div>
+    
+            <h1 class="main-heading">Sponsors</h1>
+            <div id="sponsors" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 10px;">
+                <!-- Sponsors will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const speakersUrl = "{{ page.event.people }}";
+        const sponsorsUrl = "{{ page.event.sponsors }}";
+        const apiKey = 'AIzaSyB4QT4d_LGwVXUHwBndy5_A_pvu5S4hWag';
+        const calendarId = '{{ page.event.schedule }}';
+    
+        // Utility functions
+        function getGDriveOURL(url) {
+            const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+            if (regexp.test(url)) {
+                const id = regexp.exec(url)?.groups?.id;
+                return `https://drive.google.com/thumbnail?id=${id.trim()}`;
+            }
+            return url;
+        }
+
+       // Function to set the background image
+function setBackgroundImage() {
+    const bannerElement = document.getElementById('event-banner');
+    const bannerUrl = "{{page.event.banner}}"; // This will be dynamically set from your data
+    const processedUrl = getGDriveOURL(bannerUrl); // Process the URL if needed
+
+    // Apply background image using JavaScript
+    bannerElement.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${processedUrl})`;
+}
+
+// Call the function to set the background image
+setBackgroundImage();
+
+    
+        function cleanQuotesAndSpaces(data) {
+            return data.map(row => {
+                const cleanedRow = {};
+                for (const key in row) {
+                    const cleanedKey = key.replace(/"/g, '').trim();
+                    cleanedRow[cleanedKey] = row[key];
+                }
+                return cleanedRow;
+            });
+        }
+    
+        function filterSpeakers(data) {
+            return data.filter(row => row['Type'] === 'Speaker');
+        }
+    
+        // Functions to fetch and display data
+        async function fetchSpeakers() {
+            try {
+                const response = await fetch(speakersUrl);
+                const text = await response.text();
+                const rows = text.split('\n').map(row => row.split('\t'));
+                const headers = rows[0];
+                const speakers = rows.slice(1).map(row => {
+                    let speaker = {};
+                    headers.forEach((header, i) => {
+                        speaker[header] = row[i];
+                    });
+                    return speaker;
+                });
+                const cleanedSpeakers = cleanQuotesAndSpaces(speakers);
+                const filteredSpeakers = filterSpeakers(cleanedSpeakers);
+                displaySpeakers(filteredSpeakers);
+            } catch (error) {
+                console.error('Error fetching speaker data:', error);
+            }
+        }
+    
+        async function fetchSponsors() {
+            try {
+                const response = await fetch(sponsorsUrl);
+                const text = await response.text();
+                const rows = text.split('\n').map(row => row.split('\t'));
+                const headers = rows[0];
+                const sponsors = rows.slice(1).map(row => {
+                    let sponsor = {};
+                    headers.forEach((header, i) => {
+                        sponsor[header] = row[i];
+                    });
+                    return sponsor;
+                });
+                displaySponsors(sponsors);
+            } catch (error) {
+                console.error('Error fetching sponsor data:', error);
+            }
+        }
+
+        async function fetchOrganizers() {
+            try {
+                const response = await fetch(speakersUrl);
+                const text = await response.text();
+                const rows = text.split('\n').map(row => row.split('\t'));
+                const headers = rows[0];
+                const organizers = rows.slice(1).map(row => {
+                    let organizer = {};
+                    headers.forEach((header, i) => {
+                        organizer[header] = row[i];
+                    });
+                    return organizer;
+                });
+                const cleanedOrganizers = cleanQuotesAndSpaces(organizers);
+                const filteredOrganizers = filterOrganizers(cleanedOrganizers);
+                displayOrganizers(filteredOrganizers);
+            } catch (error) {
+                console.error('Error fetching organizer data:', error);
+            }
+        }
+
+     
+        async function fetchEvents() {
+            const now = new Date().toISOString();
+            const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                allEvents = data.items;
+                displayEventsForWeek(currentWeekStart);
+            } catch (error) {
+                console.error('Error fetching events:', error);
+            }
+        }
+    
+        function displaySpeakers(speakers) {
+            const speakersContainer = document.getElementById('speakers');
+            speakersContainer.innerHTML = '';
+            speakers.forEach(speaker => {
+                const speakerCard = document.createElement('div');
+                speakerCard.classList.add('blog-card');
+    
+                const speakerImage = document.createElement('img');
+                speakerImage.classList.add('blog-img');
+                speakerImage.src = getGDriveOURL(speaker['Image']);
+                speakerCard.appendChild(speakerImage);
+    
+                const textOverlay = document.createElement('div');
+                textOverlay.classList.add('text-overlay');
+    
+                const speakerName = document.createElement('h2');
+                speakerName.textContent = speaker['Name'];
+                textOverlay.appendChild(speakerName);
+    
+                const speakerDetails = document.createElement('p');
+                speakerDetails.innerHTML = `${speaker['Affiliation']} <br> ${speaker['Country']}`;
+                textOverlay.appendChild(speakerDetails);
+    
+                speakerCard.appendChild(textOverlay);
+                speakersContainer.appendChild(speakerCard);
+            });
+        }
+    
+        function displaySponsors(sponsors) {
+            const sponsorsContainer = document.getElementById('sponsors');
+            sponsorsContainer.innerHTML = '';
+            sponsors.forEach(sponsor => {
+                const sponsorElement = document.createElement('div');
+                sponsorElement.classList.add('sponsor');
+    
+                const sponsorImage = document.createElement('img');
+                sponsorImage.src = getGDriveOURL(sponsor['Logo']);
+                sponsorElement.appendChild(sponsorImage);
+                sponsorsContainer.appendChild(sponsorElement);
+            });
+        }
+
+        // Function to filter out organizers based on the 'Type' value
+function filterOrganizers(data) {
+    return data.filter(row => row['Type'] === 'Organizer');
+}
+
+function displayOrganizers(organizers) {
+    const organizersContainer = document.getElementById('organizers');
+    organizersContainer.innerHTML = '';
+
+    // Clean and filter organizers
+    const cleanedOrganizers = cleanQuotesAndSpaces(organizers);
+    const filteredOrganizers = filterOrganizers(cleanedOrganizers);
+
+    filteredOrganizers.forEach(organizer => {
+        const organizerCard = document.createElement('div');
+        organizerCard.classList.add('blog-card');
+
+        const organizerImage = document.createElement('img');
+        organizerImage.classList.add('blog-img');
+
+        const imageUrl = organizer['Image']; // Use the cleaned 'Image' key
+        const processedUrl = getGDriveOURL(imageUrl); // Convert Google Drive URL if needed
+        organizerImage.src = processedUrl;
+        organizerCard.appendChild(organizerImage);
+
+        const textOverlay = document.createElement('div');
+        textOverlay.classList.add('text-overlay');
+
+        const organizerName = document.createElement('h2');
+        organizerName.textContent = organizer['Name'];
+        textOverlay.appendChild(organizerName);
+
+        const organizerDetails = document.createElement('p');
+        organizerDetails.innerHTML = `${organizer['Affiliation']} <br> ${organizer['Country']}`;
+        textOverlay.appendChild(organizerDetails);
+
+        organizerCard.appendChild(textOverlay);
+        organizersContainer.appendChild(organizerCard);
+    });
+}
+
+    
+        function formatDateTime(dateTime) {
+            const options = { hour: 'numeric', minute: 'numeric', hour12: true };
+            return new Intl.DateTimeFormat('en-US', options).format(new Date(dateTime));
+        }
+    
+        function formatDate(date) {
+            const options = { month: 'short', day: 'numeric' };
+            return new Intl.DateTimeFormat('en-US', options).format(new Date(date));
+        }
+    
+        function displayEventsForWeek(startOfWeek) {
+            const eventsList = document.getElementById('events');
+            const weekHeading = document.getElementById('week-heading');
+            eventsList.innerHTML = '';
+    
+            const endOfWeek = new Date(startOfWeek);
+            endOfWeek.setDate(startOfWeek.getDate() + 6);
+    
+            weekHeading.textContent = `${formatDate(startOfWeek)} - ${formatDate(endOfWeek)}`;
+    
+            const eventsByDay = {};
+            allEvents.forEach(event => {
+                const eventDate = new Date(event.start.dateTime || event.start.date);
+                if (eventDate >= startOfWeek && eventDate <= endOfWeek) {
+                    const eventDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(eventDate);
+                    const eventDateFormatted = formatDate(eventDate);
+                    const formattedStart = formatDateTime(event.start.dateTime || event.start.date);
+                    const formattedEnd = formatDateTime(event.end.dateTime || event.end.date);
+    
+                    if (!eventsByDay[eventDay]) {
+                        eventsByDay[eventDay] = { date: eventDateFormatted, events: [] };
+                    }
+                    eventsByDay[eventDay].events.push({ start: formattedStart, end: formattedEnd, summary: event.summary });
+                }
+            });
+    
+            for (const [day, { date, events }] of Object.entries(eventsByDay)) {
+                const listItem = document.createElement('li');
+                listItem.classList.add('event-item');
+    
+                const eventHeading = document.createElement('div');
+                eventHeading.classList.add('event-heading');
+    
+                const eventDay = document.createElement('span');
+                eventDay.textContent = day;
+    
+                const eventDateSpan = document.createElement('span');
+                eventDateSpan.textContent = date;
+    
+                eventHeading.appendChild(eventDay);
+                eventHeading.appendChild(eventDateSpan);
+                listItem.appendChild(eventHeading);
+    
+                events.forEach(event => {
+                    const eventDetails = document.createElement('div');
+                    eventDetails.classList.add('event-details');
+    
+                    const eventTime = document.createElement('p');
+                    eventTime.textContent = `${event.start} - ${event.end}`;
+    
+                    const eventCircle = document.createElement('div');
+                    eventCircle.classList.add('event-circle');
+    
+                    const eventText = document.createElement('p');
+                    eventText.textContent = event.summary;
+    
+                    eventDetails.appendChild(eventTime);
+                    eventDetails.appendChild(eventCircle);
+                    eventDetails.appendChild(eventText);
+    
+                    listItem.appendChild(eventDetails);
+                });
+    
+                eventsList.appendChild(listItem);
+            }
+    
+            if (eventsList.innerHTML === '') {
+                eventsList.innerHTML = '<li>No events found for this week.</li>';
+            }
+        }
+    
+        function setupEventListeners() {
+            document.getElementById('prev-week').addEventListener('click', () => {
+                currentWeekStart.setDate(currentWeekStart.getDate() - 7);
+                displayEventsForWeek(currentWeekStart);
+            });
+    
+            document.getElementById('next-week').addEventListener('click', () => {
+                currentWeekStart.setDate(currentWeekStart.getDate() + 7);
+                displayEventsForWeek(currentWeekStart);
+            });
+        }
+    
+        let allEvents = [];
+        let currentWeekStart = new Date();
+    
+
+        fetchSpeakers();
+        fetchSponsors();
+        fetchOrganizers();
+        fetchEvents();
+        setupEventListeners();
+    </script>
+    
+
+      {% include footer.html %}
+
+      {% include scripts.html %}
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script></script>
+
+  </body>
+
+</html>

@@ -21,21 +21,20 @@ permalink: /
 				<div class="title">Events</div>
 			</div>
 			<div id="EcardsContainer" class="Ecards-container">
-				{% assign event_data = site.data.events | sort: 'start' | reverse %}
-				{% for mem in event_data %}
-					{% if mem.hidden != 1 %}
-					<div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.tileBackground }});">
-						
-						<div class="inside">
-						{% if mem.start  %}
-						<p>Date: {{ mem.start |  date: '%d-%m-%Y' }}</p>
-						{% endif %}
-						<h1><a href="{{ mem.link }}" target="_blank" class="card-link">{{ mem.name }}</a></h1>
-						</div>
-					</div>
-					{% endif %}
-				{% endfor %}
-			</div>
+                {% assign event_data = site.data.events %}
+                {% for mem in event_data %}
+                  {% if mem.hidden != 1 %}
+                  <div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.tileBackground }});">
+                    <div class="inside">
+                      {% if mem.start %}
+                        <p>{{ mem.start }}</p>
+                      {% endif %}
+                      <h1><a href="{{ site.baseurl }}/event/{{ mem.id }}" class="card-link">{{ mem.name }}</a></h1>
+                    </div>
+                  </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
 			<div id="eventNavigation">
 				<div id="scrollELeftButton" class="navigation-button"><i class="fa-solid fa-chevron-left"></i></div>
 				<div id="scrollERightButton" class="navigation-button"><i class="fa-solid fa-chevron-right"></i></div>
