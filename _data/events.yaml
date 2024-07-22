@@ -1,15 +1,15 @@
 - id: NeuroEvent
-  undefined: ''
+  undefined: null
   name: Neuroscience with AI Technologies
   start: 2/12/2025
   end: 2/15/2025
   description: Placeholder description.
   type: Conference
   banner: https://drive.google.com/open?id=1BgbT_NCNbQ2o9WI5mVLbWKY6K0fJkyMT
-  preset: ''
+  preset: null
   tileBackground: >-
     https://drive.google.com/thumbnail?id=1PrGT4M1-_S8cIXbnxB9Imbt6_ylWJLix&sz=w300
-  registration: ''
+  registration: null
   schedule: >-
     954a19fb6ace8deb7e69d4e4209ff279691d05b51f31ea48d56e08763f68eeee@group.calendar.google.com
   location: School of AIDE, IIT Jodhpur
