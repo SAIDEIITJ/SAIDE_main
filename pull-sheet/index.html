@@ -184,133 +184,112 @@ title: Update faculity
     var $yaml_store = "";
     // var $resource = "";
 
-    function init() {
-        $.each($resources, function(name, url) {
-            // $resource = name;
-            function cb(results) {
-                showInfo(results, name);
-            }
+    async function showInfo(results, $resource) {
+    console.log($resource);
+    console.log(results.data);
+    console.log(results.errors);
+    console.log(results.meta);
+    var data = results.data;
 
-            function map_header(header, index) {
-                return header_maps[name][header];
-            }
-
-            function map_values(value, header) {
-                if ( header == "image" ) {return getGDriveDlURL(value);}
-                if ( header == "display") {return parseInt(value);}
-                if ( header == "staff") {return parseInt(value);}
-                if ( header == "view") {return parseInt(value);}
-                if ( header == "faculty") {return parseInt(value);}
-                if ( header == "graphic" ) {return getGDriveDlURL(value);}
-                if ( header == "news") {return parseInt(value);}
-                if ( header == "event") {return parseInt(value);}
-                if ( header == "visibility") {return parseInt(value);}
-                if ( header == "hidden") {return parseInt(value);}
-                if ( header == "alumnus") {return parseInt(value);}
-                if ( header == "profilePhoto" ) {return getGDriveOURL(value);}
-                if ( header == "background" ) {return getGDriveOURL(value);}
-                if ( header == "tileBackground" ) {return getGDriveOURL(value);}
-                if ( header == "profilePic" ) {return getGDriveOURL(value);}
-
-
-                
-                
-                return value;
-            }
-
-            Papa.parse(url, {
-                delimiter: "\t",
-                download: true,
-                skipEmptyLines: 'greedy',
-                dynamicTyping: 'true',
-                header: true,
-                transformHeader: map_header,
-                transform: map_values,
-                complete: cb
-            });
-        });
-    };
-
-    window.addEventListener('DOMContentLoaded', init)
-
-   
-  function showInfo(results, $resource) {
-        // var GitHub = require('github-api');
-        console.log($resource);
-        console.log(results.data);
-        console.log(results.errors);
-        console.log(results.meta);
-        var data = results.data
-
-        if (results.data.length === 0) {
+    if (results.data.length === 0) {
         console.warn("No data found for", $resource);
         return;
     }
-          
-        // data comes through as a simple array since simpleSheet is turned on
-        alert("Successfully processed " + data.length + " rows for " + $resource + "!")
-         
-        $items = new Array();
 
-        $.each( data, function(i, service) {
-            $p = {};
-            $.each(service, function($key, $value) {
-              $p[$key] = $value;
-            });
-            $items.push($p);
+    alert("Successfully processed " + data.length + " rows for " + $resource + "!");
+    var $items = data.map(service => {
+        var $p = {};
+        $.each(service, function($key, $value) {
+            $p[$key] = $value;
         });
+        return $p;
+    });
 
-        console.log($items);
-        
+    console.log($items);
+
+    try {
+        var $yaml_dump = jsyaml.dump($items);
+        document.getElementById('source').value = $yaml_dump;
+
+        var github = new Github({ token: $GHToken, auth: "oauth" });
+        var repo = github.getRepo($org, $repo);
+        var $writepath = '_data/';
+
+        if ($resource === 'faculty_profiles') {
+            $writepath += 'faculty_profiles.yaml';
+        } else if ($resource === 'publications') {
+            $writepath += 'publications.yaml';
+        } else if ($resource === 'links') {
+            $writepath += 'links.yaml';
+        } else if ($resource === 'faqs') {
+            $writepath += 'faqs.yaml';
+        } else if ($resource === 'administration') {
+            $writepath += 'administration.yaml';
+        } else if ($resource === 'students') {
+            $writepath += 'students.yaml';
+        } else if ($resource === 'programs') {
+            $writepath += 'programs.yaml';
+        } else if ($resource === 'events') {
+            $writepath += 'events.yaml';
+        } else if ($resource === 'news') {
+            $writepath += 'news.yaml';
+        }
+
         try {
-            $yaml_dump = jsyaml.dump($items);
-            document.getElementById('source').value = $yaml_dump;
-
-            var github = new Github({ token: $GHToken, auth: "oauth" });
-            var repo = github.getRepo($org, $repo);
-            var $writepath = '_data/';
-
-            if ($resource === 'faculty_profiles') {
-                $writepath += 'faculty_profiles.yaml';
-            }
-            else if ($resource === 'publications') {
-                $writepath += 'publications.yaml';
-            }
-            else if ($resource === 'links') {
-                $writepath += 'links.yaml';
-            }
-            else if ($resource === 'faqs') {
-                $writepath += 'faqs.yaml';
-            }
-            else if ($resource === 'administration') {
-                $writepath += 'administration.yaml';
-            }
-            else if ($resource === 'students') {
-                $writepath += 'students.yaml';
-            }
-            else if ($resource === 'programs') {
-                $writepath += 'programs.yaml';
-            }
-            else if ($resource === 'events') {
-                $writepath += 'events.yaml';
-            }
-            else if ($resource === 'news') {
-                $writepath += 'news.yaml';
-            }
-
-            
-
-            repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
-                if (err) {
-                    console.error("Error writing to GitHub:", err);
-                } else {
-                    console.log("Successfully updated " + $resource);
-                }
+            await new Promise((resolve, reject) => {
+                repo.write($branch, $writepath, $yaml_dump, 'Update ' + $resource, function(err) {
+                    if (err) {
+                        console.error("Error writing to GitHub:", err);
+                        reject(err);
+                    } else {
+                        console.log("Successfully updated " + $resource);
+                        resolve();
+                    }
+                });
             });
         } catch (error) {
-            console.error("Error dumping YAML:", error);
+            console.error("Error during write operation:", error);
+        }
+    } catch (error) {
+        console.error("Error dumping YAML:", error);
+    }
+}
+
+function init() {
+    const resourceNames = Object.keys($resources);
+
+    async function processResources() {
+        for (const name of resourceNames) {
+            const url = $resources[name];
+            await new Promise((resolve) => {
+                Papa.parse(url, {
+                    delimiter: "\t",
+                    download: true,
+                    skipEmptyLines: 'greedy',
+                    dynamicTyping: true,
+                    header: true,
+                    transformHeader: header => header_maps[name][header],
+                    transform: (value, header) => {
+                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic") {
+                            return getGDriveOURL(value);
+                        }
+                        if (["display", "staff", "view", "faculty", "news", "event", "visibility", "hidden", "alumnus"].includes(header)) {
+                            return parseInt(value);
+                        }
+                        return value;
+                    },
+                    complete: (results) => {
+                        showInfo(results, name).then(resolve);
+                    }
+                });
+            });
         }
     }
+
+    processResources();
+}
+
+window.addEventListener('DOMContentLoaded', init);
 
 </script>
 <textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 500px;"></textarea>
