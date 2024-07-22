@@ -302,7 +302,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     font-size: 12px;
     cursor: pointer;
     position: fixed;
-    top: 5%;
+    top: 4%;
     right: 5%;
     z-index: 1000;
   }
@@ -342,11 +342,23 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         right: -100%; /* Initially position off-screen */
         z-index: 10;
         width: 70%;
-        background-color: rgba(0, 0, 0, 0.895);
+        background-color: rgba(246, 246, 246, 0.95);
         transition: right 0.3s ease;
         overflow-x: hidden;
       }
 
+      .navbar-container{
+        justify-content: left;
+       }
+    
+       .toggle-icon{
+        display: block;
+        font-size: large;
+       }
+    
+       .dropdown:hover .dropdown-content {
+        display: none;
+      }
 
     #menu-toggle {
         display: flex;
@@ -389,7 +401,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   
     .horizontal-menu li {
       margin: 10px 0;
-
+      text-align: left;
+      font-weight: 500;
+      padding-right: 30px;
     }
   
     .container {
@@ -405,7 +419,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         display: none;
     }
     .horizontal-menu .dropdown #dropbtn {
-        color:white;
+        color:rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
     }
   
     

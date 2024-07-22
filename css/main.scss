@@ -2909,6 +2909,9 @@ figcaption {
 	color: white;
   }
 
+  .toggle-icon{
+	display: none;
+  }
 
   .logo-title-container {
 	display: flex;
@@ -2974,7 +2977,7 @@ figcaption {
 	font-size: 12px;
 	cursor: pointer;
 	position: fixed;
-	top: 5%;
+	top: 4%;
 	right: 5%;
 	z-index: 1000;
   }
@@ -3008,6 +3011,18 @@ figcaption {
 
    }
 
+   .navbar-container{
+	justify-content: left;
+   }
+
+   .toggle-icon{
+	display: block;
+	font-size: large;
+   }
+
+   .dropdown:hover .dropdown-content {
+	display: none;
+  }
 
 	.nav-content {
 		height: 100vh;
@@ -3017,7 +3032,7 @@ figcaption {
 		right: -100%; /* Initially position off-screen */
 		z-index: 10;
 		width: 70%;
-		background-color: rgba(0, 0, 0, 0.895);
+		background-color: rgba(246, 246, 246, 0.95);
 		transition: right 0.3s ease;
 		overflow-x: hidden;
 	  }
@@ -3064,7 +3079,9 @@ figcaption {
   
 	.horizontal-menu li {
 	  margin: 10px 0;
-
+text-align: left;
+font-weight: 500;
+padding-right: 30px;
 	}
   
 	.container {
@@ -3081,7 +3098,9 @@ figcaption {
 		display: none;
 	}
 	.horizontal-menu .dropdown #dropbtn {
-		color:white;
+		color:rgb(0, 0, 0);
+		display: flex;
+		justify-content: space-between;
 	}
   
 	
@@ -5040,5 +5059,4 @@ body.is-loading {
 			}
 		}
 	}
-
 

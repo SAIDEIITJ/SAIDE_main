@@ -3,12 +3,12 @@
 <header>
 
   <div class="container" >
-    <div class="row navbar-container" style="	margin-top: -12px;">
-      <div class="col-md-3 col-9" style="padding-left: 50px; margin-bottom: 25px;">
+    <div class="row navbar-container" style=" margin-top: -12px;">
+      <div class="col-md-3 col-9" style=" margin-bottom: 25px;">
             <a href="{{ site.baseurl }}/index.html" id="links">  <h1 id = "site-main-title">School of Artificial Intelligence<br> and Data Science</h1> <h1 id="site-title">IIT JODHPUR</h1>
             </a>
       </div>
-      <div class="col-md-8" style=" text-transform: none; justify-content: center; text-align: center; 	margin-right: 20px;">
+      <div class="col-md-8" style=" text-transform: none; justify-content: center; text-align: center;  margin-right: 20px;">
         <nav id="nav">
           <div class="nav-content" id="nav-content">
             <ul class="horizontal-menu">
@@ -17,7 +17,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="{{ site.baseurl }}/phd/" class="bg-buttons"id="dropbtn">Academics</a>
+                <a href="{{ site.baseurl }}/phd/" class="bg-buttons"id="dropbtn">Academics <span class="toggle-icon">+</span></a>
                 <div class="dropdown-content">
                   <a href="{{ site.baseurl }}/phd/" class="bg-buttons">PhD</a>
                   <a href="{{ site.baseurl }}/ms/" class="bg-buttons">MS by Research</a>
@@ -27,7 +27,7 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="{{ site.baseurl }}/research/" id="dropbtn" class="bg-buttons">Research</a>
+                <a href="{{ site.baseurl }}/research/" id="dropbtn" class="bg-buttons">Research <span class="toggle-icon">+</span></a>
                 <div class="dropdown-content">
                   <a href="{{ site.baseurl }}/themes/"  class="bg-buttons">Themes</a>
                   <a href="{{ site.baseurl }}/projects/"  class="bg-buttons" >Projects</a>
@@ -36,9 +36,9 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="{{ site.baseurl }}/coe/" id="dropbtn" class="bg-buttons">CoEs</a>
+                <a href="{{ site.baseurl }}/coe/" id="dropbtn" class="bg-buttons">CoEs  <span class="toggle-icon">+</span></a>
                 <div class="dropdown-content">
-                  <a href="https://cbsaiitj.wordpress.com/"  target="_blank">Brain Science and Applications</a>
+                  <a href="https://cbsaiitj.wordpress.com/"  target="_blank">Brain Science and Applications </a>
                   <a href="https://cmceiitj.wordpress.com/"  target="_blank">Mathematical and Computational Economics</a>
                   <a href="https://sites.google.com/iitj.ac.in/cii/about"  target="_blank">Center of Excellence in Intelligent Infrastructure</a>
                   <a href="#">Center of Excellence in AI based Precision Healthcare</a>
@@ -47,7 +47,7 @@
 
              
               <li class="dropdown">
-                <a href="{{ site.baseurl }}/faculty/" id="dropbtn" class="bg-buttons">People</a>
+                <a href="{{ site.baseurl }}/faculty/" id="dropbtn" class="bg-buttons">People <span class="toggle-icon">+</span></a>
                 <div class="dropdown-content">
                   <a href="{{ site.baseurl }}/faculty/" class="bg-buttons">Faculty</a>
                   <a href="{{ site.baseurl }}/students/" class="bg-buttons">Students</a>
@@ -58,7 +58,7 @@
               </li>
 
               <li class="dropdown">
-                <a href="{{ site.baseurl }}/admissions/" id="dropbtn"  class="bg-buttons">Join-Us</a>
+                <a href="{{ site.baseurl }}/admissions/" id="dropbtn"  class="bg-buttons">Join-Us <span class="toggle-icon">+</span></a>
                 <div class="dropdown-content">
                   <a href="{{ site.baseurl }}/admissions/"  class="bg-buttons">Admissions</a>
                   <a href="{{ site.baseurl }}/projectsPositions/"  class="bg-buttons">Project Positions</a>
@@ -70,7 +70,7 @@
 
              
               <li class="dropdown">
-                <a href="{{ site.baseurl }}/about/" id="dropbtn" class="bg-buttons">About</a>
+                <a href="{{ site.baseurl }}/about/" id="dropbtn" class="bg-buttons">About <span class="toggle-icon">+</span></a>
                 <div class="dropdown-content">
                   <a href="{{ site.baseurl }}/about/" class="bg-buttons">Mission & Vision</a>
                   <a href="{{ site.baseurl }}/aidsEcosystem/" class="bg-buttons">AI & DS Ecosystem</a>
@@ -97,6 +97,7 @@
   </div>
 </header>
 
+
 <script >
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById('menu-toggle');
@@ -120,4 +121,56 @@ document.addEventListener("DOMContentLoaded", () => {
   menuClose.addEventListener('click', closeMenu);
    });
  
+   document.addEventListener("DOMContentLoaded", function() {
+  var dropdowns = document.querySelectorAll(".dropdown");
+  var nav = document.querySelector("#nav");
+
+  dropdowns.forEach(function(dropdown) {
+    var toggleIcon = dropdown.querySelector(".toggle-icon");
+    
+    if (toggleIcon) {
+      toggleIcon.addEventListener("click", function(event) {
+        event.preventDefault();
+        var dropdownContent = dropdown.querySelector(".dropdown-content");
+        
+        // Close all dropdowns
+        closeAllDropdowns();
+
+        // Toggle the clicked dropdown
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          toggleIcon.textContent = "+";
+        } else {
+          dropdownContent.style.display = "block";
+          toggleIcon.textContent = "-";
+        }
+      });
+    }
+
+    // Close dropdown when hovering outside
+    dropdown.addEventListener("mouseleave", function() {
+      var dropdownContent = dropdown.querySelector(".dropdown-content");
+      dropdownContent.style.display = "none";
+      var icon = dropdown.querySelector(".toggle-icon");
+      if (icon) icon.textContent = "+";
+    });
+  });
+
+  function closeAllDropdowns() {
+    dropdowns.forEach(function(dropdown) {
+      var dropdownContent = dropdown.querySelector(".dropdown-content");
+      var icon = dropdown.querySelector(".toggle-icon");
+      if (dropdownContent) dropdownContent.style.display = "none";
+      if (icon) icon.textContent = "+";
+    });
+  }
+
+  // Close all dropdowns if clicking outside of nav
+  document.addEventListener("click", function(event) {
+    if (!nav.contains(event.target)) {
+      closeAllDropdowns();
+    }
+  });
+});
+
 </script>
