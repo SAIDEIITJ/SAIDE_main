@@ -314,6 +314,13 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     z-index: 1000;
   }
   
+  .mobile-logo{
+	display: none;
+  }
+
+  .toggle-icon{
+	display: none;
+  }
 
   /* Responsive Navbar */
   @media (max-width: 992px) {
@@ -400,6 +407,11 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         text-align: left;
         align-items: center;
       }
+
+      #site-title {
+        display: block;
+        margin-right: -120px;
+      }
     
 
     .horizontal-menu {
@@ -432,11 +444,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         justify-content: space-between;
     }
   
-    
-    #site-title {
-      display: none;
-    }
-    
+
   
     .horizontal-menu li a {
       font-size: 1em;
