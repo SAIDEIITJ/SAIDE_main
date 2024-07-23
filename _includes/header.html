@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menuClose.addEventListener('click', closeMenu);
    });
  
-   document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
   var dropdowns = document.querySelectorAll(".dropdown");
 
   dropdowns.forEach(function(dropdown) {
@@ -137,15 +137,15 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleIcon.addEventListener("click", function(event) {
         event.preventDefault();
 
-        // Close all dropdowns first
-        closeAllDropdowns();
-
         // Toggle the clicked dropdown
         var dropdownContent = dropdown.querySelector(".dropdown-content");
         if (dropdownContent.style.display === "block") {
           dropdownContent.style.display = "none";
           toggleIcon.textContent = "+";
         } else {
+          // Close all dropdowns first
+          closeAllDropdowns();
+
           dropdownContent.style.display = "block";
           toggleIcon.textContent = "-";
         }
