@@ -37,6 +37,7 @@ $(document).ready(function() {
         'CoE.png',
         'Contact.png',
         'Continuing.png',
+        'Courses.png',
         'Directory.png',
         'Ecosystem.png',
         'Faculty.png',
