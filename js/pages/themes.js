@@ -65,6 +65,10 @@ prevButton.addEventListener('click', showPrevTheme);
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
       closePopup();
+    } else if (event.key === 'ArrowRight') {
+        showNextTheme();
+    } else if (event.key === 'ArrowLeft') {
+        showPrevTheme();
     }
   });
 
