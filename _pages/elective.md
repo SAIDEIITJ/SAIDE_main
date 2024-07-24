@@ -238,3 +238,12 @@ permalink: /elective/
 </table>
 </div>
 </div>
+
+<style>
+/* page-banner image */
+
+.background-about{
+  background-image: url("{{ site.baseurl }}/images/Courses.png");
+}
+</style>
+
