@@ -46,19 +46,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     height: 148px;
 
 }
-.topcontent {
-    height: 550px;
-    padding: 40px;
-    margin-top: -55px;
-}
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-    .topcontent {
-        // padding: 20px;
-        height: auto; 
-        margin-top: 0;
-    }
 
    
 }
@@ -324,9 +314,16 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     z-index: 1000;
   }
   
+  .mobile-logo{
+	display: none;
+  }
+
+  .toggle-icon{
+	display: none;
+  }
 
   /* Responsive Navbar */
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     #wholebody{
         overflow-x:hidden;
    }
@@ -355,9 +352,27 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         display: block;
         font-size: large;
        }
+       .dropdown{
+        width: 100%;
+        border-radius: 0;
+       }
+    
+       .dropdown-content{
+        width: 100%;
+        border-radius: 0;
+       }
+    
     
        .dropdown:hover .dropdown-content {
         display: none;
+      }
+      .mobile-logo{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
       }
 
     #menu-toggle {
@@ -392,6 +407,11 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         text-align: left;
         align-items: center;
       }
+
+      #site-title {
+        display: block;
+        margin-right: -120px;
+      }
     
 
     .horizontal-menu {
@@ -424,11 +444,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
         justify-content: space-between;
     }
   
-    
-    #site-title {
-      display: none;
-    }
-    
+
   
     .horizontal-menu li a {
       font-size: 1em;
@@ -938,7 +954,6 @@ $baseurl: '{{ site.baseurl }}/images';
     url("#{$baseurl}/iit.png"); 
     background-size: cover;
     // background-position: center;
-    z-index: -1;
     transition: background-image 1s ease-in-out;
 
 }
@@ -963,7 +978,6 @@ ul #subbullet{
     transition: background-image 1s ease-in-out;
     border: 5px solid #ffc0c0; /* Optional border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    z-index: -1;
 }
 
 @media (max-width: 1200px) {
@@ -973,7 +987,7 @@ ul #subbullet{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     .background-about{
         position: absolute;

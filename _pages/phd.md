@@ -78,41 +78,14 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <h2 id="subheading">Curriculum</h2>
 <p style="text-align: justify;">The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.</p>
 <br>
+
 <h2 id="subheading">Fellowships</h2>
-<div class="msgrid-container">
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/institute.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;">
-<a href="#" target="_blank" style="border: 0;text-decoration: none;">MoE (Institute Fellowship)</a></h2>
-</div>
-</div>
-
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/pmrf.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;">
-<a href="#" target="_blank" style="border: 0;text-decoration: none;">PMRF (Prime Minsiter Research Fellowship)</a></h2>
-</div>
-</div>
-
-
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/Visvesvaraya.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CII.pdf" target="_blank" style="border: 0;text-decoration: none;">Visvesvaraya PhD Scheme</a></h2>
-
-</div>
-</div>
-
-<div class="ms-card ms-grid" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 400px; margin-bottom: 20px;">
-<div class="ms-card-image" style="background-image: url('{{ site.baseurl }}/images/project.png'); background-size: cover; background-position: center; height: 200px;"></div>
-<div class="ms-card-content" style="padding: 20px;">
-<h2 id="subheading" style="margin: 0;"><a href="https://aide.iitj.ac.in/images/pdf/MSR_CAIPH.pdf" target="_blank" style="border: 0;text-decoration: none;">Project Fellowships</a></h2>
-</div>
-</div>
-</div>
-<br>
+<ul>
+<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>MoE (Institute Fellowship)</li>
+<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>PMRF (Prime Minsiter Research Fellowship)</li></a>
+<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Visvesvaraya PhD Scheme</li>
+<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Project Fellowships</li>
+</ul>
 
 <h2 id="subheading">Supervisor Selection</h2>
 <p style="text-align: justify;">The students can choose to work with any core or affiliated faculty from the School of AIDE</p>
