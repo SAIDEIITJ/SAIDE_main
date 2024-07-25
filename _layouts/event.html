@@ -350,21 +350,50 @@
           margin: 0;
           padding: 10px;
         }
+
+        .event-circle-and-text{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
     
         .event-details {
-          display: flex;
-          align-items: center;
-          background-color: #edf2f4;
-          margin: 0;
-          padding: 10px;
-        }
+    display: flex;
+    align-items: center;
+    background-color: #edf2f4;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-description {
+    background-color: #edf2f4;
+    margin: 0;
+    height: 0; /* Start with height 0 */
+    opacity: 0; /* Start with opacity 0 */
+    overflow: hidden; /* Hide overflow */
+    transition: height 0.3s ease, opacity 0.3s ease; /* Transition for both height and opacity */
+    color: #3f3e3e;
+}
+
+/* Class to toggle visibility */
+.event-description.show {
+    height: auto; /* Set to auto to fit content */
+    opacity: 1; /* Fully visible */
+    padding: 10px;
+}
+
+
     
         .event-circle {
           width: 10px;
           height: 10px;
           background-color: rgb(84, 156, 234);
           border-radius: 50%;
-          margin: 10px;
+          margin-left: 10px;
         }
     
         #prev-week, #next-week{
@@ -373,6 +402,14 @@
             border: none;
             border-radius: 12px;
             padding: 5px 10px 5px 10px;
+        }
+
+        #mobile-prev-week, #mobile-next-week{
+            display: none;
+        }
+
+        .mobile-buttons{
+            display: none;
         }
     
         .about_event{
@@ -390,10 +427,45 @@
         gap: 30px; /* Adjust the gap if needed */
     }
 
+    .event-details{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .event-circle{
+        margin-left: 0;
+    }
+
     .about_event img {
         max-width: 100%; /* Ensure the image scales properly */
         height: auto;
     }
+
+    .mobile-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile-prev-week, #mobile-next-week{
+        display: inline-block;
+            background-color: #2B2D42;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 5px 10px 5px 10px;
+        }
+
+        #prev-week, #next-week{
+            display: none;
+        }
+
+    .event-week{
+        display: flex;
+        flex-direction: row;
+    }
+  
 }
 
     
@@ -455,6 +527,8 @@
                     <div>
                         <button id="prev-week">Previous Week</button>
                         <button id="next-week">Next Week</button>
+                        <button id="mobile-prev-week">&lt;</button>
+                        <button id="mobile-next-week">&gt;</button>   
                     </div>
                 </div>
                 <ul id="events"></ul>
@@ -582,7 +656,7 @@ setBackgroundImage();
      
         async function fetchEvents() {
             const now = new Date().toISOString();
-            const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime`;
+            const url = `https://www.googleapis.com/calendar/v3/calendars/iva.agarwal.bkn@gmail.com/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime`;
             try {
                 const response = await fetch(url);
                 const data = await response.json();
@@ -677,10 +751,16 @@ function displayOrganizers(organizers) {
 }
 
     
-        function formatDateTime(dateTime) {
-            const options = { hour: 'numeric', minute: 'numeric', hour12: true };
-            return new Intl.DateTimeFormat('en-US', options).format(new Date(dateTime));
-        }
+function formatDateTime(dateTimeString) {
+    const dateTime = new Date(dateTimeString);
+    const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+    };
+    return new Intl.DateTimeFormat('en-US', options).format(dateTime);
+}
+
     
         function formatDate(date) {
             const options = { month: 'short', day: 'numeric' };
@@ -688,77 +768,102 @@ function displayOrganizers(organizers) {
         }
     
         function displayEventsForWeek(startOfWeek) {
-            const eventsList = document.getElementById('events');
-            const weekHeading = document.getElementById('week-heading');
-            eventsList.innerHTML = '';
-    
-            const endOfWeek = new Date(startOfWeek);
-            endOfWeek.setDate(startOfWeek.getDate() + 6);
-    
-            weekHeading.textContent = `${formatDate(startOfWeek)} - ${formatDate(endOfWeek)}`;
-    
-            const eventsByDay = {};
-            allEvents.forEach(event => {
-                const eventDate = new Date(event.start.dateTime || event.start.date);
-                if (eventDate >= startOfWeek && eventDate <= endOfWeek) {
-                    const eventDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(eventDate);
-                    const eventDateFormatted = formatDate(eventDate);
-                    const formattedStart = formatDateTime(event.start.dateTime || event.start.date);
-                    const formattedEnd = formatDateTime(event.end.dateTime || event.end.date);
-    
-                    if (!eventsByDay[eventDay]) {
-                        eventsByDay[eventDay] = { date: eventDateFormatted, events: [] };
-                    }
-                    eventsByDay[eventDay].events.push({ start: formattedStart, end: formattedEnd, summary: event.summary });
-                }
-            });
-    
-            for (const [day, { date, events }] of Object.entries(eventsByDay)) {
-                const listItem = document.createElement('li');
-                listItem.classList.add('event-item');
-    
-                const eventHeading = document.createElement('div');
-                eventHeading.classList.add('event-heading');
-    
-                const eventDay = document.createElement('span');
-                eventDay.textContent = day;
-    
-                const eventDateSpan = document.createElement('span');
-                eventDateSpan.textContent = date;
-    
-                eventHeading.appendChild(eventDay);
-                eventHeading.appendChild(eventDateSpan);
-                listItem.appendChild(eventHeading);
-    
-                events.forEach(event => {
-                    const eventDetails = document.createElement('div');
-                    eventDetails.classList.add('event-details');
-    
-                    const eventTime = document.createElement('p');
-                    eventTime.textContent = `${event.start} - ${event.end}`;
-    
-                    const eventCircle = document.createElement('div');
-                    eventCircle.classList.add('event-circle');
-    
-                    const eventText = document.createElement('p');
-                    eventText.textContent = event.summary;
-    
-                    eventDetails.appendChild(eventTime);
-                    eventDetails.appendChild(eventCircle);
-                    eventDetails.appendChild(eventText);
-    
-                    listItem.appendChild(eventDetails);
-                });
-    
-                eventsList.appendChild(listItem);
+    const eventsList = document.getElementById('events');
+    const weekHeading = document.getElementById('week-heading');
+    eventsList.innerHTML = '';
+
+    const endOfWeek = new Date(startOfWeek);
+    endOfWeek.setDate(startOfWeek.getDate() + 6);
+
+    weekHeading.textContent = `${formatDate(startOfWeek)} - ${formatDate(endOfWeek)}`;
+
+    const eventsByDay = {};
+    allEvents.forEach(event => {
+        const eventDate = new Date(event.start.dateTime || event.start.date);
+        if (eventDate >= startOfWeek && eventDate <= endOfWeek) {
+            const eventDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(eventDate);
+            const eventDateFormatted = formatDate(eventDate);
+            const formattedStart = formatDateTime(event.start.dateTime || event.start.date);
+            const formattedEnd = formatDateTime(event.end.dateTime || event.end.date);
+            const eventDescription = event.description || 'No description available';
+
+            if (!eventsByDay[eventDay]) {
+                eventsByDay[eventDay] = { date: eventDateFormatted, events: [] };
             }
-    
-            if (eventsList.innerHTML === '') {
-                eventsList.innerHTML = '<li>No events found for this week.</li>';
-            }
+            eventsByDay[eventDay].events.push({ start: formattedStart, end: formattedEnd, summary: event.summary, description: eventDescription });
         }
-    
-        function setupEventListeners() {
+    });
+
+    for (const [day, { date, events }] of Object.entries(eventsByDay)) {
+        const listItem = document.createElement('li');
+        listItem.classList.add('event-item');
+
+        const eventHeading = document.createElement('div');
+        eventHeading.classList.add('event-heading');
+
+        const eventDay = document.createElement('span');
+        eventDay.textContent = day;
+
+        const eventDateSpan = document.createElement('span');
+        eventDateSpan.textContent = date;
+
+        eventHeading.appendChild(eventDay);
+        eventHeading.appendChild(eventDateSpan);
+        listItem.appendChild(eventHeading);
+
+        events.forEach(event => {
+            const eventDetailsContainer = document.createElement('div');
+            eventDetailsContainer.classList.add('event-details-container');
+
+            const eventDetails = document.createElement('div');
+            eventDetails.classList.add('event-details');
+
+            const eventTime = document.createElement('p');
+            eventTime.textContent = `${event.start} - ${event.end}`;
+
+            // Create a container for the circle and text
+            const eventCircleAndTextContainer = document.createElement('div');
+            eventCircleAndTextContainer.classList.add('event-circle-and-text');
+
+            const eventCircle = document.createElement('div');
+            eventCircle.classList.add('event-circle');
+
+            const eventText = document.createElement('p');
+            eventText.textContent = event.summary;
+
+            eventCircleAndTextContainer.appendChild(eventCircle);
+            eventCircleAndTextContainer.appendChild(eventText);
+
+            // Append the container to eventDetails
+            eventDetails.appendChild(eventTime);
+            eventDetails.appendChild(eventCircleAndTextContainer);
+
+            // Create a separate div for event description
+            const eventDescriptionContainer = document.createElement('div');
+            eventDescriptionContainer.classList.add('event-description');
+            eventDescriptionContainer.textContent = event.description;
+
+            eventDetailsContainer.appendChild(eventDetails);
+            eventDetailsContainer.appendChild(eventDescriptionContainer); // Append description after details
+
+            // Add click event listener for accordion effect
+            eventDetails.addEventListener('click', () => {
+                eventDescriptionContainer.classList.toggle('show');
+            });
+
+            listItem.appendChild(eventDetailsContainer);
+        });
+
+        eventsList.appendChild(listItem);
+    }
+
+    if (eventsList.innerHTML === '') {
+        eventsList.innerHTML = '<li>No events found for this week.</li>';
+    }
+}
+
+
+function setupEventListeners() {
             document.getElementById('prev-week').addEventListener('click', () => {
                 currentWeekStart.setDate(currentWeekStart.getDate() - 7);
                 displayEventsForWeek(currentWeekStart);
