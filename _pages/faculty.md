@@ -108,15 +108,15 @@ permalink: /faculty/
 <button class="dropbtn">Type <i class="fa-solid fa-caret-down"></i></button>
 <div class="dropdown-content2 Type" data-category="position">
 <div class="coe-checkbox">
-<input type="checkbox" id="Core Faculty" value="Core Faculty">
+<input type="checkbox" id="Core Faculty" value="Core">
 <label for="Core Faculty">Core Faculty</label>
 </div>
 <div class="coe-checkbox">
-<input type="checkbox" id="Affiliated Faculty" value="Affiliated Faculty">
+<input type="checkbox" id="Affiliated Faculty" value="Affiliated">
 <label for="Affiliated Faculty">Affiliated Faculty</label>
 </div>
 <div class="coe-checkbox">
-<input type="checkbox" id="Adjunct Faculty" value="Adjunct Faculty">
+<input type="checkbox" id="Adjunct Faculty" value="Adjunct">
 <label for="Adjunct Faculty">Adjunct Faculty</label>
 </div>
 <div class="coe-checkbox">
@@ -211,8 +211,8 @@ permalink: /faculty/
 <br>
 <div class="row" id="teamMembers">
 {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
-{% assign core_members = site.data.faculty_profiles | where: "type", "Core Faculty" %}
-{% assign non_core_members = site.data.faculty_profiles | where_exp: "item", "item.type != 'Core Faculty'" %}
+{% assign core_members = site.data.faculty_profiles | where: "type", "Core" %}
+{% assign non_core_members = site.data.faculty_profiles | where_exp: "item", "item.type != 'Core'" %}
 {% assign core_members_sorted = core_members | sort: "name" %}
 {% assign non_core_members_sorted = non_core_members | sort: "name" %}
 

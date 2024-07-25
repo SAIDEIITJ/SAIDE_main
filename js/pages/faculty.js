@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     core();
     function core(){
         document.querySelectorAll('.member-card').forEach(member => {
-            if (member.getAttribute('data-position') !== 'Core Faculty') {
+            if (member.getAttribute('data-position') !== 'Core') {
                 member.style.display = 'none';
             }
         });
