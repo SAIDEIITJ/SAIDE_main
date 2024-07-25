@@ -1,0 +1,36 @@
+- name: AI and Economics
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: AI-driven Healthcare
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: 'AI for Technology: Language and Vision'
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: Behavior, Cognition and Brain
+  info: Dummy content
+  labs: Cognitive Engineering Lab
+  hidden: 0
+- name: Theoretical AI
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: AI and Ethics
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: Social Engineering
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: Robotics and Intelligent Machines
+  info: Dummy content
+  labs: null
+  hidden: 0
+- name: Smart Cities Infrastructure and Environment
+  info: Dummy content
+  labs: null
+  hidden: 0
