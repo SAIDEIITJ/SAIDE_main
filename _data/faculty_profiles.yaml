@@ -706,7 +706,7 @@
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
   name: Neeraj Jain
-  position: Professor
+  position: Head of School
   office: 9999
   Wwbsite: https://neerajlab.weebly.com/
   department: Bioscience and Bioengineering
@@ -810,7 +810,7 @@
   suggestions: null
   undefined: null
   type: Core
-  hidden: .nan
+  hidden: 0
 - timestamp: 7/25/2024 15:34:43
   emailAddress: asif@iitj.ac.in
   name: Asif Ekbal
@@ -839,7 +839,7 @@
     themes 
   undefined: null
   type: Core
-  hidden: .nan
+  hidden: 0
 - timestamp: 7/25/2024 17:05:54
   emailAddress: droy@iitj.ac.in
   name: Dipanjan Roy
@@ -866,4 +866,4 @@
   suggestions: null
   undefined: null
   type: Core
-  hidden: .nan
+  hidden: 0
