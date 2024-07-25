@@ -79,22 +79,20 @@
   undefined: null
   type: Core Faculty
   hidden: 0
-- timestamp: 3/1/2024 6:53:47
+- timestamp: 7/25/2024 16:24:21
   emailAddress: ma@iitj.ac.in
   name: Manish Aggarwal
   position: Associate Professor
   office: 1811
-  Wwbsite: >-
-    https://research.iitj.ac.in/researcher/manish-aggarwal  /  
-    https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
+  Wwbsite: https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
   department: Artificial Intelligence and Data Science
-  centerIDRP: Digital Humanities
+  centerIDRP: Human-Centered AI
   profilePic: >-
     https://drive.google.com/thumbnail?id=1QSjDWdgT1bAUFMSS5Cj6DYvKiS_4p51o&sz=w300
   researchArea1: Uncertainty and Preferences in Machine Learning
   researchArea2: Human Decision Making
-  researchArea3: null
-  researchArea4: null
+  researchArea3: Explainable AI
+  researchArea4: Green Energy
   aIandEconomics: 'Yes'
   aIandEthics: 'Yes'
   aIdrivenHealth: 'Yes'
@@ -106,11 +104,11 @@
   theoreticalAIML: 'Yes'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/2/2024 9:30:57
   emailAddress: bhivraj@iitj.ac.in
-  name: Dr. Bhivraj Suthar
+  name: Bhivraj Suthar
   position: Assistant Professor
   office: 1764
   Wwbsite: https://bhivraj.wixsite.com/about
@@ -380,7 +378,7 @@
   hidden: 0
 - timestamp: 3/16/2024 17:23:24
   emailAddress: gmanjhi@iitj.ac.in
-  name: GANESH MANJHI
+  name: Ganesh Manjhi
   position: Assistant Professor
   office: 1759
   Wwbsite: https://sites.google.com/view/ganesh-manjhi/home
@@ -516,7 +514,7 @@
   hidden: 0
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
-  name: vivek vijay
+  name: Vivek Vijay
   position: Associate Professor
   office: 1454
   Wwbsite: vivekvijay.in
@@ -786,3 +784,86 @@
   undefined: null
   type: Affiliated Faculty
   hidden: 0
+- timestamp: 7/25/2024 13:15:49
+  emailAddress: taranjit@iitj.ac.in
+  name: 'Taranjit Kaur  '
+  position: Scientific Officer
+  office: 1762
+  Wwbsite: https://scholar.google.co.in/citations?user=ItXL8b0AAAAJ&hl=en
+  department: Artificial Intelligence and Data Science
+  centerIDRP: Center for Brain Science and Applications
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=1N-mxE_qlraPnjcXI26oqV0t_QbxC95Pw&sz=w300
+  researchArea1: 'AI in Healthcare '
+  researchArea2: Computational Neuroscience
+  researchArea3: 'Neural Signal Processing '
+  researchArea4: 'Multi Spectral MR Image Processing '
+  aIandEconomics: 'No'
+  aIandEthics: 'No'
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'Yes'
+  behaviorCognitionBrain: 'Yes'
+  roboticsandIntelligentMachines: Somewhat
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: 'No'
+  theoreticalAIML: 'No'
+  suggestions: null
+  undefined: null
+  type: Core
+  hidden: .nan
+- timestamp: 7/25/2024 15:34:43
+  emailAddress: asif@iitj.ac.in
+  name: Asif Ekbal
+  position: Professor
+  office: 1765
+  Wwbsite: https://ekbalasif.github.io
+  department: Artificial Intelligence and Data Science
+  centerIDRP: null
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=18-64Bm2-JdVjbIaA8mF5Mn8OmewQ172Z&sz=w300
+  researchArea1: 'Artificial Intelligence '
+  researchArea2: 'Natural Language Processing '
+  researchArea3: 'Applied Machine Learning '
+  researchArea4: Multimodal AI
+  aIandEconomics: 'No'
+  aIandEthics: Somewhat
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'Yes'
+  behaviorCognitionBrain: 'No'
+  roboticsandIntelligentMachines: 'No'
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: Somewhat
+  theoreticalAIML: Somewhat
+  suggestions: >-
+    Please include Natural Language Processing and AI for Social Good as the
+    themes 
+  undefined: null
+  type: Core
+  hidden: .nan
+- timestamp: 7/25/2024 17:05:54
+  emailAddress: droy@iitj.ac.in
+  name: Dipanjan Roy
+  position: Associate Professor
+  office: 1757
+  Wwbsite: https://dipanjanr.com/publications/
+  department: Artificial Intelligence and Data Science
+  centerIDRP: Center for Brain Science and Applications
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=1-iNAXbNEbdx97yNFwflKOXS2n7Q2tMo2&sz=w300
+  researchArea1: Aging, Neurodevelopment using fMRI, EEG, MEG
+  researchArea2: 'Attention, Emotion, Perception, Working memory '
+  researchArea3: 'Brain Connectivity,  Brain-Inspired AI '
+  researchArea4: Brain Stimulation, Computational  Neuroscience
+  aIandEconomics: 'No'
+  aIandEthics: 'No'
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'No'
+  behaviorCognitionBrain: 'Yes'
+  roboticsandIntelligentMachines: 'No'
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: 'No'
+  theoreticalAIML: 'No'
+  suggestions: null
+  undefined: null
+  type: Core
+  hidden: .nan
