@@ -41,10 +41,10 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 <div style="padding: 20px;">
 <h2 id="subheading">Broad Research Areas in SAIDE</h2>
 <ul>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>Foundational AI & DS</li></a>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>AI & DS Applications</li>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Brain Science and Applications</li>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Mathematical and Computational Economics</li>
+<li>Foundational AI & DS</li>
+<li>AI & DS Applications</li>
+<li>Brain Science and Applications</li>
+<li>Mathematical and Computational Economics</li>
 </ul>
 
 <h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
@@ -65,7 +65,7 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 {% endif %}
 </h2>
 <p><strong>Offered by:</strong> {{member.offered}}</p>
-<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
+<p><strong>Convenor:</strong> {{member.coordinator}}</p>
 </div>
 </div>
 {% endif %}
@@ -79,13 +79,13 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 
 <h2 id="subheading">Fellowships</h2>
 <ul>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>MoE (Institute Fellowship)</li>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>PMRF (Prime Minsiter Research Fellowship)</li></a>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Visvesvaraya PhD Scheme</li>
-<a href="" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Project Fellowships</li>
+<a href="" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>MoE (Institute Fellowship)</li>
+<a href="https://www.pmrf.in/" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>PMRF (Prime Minsiter Research Fellowship)</li></a>
+<a href="https://phd.dic.gov.in/" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>Visvesvaraya PhD Scheme</li></a>
+<a href="" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Project Fellowships</li>
 </ul>
 
 <h2 id="subheading">Supervisor Selection</h2>
-<p style="text-align: justify;">The students can choose to work with any core or affiliated faculty from the School of AIDE</p>
+<p style="text-align: justify;">The students can choose to work with any core faculty or affiliated faculty (as a co-supervisor) from the School of AIDE.</p>
 </div>
 </div>
