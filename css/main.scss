@@ -4664,7 +4664,7 @@ ul #subbullet{
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    padding-top: 39.6%; /* For a 16:9 aspect ratio */
+    padding-top: 39.68%; /* For a 16:9 aspect ratio */
     height: auto;
     background-image: url("#{$baseurl}/bg.png"); /* Initial background image */
     background-size: contain;
@@ -4672,7 +4672,7 @@ ul #subbullet{
     background-repeat: no-repeat;
 	
     transition: background-image 1s ease-in-out;
-    border: 5px solid #ffc0c0; /* Optional border */
+    border: 5px solid #800f13a3; /* Optional border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 

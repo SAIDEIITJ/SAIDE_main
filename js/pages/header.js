@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById('menu-toggle');
   const menuClose = document.getElementById('menu-close');
   const navbar = document.getElementById('nav-content');
-  const mediaQuery = window.matchMedia('(max-width: 768px)'); // Adjust the max-width to your breakpoint
+  const mediaQuery = window.matchMedia('(max-width: 992px)'); // Adjust the max-width to your breakpoint
 
   function openMenu() {
       if (mediaQuery.matches) {
