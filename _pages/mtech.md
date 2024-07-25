@@ -31,7 +31,6 @@ background-image: url("{{ site.baseurl }}/images/MTech.png");
     {% endif %}
   {% endfor %}
 </ul> 
-<br>
 </div>
 </div>
 </div>

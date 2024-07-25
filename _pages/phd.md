@@ -32,8 +32,6 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
     {% endif %}
   {% endfor %}
 </ul>
-<br>
-<p style="text-align: left; color: #23674ce6; font-size:0.9em ;"><b>PhD Coordinator -</b> Dr. Ranju Mohan</p>
 </div>
 </div>
 </div>

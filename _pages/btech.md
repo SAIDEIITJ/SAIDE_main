@@ -26,7 +26,6 @@ permalink: /btech/
     {% endif %}
   {% endfor %}
 </ul>
-<br>
 </div>
 </div>
 </div>
