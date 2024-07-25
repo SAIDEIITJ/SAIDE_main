@@ -747,15 +747,15 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	left:-30px;
  }
  .Title{
-	left:-45px;
+	left:-55px;
 
  }
  .labs{
-	left:-5px;
+	left:-57px;
 	min-width: 300px;
  }
  .Type{
-	left:-40px;
+	left:-55px;
 
  }
 
@@ -867,6 +867,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 		width: 185% !important;
 	}
 	.dropdown2{
+		padding:3px 4px;
 	}
 	.dropbtn{
 		padding: 1px;
@@ -875,14 +876,20 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 		min-width: 248px;
 	}
 	.centers{
-		left:-54px;
+		left:-1px;
 	}
 	.labs{
-		left:-120px;
+		left:-1px;
 	}
 	.Title{
-		left:0;
+		left:-134px;
+		min-width: 200px;
 	}
+	.Type{
+		left:-133px;
+		min-width: 200px;
+	}
+
 
  }
 
@@ -1267,6 +1274,9 @@ flex-direction: row;
     .member-card {
         flex: 1 0 100%; /* Full width on small screens */
     }
+	.member-cards {
+        flex: 1 0 100%; /* Full width on small screens */
+    }
 
 	.member-details{
 		padding-left: 16px;
@@ -1304,6 +1314,9 @@ flex-direction: row;
 		left:11px;
 	}
 	.member-card{
+		width: auto;
+	}
+	.member-cards{
 		width: auto;
 	}
 	#teamMembers{
