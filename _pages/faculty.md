@@ -18,77 +18,7 @@ permalink: /faculty/
 <button class="research-btn">Search by Research Area</button>
 </div>
 </div>
-<div class="col-md-12">
-<div class="dropdown2">
-<button class="dropbtn">Research Area <i class="fa-solid fa-caret-down"></i></button>
-<div class="dropdown-content2" data-category="researchArea">
-<div class="coe-checkbox" >
-<input type="checkbox" id="Machine Learning" value="Machine Learning">
-<label for="Machine Learning">Machine Learning</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Robotics" value="Robotics">
-<label for="Robotics">Robotics</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Artificial Intelligence" value="Artificial Intelligence">
-<label for="Artificial Intelligence">Artificial Intelligence</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Computer Vision" value="Computer Vision">
-<label for="Computer Vision">Computer Vision</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Medical Image Analysis" value="Medical Image Analysis">
-<label for="Medical Image Analysis">Medical Image Analysis</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Econometrics" value="Econometrics">
-<label for="Econometrics">Econometrics</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Causal Inference" value="Causal Inference">
-<label for="Causal Inference">Causal Inference</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Health Economics" value="Health Economics">
-<label for="Health Economics">Health Economics</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Econometrics" value="Econometrics">
-<label for="Econometrics">Econometrics</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Large scale Brain Networks" value="Large scale Brain Networks">
-<label for="Large scale Brain Networks">Large scale Brain Networks</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Multisensory speech perception " value="Multisensory speech perception ">
-<label for="Multisensory speech perception ">Multisensory speech perception </label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Network Neuroscience" value="Network Neuroscience">
-<label for="Network Neuroscience">Network Neuroscience</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Cognitive Brain dynamics" value="Cognitive Brain dynamics">
-<label for="Cognitive Brain dynamics">Cognitive Brain dynamics</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Visual computations" value="Visual computations">
-<label for="Visual computations">Visual computations</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id=" Eye tracking & Human behavior, Predictive coding" value=" Eye tracking & Human behavior, Predictive coding">
-<label for=" Eye tracking & Human behavior, Predictive coding"> Eye tracking & Human behavior, Predictive coding</label>
-</div>
-<div class="coe-checkbox">
-<input type="checkbox" id="Macroeconomics" value="Macroeconomics">
-<label for="Macroeconomics">Macroeconomics</label>
-</div>
-<!-- Add more checkboxes as needed -->
-</div>
-</div>
+<div class="col-md-12" style="display: flex;justify-content: center;">
 <div class="dropdown2">
 <button class="dropbtn">Centers <i class="fa-solid fa-caret-down"></i></button>
 <div class="dropdown-content2 centers" data-category="coe">

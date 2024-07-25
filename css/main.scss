@@ -1224,7 +1224,14 @@ flex-direction: row;
 .member-card:hover {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase the size of the card */
 }
+.member-cards:hover .additional-info {
+    max-height: 300px; /* Adjust based on content */
+    opacity: 1;
+}
 
+.member-cards:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase the size of the card */
+}
 
 
 // .back p{
