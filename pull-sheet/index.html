@@ -149,7 +149,7 @@ title: Update faculity
         themes:{
             "Name":"name",
             "Info":"info",
-            "Image":"image",
+            "Image":"themeImage",
             "Popup Background":"popupBackground",
             "Labs":"labs",
             "Hidden":"hidden",
@@ -201,10 +201,23 @@ title: Update faculity
     function getGDriveOURL(url) {
     // Regular expression to match Google Drive open links
         const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+            https://drive.google.com/open?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&authuser=0
         if (regexp.test(url)) {
             const res = regexp.exec(url);
             var id = res?.groups?.id;
             return `https://drive.google.com/thumbnail?id=${id.trim()}&sz=w300`;
+        }
+        return url;
+}
+
+function getGDriveURLnoSize(url) {
+    // Regular expression to match Google Drive open links
+        const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+            https://drive.google.com/open?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&authuser=0
+        if (regexp.test(url)) {
+            const res = regexp.exec(url);
+            var id = res?.groups?.id;
+            return `https://drive.google.com/thumbnail?id=${id.trim()}`;
         }
         return url;
 }
@@ -309,8 +322,11 @@ function init() {
                     header: true,
                     transformHeader: header => header_maps[name][header],
                     transform: (value, header) => {
-                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage" || header === "popupBackground") {
+                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage") {
                             return getGDriveOURL(value);
+                        }
+                        if (header === "popupBackground" || header === "themeImage") {
+                            return getGDriveURLnoSize(value);
                         }
                         if (["display", "staff", "view", "faculty", "news", "event", "visibility", "hidden", "alumnus"].includes(header)) {
                             return parseInt(value);

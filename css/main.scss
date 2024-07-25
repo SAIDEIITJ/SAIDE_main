@@ -304,6 +304,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	text-align: left;
 	width: 90%;
   }
+  #bullets li{
+	margin-top: -8px;
+}
 
   #hidden-content{
 	display: flex;
@@ -317,6 +320,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	  border-radius: 10px;
 	  border:1px solid rgb(210, 210, 210);
 	font-weight: 600;
+	p{
+		margin-top: -8px;
+	}
   }
   #hidden-content-2{
 	font-weight: 600;

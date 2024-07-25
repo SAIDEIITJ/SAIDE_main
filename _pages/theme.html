@@ -13,486 +13,84 @@ permalink: /themes/
 </style>
 
 <br>
-
 <section class="theme-section">
   <div class="theme-container">
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/economics.png')">
-      <img src="{{ site.baseurl }}/images/1.gif" alt="Education">
-      <div class="theme-content">
-          <h3 id="h3title">AI and Economics</h3>
-          <div class="hidden">
-              <div class="row">
-                  <div class="col-sm-12 col-md-7">
-                      <div class="row" id="hidden-content">
-                          <h3 id="hidden-title">More Information</h3>
-                          <p >Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis)
-                              Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                              Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)</p>
-                      </div>
-                      <div class="row" id="hidden-content-3">
-                          <h3 id="hidden-title">Associated Laboratories</h3>
+    {% assign themes_data = site.data.themes %}
+    {% for member in themes_data %}
+    {% if member.hidden == 0 %}
+        <div class="theme" data-bg-image="url('{{member.popupBackground}}')">
+        <img src="{{member.themeImage}}" alt="{{member.name}}">
+        <div class="theme-content">
+            <h3 id="h3title">{{member.name}}</h3>
+            <div class="hidden">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <div class="row" id="hidden-content">
+                            <h3 id="hidden-title">About</h3>
+                            <p>{{member.info}}</p>
+                        </div>
+                        <div class="row" id="hidden-content-3">
+                          <h3 id="hidden-title">Laboratories</h3>
+                          {% if member.labs != null %}
                           <ul id="bullets">
-                              <li>Signal Processing Lab</li>
-                              <li>Image Processing & Computer Vision Lab</li>
-                              <li>Multimodal Interaction Lab</li>
+                            {% assign lab_data = member.labs | split: ',' %}
+                            {% for lab in lab_data %}
+                              <li>{{ lab | strip }}</li>
+                            {% endfor %}
                           </ul>
-                      </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4" id="hidden-content-2">
-                      <h3 id="hidden-title">Associated faculty members</h3>
+                          {% endif %}
+                        </div>
+                    </div>
+  
+                    <div class="col-sm-12 col-md-4" id="hidden-content-2">
+                      <h3 id="hidden-title">Faculty members</h3>
                       <ul id="bullets">
-                          <li>Amit Bhardwaj</li>
-                          <li>Anil Kumar Tiwari</li>
-                          <li>Himanshu Kumar</li>
-                          <li>Manish Narwaria</li>
-                          <li>Rajendra Nagar</li>
-                          <li>Rajlaxmi Chouhan</li>
-                          <li>Sandeep Kumar Yadav</li>
+                        {% assign theme = member.name %}
+                        {% assign theme_key = nil %}
+                        
+                        {% if theme == "AI and Economics" %}
+                          {% assign theme_key = "aIandEconomics" %}
+                        {% elsif theme == "AI-driven Healthcare" %}
+                          {% assign theme_key = "aIdrivenHealth" %}
+                        {% elsif theme == "AI for Technology: Language and Vision" %}
+                          {% assign theme_key = "aIforTechnology" %}
+                        {% elsif theme == "Behavior, Cognition and Brain" %}
+                          {% assign theme_key = "behaviorCognitionBrain" %}
+                        {% elsif theme == "Theoretical AI" %}
+                          {% assign theme_key = "theoreticalAIML" %}
+                        {% elsif theme == "AI and Ethics" %}
+                          {% assign theme_key = "aIandEthics" %}
+                        {% elsif theme == "Social Engineering" %}
+                          {% assign theme_key = "socialEngineering" %}
+                        {% elsif theme == "Robotics and Intelligent Machines" %}
+                          {% assign theme_key = "roboticsandIntelligentMachines" %}
+                        {% elsif theme == "Smart Cities Infrastructure and Environment" %}
+                          {% assign theme_key = "smartCitiesInfraEnvironment" %}
+                        {% endif %}
+                        
+                        {% if theme_key %}
+                          {% for faculty in site.data.faculty_profiles %}
+                            {% if faculty[theme_key] == 'Yes' or faculty[theme_key] == 'Somewhat' %}
+                              <li>{{ faculty.name }}</li>
+                            {% endif %}
+                          {% endfor %}
+                        {% endif %}
                       </ul>
-                  </div>
-              </div>
-              <br>
-              <div class="row" style="justify-content: center; display: flex;">
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="justify-content: center; display: flex;">
                   <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
               </div>
+            </div>
           </div>
-      </div>
-  </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
   
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/health.png')">
-      <img src="{{ site.baseurl }}/images/2.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          AI-driven Healthcare</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-                
-                
-                <p>Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
 
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/vision.png')">
-      <img src="{{ site.baseurl }}/images/3.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          AI for Technology: Language and Vision</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-               
-                
-                <p> Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/brainTheme.png')">
-      <img src="{{ site.baseurl }}/images/4.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          Behaviour, Cognition and Brain</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-                <p>Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning), 
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/theoritical.png')">
-      <img src="{{ site.baseurl }}/images/5.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          Theoretical AI</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-               
-                
-                <p>Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/ethics.png')">
-      <img src="{{ site.baseurl }}/images/6.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          AI and Ethics</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-             
-                
-                <p>Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/socialEng.png')">
-      <img src="{{ site.baseurl }}/images/7.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          Social Engineering</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-               
-                
-                <p>Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/robot.png')">
-      <img src="{{ site.baseurl }}/images/8.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          Robotics and Intelligent Machines</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-               
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-                
-                <p> Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning),
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <div class="theme" data-bg-image="url('{{ site.baseurl }}/images/smartCity.png')">
-      <img src="{{ site.baseurl }}/images/9.gif" alt="Education">
-      <div class="theme-content">
-        <h3 id="h3title">
-          Smart Cities Infrastructure and Environment</h3>
-        <div class="hidden">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="row" id = "hidden-content">
-                <h3 id ="hidden-title">
-                  More Information
-                </h3>
-              
-                
-                <p> Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) <br>
-                  Visual Computing (Computer Vision, Visual Forensics, Machine Learning) ,
-                  Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication)  </p>
-              </div>
-
-              <div class="row" id = hidden-content-3>
-                  <h3 id ="hidden-title">
-                    Associated Laboratories
-                  </h3>
-                  <ul id="bullets">
-                    <li>Signal Processing Lab</li>
-                    <li>Image Processing & Computer Vision Lab</li>
-                    <li>Multimodal Interaction Lab</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4" id = "hidden-content-2" >
-              <h3 id ="hidden-title">
-                Associated faculity members
-              </h3>
-              <ul id="bullets">
-                  <li>Amit Bhardwaj  </li>
-                  <li>Anil Kumar Tiwari  </li>
-                  <li>Himanshu Kumar   </li>           
-                  <li>Manish Narwaria   </li>          
-                  <li>Rajendra Nagar   </li>           
-                  <li>Rajlaxmi Chouhan   </li>         
-                  <li>Sandeep Kumar Yadav</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row" style="justify-content: center; display: flex;">
-            <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div> 
-      </div>
-    </div>
-  </div>
-  
- 
-  
-</section>
 
 <div id="popup" class="popup">
   <div class="popup-content">
