@@ -1,0 +1,97 @@
+- timestamp: 7/25/2024 15:38:48
+  lab: Cognitive Engineering Lab
+  name: EEG Recording Device (Brain Vision actiCHamp Plus)
+  description: >-
+    The device provides a seamless 128 channel EEG recording with a maximum
+    sampling frequency of 25 KHz. The device comes with a powerful lithium-ion
+    battery pack. It works with a software interface called as Brain Vision
+    Recorder and Analyzer to support data recording and analysis.
+    (https://www.brainproducts.com/solutions/actichamp/)
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=15ctehghRfM-Tpa69xXbt5YS42JwXVNDD&sz=w300
+  hidden: 0
+- timestamp: 7/25/2024 15:49:08
+  lab: Cognitive Engineering Lab
+  name: Wireless EEG Headset (EMOTIV EPOC X 14 Channel Mobile Brainwear)
+  description: >-
+    EPOC X is a 14-channel wireless EEG headset capable of recording EEG data at
+    a sampling frequency of 128-256 Hz. It also analyses the recorded data via
+    the chosen pipeline using EMOTIV&#8217;s powerful cloud computing platform.
+    (https://www.emotiv.com/emotivpro).
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=1zdUrdV_9YqwHReDE1XP354Y4hshCZK4u&sz=w300
+  hidden: 0
+- timestamp: 7/25/2024 15:49:50
+  lab: Cognitive Engineering Lab
+  name: Eye Tracker (Tobii Pro Fusion Screen-based)
+  description: >-
+    The device detects and tracks the eye movements using the pupil center
+    corneal reflection (PCCR) technique. It supports multiple sampling rates up
+    to 250 Hz enabling the collection of eye movement data such as fixations,
+    saccades, and smooth pursuit. The device works with a software interface
+    called a Tobii Pro Lab to support experiment design and data analysis.
+    (https://www.tobii.com/products/eye-trackers/screen-based/tobii-pro-fusion)
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=1RvhLAk7upAVqWGB5DyeHaf8Lb9fLSr-6&sz=w300
+  hidden: 0
+- timestamp: 7/25/2024 15:50:44
+  lab: Cognitive Engineering Lab
+  name: Transcranial Electrical Stimulation (tES) Device (Nurostym tES)
+  description: >-
+    The device is a complete package for transcranial electrical stimulation
+    (tES), providing tDCS, tACS, and tRNS etc.  The system seamlessly integrates
+    with the computer application that can generate and save customized
+    stimulation paradigms; remotely handle the device using the trigger
+    connections; as well as providing access to the recorded data.
+    (https://brainbox-neuro.com/products/nurostym-tes)
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=1PAaGEZGSrS9BpXMlhn8PU_VC5q1Vj8VF&sz=w300
+  hidden: 0
+- timestamp: 7/25/2024 15:51:33
+  lab: Cognitive Engineering Lab
+  name: Virtual Reality System (Meta Quest Pro VR Headset)
+  description: >-
+    The Meta Quest Pro is a mixed reality (MR) headset developed by Reality
+    Labs, a division of Meta Platforms. The headset contains internal sensors
+    that are used for eye and face tracking, primarily for use with avatars. The
+    Quest Pro has a thinner lens enclosure and a more visor-like form factor
+    that does not obscure the entirety of the user&#8217;s peripheral vision in
+    contrast to the other VR headsets. The lenses can be adjusted for
+    interpupillary distance and can be moved forward and backward. The Quest Pro
+    uses Touch Pro controllers, having a more compact design with upgraded
+    haptics with onboard motion tracking using embedded cameras and processors.
+    The controllers are also rechargeable via the headset&#8217;s charging dock.
+    (https://www.meta.com/quest/quest-pro/;
+    https://en.wikipedia.org/wiki/Meta_Quest_Pro)
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=1Rrk1ramU6jVSpSw6p4G7a6tokzWtsayw&sz=w300
+  hidden: 0
+- timestamp: 7/25/2024 15:52:26
+  lab: Cognitive Engineering Lab
+  name: Transcranial Magnetic Stimulation (TMS) System (By Magstim)
+  description: >-
+    The Magstim Bistim2 is intended to be used for the stimulation of peripheral
+    nerves and the human cortex for diagnostic purposes. The Magstim Bistim2
+    consists of two units along with a connecting module that enables the output
+    from two Magstim units to output into a single stimulating coil as a single
+    high-energy pulse or a pair of individual spaced pulses. The TMS device is
+    capable of stimulating by inducing small currents in the nerve using a brief
+    pulse of electromagnetic energy. The device has proven to be useful for
+    Intracortical facilitation and inhibition research
+    (https://www.magstim.com/row-en/)
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=1UPHfHrqPEJ-pxLcgyo1-WUM1cvWmJno3&sz=w300
+  hidden: 0
+- timestamp: 7/25/2024 15:53:05
+  lab: Cognitive Engineering Lab
+  name: BrainVision CapTrak System (Brain Products)
+  description: >-
+    It is a quick and precise electrode localization system for active
+    electrodes. It takes 5 minutes to scan 128 electrode positions. The system
+    has a light, hand-held scanner with two integrated cameras and intuitive
+    software. The scanned electrode location file in the format (.bvct) can
+    exported to software like BrainStorm and/or EEGlab for source localization
+    studies. (https://www.brainproducts.com/solutions/captrak/)
+  equipmentImage: >-
+    https://drive.google.com/thumbnail?id=1HowIkjS5Rtjr_YmFxvAn9gKAhw2eOls5&sz=w300
+  hidden: 0
