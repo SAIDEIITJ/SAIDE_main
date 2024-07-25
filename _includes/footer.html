@@ -4,7 +4,7 @@
       <div class="row">
           <!-- Social Icons Section -->
           <div class="col-xs-12 col-md-4">
-              <h3><i class="fa-solid fa-user-plus fa-2x" style="color: rgb(175, 32, 32);"></i> Follow Us</h3>
+              <h3><i class="fa-solid fa-user-plus fa-2x" style="color: #800F13;"></i> Follow Us</h3>
               <ul class="list-unstyled list-inline social-icons" style="padding-bottom: 20px;">
                   <li class="list-inline-item">
                       <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Faide.iitj.ac.in%2Findex.php%2Fcontact" class="fa-stack fa-xl" style="border: 0;" target="_blank">
@@ -26,15 +26,15 @@
 
           <!-- Address Section -->
           <div class="col-xs-12 col-md-4" style="padding-bottom: 20px;">
-              <h3><i class="fa-solid fa-location-dot fa-2x" style="color: rgb(175, 32, 32);"></i> Address</h3>
-              <p>School Of Artificial Intelligence and Data Science, 
-              Indian Institute of Technology Jodhpur
+              <h3><i class="fa-solid fa-location-dot fa-2x" style="color: #800F13;"></i> Address</h3>
+              <p>School Of Artificial Intelligence and Data Science, <br>
+              Indian Institute of Technology Jodhpur<br>
               NH 62 Nagaur Road, Karwar 342030, Rajasthan
               </p>
           </div>
           <!-- Contact Us Section -->
           <div class="col-xs-12 col-md-4">
-              <h3><i class="fa-solid fa-address-book fa-2x" style="color: rgb(175, 32, 32);"></i> Contact Us</h3>
+              <h3><i class="fa-solid fa-address-book fa-2x" style="color: #800F13;"></i> Contact Us</h3>
               <p>Phone: (0291) 280 1752<br>
               Email: office_saide@iitj.ac.in</p>
           </div>
@@ -45,19 +45,27 @@
   <!-- Copyright Information Section -->
   <br>
       <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" style="padding-bottom: 20px;">
   
-              <ul class="copyright">
-                  <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
-                      {% if site.first_published %}
-                      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
-                      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
-                      {% endif %}
-                      {{ thisyear }}
-                      {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
-                      <li>Made by: <a href="#" target="_blank"> Satvik Wazir</a>, <a href="#" target="_blank">Iva Agarwal</a>,  <a href="#" target="_blank">Karan Raj</a></li>
-                  <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+              <ul class="copyright" style="font-weight: 600;">
+                 
+                      <li>Developed by: <a href="https://www.linkedin.com/in/satvik-wazir-pandita-008778253" target="_blank"> Satvik Wazir</a>, <a href="https://www.linkedin.com/in/iva-agarwal/" target="_blank">Iva Agarwal</a>,  <a href="https://www.linkedin.com/in/karan-raj-b5823822a/" target="_blank">Karan Raj</a></li>
+                      <li>Mentored by: <a href="http://home.iitj.ac.in/~bikash/" target="_blank"> Bikash Santra</a>, <a href="https://csndl-iitd.github.io/cndl-website/" target="_blank">Saurabh Gandhi</a></li>
+                 
               </ul>
           </div>
+      </div>
+
+      <div class="footer-highlight">
+        <ul  class="copyright" >
+        <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+            {% if site.first_published %}
+            {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+            {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+            {% endif %}
+            {{ thisyear }}
+            {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+            <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+        </ul>
       </div>
 </footer>
