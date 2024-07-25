@@ -23,7 +23,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 2/26/2024 12:58:20
   emailAddress: srivatsa@iitj.ac.in
@@ -50,7 +50,7 @@
   theoreticalAIML: Somewhat
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/1/2024 5:46:02
   emailAddress: bikash@iitj.ac.in
@@ -77,7 +77,7 @@
   theoreticalAIML: 'No'
   suggestions: AI driven Precision Agriculture
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 7/25/2024 16:24:21
   emailAddress: ma@iitj.ac.in
@@ -131,7 +131,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: https://drive.google.com/open?id=1KdQ2Z4rjI_3hotnX0wrGAyr1s0V-rPm7
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/7/2024 5:51:01
   emailAddress: abhinaba@iitj.ac.in
@@ -158,7 +158,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/11/2024 4:56:26
   emailAddress: vigneshmdharan@iitj.ac.in
@@ -185,7 +185,7 @@
   theoreticalAIML: 'No'
   suggestions: Maybe Brain-inspired computational modelling
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/11/2024 9:44:19
   emailAddress: dweepobotee@iitj.ac.in
@@ -212,7 +212,7 @@
   theoreticalAIML: 'No'
   suggestions: AI/ML for Social Good
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/11/2024 10:50:25
   emailAddress: romibanerjee@iitj.ac.in
@@ -239,7 +239,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/11/2024 14:21:35
   emailAddress: sdang@iitj.ac.in
@@ -266,7 +266,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/13/2024 4:29:20
   emailAddress: pyadav@iitj.ac.in
@@ -293,7 +293,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 8:22:09
   emailAddress: saran.aadhar@iitj.ac.in
@@ -320,7 +320,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 8:25:01
   emailAddress: chsarma@iitj.ac.in
@@ -347,7 +347,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 9:14:18
   emailAddress: mvatsa@iitj.ac.in
@@ -374,7 +374,7 @@
   theoreticalAIML: 'Yes'
   suggestions: Generative AI; Responsible AI
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 17:23:24
   emailAddress: gmanjhi@iitj.ac.in
@@ -401,7 +401,7 @@
   theoreticalAIML: Somewhat
   suggestions: AI, LLM, and Economics
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/17/2024 5:00:45
   emailAddress: dhakas@iitj.ac.in
@@ -428,7 +428,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/20/2024 7:23:35
   emailAddress: krunalg@iitj.ac.in
@@ -456,7 +456,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/26/2024 5:29:07
   emailAddress: dipsankarb@iitj.ac.in
@@ -483,7 +483,7 @@
   theoreticalAIML: 'No'
   suggestions: Data Science and Data Engineering
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/19/2024 10:43:28
   emailAddress: ranju@iitj.ac.in
@@ -510,7 +510,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
@@ -537,7 +537,7 @@
   theoreticalAIML: 'Yes'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 8:28:52
   emailAddress: nishantkumar@iitj.ac.in
@@ -564,7 +564,7 @@
   theoreticalAIML: Somewhat
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 8:40:38
   emailAddress: vnara@iitj.ac.in
@@ -591,7 +591,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 13:38:53
   emailAddress: mdabutalha@iitj.ac.in
@@ -618,7 +618,7 @@
   theoreticalAIML: 'Yes'
   suggestions: 'Application of optimization in any field of engineering '
   undefined: null
-  type: Affiliated Faculty
+  type: 'Affiliated '
   hidden: 0
 - timestamp: 4/23/2024 15:15:36
   emailAddress: harshal.akolekar@iitj.ac.in
@@ -645,7 +645,7 @@
   theoreticalAIML: Somewhat
   suggestions: NA
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
@@ -674,7 +674,7 @@
   theoreticalAIML: Somewhat
   suggestions: Brain, behaviour, and Philosophy of Neuroscience
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/26/2024 14:52:14
   emailAddress: sdey@iitj.ac.in
@@ -701,7 +701,7 @@
   theoreticalAIML: Somewhat
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
@@ -728,7 +728,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/29/2024 11:06:52
   emailAddress: dilpreetkaur@iitj.ac.in
@@ -755,7 +755,7 @@
   theoreticalAIML: 'Yes'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/29/2024 12:13:41
   emailAddress: mitali@iitj.ac.in
@@ -782,7 +782,7 @@
   theoreticalAIML: 'No'
   suggestions: AI and Omics
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 7/25/2024 13:15:49
   emailAddress: taranjit@iitj.ac.in
