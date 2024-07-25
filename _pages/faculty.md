@@ -238,7 +238,7 @@ permalink: /faculty/
   {% endif %}
   {% assign research_areas = research_areas | append: researchArea4 %}
 {% endif %}
-<div class="col-lg-6 col-md-6 col-sm-12 member-card" data-position="{{ member.type }}" data-name="{{ member.name }}" data-research-area="{{ research_areas }}" data-coe="{{ member.centerIDRP }}" data-title = "{{member.position}}" data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
+<div class="col-lg-6 col-md-6 col-sm-12 member-cards" data-position="{{ member.type }}" data-name="{{ member.name }}" data-research-area="{{ research_areas }}" data-coe="{{ member.centerIDRP }}" data-title = "{{member.position}}" data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
 <!-- Member Details -->
 <div class="member-info">
 <div class="row HOD_row">

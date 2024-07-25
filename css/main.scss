@@ -1110,6 +1110,19 @@ flex-direction: row;
 	color:#003049;
 	font-size: 0.9em;
 }
+.member-cards {
+    flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
+    border: 1px solid #ccc;
+	margin-left: 84px;
+	margin-bottom: 20px;
+	min-height: auto;
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // background-color: #EDE0D4;
+	background-color: #cae9ff5d;
+    overflow:visible; /* Ensure content doesn't overflow */
+    position: relative;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ensure position context for absolute positioning */
+}
 
 .member-card {
     flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */

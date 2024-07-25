@@ -1,21 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { 
+    core();
+    function core(){
+        document.querySelectorAll('.member-card').forEach(member => {
+            if (member.getAttribute('data-position') !== 'Core Faculty') {
+                member.style.display = 'none';
+            }
+        });
+    }
 
-        // document.querySelectorAll('.member-card').forEach(member => {
-        //     const themesAttr = member.getAttribute('data-themes');
-            
-        //     if (themesAttr) {
-        //         try {
-        //             const themes = JSON.parse(themesAttr);
-        //             console.log(themes);  // Debugging: Check the parsed themes object
-        //         } catch (error) {
-        //             console.error('Error parsing data-themes:', error);
-        //         }
-        //     } else {
-        //         console.warn('data-themes attribute is missing or empty');
-        //     }
-        // });
-    
-        // Rest of your existing code...
     document.querySelectorAll('.dropbtn').forEach(button => {
         button.addEventListener('click', function () {
             this.nextElementSibling.classList.toggle('show');
@@ -72,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             position: [],
             themes: [],
         };
+        
 
         document.querySelectorAll('.coe-checkbox input:checked').forEach(checkbox => {
             const dropdownContent = checkbox.closest('.dropdown-content2');
@@ -122,6 +115,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
             member.style.display = isVisible ? 'block' : 'none';
         });
+        const HOD = document.querySelector('.member-cards');
+        // console.log("Length",filters.title.length);
+        if (filters.position.length === 0 && filters.title.length ===0 && filters.researchArea.length ===0 && filters.themes.length === 0 && filters.coe.length===0) {
+            HOD.style.display = 'block';
+            core();
+        }
+        else{
+            HOD.style.display = 'none';
+        }
     }
 
     function filterUsingBar(filter) {
