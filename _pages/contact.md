@@ -15,20 +15,20 @@ permalink: /contact/
 <div class="address">
 <h2 id="subinf">Address</h2>
 
-<p> School of Artificial Intelligence and Data Science, Indian Institute of Technology Jodhpur NH 62 Nagaur Road<br>
+<p> School of Artificial Intelligence and Data Science,<br> Indian Institute of Technology Jodhpur<br> NH 62 Nagaur Road<br>
 Karwar 342030 Jodhpur District<br>
 Rajasthan, India</p>
 
 </div>
 <div class="phone">
-<h2 id = "subinf">Office Phone</h2>
-<p>(0291) 280 1752</p>
-<a href="directory.html" style="color:#ff6f61; border:0">AIDE Phone Directory</a>
+<h2 id = "subinf">Contact Number</h2>
+<p>Office: (0291) 280 1752</p>
+<a href="{{ site.baseurl }}/directory/" style="color:#ff6f61; border:0">AIDE Phone Directory</a>
 </div>
 <div class="email">
 <h2 id="subinf">Email</h2>
-<p><a href="mailto:office_saide@iitj.ac.in" style=" border:0">office_saide@iitj.ac.in</a>
-</p>
+<p><a href="mailto:office_saide@iitj.ac.in" style=" border:0">Office: office_saide@iitj.ac.in</a></p>
+<a href="{{ site.baseurl }}/directory/" style="color:#ff6f61; border:0">AIDE Email Directory</a>
 </div>
 </div>
 </div>
