@@ -25,330 +25,47 @@ permalink: /labs/
 </div>
 </div>
 <section class="res-section">
-<div class="theme-container">
-<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/theoritical.png')">
-<img src="{{ site.baseurl }}/images/Cognitive.svg" alt="Education">
-<div class="theme-content">
-<h3 id="h3title">
-Cognitive Engineering Laboratory</h3>
-<div class="hidden">
-<div class="row">
-<div class="col-md-7">
-<div class="row" id = "hidden-content">
-  <h3 id="hidden-title">More Information</h3>
-  <div id="testimonails" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+
+
+
+
+  <div class="theme-container">
+    {% assign labs_data = site.data.labs %}
+    {% for member in labs_data %}
+    {% if member.hidden == 0 %}
+        <div class="theme" data-bg-image="url('{{member.popupBackground}}')">
+        <img src="{{member.image}}" alt="{{member.name}}">
+        <div class="theme-content">
+            <h3 id="h3title">{{member.name}}</h3>
+            <div class="hidden">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <div class="row" id="hidden-content">
+                            <h3 id="hidden-title">About</h3>
+                            <!-- <p>{{member.info}}</p> -->
+                        </div>
+                    </div>
   
-      <div class="item active" style="background-color: #ECEBE6;">
-        <h1 class="testimonails-title">Dolor pulvinar etiam</h1>
-        <br>
-        <p class="testimonails-description">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-        <br>
-        <p class="testimonails-by">--This is a little description</p>
-      </div>
-      <div class="item" style="background-color: #ECEBE6;">
-        <h1 class="testimonails-title">Sagittis adipiscing</h1>
-        <br>
-        <p class="testimonails-description">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-        <br>
-        <p class="testimonails-by">--By xyz</p>
-      </div>
-      <div class="item" style="background-color: #ECEBE6;">
-        <img src="{{ site.baseurl }}/images/coes.png" class="d-block w-100" alt="Image 1">
-        <br>
-        <p class="testimonails-description">Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem acempus accumsan.</p>
-        <br>
-        <p class="testimonails-by">--By abc</p>
-      </div>
-      <div class="item" style="background-color: #ECEBE6;">
-        <img src="{{ site.baseurl }}/images/btech1.png" class="d-block w-100" alt="Image 2">
-        <br>
-        <p class="testimonails-description">Lius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis laciquet. ontes viverra nibh in adipiscing.</p>
-        <br>
-        <p class="testimonails-by">--Ante nunc ann.</p>
-      </div>
-      <div class="item" style="background-color: #ECEBE6;">
-        <img src="{{ site.baseurl }}/images/btech2.png" class="d-block w-100" alt="Image 3">
-        <br>
-        <p class="testimonails-description">Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non fauc eu sed ante lacinia sapien lorem acempus accumsan.</p>
-        <br>
-        <p class="testimonails-by">--Aenean tincidunt lectus .</p>
-      </div>
-      <div class="item" style="background-color: #ECEBE6;">
-        <h1 class="testimonails-title">Felis enim feugiat.</h1>
-        <br>
-        <p class="testimonails-description">Ling gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem acempus accumsan.</p>
-        <br>
-        <p class="testimonails-by">--Ut ex ut augue conse.</p>
-      </div>
+                    <div class="col-sm-12 col-md-4" id="hidden-content-2">
+                      <h3 id="hidden-title">Faculty members</h3>
+                      <ul id="bullets">
+                      </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="justify-content: center; display: flex;">
+                  <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
-    <ol class="carousel-indicators">
-      <li data-target="#testimonails" data-slide-to="0" class="active"></li>
-      <li data-target="#testimonails" data-slide-to="1"></li>
-      <li data-target="#testimonails" data-slide-to="2"></li>
-      <li data-target="#testimonails" data-slide-to="3"></li>
-      <li data-target="#testimonails" data-slide-to="4"></li>
-      <li data-target="#testimonails" data-slide-to="5"></li>
-    </ol>
-  </div>
 
 
 
- 
-</div>
-</div>
-<div class="col-md-4" id = "hidden-content-2" >
-<h3 id ="hidden-title">
-Associated faculity members
-</h3>
-<ul id="bullets">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</div>
-</div>
-<br>
-<div class="row" style="justify-content: center; display: flex;">
-<a href="#" id="popup-button">Learn More</a>
-</div>
-</div> 
-</div>
-</div>
 
-<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/vision.png')">
-<img src="{{ site.baseurl }}/images/DeepLearning.svg" alt="Education">
-<div class="theme-content">
-<h3 id="h3title">
-Deep Learning and Computer Vision Lab</h3>
-<div class="hidden">
-<div class="row">
-<div class="col-md-7">
-<div class="row" id = "hidden-content">
-<h3 id ="hidden-title">
-More Information
-</h3>
- 
-
-<p></p>
-</div>
-
-<div class="row" id = hidden-content-3>
-<h3 id ="hidden-title">
-More Info
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-
-<div class="col-md-4" id = "hidden-content-2" >
-<h3 id ="hidden-title">
-Associated faculity members
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-<br>
-<div class="row" style="justify-content: center; display: flex;">
-<a href="#" id="popup-button">Learn More</i></a>
-</div>
-</div> 
-</div>
-</div>
-
-<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/socialEng.png')">
-<img src="{{ site.baseurl }}/images/NLP.svg" alt="Education">
-<div class="theme-content">
-<h3 id="h3title">
-Natural Language Processing Lab</h3>
-<div class="hidden">
-<div class="row">
-<div class="col-md-7">
-<div class="row" id = "hidden-content">
-<h3 id ="hidden-title">
-More Information
-</h3>
-<p> </p>
-</div>
-
-<div class="row" id = hidden-content-3>
-<h3 id ="hidden-title">
-More Info
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-
-<div class="col-md-4" id = "hidden-content-2" >
-<h3 id ="hidden-title">
-Associated faculity members
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-<br>
-<div class="row" style="justify-content: center; display: flex;">
-<a href="#" id="popup-button">Learn More </a>
-</div>
-</div> 
-</div>
-</div>
-
-<div class="theme"data-bg-image="url('{{ site.baseurl }}/images/robot.png')">
-<img src="{{ site.baseurl }}/images/Robotics.svg" alt="Education">
-<div class="theme-content">
-<h3 id="h3title">
-Robotics Lab</h3>
-
-<div class="hidden">
-<div class="row">
-<div class="col-md-7">
-<div class="row" id = "hidden-content">
-<h3 id ="hidden-title">
-More Information
-</h3>
- 
-
-<p></p>
-</div>
-
-<div class="row" id = hidden-content-3>
-<h3 id ="hidden-title">
-More Info
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-
-<div class="col-md-4" id = "hidden-content-2" >
-<h3 id ="hidden-title">
-Associated faculity members
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-<br>
-<div class="row" style="justify-content: center; display: flex;">
-<a href="#" id="popup-button">Learn More</a>
-</div>
-</div> 
-</div>
-</div>
-
-<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/economics.png')">
-<img src="{{ site.baseurl }}/images/Economics.svg" alt="Education">
-<div class="theme-content">
-<h3 id="h3title">
-Computational Economics Lab</h3>
-<div class="hidden">
-<div class="row">
-<div class="col-md-7">
-<div class="row" id = "hidden-content">
-<h3 id ="hidden-title">
-More Information
-</h3>
- 
-
-<p> </p>
-</div>
-
-<div class="row" id = hidden-content-3>
-<h3 id ="hidden-title">
-More Info
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-
-<div class="col-md-4" id = "hidden-content-2" >
-<h3 id ="hidden-title">
-Associated faculity members
-</h3>
-<ul id="bullets">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</div>
-</div>
-<br>
-<div class="row" style="justify-content: center; display: flex;">
-<a href="#" id="popup-button">Learn More</a>
-</div>
-</div> 
-</div>
-</div>
-
-<div class="theme" data-bg-image="url('{{ site.baseurl }}/images/brainTheme.png')">
-<img src="{{ site.baseurl }}/images/Intelligence.svg" alt="Education">
-<div class="theme-content">
-<h3 id="h3title">
-Computational Intelligence Lab</h3>
-
-<div class="hidden">
-<div class="row">
-<div class="col-md-7">
-<div class="row" id = "hidden-content">
-<h3 id ="hidden-title">
-More Information
-</h3>
- 
-
-<p></p>
-</div>
-
-<div class="row" id = hidden-content-3>
-<h3 id ="hidden-title">
-More Info
-</h3>
-<ul id="bullets">
-<li></li>
-</ul>
-</div>
-</div>
-
-<div class="col-md-4" id = "hidden-content-2" >
-<h3 id ="hidden-title">
-Associated faculity members
-</h3>
-<ul id="bullets">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</div>
-</div>
-<br>
-<div class="row" style="justify-content: center; display: flex;">
-<a href="#" id="popup-button">Learn More</a>
-</div>
-</div> 
-</div>
-</div>
-</div>
 </section>
 <br>
 
@@ -367,7 +84,7 @@ Associated faculity members
 
 
 
-<style>
+  <style>
     /* page-banner image */
     .background-about{
     background-image: url("{{ site.baseurl }}/images/Labs.png");
