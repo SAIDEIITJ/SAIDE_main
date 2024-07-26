@@ -139,7 +139,7 @@ permalink: /faculty/
 <div class="HOD-details">
 {% assign faculty_members = site.data.faculty_profiles %}
 {% for member in faculty_members %}
-{% if member.hidden != 1  and member.name == 'Neeraj Jain' %}
+{% if member.hidden != 1  and member.position == 'Head of School' %}
 {% assign researchArea1 = member.researchArea1 %}
 {% assign researchArea2 = member.researchArea2 %}
 {% assign researchArea3 = member.researchArea3 %}

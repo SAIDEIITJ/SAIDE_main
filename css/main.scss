@@ -347,6 +347,13 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	 border:1px solid rgb(210, 210, 210);
 	 font-weight: 600;
  }
+
+ .carousel-inner img {
+	width: 100%; /* Adjust the width as needed */
+	height: auto; /* Maintain aspect ratio */
+	max-height: 200px; /* Set max-height to control the image size */
+	object-fit: cover; /* Ensure images are covered */
+}
   
 
   #hidden-title{
@@ -1506,7 +1513,7 @@ table {
 .slider-container {
 
 	display: flex;
-	flex-direction:column;
+	flex-direction:row;
 	position:relative;
 	align-items: center;
 	width: 800px;

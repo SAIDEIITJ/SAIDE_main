@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     const backgroundImages = [
-        'bg.png',
+        'banner0.png',
         'banner1.png',
         'banner2.png',
         'banner3.png',
