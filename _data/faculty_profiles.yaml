@@ -23,7 +23,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 2/26/2024 12:58:20
   emailAddress: srivatsa@iitj.ac.in
@@ -50,7 +50,7 @@
   theoreticalAIML: Somewhat
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/1/2024 5:46:02
   emailAddress: bikash@iitj.ac.in
@@ -77,24 +77,22 @@
   theoreticalAIML: 'No'
   suggestions: AI driven Precision Agriculture
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
-- timestamp: 3/1/2024 6:53:47
+- timestamp: 7/25/2024 16:24:21
   emailAddress: ma@iitj.ac.in
   name: Manish Aggarwal
   position: Associate Professor
   office: 1811
-  Wwbsite: >-
-    https://research.iitj.ac.in/researcher/manish-aggarwal  /  
-    https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
+  Wwbsite: https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
   department: Artificial Intelligence and Data Science
-  centerIDRP: Digital Humanities
+  centerIDRP: Human-Centered AI
   profilePic: >-
     https://drive.google.com/thumbnail?id=1QSjDWdgT1bAUFMSS5Cj6DYvKiS_4p51o&sz=w300
   researchArea1: Uncertainty and Preferences in Machine Learning
   researchArea2: Human Decision Making
-  researchArea3: null
-  researchArea4: null
+  researchArea3: Explainable AI
+  researchArea4: Green Energy
   aIandEconomics: 'Yes'
   aIandEthics: 'Yes'
   aIdrivenHealth: 'Yes'
@@ -106,11 +104,11 @@
   theoreticalAIML: 'Yes'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/2/2024 9:30:57
   emailAddress: bhivraj@iitj.ac.in
-  name: Dr. Bhivraj Suthar
+  name: Bhivraj Suthar
   position: Assistant Professor
   office: 1764
   Wwbsite: https://bhivraj.wixsite.com/about
@@ -133,7 +131,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: https://drive.google.com/open?id=1KdQ2Z4rjI_3hotnX0wrGAyr1s0V-rPm7
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/7/2024 5:51:01
   emailAddress: abhinaba@iitj.ac.in
@@ -160,7 +158,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/11/2024 4:56:26
   emailAddress: vigneshmdharan@iitj.ac.in
@@ -187,7 +185,7 @@
   theoreticalAIML: 'No'
   suggestions: Maybe Brain-inspired computational modelling
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/11/2024 9:44:19
   emailAddress: dweepobotee@iitj.ac.in
@@ -214,7 +212,7 @@
   theoreticalAIML: 'No'
   suggestions: AI/ML for Social Good
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/11/2024 10:50:25
   emailAddress: romibanerjee@iitj.ac.in
@@ -241,7 +239,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/11/2024 14:21:35
   emailAddress: sdang@iitj.ac.in
@@ -268,7 +266,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/13/2024 4:29:20
   emailAddress: pyadav@iitj.ac.in
@@ -295,7 +293,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 8:22:09
   emailAddress: saran.aadhar@iitj.ac.in
@@ -322,7 +320,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 8:25:01
   emailAddress: chsarma@iitj.ac.in
@@ -349,7 +347,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 9:14:18
   emailAddress: mvatsa@iitj.ac.in
@@ -376,11 +374,11 @@
   theoreticalAIML: 'Yes'
   suggestions: Generative AI; Responsible AI
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/16/2024 17:23:24
   emailAddress: gmanjhi@iitj.ac.in
-  name: GANESH MANJHI
+  name: Ganesh Manjhi
   position: Assistant Professor
   office: 1759
   Wwbsite: https://sites.google.com/view/ganesh-manjhi/home
@@ -403,7 +401,7 @@
   theoreticalAIML: Somewhat
   suggestions: AI, LLM, and Economics
   undefined: null
-  type: Core Faculty
+  type: Core
   hidden: 0
 - timestamp: 3/17/2024 5:00:45
   emailAddress: dhakas@iitj.ac.in
@@ -430,7 +428,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/20/2024 7:23:35
   emailAddress: krunalg@iitj.ac.in
@@ -458,7 +456,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 3/26/2024 5:29:07
   emailAddress: dipsankarb@iitj.ac.in
@@ -485,7 +483,7 @@
   theoreticalAIML: 'No'
   suggestions: Data Science and Data Engineering
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/19/2024 10:43:28
   emailAddress: ranju@iitj.ac.in
@@ -512,11 +510,11 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
-  name: vivek vijay
+  name: Vivek Vijay
   position: Associate Professor
   office: 1454
   Wwbsite: vivekvijay.in
@@ -539,7 +537,7 @@
   theoreticalAIML: 'Yes'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 8:28:52
   emailAddress: nishantkumar@iitj.ac.in
@@ -566,7 +564,7 @@
   theoreticalAIML: Somewhat
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 8:40:38
   emailAddress: vnara@iitj.ac.in
@@ -593,7 +591,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 13:38:53
   emailAddress: mdabutalha@iitj.ac.in
@@ -620,7 +618,7 @@
   theoreticalAIML: 'Yes'
   suggestions: 'Application of optimization in any field of engineering '
   undefined: null
-  type: Affiliated Faculty
+  type: 'Affiliated '
   hidden: 0
 - timestamp: 4/23/2024 15:15:36
   emailAddress: harshal.akolekar@iitj.ac.in
@@ -647,7 +645,7 @@
   theoreticalAIML: Somewhat
   suggestions: NA
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
@@ -676,7 +674,7 @@
   theoreticalAIML: Somewhat
   suggestions: Brain, behaviour, and Philosophy of Neuroscience
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/26/2024 14:52:14
   emailAddress: sdey@iitj.ac.in
@@ -703,12 +701,12 @@
   theoreticalAIML: Somewhat
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
   name: Neeraj Jain
-  position: Professor
+  position: Head of School
   office: 9999
   Wwbsite: https://neerajlab.weebly.com/
   department: Bioscience and Bioengineering
@@ -730,7 +728,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/29/2024 11:06:52
   emailAddress: dilpreetkaur@iitj.ac.in
@@ -757,7 +755,7 @@
   theoreticalAIML: 'Yes'
   suggestions: null
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
   hidden: 0
 - timestamp: 4/29/2024 12:13:41
   emailAddress: mitali@iitj.ac.in
@@ -784,5 +782,88 @@
   theoreticalAIML: 'No'
   suggestions: AI and Omics
   undefined: null
-  type: Affiliated Faculty
+  type: Affiliated
+  hidden: 0
+- timestamp: 7/25/2024 13:15:49
+  emailAddress: taranjit@iitj.ac.in
+  name: 'Taranjit Kaur  '
+  position: Scientific Officer
+  office: 1762
+  Wwbsite: https://scholar.google.co.in/citations?user=ItXL8b0AAAAJ&hl=en
+  department: Artificial Intelligence and Data Science
+  centerIDRP: Center for Brain Science and Applications
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=1N-mxE_qlraPnjcXI26oqV0t_QbxC95Pw&sz=w300
+  researchArea1: 'AI in Healthcare '
+  researchArea2: Computational Neuroscience
+  researchArea3: 'Neural Signal Processing '
+  researchArea4: 'Multi Spectral MR Image Processing '
+  aIandEconomics: 'No'
+  aIandEthics: 'No'
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'Yes'
+  behaviorCognitionBrain: 'Yes'
+  roboticsandIntelligentMachines: Somewhat
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: 'No'
+  theoreticalAIML: 'No'
+  suggestions: null
+  undefined: null
+  type: Core
+  hidden: 0
+- timestamp: 7/25/2024 15:34:43
+  emailAddress: asif@iitj.ac.in
+  name: Asif Ekbal
+  position: Professor
+  office: 1765
+  Wwbsite: https://ekbalasif.github.io
+  department: Artificial Intelligence and Data Science
+  centerIDRP: null
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=18-64Bm2-JdVjbIaA8mF5Mn8OmewQ172Z&sz=w300
+  researchArea1: 'Artificial Intelligence '
+  researchArea2: 'Natural Language Processing '
+  researchArea3: 'Applied Machine Learning '
+  researchArea4: Multimodal AI
+  aIandEconomics: 'No'
+  aIandEthics: Somewhat
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'Yes'
+  behaviorCognitionBrain: 'No'
+  roboticsandIntelligentMachines: 'No'
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: Somewhat
+  theoreticalAIML: Somewhat
+  suggestions: >-
+    Please include Natural Language Processing and AI for Social Good as the
+    themes 
+  undefined: null
+  type: Core
+  hidden: 0
+- timestamp: 7/25/2024 17:05:54
+  emailAddress: droy@iitj.ac.in
+  name: Dipanjan Roy
+  position: Associate Professor
+  office: 1757
+  Wwbsite: https://dipanjanr.com/publications/
+  department: Artificial Intelligence and Data Science
+  centerIDRP: Center for Brain Science and Applications
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=1-iNAXbNEbdx97yNFwflKOXS2n7Q2tMo2&sz=w300
+  researchArea1: Aging, Neurodevelopment using fMRI, EEG, MEG
+  researchArea2: 'Attention, Emotion, Perception, Working memory '
+  researchArea3: 'Brain Connectivity,  Brain-Inspired AI '
+  researchArea4: Brain Stimulation, Computational  Neuroscience
+  aIandEconomics: 'No'
+  aIandEthics: 'No'
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'No'
+  behaviorCognitionBrain: 'Yes'
+  roboticsandIntelligentMachines: 'No'
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: 'No'
+  theoreticalAIML: 'No'
+  suggestions: null
+  undefined: null
+  type: Core
   hidden: 0

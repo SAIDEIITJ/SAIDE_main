@@ -31,7 +31,6 @@ background-image: url("{{ site.baseurl }}/images/MTech.png");
     {% endif %}
   {% endfor %}
 </ul> 
-<br>
 </div>
 </div>
 </div>
@@ -56,7 +55,7 @@ background-image: url("{{ site.baseurl }}/images/MTech.png");
 {% endif %}
 </h2>
 <p><strong>Offered by:</strong> {{member.offered}}</p>
-<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
+<p><strong>Convenor:</strong> {{member.coordinator}}</p>
 </div>
 </div>
 {% endif %}

@@ -1,0 +1,48 @@
+- timestamp: 7/25/2024 15:30:08
+  name: Cognitive Engineering Lab
+  location: W10
+  contact: Taranjit Kaur
+  extension: 9999
+  image: null
+  url: null
+  hidden: 0
+- timestamp: 7/25/2024 15:33:20
+  name: Deep Learning and Computer Vision Lab
+  location: '-'
+  contact: Bikash Santra
+  extension: 9999
+  image: null
+  url: null
+  hidden: 0
+- timestamp: 7/25/2024 15:33:44
+  name: Natural Language Processing Lab
+  location: '-'
+  contact: Asif Ekbal
+  extension: 9999
+  image: null
+  url: null
+  hidden: 0
+- timestamp: 7/25/2024 15:34:01
+  name: Robotics Lab
+  location: W10
+  contact: Bhivraj Suthar
+  extension: 9999
+  image: null
+  url: null
+  hidden: 0
+- timestamp: 7/25/2024 15:34:24
+  name: Computational Economics Lab
+  location: '-'
+  contact: Dweepobotee Brahma
+  extension: 9999
+  image: null
+  url: null
+  hidden: 0
+- timestamp: 7/25/2024 15:34:38
+  name: Computational Intelligence Lab
+  location: '-'
+  contact: Manish Agarwal
+  extension: 9999
+  image: null
+  url: null
+  hidden: 0

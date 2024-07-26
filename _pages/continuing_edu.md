@@ -27,7 +27,6 @@ permalink: /continuing_edu/
     {% endif %}
   {% endfor %}
 </ul>
-<br>
 </div>
 </div>
 </div>

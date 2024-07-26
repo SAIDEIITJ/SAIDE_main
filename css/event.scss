@@ -1096,105 +1096,110 @@ body.is-loading {
         }
     }
 
-/* Footer */
-
-@media (max-width: 768px) {
-    
-    .copyright{
-        display: none;
+    @media (max-width: 768px) {
+	
+        .copyright{
+            display: none;
+        }
     }
-}
-
-    #footer {
-        @include padding(6em, 0);
-        background-image: url("#{$baseurl}/footer.png"); /* Initial background image */
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-        text-align: center;
-        color: #000000;
-
-        h3{
+    
+        #footer {
+            padding-top: 10vh ;
+            background-image: url("#{$baseurl}/footer.png"); /* Initial background image */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            text-align: center;
             color: #000000;
-        }
-        
-        h1{
-            text-align: left;
-            font-size: 2.2rem;
-            // margin-left: 100px;
-             font-family: "Montserrat", sans-serif;
-            text-transform: none;
-        }
-
-        .icons {
-            font-size: 1.25em;
-
-            a {
-                color: _palette(fg-light);
-
-                &:hover {
-                    color: _palette(fg);
-                }
+    
+            h3{
+                color: #000000;
             }
-        }
-
-        .copyright {
-            // color: _palette(fg-light);
-            color: #000000;
-            font-size: 0.8em;
-            letter-spacing: _size(letter-spacing-alt);
-            list-style: none;
-            padding: 0;
-            text-transform: uppercase;
-
-            li {
-                border-left: solid 1px _palette(fg-light);
-                display: inline-block;
-                line-height: 1em;
-                margin-left: 1em;
-                padding-left: 1em;
-
-                &:first-child {
-                    border-left: 0;
-                    margin-left: 0;
-                    padding-left: 0;
-                }
-
+            
+            h1{
+                text-align: left;
+                font-size: 2.2rem;
+                // margin-left: 100px;
+                 font-family: "Montserrat", sans-serif;
+                text-transform: none;
+            }
+    
+            .icons {
+                font-size: 1.25em;
+    
                 a {
-                    color: inherit;
-
+                    color: _palette(fg-light);
+    
                     &:hover {
                         color: _palette(fg);
                     }
                 }
-
-                @include breakpoint(xsmall) {
-                    border: 0;
-                    display: block;
-                    line-height: 1.65em;
-                    margin: 0;
-                    padding: 0.5em 0;
+            }
+    
+            .copyright {
+                // color: _palette(fg-light);
+                color: #000000;
+                font-size: 0.8em;
+                letter-spacing: _size(letter-spacing-alt);
+                list-style: none;
+                padding: 0;
+                text-transform: uppercase;
+    
+                li {
+                    border-left: solid 1px _palette(fg-light);
+                    display: inline-block;
+                    line-height: 1em;
+                    margin-left: 1em;
+                    padding-left: 1em;
+    
+                    &:first-child {
+                        border-left: 0;
+                        margin-left: 0;
+                        padding-left: 0;
+                    }
+    
+                    a {
+                        color: inherit;
+    
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+    
+                    @include breakpoint(xsmall) {
+                        border: 0;
+                        display: block;
+                        line-height: 1.65em;
+                        margin: 0;
+                        padding: 0.5em 0;
+                    }
                 }
             }
-        }
-
-        @include breakpoint(medium) {
-            @include padding(4em, 3em);
-        }
-
-        @include breakpoint(small) {
-            @include padding(3em, 2em);
-            h1{
-                text-align: center;
-                font-size: 1.5rem;
-                margin-left: 20px;
-                 font-family: "Montserrat", sans-serif;
-                text-transform: none;
+    
+            .footer-highlight{
+                background-color: #800F13;
+                color: #FFF;
             }
-
+            
+            .footer-highlight>ul{
+                color: #FFF;
+                margin: 0;
+            }
+            
+    
+            @include breakpoint(small) {
+                
+                h1{
+                    text-align: center;
+                    font-size: 1.5rem;
+                    margin-left: 20px;
+                     font-family: "Montserrat", sans-serif;
+                    text-transform: none;
+                }
+    
+            }
         }
-    }
-
+    
 /* Landing */
 
     body.landing {

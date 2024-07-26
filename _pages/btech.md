@@ -26,7 +26,6 @@ permalink: /btech/
     {% endif %}
   {% endfor %}
 </ul>
-<br>
 </div>
 </div>
 </div>
@@ -51,7 +50,7 @@ permalink: /btech/
 {% endif %}
 </h2>
 <p><strong>Offered by:</strong> {{member.offered}}</p>
-<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
+<p><strong>Convenor:</strong> {{member.coordinator}}</p>
 </div>
 </div>
 {% endif %}

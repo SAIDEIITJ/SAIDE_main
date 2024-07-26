@@ -26,6 +26,10 @@ title: Update faculity
         programs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=668775554&single=true&output=tsv',
         events:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1893940642&single=true&output=tsv',
         news:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1362293174&single=true&output=tsv',
+        themes:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=336259094&single=true&output=tsv',
+        labs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=904691409&single=true&output=tsv',
+        equipment:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1438311301&single=true&output=tsv',
+
     }
 
     var header_maps = {
@@ -141,7 +145,35 @@ title: Update faculity
             "Background":"background",
             "Preset":"preset",
             "Hidden":"hidden",
+        },
+        themes:{
+            "Name":"name",
+            "Info":"info",
+            "Image":"image",
+            "Popup Background":"popupBackground",
+            "Labs":"labs",
+            "Hidden":"hidden",
+        },
+        labs:{
+            "Timestamp":"timestamp",
+            "Name":"name",
+            "Location":"location",
+            "Contact":"contact",
+            "Extension":"extension",
+            "Image":"image",
+            "URL":"url",
+            "Hidden":"hidden",
+        },
+        equipment:{
+            "Timestamp":"timestamp",
+            "Lab":"lab",
+            "Name":"name",
+            "Description":"description",
+            "Image":"equipmentImage",
+            "Hidden":"hidden",
+
         }
+
     }
 
     // some constants related to gh-pages repository
@@ -169,10 +201,23 @@ title: Update faculity
     function getGDriveOURL(url) {
     // Regular expression to match Google Drive open links
         const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+            https://drive.google.com/open?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&authuser=0
         if (regexp.test(url)) {
             const res = regexp.exec(url);
             var id = res?.groups?.id;
             return `https://drive.google.com/thumbnail?id=${id.trim()}&sz=w300`;
+        }
+        return url;
+}
+
+function getGDriveURLnoSize(url) {
+    // Regular expression to match Google Drive open links
+        const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+            https://drive.google.com/open?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&authuser=0
+        if (regexp.test(url)) {
+            const res = regexp.exec(url);
+            var id = res?.groups?.id;
+            return `https://drive.google.com/thumbnail?id=${id.trim()}`;
         }
         return url;
 }
@@ -233,7 +278,14 @@ title: Update faculity
             $writepath += 'events.yaml';
         } else if ($resource === 'news') {
             $writepath += 'news.yaml';
+        } else if ($resource === 'themes') {
+            $writepath += 'themes.yaml';
+        } else if ($resource === 'labs') {
+            $writepath += 'labs.yaml';
+        }else if ($resource === 'equipment') {
+            $writepath += 'equipment.yaml';
         }
+        
 
         try {
             await new Promise((resolve, reject) => {
@@ -270,7 +322,7 @@ function init() {
                     header: true,
                     transformHeader: header => header_maps[name][header],
                     transform: (value, header) => {
-                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic") {
+                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage" || header === "popupBackground") {
                             return getGDriveOURL(value);
                         }
                         if (["display", "staff", "view", "faculty", "news", "event", "visibility", "hidden", "alumnus"].includes(header)) {
