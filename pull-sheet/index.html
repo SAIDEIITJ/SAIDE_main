@@ -15,9 +15,7 @@ title: Update faculity
 
     // dict of all published sheets and corresponding resource names
     var $resources = {
-        // team: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlkUKS3F0ObI73MPs3bprVyNBKN6RqINtipRkELpaTGrC2qMVvR6SyUgoAvSKPX1YHdfS3fyEF9Ni8/pub?output=tsv',
         faculty_profiles:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=444037338&single=true&output=tsv',
-        // news_events: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSYZExFU_O-a7QMx7bSMCOUsz8kjEErd3RVnlfIld1MYN40IpKoxYVuyxEesJvbimzKOKpVDE4FgbCC/pub?output=tsv',
         publications: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=2127468410&single=true&output=tsv',
         links:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1206947112&single=true&output=tsv',
         faqs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1456991437&single=true&output=tsv',
@@ -29,6 +27,7 @@ title: Update faculity
         themes:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=336259094&single=true&output=tsv',
         labs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=904691409&single=true&output=tsv',
         equipment:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1438311301&single=true&output=tsv',
+        projects:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1727706618&single=true&output=tsv',
 
     }
 
@@ -173,7 +172,25 @@ title: Update faculity
             "Image":"equipmentImage",
             "Hidden":"hidden",
 
-        }
+        },
+        projects:{
+            "Timestamp":"timestamp",
+            "Title":"title",
+            "Funding agency":"fundingAgency",
+            "Start date":"startDate",
+            "End date":"endDate",
+            "Value":"value",
+            "Logo":"logo",
+            "Details":"details",
+            "Website":"website",
+            "Manpower":"manpower",
+            "Level 1":"level1",
+            "Start date 1":"startDate1",
+            "End date 1":"endDate1",
+            "PI":"pI",
+            "Contact email":"contactEmail",
+
+        },
 
     }
 
@@ -283,8 +300,10 @@ function getGDriveURLnoSize(url) {
             $writepath += 'themes.yaml';
         } else if ($resource === 'labs') {
             $writepath += 'labs.yaml';
-        }else if ($resource === 'equipment') {
+        } else if ($resource === 'equipment') {
             $writepath += 'equipment.yaml';
+        } else if ($resource === 'projects') {
+            $writepath += 'projects.yaml';
         }
         
 
@@ -323,7 +342,7 @@ function init() {
                     header: true,
                     transformHeader: header => header_maps[name][header],
                     transform: (value, header) => {
-                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage" || header === "popupBackground") {
+                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage" || header === "popupBackground" || header === "logo") {
                             return getGDriveOURL(value);
                         }
                         if (["display", "staff", "view", "faculty", "news", "event", "visibility", "hidden", "alumnus"].includes(header)) {
