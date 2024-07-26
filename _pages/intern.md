@@ -45,21 +45,41 @@ permalink: /intern/
 </div>
 <div style="padding: 20px;">
 <h2 id="subheading">More Information about the program:</h2>
-<div class="msgrid-container">
-<div class="ms-grid">
-<h2 id = "subheading">Curriculum</h2>
-<p><strong></strong> </p>
-<p><strong></strong> </p>
+
+<div id="parent-box">
+
+<div class="general-section">
+
+<div class="row">
+<div class="col-md-9">
 </div>
-<div class="ms-grid">
-<h2 id = "subheading">Selection Process</h2>
-<p><strong></strong></p>
-<p><strong></strong></p>
 </div>
-<div class="ms-grid">
-<h2 id = "subheading">Last Date to Apply</h2>
-<p><strong></strong></p>
-<p><strong></strong></p>
+</div>
+<div class="application-section">
+
+<table id="admissionTable">
+<thead>
+
+<tr>
+<th style="text-align:left">Programs</th>
+<th>Advertisement</th>
+<th>Application Deadline</th>
+<th>Application Link</th>
+</tr>
+</thead>
+<tbody id = "admissions-table">
+{% assign programs_data = site.data.programs  %}
+{% for member in programs_data %}
+<tr>
+<td style="text-align:left">{{member.name}}</td>
+<td><a href="{{ member.document }}" target="_blank" class="view-more" style="border:0;">View More</a></td>
+<td>{{member.deadline}}</td>
+
+<td><a href="{{ member.application }}" target="_blank" class="apply-now" style="border:0;text-decoration:none;"><i class="fa-regular fa-hand-point-right"></i> Apply Now</a></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 </div>
 </div>
 </div>
