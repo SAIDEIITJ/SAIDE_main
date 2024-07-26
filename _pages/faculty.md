@@ -6,7 +6,6 @@ des: la ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit ulla
 permalink: /faculty/
 ---
 
-<h3 id ="peopleh3"> <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i> Filter By</h3>
 <div id="filter-bg">
 <br>
 
@@ -15,7 +14,6 @@ permalink: /faculty/
 <div class="col-md-12 bar-box">
 <input type="text" id="search-bar" placeholder="Search by Research Area ...">
 <div class="">
-<button class="research-btn">Search by Research Area</button>
 </div>
 </div>
 <div class="col-md-12" style="display: flex;justify-content: center;">
