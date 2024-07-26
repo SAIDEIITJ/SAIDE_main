@@ -3,52 +3,64 @@
   location: W10
   contact: Taranjit Kaur
   extension: 9999
+  url: null
   image: >-
     https://drive.google.com/thumbnail?id=1wOXPAcACPMonDbclPYNtKrvCimc-5k6I&sz=w300
-  url: https://drive.google.com/open?id=1CSiLhxxEN1puV0J2iviDGFLY0qtoe9Dn
+  popupBackground: >-
+    https://drive.google.com/thumbnail?id=1CSiLhxxEN1puV0J2iviDGFLY0qtoe9Dn&sz=w300
   hidden: 0
 - timestamp: 7/25/2024 15:33:20
   name: Deep Learning and Computer Vision Lab
   location: '-'
   contact: Bikash Santra
   extension: 9999
+  url: null
   image: >-
     https://drive.google.com/thumbnail?id=1ze4SlrOXbTJnEEDghGCn-WHAZO73dGH2&sz=w300
-  url: https://drive.google.com/open?id=1hv2sx_2zyZTzc-62lG9cDUdQR5Lwcxr6
+  popupBackground: >-
+    https://drive.google.com/thumbnail?id=1hv2sx_2zyZTzc-62lG9cDUdQR5Lwcxr6&sz=w300
   hidden: 0
 - timestamp: 7/25/2024 15:33:44
   name: Natural Language Processing Lab
   location: '-'
   contact: Asif Ekbal
   extension: 9999
+  url: null
   image: >-
     https://drive.google.com/thumbnail?id=1fbEwTfeWp04JDMDQMtu9g2nVk9iBBuQ-&sz=w300
-  url: https://drive.google.com/open?id=1KB8UrM5DBST-HZozCWQa7aF-FZHI16i2
+  popupBackground: >-
+    https://drive.google.com/thumbnail?id=1KB8UrM5DBST-HZozCWQa7aF-FZHI16i2&sz=w300
   hidden: 0
 - timestamp: 7/25/2024 15:34:01
   name: Robotics Lab
   location: W10
   contact: Bhivraj Suthar
   extension: 9999
+  url: null
   image: >-
     https://drive.google.com/file/d/1X5Hrj5wy9aRvoTS9UAa36Isz5Z5LhOnR/view?usp=drive_open
-  url: https://drive.google.com/open?id=1d3o_GkSRxvGPut_62zWI2XbmM1aw3y1E
+  popupBackground: >-
+    https://drive.google.com/thumbnail?id=1d3o_GkSRxvGPut_62zWI2XbmM1aw3y1E&sz=w300
   hidden: 0
 - timestamp: 7/25/2024 15:34:24
   name: Computational Economics Lab
   location: '-'
   contact: Dweepobotee Brahma
   extension: 9999
+  url: null
   image: >-
     https://drive.google.com/thumbnail?id=1lja7uTkNp0CfIBmbMtfhgV80UTDAoDrV&sz=w300
-  url: https://drive.google.com/open?id=1-I8PgktUNIh1qgHnl6j7KhQRDNZsmMPI
+  popupBackground: >-
+    https://drive.google.com/thumbnail?id=1-I8PgktUNIh1qgHnl6j7KhQRDNZsmMPI&sz=w300
   hidden: 0
 - timestamp: 7/25/2024 15:34:38
   name: Computational Intelligence Lab
   location: '-'
   contact: Manish Agarwal
   extension: 9999
+  url: null
   image: >-
     https://drive.google.com/thumbnail?id=1U947F4W0AXbtAvl6WRSmiGCn_zosEmIM&sz=w300
-  url: https://drive.google.com/open?id=1S6fsX6IbMAHarp_XAAj-VXpoqgZ-RkKs
+  popupBackground: >-
+    https://drive.google.com/thumbnail?id=1S6fsX6IbMAHarp_XAAj-VXpoqgZ-RkKs&sz=w300
   hidden: 0
