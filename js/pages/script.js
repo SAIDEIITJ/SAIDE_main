@@ -30,39 +30,48 @@ $(document).ready(function() {
     ];
 
     const pagebanners = [
-        'Admissions.png',
-        'Alumini.png',
-        'BTech.png',
-        'Campus.png',
-        'CoE.png',
-        'Contact.png',
-        'Continuing.png',
-        'Courses.png',
-        'Directory.png',
-        'Ecosystem.png',
-        'Faculty.png',
-        'FacultyPositions.png',
-        'FAQs.png',
         'footer.png',
-        'Governance.png',
         'iit.png',
-        'Labs.png',
         'logo_bg.png',
         'Logo_IITJ.png',
-        'Mission.png',
+        'PhD.png',
         'MSR.png',
         'MTech.png',
-        'Outreach.png',
-        'PhD.png',
-        'postdoc.png',
-        'ProjectPositions.png',
+        'BTech.png',
+        'Continuing.png',
+        'Courses.png',
+        'Contact.png',
+
+        'Research.png',
+        'Themes.png',
         'Projects.png',
         'Publications.png',
-        'Research.png',
+        'Labs.png',
+
+        'Admissions.png',
+        'ProjectPositions.png',
+        'postdoc.png',
+        'FacultyPositions.png',
         'SIP.png',
-        'Staff.png',
+
+        'CoE.png',
+        'Faculty.png',
         'Students.png',
-        'Themes.png',
+        'Alumini.png',
+        'Staff.png',
+        'Directory.png',
+
+
+
+  
+        'Campus.png',
+        'Ecosystem.png',
+        'FAQs.png',
+
+        'Governance.png',
+
+        'Mission.png',
+        'Outreach.png',
     ];
 
     const otherImages = [
@@ -154,7 +163,7 @@ $(document).ready(function() {
     // Preload the first 3 banners and other images
     Promise.all([
         preloadImages(backgroundImages, 0, 4),
-        preloadImages(pagebanners, 0, pagebanners.length)
+        preloadImages(pagebanners, 0, 4)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
@@ -162,6 +171,7 @@ $(document).ready(function() {
             restartScrollInterval();
             let intervalId = setInterval(nextBackground, 5000);
 
+            preloadNextBatch(backgroundImages, 4, 3); // Load background banners
             preloadNextBatch(backgroundImages, 4, 3); // Load background banners
             preloadNextBatch(otherImages, 0, otherImages.length);    
              // Start preloading the next 3 banners
