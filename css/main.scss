@@ -179,6 +179,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   .theme-content {
 	padding: 20px;
   }
+  .projects-content {
+	padding: 10px;
+  }
 
   .theme-content a{
 	border:0;
@@ -334,7 +337,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	  border:1px solid rgb(210, 210, 210);
 
   }
-  
+
+
+
   #hidden-content-3{
 	display: flex;
 	align-items: center;
@@ -348,13 +353,8 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	 font-weight: 600;
  }
 
- .carousel-inner img {
-	width: 100%; /* Adjust the width as needed */
-	height: auto; /* Maintain aspect ratio */
-	max-height: 200px; /* Set max-height to control the image size */
-	object-fit: cover; /* Ensure images are covered */
-}
-  
+
+
 
   #hidden-title{
 	font-size: 1.2em;
@@ -439,7 +439,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   //projects
   .theme-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
   }
   
@@ -451,26 +451,43 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	flex-direction: column;
 	align-items: center;
 	transition: transform 1s;
-	// padding: 10px; 
+	padding: 10px;
   }
-  .grid-item:hover{
-	transform: scale(1.2);
+  
+  .grid-item:hover {
+	transform: scale(1.05);
   }
+  
   .grid-item img {
 	width: 100%;
 	height: auto;
 	display: block;
   }
   
-  .grid-item #gridh3title {
-	text-align: center;
+  .grid-title {
+	text-transform: none;
 	padding: 10px;
 	margin: 15px 0 0 0;
-	font-size: 1.2em;
+	font-size: 1.0em;
 	width: 100%;
-	color:$titlecolor;
+	color: #333; /* Set your desired title color */
   }
-
+  #grid-titleh3 {
+	text-transform: none;
+	padding: 5px;
+	margin: 10px 0 0 0;
+	font-size: 1.05em;
+	width: 100%;
+	color: #333; /* Set your desired title color */
+  }
+  
+  .project-dates {
+	text-align: center;
+	margin: 10px 0 0 0;
+	font-size: 1em;
+	color: #666; /* Set your desired date text color */
+  }
+  
   @media (max-width: 768px) {
 	.theme-grid{
 		flex-wrap: nowrap;

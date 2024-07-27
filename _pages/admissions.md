@@ -18,11 +18,11 @@ permalink: /admissions/
 </div>
 </div>
 </div>
+
 <div class="application-section">
 
 <table id="admissionTable">
 <thead>
-
 <tr>
 <th style="text-align:left">Programs</th>
 <th>Curriculum</th>
