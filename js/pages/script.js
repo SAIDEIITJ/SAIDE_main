@@ -172,7 +172,7 @@ $(document).ready(function() {
             let intervalId = setInterval(nextBackground, 5000);
 
             preloadNextBatch(backgroundImages, 4, 3); // Load background banners
-            preloadNextBatch(pagebanners, 4, 3); // Load background banners
+            preloadNextBatch(pagebanners, 4, pagebanners.length ); // Load background banners
             preloadNextBatch(otherImages, 0, otherImages.length);    
              // Start preloading the next 3 banners
 
