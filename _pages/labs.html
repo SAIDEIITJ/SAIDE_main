@@ -42,8 +42,8 @@ permalink: /labs/
     {% assign labs_data = site.data.labs %}
     {% for member in labs_data %}
     {% if member.hidden == 0 %}
-        <div class="theme" data-bg-image="url('{{member.popupBackground}}')">
-        <img src="{{member.image}}" alt="{{member.name}}">
+    <div class="theme" data-bg-image="url('{{member.popupBackground}}')" data-images='["https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1", "https://www.shutterstock.com/image-vector/fill-image-preview-icon-simple-260nw-2338969281.jpg", "https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"]'>
+      <img src="{{member.image}}" alt="{{member.name}}">
         <div class="theme-content">
             <h3 id="h3title">{{member.name}}</h3>
             <div class="hidden">
@@ -62,9 +62,7 @@ permalink: /labs/
                     </div>
                 </div>
                 <br>
-                <div class="row" style="justify-content: center; display: flex;">
-                  <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -80,16 +78,18 @@ permalink: /labs/
 
 
 <div id="popup" class="popup">
-    <div class="popup-content">
+  <div class="popup-content">
       <span class="close" onclick="closePopup()">&times;</span>
       <h2 id="popup-title"></h2>
+      <div class="carousel">
+          <div class="carousel-inner" id="carousel-inner"></div>
+          <div class="carousel-dots" id="carousel-dots"></div> <!-- Dots container -->
+      </div>
+      <i class="fas fa-chevron-left arrow-left" id="prev-button" style="display: none;"></i>
+      <i class="fas fa-chevron-right arrow-right" id="next-button" style="display: none;"></i>
       <div id="popup-div"></div>
-       
-      <i class="fas fa-chevron-left arrow-left" id="prev-button"></i>
-      <i class="fas fa-chevron-right arrow-right" id="next-button"></i>
-    </div>
+  </div>
 </div>
-  
 
 
 
@@ -98,6 +98,47 @@ permalink: /labs/
     .background-about{
     background-image: url("{{ site.baseurl }}/images/Labs.png");
     }
+
+    .carousel {
+    position: relative;
+    margin-top: 20px; /* Space above the carousel */
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none; /* Hide all items by default */
+    width: 100%; /* Ensure all items take full width */
+}
+
+.carousel-item img {
+    width: 100%; /* Responsive image */
+}
+
+.carousel-dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.carousel-dots .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.carousel-dots .active,
+.carousel-dots .dot:hover {
+    background-color: #717171;
+}
+
     </style>
     
  
