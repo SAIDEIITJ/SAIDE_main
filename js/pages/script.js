@@ -1,33 +1,4 @@
-
 $(document).ready(function() {
-    const backgroundImages = [
-        'banner0.png',
-        'banner1.png',
-        'banner2.png',
-        'banner3.png',
-        'banner4.png',
-        'banner5.png',
-        'banner6.png',
-        'banner7.png',
-        'banner8.png',
-        'banner9.png',
-        'banner10.png',
-        'banner11.png',
-        'banner12.png',
-        'banner13.png',
-        'banner14.png',
-        'banner15.png',
-        'banner16.png',
-        'banner17.png',
-        'banner18.png',
-        'banner19.png',
-        'banner20.png',
-        'banner21.png',
-        'banner22.png',
-        'banner23.png',
-        'banner24.png',
-        'banner25.png',
-    ];
 
     const pagebanners = [
         'footer.png',
@@ -74,6 +45,7 @@ $(document).ready(function() {
         'Outreach.png',
     ];
 
+   
     const otherImages = [
         'AIhealth.png',
         'brain.png',
@@ -114,12 +86,11 @@ $(document).ready(function() {
         '6.gif',
         '7.gif',
         '8.gif',
-        '9.gif',
+        '9.gif'
         // Add more image URLs as needed
     ];
 
     let currentIndex = 0;
-
     lottie.loadAnimation({
         container: document.getElementById('spinner'),
         renderer: 'svg',
@@ -127,7 +98,6 @@ $(document).ready(function() {
         autoplay: true,
         path: 'js/animation.json'
     });
-
     function preloadImages(imageArray, startIndex = 0, count) {
         let loadedImages = 0;
         let totalImages = Math.min(count || imageArray.length, imageArray.length - startIndex);
@@ -152,29 +122,52 @@ $(document).ready(function() {
         });
     }
 
-    function preloadNextBatch(imageArray, startIndex, batchSize) {
+    function preloadBannerImages(bannerArray, startIndex = 0, count) {
+        let loadedImages = 0;
+        let totalImages = Math.min(count || bannerArray.length, bannerArray.length - startIndex);
+
+        return new Promise((resolve, reject) => {
+            for (let i = startIndex; i < startIndex + totalImages; i++) {
+                const img = new Image();
+                img.src = bannerArray[i].link;
+                img.onload = () => {
+                    loadedImages++;
+                    if (loadedImages === totalImages) {
+                        resolve();
+                    }
+                };
+                img.onerror = () => {
+                    loadedImages++;
+                    if (loadedImages === totalImages) {
+                        resolve();
+                    }
+                };
+            }
+        });
+    }
+
+    function preloadNextBatch(imageArray, startIndex, batchSize, isBanner = false) {
         if (startIndex < imageArray.length) {
-            preloadImages(imageArray, startIndex, batchSize).then(() => {
-                preloadNextBatch(imageArray, startIndex + batchSize, batchSize);
+            const preloadFunction = isBanner ? preloadBannerImages : preloadImages;
+            preloadFunction(imageArray, startIndex, batchSize).then(() => {
+                preloadNextBatch(imageArray, startIndex + batchSize, batchSize, isBanner);
             });
         }
     }
 
-    // Preload the first 3 banners and other images
+    // Preload the first 4 banners and other images
     Promise.all([
-        preloadImages(backgroundImages, 0, 4),
+        preloadBannerImages(Banner, 0, 4),
         preloadImages(pagebanners, 0, 4)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
             changeBackground();
-            restartScrollInterval();
             let intervalId = setInterval(nextBackground, 5000);
 
-            preloadNextBatch(backgroundImages, 4, 3); // Load background banners
-            preloadNextBatch(pagebanners, 4, pagebanners.length ); // Load background banners
-            preloadNextBatch(otherImages, 0, otherImages.length);    
-             // Start preloading the next 3 banners
+            preloadNextBatch(Banner, 4, 3, true);
+            preloadNextBatch(pagebanners, 4, pagebanners.length);
+            preloadNextBatch(otherImages, 0, otherImages.length);
 
             $('#nextBtn').click(function() {
                 clearInterval(intervalId);
@@ -190,22 +183,20 @@ $(document).ready(function() {
         });
     });
 
-    // Function to change the background image
     function changeBackground() {
-        $('.rectangular-div').css('background-image', `url(images/${backgroundImages[currentIndex]})`);
+        $('.rectangular-div').css('background-image', `url(${Banner[currentIndex].link})`);
     }
 
-    // Function to show the next background image
     function nextBackground() {
-        currentIndex = (currentIndex + 1) % backgroundImages.length;
+        currentIndex = (currentIndex + 1) % Banner.length;
         changeBackground();
     }
 
-    // Function to show the previous background image
     function prevBackground() {
-        currentIndex = (currentIndex - 1 + backgroundImages.length) % backgroundImages.length;
+        currentIndex = (currentIndex - 1 + Banner.length) % Banner.length;
         changeBackground();
     }
+
     changeBackground();
 });
 function toggleDropdown() {
@@ -343,5 +334,6 @@ document.addEventListener("DOMContentLoaded", () => {
     showNews();
     showEvents();
 });
+
 
 

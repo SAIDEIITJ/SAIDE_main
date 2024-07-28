@@ -84,6 +84,13 @@ permalink: /
 	</div>
 	<br>
 </section>
-
+<script> 
+	const Banner = [
+		{% for banner in site.data.banners %}
+			{ name: "{{ banner.bannerName }}", link: "{{ banner.bannerLink }}" }{% if forloop.last %}{% else %},{% endif %}
+		{% endfor %}
+	];
+</script>
+	
 <script src="{{ site.baseurl }}/js/pages/script.js"></script>
 					
