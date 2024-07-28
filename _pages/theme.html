@@ -19,7 +19,7 @@ permalink: /themes/
     {% for member in themes_data %}
     {% if member.hidden == 0 %}
         <div class="theme" data-bg-image="url('{{member.popupBackground}}')">
-        <img src="{{member.image}}" alt="{{member.name}}">
+        <img src="{{member.themeImage}}" alt="{{member.name}}">
         <div class="theme-content">
             <h3 id="h3title">{{member.name}}</h3>
             <div class="hidden">

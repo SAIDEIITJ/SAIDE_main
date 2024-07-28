@@ -28,6 +28,8 @@ title: Update faculity
         labs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=904691409&single=true&output=tsv',
         equipment:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1438311301&single=true&output=tsv',
         projects:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1727706618&single=true&output=tsv',
+        banners:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=510287448&single=true&output=tsv',
+
 
     }
 
@@ -148,7 +150,7 @@ title: Update faculity
         themes:{
             "Name":"name",
             "Info":"info",
-            "Image":"image",
+            "Image":"themeImage",
             "Popup Background":"popupBackground",
             "Labs":"labs",
             "Hidden":"hidden",
@@ -159,7 +161,7 @@ title: Update faculity
             "Location":"location",
             "Contact":"contact",
             "Extension":"extension",
-            "Image":"image",
+            "Image":"labImage",
             "URL":"url",
             "Popup Background":"popupBackground",
             "Hidden":"hidden",
@@ -191,6 +193,10 @@ title: Update faculity
             "Contact email":"contactEmail",
 
         },
+        banners:{
+            "BannerName":"bannerName",
+            "Link":"bannerLink",
+        }
 
     }
 
@@ -216,7 +222,18 @@ title: Update faculity
         return url;
     }
 
-    function getGDriveOURL(url) {
+    function getGDriveHDURL(url) {
+    // Regular expression to match Google Drive open links
+        const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
+            https://drive.google.com/open?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&authuser=0
+        if (regexp.test(url)) {
+            const res = regexp.exec(url);
+            var id = res?.groups?.id;
+            return `https://drive.google.com/thumbnail?id=${id.trim()}&sz=w800`;
+        }
+        return url;
+}
+function getGDriveOURL(url) {
     // Regular expression to match Google Drive open links
         const regexp = /https:\/\/drive\.google\.com\/open\?id=(?<id>[^&]+)/;
             https://drive.google.com/open?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&authuser=0
@@ -304,6 +321,8 @@ function getGDriveURLnoSize(url) {
             $writepath += 'equipment.yaml';
         } else if ($resource === 'projects') {
             $writepath += 'projects.yaml';
+        } else if ($resource === 'banners') {
+            $writepath += 'banners.yaml';
         }
         
 
@@ -342,11 +361,14 @@ function init() {
                     header: true,
                     transformHeader: header => header_maps[name][header],
                     transform: (value, header) => {
-                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage" || header === "popupBackground" || header === "logo") {
+                        if (header === "image" || header === "profilePhoto" || header === "background" || header === "tileBackground" || header === "profilePic" ||  header ==="equipmentImage" || header === "logo") {
                             return getGDriveOURL(value);
                         }
                         if (["display", "staff", "view", "faculty", "news", "event", "visibility", "hidden", "alumnus"].includes(header)) {
                             return parseInt(value);
+                        }
+                        if (header === "bannerLink" || header === "popupBackground" || header === "themeImage" || header ==="labImage"){
+                            return getGDriveHDURL(value);
                         }
                         return value;
                     },
