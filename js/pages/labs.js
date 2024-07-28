@@ -76,24 +76,10 @@ function openPopup(index) {
     prevButton.style.display = (currentIndex > 0) ? 'block' : 'none';
 
     // Show the first slide or message
-    showSlides(currentIndex);
+ //   showSlides(currentIndex);
 }
 
 
-// Function to show slides based on index
-function showSlides(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    const dots = document.querySelectorAll('.dot');
-
-    if (index >= slides.length) { currentIndex = 0; }
-    if (index < 0) { currentIndex = slides.length - 1; }
-
-    slides.forEach(slide => slide.style.display = 'none');
-    dots.forEach(dot => dot.classList.remove('active'));
-
-    slides[currentIndex].style.display = 'block';
-    dots[currentIndex].classList.add('active');
-}
 
 // Function to close popup
 function closePopup() {

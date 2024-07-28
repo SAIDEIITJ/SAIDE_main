@@ -281,6 +281,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	padding: 20px;
   }
   .arrow-left, .arrow-right {
+	display: block;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -5132,4 +5133,3 @@ body.is-loading {
 			}
 		}
 	}
-
