@@ -47,8 +47,14 @@ $(document).ready(function() {
 
    
     const otherImages = [
-        'AIhealth.png',
+        'iitj.png',
+        'coes.png',
+        'infra.png',
         'brain.png',
+
+
+        'AIhealth.png',
+
         'btech1.png',
         'btech2.png',
         'compEco.png',
@@ -78,6 +84,7 @@ $(document).ready(function() {
         'loc2.jpeg',
         'loc3.png',
         'campus_master.png',
+        'brainTheme.png',
         '1.gif',
         '2.gif',
         '3.gif',
@@ -157,17 +164,17 @@ $(document).ready(function() {
 
     // Preload the first 4 banners and other images
     Promise.all([
-        preloadBannerImages(Banner, 0, 4),
-        preloadImages(pagebanners, 0, 4)
+        preloadBannerImages(Banner, 0, 5),
+
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
             changeBackground();
             let intervalId = setInterval(nextBackground, 5000);
 
-            preloadNextBatch(Banner, 4, 3, true);
-            preloadNextBatch(pagebanners, 4, pagebanners.length);
-            preloadNextBatch(otherImages, 0, otherImages.length);
+            preloadNextBatch(Banner, 5, 4, true);
+            preloadImages(pagebanners, 0, pagebanners.length);
+            preloadImages(otherImages, 0, otherImages.length);
 
             $('#nextBtn').click(function() {
                 clearInterval(intervalId);
