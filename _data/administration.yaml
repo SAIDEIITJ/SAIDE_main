@@ -11,22 +11,21 @@
   entry: Members - All faculty members
   link: '#'
 - position: School Post Graduate Committee
-  entry: School of AIDE (Chairman) - Dr. Dipanjan Roy
+  entry: Convenor for ScPGC - Dr. Dipanjan Roy
   link: https://dipanjanr.com/
 - position: School Post Graduate Committee
   entry: >-
-    Civil and Infrastructure Engineering (Coordinator of the Ph.D. Program) -
-    Dr. Ranju Mohan
-  link: '#'
-- position: School Post Graduate Committee
-  entry: Head, School of AIDE - Prof. Neeraj Jain
-  link: https://iitj.irins.org/profile/205254
-- position: School Post Graduate Committee
-  entry: CMCE, School of AIDE (Member) - Dr. Abhinaba Lahiri
-  link: https://sites.google.com/view/abhinabalahiri/home
-- position: School Post Graduate Committee
-  entry: Electrical Engineering (Member) - Dr. Amit Bhardwaj
-  link: http://home.iitj.ac.in/~amitb/
+    Members for ScPGC - Dr. Bikash Santra, Dr. Abhinaba Lahiri, Dr. Saurabh
+    Gandhi, Dr. Manish Agarwal, Prof. Mitali Mukerji, Dr. P Ravi Prakash
+  link: null
+- position: School Ongoing Education Committee
+  entry: Convenor for ScOEC - Dr. Amit Bhardwaj
+  link: null
+- position: School Ongoing Education Committee
+  entry: >-
+    Members for ScOEC - Dr. Dip Sankar Banerjee, Dr. Puneet Sharma, Dr. Srivatsa
+    Srinivas S, Dr. Vignesh Muralidharan, Dr. Bhivraj Suthar
+  link: null
 - position: Website
   entry: Bikash Santra
   link: http://home.iitj.ac.in/~bikash/
@@ -54,6 +53,3 @@
 - position: AI Standards Group
   entry: Prof. Mayank Vatsa, Convenor
   link: http://home.iitj.ac.in/~mvatsa/
-- position: School Ongoing Education Committee
-  entry: null
-  link: null
