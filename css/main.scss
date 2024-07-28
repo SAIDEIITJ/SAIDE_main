@@ -4997,6 +4997,10 @@ body.is-loading {
 
 /* Footer */
 
+#footer-links:hover{
+	color:rgb(125, 31, 31) !important;
+}
+
 @media (max-width: 768px) {
 	
 	.copyright{
