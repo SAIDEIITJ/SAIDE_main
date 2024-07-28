@@ -8,135 +8,230 @@ permalink: /labs/
 
 <br>
 <div class="research-intro">
-<div class="about-section">
-<h1>Our Labs</h1>
-<div class="row">
-<div class="col-md-8">
-<p style="text-align: justify;"><a href="https://iitj.ac.in" target="_blank" style="color: #ff6f61; border: 0;">IIT Jodhpur </a> has established good number of teaching and research laboratories and facilities, which aid in elevating the students from minimalist academic concerns to inquisitive world of scientific arena. These teaching and research laboratories help Faculty Members and Students work for better future by supplementing and improving existing technologies and bodies of knowledge, using competence, creativity and imagination.</p>
+  <div class="about-section">
+    <h1>Our Labs</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <p style="text-align: justify;">
+          <a href="https://iitj.ac.in" target="_blank" style="color: #ff6f61; border: 0;">IIT Jodhpur</a> has established good number of teaching and research laboratories and facilities, which aid in elevating the students from minimalist academic concerns to inquisitive world of scientific arena. These teaching and research laboratories help Faculty Members and Students work for better future by supplementing and improving existing technologies and bodies of knowledge, using competence, creativity and imagination.
+        </p>
+      </div>
+      <div class="col-md-4 implinkBox">
+        <div class="side-content">
+          <div class="share">
+            <p class="sign-up" style="text-align: center;">
+              <i class="fa-regular fa-hand-point-right"></i> Important Links
+            </p>
+            {% assign links_data = site.data.links %}
+            <ul class="side-news">
+              {% for mem in links_data %}
+                {% if mem.page == 'lab' %}
+                  <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="col-md-4 implinkBox">
-<div class="side-content">
-  <div class="share">
-    <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
-    
-    {% assign links_data = site.data.links %}
-    <ul class="side-news">
-      {% for mem in links_data %}
-        {% if mem.page == 'lab' %}
-          <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-<br>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <section class="res-section">
   <div class="theme-container">
     {% assign labs_data = site.data.labs %}
     {% for member in labs_data %}
-    {% if member.hidden == 0 %}
-    <div class="theme" data-bg-image="url('{{member.popupBackground}}')" data-images='["https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1", "https://www.shutterstock.com/image-vector/fill-image-preview-icon-simple-260nw-2338969281.jpg", "https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-614.png?fit=1200%2C800&ssl=1"]'>
-      <img src="{{member.labImage}}" alt="{{member.name}}">
-        <div class="theme-content">
-            <h3 id="h3title">{{member.name}}</h3>
+      {% if member.hidden == 0 %}
+      <div class="theme" data-bg-image="url('{{ member.popupBackground }}')" data-lab="{{ member.name }}" data-images="">         <img src="{{ member.image }}" alt="{{ member.name }}">
+          <div class="theme-content">
+            <h3 id="h3title">{{ member.name }}</h3>
             <div class="hidden">
-                <div class="row">
-                    <div class="col-sm-12 col-md-7">
-                        <div class="row" id="hidden-content">
-                            <h3 id="hidden-title">About</h3>
-                            <!-- <p>{{member.info}}</p> -->
-                        </div>
-                    </div>
-  
-                    <div class="col-sm-12 col-md-4" id="hidden-content-2">
-                      <h3 id="hidden-title">Faculty members</h3>
-                      <ul id="bullets">
-                      </ul>
-                    </div>
-                </div>
-                <br>
-               
+              <div class="contact-row">
+                
+              
+                  <h3 id="lab-title">Contact</h3>
+                 <p> {{ member.contact }} | {{ member.extension }}</p>
               </div>
+              <br>
             </div>
           </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-
-
-
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>
 <br>
 
-
 <div id="popup" class="popup">
   <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <h2 id="popup-title"></h2>
-      <div class="carousel">
-          <div class="carousel-inner" id="carousel-inner"></div>
-          <div class="carousel-dots" id="carousel-dots"></div> <!-- Dots container -->
-      </div>
-      <i class="fas fa-chevron-left arrow-left" id="prev-button" style="display: none;"></i>
-      <i class="fas fa-chevron-right arrow-right" id="next-button" style="display: none;"></i>
-      <div id="popup-div"></div>
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2 id="popup-title"></h2>
+    <div class="carousel">
+      <div class="carousel-inner" id="carousel-inner"></div>
+      <div class="carousel-dots" id="carousel-dots"></div> <!-- Dots container -->
+    </div>
+    <i class="fas fa-chevron-left arrow-left" id="prev-button" style="display: none;"></i>
+    <i class="fas fa-chevron-right arrow-right" style="display: none;"></i>
+    <div id="popup-div"></div>
   </div>
 </div>
 
-
-
-  <style>
-    /* page-banner image */
-    .background-about{
+<style>
+  /* page-banner image */
+  .background-about {
     background-image: url("{{ site.baseurl }}/images/Labs.png");
-    }
+  }
+  
+  .popup{
+    max-width: 85%;
+    height: 90%;
+  }
 
-    .carousel {
+  #lab-title{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-transform: none;
+    color: #6e0d10;
+    margin: 0;
+    text-align: left;
+  }
+
+  .contact-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel {
     position: relative;
     margin-top: 20px; /* Space above the carousel */
-}
+  }
 
-.carousel-inner {
+  .carousel-inner {
     display: flex;
     overflow: hidden;
-}
+    flex-direction: column;
 
-.carousel-item {
+  }
+
+  .carousel-item {
     display: none; /* Hide all items by default */
     width: 100%; /* Ensure all items take full width */
-}
+  }
 
-.carousel-item img {
-    width: 100%; /* Responsive image */
-}
+  .carousel-item h4{
+    margin: 0;
+  }
 
-.carousel-dots {
-    text-align: center;
+  .carousel-item p{
+    font-size: medium;
+    line-height: 1.4em;
+  }
+
+  .carousel-item img {
+    width: 300px; /* Responsive image */
+    height: auto;
+    padding-top:10px ;
+  }
+
+  .carousel-dots {
+    text-align: left;
     padding: 10px 0;
-}
+  }
 
-.carousel-dots .dot {
+  .carousel-dots .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 5px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-}
+  }
 
-.carousel-dots .active,
-.carousel-dots .dot:hover {
+  .carousel-dots .active,
+  .carousel-dots .dot:hover {
     background-color: #717171;
+  }
+
+  @media (max-width: 600px) {
+
+  .popup{
+    height: 60%;
+    padding: 5px;
+  }
+  .carousel-item p{
+    display: none;
+  }
+
+  .carousel-item image{
+    width: 50px;
+  }
 }
 
-    </style>
-    
- 
-<script  src="{{ site.baseurl }}/js/pages/labs.js">
+  @media (max-width: 992px) {
+
+    .popup{
+    height: 80%;
+    padding: 5px;
+  }
+
+.carousel-item p{
+font-size: small;
+}
+
+.carousel-item image{
+width: 300px;}
+
+  }
+</style>
+<script>
+  // Render equipment.yaml data into JavaScript variable
+  const equipmentData = {{ site.data.equipment | jsonify }};
+  console.log(equipmentData);
+  
+  // Create a map to hold arrays of equipment details for each lab
+  const labEquipmentMap = new Map();
+
+  // Group equipment by lab
+  equipmentData.forEach(equip => {
+    const lab = equip.lab; // Get the lab name
+
+    // Create an object for the equipment
+    const equipmentDetails = {
+      hidden: equip.hidden,
+      imageSrc: equip.equipmentImage,
+      name: equip.name,
+      description: equip.description
+    };
+
+    // If the lab is not already in the map, create an empty array
+    if (!labEquipmentMap.has(lab)) {
+      labEquipmentMap.set(lab, []);
+    }
+
+    // Push the equipment details into the corresponding lab's array
+    labEquipmentMap.get(lab).push(equipmentDetails);
+  });
+
+  // Convert the map to an object for easier access
+  const labEquipmentObject = Object.fromEntries(labEquipmentMap);
+  console.log(labEquipmentObject); // Check the grouped equipment by lab
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select the div elements and set the data-equipment attribute based on lab
+    const themeDivs = document.querySelectorAll('.theme');
+    themeDivs.forEach(div => {
+      const labName = div.getAttribute('data-lab'); // Assuming you set data-lab attribute in your HTML
+      if (labEquipmentObject[labName]) {
+        div.setAttribute('data-equipment', JSON.stringify(labEquipmentObject[labName]));
+      }
+    });
+
+    console.log(themeDivs); // Check if the data-equipment attribute is set correctly
+  });
 </script>
+
+
+
+<script src="{{ site.baseurl }}/js/pages/labs.js"></script>
