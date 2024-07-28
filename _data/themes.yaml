@@ -1,72 +1,72 @@
 - name: AI and Economics
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1uin3jQ3rjB-G8NDzPbV7njKbqTT7Zafm&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1-I8PgktUNIh1qgHnl6j7KhQRDNZsmMPI&sz=w300
+    https://drive.google.com/thumbnail?id=1-I8PgktUNIh1qgHnl6j7KhQRDNZsmMPI&sz=w800
   labs: null
   hidden: 0
 - name: AI-driven Healthcare
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1DwCRNwqYTUKuuKXjSP1XGPV6xOJWkeAn&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1DwCRNwqYTUKuuKXjSP1XGPV6xOJWkeAn&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1VVnz7blxhg9t66FCi1rrpCR2s6ybyttO&sz=w300
+    https://drive.google.com/thumbnail?id=1VVnz7blxhg9t66FCi1rrpCR2s6ybyttO&sz=w800
   labs: null
   hidden: 0
 - name: 'AI for Technology: Language and Vision'
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1aQh9Uu0wIvpW6Qv3dJvnOv05pWRdtKKI&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1aQh9Uu0wIvpW6Qv3dJvnOv05pWRdtKKI&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1hv2sx_2zyZTzc-62lG9cDUdQR5Lwcxr6&sz=w300
+    https://drive.google.com/thumbnail?id=1hv2sx_2zyZTzc-62lG9cDUdQR5Lwcxr6&sz=w800
   labs: null
   hidden: 0
 - name: Behavior, Cognition and Brain
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1jaKMcLit6AjvGSuiEdtwxeyteMHqLOYr&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1jaKMcLit6AjvGSuiEdtwxeyteMHqLOYr&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1S6fsX6IbMAHarp_XAAj-VXpoqgZ-RkKs&sz=w300
+    https://drive.google.com/thumbnail?id=1S6fsX6IbMAHarp_XAAj-VXpoqgZ-RkKs&sz=w800
   labs: Cognitive Engineering Lab
   hidden: 0
 - name: Theoretical AI
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1YgR66H6qdjiam7QLxJc_hAXVOW2m0eEA&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1YgR66H6qdjiam7QLxJc_hAXVOW2m0eEA&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1CSiLhxxEN1puV0J2iviDGFLY0qtoe9Dn&sz=w300
+    https://drive.google.com/thumbnail?id=1CSiLhxxEN1puV0J2iviDGFLY0qtoe9Dn&sz=w800
   labs: null
   hidden: 0
 - name: AI and Ethics
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1ToWIBV6p4nn-Q9NObjTVBUQ4DJPiPKwU&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1ToWIBV6p4nn-Q9NObjTVBUQ4DJPiPKwU&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1ScAFT8URqkmB6ZKeOrx69gUC5zKy7lu1&sz=w300
+    https://drive.google.com/thumbnail?id=1ScAFT8URqkmB6ZKeOrx69gUC5zKy7lu1&sz=w800
   labs: null
   hidden: 0
 - name: Social Engineering
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1sc6y7iOCnIxg0PlO4sMZhQh6tS3505ZH&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1sc6y7iOCnIxg0PlO4sMZhQh6tS3505ZH&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1KB8UrM5DBST-HZozCWQa7aF-FZHI16i2&sz=w300
+    https://drive.google.com/thumbnail?id=1KB8UrM5DBST-HZozCWQa7aF-FZHI16i2&sz=w800
   labs: null
   hidden: 0
 - name: Robotics and Intelligent Machines
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1aNTyQXTCJYp_RiK-3xY-ZvZqQo7m48AZ&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1aNTyQXTCJYp_RiK-3xY-ZvZqQo7m48AZ&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1d3o_GkSRxvGPut_62zWI2XbmM1aw3y1E&sz=w300
+    https://drive.google.com/thumbnail?id=1d3o_GkSRxvGPut_62zWI2XbmM1aw3y1E&sz=w800
   labs: null
   hidden: 0
 - name: Smart Cities Infrastructure and Environment
   info: Dummy content
-  image: >-
-    https://drive.google.com/thumbnail?id=1cf1xbZ9W-LvBI2Re4qY0be-xaiDIWsaR&sz=w300
+  themeImage: >-
+    https://drive.google.com/thumbnail?id=1cf1xbZ9W-LvBI2Re4qY0be-xaiDIWsaR&sz=w800
   popupBackground: >-
-    https://drive.google.com/thumbnail?id=1iu0VW70abLB81IdU4NyCtjBKi70mFy6m&sz=w300
+    https://drive.google.com/thumbnail?id=1iu0VW70abLB81IdU4NyCtjBKi70mFy6m&sz=w800
   labs: null
   hidden: 0
