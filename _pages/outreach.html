@@ -1,0 +1,67 @@
+---
+layout: page
+title: Outreach Events
+des: Overview of various outreach events such as invited talks, conferences, seminars, workshops, and schools.
+link: HOME / OUTREACH
+permalink: /outreach/
+---
+
+<style>
+  .background-about {
+    background-image: url("{{ site.baseurl }}/images/Outreach.png");
+  }
+
+  .event{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0px;
+  }
+
+  .event img{
+    width: 30%;
+  }
+
+  .event h3{
+    margin: 0;
+  }
+
+  @media (max-width: 500px) {
+    .event{
+      flex-direction: column;
+    }
+
+    .event img{
+      width: 100%;
+    }
+}
+</style>
+
+<div class="about-section">
+  <h1>Outreach Events</h1>
+</div>
+
+<hr>
+
+{% assign events = site.data.events | where: "hidden", 0 %}
+{% assign event_types = events | map: "type" | uniq %}
+
+{% for type in event_types %}
+  <div class="about-section">
+    <h1>{{ type }}</h1>
+    <div class="events">
+      {% assign filtered_events = events | where: "type", type %}
+      {% for event in filtered_events %}
+        <div class="event">
+          <img src="{{ event.tileBackground }}" alt="">
+          <div>
+          <h3>{{ event.name }}</h3>
+          <p>{{ event.description }}</p>
+          <p>{{ event.start }} - {{ event.end }}</p>
+        </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <hr>
+{% endfor %}
