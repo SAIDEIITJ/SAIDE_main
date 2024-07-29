@@ -1150,7 +1150,6 @@ flex-direction: row;
 }
 .member-cards {
     flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
-    border: 1px solid #ccc;
 	margin-left: 84px;
 	margin-bottom: 20px;
 	min-height: auto;
@@ -1164,7 +1163,6 @@ flex-direction: row;
 
 .member-card {
     flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
-    border: 1px solid #ccc;
 	margin-left: 84px;
 	margin-bottom: 20px;
 	min-height: auto;
@@ -1194,7 +1192,6 @@ flex-direction: row;
 	position: relative;
     top: 10px;
     left: -100px;
-    border: 1px solid #014f86; /* White border to stand out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	z-index: 1;
