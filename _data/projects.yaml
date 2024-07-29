@@ -1,13 +1,13 @@
-- timestamp: 7/25/2024 16:19:15
+- timestamp: 7/29/2024 16:23:11
   title: >-
     Slot machines in our pockets: Elucidating the neural effects of smartphone
     overuse on reward anticipation and reward processing
   fundingAgency: DBT/Wellcome Trust India Alliance
   startDate: 2/1/2024
-  endDate: 12/31/2028
+  endDate: 1/31/2029
   value: 1.09 Cr
   logo: >-
-    https://drive.google.com/thumbnail?id=1OotQ7ZcL36DXBlWQXbBtReSwTq7PBOEQ&sz=w300
+    https://drive.google.com/thumbnail?id=1cQOjbFUTrjchYCT72gtPgM9xK47tUgof&sz=w300
   details: >-
     We study the impact of smartphone use on the brain, focusing on the
     relationship between smartphone use and gambling. Does smartphone addiction
@@ -15,10 +15,29 @@
     possibility of using smartphones to study cognition in a more naturalistic
     way compared to traditional lab experiments.
   website: https://csndl-iitd.github.io/cndl-website/research/
-  manpower: 1
-  level1: Research Assistant
-  startDate1: 2/1/2025
-  endDate1: 1/31/2029
   pI: Saurabh Gandhi
-  undefined: null
   contactEmail: sgandhi@iitj.ac.in
+  identifier: IA/E/22/1/506779
+- timestamp: 7/29/2024 16:40:40
+  title: >-
+    Development of an oscillator network model of the brain that will enable
+    hypothesis-driven perturbation-response experiments for early detection of
+    neurodegenerative disorders
+  fundingAgency: Science and Engineering Research Board
+  startDate: 12/18/2023
+  endDate: 12/17/2025
+  value: 33 Lac
+  logo: >-
+    https://drive.google.com/thumbnail?id=15b1Qu6YjKLEuoGVREIynsp0pl5TsOApb&sz=w300
+  details: >-
+    We will develop a network model of the healthy and diseased human brain.
+    This model will be used to simulate brain stimulation paradigms for early
+    detection of neurodegenerative disorders. As internal connectivity of the
+    brain changes, its response (in terms of EEG) to external stimuli (such as
+    TMS) also changes. Can we detect changes in internal connectivity based on
+    the observed changes in EEG? What is the best way to do that? We will answer
+    these questions in this project.
+  website: https://csndl-iitd.github.io/cndl-website/research
+  pI: Saurabh Gandhi
+  contactEmail: sgandhi@iitj.ac.in
+  identifier: SRG/2023/000595
