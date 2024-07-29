@@ -43,7 +43,7 @@ permalink: /labs/
     {% assign labs_data = site.data.labs %}
     {% for member in labs_data %}
       {% if member.hidden == 0 %}
-      <div class="theme" data-bg-image="url('{{ member.popupBackground }}')" data-lab="{{ member.name }}" data-images="">         <img src="{{ member.image }}" alt="{{ member.name }}">
+      <div class="theme" data-bg-image="url('{{ member.popupBackground }}')" data-lab="{{ member.name }}" data-images="">         <img src="{{ member.labImage }}" alt="{{ member.name }}">
           <div class="theme-content">
             <h3 id="h3title">{{ member.name }}</h3>
             <div class="hidden">
