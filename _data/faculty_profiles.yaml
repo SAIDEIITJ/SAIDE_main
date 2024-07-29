@@ -79,12 +79,12 @@
   undefined: null
   type: Core
   hidden: 0
-- timestamp: 7/25/2024 16:24:21
+- timestamp: 7/29/2024 14:54:16
   emailAddress: ma@iitj.ac.in
   name: Manish Aggarwal
   position: Associate Professor
   office: 1811
-  Wwbsite: https://sites.google.com/view/sme-faculty/faculty/manish-agarwal
+  Wwbsite: https://sites.google.com/view/drmanishaggarwal
   department: Artificial Intelligence and Data Science
   centerIDRP: Human-Centered AI
   profilePic: >-
@@ -809,7 +809,7 @@
   theoreticalAIML: 'No'
   suggestions: null
   undefined: null
-  type: Core
+  type: Scientific Staff
   hidden: 0
 - timestamp: 7/25/2024 15:34:43
   emailAddress: asif@iitj.ac.in
