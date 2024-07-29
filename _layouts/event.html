@@ -136,13 +136,8 @@
             margin: 40px auto;
             color: #111;
         }
-    
-        .event-card {
-            cursor: pointer;
-        }
-    
-        .details-card,
-        .event-card {
+
+        .details-card{
             font-family: "Arial";
             padding: 1rem;
             background: #edf2f4;
@@ -172,38 +167,7 @@
             color: #6e6b80;
             font-size: 0.8rem;
         }
-    
-        .card__arrow {
-            position: absolute;
-            background: darkred;
-            padding: 0.4rem;
-            border-top-left-radius: 0.75rem;
-            border-bottom-right-radius: 0.75rem;
-            bottom: 0;
-            right: 0;
-            transition: 0.2s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .card__arrow svg {
-            transition: 0.2s;
-        }
-    
-        /* Hover effects */
-        .event-card:hover .card__title {
-            color: darkred;
-            text-decoration: underline;
-        }
-    
-        .event-card:hover .card__arrow {
-            background: #111;
-        }
-    
-        .event-card:hover .card__arrow svg {
-            transform: translateX(3px);
-        }
+
     
         @media (max-width: 768px) {
             .details {
@@ -413,7 +377,7 @@
         }
     
         .about_event{
-            padding: 0 3vw;
+            padding:0 20px 20px 20px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -477,74 +441,84 @@
     
     <div class="event-page">
         <div class="event-image" id="event-banner">
-            <p class="type">{{page.event.type}}</p>
+            <p class="type">{{ page.event.type }}</p>
             <div>
-                <h1 style="color: #fff;">{{page.event.name}}</h1>
-                <p>{{page.event.description}}</p>
+                <h1 style="color: #fff;">{{ page.event.name }}</h1>
+                <p>{{ page.event.description }}</p>
             </div>
-            <div class="register">REGISTER NOW</div>
+            <a href="{{ page.event.registration | strip }}" target="_blank">
+                <div class="register">REGISTER NOW</div>
+            </a>
         </div>
     
         <div class="info">
             <div class="details">
                 <div class="details-card">
                     <h3 class="details-card-title"><i class="fa-solid fa-location-dot"></i> Location</h3>
-                    <p class="details-card-content">{{page.event.location}}</p>
+                    <p class="details-card-content">{{ page.event.location }}</p>
                 </div>
                 <div class="details-card">
-                    <h3 class="details-card-title"><i class="fa-solid fa-user"></i> Date</h3>
-                    <p class="details-card-content">{{page.event.start}} - {{page.event.end}}</p>
-                </div>
-                <div class="event-card">
-                    <h3 class="card__title">Deadline</h3>
-                    <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="card__date">
-                        Registrations open from April 15, 2022 to April 20, 2022
-                    </div>
-                    <div class="card__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                        </svg>
-                    </div>
-                </div>
+                    <h3 class="details-card-title"><i class="fa-solid fa-calendar-days"></i> Date</h3>
+                    {% assign start_date_parts = page.event.start | split: '/' %}
+                    {% assign end_date_parts = page.event.end | split: '/' %}
+                    {% assign formatted_start_date = start_date_parts[2] | append: "-" | append: start_date_parts[0] | append: "-" | append: start_date_parts[1] %}
+                    {% assign formatted_end_date = end_date_parts[2] | append: "-" | append: end_date_parts[0] | append: "-" | append: end_date_parts[1] %}
+                    
+                    <p class="details-card-content">{{ formatted_start_date | date: "%B %d, %Y" }} - {{ formatted_end_date | date: "%B %d, %Y" }}</p>
+                                    </div>
+                                    {% if page.event.application %}
+                                    <div class="details-card">
+                                        <h3 class="details-card-title"><i class="fa-solid fa-location-dot"></i> Application details</h3>
+                                        <p class="details-card-content">{{ page.event.application }}</p>
+                                    </div>
+                                    {% endif %}
             </div>
     
             <h1 class="main-heading">About</h1>
             <div class="about_event">
                 <img src="https://orlandosydney.com/wp-content/uploads/2023/08/Conference-at-Darling-Harbour-Theatre-Interior-Photo%C2%B7-ICC-Sydney.-2500-seated-capacity.-Photography-By-orlandosydney.com-OS1_7156.jpg" alt="Event Image">
-                <p>{{page.event.description}}</p>
+                <p>{{ page.event.description }}</p>
             </div>
     
-            <h1 class="main-heading">Speakers</h1>
-            <div id="speakers">
-                <!-- Speakers will be dynamically added here -->
-            </div>
-    
-            <h1 class="main-heading">Event Schedule</h1>
-            <div class="schedule">
-                <div class="event-week">
-                    <h2 id="week-heading"></h2>
-                    <div>
-                        <button id="prev-week">Previous Week</button>
-                        <button id="next-week">Next Week</button>
-                        <button id="mobile-prev-week">&lt;</button>
-                        <button id="mobile-next-week">&gt;</button>   
-                    </div>
+            {% if page.event.people %}
+                <h1 class="main-heading">Speakers</h1>
+                <div id="speakers">
+                    <!-- Speakers will be dynamically added here -->
                 </div>
-                <ul id="events"></ul>
-            </div>
+            {% endif %}
     
-            <h1 class="main-heading">Organizers</h1>
-            <div id="organizers">
-                <!-- Organizers will be statically added here -->
-            </div>
+            {% if page.event.schedule %}
+                <h1 class="main-heading">Event Schedule</h1>
+                <div class="schedule">
+                    <div class="event-week">
+                        <h2 id="week-heading"></h2>
+                        <div>
+                            <button id="prev-week">Previous Week</button>
+                            <button id="next-week">Next Week</button>
+                            <button id="mobile-prev-week">&lt;</button>
+                            <button id="mobile-next-week">&gt;</button>
+                        </div>
+                    </div>
+                    <ul id="events"></ul>
+                </div>
+            {% endif %}
     
-            <h1 class="main-heading">Sponsors</h1>
-            <div id="sponsors" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 20px; padding-bottom: 30px;">
-                <!-- Sponsors will be dynamically added here -->
-            </div>
+            {% if page.event.people %}
+                <h1 class="main-heading">Organizers</h1>
+                <div id="organizers">
+                    <!-- Organizers will be statically added here -->
+                </div>
+            {% endif %}
+    
+            {% if page.event.sponsors %}
+                <h1 class="main-heading">Sponsors</h1>
+                <div id="sponsors" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 20px; padding-bottom: 30px;">
+                    <!-- Sponsors will be dynamically added here -->
+                </div>
+            {% endif %}
         </div>
     </div>
+    
     
     <script>
         const speakersUrl = "{{ page.event.people }}";

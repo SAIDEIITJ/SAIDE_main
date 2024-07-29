@@ -57,7 +57,10 @@ permalink: /outreach/
           <div>
           <h3>{{ event.name }}</h3>
           <p>{{ event.description }}</p>
-          <p>{{ event.start }} - {{ event.end }}</p>
+          {% assign start_date = event.start | split: '/' %}
+          {% assign end_date = event.end | split: '/' %}
+          
+          <p>{{ start_date[1] }}/{{ start_date[0] }}/{{ start_date[2] }} - {{ end_date[1] }}/{{ end_date[0] }}/{{ end_date[2] }}</p>
         </div>
         </div>
       {% endfor %}
