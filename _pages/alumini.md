@@ -9,10 +9,6 @@ permalink: /alumini/
 
 <div class="search-container student-section">
 <input type="text" id="search-bar" placeholder="Search by Research Area ...">
-<div class="srchbtn">
-<button class="dropbtn">Search
-</button>
-</div>
 </div>
 <div class="filter-indicators" style="margin-left: 15%;">
 <div class="filter-indicator"  data-filter="Ph.D.">

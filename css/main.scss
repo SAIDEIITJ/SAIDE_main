@@ -166,6 +166,29 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	max-width: 30%;
 	transition: transform 1s;
   }
+  .project-item{
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 1s;
+	max-width: 100%;
+	padding:15px;
+	border-top: 4px solid #a41e22;
+  }
+  .project-item:hover{
+	transform: scale(1.05);
+
+  }
+  .project-item {
+	cursor: pointer;
+	margin-bottom: 5px;
+  }
+  .project-details {
+	display: none;
+	margin-top: 20px;
+  }
   .theme:hover{
 	transform: scale(1.15);
 
@@ -181,6 +204,12 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   }
   .projects-content {
 	padding: 10px;
+  }
+  .project-title{
+
+	text-transform: none;
+	word-spacing: 0.5px;
+	letter-spacing: -0.5px;
   }
 
   .theme-content a{
@@ -252,7 +281,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(241, 241, 241);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.321);
 	width: 80%;
 	max-width: 850px;
@@ -376,6 +405,28 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	text-align: center;
 	border-bottom: 2px solid brown;
   }
+  #project-title{
+	margin-top: 10px;
+	color: $titlecolor;
+	text-align: left;
+	font-size: 1em;
+	text-transform: none;
+  }
+#popup-funding, #popup-pi{
+	// color: rgb(158, 54, 54);
+}
+#popup-join,#popup-website{
+	color: rgb(146, 37, 37);
+}
+
+  #popup-dates, #dates{
+	text-align: left;
+	// color: rgb(158, 54, 54);
+  }
+  #popup-amount{
+	text-align: end;
+  }
+
 
   .hidden{
 	display: none;
@@ -1035,6 +1086,13 @@ flex-direction: row;
 
 /* Adjust the gap between cards */
 }
+#factitle{
+	color: $textcolor;
+	display: flex;
+	position: relative;
+	width: 100%;
+	font-size: 1.5em;
+}
 .HOD-details{
 	width: 100%;
 	display: flex;
@@ -1150,6 +1208,7 @@ flex-direction: row;
 }
 .member-cards {
     flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
+    // border: 1px solid #ccc;
 	margin-left: 84px;
 	margin-bottom: 20px;
 	min-height: auto;
@@ -1163,6 +1222,7 @@ flex-direction: row;
 
 .member-card {
     flex: 0 0 calc(43% - 10px); /* Two cards per row, minus the gap */
+    border: 1px solid #ccc;
 	margin-left: 84px;
 	margin-bottom: 20px;
 	min-height: auto;
@@ -1192,6 +1252,7 @@ flex-direction: row;
 	position: relative;
     top: 10px;
     left: -100px;
+    border: 1px solid #014f86; /* White border to stand out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	z-index: 1;
@@ -1528,7 +1589,7 @@ table {
 .slider-container {
 
 	display: flex;
-	flex-direction:row;
+	flex-direction:column;
 	position:relative;
 	align-items: center;
 	width: 800px;

@@ -28,6 +28,7 @@ title: Update faculity
         labs:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=904691409&single=true&output=tsv',
         equipment:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1438311301&single=true&output=tsv',
         projects:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1727706618&single=true&output=tsv',
+        positions:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=1109715780&single=true&output=tsv',
         banners:'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfOI9X3ROPtgANe0F_yYO70G2ITT3ymyrCtriG3IZXfBeHpkr7yuTY7eshCf_hasVu5LLDV50I-sJF/pub?gid=510287448&single=true&output=tsv',
 
 
@@ -185,12 +186,20 @@ title: Update faculity
             "Logo":"logo",
             "Details":"details",
             "Website":"website",
-            "Manpower":"manpower",
-            "Level 1":"level1",
-            "Start date 1":"startDate1",
-            "End date 1":"endDate1",
             "PI":"pI",
             "Contact email":"contactEmail",
+            "Identifier":"identifier",
+
+        },
+        positions:{
+            "Timestamp":"timestamp",
+            "Identifier":"identifier",
+            "Type":"type",
+            "Start date":"startDate",
+            "End date":"enddate",
+            "Description":"description",
+            "Background":"background",
+            "Link":"link",
 
         },
         banners:{
@@ -321,6 +330,8 @@ function getGDriveURLnoSize(url) {
             $writepath += 'equipment.yaml';
         } else if ($resource === 'projects') {
             $writepath += 'projects.yaml';
+        } else if ($resource === 'positions') {
+            $writepath += 'positions.yaml';
         } else if ($resource === 'banners') {
             $writepath += 'banners.yaml';
         }

@@ -205,18 +205,252 @@ permalink: /faculty/
 {% endif %}
 {% endfor %}
 </div>
-
 <br>
 <div class="row" id="teamMembers">
 {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
 {% assign core_members = site.data.faculty_profiles | where: "type", "Core" %}
-{% assign non_core_members = site.data.faculty_profiles | where_exp: "item", "item.type != 'Core'" %}
+{% assign affiliated_members = site.data.faculty_profiles | where: "type", "Affiliated" %}
+{% assign adjunct_members = site.data.faculty_profiles | where: "type", "Adjunct" %}
+{% assign pop_members = site.data.faculty_profiles | where: "type", "Professor of Practice" %}
 {% assign core_members_sorted = core_members | sort: "name" %}
-{% assign non_core_members_sorted = non_core_members | sort: "name" %}
+{% assign affiliated_members_sorted = affiliated_members | sort: "name" %}
+{% assign adjunct_members_sorted = adjunct_members | sort: "name" %}
+{% assign pop_members_sorted = pop_members | sort: "name" %}
 
-{% assign all_members_sorted = core_members_sorted | concat: non_core_members_sorted %}
 
-{% for member in all_members_sorted %}
+{% assign all_members_sorted = core_members_sorted | concat: affiliated_members_sorted | concat: adjunct_members_sorted | concat: pop_members_sorted %}
+{% if core_members_sorted.size != 0 %}
+<h2 id = "factitle">Core</h2>
+{% endif %}
+{% for member in core_members_sorted %}
+  {% assign researchArea1 = member.researchArea1 %}
+  {% assign researchArea2 = member.researchArea2 %}
+  {% assign researchArea3 = member.researchArea3 %}
+  {% assign researchArea4 = member.researchArea4 %}
+
+  {% assign research_areas = '' %}
+
+  {% if researchArea1 != '' %}
+    {% assign research_areas = research_areas | append: researchArea1 %}
+  {% endif %}
+  {% if researchArea2 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea2 %}
+  {% endif %}
+  {% if researchArea3 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea3 %}
+  {% endif %}
+  {% if researchArea4 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  
+<div class="col-lg-6 col-md-6 col-sm-12 member-card" 
+     data-position="{{ member.type }}" 
+     data-name="{{ member.name }}" 
+     data-research-area="{{ research_areas }}" 
+     data-coe="{{ member.centerIDRP }}" 
+     data-title="{{ member.position }}" 
+     data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
+<!-- Member Details -->
+<div class="member-info">
+<div class="row fac_row">
+<div class="col-md-2 fac_img">
+<img src="{{ member.profilePic }}" class="member-img" id="profile_pic" alt="{{ member.name }}" />
+</div>
+<div class="col-md-10" style="padding-left: 10px;">
+<div class="member-details">
+<h4 id="fac-title">{{ member.name }}</h4>
+<p class="member-position">{{ member.position }}</p>
+<p class="member-position">
+{% if member.centerIDRP and member.type == 'Core Faculty' %}
+<strong>Center:</strong> {{ member.centerIDRP }}
+{% else %}
+<strong>Department:</strong> {{ member.department }}
+{% endif %}
+</p>
+</div>
+<div class="website">
+<a href="{{ member.Wwbsite }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
+<i class="fa-regular fa-hand-point-right"></i> Personal Website
+</a>
+</div>
+</div>
+</div>
+<div class="additional-info">
+<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.emailAddress }}</p>
+<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong> {{ member.office }}</p>
+{% if research_areas != "" %}
+<p class="member-bio"><strong>Research Area:</strong> {{ research_areas }}</p>
+{% endif %}
+</div>
+</div>
+</div>
+{% endfor %}
+
+{% if affiliated_members_sorted.size != 0 %}
+<h2 id = "factitle">Affiliated</h2>
+  {% endif %}
+{% for member in affiliated_members_sorted %}
+  {% assign researchArea1 = member.researchArea1 %}
+  {% assign researchArea2 = member.researchArea2 %}
+  {% assign researchArea3 = member.researchArea3 %}
+  {% assign researchArea4 = member.researchArea4 %}
+
+  {% assign research_areas = '' %}
+
+  {% if researchArea1 != '' %}
+    {% assign research_areas = research_areas | append: researchArea1 %}
+  {% endif %}
+  {% if researchArea2 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea2 %}
+  {% endif %}
+  {% if researchArea3 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea3 %}
+  {% endif %}
+  {% if researchArea4 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  
+<div class="col-lg-6 col-md-6 col-sm-12 member-card" 
+     data-position="{{ member.type }}" 
+     data-name="{{ member.name }}" 
+     data-research-area="{{ research_areas }}" 
+     data-coe="{{ member.centerIDRP }}" 
+     data-title="{{ member.position }}" 
+     data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
+<!-- Member Details -->
+<div class="member-info">
+<div class="row fac_row">
+<div class="col-md-2 fac_img">
+<img src="{{ member.profilePic }}" class="member-img" id="profile_pic" alt="{{ member.name }}" />
+</div>
+<div class="col-md-10" style="padding-left: 10px;">
+<div class="member-details">
+<h4 id="fac-title">{{ member.name }}</h4>
+<p class="member-position">{{ member.position }}</p>
+<p class="member-position">
+{% if member.centerIDRP and member.type == 'Core Faculty' %}
+<strong>Center:</strong> {{ member.centerIDRP }}
+{% else %}
+<strong>Department:</strong> {{ member.department }}
+{% endif %}
+</p>
+</div>
+<div class="website">
+<a href="{{ member.Wwbsite }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
+<i class="fa-regular fa-hand-point-right"></i> Personal Website
+</a>
+</div>
+</div>
+</div>
+<div class="additional-info">
+<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.emailAddress }}</p>
+<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong> {{ member.office }}</p>
+{% if research_areas != "" %}
+<p class="member-bio"><strong>Research Area:</strong> {{ research_areas }}</p>
+{% endif %}
+</div>
+</div>
+</div>
+{% endfor %}
+<br>
+{% if adjunct_members_sorted.size != 0 %}
+<h2 id = "factitle">Adjunct</h2>
+  {% endif %}
+{% for member in adjunct_members_sorted %}
+  {% assign researchArea1 = member.researchArea1 %}
+  {% assign researchArea2 = member.researchArea2 %}
+  {% assign researchArea3 = member.researchArea3 %}
+  {% assign researchArea4 = member.researchArea4 %}
+
+  {% assign research_areas = '' %}
+
+  {% if researchArea1 != '' %}
+    {% assign research_areas = research_areas | append: researchArea1 %}
+  {% endif %}
+  {% if researchArea2 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea2 %}
+  {% endif %}
+  {% if researchArea3 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea3 %}
+  {% endif %}
+  {% if researchArea4 != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  
+<div class="col-lg-6 col-md-6 col-sm-12 member-card" 
+     data-position="{{ member.type }}" 
+     data-name="{{ member.name }}" 
+     data-research-area="{{ research_areas }}" 
+     data-coe="{{ member.centerIDRP }}" 
+     data-title="{{ member.position }}" 
+     data-themes='{"aIandEconomics":"{{member.aIandEconomics}}","aIandEthics":"{{member.aIandEthics}}","aIdrivenHealth":"{{member.aIdrivenHealth}}","aIforTechnology":"{{member.aIforTechnology}}","behaviorCognitionBrain":"{{member.behaviorCognitionBrain}}","roboticsandIntelligentMachines":"{{member.roboticsandIntelligentMachines}}","smartCitiesInfraEnvironment":"{{member.smartCitiesInfraEnvironment}}","socialEngineering":"{{member.socialEngineering}}","theoreticalAIML":"{{member.theoreticalAIML}}"}'>
+<!-- Member Details -->
+<div class="member-info">
+<div class="row fac_row">
+<div class="col-md-2 fac_img">
+<img src="{{ member.profilePic }}" class="member-img" id="profile_pic" alt="{{ member.name }}" />
+</div>
+<div class="col-md-10" style="padding-left: 10px;">
+<div class="member-details">
+<h4 id="fac-title">{{ member.name }}</h4>
+<p class="member-position">{{ member.position }}</p>
+<p class="member-position">
+{% if member.centerIDRP and member.type == 'Core Faculty' %}
+<strong>Center:</strong> {{ member.centerIDRP }}
+{% else %}
+<strong>Department:</strong> {{ member.department }}
+{% endif %}
+</p>
+</div>
+<div class="website">
+<a href="{{ member.Wwbsite }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
+<i class="fa-regular fa-hand-point-right"></i> Personal Website
+</a>
+</div>
+</div>
+</div>
+<div class="additional-info">
+<p><strong><i class="fa-solid fa-envelope" style="color: rgb(76, 13, 13);"></i> </strong> {{ member.emailAddress }}</p>
+<p><strong><i class="fa-solid fa-phone" style="color: rgb(76, 13, 13);"></i></strong> {{ member.office }}</p>
+{% if research_areas != "" %}
+<p class="member-bio"><strong>Research Area:</strong> {{ research_areas }}</p>
+{% endif %}
+</div>
+</div>
+</div>
+{% endfor %}
+<br>
+{% if pop_members_sorted.size != 0 %}
+<h2 id = "factitle">Professor Of Practice</h2>
+{% endif %}
+{% for member in pop_members_sorted %}
   {% assign researchArea1 = member.researchArea1 %}
   {% assign researchArea2 = member.researchArea2 %}
   {% assign researchArea3 = member.researchArea3 %}

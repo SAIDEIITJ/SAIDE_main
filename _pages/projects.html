@@ -1,67 +1,60 @@
 ---
 layout: page
 title: Projects
-des: At IITJ Aide School, our projects are driven by a passion for innovation and a commitment to addressing real-world challenges. Here are some highlights of our ongoing projects.
+des: At IITJ AIDE School, our projects are driven by a passion for innovation and a commitment to addressing real-world challenges. Here are some highlights of our ongoing projects.
 link: HOME / RESEARCH
 permalink: /projects/
-
 ---
 
 <style>
-.background-about{
-background-image: url("{{ site.baseurl }}/images/Projects.png");
+.background-about {
+  background-image: url("{{ site.baseurl }}/images/Projects.png");
 }
+
 </style>
 
 <br>
 <section class="res-section">
   <div class="theme-container">
-    {% assign projects_data = site.data.projects %}
+    {% assign projects_data = site.data.projects | sort: 'startDate' | reverse %}
     {% for mem in projects_data %}
-        <div class="theme" data-bg-image="url('{{mem.popupBackground}}')">
-          <img src="{{ site.baseurl }}/images/digital.jpg" alt="{{mem.title}}">
-        <div class="projects-content">
-          <p class="project-dates">{{mem.startDate }} - {{mem.endDate }}</p>
-            <h3 id="grid-titleh3">{{mem.title}}</h3>
-            <div class="hidden">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div class="row" id="hidden-content">
-                            <h3 id="hidden-title">About</h3>
-                        </div>
-                      </div>
-                </div>
-                <br>
-                <div class="row" style="justify-content: center; display: flex;">
-                  <a href="#" id="popup-button">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
+      <div class="project-item" data-index="{{ forloop.index }}">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{ mem.logo }}" alt="{{ mem.title }}">
+          </div>
+          <div class="col-md-8">
+            <h2 id="project-title">{{ mem.title }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p id="popup-pi"><strong>PI:</strong> {{ mem.pI }}</p>
+            <p id="popup-funding"><strong>Sponsored by:</strong> {{ mem.fundingAgency }}</p>
+          </div>
+          <div class="col-md-3">
+            <p  id ="dates"><strong>Start Date - End Date</strong></p>
+            <p  id="popup-dates">{{ mem.startDate |  date: '%d-%m-%Y' }} - {{ mem.endDate |  date: '%d-%m-%Y' }}</p>
+          </div>
+          <div class="col-md-3">
+            <p id = "popup-amount"><strong>Amount:</strong> {{ mem.value }}</p>
+          </div>
+        </div>
+        <div class="project-details" id="project-details-{{ forloop.index }}">
+          <p>{{ mem.details }}</p>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <a id="popup-website" href="{{ mem.website }}" target="_blank"><i class="fa-regular fa-hand-point-right"></i> Link to website/document</a>
+              <br>
+              <a id="popup-join" href="path-to-positions-page" target="_blank"><i class="fa-regular fa-hand-point-right"></i> Join us!</a>
             </div>
           </div>
-      {% endfor %}
-    </div>
-
-
-
-
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
 <br>
 
-
-<div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <h2 id="popup-title"></h2>
-      <div id="popup-div"></div>
-       
-      <i class="fas fa-chevron-left arrow-left" id="prev-button"></i>
-      <i class="fas fa-chevron-right arrow-right" id="next-button"></i>
-    </div>
-</div>
-
-
 <script src="{{ site.baseurl }}/js/pages/projects.js"></script>
-
-  
-
-

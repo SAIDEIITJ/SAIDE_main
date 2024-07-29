@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () { 
-    core();
-    function core(){
-        document.querySelectorAll('.member-card').forEach(member => {
-            if (member.getAttribute('data-position') !== 'Core') {
-                member.style.display = 'none';
-            }
-        });
-    }
+    // core();
+    // function core(){
+    //     document.querySelectorAll('.member-card').forEach(member => {
+    //         if (member.getAttribute('data-position') !== 'Core') {
+    //             member.style.display = 'none';
+    //         }
+    //     });
+    // }
 
     document.querySelectorAll('.dropbtn').forEach(button => {
         button.addEventListener('click', function () {
