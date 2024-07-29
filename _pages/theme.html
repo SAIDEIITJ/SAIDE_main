@@ -69,13 +69,25 @@ permalink: /themes/
                         {% endif %}
                         
                         {% if theme_key %}
+                          {% assign faculty_names = "" %}
+                          
                           {% for faculty in site.data.faculty_profiles %}
                             {% if faculty[theme_key] == 'Yes' or faculty[theme_key] == 'Somewhat' %}
-                              <li>{{ faculty.name }}</li>
+                              {% assign faculty_names = faculty_names | append: faculty.name | append: ',' %}
+                            {% endif %}
+                          {% endfor %}
+                          
+                          {% assign faculty_names_array = faculty_names | split: ',' %}
+                          {% assign sorted_faculty_names = faculty_names_array | sort %}
+                      
+                          {% for faculty_name in sorted_faculty_names %}
+                            {% if faculty_name != "" %}
+                              <li>{{ faculty_name }}</li>
                             {% endif %}
                           {% endfor %}
                         {% endif %}
                       </ul>
+                      
                     </div>
                 </div>
                 <br>
