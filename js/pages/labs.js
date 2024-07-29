@@ -54,9 +54,13 @@ function openPopup(index) {
                 const imgDiv = document.createElement('div');
                 imgDiv.className = imgIndex === 0 ? 'carousel-item active' : 'carousel-item';
                 imgDiv.innerHTML = `
-                    <img src="${equip.imageSrc}" alt="${equip.name}">
-                    <h4>${equip.name}</h4>
-                    <p>${equip.description}</p>
+                <div class="carousel-content">
+                <img src="${equip.imageSrc}" alt="${equip.name}">
+                <div class="carousel-description">
+                  <h4>${equip.name}</h4>
+                  <p>${equip.description}</p>
+                </div>
+              </div>
                 `;
                 carouselInner.appendChild(imgDiv);
 

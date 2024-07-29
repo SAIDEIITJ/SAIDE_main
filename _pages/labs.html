@@ -51,7 +51,10 @@ permalink: /labs/
                 
               
                   <h3 id="lab-title">Contact</h3>
-                 <p> {{ member.contact }} | {{ member.extension }}</p>
+                 <p> 
+                  {{ member.contact }} | {{ member.extension }}
+               
+                 </p>
               </div>
               <br>
             </div>
@@ -77,6 +80,7 @@ permalink: /labs/
   </div>
 </div>
 
+
 <style>
   /* page-banner image */
   .background-about {
@@ -85,7 +89,7 @@ permalink: /labs/
   
   .popup{
     max-width: 85%;
-    height: 90%;
+    padding: 0;
   }
 
   #lab-title{
@@ -118,23 +122,37 @@ permalink: /labs/
     width: 100%; /* Ensure all items take full width */
   }
 
-  .carousel-item h4{
-    margin: 0;
+  .carousel-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 
-  .carousel-item p{
-    font-size: medium;
-    line-height: 1.4em;
-  }
+  .carousel-content img {
+  width: 50%; /* Image takes 50% of the width */
+  height: auto; /* Maintain aspect ratio */
+  align-self: flex-start;
+}
 
-  .carousel-item img {
-    width: 300px; /* Responsive image */
-    height: auto;
-    padding-top:10px ;
-  }
+.carousel-description {
+  width: 50%; /* Description takes 50% of the width */
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-description h4 {
+  margin: 0;
+}
+
+.carousel-description p {
+  font-size: medium;
+  line-height: 1.4em;
+}
+
 
   .carousel-dots {
-    text-align: left;
+    text-align: center;
     padding: 10px 0;
   }
 
@@ -156,41 +174,44 @@ permalink: /labs/
 
   @media (max-width: 600px) {
 
-  .popup{
-    height: 60%;
-    padding: 5px;
-  }
   .carousel-item p{
     display: none;
   }
 
-  .carousel-item image{
-    width: 50px;
-  }
 }
 
-  @media (max-width: 992px) {
 
-    .popup{
-    height: 80%;
-    padding: 5px;
+  @media (max-width: 900px) {
+    .carousel-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
+
+  .carousel-content img {
+    width: 100%;
+  align-self: flex-start;
+}
+
+.carousel-description {
+  width: 100%; /* Description takes 50% of the width */
+  display: flex;
+  flex-direction: column;
+}
 
 .carousel-item p{
 font-size: small;
 }
 
-.carousel-item image{
-width: 300px;}
-
+.carousel-description p{
+font-size: small;
+}
   }
 </style>
 <script>
-  // Render equipment.yaml data into JavaScript variable
   const equipmentData = {{ site.data.equipment | jsonify }};
-  console.log(equipmentData);
   
-  // Create a map to hold arrays of equipment details for each lab
   const labEquipmentMap = new Map();
 
   // Group equipment by lab
@@ -205,30 +226,25 @@ width: 300px;}
       description: equip.description
     };
 
-    // If the lab is not already in the map, create an empty array
     if (!labEquipmentMap.has(lab)) {
       labEquipmentMap.set(lab, []);
     }
 
-    // Push the equipment details into the corresponding lab's array
     labEquipmentMap.get(lab).push(equipmentDetails);
   });
 
-  // Convert the map to an object for easier access
   const labEquipmentObject = Object.fromEntries(labEquipmentMap);
-  console.log(labEquipmentObject); // Check the grouped equipment by lab
 
   document.addEventListener("DOMContentLoaded", function() {
-    // Select the div elements and set the data-equipment attribute based on lab
     const themeDivs = document.querySelectorAll('.theme');
     themeDivs.forEach(div => {
-      const labName = div.getAttribute('data-lab'); // Assuming you set data-lab attribute in your HTML
+      const labName = div.getAttribute('data-lab'); 
       if (labEquipmentObject[labName]) {
         div.setAttribute('data-equipment', JSON.stringify(labEquipmentObject[labName]));
       }
     });
 
-    console.log(themeDivs); // Check if the data-equipment attribute is set correctly
+
   });
 </script>
 
