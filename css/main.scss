@@ -310,6 +310,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   }
   #bullets li{
 	margin-top: -8px;
+	padding: 2px;
 }
 
   #hidden-content{
@@ -393,21 +394,20 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
    #hidden-content-2{
 	padding: 20px;
 	width: 100%;
-	font-size: 0.6em;
 	border: none;
 	}
 
 	#hidden-content-3{
 		padding: -10px;
 		width: 100%;
-		font-size: 0.6em;
+
 		border: none;
 	}
 
 	#hidden-content{
 		padding: 0;
 		width: 100%;
-		font-size: 0.6em;
+
 		border: none;
 		p{
 			line-height: 1.7;
@@ -429,7 +429,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	}
 
 	#popup-title{
-		font-size: 1.2em;
+	
 	}
 
   }
