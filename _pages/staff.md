@@ -42,7 +42,7 @@ permalink: /staff/
 <div class="member-info">
 <div class="row" style="display: flex; flex-direction: row;">
 <div class="col-nd-1">
-<img src="{{ member.image }}" class="member-img std" alt="{{ member.name }}" />
+<img src="{{ member.profilePic }}" class="member-img std" alt="{{ member.name }}" />
 </div>
 <div class="col-md-11">
 <div class="member-details studentdetails">
