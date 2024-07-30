@@ -10,7 +10,6 @@ permalink: /projects/
 .background-about {
   background-image: url("{{ site.baseurl }}/images/Projects.png");
 }
-
 </style>
 
 <br>
@@ -33,11 +32,12 @@ permalink: /projects/
             <p id="popup-funding"><strong>Sponsored by:</strong> {{ mem.fundingAgency }}</p>
           </div>
           <div class="col-md-3">
-            <p  id ="dates"><strong>Start Date - End Date</strong></p>
-            <p  id="popup-dates">{{ mem.startDate |  date: '%d-%m-%Y' }} - {{ mem.endDate |  date: '%d-%m-%Y' }}</p>
+            <p id="dates"><strong>Start Date - End Date</strong></p>
+            <p id="popup-dates">{{ mem.startDate | date: '%d-%m-%Y' }} - {{ mem.endDate | date: '%d-%m-%Y' }}</p>
           </div>
           <div class="col-md-3">
-            <p id = "popup-amount"><strong>Amount:</strong> {{ mem.value }}</p>
+            <p id="popup-amount"><strong>Amount:</strong> {{ mem.value }}</p>
+            <p id="popup-status"></p>
           </div>
         </div>
         <div class="project-details" id="project-details-{{ forloop.index }}">
