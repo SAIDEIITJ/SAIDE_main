@@ -9,6 +9,7 @@ permalink: /projectsPositions/
   .background-about{
     background-image: url("{{ site.baseurl }}/images/ProjectPositions.png");
   }
+
 </style>
 
 <div id="parent-box">
@@ -22,30 +23,69 @@ permalink: /projectsPositions/
 </div>
 </div>
 </div>
-<div class="application-section">
-
-<table id="admissionTable">
-<thead>
-
-<tr>
-<th style="text-align:left">Project Title</th>
-<th>Advertisement</th>
-<th>Application Deadline</th>
-<th>Application Link</th>
-</tr>
-</thead>
-<tbody id = "admissions-table">
-{% assign programs_data = site.data.programs  %}
-{% for member in programs_data %}
-<tr>
-<td style="text-align:left">{{member.name}}</td>
-<td><a href="{{ member.document }}" target="_blank" class="view-more" style="border:0;">View More</a></td>
-<td>{{member.deadline}}</td>
-
-<td><a href="{{ member.application }}" target="_blank" class="apply-now" style="border:0;text-decoration:none;"><i class="fa-regular fa-hand-point-right"></i> Apply Now</a></td>
-</tr>
+<br>
+<section class="res-section">
+<div class="theme-container">
+<div class="search-bar">
+<input type="text" id="search-keywords" placeholder="Search by background...">
+</div>
+<div class="custom-dropdown-wrapper">
+<div class="custom-dropdown selected" id="selected-type" data-value="Project Staff">
+Project Staff
+</div>
+<ul class="custom-dropdown-list" id="type-list">
+<li data-value="">All Positions</li>
+<li data-value="Project Staff">Project Staff</li>
+<li data-value="Post Doc">Post Doc</li>
+<li data-value="Internships">Internships</li>
+<li data-value="Design Credits">Design Credits</li>
+</ul>
+</div>
+<div class="custom-dropdown-wrapper">
+<div class="custom-dropdown selected" id="selected-background" data-value="">
+All Backgrounds
+</div>
+<ul class="custom-dropdown-list" id="background-list">
+<li data-value="">All Backgrounds</li>
+<li data-value="Computational">Computational</li>
+<li data-value="Physics">Physics</li>
+<li data-value="Biology">Biology</li>
+<li data-value="Maths">Maths</li>
+<li data-value="Electronics">Electronics</li>
+</ul>
+</div>
+<div id="positions-container">
+{% assign positions = site.data.positions | sort: 'startDate' | reverse %}
+{% for pos in positions %}
+{% assign project = site.data.projects | where: "identifier", pos.identifier | first %}
+<div class="project-item" data-index="{{ forloop.index }}" data-type="{{ pos.type }}" data-background="{{ pos.background }}" style="margin-bottom: 15px;">
+<div class="row">
+<div class="col-md-6">
+<h3 id="accordionTitle">{{ project.title }}</h3>
+</div>
+<div class="col-md-3">
+<p><strong>Start Date:</strong> {{ pos.startDate | date: '%d-%m-%Y' }}</p>
+<p><strong>End Date:</strong> {{ pos.enddate | date: '%d-%m-%Y' }}</p>
+</div>
+<div class="col-md-3">
+<p><strong>Position Type:</strong> {{ pos.type }}</p>
+</div>
+</div>
+<div class="project-details" id="project-details-{{ forloop.index }}">
+<div class="row">
+<div class="col-md-6">
+<p>{{ pos.description }}</p>
+</div>
+<div class="col-md-6"></div>
+<p><strong>Background:</strong> {{ pos.background }}</p>
+<p><strong>Link:</strong> <a href="{{ pos.link }}" target="_blank">{{ pos.link }}</a></p>
+</div>
+</div>
+</div>
 {% endfor %}
-</tbody>
-</table>
 </div>
 </div>
+</section>
+<br>
+</div>
+<script src="{{ site.baseurl }}/js/pages/positions.js"></script>
