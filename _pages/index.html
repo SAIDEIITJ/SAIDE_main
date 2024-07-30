@@ -27,7 +27,7 @@ permalink: /
                   <div class="card Events" id="{{ mem.id }}" style="background-image: url({{ mem.tileBackground }});">
                     <div class="inside">
                       {% if mem.start %}
-                        <p>{{ mem.start }}</p>
+                        <p>Date: {{ mem.start }}</p>
                       {% endif %}
                       <h1><a href="{{ site.baseurl }}/event/{{ mem.id }}" class="card-link" target="_blank">{{ mem.name }}</a></h1>
                     </div>

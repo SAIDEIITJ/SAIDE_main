@@ -4,8 +4,8 @@ title: Neuroscience with AI Technologies
 event: 
   id: NeuroEvent
   name: Neuroscience with AI Technologies
-  start: 2/12/2025
-  end: 2/15/2025
+  start: 12-02-2025
+  end: 15-02-2025
   description: Placeholder description.
   type: Conference
   banner: https://drive.google.com/open?id=1BgbT_NCNbQ2o9WI5mVLbWKY6K0fJkyMT
