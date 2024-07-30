@@ -87,11 +87,6 @@ permalink: /labs/
     background-image: url("{{ site.baseurl }}/images/Labs.png");
   }
   
-  .popup{
-    max-width: 85%;
-    padding: 0;
-  }
-
   #lab-title{
     font-size: 1.2em;
     font-family: sans-serif;
@@ -122,32 +117,51 @@ permalink: /labs/
     width: 100%; /* Ensure all items take full width */
   }
 
-  .carousel-content{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+  .carousel-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
-  .carousel-content img {
-  width: 50%; /* Image takes 50% of the width */
+.carousel-content img {
+  width: 100%; /* Image takes 50% of the width */
   height: auto; /* Maintain aspect ratio */
   align-self: flex-start;
 }
 
 .carousel-description {
-  width: 50%; /* Description takes 50% of the width */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 10px;
 }
 
-.carousel-description h4 {
-  margin: 0;
+.carousel-content:hover .carousel-description {
+  opacity: 1;
 }
 
 .carousel-description p {
   font-size: medium;
   line-height: 1.4em;
+  text-align: center;
+}
+
+p.equip-heading{
+  color: white;
+  font-size: 1.2em;
+  padding: 4px;
 }
 
 
@@ -172,42 +186,25 @@ permalink: /labs/
     background-color: #717171;
   }
 
-  @media (max-width: 600px) {
-
-  .carousel-item p{
-    display: none;
-  }
-
+  @media (max-width: 600px){
+    .carousel-description p {
+  display: none;
 }
 
-
-  @media (max-width: 900px) {
-    .carousel-content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .carousel-content img {
-    width: 100%;
-  align-self: flex-start;
-}
-
-.carousel-description {
-  width: 100%; /* Description takes 50% of the width */
-  display: flex;
-  flex-direction: column;
-}
-
-.carousel-item p{
-font-size: small;
-}
-
-.carousel-description p{
-font-size: small;
+.equip-heading{
+  color: white;
+  font-size: 1em;
+  padding: 4px;
 }
   }
+
+  @media  (max-width: 992px) {
+    .carousel-description p {
+  font-size: 1em;
+}
+  }
+
+
 </style>
 <script>
   const equipmentData = {{ site.data.equipment | jsonify }};

@@ -19,7 +19,7 @@ function openPopup(index) {
 
     currentIndex = index;
     popupTitle.textContent = title;
-    popupDiv.innerHTML = hiddenContent.innerHTML;
+    popupDiv.innerHTML = hiddenContent.innerHTML; 
     popup.style.display = 'block';
     popup.style.backgroundImage = bgImage;
 
@@ -57,7 +57,7 @@ function openPopup(index) {
                 <div class="carousel-content">
                 <img src="${equip.imageSrc}" alt="${equip.name}">
                 <div class="carousel-description">
-                  <h4>${equip.name}</h4>
+                  <div class="equip-heading">${equip.name}</div>
                   <p>${equip.description}</p>
                 </div>
               </div>
