@@ -5284,3 +5284,39 @@ body.is-loading {
 			}
 		}
 	}
+
+	.howto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+
+        div{
+            width: 60%;
+        }
+
+        @media (max-width:762px) {
+            div{
+                width: 95%;
+            }
+            
+        }
+
+        a{
+            color:rgb(185, 36, 36);
+        }
+
+        h1{
+            color: #6e0d10;
+        }
+
+        li{
+            color: #000000;
+            text-transform: none;
+        }
+
+        p{
+            padding: 10px;
+        }
+    }
