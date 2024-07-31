@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const projectItems = document.querySelectorAll('.project-item');
-    const searchInput = document.getElementById('search-keywords');
     const selectedType = document.getElementById('selected-type');
     const typeList = document.getElementById('type-list');
     const selectedBackground = document.getElementById('selected-background');

@@ -8,10 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const endDateParts = endDateText.split('-');
       const endDate = new Date(endDateParts[2], endDateParts[1] - 1, endDateParts[0]); // Parse the end date
 
-      // Determine the status based on the end date
       const status = today > endDate ? 'Completed' : 'Ongoing';
 
-      // Find the status element and update its content
       const statusElement = item.querySelector('#popup-status');
 
 

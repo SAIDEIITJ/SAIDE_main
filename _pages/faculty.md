@@ -10,13 +10,11 @@ permalink: /faculty/
 <br>
 
 <div class="search-container">
-<div class="row">
-<div class="col-md-12 bar-box">
+<div class="row search_filter">
+<div class="col-sm-12 col-md-12 col-lg-12 bar-box">
 <input type="text" id="search-bar" placeholder="Search by Research Area ...">
-<div class="">
 </div>
-</div>
-<div class="col-md-12" style="display: flex;justify-content: center;">
+<div class="col-md-12" class="filter-boxes" >
 <div class="dropdown2">
 <button class="dropbtn">Centers <i class="fa-solid fa-caret-down"></i></button>
 <div class="dropdown-content2 centers" data-category="coe">

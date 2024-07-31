@@ -28,7 +28,7 @@ permalink: /staff/
 </div>
 <br>
 <br>
-<div class="row" id="teamMembers">
+<div class="row" id="teamMembers" class = "student-div">
 {% assign faculty_members = site.data.faculty_profiles %}
 {% for member in faculty_members %}
 {% assign show_member = false %}

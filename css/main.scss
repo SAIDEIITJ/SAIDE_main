@@ -1357,14 +1357,41 @@ flex-direction: row;
 .member-details .member-bio {
     font-size: 0.9em;
 }
+.filter-boxes{
+	display: flex;
+	justify-content: center;
+	margin-left: 130px;
+}
+
+
 
 @media (max-width: 992px) {
     .member-card {
         flex: 1 0 calc(50% - 20px); /* Two cards per row on medium screens */
     }
+	.search_filter{
+		display: flex;
+		flex-direction: column;
+	}
+	.filter-boxes{
+		margin-left: 0;
+	}
+	// .bar-box{
+	// 	width: 70%  !important;
+	// }
 }
 
 @media (max-width: 768px) {
+	.filter-boxes{
+		display: flex;
+		justify-content: center;
+		margin-left: 0;
+	}
+	.bar-box{
+		width: fit-content;
+	}
+	
+	
     .member-card {
         flex: 1 0 100%; /* Full width on small screens */
     }
@@ -1507,7 +1534,7 @@ flex-direction: row;
 
   position: relative;
   display: inline;
-  width: 30%;
+  width: 46%;
   margin-bottom: 20px;
 }
 
@@ -4867,10 +4894,12 @@ ul #subbullet{
 
 
 // @media (max-width: 1200px) {
-//     .rectangular-div {
-//         width: 90%; /* Adjust width for medium screens */
-//         height: 70vh; /* Adjust height for medium screens */
-//     }
+// 	.indicators-bg {
+// 		top: 80%; 
+// 		right: 39%;
+// 		justify-content: center;
+// 	  }
+   
 // }
 
 @media (max-width: 992px) {
@@ -4878,8 +4907,8 @@ ul #subbullet{
 
 
 	.indicators-bg {
-	  top: 48%; /* Adjust position to bottom */
-	  right: 39%;
+	  top: 60%; /* Adjust position to bottom */
+	  right: 5%;
 	  justify-content: center;
 	}
 
@@ -4906,6 +4935,16 @@ ul #subbullet{
   
 	/* Optionally hide or adjust other elements as needed */
   }
+  @media (max-width: 768px) {
+
+
+
+	.indicators-bg {
+	  top: 50%; /* Adjust position to bottom */
+	  right: 40%;
+	  justify-content: center;
+	}
+}
 
 //Landing page 
 #banner {
