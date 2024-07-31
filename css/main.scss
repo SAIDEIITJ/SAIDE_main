@@ -1238,6 +1238,11 @@ flex-direction: row;
 	flex: 0 0 calc(48% - 10px); 
 }
 
+.student-row{
+	display: flex;
+	flex-direction: row;
+}
+
 .member-info {
 	padding-top: 15px;
 	padding-right: 10px;
@@ -1420,6 +1425,10 @@ flex-direction: row;
 	}
 	.studentCard{
 		margin-left: 9px;
+	}
+
+	.student-row{
+		flex-direction: column;
 	}
 
 	.student-section{

@@ -40,7 +40,7 @@ permalink: /staff/
 {% if show_member %}
 <div class="col-lg-6 col-md-6 col-sm-12 member-card studentCard" data-position="{{ member.type }}" data-name="{{ member.name }}">
 <div class="member-info">
-<div class="row" style="display: flex; flex-direction: row;">
+<div class="row student-row">
 <div class="col-nd-1">
 <img src="{{ member.profilePic }}" class="member-img std" alt="{{ member.name }}" />
 </div>
