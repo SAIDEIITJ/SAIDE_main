@@ -41,20 +41,24 @@ permalink: /labs/
 <section class="res-section">
   <div class="theme-container">
     {% assign labs_data = site.data.labs %}
+    {% assign faculty_profiles = site.data.faculty_profiles %}
     {% for member in labs_data %}
       {% if member.hidden == 0 %}
-      <div class="theme" data-bg-image="url('{{ member.popupBackground }}')" data-lab="{{ member.name }}" data-images="">         <img src="{{ member.labImage }}" alt="{{ member.name }}">
+        {% assign email = "" %}
+        {% for faculty in faculty_profiles %}
+          {% if faculty.name == member.contact %}
+            {% assign email = faculty.emailAddress %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        <div class="theme" data-bg-image="url('{{ member.popupBackground }}')" data-lab="{{ member.name }}" data-images="">
+          <img src="{{ member.labImage }}" alt="{{ member.name }}">
           <div class="theme-content">
             <h3 id="h3title">{{ member.name }}</h3>
             <div class="hidden">
               <div class="contact-row">
-                
-              
-                  <h3 id="lab-title">Contact</h3>
-                 <p> 
-                  {{ member.contact }} | {{ member.extension }}
-               
-                 </p>
+                <h3 id="lab-title">Contact</h3>
+                <p>{{ member.contact }} |{% if email != "" %}  {{ email }}{% endif %} | {{ member.extension }}</p>
               </div>
               <br>
             </div>
@@ -74,7 +78,7 @@ permalink: /labs/
       <div class="carousel-inner" id="carousel-inner"></div>
       <div class="carousel-dots" id="carousel-dots"></div> <!-- Dots container -->
     </div>
-    <i class="fas fa-chevron-left arrow-left" id="prev-button" ></i>
+    <i class="fas fa-chevron-left arrow-left" id="prev-button"></i>
     <i class="fas fa-chevron-right arrow-right" id="next-button"></i>
     <div id="popup-div"></div>
   </div>
