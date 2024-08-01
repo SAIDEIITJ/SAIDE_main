@@ -274,12 +274,13 @@ permalink: /faculty/
 <strong>Department:</strong> {{ member.department }}
 {% endif %}
 </p>
-</div>
 <div class="website">
 <a href="{{ member.Wwbsite }}" target="_blank" style="border: 0;color:#003049;font-size: 0.9em;">
 <i class="fa-regular fa-hand-point-right"></i> Personal Website
 </a>
 </div>
+</div>
+
 </div>
 </div>
 <div class="additional-info">

@@ -1103,3 +1103,20 @@ const otherImages = [
         'vision.png',
         // Add more image URLs as needed
     ];
+
+    .additional-info {
+	position: absolute;
+    background: #ecf7ff;
+    top: 15px;
+    left: 73px;
+    right: 0;
+    padding-bottom: 41PX;
+    z-index: 10; 
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
+	p{
+		padding-top: 5px;
+	}
+}

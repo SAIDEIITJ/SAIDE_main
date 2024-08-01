@@ -84,8 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(filters);
         filterMembers(filters);
     }
-
+       
     function filterMembers(filters) {
+        let isAnyFilterApplied = false;
+
+        // Check if any filter is applied
+        for (let key in filters) {
+            if (filters[key].length > 0) {
+                isAnyFilterApplied = true;
+                break;
+            }
+        }
         document.querySelectorAll('.member-card').forEach(member => {
             const researchArea = member.getAttribute('data-research-area').toLowerCase();
             const coe = member.getAttribute('data-coe').toLowerCase();
@@ -115,13 +124,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             member.style.display = isVisible ? 'block' : 'none';
         });
+        document.querySelectorAll('#factitle').forEach(heading => {
+            heading.style.display = isAnyFilterApplied ? 'none' : 'block';
+        });
+
         const HOD = document.querySelector('.member-cards');
-        // console.log("Length",filters.title.length);
-        if (filters.position.length === 0 && filters.title.length ===0 && filters.researchArea.length ===0 && filters.themes.length === 0 && filters.coe.length===0) {
+        if (!isAnyFilterApplied) {
             HOD.style.display = 'block';
-            core();
-        }
-        else{
+        } else {
             HOD.style.display = 'none';
         }
     }

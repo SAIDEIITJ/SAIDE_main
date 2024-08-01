@@ -193,14 +193,22 @@ $(document).ready(function() {
     });
 
     function changeBackground() {
-        $('.rectangular-div').css('background-image', `url(${Banner[currentIndex].link})`);
+        const nextImageUrl = Banner[currentIndex].link;
+        const img = new Image();
+        img.src = nextImageUrl;
+        img.onload = () => {
+            $('.rectangular-div').css('background-image', `url(${nextImageUrl})`);
+        };
+        img.onerror = () => {
+            console.error('Image failed to load:', nextImageUrl);
+        };
     }
-
+    
     function nextBackground() {
         currentIndex = (currentIndex + 1) % Banner.length;
         changeBackground();
     }
-
+    
     function prevBackground() {
         currentIndex = (currentIndex - 1 + Banner.length) % Banner.length;
         changeBackground();

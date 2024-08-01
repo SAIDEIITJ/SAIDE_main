@@ -864,7 +864,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
   .coe-checkbox {
     display: flex;
-	color: white;
+    color: white;
 }
 
 .coe-checkbox input[type="checkbox"] {
@@ -873,7 +873,6 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 .coe-checkbox label {
     cursor: pointer;
-
     padding-left: 35px; /* Space for custom checkbox */
     position: relative;
 }
@@ -883,17 +882,27 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
     display: inline-block;
     width: 22px;
     height: 22px;
-    border: 2px solid #dbdbdb; /* Brown color */
-    border-radius: 50%; /* Circular shape */
+    border: 2px solid #dbdbdb; /* Gray color */
+    border-radius: 0; /* Square shape */
     position: absolute;
     left: 0;
     top: 1px;
+    background-color: #fff; /* White background */
+    box-sizing: border-box;
 }
 
 .coe-checkbox input[type="checkbox"]:checked + label:before {
-    background-color: #ea3838;
-	border: 2px solid #dddddd;
+    background-color: #ea3838; /* Background color when checked */
+    border: 2px solid #ea3838; /* Border color when checked */
+}
 
+.coe-checkbox input[type="checkbox"]:checked + label:after {
+    content: '✔'; /* Checkmark character */
+    position: absolute;
+    left: 4px;
+    top: -2px;
+    font-size: 18px;
+    color: #fff; /* Color of the checkmark */
 }
 
   .search-container {
@@ -1320,7 +1329,7 @@ flex-direction: row;
 .member-card:hover .additional-info {
     max-height: 300px; /* Adjust based on content */
     opacity: 1;
-}
+} 
 
 .member-card:hover {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase the size of the card */
@@ -4901,6 +4910,63 @@ ul #subbullet{
 // 	  }
    
 // }
+
+@media (max-width: 2540px) {
+	.rectangular-div {
+		top:15%;
+		width: 75%;
+		padding-top: 37.3%;
+	}
+	.background-about{
+		padding-bottom: 30%; /* This maintains the aspect ratio */
+	}
+
+}
+@media (max-width: 1920px) {
+	.rectangular-div {
+		top:18%;
+	}
+	.background-about{
+		padding-bottom: 30%; /* This maintains the aspect ratio */
+	}
+	#one{
+		margin-top: 800px;
+	}
+}
+@media (max-width: 1600px) {
+	.background-about{
+		position: relative;
+		top: -5%;
+		left: 0;
+		width: 100%;
+		padding-bottom: 33%; /* This maintains the aspect ratio */
+		transition: background-image 0.5s ease; /* Initial background image */
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+	}
+	.rectangular-div {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
+		padding-top: 39.68%; /* For a 16:9 aspect ratio */
+		height: auto;
+		background-image: url("#{$baseurl}/bg.png"); /* Initial background image */
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		
+		transition: background-image 1s ease-in-out;
+		border: 5px solid #800f13a3; /* Optional border */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+	}
+
+	#one{
+		margin-top: 650px;
+	}
+}
 
 @media (max-width: 992px) {
 
