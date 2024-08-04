@@ -72,4 +72,23 @@ document.addEventListener('keydown', function(event) {
     }
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const lazyImages = document.querySelectorAll('.lazyload');
+
+    const imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                const image = entry.target;
+                image.src = image.dataset.src;
+                image.classList.remove('lazyload');
+                imageObserver.unobserve(image);
+            }
+        });
+    });
+
+    lazyImages.forEach(function(image) {
+        imageObserver.observe(image);
+    });
+});
+
   

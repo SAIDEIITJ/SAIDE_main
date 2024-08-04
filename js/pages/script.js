@@ -5,6 +5,10 @@ $(document).ready(function() {
         'iit.png',
         'logo_bg.png',
         'Logo_IITJ.png',
+        'iitj.png',
+        'coes.png',
+        'infra.png',
+        'brain.png',
         'PhD.png',
         'MSR.png',
         'MTech.png',
@@ -43,16 +47,6 @@ $(document).ready(function() {
 
         'Mission.png',
         'Outreach.png',
-    ];
-
-   
-    const otherImages = [
-        'iitj.png',
-        'coes.png',
-        'infra.png',
-        'brain.png',
-
-
         'AIhealth.png',
 
         'btech1.png',
@@ -70,7 +64,7 @@ $(document).ready(function() {
         'intelliInfra.png',
         'Cognitive.svg',
         'DeepLearning.svg',
-        'economics.svg',
+        'Economics.svg',
         'Intelligence.svg',
         'NLP.svg',
         'Robotics.svg',
@@ -96,6 +90,11 @@ $(document).ready(function() {
         '7.gif',
         '8.gif',
         '9.gif'
+    ];
+
+   
+    const otherImages = [
+ 
         // Add more image URLs as needed
     ];
 
@@ -176,7 +175,6 @@ $(document).ready(function() {
 
             preloadNextBatch(Banner, 4, 3, true);
             preloadNextBatch(pagebanners, 4, pagebanners.length);
-            preloadNextBatch(otherImages, 0, otherImages.length);
 
             $('#nextBtn').click(function() {
                 clearInterval(intervalId);

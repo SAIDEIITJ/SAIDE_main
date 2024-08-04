@@ -52,7 +52,7 @@ permalink: /labs/
           {% endif %}
         {% endfor %}
         <div class="theme" data-bg-image="url('{{ member.popupBackground }}')" data-lab="{{ member.name }}" data-images="">
-          <img src="{{ member.labImage }}" alt="{{ member.name }}">
+          <img src="{{ member.labImage }}" data-src="{{member.labImage}}" alt="{{ member.name }}" class="lazyload">
           <div class="theme-content">
             <h3 id="h3title">{{ member.name }}</h3>
             <div class="hidden">

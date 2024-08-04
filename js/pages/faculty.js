@@ -16,6 +16,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('search-bar').addEventListener('input', function () {
         const searchTerm = this.value.toLowerCase();
+
+
+        // Set isAnyFilterApplied to true if there's any input in the search bar
+        let isAnyFilterApplied = false;
+        if (searchTerm.length > 0) {
+            isAnyFilterApplied = true;
+        } else {
+            // If search term is cleared, check other filters
+            isAnyFilterApplied = false;
+            for (let key in filters) {
+                if (filters[key].length > 0) {
+                    isAnyFilterApplied = true;
+                    break;
+                }
+            }
+        }
+        document.querySelectorAll('#factitle').forEach(heading => {
+            heading.style.display = isAnyFilterApplied ? 'none' : 'block';
+        });
+
+        const HOD = document.querySelector('.member-cards');
+        if (!isAnyFilterApplied) {
+            HOD.style.display = 'block';
+        } else {
+            HOD.style.display = 'none';
+        }
+       
+    
         filterUsingBar(searchTerm);
     });
 
@@ -137,6 +165,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function filterUsingBar(filter) {
+
+    
         document.querySelectorAll('.member-card').forEach(member => {
             const researchArea = member.getAttribute('data-research-area').toLowerCase();
             if (researchArea.includes(filter)) {
