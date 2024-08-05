@@ -45,9 +45,8 @@ All Positions
 <div class="custom-dropdown selected" id="selected-background" data-value="">
 All Backgrounds
 </div>
-
 <ul class="custom-dropdown-list" id="background-list">
-  <li data-value="">All Backgrounds</li>
+<li data-value="">All Backgrounds</li>
 
   {% assign unique_backgrounds_list = "" %}
   {% assign backgrounds_set = "" %}
@@ -70,16 +69,6 @@ All Backgrounds
     {% endif %}
   {% endfor %}
 </ul>
-
-
-
-
-
-
-
-
-
-
 </div>
 <div id="positions-container">
 {% assign positions = site.data.positions | sort: 'startDate' | reverse %}
@@ -105,7 +94,7 @@ All Backgrounds
 </div>
 <div class="col-md-6"></div>
 <p><strong>Background:</strong> {{ pos.background }}</p>
-<p><strong>Link:</strong> <a href="{{ pos.link }}" target="_blank">{{ pos.link }}</a></p>
+<p><strong>Link:</strong> <a href="{{ pos.link }}" target="_blank" id= "titleh2" style="border: 0;">{{ pos.link }}</a></p>
 </div>
 </div>
 </div>

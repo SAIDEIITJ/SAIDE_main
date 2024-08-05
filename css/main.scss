@@ -2175,9 +2175,46 @@ table {
 	 height: 550px;
 	  float:left
 
+	  
+  }
+  @media (max-width: 920px) {
+	.slider-container{
+		height: 550px;
+		width: 650px;
+		margin: 4px;
+	}
+	.campus-pic{
+		height: 249px;
+	}
+
   }
 
   @media (max-width: 768px) {
+	.slider-container{
+		height: 550px;
+		width:500px;
+		margin: 4px;
+	}
+	.campus-pic{
+		height: 249px;
+	}
+
+  }
+  
+  @media (max-width: 567px) {
+	.slider-container{
+		height: 500px;
+		width:400px;
+		margin: 4px;
+	}
+	.campus-pic{
+		height: 249px;
+	}
+
+  }
+
+
+  @media (max-width: 440px) {
 	.slider-container{
 		height: 438px;
 		width: 330px;
@@ -2574,6 +2611,7 @@ table {
     color: $textcolor;
 	 font-family: "Montserrat", sans-serif;
 	 text-transform: none;
+	 text-decoration: underline;
 }
 
 p {

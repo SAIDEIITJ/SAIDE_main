@@ -68,11 +68,27 @@ permalink: /intern/
 </div>
 <ul class="custom-dropdown-list" id="background-list">
 <li data-value="">All Backgrounds</li>
-<li data-value="Computational">Computational</li>
-<li data-value="Physics">Physics</li>
-<li data-value="Biology">Biology</li>
-<li data-value="Maths">Maths</li>
-<li data-value="Electronics">Electronics</li>
+
+  {% assign unique_backgrounds_list = "" %}
+  {% assign backgrounds_set = "" %}
+
+  {% for position in site.data.positions %}
+    {% assign backgrounds = position.background | split: ',' %}
+    {% for background in backgrounds %}
+      {% assign background = background | strip %}
+      {% unless backgrounds_set contains background %}
+        {% assign backgrounds_set = backgrounds_set | append: background | append: ',' %}
+        {% assign unique_backgrounds_list = unique_backgrounds_list | append: background | append: ',' %}
+      {% else %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign unique_backgrounds_array = unique_backgrounds_list | split: ',' | uniq | sort %}
+  {% for background in unique_backgrounds_array %}
+    {% if background != "" %}
+      <li data-value="{{ background }}">{{ background }}</li>
+    {% endif %}
+  {% endfor %}
 </ul>
 </div>
 <div id="positions-container">
@@ -99,7 +115,7 @@ permalink: /intern/
 </div>
 <div class="col-md-6"></div>
 <p><strong>Background:</strong> {{ pos.background }}</p>
-<p><strong>Link:</strong> <a href="{{ pos.link }}" target="_blank">{{ pos.link }}</a></p>
+<p><strong>Link:</strong> <a href="{{ pos.link }}" target="_blank" id= "titleh2" style="border: 0;">{{ pos.link }}</a></p>
 </div>
 </div>
 </div>
