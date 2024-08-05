@@ -30,8 +30,8 @@ permalink: /projectsPositions/
 <input type="text" id="search-keywords" placeholder="Search by background...">
 </div>
 <div class="custom-dropdown-wrapper">
-<div class="custom-dropdown selected" id="selected-type" data-value="Project Staff">
-Project Staff
+<div class="custom-dropdown selected" id="selected-type" data-value="">
+All Positions
 </div>
 <ul class="custom-dropdown-list" id="type-list">
 <li data-value="">All Positions</li>

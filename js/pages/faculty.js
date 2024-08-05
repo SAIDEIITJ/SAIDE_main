@@ -25,12 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             // If search term is cleared, check other filters
             isAnyFilterApplied = false;
-            for (let key in filters) {
-                if (filters[key].length > 0) {
-                    isAnyFilterApplied = true;
-                    break;
-                }
-            }
         }
         document.querySelectorAll('#factitle').forEach(heading => {
             heading.style.display = isAnyFilterApplied ? 'none' : 'block';

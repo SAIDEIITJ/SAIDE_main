@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (status == 'Completed'){
           if (statusElement) {
-            statusElement.innerHTML = `<strong>Status:<i class="fa-solid fa-check" style="color: #63E6BE;"></i></strong> ${status}`;
+            statusElement.innerHTML = `<strong>Status: <i class="fa-solid fa-check" style="color: #63E6BE;"></i></strong> ${status}`;
         }
       }
       else {
           if (statusElement) {
-            statusElement.innerHTML = `<strong>Status:<i class="fa-solid fa-circle" style="color: #FFD43B;"></i></strong> ${status}`;
+            statusElement.innerHTML = `<strong>Status: <i class="fa-solid fa-circle" style="color: #FFD43B;"></i></strong> ${status}`;
         }
 
       }

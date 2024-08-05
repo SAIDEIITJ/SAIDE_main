@@ -189,10 +189,15 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	display: none;
 	margin-top: 20px;
   }
+
+  .project-img{
+	width: 100%;
+  }
   .theme:hover{
 	transform: scale(1.15);
 
   }
+
   
   .theme img {
 	width: 100%;
@@ -352,7 +357,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	//   background-color: #f8f7f7;
 	  margin-left: 3px;
 	  border-radius: 10px;
-	  border:1px solid rgb(210, 210, 210);
+	//   border:1px solid rgb(210, 210, 210);
 	font-weight: 600;
 	p{
 		margin-top: -8px;
@@ -365,7 +370,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	  margin-left: 10px;
 	  width: 40%;
 	  border-radius: 10px;
-	  border:1px solid rgb(210, 210, 210);
+	//   border:1px solid rgb(210, 210, 210);
 
   }
 
@@ -380,7 +385,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	//  background-color: #f8f7f7;
 	 margin-top: 11px;
 	 border-radius: 10px;
-	 border:1px solid rgb(210, 210, 210);
+	//  border:1px solid rgb(210, 210, 210);
 	 font-weight: 600;
  }
 

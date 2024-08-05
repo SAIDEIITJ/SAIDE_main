@@ -19,10 +19,10 @@ permalink: /projects/
     {% for mem in projects_data %}
       <div class="project-item" data-index="{{ forloop.index }}">
         <div class="row">
-          <div class="col-md-4">
-            <img src="{{ mem.logo }}" alt="{{ mem.title }}">
+          <div class="col-md-2">
+            <img src="{{ mem.logo }}" alt="{{ mem.title }}" class="project-img">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-10">
             <h2 id="project-title">{{ mem.title }}</h2>
           </div>
         </div>

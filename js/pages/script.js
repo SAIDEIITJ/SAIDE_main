@@ -235,17 +235,12 @@ let scrollEInterval = null;
 let scrollLength = 418; 
 let scrollELength = 575; 
 
-
 function showNews() {
-
-    const container = document.getElementById("cardsContainer");
     scrollContainerToStart(); // Scroll container to the start
     restartScrollInterval();
 }
 
 function showEvents() {
-
-    const container = document.getElementById("EcardsContainer");
     scrollEContainerToStart(); // Scroll container to the start
     restartScrollEInterval();
 }
@@ -253,102 +248,97 @@ function showEvents() {
 function scrollELeft() {
     const container = document.getElementById("EcardsContainer");
     container.scrollTo({
-        left: container.scrollLeft- scrollELength, // Adjust scroll amount as needed
-        behavior: 'smooth' // Smooth scroll behavior
+        left: container.scrollLeft - scrollELength,
+        behavior: 'smooth'
     });
 }
-// Function to smoothly scroll the event container down
+
 function scrollERight() {
     const container = document.getElementById("EcardsContainer");
-    container.scrollTo({
-        left: container.scrollLeft + scrollELength, // Adjust scroll amount as needed
-        behavior: 'smooth' // Smooth scroll behavior
-    });
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+    if (container.scrollLeft + scrollELength >= maxScrollLeft) {
+        container.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+        });
+    } else {
+        container.scrollTo({
+            left: container.scrollLeft + scrollELength,
+            behavior: 'smooth'
+        });
+    }
 }
 
-
-
-// Function to scroll the container to the left
 function scrollLeft() {
     const container = document.getElementById("cardsContainer");
     container.scrollTo({
-        left: container.scrollLeft - scrollLength, // Adjust scroll amount as needed
-        behavior: 'smooth' // Smooth scroll behavior
+        left: container.scrollLeft - scrollLength,
+        behavior: 'smooth'
     });
 }
 
-// Function to smoothly scroll the container to the right
 function scrollRight() {
     const container = document.getElementById("cardsContainer");
-    container.scrollTo({
-        left: container.scrollLeft + scrollLength, // Adjust scroll amount as needed
-        behavior: 'smooth' // Smooth scroll behavior
-    });
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
 
+    if (container.scrollLeft + scrollLength >= maxScrollLeft) {
+        container.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+        });
+    } else {
+        container.scrollTo({
+            left: container.scrollLeft + scrollLength,
+            behavior: 'smooth'
+        });
+    }
 }
 
-// Function to scroll the container to the start
 function scrollContainerToStart() {
     const container = document.getElementById("cardsContainer");
     container.scrollLeft = 0;
 }
+
 function scrollEContainerToStart() {
     const Econtainer = document.getElementById("EcardsContainer");
-   Econtainer.scrollLeft = 0;
+    Econtainer.scrollLeft = 0;
 }
 
 function restartScrollInterval() {
-    // Clear previous interval if exists
     if (scrollInterval) {
         clearInterval(scrollInterval);
     }
-    // Set new interval for scrolling every 4 seconds
-    scrollInterval = setInterval(scrollRight, 4000); // Adjust timing as needed
+    scrollInterval = setInterval(scrollRight, 4000);
 }
 
 function restartScrollEInterval() {
-    // Clear previous interval if exists
     if (scrollEInterval) {
         clearInterval(scrollEInterval);
     }
-    // Set new interval for scrolling every 4 seconds
-    scrollEInterval = setInterval(scrollERight, 4000); // Adjust timing as needed
+    scrollEInterval = setInterval(scrollERight, 4000);
 }
 
-
-// Event listeners for scroll buttons
 $('#scrollLeftButton').click(function() {
-    scrollLeft(); // Change to the next background
+    scrollLeft();
 });
 
-// Event listener for previous button click
 $('#scrollRightButton').click(function() {
-    scrollRight(); // Change to the previous background
+    scrollRight();
 });
 
 $('#scrollELeftButton').click(function() {
-    scrollELeft(); // Change to the next background
+    scrollELeft();
 });
 
-// Event listener for previous button click
 $('#scrollERightButton').click(function() {
-    scrollERight(); // Change to the previous background
+    scrollERight();
 });
-
-restartScrollInterval();
-restartScrollEInterval();
-
- 
-
 
 document.addEventListener("DOMContentLoaded", () => {
     var deviceWidth = window.innerWidth;
-    // Determine which scroll length to use based on device width
     scrollLength = deviceWidth <= 768 ? 380 : 418;
     scrollELength = deviceWidth <= 768 ? 575 : 575;
     showNews();
     showEvents();
 });
-
-
-
