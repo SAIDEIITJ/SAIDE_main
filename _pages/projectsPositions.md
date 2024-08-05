@@ -45,14 +45,41 @@ All Positions
 <div class="custom-dropdown selected" id="selected-background" data-value="">
 All Backgrounds
 </div>
+
 <ul class="custom-dropdown-list" id="background-list">
-<li data-value="">All Backgrounds</li>
-<li data-value="Computational">Computational</li>
-<li data-value="Physics">Physics</li>
-<li data-value="Biology">Biology</li>
-<li data-value="Maths">Maths</li>
-<li data-value="Electronics">Electronics</li>
+  <li data-value="">All Backgrounds</li>
+
+  {% assign unique_backgrounds_list = "" %}
+  {% assign backgrounds_set = "" %}
+
+  {% for position in site.data.positions %}
+    {% assign backgrounds = position.background | split: ',' %}
+    {% for background in backgrounds %}
+      {% assign background = background | strip %}
+      {% unless backgrounds_set contains background %}
+        {% assign backgrounds_set = backgrounds_set | append: background | append: ',' %}
+        {% assign unique_backgrounds_list = unique_backgrounds_list | append: background | append: ',' %}
+      {% else %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign unique_backgrounds_array = unique_backgrounds_list | split: ',' | uniq | sort %}
+  {% for background in unique_backgrounds_array %}
+    {% if background != "" %}
+      <li data-value="{{ background }}">{{ background }}</li>
+    {% endif %}
+  {% endfor %}
 </ul>
+
+
+
+
+
+
+
+
+
+
 </div>
 <div id="positions-container">
 {% assign positions = site.data.positions | sort: 'startDate' | reverse %}

@@ -281,6 +281,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   }
 
   .popup {
+	border-top: 4px solid #a41e22;
 	display: none;
 	position: fixed;
 	top: 50%;
@@ -1502,13 +1503,19 @@ flex-direction: row;
 		margin-top: -46px;
 
 	}
-	#admissions-table{
-		font-size: 0.6em;
-	}
-	#admissionTable{
-		margin-left: -3px;
-	}
 }
+  /* Responsive table */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #admissionTable {
+      min-width: 600px; /* Adjust as needed to ensure scroll */
+    }
+  }
 
 // join-us
 .accordion-header {
