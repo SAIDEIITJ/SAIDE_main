@@ -6,7 +6,7 @@
   description: >-
     Smartphone app development for tracking user interactions and physiological
     data.
-  background: Computational, Electronics, AIML, Software
+  background: Computational,Electronics,AIML,Software
   link: https://csndl-iitd.github.io/cndl-website/join/
 - timestamp: 7/29/2024 16:43:46
   identifier: SRG/2023/000595
@@ -17,5 +17,5 @@
     The student will use an existing whole-brain network model of a mouse brain,
     and study how alterations in its connectivity parameters changes the
     likelihood of epileptic seizures.
-  background: Quantitative, Computational, Physics
+  background: Quantitative,Computational,Physics
   link: https://csndl-iitd.github.io/cndl-website/research/
