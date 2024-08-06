@@ -28,6 +28,7 @@ permalink: /postdocPositions/
 <div class="search-bar">
 <input type="text" id="search-keywords" placeholder="Search by background...">
 </div>
+<div class="custom-box">
 <div class="custom-dropdown-wrapper">
 <div class="custom-dropdown selected" id="selected-type" data-value="Post Doc">
   Post Doc
@@ -69,6 +70,7 @@ All Backgrounds
     {% endif %}
   {% endfor %}
 </ul>
+</div>
 </div>
 <div id="positions-container">
 {% assign positions = site.data.positions | sort: 'startDate' | reverse %}

@@ -1551,6 +1551,12 @@ flex-direction: row;
   .search-bar, .filters {
     margin-bottom: 20px;
   }
+  .custom-box{
+	width: 71%;
+    display: flex;
+    flex-direction: row;
+    gap: inherit;
+  }
   .custom-dropdown-wrapper {
 
   position: relative;
@@ -1597,6 +1603,18 @@ flex-direction: row;
   max-height: 200px; /* Optional: limit the height */
   overflow-y: auto; /* Optional: scroll if too many items */
 }
+@media (max-width: 768px) {
+	.custom-dropdown-list {
+
+		left:5px;
+
+		width: 129%;
+
+	  }
+	
+   
+  }
+
 
 .custom-dropdown-list li {
   padding: 10px;
