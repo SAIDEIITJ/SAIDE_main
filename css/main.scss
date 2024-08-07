@@ -1099,6 +1099,11 @@ flex-direction: row;
     display: flex;
     flex-wrap: wrap;
 
+	.row{
+		display: flex;
+		flex-basis: 0;
+	}
+
 /* Adjust the gap between cards */
 }
 #factitle{
