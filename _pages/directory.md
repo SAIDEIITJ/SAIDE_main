@@ -12,6 +12,7 @@ permalink: /directory/
 
 <br>
 <div class="alphabet-links">
+<a href="#" class="alphabet-link" id="reset-link"><i class="fa-solid fa-repeat"></i></a>
 <a href="#" class="alphabet-link">A</a>
 <a href="#" class="alphabet-link">B</a>
 <a href="#" class="alphabet-link">C</a>
@@ -65,7 +66,7 @@ permalink: /directory/
 </tbody>
 </table>
 
-<div class="pagination-container">
+<div class="pagination-container" id="pag">
 <ul id="pagination" class="pagination"></ul>
 </div>
 

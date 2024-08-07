@@ -1,13 +1,26 @@
 const perPage = 15;
 let currentPage = 1;
+
+
+function showAllEntries() {
+    const rows = document.querySelectorAll(".member-row");
+    rows.forEach(row => row.style.display = "");
+    paginateEntries(currentPage);
+}
+
 function searchEntries() {
     const searchText = document.getElementById("search-bar").value.trim().toUpperCase();
     const rows = document.querySelectorAll(".member-row");
     rows.forEach(row => {
         const name = row.querySelector(".name").textContent.toUpperCase();
         row.style.display = name.includes(searchText) ? "" : "none";
-        // paginateEntries();
     });
+    if (searchText) {
+        document.getElementById("pagination").style.display = "none";
+    } else {
+        document.getElementById("pagination").style.display = "";
+        showAllEntries();
+    }
 }
 function paginateEntries(page = 1) {
     const rows = document.querySelectorAll(".member-row");
@@ -46,15 +59,22 @@ function filterEntriesByAlphabet(alphabet) {
         const name = row.querySelector(".name").textContent.toUpperCase();
         row.style.display = name.startsWith(alphabet) ? "" : "none";
     });
-    // paginateEntries();
+    document.getElementById("pagination").style.display = "none";
 }
 
 const alphabetLinks = document.querySelectorAll(".alphabet-link");
+
 alphabetLinks.forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault();
-        const selectedAlphabet = this.textContent;
-        filterEntriesByAlphabet(selectedAlphabet);
+
+        if (this.id === "reset-link") {
+            document.getElementById("pagination").style.display = "";
+            showAllEntries();
+        } else {
+            const selectedAlphabet = this.textContent;
+            filterEntriesByAlphabet(selectedAlphabet);
+        }
     });
 });
-paginateEntries(currentPage);
+showAllEntries();
