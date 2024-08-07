@@ -18,9 +18,9 @@ permalink: /projectsPositions/
 
 <h1 style="text-transform: none;">Project positions at School of Artificial Intelligence & Data Science</h1>
 <div class="row">
-<div class="col-md-9">
+
 <p>IIT Jodhpur invites applications for project-linked research to various funded projects in specific disciplines and interdisciplinary areas. </p>
-</div>
+
 </div>
 </div>
 <br>
