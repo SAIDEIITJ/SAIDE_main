@@ -523,7 +523,7 @@
     <script>
         const speakersUrl = "{{ page.event.people }}";
         const sponsorsUrl = "{{ page.event.sponsors }}";
-        const apiKey = 'AIzaSyB4QT4d_LGwVXUHwBndy5_A_pvu5S4hWag';
+        const apiKey = 'AIzaSyASD1vvFqsUwNN6uvmQGE6ILlbNYlQd3y0 ';
         const calendarId = '{{ page.event.schedule }}';
     
         // Utility functions
@@ -630,7 +630,7 @@ setBackgroundImage();
      
         async function fetchEvents() {
             const now = new Date().toISOString();
-            const url = `https://www.googleapis.com/calendar/v3/calendars/iva.agarwal.bkn@gmail.com/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime`;
+            const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime`;
             try {
                 const response = await fetch(url);
                 const data = await response.json();
