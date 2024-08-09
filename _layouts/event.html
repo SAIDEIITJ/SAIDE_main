@@ -847,6 +847,15 @@ function setupEventListeners() {
                 currentWeekStart.setDate(currentWeekStart.getDate() + 7);
                 displayEventsForWeek(currentWeekStart);
             });
+            document.getElementById('mobile-prev-week').addEventListener('click', () => {
+                currentWeekStart.setDate(currentWeekStart.getDate() - 7);
+                displayEventsForWeek(currentWeekStart);
+            });
+    
+            document.getElementById('mobile-next-week').addEventListener('click', () => {
+                currentWeekStart.setDate(currentWeekStart.getDate() + 7);
+                displayEventsForWeek(currentWeekStart);
+            });
         }
     
         let allEvents = [];
