@@ -126,7 +126,21 @@ permalink: /faculty/
 </div>
 </div>
 
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const theme = urlParams.get('theme');
+  
+  if (theme) {
+    const themeCheckbox = document.getElementById(theme);
+    if (themeCheckbox) {
+      themeCheckbox.checked = true;
+      // You might need to trigger the filtering logic here as well
+    }
+  }
+});
 
+  </script>
 </div>
 <div class="selected-filters">
 <div id="selected-filters-container"></div>

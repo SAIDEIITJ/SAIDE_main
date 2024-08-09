@@ -171,3 +171,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const theme = urlParams.get('theme');
+    
+    if (theme) {
+      const themeCheckbox = document.getElementById(theme);
+      if (themeCheckbox) {
+        themeCheckbox.checked = true;
+  
+        // Trigger the change event for this checkbox to apply the filter
+        themeCheckbox.dispatchEvent(new Event('change'));
+      }
+    }
+  });
+  
