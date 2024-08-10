@@ -3,12 +3,13 @@ $(document).ready(function() {
     const pagebanners = [
         'footer.png',
         'iit.png',
-        'logo_bg.png',
-        'Logo_IITJ.png',
         'iitj.png',
         'coes.png',
         'infra.png',
         'brain.png',
+        'logo_bg.png',
+        'Logo_IITJ.png',
+
         'PhD.png',
         'MSR.png',
         'MTech.png',
