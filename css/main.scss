@@ -434,6 +434,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   }
 
 
+
   .hidden{
 	display: none;
   }
@@ -447,6 +448,9 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   }
 
   @media (max-width: 768px) {
+	#popup-amount{
+		text-align: justify !important;
+	  }
 
    #hidden-content-2{
 	padding: 20px;
@@ -1564,11 +1568,19 @@ flex-direction: row;
   .search-bar, .filters {
     margin-bottom: 20px;
   }
+
+  @media (max-width:505px) {
+	.custom-box{
+		width: 92% !important;
+	  }
+
+	
+  }
   .custom-box{
 	width: 71%;
     display: flex;
     flex-direction: row;
-    gap: inherit;
+    gap: 5px;
   }
   .custom-dropdown-wrapper {
 

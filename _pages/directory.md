@@ -59,7 +59,7 @@ permalink: /directory/
 <td class="name">{{ member.name }}</td>
 <!-- <td class="ph">{{ member.phone }}</td> -->
 <td class="em">{{ member.emailAddress }}</td>
-<td class="office">{{ member.office }}</td>
+<td class="office">+91 291280 {{ member.office }}</td>
 </tr>
 {% endif %}
 {% endfor %}
