@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const isCoeMatch = filters.coe.length === 0 || filters.coe.some(filter => coe.includes(filter));
             const isTitleMatch = filters.title.length === 0 || filters.title.some(filter => title === filter);
             const isPositionMatch = filters.position.length === 0 || filters.position.some(filter => position.includes(filter));
-            const isThemeMatch = filters.themes.length === 0 || filters.themes.some(filter => themes[filter] === 'Yes' || themes[filter] === 'Somewhat');
+            const isThemeMatch = filters.themes.length === 0 || filters.themes.some(filter => themes[filter] === 'Yes');
      
            
 

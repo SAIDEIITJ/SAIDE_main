@@ -69,7 +69,7 @@ permalink: /themes/
                         {% endif %}
                         
                         {% if theme_key %}
-                          {% assign relevant_faculty = site.data.faculty_profiles | where: theme_key, "Yes" | concat: site.data.faculty_profiles | where: theme_key, "Somewhat" %}
+                          {% assign relevant_faculty = site.data.faculty_profiles | where: theme_key, "Yes" %}
                           {% assign sorted_faculty = relevant_faculty | sort: "name" %}
                           {% for faculty in sorted_faculty %}
                             <li>{{ faculty.name }}</li>

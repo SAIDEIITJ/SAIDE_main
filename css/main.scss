@@ -1371,10 +1371,9 @@ flex-direction: row;
 .member-details .member-bio {
     font-size: 0.9em;
 }
-.filter-boxes{
+#filter-boxes{
 	display: flex;
 	justify-content: center;
-	margin-left: 130px;
 }
 
 
@@ -1387,7 +1386,7 @@ flex-direction: row;
 		display: flex;
 		flex-direction: column;
 	}
-	.filter-boxes{
+	#filter-boxes{
 		margin-left: 0;
 	}
 	// .bar-box{
@@ -1395,17 +1394,32 @@ flex-direction: row;
 	// }
 }
 
-@media (max-width: 768px) {
-	.filter-boxes{
+@media (max-width: 419px) {
+	.search_filter{
+		width: auto !important;
+
+
+	}
+}
+
+
+@media (max-width: 861px) {
+	#filter-boxes{
 		display: flex;
 		justify-content: center;
 		margin-left: 0;
 	}
 	.bar-box{
-		width: fit-content;
+		width: auto;
 	}
-	
-	
+}
+
+@media (max-width: 768px) {
+	.search_filter{
+		width: 98%;
+
+
+	}
     .member-card {
         flex: 1 0 100%; /* Full width on small screens */
     }
