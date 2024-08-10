@@ -167,7 +167,7 @@ $(document).ready(function() {
     // Preload the first 4 banners and other images
     Promise.all([
         preloadBannerImages(Banner, 0, 4),
-        preloadImages(pagebanners, 0, 4)
+        preloadImages(pagebanners, 0, 6)
     ]).then(() => {
         $('#loading-screen').fadeOut(500, function() {
             $('#main-content').fadeIn(500);
@@ -175,7 +175,7 @@ $(document).ready(function() {
             let intervalId = setInterval(nextBackground, 5000);
 
             preloadNextBatch(Banner, 4, 3, true);
-            preloadNextBatch(pagebanners, 4, pagebanners.length);
+            preloadNextBatch(pagebanners, 6, pagebanners.length);
 
             $('#nextBtn').click(function() {
                 clearInterval(intervalId);
