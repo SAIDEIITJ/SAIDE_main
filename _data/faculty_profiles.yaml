@@ -52,7 +52,7 @@
   undefined: null
   type: Core
   hidden: 0
-- timestamp: 3/1/2024 5:46:02
+- timestamp: 8/8/2024 0:09:55
   emailAddress: bikash@iitj.ac.in
   name: Bikash Santra
   position: Assistant Professor
@@ -73,8 +73,8 @@
   behaviorCognitionBrain: 'No'
   roboticsandIntelligentMachines: 'Yes'
   smartCitiesInfraEnvironment: 'No'
-  socialEngineering: 'No'
-  theoreticalAIML: 'No'
+  socialEngineering: 'Yes'
+  theoreticalAIML: 'Yes'
   suggestions: AI driven Precision Agriculture
   undefined: null
   type: Core
