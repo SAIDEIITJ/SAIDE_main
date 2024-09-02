@@ -18,7 +18,7 @@ Centres of Excellence at SAIDE are dedicated hubs of transdisciplinary collabora
 - [Centre of Excellence in Intelligent Infrastructure](https://sites.google.com/iitj.ac.in/cii/about): This CoE is dedicated to advancing knowledge in sustainable and intelligent infrastructure systems. Through the application of AI and machine learning, big data analytics, and control and automation, we aim to develop innovative solutions for building resilient and efficient infrastructure networks.
 
 - [Centre of Excellence in AI-based Precision Healthcare](): Our CoE in AI-based Precision Healthcare focuses on developing AI-driven integrative frameworks for population and individual risk stratification, enabling early precision health interventions. We also spearhead the 'Ayurtech' program, combining AI, digital health, and multiomic technologies for evidence-based Ayurveda solutions.
-
+{: .research-intro .about-section }
 
 <style>
   /* page-banner image */
