@@ -9,7 +9,8 @@ permalink: /coe/
 
 # What Are Centres of Excellence?
 
-Centres of Excellence at SAIDE are dedicated hubs of transdisciplinary collaboration, focusing on specific areas of research and education. These centres provide a unique and distinguished capability to conduct high-quality fundamental and translational research, addressing pressing challenges and opportunities in today’s world.
+Centres of Excellence at SAIDE are dedicated hubs of transdisciplinary collaboration, focusing on specific areas of research and education. These centres provide a unique and distinguished capability to conduct high-quality fundamental and translational research, addressing pressing challenges and opportunities in today’s world.  
+
 
 ## Elaborating on Our Centres of Excellence {#subheading}
 
