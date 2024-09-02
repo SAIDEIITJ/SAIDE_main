@@ -12,7 +12,7 @@ permalink: /coe/
 Centres of Excellence at SAIDE are dedicated hubs of transdisciplinary collaboration, focusing on specific areas of research and education. These centres provide a unique and distinguished capability to conduct high-quality fundamental and translational research, addressing pressing challenges and opportunities in today’s world.  
 
 
-## Elaborating on Our Centres of Excellence {#subheading}
+## Elaborating on Our Centres of Excellence
 
 - [Brain Science and Applications](https://cbsaiitj.wordpress.com/){:#links target="_blank"}: This CoE is at the forefront of exploring the science of intelligence, brain-machine interface, assistive technologies, and the application of AI and data science in understanding brain diseases and injuries. Through interdisciplinary research and cutting-edge technologies, we aim to unlock new insights into the complexities of the human brain.
 - [Mathematical and Computational Economics](https://cmceiitj.wordpress.com/){:#links target="_blank"}: Our CoE in Mathematical and Computational Economics focuses on interdisciplinary research at the intersection of economics, mathematics, data science, and machine learning. We explore analytical and applied areas of economics, leveraging AI and data science to address real-world economic challenges and opportunities.
