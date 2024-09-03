@@ -41,21 +41,21 @@ School is expected to have a symbiotic relationship with TIH for enabling studen
 School will support the following activities:
 1. **Creating a research group to work on AI standards and Regulatory Framework**  
 Technical standards for AI covers many issues like safety, security, accuracy, usability, interoperability and reliability of the model and data. Flexible and robust technical standards for AI are critical to the successful development and deployment of the technology. This group can work with national and international bodies to generate and implement:
-  (a) guidelines for the design of AI systems to ensure that they can be easily integrated with other technologies, utilize best practices for security and safety, and adhere to technical specifications that maximize their utility; and
-  (b) common standards which can serve as mechanisms to evaluate and compare AI systems
+    a. guidelines for the design of AI systems to ensure that they can be easily integrated with other technologies, utilize best practices for security and safety, and adhere to technical specifications that maximize their utility; and
+    b. common standards which can serve as mechanisms to evaluate and compare AI systems
 2. **Creating a research group for working on Intellectual Property Rights of AI and DS based technologies**  
 The growth of AI across a range of technical fields raises a number of policy questions with respect to IP. These questions include: whether the existing IP system needs to be modified to provide balanced protection for machine created works and inventions, AI itself and the data.
 3. **Creating a research group for working on Ethical issues of AI**  
 World economic forum identifies following ethical questions related to AI
-  (a) Unemployment. What happens as jobs disappear with introduction of AI?
-  (b) Inequality. How do we distribute the wealth created by machines?
-  (c) Humanity. How do machines affect our behaviour and interaction?
-  (d) Artificial stupidity. How can we guard against mistakes?
-  (e) Bias: How do we eliminate AI bias?
-  (f) Security. How do we keep AI safe from adversaries?
-  (g) Evil genies: How do we protect against unintended consequences?
-  (h) Singularity. How do we stay in control of a complex intelligent system?
-  (i) Robot rights. How do we define the humane treatment of AI?
+    a. Unemployment. What happens as jobs disappear with introduction of AI?
+    b. Inequality. How do we distribute the wealth created by machines?
+    c. Humanity. How do machines affect our behaviour and interaction?
+    d. Artificial stupidity. How can we guard against mistakes?
+    e. Bias: How do we eliminate AI bias?
+    f. Security. How do we keep AI safe from adversaries?
+    g. Evil genies: How do we protect against unintended consequences?
+    h. Singularity. How do we stay in control of a complex intelligent system?
+    i. Robot rights. How do we define the humane treatment of AI?
 
 We need to address these issues for analysing and assessing long term perspectives of AI and DS driven technology development.
 
