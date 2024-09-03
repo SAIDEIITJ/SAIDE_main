@@ -12,13 +12,19 @@ layout: subdefault
       <a href="{{ site.baseurl }}/campus/" class="tab-button">Campus</a>
       <a href="{{ site.baseurl }}/faq/" class="tab-button">FAQ</a>
       <a href="{{ site.baseurl }}/contact/" class="tab-button">Contact</a>
-      
-  
-  </div>
+   </div>
 
   <section class="wrapper style5" style="z-index: -1;">
-    <div class="inner">
+    <div class="inner about-section">
       {{ content }}
     </div>
+
+   <style>
+    /* page-banner image */
+    
+    .background-about{
+      background-image: url("{{ site.baseurl }}/images/Mission.png");
+    }
+    </style>
   </section>
 </article>
