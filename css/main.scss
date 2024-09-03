@@ -1699,13 +1699,15 @@ flex-direction: row;
 
 .about-section {
 	padding: 20px;
-    text-align: left;
+   	text-align: left;
 	width: 100%;
 	// margin-left: 120px;
 	h1{
 		color:$textcolor;
 		font-size: 2rem;
-		 font-family: "Montserrat", sans-serif;
+		font-family: "Montserrat", sans-serif;
+		margin-top:20px;
+  		margin-bottom:10px;
 	}
 
 }
