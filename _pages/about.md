@@ -8,7 +8,6 @@ permalink: /about/
   
 # Vision
 Advancing the field of AI and Data Sciences for good of humanity.  
-^
 
 # Mission
 - To be at the fore-front of Artificial Intelligence and Data Science research in all dimensions: theoretical research, application directed research, and locally relevant research for meeting regional needs.
