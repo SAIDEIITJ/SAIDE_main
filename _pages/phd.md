@@ -6,48 +6,37 @@ des: School of Artificial Intelligence and Data Science (AIDE) offers Ph.D. prog
 permalink: /phd/
 ---
 
-<style>
-.background-about{
-background-image:url("{{ site.baseurl }}/images/PhD.png");
-}
-</style>
+{% capture content-col %}
 
-<div id="parent-box">
-<div class="general-section">
-<h1> Why PhD @ School of AIDE, IIT Jodhpur?</h1>
-<div class="row">
-<div class="col-md-8">
-<p style="text-align: justify;">PhD students at the AIDE School are trained in theoretical as well as applied research that will be visible through publications in the top-ranking international journals and conferences, or state-of-the-art tangible end-products. The students can choose to work with the faculty in the Centers of Excellence, or choose a transdisciplinary project with the affiliated faculty. Students have round-the-clock access to high-end research and computational facilities. Our graduating doctoral students will be trained in critical thinking, independent research, development, operations and management of emerging technological challenges, and will be prepared to fulfil the needs of both industry and academia, or to venture out on their own.</p>
-<br>
-<h2 id="subheading">Broad Research Areas in SAIDE</h2>
-<ul>
-<li>Foundational AI & DS</li>
-<li>AI & DS Applications</li>
-<li>Brain Science and Applications</li>
-<li>Mathematical and Computational Economics</li>
-</ul>
-</div>
-<div class="col-md-4 implinkBox">
-<div class="side-content">
-<div class="share">
-<p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+# Why PhD @ School of AIDE, IIT Jodhpur?
+
+PhD students at the AIDE School are trained in theoretical as well as applied research that will be visible through publications in the top-ranking international journals and conferences, or state-of-the-art tangible end-products. The students can choose to work with the faculty in the Centers of Excellence, or choose a transdisciplinary project with the affiliated faculty. Students have round-the-clock access to high-end research and computational facilities. Our graduating doctoral students will be trained in critical thinking, independent research, development, operations and management of emerging technological challenges, and will be prepared to fulfil the needs of both industry and academia, or to venture out on their own.  
+
+## Broad Research Areas in SAIDE
+
+- Foundational AI & DS
+- AI & DS Applications
+- Brain Science and Applications
+- Mathematical and Computational Economics
+
+{% endcapture %}
+
+{% capture content-links %}
 
 {% assign links_data = site.data.links %}
-<ul class="side-news">
-  {% for mem in links_data %}
-    {% if mem.page == 'phd' %}
-      <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<div style="padding: 20px;">
-<h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
+{% for mem in links_data %}
+  {% if mem.page == 'phd' %}
+    - [{{ mem.name }}]({{ mem.url }})<
+  {% endif %}
+{% endfor %}
+
+{% endcapture %}
+
+{% capture content-bottom %}
+
+## The program at present is designed to offer degrees in the following areas:
+
 <div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
 {% for member in programs_data %}
@@ -72,20 +61,26 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 {% endfor %}
 </div>
 
+## Curriculum
 
-<h2 id="subheading">Curriculum</h2>
-<p style="text-align: justify;">The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.</p>
-<br>
+The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.  
 
-<h2 id="subheading">Fellowships</h2>
-<ul>
-<a href="" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>MoE (Institute Fellowship)</li>
-<a href="https://www.pmrf.in/" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>PMRF (Prime Minsiter Research Fellowship)</li></a>
-<a href="https://phd.dic.gov.in/" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"><li>Visvesvaraya PhD Scheme</li></a>
-<a href="" target="_blank" style="border: 0;text-decoration: none;color: rgb(52, 40, 40);"></a><li>Project Fellowships</li>
-</ul>
+## Fellowships
 
-<h2 id="subheading">Supervisor Selection</h2>
-<p style="text-align: justify;">The students can choose to work with any core faculty or affiliated faculty (as a co-supervisor) from the School of AIDE.</p>
-</div>
-</div>
+- MoE (Institute Fellowship)
+- [PMRF (Prime Minsiter Research Fellowship)](https://www.pmrf.in/)
+- [Visvesvaraya PhD Scheme](https://phd.dic.gov.in/)
+- Project Fellowships
+
+## Supervisor Selection
+The students can choose to work with any core faculty or affiliated faculty (as a co-supervisor) from the School of AIDE.
+
+{% endcapture %}
+
+<style>
+.background-about{
+background-image:url("{{ site.baseurl }}/images/PhD.png");
+}
+</style>
+
+{% include education.html %}
