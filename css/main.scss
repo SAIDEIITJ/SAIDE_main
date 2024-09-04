@@ -24,7 +24,6 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	.general-section,.about-section{
 		h1{
 			font-size: 1.5em !important;
-
 		}
 	}
 	#getintouch{
@@ -2443,7 +2442,7 @@ table {
 
 .general-section {
 	padding: 20px;
-    text-align: left;
+	text-align: left;
 	width: 100%;
 	// background-color: rgb(241, 241, 241);
 	// margin-left: 120px;
@@ -2451,7 +2450,9 @@ table {
 		color:$textcolor;
 		font-size: 2rem;
 		text-transform: none;
-		 font-family: "Montserrat", sans-serif;
+		font-family: "Montserrat", sans-serif;
+		margin-top:20px;
+  		margin-bottom:10px;
 	}
 
 }
