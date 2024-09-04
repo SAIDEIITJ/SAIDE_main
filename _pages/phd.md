@@ -1,5 +1,5 @@
 ---
-layout: education2
+layout: subdefault
 title: PhD
 link: HOME / ACADEMICS
 des: School of Artificial Intelligence and Data Science (AIDE) offers Ph.D. program in a wide range of emerging and challenging research areas of Foundational AI & DS, and AI & DS Applications through highly qualified faculty from diverse disciplines with shared interests in fundamental challenges in AI and DS.
@@ -27,7 +27,7 @@ PhD students at the AIDE School are trained in theoretical as well as applied re
 
 {% for mem in links_data %}
   {% if mem.page == 'phd' %}
-    - [{{ mem.name }}]({{ mem.url }})<
+    - [{{ mem.name }}]({{ mem.url }})
   {% endif %}
 {% endfor %}
 
@@ -83,4 +83,4 @@ background-image:url("{{ site.baseurl }}/images/PhD.png");
 }
 </style>
 
-{% include education.html %}
+{% include education2.html %}
