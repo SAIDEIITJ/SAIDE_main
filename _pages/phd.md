@@ -24,7 +24,7 @@ PhD students at the AIDE School are trained in theoretical as well as applied re
 {% capture content-links %}
 
 {% assign links_data = site.data.links %}
-<ul>
+<ul class="side-news">
 {% for mem in links_data %}
   {% if mem.page == 'phd' %}
     <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
