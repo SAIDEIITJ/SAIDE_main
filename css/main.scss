@@ -96,8 +96,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	a{
 		text-decoration: none;
 		color: #FFF;
-		 font-family: "Montserrat", sans-serif;
-		
+		font-family: "Montserrat", sans-serif;
 		display: block;
 	}
   }
@@ -105,7 +104,6 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
 /* Media query for mobile devices */
 @media (max-width: 992px) {
-   
 
     .button-bar {
         display: none;
@@ -145,7 +143,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 .theme-section h2 {
 	text-align: left;
 	color:#005b5b;
-	 font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
   }
 
 .theme-container {
@@ -219,7 +217,6 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   .theme-content a{
 	border:0;
 	text-decoration: none;
-
   }
   
   .theme-content h3 {
@@ -229,18 +226,16 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   
   .theme-content p {
 	color: #333;
-
   }
   
   #popup-button {
     display: inline-block;
     padding: 6px 12px;
-
     background-color: #800F13;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-	border: 0;
+    border: 0;
     font-weight: bold;
 }
 
@@ -252,7 +247,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
   .btn {
 	display: inline-block;
 	padding: 10px 15px;
-    background-color: #005b5b;
+        background-color: #005b5b;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
@@ -296,8 +291,8 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	font-weight: 600;
 	z-index: 100;
 	background-size: cover; /* Prevents the image from zooming in */
-    background-position: center;
-    background-repeat: no-repeat;
+    	background-position: center;
+   	background-repeat: no-repeat;
   }
 
   #circular-img {
@@ -364,7 +359,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	}
   }
   #hidden-content-2{
-	font-weight: 600;
+	 font-weight: 600;
 	 font-size: 0.8em;
 	//   background-color: #f8f7f7;
 	  margin-left: 10px;
@@ -2454,6 +2449,10 @@ table {
 		margin-top:20px;
   		margin-bottom:10px;
 	}
+	h2{
+		margin-top:20px;
+  		margin-bottom:10px;
+	}
 
 }
 
@@ -2520,7 +2519,7 @@ table {
   .btn {
 	display: inline-block;
 	padding: 5px 10px;
-    background-color: $textcolor;
+    	background-color: $textcolor;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
