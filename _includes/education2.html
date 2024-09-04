@@ -1,0 +1,31 @@
+<div class="background-about"  id="backgroundAbout"></div>
+<article id="main">
+   
+    <div class="button-bar">
+      <a href="{{ site.baseurl }}/phd/" class="tab-button">PhD</a>
+      <a href="{{ site.baseurl }}/ms/" class="tab-button">MS by Research</a>
+      <a href="{{ site.baseurl }}/mtech/" class="tab-button">MTech</a>
+      <a href="{{ site.baseurl }}/btech/" class="tab-button">BTech </a>
+      <a href="{{ site.baseurl }}/continuing_edu/" class="tab-button">Professional Programs</a>
+      <a href="{{ site.baseurl }}/elective/" class="tab-button"> Courses </a>
+    </div>
+
+  <section class="wrapper style5" style="z-index: -1;">
+    <div class="inner general-section">
+       <div class="row">
+         <div class="col-md-8">
+            {{ content-col }}
+         </div>
+         <div class="col-md-4 implinkBox">
+            <div class="side-content">
+               <div class="share">
+                  <p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+                  {{ content-links }}
+               </div>
+            </div>
+         </div>
+       </div>
+      {{ content-bottom }}
+    </div>
+  </section>
+</article>
