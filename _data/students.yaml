@@ -152,7 +152,7 @@
   center: CBSA
   undefined: B.Tech ( Electrical Engineering)
   researchArea: Brain Computer Interface, Robotics
-  website: null
+  website: https://sites.google.com/view/perwez/home
   profilePhoto: >-
     https://drive.google.com/thumbnail?id=1Oay4w3zGi8pUeZS0sCx6GPmksMhNOjtf&sz=w300
   email: r23ab0004@iitj.ac.in
@@ -208,5 +208,31 @@
   profilePhoto: >-
     https://drive.google.com/thumbnail?id=19DGli3LokQi0Hee0J3wz8NWbIEgssvc_&sz=w300
   email: r23am0001@iitj.ac.in
-  hidden: 0
+  hidden: 1
   alumnus: 0
+- timestamp: 9/9/2024 3:13:40
+  name: Shreya Gupta
+  program: MS(R)
+  specialization: MS(R) CBSA AIDE
+  center: CBSA
+  undefined: B.Tech. in Computer Science and Business Systems
+  researchArea: Brain Image analysis
+  website: https://shreyagupta12.github.io/
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1XdLwDVjO_vzH4AYqSNcgUgr_klJ8lmEM&sz=w300
+  email: r24ab0002@iitj.ac.in
+  hidden: .nan
+  alumnus: .nan
+- timestamp: 9/9/2024 13:28:08
+  name: SIKKIREDDY LAKSHMI SHANMUKHA
+  program: M.Tech.
+  specialization: Mtech Augmented Reality and Virtual Reality
+  center: CBSA
+  undefined: B.Tech Information Technology
+  researchArea: Generative AI
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1bwhywMxaCHXTOQLhk0DbcHohOUCsJIeA&sz=w300
+  email: m24air013@iitj.ac.in
+  hidden: .nan
+  alumnus: .nan
