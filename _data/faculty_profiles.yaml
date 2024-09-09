@@ -106,19 +106,19 @@
   undefined: null
   type: Core
   hidden: 0
-- timestamp: 3/2/2024 9:30:57
+- timestamp: 9/9/2024 14:29:42
   emailAddress: bhivraj@iitj.ac.in
-  name: Bhivraj Suthar
+  name: Dr. Bhivraj Suthar
   position: Assistant Professor
   office: 1764
   Wwbsite: https://bhivraj.wixsite.com/about
-  department: Artificial Intelligence and Data Science
+  department: (1) Robotics & Mobility Systems (2) IIT Jodhpur & AIIMS MedTech Centre
   centerIDRP: Center for Brain Science and Applications
   profilePic: >-
     https://drive.google.com/thumbnail?id=1XEu83Ou6P6BzqQB4B5aviyyoIVx7-Bfk&sz=w300
-  researchArea1: Bio-inspired Mechanisms
-  researchArea2: Medical Robotics
-  researchArea3: Space Robotics
+  researchArea1: Bio-inspired Robotics
+  researchArea2: Brain Robot Interface
+  researchArea3: Medical Robotics
   researchArea4: Artificial Intelligence
   aIandEconomics: 'No'
   aIandEthics: 'No'
@@ -867,3 +867,30 @@
   undefined: null
   type: Core
   hidden: 0
+- timestamp: 9/9/2024 14:29:03
+  emailAddress: akt@iitj.ac.in
+  name: Anil Kumar Tiwari
+  position: Head of School
+  office: 1353
+  Wwbsite: http://home.iitj.ac.in/~akt/
+  department: Electrical Engineering
+  centerIDRP: Center for Brain Science and Applications
+  profilePic: >-
+    https://drive.google.com/thumbnail?id=1v4H9fBgp2F1trAsqtR1OaZtpK_xY1fDy&sz=w300
+  researchArea1: Neuroscience
+  researchArea2: Image and video processing
+  researchArea3: Healthcare devices
+  researchArea4: EEG
+  aIandEconomics: 'No'
+  aIandEthics: 'No'
+  aIdrivenHealth: 'Yes'
+  aIforTechnology: 'No'
+  behaviorCognitionBrain: Somewhat
+  roboticsandIntelligentMachines: 'No'
+  smartCitiesInfraEnvironment: 'No'
+  socialEngineering: 'No'
+  theoreticalAIML: 'No'
+  suggestions: null
+  undefined: null
+  type: Core
+  hidden: .nan
