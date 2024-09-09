@@ -41,3 +41,34 @@
   pI: Saurabh Gandhi
   contactEmail: sgandhi@iitj.ac.in
   identifier: SRG/2023/000595
+- timestamp: 9/2/2024 23:55:15
+  title: MRI Image Quality Enhancement
+  fundingAgency: IIT Jodhpur
+  startDate: 6/1/2024
+  endDate: 5/31/2026
+  value: 50 Lac
+  logo: >-
+    https://drive.google.com/thumbnail?id=190vrXqKSNrvOyEb_V8ctx1aWK5XeFPgs&sz=w300
+  details: >-
+    Designing deep learning models that can remove noise and various artifacts
+    from the MRI images captured through the MRI scanners developed by SAMEER,
+    Mumbai.
+  website: null
+  pI: Angshuman Paul, Bikash Santra, Rajendra Nagar, Neeraj Jain
+  contactEmail: bikash@iitj.ac.in
+  identifier: I/IDF/ASP/20240008
+- timestamp: 9/3/2024 0:05:44
+  title: Multi-modal Learning for Genetic Characterization of Tumors
+  fundingAgency: IIT Jodhpur
+  startDate: 8/2/2024
+  endDate: 8/1/2025
+  value: 24.99 Lac
+  logo: >-
+    https://drive.google.com/thumbnail?id=1u43kZQPSWIHAU5vg7puaOuRo1bmHz3oO&sz=w300
+  details: >-
+    Research initiation grant for creating the research facilities at the
+    institute.
+  website: null
+  pI: Bikash Santra
+  contactEmail: bikash@iitj.ac.in
+  identifier: I/RIG/BKS/20240047
