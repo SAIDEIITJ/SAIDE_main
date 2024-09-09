@@ -3656,7 +3656,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		font-weight: _font(weight-extrabold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
-		text-transform: uppercase;
+		text-transform: none;
 
 		a {
 			color: inherit;
