@@ -35,7 +35,7 @@
   name: Neuro Robotics Lab
   location: W10
   contact: Bhivraj Suthar
-  extension: 9999
+  extension: 1764
   url: null
   labImage: >-
     https://drive.google.com/thumbnail?id=1X5Hrj5wy9aRvoTS9UAa36Isz5Z5LhOnR&sz=w800
@@ -64,3 +64,12 @@
   popupBackground: >-
     https://drive.google.com/thumbnail?id=1S6fsX6IbMAHarp_XAAj-VXpoqgZ-RkKs&sz=w800
   hidden: 0
+- timestamp: null
+  name: Network & Cognitive Neuroscience Lab
+  location: '-'
+  contact: Shilpa Dang
+  extension: 1758
+  url: null
+  labImage: null
+  popupBackground: null
+  hidden: .nan
