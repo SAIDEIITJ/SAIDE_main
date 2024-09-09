@@ -1,5 +1,5 @@
 - timestamp: 7/8/2024 11:45:12
-  name: Artificial Intelligence and Data Science
+  name: PhD in Artificial Intelligence and Data Science
   offered: School of AIDE
   level: PhD
   coordinator: Dr. Dipanjan Roy
@@ -10,7 +10,7 @@
   deadline: 25-10-2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/8/2024 11:53:30
-  name: Next Generation AI
+  name: MS by Research in Next Generation AI
   offered: Center for Brain Science and Applications
   level: MS by Research
   coordinator: Dr. Dipanjan Roy
@@ -21,7 +21,7 @@
   deadline: 25-10-2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/19/2024 16:12:49
-  name: Computational Economics
+  name: MS by Research in Computational Economics
   offered: Center for Mathematical and Computational Economics
   level: MS by Research
   coordinator: Dr. Abhinaba Lahiri
@@ -30,9 +30,9 @@
   background: >-
     https://drive.google.com/thumbnail?id=18FKjvCPI6dzxvJxuWoi-uFY9ggipk5jn&sz=w300
   deadline: 25-10-2024
-  application: https://oa.iitj.ac.in/OA_PG_ADMISSION/
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/19/2024 20:32:39
-  name: AR VR
+  name: MTech (Regular) in AR VR
   offered: School of AIDE
   level: MTech
   coordinator: Dr. Amit Bhardwaj, Dr. Rajendra Nagar
@@ -41,7 +41,7 @@
   background: >-
     https://drive.google.com/thumbnail?id=1X8cmxRYnBKX9fo66fuCVv8TkkFHJg7Gr&sz=w300
   deadline: 25-10-2024
-  application: https://oa.iitj.ac.in/OA_PG_ADMISSION/
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/19/2024 20:37:06
   name: Minor Program in Science of Intelligence
   offered: Center for Brain Science and Applications
@@ -54,8 +54,8 @@
   deadline: 25-10-2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 8/12/2024 12:02:15
-  name: Computational and Mathematical Economics
-  offered: CMCE, School of AIDE
+  name: PhD in Computational and Mathematical Economics
+  offered: Center for Mathematical and Computational Economics, School of AIDE
   level: PhD
   coordinator: Dr. Dweepobottee Brahma
   url: null
@@ -63,4 +63,37 @@
   background: >-
     https://drive.google.com/thumbnail?id=1REMgrYUL3X2iT9c1AYfprDTTtRxQ36FH&sz=w300
   deadline: 10/25/2024
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
+- timestamp: 9/9/2024 14:08:19
+  name: MS by Research in Intelligent Infrastructure
+  offered: Center of Intelligent Infrastructure
+  level: MS by Research
+  coordinator: Dr. P. Ravi Prakash
+  url: null
+  document: https://drive.google.com/open?id=1T62m2wlT5_ZESPS0f5PyZ0PdT8rix1HV
+  background: >-
+    https://drive.google.com/thumbnail?id=1Ns7mdndjF45cfExjzC3z1mc5C47bPDz6&sz=w300
+  deadline: 10/22/2024
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
+- timestamp: 9/9/2024 14:15:27
+  name: MS by Research in Precision Health and Integrative Medicine
+  offered: Center of Precision Health and Integrative Medicine
+  level: MS by Research
+  coordinator: Prof. Mitali Mukerji
+  url: null
+  document: https://drive.google.com/open?id=1avtGYycxSNpkV5lZn_gxqALgemTXiWuH
+  background: >-
+    https://drive.google.com/thumbnail?id=1ejPzUSGRDyKlGxIB9drmHuV7CZTCDabp&sz=w300
+  deadline: 10/22/2024
+  application: https://oa.iitj.ac.in/PG_ADMISSION/
+- timestamp: 9/9/2024 14:27:04
+  name: M.Tech (Executive) in AR VR
+  offered: School of AIDE
+  level: Continuing Education
+  coordinator: Dr. Amit Bhardwaj, Dr. Rajendra Nagar
+  url: null
+  document: https://drive.google.com/open?id=1DBkgJ64vi4621ligdYP8X7dmsrTsqzB4
+  background: >-
+    https://drive.google.com/thumbnail?id=1W76XrQSz-AYekkbJrftypqWCEQah3EOW&sz=w300
+  deadline: 10/22/2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
