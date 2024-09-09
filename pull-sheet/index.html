@@ -285,7 +285,7 @@ function getGDriveURLnoSize(url) {
         return;
     }
 
-    alert("Successfully processed " + data.length + " rows for " + $resource + "!");
+    // alert("Successfully processed " + data.length + " rows for " + $resource + "!");
     var $items = data.map(service => {
         var $p = {};
         $.each(service, function($key, $value) {
