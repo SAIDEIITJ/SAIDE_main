@@ -8,6 +8,7 @@
     data.
   background: Computational,Electronics,AIML,Software
   link: https://csndl-iitd.github.io/cndl-website/join/
+  undefined: null
 - timestamp: 7/29/2024 16:43:46
   identifier: SRG/2023/000595
   type: Design Credits
@@ -19,3 +20,4 @@
     likelihood of epileptic seizures.
   background: Quantitative,Computational,Physics
   link: https://csndl-iitd.github.io/cndl-website/research/
+  undefined: null
