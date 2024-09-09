@@ -1,29 +1,29 @@
 - position: School Faculty Board
-  entry: Chairperson - Director of the Institute
+  entry: 'Chairperson: Director of the Institute'
   link: '#'
 - position: School Faculty Board
-  entry: Head of School - Prof. Neeraj Jain
-  link: https://iitj.irins.org/profile/205254
+  entry: 'Head of School: Prof. Anil Kumar Tiwari'
+  link: http://home.iitj.ac.in/~akt/
 - position: School Faculty Board
-  entry: Convenor of School - Dr. Shilpa Dang
+  entry: 'Convenor of School: Dr. Shilpa Dang'
   link: https://sites.google.com/iitj.ac.in/shilpadang/home
 - position: School Faculty Board
-  entry: Members - All faculty members
+  entry: 'Members: All core/joint faculty members'
   link: '#'
 - position: School Post Graduate Committee
-  entry: Convenor for ScPGC - Dr. Dipanjan Roy
+  entry: 'Convenor for ScPGC: Dr. Dipanjan Roy'
   link: https://dipanjanr.com/
 - position: School Post Graduate Committee
   entry: >-
-    Members for ScPGC - Dr. Bikash Santra, Dr. Abhinaba Lahiri, Dr. Saurabh
+    Members for ScPGC: Dr. Bikash Santra, Dr. Abhinaba Lahiri, Dr. Saurabh
     Gandhi, Dr. Manish Agarwal, Prof. Mitali Mukerji, Dr. P Ravi Prakash
   link: null
 - position: School Online Education Committee
-  entry: Convenor for ScOEC - Dr. Amit Bhardwaj
+  entry: 'Convenor for ScOEC: Dr. Amit Bhardwaj'
   link: null
 - position: School Online Education Committee
   entry: >-
-    Members for ScOEC - Dr. Dip Sankar Banerjee, Dr. Puneet Sharma, Dr. Srivatsa
+    Members for ScOEC: Dr. Dip Sankar Banerjee, Dr. Puneet Sharma, Dr. Srivatsa
     Srinivas S, Dr. Vignesh Muralidharan, Dr. Bhivraj Suthar
   link: null
 - position: Website Coordinators
@@ -33,23 +33,11 @@
   entry: Dr. Saurabh Gandhi
   link: https://csndl-iitd.github.io/cndl-website/
 - position: Social Media Coordinators
-  entry: Facebook - Dr. Dweepobotee Brahma
+  entry: 'LinkedIn: Dr. Bikash Santra and Dr. Saurabh Gandhi'
   link: '#'
 - position: Social Media Coordinators
-  entry: LinkedIn - Dr. Bikash Santra, Dr. Saurabh Gandhi
+  entry: 'Facebook: Dr. Dweepobotee Brahma'
   link: '#'
 - position: Social Media Coordinators
-  entry: Twitter - Dr. Dweepobotee Brahma
+  entry: 'Twitter: Dr. Dweepobotee Brahma'
   link: '#'
-- position: Webinar Committee
-  entry: Dr. Rajendra Nagar
-  link: http://home.iitj.ac.in/~rn/
-- position: Webinar Committee
-  entry: Dr. Manish Narwaria
-  link: '#'
-- position: AI and IP
-  entry: Convenor - Dr. Anil Kumar Tiwari
-  link: http://home.iitj.ac.in/~akt/
-- position: AI Standards Group
-  entry: Convenor - Prof. Mayank Vatsa
-  link: http://home.iitj.ac.in/~mvatsa/
