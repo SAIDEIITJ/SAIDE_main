@@ -1,5 +1,5 @@
 - timestamp: 7/8/2024 11:45:12
-  name: PhD in Artificial Intelligence and Data Science
+  name: Artificial Intelligence and Data Science
   offered: School of AIDE
   level: PhD
   coordinator: Dr. Dipanjan Roy
@@ -10,7 +10,7 @@
   deadline: 25-10-2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/8/2024 11:53:30
-  name: MS by Research in Next Generation AI
+  name: Next Generation AI
   offered: Center for Brain Science and Applications
   level: MS by Research
   coordinator: Dr. Dipanjan Roy
@@ -21,7 +21,7 @@
   deadline: 25-10-2024
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 7/19/2024 16:12:49
-  name: M.S. by Research in Computational Economics
+  name: Computational Economics
   offered: Center for Mathematical and Computational Economics
   level: MS by Research
   coordinator: Dr. Abhinaba Lahiri
@@ -32,7 +32,7 @@
   deadline: 25-10-2024
   application: https://oa.iitj.ac.in/OA_PG_ADMISSION/
 - timestamp: 7/19/2024 20:32:39
-  name: M.Tech. (Regular) in AR VR
+  name: AR VR
   offered: School of AIDE
   level: MTech
   coordinator: Dr. Amit Bhardwaj, Dr. Rajendra Nagar
@@ -55,9 +55,9 @@
   application: https://oa.iitj.ac.in/PG_ADMISSION/
 - timestamp: 8/12/2024 12:02:15
   name: Computational and Mathematical Economics
-  offered: Center for Computational and Mathematical Economics, SAIDE
+  offered: CMCE, School of AIDE
   level: PhD
-  coordinator: Dr. Ganesh Manjhi
+  coordinator: Dr. Dweepobottee Brahma
   url: null
   document: https://drive.google.com/open?id=1pFQ4781vi4DIu-kJPIxGKU-DnOx1eYi8
   background: >-
