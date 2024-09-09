@@ -55,8 +55,8 @@ background-image: url("{{ site.baseurl }}/images/MSR.png");
 </a>
 {% endif %}
 </h2>
-<p><strong>Offered by:</strong> {{member.offered}}</p>
-<p><strong>Convenor:</strong> {{member.coordinator}}</p>
+<p><strong>Hosted by:</strong> {{member.offered}}</p>
+<p><strong>Coordinator:</strong> {{member.coordinator}}</p>
 </div>
 </div>
 {% endif %}
