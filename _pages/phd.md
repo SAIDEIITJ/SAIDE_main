@@ -55,7 +55,7 @@ PhD students at the AIDE School are trained in theoretical as well as applied re
 {% endif %}
 </h2>
 <p><strong>Hosted by:</strong> {{member.offered}}</p>
-<p><strong>Convenor:</strong> {{member.coordinator}}</p>
+<p><strong>Co-ordinator:</strong> {{member.coordinator}}</p>
 </div>
 </div>
 {% endif %}
