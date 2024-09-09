@@ -12,7 +12,7 @@ permalink: /phd/
 
 PhD students at the AIDE School are trained in theoretical as well as applied research that will be visible through publications in the top-ranking international journals and conferences, or state-of-the-art tangible end-products. The students can choose to work with the faculty in the Centers of Excellence, or choose a transdisciplinary project with the affiliated faculty. Students have round-the-clock access to high-end research and computational facilities. Our graduating doctoral students will be trained in critical thinking, independent research, development, operations and management of emerging technological challenges, and will be prepared to fulfil the needs of both industry and academia, or to venture out on their own.  
 
-## Broad Research Areas in SAIDE
+## Broad Research Areas in SAIDE {:#subheading}
 
 - Foundational AI & DS
 - AI & DS Applications
@@ -36,7 +36,7 @@ PhD students at the AIDE School are trained in theoretical as well as applied re
 
 {% capture content-bottom %}
 
-## The program at present is designed to offer degrees in the following areas:
+## The program at present is designed to offer degrees in the following areas: {:#subheading}
 
 <div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
@@ -62,18 +62,18 @@ PhD students at the AIDE School are trained in theoretical as well as applied re
 {% endfor %}
 </div>
 
-## Curriculum
+## Curriculum {:#subheading}
 
 The PhD program at SAIDE is meticulous and demanding. It currently provides an opportunity for focused research in all areas of specialization that the School offers. The program emphasizes research training through completion of course work and pursuing research work that connects with the real world applications , with any of the national or global programs that speak to the contemporary issues in our society.  
 
-## Fellowships
+## Fellowships {:#subheading}
 
 - MoE (Institute Fellowship)
 - [PMRF (Prime Minsiter Research Fellowship)](https://www.pmrf.in/)
 - [Visvesvaraya PhD Scheme](https://phd.dic.gov.in/)
 - Project Fellowships
 
-## Supervisor Selection
+## Supervisor Selection {:#subheading}
 The students can choose to work with any core faculty or affiliated faculty (as a co-supervisor) from the School of AIDE.
 
 {% endcapture %}
