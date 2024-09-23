@@ -6,40 +6,31 @@ des: The Master of Science (M.S.) program in Artificial Intelligence and Data Sc
 permalink: /ms/
 ---
 
-<style>
-.background-about{
-background-image: url("{{ site.baseurl }}/images/MSR.png");
-}
-</style>
+{% capture content-col %}
 
-<div id="parent-box">
-<div class="general-section">
-<h1>MS Program</h1>
-<div class="row">
-<div class="col-md-8">
-<p style="text-align: justify;">IIT Jodhpur invites applications for admission to the M.S. (by Research) program offered by the Centre of Excellence on Brain Science and Applications (CBSA) in the School of Artificial Intelligence & Data Science, IIT Jodhpur.</p>
-</div>
-<div class="col-md-4 implinkBox">
-<div class="side-content">
-<div class="share">
-<p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+# MS Program
+IIT Jodhpur invites applications for admission to the M.S. (by Research) program offered by the Centre of Excellence on Brain Science and Applications (CBSA) in the School of Artificial Intelligence & Data Science, IIT Jodhpur.</p>
+
+{% endcapture %}
+
+{% capture content-links %}
+
 {% assign links_data = site.data.links %}
 <ul class="side-news">
-  {% for mem in links_data %}
-    {% if mem.page == 'ms' %}
-      <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
-    {% endif %}
-  {% endfor %}
+{% for mem in links_data %}
+  {% if mem.page == 'phd' %}
+    <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
+  {% endif %}
+{% endfor %}
 </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div style="padding: 20px;">
-<h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
-<div class="msgrid-container">
 
+{% endcapture %}
+
+{% capture content-bottom %}
+
+## The MS by Research program at present is designed to offer degrees in the following areas:
+
+<div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
 {% for member in programs_data %}
 {% if member.level == 'MS by Research' %}
@@ -62,6 +53,13 @@ background-image: url("{{ site.baseurl }}/images/MSR.png");
 {% endif %}
 {% endfor %}
 </div>
-</div>
-</div>
 
+{% endcapture %}
+
+<style>
+.background-about{
+background-image: url("{{ site.baseurl }}/images/MSR.png");
+}
+
+{% include education2.html %}
+</style>
