@@ -9,7 +9,7 @@ permalink: /ms/
 {% capture content-col %}
 
 # MS Program
-IIT Jodhpur invites applications for admission to the M.S. (by Research) program offered by the Centre of Excellence on Brain Science and Applications (CBSA) in the School of Artificial Intelligence & Data Science, IIT Jodhpur.</p>
+IIT Jodhpur invites applications for admission to the M.S. (by Research) program offered by the Centre of Excellence on Brain Science and Applications (CBSA) in the School of Artificial Intelligence & Data Science, IIT Jodhpur.
 
 {% endcapture %}
 
