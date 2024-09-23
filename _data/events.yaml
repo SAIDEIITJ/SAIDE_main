@@ -21,7 +21,7 @@
   hidden: 0
 - id: event2
   undefined: null
-  name: test event
+  name: THAR Talk Series
   start: null
   end: null
   description: Description
@@ -35,4 +35,4 @@
   people: null
   sponsors: null
   contact: null
-  hidden: .nan
+  hidden: 0
