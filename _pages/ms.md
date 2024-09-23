@@ -1,6 +1,6 @@
 ---
 layout: education
-title: Ms By Research
+title: MS By Research
 link: HOME / ACADEMICS
 des: The Master of Science (M.S.) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers a comprehensive curriculum designed to equip students with the knowledge, skills, and practical experience needed to excel in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).
 permalink: /ms/
@@ -60,6 +60,6 @@ IIT Jodhpur invites applications for admission to the M.S. (by Research) program
 .background-about{
 background-image: url("{{ site.baseurl }}/images/MSR.png");
 }
+</style>
 
 {% include education2.html %}
-</style>
