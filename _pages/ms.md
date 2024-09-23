@@ -18,7 +18,7 @@ IIT Jodhpur invites applications for admission to the M.S. (by Research) program
 {% assign links_data = site.data.links %}
 <ul class="side-news">
 {% for mem in links_data %}
-  {% if mem.page == 'phd' %}
+  {% if mem.page == 'ms' %}
     <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
   {% endif %}
 {% endfor %}
