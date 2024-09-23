@@ -1,4 +1,4 @@
-- timestamp: 2/26/2024 10:02:06
+- timestamp: 9/9/2024 14:54:22
   emailAddress: sgandhi@iitj.ac.in
   name: Saurabh Gandhi
   position: Assistant Professor
@@ -22,7 +22,8 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufjv9neYpfHQpbu7mNOsZo5B_9TJNuOkzKjKoCAXTe5Yo5PoiTKklJI2PfyXA
   type: Core
   hidden: 0
 - timestamp: 9/8/2024 19:00:21
@@ -49,7 +50,8 @@
   socialEngineering: Somewhat
   theoreticalAIML: Somewhat
   suggestions: null
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufITmT5OEKCKXkvVmig7jk2tXQGytvfj8noMQCHpCmWcz7OJSJiRB1KllQVZQ
   type: Core
   hidden: 0
 - timestamp: 9/3/2024 0:15:41
@@ -76,7 +78,8 @@
   socialEngineering: 'Yes'
   theoreticalAIML: 'Yes'
   suggestions: AI driven Precision Agriculture
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnucJ1uAvQOlSrIpwNB3kjseHpEgOCNrfrl7gzlOEB3aeZ6BVMTMXfukuVBJXrg
   type: Core
   hidden: 0
 - timestamp: 7/31/2024 12:24:21
@@ -103,17 +106,18 @@
   socialEngineering: 'Yes'
   theoreticalAIML: 'Yes'
   suggestions: null
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnud4Z2NHnHgm4Y3c1J2nqTI_fdyrvj9zYgr_aYftQbXoMJrsuzEfMXvqMoERAg
   type: Core
   hidden: 0
-- timestamp: 9/9/2024 14:29:42
-  emailAddress: bhivraj@iitj.ac.in
-  name: Dr. Bhivraj Suthar
+- timestamp: 9/23/2024 11:14:08
+  emailAddress: null
+  name: Bhivraj Suthar
   position: Assistant Professor
   office: 1764
   Wwbsite: https://bhivraj.wixsite.com/about
-  department: (1) Robotics & Mobility Systems (2) IIT Jodhpur & AIIMS MedTech Centre
-  centerIDRP: Center for Brain Science and Applications
+  department: Artificial Intelligence and Data Science
+  centerIDRP: (1) Robotics & Mobility Systems (2) IIT Jodhpur & AIIMS MedTech Centre
   profilePic: >-
     https://drive.google.com/thumbnail?id=1XEu83Ou6P6BzqQB4B5aviyyoIVx7-Bfk&sz=w300
   researchArea1: Bio-inspired Robotics
@@ -130,7 +134,8 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnuclvvviT7mD_HM03njouyXNai91eKNWw5TkPAAghH9cxMysfXssSFuYSXt0mg
   type: Core
   hidden: 0
 - timestamp: 3/7/2024 5:51:01
@@ -184,7 +189,8 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: Maybe Brain-inspired computational modelling
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnuePHDffxMwvSpuykQNQz-NLv61jNbJj0QPSbdgVwni7k2sIjk_BqcmY5ue5Zw
   type: Core
   hidden: 0
 - timestamp: 3/11/2024 9:44:19
@@ -650,7 +656,7 @@
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
   name: Chhanda Chakraborti
-  position: Head, School of Management and Entrepreneurship IIT Jodhpur
+  position: Professor
   office: 1801
   Wwbsite: https://sites.google.com/iitj.ac.in/chhandachakraborti
   department: Liberal Arts
@@ -706,7 +712,7 @@
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
   name: Neeraj Jain
-  position: Head of School
+  position: Professor
   office: 9999
   Wwbsite: https://neerajlab.weebly.com/
   department: Bioscience and Bioengineering
@@ -808,7 +814,8 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnueQCaPxDjypEOnHazkesujPlzoKa8urUtawVEOQJGfRLTU7Z3YBqHqTSaPqIg
   type: Scientific Staff
   hidden: 0
 - timestamp: 7/25/2024 15:34:43
@@ -837,7 +844,8 @@
   suggestions: >-
     Please include Natural Language Processing and AI for Social Good as the
     themes 
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnuf75CO4LO4GJiRzCidFEybEqj7k2KWG9EXud-kgXzyPm1mYAeyYLr1AZXuF1g
   type: Core
   hidden: 0
 - timestamp: 7/25/2024 17:05:54
@@ -864,13 +872,14 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
-  undefined: null
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufh_8ETW5wP5A1mof7aN2noz6yQoybEwhm0t4EHEr2RWSpCKRXj7g4AxmwwLg
   type: Core
   hidden: 0
 - timestamp: 9/9/2024 14:29:03
   emailAddress: akt@iitj.ac.in
   name: Anil Kumar Tiwari
-  position: Head of School
+  position: Professor, Head of School
   office: 1353
   Wwbsite: http://home.iitj.ac.in/~akt/
   department: Electrical Engineering
@@ -891,6 +900,7 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
-  undefined: null
-  type: Core
-  hidden: .nan
+  undefined: >-
+    https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnudGa1NjNW6BJyAgzqzueMFSFUABrQwsBCYk5iqo55RsKMv-cO2MAKRCW4b-ejBf6_0
+  type: Affiliated
+  hidden: 0
