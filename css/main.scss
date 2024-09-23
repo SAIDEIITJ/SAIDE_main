@@ -170,7 +170,7 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	transition: transform 1s;
-	max-width: 100%;
+	width: 100%;
 	padding:15px;
 	border-top: 4px solid #a41e22;
   }
