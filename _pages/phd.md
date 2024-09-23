@@ -36,7 +36,7 @@ PhD students at the AIDE School are trained in theoretical as well as applied re
 
 {% capture content-bottom %}
 
-## The program at present is designed to offer degrees in the following areas:
+## The PhD program at present is designed to offer degrees in the following areas:
 
 <div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
