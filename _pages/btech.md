@@ -5,34 +5,29 @@ link: HOME / ACADEMICS
 des: The Minor Programs in Artificial Intelligence (AI) and Data Science (DS) at the School of Artificial Intelligence and Data Science (AIDE) offer undergraduate students pursuing Bachelor of Technology (B.Tech) degrees the opportunity to gain specialized knowledge and skills in these rapidly growing fields. These minor programs complement students' primary areas of study and prepare them for diverse career opportunities in AI and DS.
 permalink: /btech/
 ---
+{% capture content-col %}
 
+# BTech Programs
+The Minor Programs in AI and DS at AIDE are designed to provide BTech students with a foundational understanding of key concepts, techniques, and applications in AI and DS. These programs offer a blend of theoretical knowledge, practical skills, and hands-on experience through a combination of coursework, projects, and experiential learning opportunities.
+{% endcapture %}
 
-<div id="parent-box">
-<div class="general-section">
-<h1>B.Tech Programs</h1>
-<div class="row">
-<div class="col-md-8">
-<p style="text-align: justify;">The Minor Programs in AI and DS at AIDE are designed to provide B.Tech students with a foundational understanding of key concepts, techniques, and applications in AI and DS. These programs offer a blend of theoretical knowledge, practical skills, and hands-on experience through a combination of coursework, projects, and experiential learning opportunities.</p>
-</div>
-<div class="col-md-4 implinkBox">
-<div class="side-content">
-<div class="share">
-<p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+{% capture content-links %}
+
 {% assign links_data = site.data.links %}
 <ul class="side-news">
-  {% for mem in links_data %}
-    {% if mem.page == 'btech' %}
-      <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
-    {% endif %}
-  {% endfor %}
+{% for mem in links_data %}
+  {% if mem.page == 'btech' %}
+    <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
+  {% endif %}
+{% endfor %}
 </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div style="padding: 20px;">
-<h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
+
+{% endcapture %}
+
+{% capture content-bottom %}
+
+## The BTech program at present is designed to offer minor degrees in the following areas:
+
 <div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
 {% for member in programs_data %}
@@ -56,9 +51,8 @@ permalink: /btech/
 {% endif %}
 {% endfor %}
 </div>
-</div>
-</div>
 
+{% endcapture %}
 
 <style>
 /* page-banner image */
@@ -66,3 +60,5 @@ permalink: /btech/
 background-image: url("{{ site.baseurl }}/images/BTech.png");
 }
 </style>
+
+{% include education2.html %}
