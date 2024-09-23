@@ -6,38 +6,31 @@ permalink: /mtech/
 des: The Master of Technology (M.Tech) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers an advanced curriculum designed to prepare students for leadership roles in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).
 ---
 
-<style>
-.background-about {
-background-image: url("{{ site.baseurl }}/images/MTech.png");
-}
-</style>
+{% capture content-col %}
 
-<div id="parent-box">
-<div class="general-section">
-<h1>{{page.title}}</h1>
-<div class="row">
-<div class="col-md-8">
-<p style="text-align: justify;">The Master of Technology (M.Tech) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers an advanced curriculum designed to prepare students for leadership roles in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).</p>
-</div>
-<div class="col-md-4 implinkBox">
-<div class="side-content">
-<div class="share">
-<p class="sign-up" style="text-align: center;"><i class="fa-regular fa-hand-point-right"></i> Important Links</p>
+# MTech Programs
+
+The Master of Technology (MTech) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers an advanced curriculum designed to prepare students for leadership roles in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).
+
+{% endcapture %}
+
+{% capture content-links %}
+
 {% assign links_data = site.data.links %}
 <ul class="side-news">
-  {% for mem in links_data %}
-    {% if mem.page == 'mtech' %}
-      <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul> 
-</div>
-</div>
-</div>
-</div>
-</div>
-<div style="padding: 20px;">
-<h2 id="subheading">The program at present is designed to offer degrees in the following areas:</h2>
+{% for mem in links_data %}
+  {% if mem.page == 'mtech' %}
+    <li><a href="{{ mem.url }}" target="_blank" id="links">{{ mem.name }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% endcapture %}
+
+{% capture content-bottom %}
+
+## The MTech program at present is designed to offer degrees in the following areas:
+
 <div class="msgrid-container">
 {% assign programs_data = site.data.programs  %}
 {% for member in programs_data %}
@@ -61,5 +54,13 @@ background-image: url("{{ site.baseurl }}/images/MTech.png");
 {% endif %}
 {% endfor %}
 </div>
-</div>
-</div>
+
+{% endcapture %}
+
+<style>
+.background-about {
+background-image: url("{{ site.baseurl }}/images/MTech.png");
+}
+</style>
+
+{% include education2.html %}
