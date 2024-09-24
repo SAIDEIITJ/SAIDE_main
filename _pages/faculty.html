@@ -149,7 +149,7 @@ permalink: /faculty/
 <div class="HOD-details">
 {% assign faculty_members = site.data.faculty_profiles %}
 {% for member in faculty_members %}
-{% if member.hidden != 1  and member.position == 'Head of School' %}
+{% if member.position == 'Head of School' %}
 {% assign researchArea1 = member.researchArea1 %}
 {% assign researchArea2 = member.researchArea2 %}
 {% assign researchArea3 = member.researchArea3 %}
@@ -217,13 +217,15 @@ permalink: /faculty/
 {% endif %}
 {% endfor %}
 </div>
+
+
 <br>
 <div class="row" id="teamMembers">
 {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
-{% assign core_members = site.data.faculty_profiles | where: "type", "Core" %}
-{% assign affiliated_members = site.data.faculty_profiles | where: "type", "Affiliated" %}
-{% assign adjunct_members = site.data.faculty_profiles | where: "type", "Adjunct" %}
-{% assign pop_members = site.data.faculty_profiles | where: "type", "Professor of Practice" %}
+{% assign core_members = faculty_members | where: "type", "Core" %}
+{% assign affiliated_members = faculty_members | where: "type", "Affiliated" %}
+{% assign adjunct_members = faculty_members | where: "type", "Adjunct" %}
+{% assign pop_members = faculty_members | where: "type", "Professor of Practice" %}
 {% assign core_members_sorted = core_members | sort: "name" %}
 {% assign affiliated_members_sorted = affiliated_members | sort: "name" %}
 {% assign adjunct_members_sorted = adjunct_members | sort: "name" %}
