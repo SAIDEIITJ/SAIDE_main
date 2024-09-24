@@ -45,7 +45,7 @@ function openPopup(index) {
     if (equipmentArray.length === 0) {
         // If no equipment is available, display a message
         const noEquipmentMessage = document.createElement('p');
-        noEquipmentMessage.textContent = "No equipment available for this lab.";
+        noEquipmentMessage.textContent = "Coming up soon...";
         carouselInner.appendChild(noEquipmentMessage);
     } else {
         // Populate carousel with equipment details
