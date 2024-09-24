@@ -147,6 +147,7 @@ permalink: /faculty/
 </div>
 
 <div class="HOD-details">
+<h2 id = "factitle">Head</h2>
 {% assign faculty_members = site.data.faculty_profiles %}
 {% for member in faculty_members %}
 {% if member.head == 'yes' %}
@@ -220,6 +221,8 @@ permalink: /faculty/
 
 
 <br>
+
+
 <div class="row" id="teamMembers">
 {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "0" %}
 {% assign core_members = faculty_members | where: "type", "Core" %}
