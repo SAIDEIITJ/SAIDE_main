@@ -246,7 +246,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 3/11/2024 14:21:35
   emailAddress: sdang@iitj.ac.in
   name: 'Shilpa Dang '
@@ -435,7 +435,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 3/20/2024 7:23:35
   emailAddress: krunalg@iitj.ac.in
   name: Krunal Gangawane
@@ -490,7 +490,7 @@
   suggestions: Data Science and Data Engineering
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 4/19/2024 10:43:28
   emailAddress: ranju@iitj.ac.in
   name: Ranju Mohan
@@ -517,7 +517,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
   name: Vivek Vijay
@@ -571,7 +571,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 4/23/2024 8:40:38
   emailAddress: vnara@iitj.ac.in
   name: V Narayanan
@@ -625,7 +625,7 @@
   suggestions: 'Application of optimization in any field of engineering '
   undefined: null
   type: 'Affiliated '
-  hidden: 1
+  hidden: 0
 - timestamp: 4/23/2024 15:15:36
   emailAddress: harshal.akolekar@iitj.ac.in
   name: Harshal Akolekar
@@ -652,7 +652,7 @@
   suggestions: NA
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
   name: Chhanda Chakraborti
@@ -708,7 +708,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
   name: Neeraj Jain
@@ -735,7 +735,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 4/29/2024 11:06:52
   emailAddress: dilpreetkaur@iitj.ac.in
   name: Dilpreet Kaur
@@ -789,7 +789,7 @@
   suggestions: AI and Omics
   undefined: null
   type: Affiliated
-  hidden: 1
+  hidden: 0
 - timestamp: 7/25/2024 13:15:49
   emailAddress: taranjit@iitj.ac.in
   name: 'Taranjit Kaur  '
@@ -876,7 +876,7 @@
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufh_8ETW5wP5A1mof7aN2noz6yQoybEwhm0t4EHEr2RWSpCKRXj7g4AxmwwLg
   type: Core
   hidden: 0
-- timestamp: 9/9/2024 14:29:03
+- timestamp: 9/24/2024 11:28:23
   emailAddress: akt@iitj.ac.in
   name: Anil Kumar Tiwari
   position: Head of School
@@ -902,5 +902,5 @@
   suggestions: null
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnudGa1NjNW6BJyAgzqzueMFSFUABrQwsBCYk5iqo55RsKMv-cO2MAKRCW4b-ejBf6_0
-  type: Affiliated
+  type: Core
   hidden: 0
