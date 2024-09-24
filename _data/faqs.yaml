@@ -13,3 +13,83 @@
   question: What is Teaching Assistantship ?
   answer: null
   visible: null
+- category: Academics
+  question: >-
+    What is the minimum and maximum duration to complete the M.S. by Research
+    program?
+  answer: >-
+    A full-time M.S. by Research student can complete the program between 2
+    years (minimum) to 4 years (maximum). A part-time student can complete the
+    program between 3 years (minimum) to 5 years (maximum)
+  visible: 'Yes'
+- category: Academics
+  question: What is the credit requirement for M.S. by Research students?
+  answer: >-
+    Students need to complete 24 credits through coursework and 36 credits
+    through research&#8203;
+  visible: 'Yes'
+- category: Academics
+  question: How many credits can a student register for in a semester?
+  answer: >-
+    Full-time students can register for a maximum of 16 credits and a minimum of
+    6 credits. Part-time students can register for 12 to 3 credits per semester
+  visible: 'Yes'
+- category: Academics
+  question: Can M.S. by Research students change their program to a Ph.D.?
+  answer: >-
+    The M.S. by Research Degree can be upgraded to Ph.D. based on the CGPA
+    (>7.5) and progress of the student after 3 Semesters for regular students;
+    however, transition will require continuation of the same work and the
+    student has to satisfy regular PhD requirements. All conditions of Ph.D.
+    degree program will be applicable to all such students. All such changes of
+    registration shall be reported to the Senate.
+  visible: 'Yes'
+- category: Funding
+  question: Is there financial assistance available for M.S. by Research students?
+  answer: >-
+    Financial assistantship/scholarship will be provided to the eligible
+    students admitted under regular full-time program. The regular M.S. by
+    Research students would get fellowship/assistantship up to a maximum of 2
+    years as JRF starting from the date of registration. In exceptional cases,
+    the fellowship can be extended to a maximum of one more year depending on
+    the work done and the recommendations of the supervisor and SRC.
+  visible: 'Yes'
+- category: Academics
+  question: What is the role of the Student Research Committee (SRC)?
+  answer: null
+  visible: null
+- category: Admissions
+  question: What is the eligibility for Ph.D. admission?
+  answer: >-
+    Candidates must have a master's degree in engineering, science, humanities,
+    social sciences, or equivalent with at least 60% marks or a 6.0/10 CGPA.
+    Certain professional qualifications (e.g., MBBS with MD) are also accepted&#8203;
+  visible: null
+- category: Admissions
+  question: What is the difference between full-time and part-time Ph.D. programs?
+  answer: >-
+    Full-time students dedicate all their time to research, while part-time
+    students are working professionals, often employed by external
+    organizations, and are required to attend the program with limited credits
+  visible: null
+- category: Academics
+  question: What is the comprehensive examination?
+  answer: >-
+    The comprehensive exam tests the student's general and specific knowledge in
+    their research field. It includes written tests, and students have two
+    chances to pass&#8203;
+  visible: null
+- category: Academics
+  question: How many credits are required for a Ph.D.?
+  answer: >-
+    Ph.D. students must complete a minimum of 12 to 24 credits through
+    coursework and 48 credits through thesis work, depending on their prior
+    qualifications&#8203;
+  visible: null
+- category: Academics
+  question: What is the comprehensive examination?
+  answer: >-
+    The comprehensive exam tests the student's general and specific knowledge in
+    their research field. It includes written tests, and students have two
+    chances to pass&#8203;
+  visible: null
