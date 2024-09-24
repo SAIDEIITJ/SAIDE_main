@@ -231,7 +231,10 @@ permalink: /faculty/
 {% assign adjunct_members_sorted = adjunct_members | sort: "name" %}
 {% assign pop_members_sorted = pop_members | sort: "name" %}
 
-
+{% for member in faculty_members %}
+{{ member.name }} {{ member.hidden }}<br>
+{% endfor %}
+  
 {% assign all_members_sorted = core_members_sorted | concat: affiliated_members_sorted | concat: adjunct_members_sorted | concat: pop_members_sorted %}
 {% if core_members_sorted.size != 0 %}
 <h2 id = "factitle">Core</h2>
