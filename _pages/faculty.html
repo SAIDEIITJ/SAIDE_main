@@ -222,10 +222,10 @@ permalink: /faculty/
 <br>
 <div class="row" id="teamMembers">
 {% assign faculty_members = site.data.faculty_profiles | where: "hidden", "!= 1" %}
-{% assign core_members = site.data.faculty_profiles | where: "type", "Core" | where: "hidden", "!= 1" %}
-{% assign affiliated_members = site.data.faculty_profiles | where: "type", "Affiliated" | where: "hidden", "!= 1" %}
-{% assign adjunct_members = site.data.faculty_profiles | where: "type", "Adjunct" | where: "hidden", "!= 1" %}
-{% assign pop_members = site.data.faculty_profiles | where: "type", "Professor of Practice" | where: "hidden", "!= 1" %}
+{% assign core_members = site.data.faculty_profiles | where: "type", "Core" %}
+{% assign affiliated_members = site.data.faculty_profiles | where: "type", "Affiliated" %}
+{% assign adjunct_members = site.data.faculty_profiles | where: "type", "Adjunct" %}
+{% assign pop_members = site.data.faculty_profiles | where: "type", "Professor of Practice" %}
 {% assign core_members_sorted = core_members | sort: "name" %}
 {% assign affiliated_members_sorted = affiliated_members | sort: "name" %}
 {% assign adjunct_members_sorted = adjunct_members | sort: "name" %}
