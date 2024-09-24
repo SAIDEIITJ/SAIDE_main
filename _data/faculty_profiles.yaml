@@ -25,6 +25,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufjv9neYpfHQpbu7mNOsZo5B_9TJNuOkzKjKoCAXTe5Yo5PoiTKklJI2PfyXA
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 9/8/2024 19:00:21
   emailAddress: srivatsa@iitj.ac.in
@@ -53,6 +54,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufITmT5OEKCKXkvVmig7jk2tXQGytvfj8noMQCHpCmWcz7OJSJiRB1KllQVZQ
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 9/3/2024 0:15:41
   emailAddress: bikash@iitj.ac.in
@@ -81,6 +83,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnucJ1uAvQOlSrIpwNB3kjseHpEgOCNrfrl7gzlOEB3aeZ6BVMTMXfukuVBJXrg
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 7/31/2024 12:24:21
   emailAddress: ma@iitj.ac.in
@@ -109,6 +112,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnud4Z2NHnHgm4Y3c1J2nqTI_fdyrvj9zYgr_aYftQbXoMJrsuzEfMXvqMoERAg
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 9/23/2024 11:14:08
   emailAddress: null
@@ -137,6 +141,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnuclvvviT7mD_HM03njouyXNai91eKNWw5TkPAAghH9cxMysfXssSFuYSXt0mg
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 3/7/2024 5:51:01
   emailAddress: abhinaba@iitj.ac.in
@@ -164,6 +169,7 @@
   suggestions: null
   undefined: null
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 9/2/2024 11:17:51
   emailAddress: vigneshmdharan@iitj.ac.in
@@ -192,6 +198,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnuePHDffxMwvSpuykQNQz-NLv61jNbJj0QPSbdgVwni7k2sIjk_BqcmY5ue5Zw
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 3/11/2024 9:44:19
   emailAddress: dweepobotee@iitj.ac.in
@@ -219,6 +226,7 @@
   suggestions: AI/ML for Social Good
   undefined: null
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 3/11/2024 10:50:25
   emailAddress: romibanerjee@iitj.ac.in
@@ -246,6 +254,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/11/2024 14:21:35
   emailAddress: sdang@iitj.ac.in
@@ -273,6 +282,7 @@
   suggestions: null
   undefined: null
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 3/13/2024 4:29:20
   emailAddress: pyadav@iitj.ac.in
@@ -300,6 +310,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/16/2024 8:22:09
   emailAddress: saran.aadhar@iitj.ac.in
@@ -327,6 +338,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/16/2024 8:25:01
   emailAddress: chsarma@iitj.ac.in
@@ -354,6 +366,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/16/2024 9:14:18
   emailAddress: mvatsa@iitj.ac.in
@@ -381,6 +394,7 @@
   suggestions: Generative AI; Responsible AI
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/16/2024 17:23:24
   emailAddress: gmanjhi@iitj.ac.in
@@ -408,6 +422,7 @@
   suggestions: AI, LLM, and Economics
   undefined: null
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 3/17/2024 5:00:45
   emailAddress: dhakas@iitj.ac.in
@@ -435,6 +450,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/20/2024 7:23:35
   emailAddress: krunalg@iitj.ac.in
@@ -463,6 +479,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 3/26/2024 5:29:07
   emailAddress: dipsankarb@iitj.ac.in
@@ -490,6 +507,7 @@
   suggestions: Data Science and Data Engineering
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/19/2024 10:43:28
   emailAddress: ranju@iitj.ac.in
@@ -517,6 +535,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
@@ -544,6 +563,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/23/2024 8:28:52
   emailAddress: nishantkumar@iitj.ac.in
@@ -571,6 +591,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/23/2024 8:40:38
   emailAddress: vnara@iitj.ac.in
@@ -598,6 +619,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/23/2024 13:38:53
   emailAddress: mdabutalha@iitj.ac.in
@@ -625,6 +647,7 @@
   suggestions: 'Application of optimization in any field of engineering '
   undefined: null
   type: 'Affiliated '
+  head: null
   hidden: .nan
 - timestamp: 4/23/2024 15:15:36
   emailAddress: harshal.akolekar@iitj.ac.in
@@ -652,6 +675,7 @@
   suggestions: NA
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
@@ -681,6 +705,7 @@
   suggestions: Brain, behaviour, and Philosophy of Neuroscience
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/26/2024 14:52:14
   emailAddress: sdey@iitj.ac.in
@@ -708,6 +733,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
@@ -735,6 +761,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/29/2024 11:06:52
   emailAddress: dilpreetkaur@iitj.ac.in
@@ -762,6 +789,7 @@
   suggestions: null
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 4/29/2024 12:13:41
   emailAddress: mitali@iitj.ac.in
@@ -789,6 +817,7 @@
   suggestions: AI and Omics
   undefined: null
   type: Affiliated
+  head: null
   hidden: .nan
 - timestamp: 7/25/2024 13:15:49
   emailAddress: taranjit@iitj.ac.in
@@ -817,6 +846,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnueQCaPxDjypEOnHazkesujPlzoKa8urUtawVEOQJGfRLTU7Z3YBqHqTSaPqIg
   type: Scientific Staff
+  head: null
   hidden: .nan
 - timestamp: 7/25/2024 15:34:43
   emailAddress: asif@iitj.ac.in
@@ -847,6 +877,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnuf75CO4LO4GJiRzCidFEybEqj7k2KWG9EXud-kgXzyPm1mYAeyYLr1AZXuF1g
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 7/25/2024 17:05:54
   emailAddress: droy@iitj.ac.in
@@ -875,6 +906,7 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnufh_8ETW5wP5A1mof7aN2noz6yQoybEwhm0t4EHEr2RWSpCKRXj7g4AxmwwLg
   type: Core
+  head: null
   hidden: .nan
 - timestamp: 9/24/2024 12:02:43
   emailAddress: akt@iitj.ac.in
@@ -903,4 +935,5 @@
   undefined: >-
     https://docs.google.com/forms/d/e/1FAIpQLSc8TO-zRhHrfp8ygYo-oVkGVPj_XarLpjggMHXJN_tfl12e4A/viewform?edit2=2_ABaOnudGa1NjNW6BJyAgzqzueMFSFUABrQwsBCYk5iqo55RsKMv-cO2MAKRCW4b-ejBf6_0
   type: Affiliate
+  head: 'yes'
   hidden: .nan
