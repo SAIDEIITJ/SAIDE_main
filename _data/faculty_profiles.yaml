@@ -25,7 +25,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 9/8/2024 19:00:21
   emailAddress: srivatsa@iitj.ac.in
   name: S. Srivatsa Srinivas
@@ -53,7 +53,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 9/3/2024 0:15:41
   emailAddress: bikash@iitj.ac.in
   name: Bikash Santra
@@ -81,7 +81,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 7/31/2024 12:24:21
   emailAddress: ma@iitj.ac.in
   name: Manish Aggarwal
@@ -109,7 +109,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 9/23/2024 11:14:08
   emailAddress: null
   name: Bhivraj Suthar
@@ -137,7 +137,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/7/2024 5:51:01
   emailAddress: abhinaba@iitj.ac.in
   name: Abhinaba Lahiri
@@ -165,7 +165,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 9/2/2024 11:17:51
   emailAddress: vigneshmdharan@iitj.ac.in
   name: Vignesh Muralidharan
@@ -193,7 +193,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/11/2024 9:44:19
   emailAddress: dweepobotee@iitj.ac.in
   name: Dweepobotee Brahma
@@ -221,7 +221,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/11/2024 10:50:25
   emailAddress: romibanerjee@iitj.ac.in
   name: Romi Banerjee
@@ -249,7 +249,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/11/2024 14:21:35
   emailAddress: sdang@iitj.ac.in
   name: 'Shilpa Dang '
@@ -277,7 +277,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/13/2024 4:29:20
   emailAddress: pyadav@iitj.ac.in
   name: Pankaj Yadav
@@ -305,7 +305,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 3/16/2024 8:22:09
   emailAddress: saran.aadhar@iitj.ac.in
   name: Saran Aadhar
@@ -333,7 +333,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 3/16/2024 8:25:01
   emailAddress: chsarma@iitj.ac.in
   name: V.V.M.S. Chandramouli
@@ -361,7 +361,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 3/16/2024 9:14:18
   emailAddress: mvatsa@iitj.ac.in
   name: Mayank Vatsa
@@ -389,7 +389,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 3/16/2024 17:23:24
   emailAddress: gmanjhi@iitj.ac.in
   name: Ganesh Manjhi
@@ -417,7 +417,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/17/2024 5:00:45
   emailAddress: dhakas@iitj.ac.in
   name: Suman Dhaka
@@ -445,7 +445,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 3/20/2024 7:23:35
   emailAddress: krunalg@iitj.ac.in
   name: Krunal Gangawane
@@ -474,7 +474,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 3/26/2024 5:29:07
   emailAddress: dipsankarb@iitj.ac.in
   name: Dip Sankar Banerjee
@@ -502,7 +502,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/19/2024 10:43:28
   emailAddress: ranju@iitj.ac.in
   name: Ranju Mohan
@@ -530,7 +530,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/19/2024 13:20:15
   emailAddress: vivek@iitj.ac.in
   name: Vivek Vijay
@@ -558,7 +558,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 4/23/2024 8:28:52
   emailAddress: nishantkumar@iitj.ac.in
   name: Nishant Kumar
@@ -586,7 +586,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/23/2024 8:40:38
   emailAddress: vnara@iitj.ac.in
   name: V Narayanan
@@ -614,7 +614,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 4/23/2024 13:38:53
   emailAddress: mdabutalha@iitj.ac.in
   name: Md Abu Talhamainuddin Ansary
@@ -642,7 +642,7 @@
   undefined: 0
   type: 'Affiliated '
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/23/2024 15:15:36
   emailAddress: harshal.akolekar@iitj.ac.in
   name: Harshal Akolekar
@@ -670,7 +670,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/23/2024 17:24:59
   emailAddress: chhanda@iitj.ac.in
   name: Chhanda Chakraborti
@@ -700,7 +700,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 4/26/2024 14:52:14
   emailAddress: sdey@iitj.ac.in
   name: Sucharita Dey
@@ -728,7 +728,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/27/2024 5:12:41
   emailAddress: neeraj.jain@iitj.ac.in
   name: Neeraj Jain
@@ -756,7 +756,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 4/29/2024 11:06:52
   emailAddress: dilpreetkaur@iitj.ac.in
   name: Dilpreet Kaur
@@ -784,7 +784,7 @@
   undefined: 1
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 1
 - timestamp: 4/29/2024 12:13:41
   emailAddress: mitali@iitj.ac.in
   name: Mitali Mukerji
@@ -812,7 +812,7 @@
   undefined: 0
   type: Affiliated
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 7/25/2024 13:15:49
   emailAddress: taranjit@iitj.ac.in
   name: 'Taranjit Kaur  '
@@ -840,7 +840,7 @@
   undefined: 0
   type: Scientific Staff
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 7/25/2024 15:34:43
   emailAddress: asif@iitj.ac.in
   name: Asif Ekbal
@@ -870,7 +870,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 7/25/2024 17:05:54
   emailAddress: droy@iitj.ac.in
   name: Dipanjan Roy
@@ -898,7 +898,7 @@
   undefined: 0
   type: Core
   head: null
-  hidden: .nan
+  hidden: 0
 - timestamp: 9/24/2024 12:16:20
   emailAddress: akt@iitj.ac.in
   name: Anil Kumar Tiwari
@@ -926,4 +926,4 @@
   undefined: 0
   type: Affiliated
   head: 'yes'
-  hidden: .nan
+  hidden: 0
