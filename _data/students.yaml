@@ -11,19 +11,6 @@
   email: p22ai202@iitj.ac.in
   hidden: 0
   alumnus: 0
-- timestamp: 4/15/2024 12:33:28
-  name: Gargi Bhattacharjee
-  program: Ph.D.
-  specialization: null
-  center: CBSA
-  undefined: M.E (Software Engineering), B.Tech (CSE)
-  researchArea: Cognitive Neuroscience - Spatial Working Memory
-  website: null
-  profilePhoto: >-
-    https://drive.google.com/drive/folders/1k7zB9R_iu8LDEvOBmHgmvK4clkXmsJsRgXRuBBfWbz1riMYUNknauvO7ierYGwyt3G2EiUlq
-  email: p22ai002@iitj.ac.in
-  hidden: 0
-  alumnus: 0
 - timestamp: 4/15/2024 14:12:25
   name: 'Shubham Kumar '
   program: Ph.D.
@@ -73,8 +60,7 @@
   undefined: null
   researchArea: AI
   website: null
-  profilePhoto: >-
-    https://drive.google.com/file/d/1KvN48ClnSil69YGXX88Jtkinu4F8rv1_/view?usp=sharing
+  profilePhoto: null
   email: p23ai0003@iitj.ac.in
   hidden: 0
   alumnus: 0
@@ -118,7 +104,7 @@
   profilePhoto: >-
     https://drive.google.com/thumbnail?id=1EcJ91LYZ0pvYMPNXkn7Afxv-QjDj83cE&sz=w300
   email: p22ai201@iitj.ac.in
-  hidden: 0
+  hidden: 1
   alumnus: 0
 - timestamp: 4/22/2024 11:26:23
   name: Abinaya Vairam
@@ -317,3 +303,176 @@
   email: m23air001@iitj.ac.in
   hidden: 0
   alumnus: 0
+- timestamp: 9/25/2024 16:10:28
+  name: Gargi Bhattacharjee
+  program: Ph.D.
+  specialization: Cognitive Neuroscience
+  center: CBSA
+  undefined: M.E  (Software Engineering)
+  researchArea: ' Exploring the interactions between motivation, working memory and perception'
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1_tj2A9wfEVwEKQ5Pf13HYVVlESpUI0Pk&sz=w300
+  email: p22ai002@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/25/2024 17:38:46
+  name: Arun Kumar
+  program: M.Tech.
+  specialization: AR/VR
+  center: None
+  undefined: MCA
+  researchArea: Animatrion Transfer
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1yBIaqqFq3wyXylzcV-LwRXTOtJnilWUt&sz=w300
+  email: m23air003@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/26/2024 12:36:17
+  name: 'vikas kumar sharma '
+  program: M.Tech.
+  specialization: Augmented reality virtual reality,MTech
+  center: None
+  undefined: B.Tech CSE
+  researchArea: >-
+    Parkinson's Disease ,Healthcare,Augmented Reality,Virtual Reality,Extendend
+    reality,ML-Agents,Digital Twins.
+  website: www.linkedin.com/in/vikas-sharma-xr
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1bJgBam8nXAkT8jsFGY-v_RvD5ifKVdes&sz=w300
+  email: m23air013@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/25/2024 20:31:16
+  name: 'Prajwal Vijay Kajare '
+  program: Ph.D.
+  specialization: Machine Learning, NLP
+  center: None
+  undefined: M.Sc. Mathematics
+  researchArea: TBD
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=16dskJYuHzNqM3yUqH6rGYITbMF3CaTfz&sz=w300
+  email: p24ai0004@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/25/2024 20:41:49
+  name: NIMISH KUMAR
+  program: Ph.D.
+  specialization: NA
+  center: CBSA
+  undefined: MTech in Industrial Electronics
+  researchArea: Most probably neurosciece
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1FbSrn9qxR18DLBc-7aaUfwofswZR5OTr&sz=w300
+  email: p24ai0002@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/25/2024 23:48:12
+  name: AVNI SINGH
+  program: MS(R)
+  specialization: Centre for brain sciences and applications
+  center: CBSA
+  undefined: BTECH IN CSE
+  researchArea: Brain Image Analysis
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1rGVL8QWOe0ZRYbmK0t_TuC4xGurMJ0eI&sz=w300
+  email: r24ab0001@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/26/2024 1:20:39
+  name: Kartik M Avhad
+  program: MS(R)
+  specialization: Computational Economics
+  center: CMCE
+  undefined: B.E in Electronics and Telecommunication
+  researchArea: Macroeconomics, Financial Economics
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1JT4D9rZREk7H_6G4fl0luo5tFb7B0DHr&sz=w300
+  email: r24am0001@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/26/2024 9:06:21
+  name: Ankita Sarkar
+  program: Ph.D.
+  specialization: PhD in AI and Data Science
+  center: None
+  undefined: >-
+    Master of Science in Data Science, Btech in Metallurgy and Materials
+    Engineering
+  researchArea: Medical Image Processing, Deep Learning, Machine Learning
+  website: https://www.linkedin.com/in/ankita-sarkar-117bb7168/
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1ee9TG-e9knJfZvuuV4IG91xXPWuNsiLv&sz=w300
+  email: p24ai0001@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/26/2024 10:04:23
+  name: Akash Chatterjee
+  program: M.Tech.
+  specialization: Augmented Reality and Virtual Reality
+  center: None
+  undefined: M.Sc Computer Science
+  researchArea: Digital Twin
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1ELrDS8GLDLwBiuv5Yia4Ixk3jfBG36fJ&sz=w300
+  email: m23air002@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/26/2024 21:15:49
+  name: Tammy Lalhmingthangi Ralte
+  program: M.Tech.
+  specialization: ARVR (augmented reality and Virtual Reality)
+  center: None
+  undefined: B.tech
+  researchArea: 3D computer vision and ARVR
+  website: 'https://www.linkedin.com/in/tammy-ralte-0744851b5/?originalSubdomain=in '
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1k1eyUHY2IOd3huiafMw7FtyOQIC0jN4h&sz=w300
+  email: m23air011@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/26/2024 22:46:01
+  name: Sameer Balkhi
+  program: M.Tech.
+  specialization: AR/VR
+  center: None
+  undefined: B.Tech.
+  researchArea: Machine Learning
+  website: https://www.linkedin.com/in/sameer-balkhi-0a9a94308/
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1a5b5Xnu8722h3-6MkcSjwKZFzvOHf_s2&sz=w300
+  email: m23air010@iitj.ac.in
+  hidden: 0
+  alumnus: 0
+- timestamp: 9/27/2024 14:13:26
+  name: Lalit Sharma
+  program: M.Tech.
+  specialization: 'Augmented reality and virtual reality '
+  center: None
+  undefined: B.tech (electronics communication and engineering)
+  researchArea: '3d  model generation using wireframe in virtual reality '
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1MunsdWovOO6yiGZW8Q47fXYeNhvLcJva&sz=w300
+  email: m23air006@iitj.ac.in
+  hidden: .nan
+  alumnus: .nan
+- timestamp: 10/3/2024 20:20:09
+  name: Shashvat Tripathi
+  program: MS(R)
+  specialization: Intelligent Transporation Systems
+  center: CII
+  undefined: B.Tech. in Mechanical Engineering
+  researchArea: Traffic Flow Theory, Machine Learning, IoT, AR-VR
+  website: null
+  profilePhoto: >-
+    https://drive.google.com/thumbnail?id=1kVygIf2-XO_EpZpBOHqmW7iTmK1vbQ8W&sz=w300
+  email: r23an0001@iitj.ac.in
+  hidden: .nan
+  alumnus: .nan
