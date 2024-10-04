@@ -489,7 +489,15 @@ $cell-hover-color: rgba(255, 0, 0, 0.12); // Define hover color for cells
 
   }
 
-  
+  //positions
+
+.positions-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding-top: 10px;
+  }
   
 
   //projects
