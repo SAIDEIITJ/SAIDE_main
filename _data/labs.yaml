@@ -2,7 +2,7 @@
   name: Cognitive Engineering Lab
   location: W10
   contact: Taranjit Kaur
-  extension: 9999
+  extension: 1762
   url: null
   labImage: >-
     https://drive.google.com/thumbnail?id=1wOXPAcACPMonDbclPYNtKrvCimc-5k6I&sz=w800
@@ -24,7 +24,7 @@
   name: Natural Language Processing Lab
   location: '-'
   contact: Asif Ekbal
-  extension: 9999
+  extension: 1765
   url: null
   labImage: >-
     https://drive.google.com/thumbnail?id=1fbEwTfeWp04JDMDQMtu9g2nVk9iBBuQ-&sz=w800
@@ -46,7 +46,7 @@
   name: Computational Economics Lab
   location: '-'
   contact: Dweepobotee Brahma
-  extension: 9999
+  extension: 1755
   url: null
   labImage: >-
     https://drive.google.com/thumbnail?id=1lja7uTkNp0CfIBmbMtfhgV80UTDAoDrV&sz=w800
@@ -57,7 +57,7 @@
   name: Computational Intelligence Lab
   location: '-'
   contact: Manish Agarwal
-  extension: 9999
+  extension: 1811
   url: null
   labImage: >-
     https://drive.google.com/thumbnail?id=1U947F4W0AXbtAvl6WRSmiGCn_zosEmIM&sz=w800
@@ -72,4 +72,4 @@
   url: null
   labImage: null
   popupBackground: null
-  hidden: .nan
+  hidden: 0
