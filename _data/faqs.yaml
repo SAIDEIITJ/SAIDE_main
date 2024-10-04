@@ -7,11 +7,28 @@
   visible: 'Yes'
 - category: Academics
   question: What is Reseach Purposal?
-  answer: null
+  answer: >-
+    A research proposal, in the context of IIT Jodhpur&#8217;s postgraduate program,
+    is a report and presentation prepared by Ph.D. or M.Tech.-Ph.D. students
+    after completing the State of Art Seminar (SOTA). The proposal outlines the
+    chosen research topic and its objectives, presenting the foundational work
+    for the thesis. It must include research work equivalent to 16 credits and
+    is evaluated by the Student Research Committee (SRC), which allocates a
+    letter grade based on the performance. Successfully completing the research
+    proposal defense is a key step toward becoming a Ph.D. candidate
   visible: null
 - category: Academics
   question: What is Teaching Assistantship ?
-  answer: null
+  answer: >-
+    A Teaching Assistantship (TA) is a form of financial assistance provided to
+    eligible M.Tech. and Ph.D. students at IIT Jodhpur. In exchange for this
+    financial aid, students are required to assist faculty members with
+    teaching-related activities such as conducting tutorials, grading
+    assignments, and helping in labs. The assistantship also serves as a
+    professional development opportunity for students, providing teaching
+    experience while they pursue their studies. For the continuation of the
+    assistantship, M.Tech. students must maintain a minimum CGPA of 6.0, and
+    Ph.D. students must maintain a CGPA of 6.5
   visible: null
 - category: Academics
   question: >-
@@ -93,3 +110,27 @@
     their research field. It includes written tests, and students have two
     chances to pass&#8203;
   visible: null
+- category: Academics
+  question: What is the primary focus of the M.Tech. programme in AR & VR?
+  answer: >-
+    The M.Tech. programme in AR & VR focuses on providing students with
+    interdisciplinary knowledge and practical skills required to design,
+    implement, and evaluate Augmented Reality and Virtual Reality applications.
+    It covers core concepts in graphics, immersive experiences, content
+    creation, and the development of next-generation AR/VR systems for various
+    industries.
+  visible: 'Yes'
+- category: Academics
+  question: >-
+    What is the Leave Policy for M.Tech. ,M.S. by Research and  Ph.D. Students
+    at IIT Jodhpur?
+  answer: >-
+    In an academic year, a maximum of 30 days may be taken, including absence
+    for medical reasons and the mid-semester break. Although the student is
+    permitted to register for leave during the mid-semester break or the
+    summer/winter term, they must do so in advance. PhD and M.S. by Research
+    students are prohibited from taking more than 15 days of absence at a time.
+    It is prohibited for an M.Tech./M.Sc. student to take leave for more than 10
+    consecutive days. For exceptional circumstances, DRC may grant leave beyond
+    30 days in an academic year without an assistantship during that time.
+  visible: 'Yes'
