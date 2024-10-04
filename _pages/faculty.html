@@ -257,6 +257,8 @@ permalink: /faculty/
   {% assign researchArea2 = member.researchArea2 %}
   {% assign researchArea3 = member.researchArea3 %}
   {% assign researchArea4 = member.researchArea4 %}
+  {% assign keywords = member.keywords %}
+  {% assign blob = member.blob %}
 
   {% assign research_areas = '' %}
 
@@ -280,6 +282,18 @@ permalink: /faculty/
       {% assign research_areas = research_areas | append: ', ' %}
     {% endif %}
     {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  {% if keywords != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: keywords %}
+  {% endif %}
+  {% if blob != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: blob %}
   {% endif %}
   
 <div class="col-lg-6 col-md-6 col-sm-12 member-card" 
@@ -334,6 +348,8 @@ permalink: /faculty/
   {% assign researchArea2 = member.researchArea2 %}
   {% assign researchArea3 = member.researchArea3 %}
   {% assign researchArea4 = member.researchArea4 %}
+  {% assign keywords = member.keywords %}
+  {% assign blob = member.blob %}
 
   {% assign research_areas = '' %}
 
@@ -357,6 +373,18 @@ permalink: /faculty/
       {% assign research_areas = research_areas | append: ', ' %}
     {% endif %}
     {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  {% if keywords != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: keywords %}
+  {% endif %}
+  {% if blob != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: blob %}
   {% endif %}
   
 <div class="col-lg-6 col-md-6 col-sm-12 member-card" 
@@ -410,6 +438,8 @@ permalink: /faculty/
   {% assign researchArea2 = member.researchArea2 %}
   {% assign researchArea3 = member.researchArea3 %}
   {% assign researchArea4 = member.researchArea4 %}
+  {% assign keywords = member.keywords %}
+  {% assign blob = member.blob %}
 
   {% assign research_areas = '' %}
 
@@ -433,6 +463,18 @@ permalink: /faculty/
       {% assign research_areas = research_areas | append: ', ' %}
     {% endif %}
     {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  {% if keywords != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: keywords %}
+  {% endif %}
+  {% if blob != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: blob %}
   {% endif %}
   
 <div class="col-lg-6 col-md-6 col-sm-12 member-card" 
@@ -486,6 +528,8 @@ permalink: /faculty/
   {% assign researchArea2 = member.researchArea2 %}
   {% assign researchArea3 = member.researchArea3 %}
   {% assign researchArea4 = member.researchArea4 %}
+  {% assign keywords = member.keywords %}
+  {% assign blob = member.blob %}
 
   {% assign research_areas = '' %}
 
@@ -509,6 +553,18 @@ permalink: /faculty/
       {% assign research_areas = research_areas | append: ', ' %}
     {% endif %}
     {% assign research_areas = research_areas | append: researchArea4 %}
+  {% endif %}
+  {% if keywords != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: keywords %}
+  {% endif %}
+  {% if blob != '' %}
+    {% if research_areas != '' %}
+      {% assign research_areas = research_areas | append: ', ' %}
+    {% endif %}
+    {% assign research_areas = research_areas | append: blob %}
   {% endif %}
   
 <div class="col-lg-6 col-md-6 col-sm-12 member-card" 
