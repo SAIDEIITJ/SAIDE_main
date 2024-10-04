@@ -22,8 +22,15 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    We explore several aspects of brain function: * How does modern technology
+    interact with the brain, which was designed for a very different
+    environment? * Building dynamical models of the whole brain * Developing
+    novel methods for early diagnosis of brain disorders * Building models of
+    cognition
   undefined: 0
   type: Core
+  keywords: brain, network, neuroscience, eeg, cognition
   head: null
   hidden: 0
 - timestamp: 9/8/2024 19:00:21
@@ -50,8 +57,14 @@
   socialEngineering: Somewhat
   theoreticalAIML: Somewhat
   suggestions: null
+  blob: >-
+    * Making solutions work - Developing practice-driven strategies and
+    solutions in transportation and logistics * Unravelling customers' waiting
+    experience and queue-joining strategies - How to leverage customer behavior
+    and design service systems? 
   undefined: 0
   type: Core
+  keywords: Operations Research, Game Theory, Service Operations, Policy Making
   head: null
   hidden: 0
 - timestamp: 9/3/2024 0:15:41
@@ -78,8 +91,19 @@
   socialEngineering: 'Yes'
   theoreticalAIML: 'Yes'
   suggestions: AI driven Precision Agriculture
+  blob: >-
+    My interest is in application-driven research to develop computer vision
+    based AI tools for:  1) detection, classification and segmentation of
+    objects in images, 2) automation of retail store operations from
+    videos/images, 3) characterization of abnormalities in medical images, 4)
+    genetic characterization of lesions from medical images, and  5) phenology
+    and precision agriculture
   undefined: 0
   type: Core
+  keywords: >-
+    Deep learning, medical imaging, machine learning, ai in healthcare,
+    precision agriculture, computer vision, image processing, AI driven
+    Precision Agriculture
   head: null
   hidden: 0
 - timestamp: 7/31/2024 12:24:21
@@ -106,8 +130,10 @@
   socialEngineering: 'Yes'
   theoreticalAIML: 'Yes'
   suggestions: null
+  blob: null
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 9/23/2024 11:14:08
@@ -134,8 +160,25 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    Welcome to our research group!  Our research group is dedicated to pushing
+    the boundaries of innovation in the fields of Robotics and Artificial
+    Intelligence. With a focus on cutting-edge technologies, we explore a wide
+    range of areas including Bio-inspired Mechanisms, Grippers, Tactile Sensors,
+    vision sensors, Medical Robotics, Wearable Robotics and Metamorphic Drone
+    Arms.  One of our primary objectives is to take research from
+    conceptualization to realization. We utilize modeling, simulation, and 3D
+    printing technology to develop prototypes of robots from scratch. Our
+    ultimate goal is to bridge the gap between laboratory research, typically
+    characterized by low Technology Readiness Levels (TRL), and market-ready
+    products with high TRLs. Through our interdisciplinary approach and focus on
+    practical applications, we aim to contribute to the advancement of robotics
+    and AI technologies that have real-world impact.  Join us as we explore the
+    exciting frontier of robotics and artificial intelligence, and work towards
+    bringing innovative ideas to life.  Welcome to the future of robotics!
   undefined: 0
   type: Core
+  keywords: Robotics and Artificial Intelligence
   head: null
   hidden: 0
 - timestamp: 3/7/2024 5:51:01
@@ -162,8 +205,18 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    My main research area, Strategic Social Choice Theory, considers situations
+    where agents have private information. A collective decision has to be made
+    that depends on the private information held by agents. This private
+    information has therefore to be elicited or revealed by the agents. Agents
+    may misreport their private information interpreting the revelation process
+    as a "game". The final outcome will depend on not just their own
+    announcement but the announcement of all others. This sub-field of economics
+    mainly focuses on what collective goals can be achieved in these settings. 
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 9/2/2024 11:17:51
@@ -190,8 +243,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: Maybe Brain-inspired computational modelling
+  blob: null
   undefined: 0
   type: Core
+  keywords: neuroscience, brain, cognitive control, brain stimulation, eeg
   head: null
   hidden: 0
 - timestamp: 3/11/2024 9:44:19
@@ -218,8 +273,16 @@
   socialEngineering: Somewhat
   theoreticalAIML: 'No'
   suggestions: AI/ML for Social Good
+  blob: >-
+    My research interests lie in the intersection of applied econometrics
+    (including Machine Learning and Causal Inference techniques) and development
+    economics and health economics. I study maternal and child health outcomes,
+    child mortality and morbidity, malnutrition, immunization, health insurance
+    and health financing, digital health. I use Machine Learning techniques to
+    improve targeting of public policies.
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 3/11/2024 10:50:25
@@ -246,8 +309,17 @@
   socialEngineering: Somewhat
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    * Trying to understand and model how we do what we do and why we do what we
+    do, towards the design of an embodied, social (~empathetic) "thinking
+    machine".  * Curious about the origin, evolution and development of
+    fundamental cognitive abilities (e.g. language acquisition, aesthetic-sense,
+    time-space continuum, spontaneous thought, contemplation) across all living
+    species...  * Of late trying to study the evolutionary origins of all forms
+    of art, artistic behavior, creativity, imagination and sense of aesthetics
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 3/11/2024 14:21:35
@@ -274,8 +346,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 3/13/2024 4:29:20
@@ -302,8 +376,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 3/16/2024 8:22:09
@@ -330,8 +406,10 @@
   socialEngineering: Somewhat
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 3/16/2024 8:25:01
@@ -358,8 +436,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 3/16/2024 9:14:18
@@ -386,8 +466,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'Yes'
   suggestions: Generative AI; Responsible AI
+  blob: null
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 3/16/2024 17:23:24
@@ -414,8 +496,24 @@
   socialEngineering: Somewhat
   theoreticalAIML: Somewhat
   suggestions: AI, LLM, and Economics
+  blob: >-
+    #Macroeconomics:  *The works pertain to Open Economy, such as Mundell&#8217;s
+    concept of Impossible Trinity. Theorise the concept, quantify and
+    empirically investigate and deduce the policy implications.  **Additional
+    interest in this domain are &#8211; Fiscal and Monetary Policy, Inflation,
+    Exchange Rate, Digital Economy, Digital Finance.  ##Political and
+    Institutional Economy: *Political Budget/ Transfer Cycles: Conceptualise,
+    simulate, and empirically investigate the Political Budget Cycles, Political
+    Transfer Cycles, in both the Opportunistic and Partisan Behaviours of
+    politicians/ political parties. **Interest Group Politics: Conceptualise and
+    empirically investigate the quid-pro-quo between corporate interest groups
+    and politicians/ political parties and analyse the electoral competition.
+    ***Endogenous Economic Institutions and Economic development, Political
+    Economy Trilemma.  ###Additional Thrust Areas:  *Growth Economics, Applied
+    Econometrics and Forecasting. 
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 3/17/2024 5:00:45
@@ -442,8 +540,23 @@
   socialEngineering: Somewhat
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    My research interests encompass a diverse range of topics within the field
+    of cognitive neuroscience, focusing primarily on understanding the intricate
+    interplay between sleep, and cognition. I investigate how various factors
+    such as emotion and cognition influence mental processes, utilizing
+    techniques like neuromodulation and non-invasive brain stimulation to
+    explore neural mechanisms. My work extends to the realm of affective
+    neuroscience, where I delve into the neural underpinnings of emotions and
+    their impact on cognition. Through experimental neuropsychology and EEG
+    analysis, I seek to unravel the complexities of cognitive aging and
+    decision-making, shedding light on how these processes evolve over the
+    lifespan. Ultimately, my goal is to contribute to a deeper understanding of
+    the brain and behavior, with potential implications for therapeutic
+    interventions and cognitive enhancement strategies.
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 3/20/2024 7:23:35
@@ -471,8 +584,39 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    In our research group, we are using both experimental and computational
+    approaches for understanding fundamental as well as application-based
+    problems. 1. Computational research  We are using a kinetic-theory-based
+    mesoscopic simulation approach for understanding fluid flow, heat, and mass
+    transfer phenomena. Recently, we are using LBM for the simulation of
+    double-diffusive convection (DDC).  Our objective is to study the influence
+    of the external magnetic field on flow transport and heat-mass transfer in
+    different systems. Moreover, we are also investigating the complex
+    interaction between the convection and magnetohydrodynamic parameters with
+    the electrical conducting fluids. We are aiming to find optimized parameters
+    for heat and mass transfer enhancement as well as deterioration.  2.
+    Experimental research  The rapid population growth, increasing living human
+    standards, and modern industrialization are subject to an increase in the
+    need for energy to a considerable extent. Non-renewable energy resources are
+    depleting in ascending order with increasing energy generation cost per kWh.
+    On the other hand, renewable energy sources such as solar, wind, geothermal,
+    tidal, biomass, and biofuels are abundant. These sources can fulfil the
+    world's enormous energy demand at a low cost of production without harming
+    the environment. In this context, solar energy is considered a prominent
+    renewable source of energy with higher availability and natural resources,
+    with time-dependent limitations. It must be conserved for efficient energy
+    utilization from peak hours and to reduce output fluctuations. Thermal
+    energy storage (TES) is one of the efficient ways to store thermal energy
+    economically and efficiently, to store solar energy during the day and
+    utilize it at night. Conversely, TES with phase change material (PCM) as an
+    efficient energy-storing material with more comprehensive applications in
+    HVAC systems, photovoltaics, solar stills, solar collectors,
+    thermo-regulating textiles and building heat recovery (Panda and Gangawane
+    https://doi.org/10.1016/j.powtec.2022.117867).
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 3/26/2024 5:29:07
@@ -499,8 +643,15 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: Data Science and Data Engineering
+  blob: >-
+    Our research interests are broadly in the areas of computing systems
+    specifically in the intersection areas of systems, applications, and big
+    data. We explore new techniques for system efficiency, high performance, and
+    architectures that can support new data driven applications from broad areas
+    of machine learning, data analytics, and computational sciences.
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/19/2024 10:43:28
@@ -527,8 +678,15 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    TSTM lab addresses Transportation system necessities and requirements that
+    evolve from  urban sprawl, technological advancement, and changing societal
+    demand.  The lab primarily focus on traffic flow modelling and simulation,
+    accident analysis and prevention, public transport prioritization,
+    transportation policy analysis,  and traffic management solutions.
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/19/2024 13:20:15
@@ -555,8 +713,13 @@
   socialEngineering: Somewhat
   theoreticalAIML: 'Yes'
   suggestions: null
+  blob: >-
+    Our research group works on Statistical and Machine Learning Analysis of
+    Financial and Healthcare Data. We use information-theoretic measures for
+    analysis of heavy tailed data.
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 4/23/2024 8:28:52
@@ -583,8 +746,10 @@
   socialEngineering: Somewhat
   theoreticalAIML: Somewhat
   suggestions: null
+  blob: null
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/23/2024 8:40:38
@@ -611,8 +776,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 4/23/2024 13:38:53
@@ -639,8 +806,10 @@
   socialEngineering: Somewhat
   theoreticalAIML: 'Yes'
   suggestions: 'Application of optimization in any field of engineering '
+  blob: null
   undefined: 0
   type: 'Affiliated '
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/23/2024 15:15:36
@@ -667,8 +836,10 @@
   socialEngineering: 'No'
   theoreticalAIML: Somewhat
   suggestions: NA
+  blob: null
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/23/2024 17:24:59
@@ -697,8 +868,10 @@
   socialEngineering: Somewhat
   theoreticalAIML: Somewhat
   suggestions: Brain, behaviour, and Philosophy of Neuroscience
+  blob: null
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 4/26/2024 14:52:14
@@ -725,8 +898,27 @@
   socialEngineering: 'No'
   theoreticalAIML: Somewhat
   suggestions: null
+  blob: >-
+    Understanding the biological functions of the various protein complexes and
+    their relevance to human health depends very much on having a detailed
+    understanding of their structure to the atomic level. With the availability
+    of a huge amount of structural data, automated methods are required to
+    curate valuable information. My research group work at this interface of
+    Computational and Biological Sciences where we specifically focus on
+    studying genetic variations among the diverse populations and hence
+    mutational robustness of proteins. The aim is to understand disease
+    mechanisms in the context of protein structure (specifically protein
+    quaternary structure) variation. This knowledge will be used to improve
+    predictions of disease mutations, which is essential to interpreting the
+    growing volumes of information on genetic variation. In our lab, we use
+    diverse computational methods to do structural analysis on bulk data. This
+    &#8216;big data&#8217; analysis on structural biology is anticipated to create a new
+    field of &#8216;structuromics&#8217; (bridging proteomics and interactomics with
+    structural data) and I foresee my research group here at IIT Jodhpur
+    actively contributing to it.
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/27/2024 5:12:41
@@ -753,8 +945,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 4/29/2024 11:06:52
@@ -781,8 +975,12 @@
   socialEngineering: 'No'
   theoreticalAIML: 'Yes'
   suggestions: null
+  blob: >-
+    Mu primary research area is group theory. I am interested in exploring
+    applications of groups in Machine learning and image analysis.
   undefined: 1
   type: Affiliated
+  keywords: null
   head: null
   hidden: 1
 - timestamp: 4/29/2024 12:13:41
@@ -809,8 +1007,18 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: AI and Omics
+  blob: >-
+    I work in the  broad area of understanding human genome structure and
+    variation for its application in the discovery of biomarkers for predicting
+    susceptibility to diseases, understanding human phenotypes and adaptations
+    and mapping mutational histories. I have been involved in developing a new
+    area of research &#8220;Ayurgenomics&#8221; that aims to integrate Ayurveda with modern
+    medicine through genomics. At IITJ we have set up a unique 
+    transdisciplinary initiative "Ayurtech" to develop AI enabled evidence based
+    solutions for Ayurveda practices for application in integrative medicine. 
   undefined: 0
   type: Affiliated
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 7/25/2024 13:15:49
@@ -837,8 +1045,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 0
   type: Scientific Staff
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 7/25/2024 15:34:43
@@ -867,8 +1077,10 @@
   suggestions: >-
     Please include Natural Language Processing and AI for Social Good as the
     themes 
+  blob: null
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 7/25/2024 17:05:54
@@ -895,8 +1107,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 0
   type: Core
+  keywords: null
   head: null
   hidden: 0
 - timestamp: 9/24/2024 12:16:20
@@ -923,8 +1137,10 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: null
   undefined: 0
   type: Affiliated
+  keywords: Neuroscience, Image and video processing, Healthcare devices, eeg
   head: 'yes'
   hidden: 0
 - timestamp: 9/27/2024 7:46:33
@@ -953,7 +1169,18 @@
   socialEngineering: 'No'
   theoreticalAIML: 'No'
   suggestions: null
+  blob: >-
+    At the Baillet Lab, we explore how the brain works in real-time by studying
+    its dynamic electrical activity. We use advanced imaging technologies like
+    magnetoencephalography (MEG) to capture brain signals, helping us understand
+    everything from basic brain functions to neurological disorders. Our goal is
+    to use this knowledge to develop better tools for diagnosing and treating
+    conditions like epilepsy and brain tumors. We're also passionate about open
+    science, sharing our data and methods freely with the global research
+    community, and collaborating with industry to bring innovative brain-imaging
+    technologies into real-world use.
   undefined: null
   type: Adjunct
+  keywords: 'physicist , neuroscientist '
   head: null
-  hidden: .nan
+  hidden: 0
