@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             
 
-            const isResearchAreaMatch = filters.researchArea.length === 0 || filters.researchArea.some(filter => researchArea.includes(filter));
+            // const isResearchAreaMatch = filters.researchArea.length === 0 || filters.researchArea.some(filter => researchArea.includes(filter));
             const isCoeMatch = filters.coe.length === 0 || filters.coe.some(filter => coe.includes(filter));
             const isTitleMatch = filters.title.length === 0 || filters.title.some(filter => title === filter);
             const isPositionMatch = filters.position.length === 0 || filters.position.some(filter => position.includes(filter));
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
      
            
 
-            const isVisible = isResearchAreaMatch && isCoeMatch && isTitleMatch && isPositionMatch && isThemeMatch;
+            const isVisible = isCoeMatch && isTitleMatch && isPositionMatch && isThemeMatch; //isResearchAreaMatch && 
 
             member.style.display = isVisible ? 'block' : 'none';
         });
@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
         document.querySelectorAll('.member-card').forEach(member => {
-            const researchArea = member.getAttribute('data-research-area').toLowerCase();
-            if (researchArea.includes(filter)) {
+            const keywords = member.getAttribute('data-search').toLowerCase();
+            if (keywords.includes(filter)) {
                 member.style.display = 'block';
             } else {
                 member.style.display = 'none';
