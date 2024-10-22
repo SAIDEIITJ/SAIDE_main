@@ -10,7 +10,7 @@ title: IIT Jodhpur SAIDE
 email: 
 description: > # this means to ignore newlines until "baseurl:"
   School of Artificial Intelligence and Data Science
-baseurl: ""
+baseurl: "/"
 url: ""
 theme: jekyll-theme-minimal
 
