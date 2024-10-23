@@ -22,12 +22,14 @@ permalink: /faq/
 <h2 id="faqtitle">{{ category }} FAQs</h2>
 {% assign faqs = site.data.faqs | where: 'category', category %}
 {% for faq in faqs %}
+{% if faq.visible=='Yes' %}
 <div class="faq-item">
 <h3>{{ faq.question }}<span class="downicon">▼</span></h3>
 <div class="answer" style="display:none;">
 <p>{{ faq.answer }}</p>
 </div>
 </div>
+{% endif %}
 {% endfor %}
 </section>
 {% endfor %}
